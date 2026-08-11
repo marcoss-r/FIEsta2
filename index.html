@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <title>FIEsta 2</title>
+
+  <!-- Icono y comportamiento al "Añadir a pantalla de inicio" -->
+  <link rel="icon" type="image/svg+xml" href="icons/icono.svg" />
+  <link rel="icon" type="image/png" href="icons/icon-192.png" />
+  <link rel="apple-touch-icon" href="icons/icon-180.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="theme-color" content="#170709" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="FIEsta 2" />
+
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+  <div id="app">
+
+    <!-- FIEsta 2: pantalla principal, elige un juego -->
+    <section class="pantalla" data-pantalla="fiesta">
+      <!-- Logo: planeta (espacio) + órbita/electrón (física) + confeti estelar (fiesta),
+           con un "2" integrado sobre el planeta. Debe coincidir con icons/icono.svg y con
+           icons/generar_icono.py (ver md/PLAN_DESARROLLO.md §5.3). -->
+      <div class="fiesta-hero">
+        <svg class="fiesta-hero-svg" viewBox="0 0 100 100" role="img" aria-label="Logo de FIEsta 2">
+          <defs>
+            <radialGradient id="cielo" cx="50%" cy="42%" r="70%">
+              <stop offset="0%" stop-color="#3a1219" />
+              <stop offset="100%" stop-color="#170709" />
+            </radialGradient>
+            <!-- Estrella de 4 puntas reutilizable: 4 puntas largas + 4 vértices cortos -->
+            <symbol id="estrella" viewBox="-10 -10 20 20">
+              <polygon points="0,-10 3.2,-3.2 10,0 3.2,3.2 0,10 -3.2,3.2 -10,0 -3.2,-3.2" />
+            </symbol>
+          </defs>
+
+          <!-- Fondo espacial -->
+          <circle cx="50" cy="50" r="49" fill="url(#cielo)" />
+
+          <!-- Planeta -->
+          <circle cx="50" cy="54" r="20" fill="#ff4d5a" />
+          <circle cx="43" cy="47" r="7" fill="#ff8f98" opacity="0.55" />
+
+          <!-- Órbita (física) + electrón, inclinada -->
+          <g transform="rotate(-20 50 54)">
+            <ellipse cx="50" cy="54" rx="34" ry="12" fill="none" stroke="#ff9142" stroke-width="2.4" />
+            <circle cx="84" cy="54" r="3.4" fill="#f9e8ea" />
+          </g>
+
+          <!-- "2" de FIEsta 2, integrado sobre el planeta -->
+          <path d="M43 47 Q43 41 50 41 Q57 41 57 47 Q57 52 50 59 L43 66 L58 66"
+                fill="none" stroke="#f9e8ea" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+
+          <!-- Confeti estelar -->
+          <use href="#estrella" x="12" y="12" width="14" height="14" fill="#ffce54" />
+          <use href="#estrella" x="74" y="14" width="10" height="10" fill="#ffffff" />
+          <use href="#estrella" x="80" y="66" width="9" height="9" fill="#ff9142" />
+          <use href="#estrella" x="14" y="70" width="8" height="8" fill="#ffffff" />
+          <use href="#estrella" x="7" y="43" width="6" height="6" fill="#ffce54" />
+        </svg>
+      </div>
+
+      <h1 class="fiesta-titulo">FIEsta 2</h1>
+      <!-- Lo rellena arranque.js a partir de APP_VERSION. -->
+      <p class="fiesta-version" id="app-version"></p>
+      <p>Elige un juego para empezar.</p>
+      <div class="lista-juegos">
+        <button type="button" class="juego-card" id="btn-juego-vr">
+          <!-- La ⓘ es un <span> (no puede haber un botón dentro de otro botón);
+               su click se captura en arranque.js con stopPropagation. -->
+          <span class="juego-card-info" data-info="vr" aria-label="Información de Verdad o Reto">i</span>
+          <span class="juego-card-nombre">Verdad o Reto</span>
+          <span class="juego-card-desc">Eliges verdad o reto y la app te lo sirve</span>
+        </button>
+        <button type="button" class="juego-card" id="btn-juego-qm">
+          <span class="juego-card-info" data-info="qm" aria-label="Información de Quién es más…">i</span>
+          <span class="juego-card-nombre">Quién es más…</span>
+          <span class="juego-card-desc">Preguntas para señalar a alguien del grupo</span>
+        </button>
+        <button type="button" class="juego-card" id="btn-juego-dm">
+          <span class="juego-card-info" data-info="dm" aria-label="Información de Dos mentiras y una verdad">i</span>
+          <span class="juego-card-nombre">Dos mentiras y una verdad</span>
+          <span class="juego-card-desc">La app da el tema; tú cuentas tres cosas</span>
+        </button>
+        <button type="button" class="juego-card" id="btn-juego-im">
+          <span class="juego-card-info" data-info="im" aria-label="Información de El Impostor">i</span>
+          <span class="juego-card-nombre">El Impostor</span>
+          <span class="juego-card-desc">Todos ven una palabra menos el impostor</span>
+        </button>
+        <button type="button" class="juego-card" id="btn-juego-pi">
+          <span class="juego-card-info" data-info="pi" aria-label="Información de Preguntas incómodas">i</span>
+          <span class="juego-card-nombre">Preguntas incómodas</span>
+          <span class="juego-card-desc">Preguntas directas y afiladas a una persona</span>
+        </button>
+      </div>
+
+      <!-- Ventana de información del juego: la abre la ⓘ de cada tarjeta y se
+           cierra tocando en cualquier parte (mismo patrón que en FIEsta 1). -->
+      <div class="info-overlay" id="info-juego" hidden>
+        <div class="info-panel">
+          <h2 id="info-juego-titulo"></h2>
+          <p id="info-juego-texto"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Las pantallas de cada juego se añaden en su propia fase de desarrollo
+         (ver md/PLAN_DESARROLLO.md §10). De momento las tarjetas de arriba no
+         llevan a ningún sitio: cada juego conecta su botón en su main.js. -->
+
+  </div>
+
+  <!-- 1. Núcleo -->
+  <script src="js/nucleo/pantallas.js"></script>
+  <script src="js/nucleo/util.js"></script>
+
+  <!-- 4. Arranque: SIEMPRE el último (es quien muestra el hub) -->
+  <script src="js/nucleo/arranque.js"></script>
+</body>
+</html>

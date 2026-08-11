@@ -1,0 +1,513 @@
+/* ==========================================================
+   Variables de tema (tokens de color) — oscuro rojizo
+   Paleta adaptada de FIEsta (azul) a FIEsta 2 (rojo): ver
+   md/PLAN_DESARROLLO.md §5.
+   ========================================================== */
+:root {
+  --color-fondo: #170709;
+  --color-fondo-alt: #2a0d12;
+  --color-superficie: #3a1219;
+  --color-texto: #f9e8ea;
+  --color-texto-tenue: #c0959a;
+  --color-acento: #ff4d5a;
+  --color-acento-oscuro: #c22334;
+  --color-acento-2: #ff9142;
+  --color-exito: #34c759;
+  /* Ámbar y no rojo: aquí el rojo es la marca, un error en rojo se confundiría
+     con un botón normal (ver nota en md/PLAN_DESARROLLO.md §5.1). */
+  --color-fallo: #ffb020;
+
+  --radio-borde: 18px;
+  --radio-borde-chico: 10px;
+
+  --duracion-transicion: 320ms;
+  --curva-transicion: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ==========================================================
+   Base: layout a pantalla completa, sin scroll
+   ========================================================== */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background: var(--color-fondo);
+  color: var(--color-texto);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#app {
+  position: relative;
+  width: 100vw;
+  height: 100dvh;
+  overflow: hidden;
+  background: linear-gradient(180deg, var(--color-fondo) 0%, var(--color-fondo-alt) 100%);
+}
+
+/* ==========================================================
+   Pantallas (patrón SPA): todas ocupan el mismo hueco,
+   solo la que tiene .activa es visible/interactiva.
+   ========================================================== */
+.pantalla {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  /* Respeta las "safe areas" del iPhone (Dynamic Island, notch, home indicator)
+     cuando se ejecuta como app en pantalla completa (viewport-fit=cover). */
+  padding-top: calc(2rem + env(safe-area-inset-top));
+  padding-right: calc(1.5rem + env(safe-area-inset-right));
+  padding-bottom: calc(2rem + env(safe-area-inset-bottom));
+  padding-left: calc(1.5rem + env(safe-area-inset-left));
+  text-align: center;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateX(24px);
+  transition: opacity var(--duracion-transicion) var(--curva-transicion),
+    transform var(--duracion-transicion) var(--curva-transicion),
+    visibility 0s linear var(--duracion-transicion);
+}
+
+.pantalla.activa {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(0);
+  transition: opacity var(--duracion-transicion) var(--curva-transicion),
+    transform var(--duracion-transicion) var(--curva-transicion),
+    visibility 0s linear 0s;
+}
+
+/* Pantallas con scroll permitido (p. ej. resúmenes) */
+.pantalla.con-scroll {
+  overflow-y: auto;
+  justify-content: flex-start;
+}
+
+.pantalla h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: var(--color-texto);
+}
+
+.pantalla p {
+  margin: 0;
+  color: var(--color-texto-tenue);
+  max-width: 32ch;
+}
+
+/* ==========================================================
+   FIEsta 2 (pantalla principal: elegir juego)
+   ========================================================== */
+/* Con cinco juegos, la lista puede no caber de una vez en móviles pequeños.
+   Reducimos el gap del hub y, como red de seguridad, permitimos scroll con
+   "safe center": queda centrado cuando cabe y, si no, cae a flex-start para que
+   la primera tarjeta nunca se recorte por arriba (centrar + overflow la cortaría). */
+.pantalla[data-pantalla="fiesta"] {
+  gap: 0.6rem;
+  overflow-y: auto;
+  justify-content: safe center;
+}
+
+.fiesta-hero {
+  line-height: 0;
+}
+
+.fiesta-hero-svg {
+  width: 104px;
+  height: 104px;
+  filter: drop-shadow(0 8px 20px rgba(255, 77, 90, 0.35));
+  animation: flotar-hero 4s ease-in-out infinite;
+}
+
+@keyframes flotar-hero {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.fiesta-titulo {
+  font-size: 2.3rem !important;
+  letter-spacing: 0.02em;
+  background: linear-gradient(90deg, var(--color-acento), var(--color-acento-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Versión de la app: pegada bajo el título (el gap de .pantalla es 1rem).
+   El gris lo hereda de .pantalla p. */
+.fiesta-version {
+  margin-top: -0.75rem !important;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+}
+
+.lista-juegos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  width: 100%;
+  max-width: 26rem;
+  margin-top: 0.25rem;
+  /* No encoger dentro del flex del hub: con scroll activo, las tarjetas deben
+     conservar su altura en vez de comprimirse hasta quedar ilegibles. */
+  flex-shrink: 0;
+}
+
+/* Tarjeta-botón de cada juego. Es "relative" para anclar la ⓘ a su esquina;
+   el padding derecho extra evita que el texto se meta debajo del icono. */
+.juego-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
+  width: 100%;
+  padding: 0.85rem 2.6rem 0.85rem 1.15rem;
+  text-align: left;
+  background: var(--color-superficie);
+  color: var(--color-texto);
+  border: 1px solid transparent;
+}
+
+.juego-card:hover {
+  background: var(--color-fondo-alt);
+  border-color: var(--color-acento);
+}
+
+.juego-card-nombre {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.juego-card-desc {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--color-texto-tenue);
+}
+
+/* ⓘ de cada tarjeta: es un <span> porque HTML no permite un botón dentro de
+   otro botón (arranque.js le pone el click con stopPropagation). */
+.juego-card-info {
+  position: absolute;
+  top: 50%;
+  right: 0.9rem;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border: 1.5px solid var(--color-texto-tenue);
+  border-radius: 50%;
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--color-texto-tenue);
+}
+
+.juego-card-info:hover {
+  border-color: var(--color-acento);
+  color: var(--color-acento);
+}
+
+/* Ventana de información de un juego: overlay que cubre el hub y se cierra al
+   tocar en cualquier parte (mismo patrón que .cf-efectos-overlay del original). */
+.info-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: rgba(10, 3, 4, 0.6);
+}
+
+/* El atributo `hidden` del HTML pierde contra el display de cualquier regla de
+   autor; esta regla devuelve la prioridad al estado oculto. */
+.info-overlay[hidden] {
+  display: none;
+}
+
+.info-panel {
+  width: min(90vw, 26rem);
+  max-height: 80%;
+  overflow-y: auto;
+  padding: 1.25rem 1.5rem;
+  background: var(--color-fondo-alt);
+  border: 1px solid var(--color-acento);
+  border-radius: var(--radio-borde);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.55);
+}
+
+.info-panel h2 {
+  margin: 0 0 0.6rem;
+  font-size: 1.2rem;
+  color: var(--color-texto);
+}
+
+.info-panel p {
+  margin: 0;
+  color: var(--color-texto-tenue);
+  line-height: 1.5;
+}
+
+/* ==========================================================
+   Botones
+   ========================================================== */
+button {
+  font: inherit;
+  cursor: pointer;
+  border: none;
+  border-radius: var(--radio-borde);
+  padding: 0.9rem 1.6rem;
+  min-height: 48px;
+  background: var(--color-acento);
+  color: #fff;
+  font-weight: 600;
+  transition: background-color 150ms ease, transform 100ms ease;
+}
+
+button:hover {
+  background: var(--color-acento-oscuro);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+button:disabled {
+  background: var(--color-superficie);
+  color: var(--color-texto-tenue);
+  cursor: not-allowed;
+  transform: none;
+}
+
+button.boton-exito {
+  background: var(--color-exito);
+}
+
+button.boton-fallo {
+  background: var(--color-fallo);
+}
+
+button.secundario {
+  background: var(--color-superficie);
+  color: var(--color-texto);
+}
+
+button.secundario:hover {
+  background: var(--color-fondo-alt);
+}
+
+/* Botón de volver: flechita pequeña en la esquina superior izquierda de cada
+   pantalla. Fuera del flujo (absolute sobre .pantalla) para no chocar con el
+   contenido; respeta las safe areas igual que el resto de elementos anclados. */
+.boton-volver {
+  position: absolute;
+  top: calc(0.75rem + env(safe-area-inset-top));
+  left: calc(0.75rem + env(safe-area-inset-left));
+  z-index: 15;
+  width: 44px;
+  height: 44px;
+  min-height: 0;
+  padding: 0;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  line-height: 1;
+  background: var(--color-superficie);
+  color: var(--color-texto);
+}
+
+.boton-volver:hover {
+  background: var(--color-fondo-alt);
+}
+
+/* ==========================================================
+   Formularios de configuración
+   ========================================================== */
+
+/* Fila de botones al pie de una pantalla */
+.fila-botones {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 26rem;
+}
+
+.fila-botones button {
+  flex: 1 1 auto;
+}
+
+/* Texto de error (ámbar) y de ayuda (tenue) */
+.error {
+  color: var(--color-fallo);
+  min-height: 1.2em;
+  font-size: 0.9rem;
+}
+
+.ayuda {
+  color: var(--color-texto-tenue);
+  min-height: 1.2em;
+  font-size: 0.9rem;
+}
+
+/* Contenedor de lista con scroll interno (para que la pantalla no crezca) */
+.lista-scroll {
+  width: 100%;
+  max-width: 26rem;
+  max-height: 40vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.25rem;
+}
+
+/* Campo con input de texto */
+.campo input {
+  width: 100%;
+  font: inherit;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radio-borde-chico);
+  border: 1px solid transparent;
+  background: var(--color-superficie);
+  color: var(--color-texto);
+  min-height: 48px;
+}
+
+.campo input::placeholder {
+  color: var(--color-texto-tenue);
+}
+
+.campo input:focus {
+  outline: none;
+  border-color: var(--color-acento);
+}
+
+/* Stepper (− valor +) */
+.stepper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.stepper-btn {
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.stepper-valor {
+  font-size: 2rem;
+  font-weight: 700;
+  min-width: 2ch;
+  text-align: center;
+}
+
+/* ==========================================================
+   Interruptor estilo iOS ("modo fiesta", §7.4)
+   Un checkbox real (accesible, oculto solo visualmente) + una pista
+   deslizante que reacciona a su estado con `input:checked + .switch-pista`.
+   Cero JavaScript para el aspecto.
+
+   - .switch: contenedor `position:relative` (referencia para la pista y la
+     bola). Al ser un <label>, tocar en cualquier punto conmuta el checkbox.
+   - .switch input: oculto con opacity:0 + tamaño 0, NUNCA con display:none
+     (eso lo sacaría del recorrido de teclado).
+   - .switch-pista: la pista visible (inset:0 sobre el contenedor), con
+     forma de píldora y transición en el color de fondo.
+   - .switch-pista::after: la bola, generada sin HTML extra; se mueve con
+     `transform: translateX()` en vez de `left`, para que la animación no
+     dispare recálculos de layout.
+   - :focus-visible: anillo de foco visible al navegar con teclado (Tab). */
+.switch {
+  position: relative;
+  width: 52px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.switch input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch-pista {
+  position: absolute;
+  inset: 0;
+  background: var(--color-fondo-alt);
+  border-radius: 999px;
+  transition: background-color 150ms ease;
+}
+
+.switch-pista::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 28px;
+  height: 28px;
+  background: #fff;
+  border-radius: 50%;
+  transition: transform 150ms ease;
+}
+
+.switch input:checked + .switch-pista {
+  background: var(--color-acento);
+}
+
+.switch input:checked + .switch-pista::after {
+  transform: translateX(20px);
+}
+
+.switch input:focus-visible + .switch-pista {
+  outline: 2px solid var(--color-acento);
+  outline-offset: 2px;
+}
+
+/* Sub-vistas dentro de una pantalla (p. ej. las del handoff §7.6): cada vista
+   apila su contenido centrado, igual que la pantalla entera. */
+.vista {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* El atributo hidden del HTML pierde contra el display de cualquier regla de
+   autor (y .vista es flex): sin esto, una vista oculta se vería igualmente
+   apilada debajo de la activa. Ver aviso en md/PLAN_DESARROLLO.md §3.3. */
+.vista[hidden] {
+  display: none;
+}
+
+/* Tarjetita de texto para anuncios cortos dentro de una pantalla. */
+.anuncio {
+  background: var(--color-superficie);
+  border-radius: var(--radio-borde-chico);
+  padding: 0.6rem 0.9rem;
+  text-align: left;
+  margin: 0;
+}

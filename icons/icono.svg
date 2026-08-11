@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <radialGradient id="cielo" cx="50%" cy="42%" r="70%">
+      <stop offset="0%" stop-color="#3a1219" />
+      <stop offset="100%" stop-color="#170709" />
+    </radialGradient>
+    <!-- Estrella de 4 puntas reutilizable: 4 puntas largas + 4 vértices cortos -->
+    <symbol id="estrella" viewBox="-10 -10 20 20">
+      <polygon points="0,-10 3.2,-3.2 10,0 3.2,3.2 0,10 -3.2,3.2 -10,0 -3.2,-3.2" />
+    </symbol>
+  </defs>
+
+  <!-- Fondo espacial -->
+  <circle cx="50" cy="50" r="49" fill="url(#cielo)" />
+
+  <!-- Planeta -->
+  <circle cx="50" cy="54" r="20" fill="#ff4d5a" />
+  <circle cx="43" cy="47" r="7" fill="#ff8f98" opacity="0.55" />
+
+  <!-- Órbita (física) + electrón, inclinada -->
+  <g transform="rotate(-20 50 54)">
+    <ellipse cx="50" cy="54" rx="34" ry="12" fill="none" stroke="#ff9142" stroke-width="2.4" />
+    <circle cx="84" cy="54" r="3.4" fill="#f9e8ea" />
+  </g>
+
+  <!-- "2" de FIEsta 2, integrado sobre el planeta -->
+  <path d="M43 47 Q43 41 50 41 Q57 41 57 47 Q57 52 50 59 L43 66 L58 66"
+        fill="none" stroke="#f9e8ea" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Confeti estelar -->
+  <use href="#estrella" x="12" y="12" width="14" height="14" fill="#ffce54" />
+  <use href="#estrella" x="74" y="14" width="10" height="10" fill="#ffffff" />
+  <use href="#estrella" x="80" y="66" width="9" height="9" fill="#ff9142" />
+  <use href="#estrella" x="14" y="70" width="8" height="8" fill="#ffffff" />
+  <use href="#estrella" x="7" y="43" width="6" height="6" fill="#ffce54" />
+</svg>

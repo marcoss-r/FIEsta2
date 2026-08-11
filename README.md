@@ -9,7 +9,9 @@ El Impostor · Preguntas incómodas.
 
 ## Estado
 
-🚧 **Sin empezar.** Solo existe la planificación.
+✅ **Fase 0 completa:** esqueleto de la app, tema rojo e iconos. El hub muestra
+las 5 tarjetas de juego (con su ⓘ de información), pero aún no llevan a ningún
+sitio: cada juego se conecta en su propia fase.
 
 ## Por dónde empezar
 
@@ -19,14 +21,31 @@ paleta, la arquitectura, las decisiones cerradas y las fases de desarrollo).
 
 Después, cada juego tendrá su propio plan en `md/` (los escribe la Fase 1).
 
-## Cómo abrir el proyecto (cuando exista código)
+## Cómo abrir el proyecto
 
-Basta con abrir `index.html` en el navegador. Si el navegador se queja al cargar
-los `data/*.js`, sirve la carpeta con un servidor local:
+Basta con abrir `index.html` en el navegador. Cuando haya `data/*.js` (a partir
+de la Fase 2), si el navegador se queja al cargarlos, sirve la carpeta con un
+servidor local:
 
 ```bash
 npx serve .
 ```
+
+## Cómo regenerar los iconos
+
+Los PNG de `icons/` se generan con Pillow a partir del mismo motivo que el SVG
+del hub (`icons/icono.svg` / `index.html`):
+
+```bash
+python icons/generar_icono.py
+```
+
+## Cómo añadir contenido a un banco
+
+Cada juego guardará su banco en `data/<juego>/` como un `.json` (fuente) + un
+`.js` generado (`const XX_BANCO = […]`) + un script `agregar.py` para dar de
+alta entradas desde consola, igual que en FIEsta 1. Se implementa junto con
+cada juego (a partir de la Fase 3); de momento esas carpetas están vacías.
 
 ## Tecnología
 

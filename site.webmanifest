@@ -1,0 +1,17 @@
+{
+  "name": "FIEsta 2",
+  "short_name": "FIEsta 2",
+  "description": "Colección de juegos de fiesta por turnos, edición adulta y verbal.",
+  "lang": "es",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#170709",
+  "theme_color": "#170709",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
