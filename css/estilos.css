@@ -476,6 +476,11 @@ button.secundario:hover {
      dispare recálculos de layout.
    - :focus-visible: anillo de foco visible al navegar con teclado (Tab). */
 .switch {
+  /* inline-block y no el display por defecto de <label> (inline): width y
+     height NO se aplican a elementos inline no reemplazados, así que sin esto
+     el interruptor colapsa a 0×0 (sus dos hijos son position:absolute, no hay
+     contenido en flujo que le dé tamaño) y solo se ve asomar la bola. */
+  display: inline-block;
   position: relative;
   width: 52px;
   height: 32px;
@@ -492,7 +497,11 @@ button.secundario:hover {
 .switch-pista {
   position: absolute;
   inset: 0;
-  background: var(--color-fondo-alt);
+  /* --color-superficie y no --color-fondo-alt: ese es justo el color en el que
+     termina el degradado de #app, así que la pista apagada se volvía invisible
+     y solo se veía flotar la bola. Este es el mismo tono de los campos de
+     texto, que sí contrasta con el fondo. */
+  background: var(--color-superficie);
   border-radius: 999px;
   transition: background-color 150ms ease;
 }
