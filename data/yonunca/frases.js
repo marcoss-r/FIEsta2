@@ -1,7 +1,5 @@
-// Banco de frases de "Yo nunca" (yn). Provisional: ~30 entradas de muestra
-// (md/PLAN_YO_NUNCA.md §9) para dejar el juego jugable de principio a fin. El
-// banco definitivo (≥ 400, con frases.json + agregar.py) llega en la Fase 3
-// de ese plan.
+// Banco de frases de "Yo nunca" (yn).
+// Generado desde frases.json — no editar a mano (usar agregar.py).
 const YN_FRASES = [
   // ── suave
   { texto: "he fingido estar dormido para no hablar con alguien", nivel: "suave" },
@@ -14,6 +12,22 @@ const YN_FRASES = [
   { texto: "he vuelto a comprar algo que ya tenía por no buscarlo", nivel: "suave" },
   { texto: "he cantado en la ducha a pleno pulmón", nivel: "suave" },
   { texto: "me he hecho el dormido en un coche para no hablar", nivel: "suave" },
+  { texto: "he mentido sobre mi edad", nivel: "suave" },
+  { texto: "he fingido que me gustaba un regalo que odiaba", nivel: "suave" },
+  { texto: "me he comido algo que se me ha caído al suelo sin que nadie me viera", nivel: "suave" },
+  { texto: "he salido de casa con la ropa del revés sin darme cuenta", nivel: "suave" },
+  { texto: "he mirado el perfil de alguien en redes sin darle like para que no se enterara", nivel: "suave" },
+  { texto: "he dicho que luego llamaba sabiendo que no iba a hacer la llamada", nivel: "suave" },
+  { texto: "he fingido que iba al baño para librarme de una conversación", nivel: "suave" },
+  { texto: "he mentido diciendo que ya había cenado", nivel: "suave" },
+  { texto: "me he quedado con el cambio de más sin decir nada", nivel: "suave" },
+  { texto: "he ensayado una conversación en voz alta antes de tenerla de verdad", nivel: "suave" },
+  { texto: "he fingido que se me caía el móvil para colgar una llamada", nivel: "suave" },
+  { texto: "he copiado una respuesta en un examen sin que se dieran cuenta", nivel: "suave" },
+  { texto: "he fingido entender un chiste en otro idioma", nivel: "suave" },
+  { texto: "he vuelto a ver una serie entera dejando que creyeran que era la primera vez", nivel: "suave" },
+  { texto: "he salido a la calle en pijama sin darme cuenta", nivel: "suave" },
+  { texto: "me he quedado dormido en una reunión o una clase", nivel: "suave" },
 
   // ── picante
   { texto: "he querido besar a alguien de este grupo", nivel: "picante" },
@@ -26,6 +40,22 @@ const YN_FRASES = [
   { texto: "he tenido un sueño con alguien que está aquí ahora mismo", nivel: "picante" },
   { texto: "he buscado a un ex en redes sociales esta misma semana", nivel: "picante" },
   { texto: "he dicho una mentira para quedar mejor en una entrevista", nivel: "picante" },
+  { texto: "he sentido atracción por el mejor amigo o la mejor amiga de mi pareja", nivel: "picante" },
+  { texto: "he mirado el perfil de alguien de este grupo en redes más de lo que admito", nivel: "picante" },
+  { texto: "he fingido un orgasmo para acabar antes", nivel: "picante" },
+  { texto: "he tenido un lío con alguien bastante mayor o menor que yo", nivel: "picante" },
+  { texto: "he besado a alguien solo para dar celos a otra persona", nivel: "picante" },
+  { texto: "he mentido sobre cuántas parejas he tenido", nivel: "picante" },
+  { texto: "me he enamorado de alguien que ya tenía pareja", nivel: "picante" },
+  { texto: "he tonteado con alguien solo para conseguir algo de esa persona", nivel: "picante" },
+  { texto: "he fingido que no me importaba una ruptura que por dentro me dolió muchísimo", nivel: "picante" },
+  { texto: "he tenido pensamientos nada inocentes sobre alguien de este grupo", nivel: "picante" },
+  { texto: "he mandado una foto de la que me arrepiento", nivel: "picante" },
+  { texto: "he dejado en visto a alguien a propósito para darle celos", nivel: "picante" },
+  { texto: "he quedado con dos personas a la vez sin que lo supieran entre ellas", nivel: "picante" },
+  { texto: "he comparado a mi pareja con una anterior sin querer decirlo en voz alta", nivel: "picante" },
+  { texto: "he fingido que me acordaba de una noche de la que no recordaba nada", nivel: "picante" },
+  { texto: "he tenido una cita a ciegas que oculté a todo el mundo", nivel: "picante" },
 
   // ── extremo
   { texto: "he sentido celos de alguien que está en esta sala", nivel: "extremo" },
@@ -35,4 +65,12 @@ const YN_FRASES = [
   { texto: "he deseado que una relación se acabara sin atreverme a decirlo", nivel: "extremo" },
   { texto: "he dejado de hablar con alguien sin darle explicaciones", nivel: "extremo" },
   { texto: "he mentido sobre algo importante a mi familia", nivel: "extremo" },
+  { texto: "he deseado no haber conocido a alguien que sigue en mi vida", nivel: "extremo" },
+  { texto: "he fingido perdonar algo que en realidad nunca superé", nivel: "extremo" },
+  { texto: "he dejado que alguien se llevara la culpa de algo que había hecho yo", nivel: "extremo" },
+  { texto: "he sentido alivio ante una mala noticia de alguien cercano", nivel: "extremo" },
+  { texto: "he roto una promesa importante sabiendo el daño que iba a hacer", nivel: "extremo" },
+  { texto: "he deseado en secreto que la pareja de un amigo o una amiga no funcionara", nivel: "extremo" },
+  { texto: "he ocultado algo a mi familia durante años por miedo a su reacción", nivel: "extremo" },
+  { texto: "he mentido de una forma en la que alguien salió perjudicado por mi culpa", nivel: "extremo" },
 ];

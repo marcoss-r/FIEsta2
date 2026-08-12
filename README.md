@@ -12,8 +12,9 @@ incómodas · Dos mentiras y una verdad · El Impostor.
 ✅ **Fases 0, 1 y 2 completas**, y 🚧 **Fase 3 en curso**: **«Yo nunca»** ya se
 juega de principio a fin — hub con sus 6 tarjetas, configuración de jugadores y
 niveles, modo fiesta, rotación de quien lee y partida guardable/reanudable —
-con un banco provisional de ~27 frases. Falta su banco definitivo (≥ 400,
-`md/PLAN_YO_NUNCA.md` §9) para cerrar la fase. El resto de tarjetas del hub
+con una primera tanda de 67 frases en el banco definitivo (`data/yonunca/
+frases.json` + `frases.js` generado + `agregar.py`), pendiente de validar el
+tono con el usuario antes de seguir hasta las ≥ 400. El resto de tarjetas del hub
 (Quién es más…, Verdad o Reto, Preguntas incómodas, Dos mentiras y una verdad,
 El Impostor) aún no llevan a ningún sitio: se implementan en las fases 4-8.
 
@@ -55,10 +56,10 @@ python icons/generar_icono.py
 
 Cada juego guardará su banco en `data/<juego>/` como un `.json` (fuente) + un
 `.js` generado (`const XX_BANCO = […]`) + un script `agregar.py` para dar de
-alta entradas desde consola, igual que en FIEsta 1. `data/yonunca/frases.js`
-existe ya, pero solo como banco **provisional** (~27 entradas escritas a mano);
-el `.json` fuente y `agregar.py` llegan con el banco definitivo (Fase 3 de
-`md/PLAN_YO_NUNCA.md`). El resto de carpetas de juego siguen vacías.
+alta entradas desde consola, igual que en FIEsta 1. `data/yonunca/` ya sigue
+este patrón: `frases.json` (fuente, 67 entradas de momento) + `frases.js`
+(generado) + `agregar.py` (da de alta frases nuevas y regenera el `.js`; nunca
+se edita `frases.js` a mano). El resto de carpetas de juego siguen vacías.
 
 ## Tecnología
 

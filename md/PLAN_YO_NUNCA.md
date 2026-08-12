@@ -372,7 +372,9 @@ instalada, modo avión para confirmar que la 6ª tarjeta también funciona offli
 
 - [x] **Fase 1** — Tarjeta del hub, pantallas y configuración
 - [x] **Fase 2** — Motor de frases y rotación
-- [ ] **Fase 3** — Banco de contenido (≥ 400)
+- [ ] **Fase 3** — Banco de contenido (≥ 400): 🚧 en curso, primera tanda de 67
+      (`data/yonunca/frases.json` + `agregar.py`), pendiente de validar el tono
+      con el usuario antes de seguir produciendo
 - [x] **Fase 4** — Persistencia y pulido (adelantada junto con las Fases 1-2:
       guardado/reanudación, `clamp()` en la frase, `APP_VERSION`/`CACHE`/`ARCHIVOS`
       al día; falta la prueba en dispositivo real y modo avión, que hace el usuario)

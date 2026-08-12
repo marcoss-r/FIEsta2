@@ -991,13 +991,13 @@ plantillas ni handoff. Incluye añadir su tarjeta al hub (ver aviso de la Fase 0
 Seguir `md/PLAN_YO_NUNCA.md`.
 
 > 🚧 **En curso.** Ya están sus Fases 1, 2 y 4 (tarjeta del hub, `INFO_JUEGOS`,
-> pantallas, configuración, motor de rotación, persistencia y `APP_VERSION`/
-> `CACHE` = 1.2.0), probado con una integración jsdom completa sobre
-> `index.html` real (sirviendo por HTTP para que `localStorage` funcione igual
-> que en el navegador) sin errores de consola. El banco usa de momento las ~27
-> frases de muestra de `md/PLAN_YO_NUNCA.md` §9. **Falta su Fase 3: el banco
-> definitivo de ≥ 400 frases**, que se hace a cuatro manos con el usuario
-> (§2.4) antes de dar la fase global por cerrada.
+> pantallas, configuración, motor de rotación, persistencia), probado con una
+> integración jsdom completa sobre `index.html` real (sirviendo por HTTP para
+> que `localStorage` funcione igual que en el navegador) sin errores de
+> consola. **Fase 3 en marcha**: primera tanda del banco de contenido, 67
+> frases (`data/yonunca/frases.json` + `frases.js` generado + `agregar.py`),
+> pendiente de validar el tono con el usuario (§2.4) antes de seguir hasta
+> las ≥ 400. `APP_VERSION`/`CACHE` = 1.2.2.
 
 ### Fase 4 — Juego 2: **Quién es más…**
 Reutiliza el mismo esqueleto de Yo nunca (config → juego → fin, rotación de
