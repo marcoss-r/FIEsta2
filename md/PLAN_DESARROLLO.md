@@ -456,12 +456,25 @@ inputs de nombres + validación). Se monta con:
 
 ```js
 montarConfigJugadores({
-  contenedorNombres,   // elemento donde van los inputs
-  stepper,             // elemento .stepper[data-stepper="…"]
+  contenedorNombres,   // elemento donde van los inputs (p. ej. .lista-scroll)
+  stepper,             // elemento .stepper del juego (ver markup exacto abajo)
   min, max, inicial,
-  alCambiar(nombres)   // callback
-});
+  alCambiar(nombres)   // se llama con el array de nombres cada vez que cambian
+}); // → { obtenerNombres(), fijarNombres(nombres) } — fijarNombres() restaura
+   //   una configuración guardada ("Continuar partida", "Usar la última
+   //   configuración" de El Impostor)
 validarNombres(nombres) // → { ok, mensaje }: ninguno vacío, sin duplicados
+```
+
+**Markup exacto que espera `stepper`** (cada juego lo construye así, con su
+propio `id`; el resto de clases y atributos son fijos):
+
+```html
+<div class="stepper" id="xx-stepper">
+  <button type="button" class="stepper-btn" data-accion="menos">−</button>
+  <span class="stepper-valor"></span>
+  <button type="button" class="stepper-btn" data-accion="mas">+</button>
+</div>
 ```
 
 Reglas comunes: al **subir** el número se añaden inputs vacíos, al **bajar** se
@@ -537,11 +550,21 @@ se puede ver mirando la pantalla en ángulo o inspeccionando).
 
 ```js
 iniciarHandoff({
-  nombres,              // orden de paso
-  contenidoDe(indice),  // devuelve el nodo/HTML secreto de esa persona
-  alTerminar()          // cuando todos han visto lo suyo
+  contenedor,            // elemento del juego donde vive el handoff (p. ej.
+                         // #im-handoff); la función lo rellena por completo
+  nombres,               // orden de paso
+  contenidoDe(indice),   // devuelve el NODO del DOM con el secreto de esa persona
+  alTerminar(),          // cuando todos han visto lo suyo
+  textoVer,              // opcional, por defecto "Ver" (im usa "Ver mi palabra")
+  textoOcultar,          // opcional, por defecto "Ocultar y pasar"
 });
 ```
+
+`contenedor` no estaba en el boceto original de esta sección: se cerró al
+implementar la Fase 2, porque `iniciarHandoff` necesita saber **dónde**
+construir su propia sub-vista `.vista` («pasa el móvil» / secreto visible), y
+es más simple que cada juego se lo pase que inventar una convención de ID
+implícita.
 
 ---
 
@@ -933,18 +956,35 @@ quedan decisiones abiertas.
 
 ### Fase 2 — Núcleo compartido de FIEsta 2
 Implementar §7 completo, con una pantalla de pruebas temporal si hace falta.
-- [ ] `util.js` ampliado (`enteroAleatorio`, `elegirAlAzar`, `elegirN`, `crearRepartidor`).
-- [ ] `persistencia.js` (`guardarJSON`/`cargarJSON`/`hayGuardado`/`borrarGuardado`, a prueba de incógnito).
-- [ ] `jugadores.js` (`montarConfigJugadores`, `validarNombres`).
-- [ ] `intensidad.js` (`NIVELES`, selector de chips, `filtrarPorNivel`, modo fiesta
+- [x] `util.js` ampliado (`enteroAleatorio`, `elegirAlAzar`, `elegirN`, `crearRepartidor`).
+- [x] `persistencia.js` (`guardarJSON`/`cargarJSON`/`hayGuardado`/`borrarGuardado`, a prueba de incógnito).
+- [x] `jugadores.js` (`montarConfigJugadores`, `validarNombres`).
+- [x] `intensidad.js` (`NIVELES`, selector de chips, `filtrarPorNivel`, modo fiesta
       persistente, `castigoAlAzar`, aviso de tono la primera vez).
-- [ ] `plantillas.js` (`rellenarPlantilla`, `tienePlantilla`).
-- [ ] `handoff.js` (con la protección de sacar el secreto del DOM).
-- [ ] `data/comun/castigos.js` (~40 castigos).
-- [ ] CSS común nuevo: chips de nivel, switch, `.vista`, `.anuncio`.
+- [x] `plantillas.js` (`rellenarPlantilla`, `tienePlantilla`, `otrosNecesarios`).
+- [x] `handoff.js` (con la protección de sacar el secreto del DOM).
+- [x] `data/comun/castigos.js` (40 castigos).
+- [x] CSS común nuevo: chips de nivel (`.chip-nivel`), fila «etiqueta +
+      interruptor» (`.fila-switch`) — `.switch`, `.vista` y `.anuncio` ya
+      existían desde la Fase 0.
 
-**✅ Aceptación:** el núcleo está probado desde la consola del navegador y
-documentado con comentarios; ningún juego lo duplicará después.
+**✅ Aceptación:** el núcleo está probado — con pruebas automatizadas via
+jsdom (montar/desmontar el stepper de jugadores conservando nombres al
+subir/bajar, chips de nivel con el mínimo-uno, modo fiesta persistente,
+`crearRepartidor` sin repetición y con aviso al agotarse, `rellenarPlantilla`
+sin colisión `{otro}`/`{otro2}`, y sobre todo el **handoff**: el nodo secreto
+no existe en el DOM ni antes de «Ver» ni después de «Ocultar y pasar» — y una
+integración completa cargando `index.html` real con los 9 `<script>` en
+orden) y documentado con comentarios; ningún juego lo duplicará después. No
+hizo falta una pantalla de pruebas temporal: todo es verificable llamando a
+las funciones (son globales, sin módulos ES).
+
+**Decisiones de implementación que cerraron un boceto abierto del §7:**
+`montarConfigJugadores` devuelve `{ obtenerNombres, fijarNombres }` (no
+especificado en el boceto original, necesario para "Continuar
+partida"/"Otra partida"/"Usar la última configuración"); `iniciarHandoff`
+añade el parámetro `contenedor` y los opcionales `textoVer`/`textoOcultar`
+(ver §7.3 y §7.6 arriba, ya actualizados).
 
 ### Fase 3 — Juego 1: **Yo nunca**
 Es el más simple de los seis y el que **valida el núcleo entero** (jugadores,
@@ -1087,7 +1127,7 @@ Válidos para los seis juegos; cada plan añadirá los suyos.
 
 - [x] **Fase 0** — Infraestructura y tema rojo
 - [x] **Fase 1** — Los seis planes de juego (`md/`)
-- [ ] **Fase 2** — Núcleo compartido
+- [x] **Fase 2** — Núcleo compartido
 - [ ] **Fase 3** — Yo nunca
 - [ ] **Fase 4** — Quién es más…
 - [ ] **Fase 5** — Verdad o Reto

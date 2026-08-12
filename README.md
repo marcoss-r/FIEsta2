@@ -9,12 +9,15 @@ incómodas · Dos mentiras y una verdad · El Impostor.
 
 ## Estado
 
-✅ **Fase 0 y Fase 1 completas.** El esqueleto de la app está en pie (tema rojo,
+✅ **Fases 0, 1 y 2 completas.** El esqueleto de la app está en pie (tema rojo,
 iconos, hub con las 5 tarjetas de juego originales y su ⓘ de información, aunque
-todavía no llevan a ningún sitio) y los seis planes de juego ya están escritos
-en `md/`. **«Yo nunca» se añadió después de cerrar la Fase 0**, así que su
-tarjeta en el hub se añade al empezar su propia fase de implementación (ver
-`md/PLAN_YO_NUNCA.md`). Lo siguiente es la **Fase 2** (núcleo compartido).
+todavía no llevan a ningún sitio), los seis planes de juego ya están escritos en
+`md/`, y el **núcleo compartido** (`js/nucleo/`: jugadores, niveles de
+intensidad, modo fiesta, plantillas de texto, persistencia y handoff) está
+implementado y probado. **«Yo nunca» se añadió después de cerrar la Fase 0**,
+así que su tarjeta en el hub se añade al empezar su propia fase de
+implementación (ver `md/PLAN_YO_NUNCA.md`). Lo siguiente es la **Fase 3** (el
+primer juego: Yo nunca).
 
 ## Por dónde empezar
 
@@ -34,9 +37,8 @@ cerradas:
 
 ## Cómo abrir el proyecto
 
-Basta con abrir `index.html` en el navegador. Cuando haya `data/*.js` (a partir
-de la Fase 2), si el navegador se queja al cargarlos, sirve la carpeta con un
-servidor local:
+Basta con abrir `index.html` en el navegador. Si el navegador se queja al
+cargar alguno de los `data/*.js`, sirve la carpeta con un servidor local:
 
 ```bash
 npx serve .

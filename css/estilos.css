@@ -425,6 +425,41 @@ button.secundario:hover {
 }
 
 /* ==========================================================
+   Chips de nivel de intensidad (núcleo, §7.4)
+   Fila de chips multi-selección (Suave/Picante/Extremo). El nivel activo se
+   marca con .activo; el JS impide desmarcar el último (mínimo uno elegido).
+   ========================================================== */
+.selector-niveles {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 26rem;
+}
+
+.chip-nivel {
+  flex: 1 1 auto;
+  padding: 0.55rem 0.9rem;
+  min-height: 40px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: var(--color-superficie);
+  color: var(--color-texto-tenue);
+  border: 1px solid transparent;
+}
+
+.chip-nivel:hover {
+  background: var(--color-fondo-alt);
+}
+
+.chip-nivel.activo {
+  background: var(--color-acento);
+  color: #fff;
+  border-color: var(--color-acento);
+}
+
+/* ==========================================================
    Interruptor estilo iOS ("modo fiesta", §7.4)
    Un checkbox real (accesible, oculto solo visualmente) + una pista
    deslizante que reacciona a su estado con `input:checked + .switch-pista`.
@@ -485,6 +520,17 @@ button.secundario:hover {
 .switch input:focus-visible + .switch-pista {
   outline: 2px solid var(--color-acento);
   outline-offset: 2px;
+}
+
+/* Fila reutilizable "etiqueta + interruptor": la usan los seis juegos para el
+   modo fiesta, y alguno (p. ej. Dos mentiras) para un interruptor propio. */
+.fila-switch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  max-width: 26rem;
 }
 
 /* Sub-vistas dentro de una pantalla (p. ej. las del handoff §7.6): cada vista

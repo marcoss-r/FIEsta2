@@ -112,11 +112,37 @@
          (ver md/PLAN_DESARROLLO.md §10). De momento las tarjetas de arriba no
          llevan a ningún sitio: cada juego conecta su botón en su main.js. -->
 
+    <!-- Aviso de tono (§7.4): overlay GLOBAL, fuera de cualquier .pantalla
+         para poder mostrarse encima de cualquier juego (si viviera dentro de
+         una .pantalla, heredaría su opacity/visibility cuando esa pantalla no
+         está activa). Lo dispara intensidad.js la primera vez que se activa
+         "Extremo" o el modo fiesta; se recuerda en localStorage. -->
+    <div class="info-overlay" id="aviso-tono" hidden>
+      <div class="info-panel">
+        <h2>Antes de seguir…</h2>
+        <p>
+          FIEsta 2 tiene contenido para mayores de edad. Bebed con cabeza:
+          nadie está obligado a nada, y cualquiera puede pasar de un reto o de
+          una pregunta cuando quiera.
+        </p>
+      </div>
+    </div>
+
   </div>
 
-  <!-- 1. Núcleo -->
+  <!-- 1. Núcleo, salvo arranque -->
   <script src="js/nucleo/pantallas.js"></script>
   <script src="js/nucleo/util.js"></script>
+  <script src="js/nucleo/persistencia.js"></script>
+  <script src="js/nucleo/jugadores.js"></script>
+  <script src="js/nucleo/intensidad.js"></script>
+  <script src="js/nucleo/plantillas.js"></script>
+  <script src="js/nucleo/handoff.js"></script>
+
+  <!-- 2. Datos -->
+  <script src="data/comun/castigos.js"></script>
+
+  <!-- 3. Lógica de cada juego: llega en la Fase 3 (Yo nunca) -->
 
   <!-- 4. Arranque: SIEMPRE el último (es quien muestra el hub) -->
   <script src="js/nucleo/arranque.js"></script>
