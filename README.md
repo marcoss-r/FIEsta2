@@ -4,15 +4,17 @@ Colección de juegos de fiesta por turnos para jugar **pasándose un solo móvil
 Hermana de [FIEsta](../DescriptIA) (misma arquitectura y enfoque), con juegos
 nuevos y estética roja.
 
-**Los cinco juegos:** Verdad o Reto · Quién es más… · Dos mentiras y una verdad ·
-El Impostor · Preguntas incómodas.
+**Los seis juegos:** Yo nunca · Quién es más… · Verdad o Reto · Preguntas
+incómodas · Dos mentiras y una verdad · El Impostor.
 
 ## Estado
 
 ✅ **Fase 0 y Fase 1 completas.** El esqueleto de la app está en pie (tema rojo,
-iconos, hub con las 5 tarjetas de juego y su ⓘ de información, aunque todavía no
-llevan a ningún sitio) y los cinco planes de juego ya están escritos en `md/`.
-Lo siguiente es la **Fase 2** (núcleo compartido).
+iconos, hub con las 5 tarjetas de juego originales y su ⓘ de información, aunque
+todavía no llevan a ningún sitio) y los seis planes de juego ya están escritos
+en `md/`. **«Yo nunca» se añadió después de cerrar la Fase 0**, así que su
+tarjeta en el hub se añade al empezar su propia fase de implementación (ver
+`md/PLAN_YO_NUNCA.md`). Lo siguiente es la **Fase 2** (núcleo compartido).
 
 ## Por dónde empezar
 
@@ -23,11 +25,12 @@ paleta, la arquitectura, las decisiones cerradas y las fases de desarrollo).
 Después, cada juego tiene su propio plan, autosuficiente y con las decisiones ya
 cerradas:
 
-- [`md/PLAN_VERDAD_O_RETO.md`](md/PLAN_VERDAD_O_RETO.md) (`vr`)
+- [`md/PLAN_YO_NUNCA.md`](md/PLAN_YO_NUNCA.md) (`yn`)
 - [`md/PLAN_QUIEN_ES_MAS.md`](md/PLAN_QUIEN_ES_MAS.md) (`qm`)
+- [`md/PLAN_VERDAD_O_RETO.md`](md/PLAN_VERDAD_O_RETO.md) (`vr`)
+- [`md/PLAN_PREGUNTAS_INCOMODAS.md`](md/PLAN_PREGUNTAS_INCOMODAS.md) (`pi`)
 - [`md/PLAN_DOS_MENTIRAS.md`](md/PLAN_DOS_MENTIRAS.md) (`dm`)
 - [`md/PLAN_EL_IMPOSTOR.md`](md/PLAN_EL_IMPOSTOR.md) (`im`)
-- [`md/PLAN_PREGUNTAS_INCOMODAS.md`](md/PLAN_PREGUNTAS_INCOMODAS.md) (`pi`)
 
 ## Cómo abrir el proyecto
 

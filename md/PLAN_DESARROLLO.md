@@ -17,7 +17,7 @@
 6. [Arquitectura de FIEsta 2](#6-arquitectura-de-fiesta-2)
 7. [Núcleo compartido (lo que NO tenía FIEsta 1)](#7-núcleo-compartido-lo-que-no-tenía-fiesta-1)
 8. [Decisiones globales ya tomadas](#8-decisiones-globales-ya-tomadas)
-9. [Los cinco juegos: fichas de diseño](#9-los-cinco-juegos-fichas-de-diseño)
+9. [Los seis juegos: fichas de diseño](#9-los-seis-juegos-fichas-de-diseño)
 10. [Fases globales de desarrollo](#10-fases-globales-de-desarrollo)
 11. [Plantilla obligatoria para los planes de cada juego](#11-plantilla-obligatoria-para-los-planes-de-cada-juego)
 12. [Casos borde y trampas comunes](#12-casos-borde-y-trampas-comunes)
@@ -33,15 +33,19 @@ para jugarse **pasándose un solo móvil en vertical**. Es la hermana mayor de
 misma arquitectura, misma forma de trabajar… pero **contenido nuevo, más adulto
 y verbal** (nada de mímica ni de equipos), y **estética roja** en lugar de azul.
 
-**Los cinco juegos de FIEsta 2:**
+**Los seis juegos de FIEsta 2:**
 
 | # | Juego | Prefijo | En una frase |
 |---|-------|---------|--------------|
-| 1 | **Verdad o Reto** | `vr` | El clásico: eliges verdad o reto y la app te lo sirve. |
+| 1 | **Yo nunca** | `yn` | El clásico de beber: se lee una frase y quien la haya hecho, baja un dedo (o bebe, en modo fiesta). |
 | 2 | **Quién es más…** | `qm` | Preguntas para señalar a alguien del grupo (no solo «quién es más probable que…»). |
-| 3 | **Dos mentiras y una verdad** | `dm` | La app te da el **tema**; tú cuentas tres cosas y el grupo adivina cuál es verdad. |
-| 4 | **El Impostor** | `im` | Todos ven una palabra menos el impostor, que solo recibe una **pista**. |
-| 5 | **Preguntas incómodas** | `pi` | Preguntas directas y afiladas, dirigidas a una persona concreta. |
+| 3 | **Verdad o Reto** | `vr` | El clásico: eliges verdad o reto y la app te lo sirve. |
+| 4 | **Preguntas incómodas** | `pi` | Preguntas directas y afiladas, dirigidas a una persona concreta. |
+| 5 | **Dos mentiras y una verdad** | `dm` | La app te da el **tema**; tú cuentas tres cosas y el grupo adivina cuál es verdad. |
+| 6 | **El Impostor** | `im` | Todos ven una palabra menos el impostor, que solo recibe una **pista**. |
+
+> El orden de esta tabla sigue el **orden de implementación** (§10), no el orden
+> alfabético ni el de complejidad estricta.
 
 **Principios que no se negocian** (heredados de FIEsta y validados en producción):
 
@@ -312,7 +316,7 @@ del hub: si cambias uno, cambia el otro.
 
 ```
 FIEsta2/
-├── index.html                  ← hub + todas las pantallas de los 5 juegos
+├── index.html                  ← hub + todas las pantallas de los 6 juegos
 ├── site.webmanifest
 ├── sw.js
 ├── README.md
@@ -332,25 +336,28 @@ FIEsta2/
 │   │   ├── plantillas.js
 │   │   ├── handoff.js
 │   │   └── arranque.js         ← SIEMPRE el último
-│   ├── verdadreto/main.js
+│   ├── yonunca/main.js
 │   ├── quienmas/main.js
+│   ├── verdadreto/main.js
+│   ├── incomodas/main.js
 │   ├── dosmentiras/main.js
-│   ├── impostor/main.js        (+ reparto.js si crece)
-│   └── incomodas/main.js
+│   └── impostor/main.js        (+ reparto.js si crece)
 ├── data/
 │   ├── comun/castigos.js       ← castigos del modo fiesta (tragos y prendas)
-│   ├── verdadreto/{verdades,retos}.json + .js + agregar.py
+│   ├── yonunca/frases.json + .js + agregar.py
 │   ├── quienmas/preguntas.json + .js + agregar.py
+│   ├── verdadreto/{verdades,retos}.json + .js + agregar.py
+│   ├── incomodas/preguntas.json + .js + agregar.py
 │   ├── dosmentiras/temas.json + .js + agregar.py
-│   ├── impostor/palabras.json + .js + agregar.py
-│   └── incomodas/preguntas.json + .js + agregar.py
+│   └── impostor/palabras.json + .js + agregar.py
 └── md/
     ├── PLAN_DESARROLLO.md      ← este documento
-    ├── PLAN_VERDAD_O_RETO.md
+    ├── PLAN_YO_NUNCA.md
     ├── PLAN_QUIEN_ES_MAS.md
+    ├── PLAN_VERDAD_O_RETO.md
+    ├── PLAN_PREGUNTAS_INCOMODAS.md
     ├── PLAN_DOS_MENTIRAS.md
-    ├── PLAN_EL_IMPOSTOR.md
-    └── PLAN_PREGUNTAS_INCOMODAS.md
+    └── PLAN_EL_IMPOSTOR.md
 ```
 
 ### 6.2 Orden de los `<script>` en `index.html`
@@ -369,11 +376,11 @@ FIEsta2/
 
 <!-- 2. Datos (antes que la lógica que los usa) -->
 <script src="data/comun/castigos.js"></script>
-<script src="data/verdadreto/verdades.js"></script>
+<script src="data/yonunca/frases.js"></script>
 <!-- … el resto de bancos … -->
 
 <!-- 3. Lógica de cada juego -->
-<script src="js/verdadreto/main.js"></script>
+<script src="js/yonunca/main.js"></script>
 <!-- … el resto de juegos … -->
 
 <!-- 4. Arranque: SIEMPRE el último (es quien muestra el hub) -->
@@ -398,9 +405,10 @@ Como todo es global, **cada juego prefija absolutamente todo** con sus dos letra
 | Clases CSS | `.xx-…` | `.vr-carta` |
 | Clave de `localStorage` | `"xx_partida"` | `"vr_partida"` |
 
-Prefijos asignados: **`vr`** Verdad o Reto · **`qm`** Quién es más… ·
-**`dm`** Dos mentiras y una verdad · **`im`** El Impostor · **`pi`** Preguntas
-incómodas. Lo del núcleo va **sin prefijo** (`mostrarPantalla`, `barajar`…).
+Prefijos asignados: **`yn`** Yo nunca · **`vr`** Verdad o Reto · **`qm`** Quién es
+más… · **`dm`** Dos mentiras y una verdad · **`im`** El Impostor · **`pi`**
+Preguntas incómodas. Lo del núcleo va **sin prefijo** (`mostrarPantalla`,
+`barajar`…).
 
 ---
 
@@ -409,7 +417,7 @@ incómodas. Lo del núcleo va **sin prefijo** (`mostrarPantalla`, `barajar`…).
 En FIEsta 1 cada juego reimplementaba la configuración de jugadores y la
 persistencia (5 copias casi idénticas). **En FIEsta 2 eso vive en el núcleo desde
 el principio.** Este núcleo se construye **entero en la Fase 2**, antes del primer
-juego, porque los cinco lo usan.
+juego, porque los seis lo usan.
 
 ### 7.1 `js/nucleo/util.js`
 
@@ -420,7 +428,7 @@ elegirAlAzar(lista)               // un elemento
 elegirN(lista, n)                 // n elementos distintos (barajar + slice)
 ```
 
-Más un **repartidor sin repetición** que es la pieza central de los 5 juegos:
+Más un **repartidor sin repetición** que es la pieza central de los 6 juegos:
 
 ```js
 // Va sirviendo elementos de un banco sin repetir hasta agotarlo; cuando se
@@ -462,7 +470,7 @@ permiten nombres vacíos ni repetidos (dos «Ana» hacen ilegible cualquier turn
 
 ### 7.4 `js/nucleo/intensidad.js` — niveles y modo fiesta
 
-**Los tres niveles son transversales a los cinco juegos:**
+**Los tres niveles son transversales a los seis juegos:**
 
 ```js
 const NIVELES = [
@@ -486,7 +494,7 @@ const NIVELES = [
   mostrar un overlay de aviso (una sola vez, recordado en `localStorage`):
   juego para mayores de edad, bebed con cabeza, cualquiera puede pasar de un reto.
 
-**API exacta** (nombres cerrados en la Fase 1: los cinco planes de juego llaman a
+**API exacta** (nombres cerrados en la Fase 1: los planes de juego llaman a
 estas funciones tal cual, así que la Fase 2 debe implementarlas con este nombre):
 
 ```js
@@ -515,9 +523,10 @@ tienePlantilla(texto)                         // true si el texto tiene algún h
 otrosNecesarios(texto)                        // 0, 1 o 2: cuántos {otro} distintos pide el texto
 ```
 
-`otrosNecesarios()` es lo que usan los cinco juegos para **descartar al filtrar el
-banco** los textos imposibles con pocos jugadores (regla: se descarta si
-`otrosNecesarios(texto) > nombres.length - 1`).
+`otrosNecesarios()` es lo que usan los juegos con plantillas para **descartar al
+filtrar el banco** los textos imposibles con pocos jugadores (regla: se descarta
+si `otrosNecesarios(texto) > nombres.length - 1`). **Yo nunca no usa
+plantillas**: su banco es autoconclusivo (§9.6).
 
 ### 7.6 `js/nucleo/handoff.js`
 
@@ -546,7 +555,7 @@ iniciarHandoff({
 | **Estética** | Rojo muy oscuro de fondo + rojo de acento (§5). Todo lo demás igual que FIEsta. |
 | **Metodología** | Por fases, **sin TODOs**: el agente implementa completo (§2.1). |
 | **Votación y puntos** | ❌ **La app no gestiona votaciones ni marcadores.** Los juegos se resuelven **hablando en voz alta**. La app sirve el contenido, ordena los turnos y guarda los secretos. Sin podio ni ganador. (Única excepción tolerada: El Impostor registra **a quién acusa el grupo** con un toque, para poder revelar si acertaron.) |
-| **Niveles de intensidad** | ✅ Suave / Picante / Extremo, transversal a los 5 juegos, multi-selección al configurar (§7.4). |
+| **Niveles de intensidad** | ✅ Suave / Picante / Extremo, transversal a los 6 juegos, multi-selección al configurar (§7.4). |
 | **Modo fiesta (tragos)** | ✅ Interruptor global recordado entre partidas; añade castigos a negativas y fallos (§7.4). |
 | **Volumen de contenido** | **Mínimo 400 entradas por juego.** Reparto orientativo: ~40 % suave, ~40 % picante, ~20 % extremo. El usuario colabora creativamente (§2.4). |
 | **Gestión del contenido** | Igual que DescriptIA: `data/<juego>/x.json` (fuente) + `x.js` generado (`const XX_BANCO = […]`) + `agregar.py` para dar de alta desde consola. Sin edición desde la app en v1. |
@@ -557,11 +566,15 @@ iniciarHandoff({
 
 ---
 
-## 9. Los cinco juegos: fichas de diseño
+## 9. Los seis juegos: fichas de diseño
 
 Cada ficha es la **materia prima del plan detallado** que se escribirá en la
 Fase 1. Contiene lo ya decidido; lo que ponga **(a decidir en su plan)** debe
 cerrarse al escribir ese plan, proponiendo una opción concreta al usuario.
+
+> El orden de las fichas de este capítulo es el histórico (el de cuando se
+> escribieron). El **orden de implementación real** es otro y vive en §10:
+> empieza por **Yo nunca** (§9.6) y **Quién es más…** (§9.2).
 
 ---
 
@@ -704,7 +717,7 @@ solo una **pista** (una categoría o descripción vaga). Por turnos, cada uno di
 conocen sin ser tan obvios como para delatarla; el impostor improvisa. Al final,
 el grupo acusa a alguien.
 
-Es **el juego más complejo de los cinco**: reparto secreto, handoff y anti-trampas.
+Es **el juego más complejo de los seis**: reparto secreto, handoff y anti-trampas.
 Se deja para el final.
 
 **Pantallas:** `im-config` → `im-reparto` → `im-ronda` → `im-acusacion` → `im-revelacion`
@@ -800,6 +813,64 @@ recibe se la lanza a quien la leyó).
 
 ---
 
+### 9.6 Yo nunca — `yn`
+
+**Idea:** el clásico de mesa para beber. La app lee una frase («Yo nunca…») y
+**quien la haya hecho de verdad, baja un dedo** (o, con el modo fiesta activo,
+bebe). La app **no lleva la cuenta de dedos ni de tragos**: es un juego de
+autogestión física, igual de cierto que el resto de FIEsta 2 en que no hay
+marcador ni ganador. Es el juego más simple de los seis y por eso **abre la
+implementación**: valida el núcleo entero con el mínimo de piezas en juego.
+
+**Pantallas:** `yn-config` → `yn-juego` → `yn-fin`
+
+**Flujo:**
+1. **`yn-config`**: jugadores (2–12) + niveles + modo fiesta.
+2. **`yn-juego`**: «Lee **NOMBRE**» + «**Yo nunca…**» + la frase en grande.
+   Debajo, una línea de instrucción que **cambia con el modo fiesta**:
+   - Sin modo fiesta: «Quien lo haya hecho, baja un dedo.»
+   - Con modo fiesta: «Quien lo haya hecho, bebe.»
+
+   Botón primario **«Siguiente»** (rota quién lee) y secundario **«Terminar»**.
+3. **«Terminar»** → `yn-fin` → hub.
+
+**Datos** (`data/yonunca/frases.js`): un solo banco, sin plantillas.
+
+```js
+const YN_FRASES = [
+  { texto: "he fingido estar dormido para no hablar con alguien", nivel: "suave" },
+  { texto: "he querido besar a alguien de este grupo", nivel: "picante" },
+];
+```
+
+El texto completa «**Yo nunca…**» (que pone la app, no el banco) y va siempre en
+**pretérito perfecto** («he mentido», «he fingido», «he llorado»).
+
+**Nada de plantillas `{otro}`:** las preguntas nunca señalan a una persona
+concreta por nombre. Cuando el picante necesita involucrar al grupo, se escribe
+en genérico: «he querido besar a alguien de este grupo», nunca «he querido besar
+a {otro}». Así se evita que la app obligue a nadie a destaparse delante de una
+persona señalada por su nombre; quien quiera confesar, confiesa él solo.
+
+**Volumen:** ≥ 400 frases. Reparto orientativo: ~40 % suave, ~40 % picante,
+~20 % extremo.
+
+**Diferencia con «Quién es más…» (tipo `nunca`)** (para que no se solapen los
+bancos): el tipo `nunca` de Quién es más pregunta **quién del grupo, en tercera
+persona, nunca ha hecho algo** y se resuelve señalando a otro; «Yo nunca»
+pregunta **por uno mismo, en primera persona**, y se resuelve confesando (o no).
+
+**Reglas y casos borde:**
+- Sin gestión de dedos en la app: la primera vez que se abre el juego (overlay
+  ⓘ del hub, ya presente desde la Fase 0), la descripción explica la regla de
+  los dedos para quien no conozca el juego de mesa.
+- Con modo fiesta, no hay `castigoAlAzar()`: la propia frase ya es el
+  disparador («bebe» es fijo, no aleatorio). `castigoAlAzar()` se reserva para
+  las negativas/fallos de los demás juegos.
+- Nada se repite dentro de una partida (repartidor del §7.1).
+
+---
+
 ## 10. Fases globales de desarrollo
 
 > Cada fase deja la app en un estado que el usuario puede abrir y probar. **No se
@@ -822,14 +893,23 @@ Poner en pie el esqueleto de la app, copiando de `../DescriptIA` lo indicado en 
 **✅ Aceptación:** se abre `index.html`, se ve el hub rojo con 5 tarjetas, las ⓘ
 abren su ventana, la consola está limpia y las tarjetas aún no llevan a ningún sitio.
 
-### Fase 1 — Los cinco planes de juego  ← **empieza por aquí si ya hay Fase 0**
+> ⚠️ **Pendiente, añadido después de cerrar esta fase:** «Yo nunca» (§9.6) se
+> decidió como sexto juego **después** de que la Fase 0 ya estuviera cerrada y
+> fusionada, así que el hub actual solo tiene 5 tarjetas e `INFO_JUEGOS` solo
+> lista 5 juegos. **Añadir la 6ª tarjeta («Yo nunca»), su entrada en
+> `INFO_JUEGOS` y el hueco en `sw.js`/`ARCHIVOS` es el primer paso de la Fase 3**
+> (se hace junto con ese juego, no antes, siguiendo la regla de §6.2: «no se
+> toca el núcleo para añadir un juego, salvo su entrada en `INFO_JUEGOS`»).
+
+### Fase 1 — Los seis planes de juego  ← **empieza por aquí si ya hay Fase 0**
 Escribir, en `md/`, un plan por juego siguiendo **la plantilla de §11**, partiendo
 de la ficha de diseño correspondiente de §9.
-- [x] `md/PLAN_VERDAD_O_RETO.md`
+- [x] `md/PLAN_YO_NUNCA.md`
 - [x] `md/PLAN_QUIEN_ES_MAS.md`
+- [x] `md/PLAN_VERDAD_O_RETO.md`
+- [x] `md/PLAN_PREGUNTAS_INCOMODAS.md`
 - [x] `md/PLAN_DOS_MENTIRAS.md`
 - [x] `md/PLAN_EL_IMPOSTOR.md`
-- [x] `md/PLAN_PREGUNTAS_INCOMODAS.md`
 
 En cada uno hay que **cerrar los «(a decidir en su plan)»** de su ficha: proponer
 una opción concreta y razonada, y dejar la decisión escrita en su tabla de
@@ -840,13 +920,14 @@ siempre la del banco de contenido (≥ 400).
 
 | Juego | Se decidió |
 |---|---|
+| **Yo nunca** | Sexto juego, añadido después de esta fase. Resolución por **dedos** (sin modo fiesta) o **bebiendo** (con modo fiesta), gestionada fuera de la app; sin plantillas `{otro}` (el picante que involucra al grupo se escribe en genérico: «alguien de este grupo»); la app no cuenta nada. |
 | **Verdad o Reto** | Carta con **volteo 3D**; **sí** hay modos «solo verdades» y «solo retos»; y **botón «Otra»** (máx. 2 por turno, para verdades y retos; el 2.º con castigo si el modo fiesta está activo). |
 | **Quién es más…** | **Sí** al filtro por tipo en la configuración; **no** a la cuenta atrás «3, 2, 1». |
 | **Dos mentiras** | Temporizador de 60 s **opcional y apagado por defecto**; el tema **se muestra a todo el grupo** (no es secreto). |
 | **El Impostor** | Los 2 impostores **no se conocen entre ellos**; y el juego **no guarda la partida en curso**, solo la configuración (`"im_config"`), porque reanudar filtraría información. |
 | **Preguntas incómodas** | **Sí** al botón «Devolver la pregunta», pero **solo con el modo fiesta** y como recurso escaso: **una por jugador y partida**, no encadenable y no disponible en las preguntas de tipo `grupo`. |
 
-**✅ Aceptación:** los 5 planes existen, son autosuficientes (otro agente sin
+**✅ Aceptación:** los 6 planes existen, son autosuficientes (otro agente sin
 contexto podría implementarlos leyendo solo ese plan + este documento) y no
 quedan decisiones abiertas.
 
@@ -865,24 +946,33 @@ Implementar §7 completo, con una pantalla de pruebas temporal si hace falta.
 **✅ Aceptación:** el núcleo está probado desde la consola del navegador y
 documentado con comentarios; ningún juego lo duplicará después.
 
-### Fase 3 — Juego 1: **Verdad o Reto**
-Es el más simple y el que **valida el núcleo entero** (jugadores, niveles, modo
-fiesta, plantillas, repartidor, persistencia). Seguir `md/PLAN_VERDAD_O_RETO.md`.
+### Fase 3 — Juego 1: **Yo nunca**
+Es el más simple de los seis y el que **valida el núcleo entero** (jugadores,
+niveles, modo fiesta, repartidor, persistencia) con el mínimo de piezas: no usa
+plantillas ni handoff. Incluye añadir su tarjeta al hub (ver aviso de la Fase 0).
+Seguir `md/PLAN_YO_NUNCA.md`.
 
-### Fase 4 — Juego 2: **Preguntas incómodas**
+### Fase 4 — Juego 2: **Quién es más…**
+Reutiliza el mismo esqueleto de Yo nunca (config → juego → fin, rotación de
+quien lee) y añade los cuatro tipos de pregunta, el encabezado dinámico y las
+plantillas. Seguir su plan.
+
+### Fase 5 — Juego 3: **Verdad o Reto**
+Añade el volteo 3D, dos bancos en vez de uno, y el botón «Otra». Seguir
+`md/PLAN_VERDAD_O_RETO.md`.
+
+### Fase 6 — Juego 4: **Preguntas incómodas**
 Reutiliza casi todo lo de Verdad o Reto; añade los tres formatos y la rotación de
 destinatario. Seguir su plan.
 
-### Fase 5 — Juego 3: **Quién es más…**
-Añade los cuatro tipos de pregunta y el encabezado dinámico. Seguir su plan.
-
-### Fase 6 — Juego 4: **Dos mentiras y una verdad**
+### Fase 7 — Juego 5: **Dos mentiras y una verdad**
 Añade el flujo por turnos con tema, «Otro tema» y (si se decide) temporizador.
 
-### Fase 7 — Juego 5: **El Impostor**
-El más complejo: reparto secreto, handoff, rondas, acusación y revelación.
+### Fase 8 — Juego 6: **El Impostor**
+El más complejo: reparto secreto, handoff, rondas, acusación y revelación. Va el
+último a propósito.
 
-### Fase 8 — Pulido global y publicación
+### Fase 9 — Pulido global y publicación
 - [ ] Repasar el tema rojo entero: contrastes, estados de botón, transiciones.
 - [ ] Comprobar que ninguna pantalla hace scroll salvo las que deben.
 - [ ] Revisar en móvil pequeño (360 px) y con textos largos (las preguntas se van
@@ -955,7 +1045,7 @@ implementación no tenga que inventar nomenclatura.
 
 ## 12. Casos borde y trampas comunes
 
-Válidos para los cinco juegos; cada plan añadirá los suyos.
+Válidos para los seis juegos; cada plan añadirá los suyos.
 
 **De contenido**
 - **Banco agotado** a mitad de partida (sobre todo con un solo nivel activo):
@@ -996,14 +1086,15 @@ Válidos para los cinco juegos; cada plan añadirá los suyos.
 ## 13. Checklist global
 
 - [x] **Fase 0** — Infraestructura y tema rojo
-- [x] **Fase 1** — Los cinco planes de juego (`md/`)
+- [x] **Fase 1** — Los seis planes de juego (`md/`)
 - [ ] **Fase 2** — Núcleo compartido
-- [ ] **Fase 3** — Verdad o Reto
-- [ ] **Fase 4** — Preguntas incómodas
-- [ ] **Fase 5** — Quién es más…
-- [ ] **Fase 6** — Dos mentiras y una verdad
-- [ ] **Fase 7** — El Impostor
-- [ ] **Fase 8** — Pulido global y publicación
+- [ ] **Fase 3** — Yo nunca
+- [ ] **Fase 4** — Quién es más…
+- [ ] **Fase 5** — Verdad o Reto
+- [ ] **Fase 6** — Preguntas incómodas
+- [ ] **Fase 7** — Dos mentiras y una verdad
+- [ ] **Fase 8** — El Impostor
+- [ ] **Fase 9** — Pulido global y publicación
 
 ---
 
