@@ -533,6 +533,20 @@ button.secundario:hover {
   max-width: 26rem;
 }
 
+/* Sin min-width:0 un flex item no se encoge por debajo de su contenido: con
+   una etiqueta larga, en vez de envolver en varias líneas empuja el
+   interruptor fuera del ancho visible (y #app tiene overflow:hidden, así que
+   se corta en vez de hacer scroll). .switch, en cambio, no debe encogerse:
+   perdería su forma de píldora. */
+.fila-switch > span {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.fila-switch > div {
+  flex-shrink: 0;
+}
+
 /* Sub-vistas dentro de una pantalla (p. ej. las del handoff §7.6): cada vista
    apila su contenido centrado, igual que la pantalla entera. */
 .vista {
