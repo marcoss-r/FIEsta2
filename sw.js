@@ -2,7 +2,7 @@
 // pueda instalar y funcione sin conexión. Para publicar una actualización,
 // sube el número de versión (CACHE) y se refrescará en el siguiente arranque.
 // CACHE y APP_VERSION (js/nucleo/arranque.js) van unificados.
-const CACHE = "fiesta2-v1.2.0";
+const CACHE = "fiesta2-v1.2.1";
 
 const ARCHIVOS = [
   "./",
@@ -27,9 +27,16 @@ const ARCHIVOS = [
 ];
 
 // Al instalar: guardar todos los archivos en caché.
+// `cache: "reload"` obliga a pedirlos a la RED, saltándose la caché HTTP del
+// navegador. Sin esto, subir CACHE no basta: el service worker nuevo puede
+// volver a guardar copias viejas que el navegador aún tenía cacheadas por su
+// max-age, y la versión nueva sigue sin verse (§2.6).
 self.addEventListener("install", (evento) => {
   evento.waitUntil(
-    caches.open(CACHE).then((cache) => cache.addAll(ARCHIVOS)).then(() => self.skipWaiting())
+    caches
+      .open(CACHE)
+      .then((cache) => cache.addAll(ARCHIVOS.map((url) => new Request(url, { cache: "reload" }))))
+      .then(() => self.skipWaiting())
   );
 });
 

@@ -2,7 +2,7 @@
 // Debe cargarse el ÚLTIMO: al terminar muestra el hub de juegos.
 
 // Versión de la app. Al subirla, sube también CACHE en sw.js (otro contexto, no ve esto).
-const APP_VERSION = "1.2.0";
+const APP_VERSION = "1.2.1";
 
 // Textos de la ventana de información de cada juego (la ⓘ de las tarjetas del hub).
 const INFO_JUEGOS = {
@@ -89,6 +89,20 @@ document.addEventListener("DOMContentLoaded", () => {
 // Registra el service worker (permite instalarla como app y jugar sin conexión).
 // Solo funciona sobre http(s), no al abrir el archivo directamente (file://).
 if ("serviceWorker" in navigator) {
+  // Al publicar una versión nueva, el service worker nuevo se instala y toma
+  // el control (skipWaiting + clients.claim en sw.js), pero ESTA página ya se
+  // cargó con los archivos viejos: sin recargar, se sigue viendo la versión
+  // anterior (en iOS, con la app instalada, puede quedarse así indefinidamente).
+  // Al cambiar de controlador, se recarga una vez para estrenar la versión.
+  let recargandoPorActualizacion = false;
+  const habiaControlador = !!navigator.serviceWorker.controller;
+  navigator.serviceWorker.addEventListener("controllerchange", () => {
+    // En la primera instalación no había nada que refrescar: no se recarga.
+    if (!habiaControlador || recargandoPorActualizacion) return;
+    recargandoPorActualizacion = true;
+    window.location.reload();
+  });
+
   window.addEventListener("load", () => {
     navigator.serviceWorker.register("sw.js").catch(() => {
       /* si falla, la app sigue funcionando igual, solo sin offline */
