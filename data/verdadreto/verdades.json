@@ -1,0 +1,802 @@
+[
+  {
+    "texto": "¿Cuál es la mentira más grande que has contado?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo más raro que has buscado en internet?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu placer culpable que jamás admitirías en público?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué canción te sabes entera y te da vergüenza reconocerlo?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál ha sido tu momento más ridículo delante de gente?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué le pediste a tus padres y nunca te compraron?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuánto tiempo llevas sin cambiar las sábanas? Sé honesto.",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué manía tuya sabes que a {otro} le saca de quicio?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué opinas de verdad de {otro}?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál ha sido tu peor cita y por qué?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Alguna vez te has hecho el dormido para no hablar con alguien?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿A quién de esta sala le pedirías ayuda si tuvieras que esconder un cadáver?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué mensaje has borrado antes de enviarlo y todavía te acuerdas?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Has fingido que te gustaba un regalo? ¿Cuál?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "Si tuvieras que salir de fiesta con {otro} o con tu jefe, ¿quién y por qué?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la excusa más falsa que has puesto para no ir a un plan?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es el secreto que no has contado nunca y que hoy sí puedes contar?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué es lo peor que has hecho y de lo que nadie de aquí se ha enterado?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Has traicionado la confianza de alguien de esta sala? Cuéntalo.",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuánto dinero haría falta para que dejaras de hablarte con {otro} un año?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es el trabajo más raro que te gustaría probar durante un día?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué serie has visto entera en menos de una semana?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es la comida que más veces pides para llevar?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué app tienes en el móvil que casi nunca usas pero no borras?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál fue tu primer trabajo y cuánto duraste en él?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué cosa de tu casa comprarías otra vez sin dudarlo?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es la palabra que más repites sin darte cuenta?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué canción pondrías si tuvieras que salir a un escenario ahora mismo?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál ha sido el regalo más raro que te han hecho?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué asignatura del colegio te habría gustado que te enseñaran mejor?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu superstición más tonta?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo primero que haces al despertarte?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es la mentira piadosa que más repites?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué app del móvil borrarías si solo pudieras quedarte con cinco?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu recuerdo más vergonzoso de la infancia?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué serie o película has fingido haber visto sin haberla visto?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es el cumplido que más te ha marcado?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué objeto de tu habitación tiene más años?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es la excusa que más usas para no hacer ejercicio?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo más caro que has comprado por impulso?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu palabra favorita en otro idioma?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué animal te representaría mejor y por qué?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu horario ideal para dormir, aunque nunca lo cumplas?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo que más te cuesta tirar aunque no sirva para nada?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál fue la última cosa que buscaste en el móvil antes de esta partida?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué app revisas nada más despertarte?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu comida favorita de cuando eras pequeño que sigues comiendo?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo más lejos que has viajado tú solo?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es la manía de {otro} que más gracia te hace?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué videojuego o juego de mesa te sabes jugar mejor de lo que aparentas?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu forma de procrastinar favorita?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué comida no soportabas de pequeño y ahora te encanta?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es el chiste malo que más repites?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué prenda de ropa llevas puesta desde hace más tiempo del que deberías admitir?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es la serie que más veces has vuelto a ver?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo más raro que tienes guardado «por si acaso»?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu rutina de fin de semana ideal?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué te haría reír aunque no tuviera ninguna gracia real?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu peor hábito a la hora de conducir o de ser copiloto?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué has fingido que se te daba bien sin ser cierto?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es la app que más tiempo te roba al día?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué canción te pone de buen humor sin fallar nunca?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu excusa favorita para llegar tarde?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué comida combinas de una forma que a los demás les parece rara?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es el mayor lujo que te permites de vez en cuando?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo que más echas de menos de cuando eras pequeño?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu manía más rara a la hora de dormir?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué famoso te gustaría tener como mejor amigo?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es la última app que te descargaste y para qué era?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo más random que sabes hacer y nadie te lo pediría?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu peor recuerdo con un profesor?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué frase dice siempre alguien de tu familia que ya forma parte de tu vocabulario?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu mayor manía con la comida?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué serie empezarías a ver otra vez desde el primer capítulo ahora mismo?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu peor recuerdo en un examen?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué cosa haces siempre igual aunque sepas que hay una forma más rápida?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es la última vez que te reíste tanto que te dolió la barriga?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo más tonto por lo que te has puesto a discutir con alguien?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu comida basura favorita sin que te dé vergüenza decirlo?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo más raro que has hecho estando solo en casa?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu mayor manía al ordenar tu cuarto o tu casa?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué app usas para procrastinar cuando deberías estar durmiendo?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu recuerdo favorito de un cumpleaños?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo más caro que te han regalado?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu peor experiencia comprando ropa?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué palabra usas mal desde hace años y nadie te ha corregido?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu mayor manía cuando viajas?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo más tarde que has llegado a un sitio importante?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu peor recuerdo en una piscina o playa?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo más raro que has comido por probar?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu mayor manía con el móvil?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo que más te sorprendió al mudarte de casa por primera vez?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es la razón real por la que terminó tu última relación?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿A quién de esta sala seguirías si te mudaras de ciudad mañana?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es el cotilleo que sabes y nunca has contado?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué has hecho por celos que preferirías que nadie supiera?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la cosa más rara que has hecho por gustarle a alguien?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿A quién le has copiado un look o una forma de vestir sin decírselo?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es el mensaje que más veces has escrito y borrado antes de enviarlo?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué le dirías a tu yo de hace cinco años si pudieras?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es tu red flag más grande en una relación?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿A quién de esta sala le pedirías consejo sobre tu vida amorosa?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál ha sido tu cita más incómoda?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué has fingido sentir para no herir a alguien?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es el motivo más tonto por el que has cortado con alguien?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿A quién seguirías queriendo como amigo si tu pareja se lo prohibiera?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es tu manía más rara en una relación?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué has buscado sobre {otro} en redes sociales?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la persona de esta sala con la que menos discutirías nunca?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué mentira le has contado a tu familia sobre tu vida amorosa?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es tu mayor inseguridad que casi nadie conoce?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿A quién le guardas rencor sin habérselo dicho todavía?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es el cumplido que más deseas escuchar y casi nunca te dicen?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué has hecho para dar celos a alguien a propósito?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es tu mayor miedo dentro de una relación?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿A quién de tu vida le debes una disculpa que no le has dado?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la última vez que dijiste una mentira grande y por qué?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo que más valoras en {otro} y nunca se lo has dicho?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es tu mayor arrepentimiento en el amor?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿A quién le has dado celos sin quererlo?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es el secreto de familia que menos te gusta contar?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué has hecho por quedar bien que en realidad no sentías?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es tu peor manía cuando te enfadas con alguien?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿A quién idolatrabas de pequeño y ya no admiras igual?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la conversación pendiente que llevas más tiempo evitando?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo que más te cuesta perdonar?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es tu mayor inseguridad física?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿A quién le tienes más envidia sana?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es tu peor recuerdo con tu familia política?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué has hecho estando enfadado de lo que te arrepientes?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la etiqueta que más odias que te pongan?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿A quién de esta sala confiarías un secreto muy gordo?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es tu peor defecto según tu expareja?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué has fingido que no te dolía cuando en realidad sí?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es el consejo que te dieron y no seguiste, y ahora te arrepientes?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿A quién le has mentido para no quedar con él o ella?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es tu manía más tóxica en una discusión?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué has hecho para llamar la atención de alguien que te gustaba?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es tu mayor miedo sobre cómo te ven los demás?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿A quién le has dicho «te quiero» sin estar del todo seguro?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la última vez que sentiste celos de verdad?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo que menos te gusta de cómo eres en una relación?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es tu peor experiencia con una expareja?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿A quién le has ocultado algo importante por miedo a su reacción?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es tu mayor inseguridad con tu familia?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué has hecho por no sentirte solo que ahora te avergüenza?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es tu peor manía cuando algo no sale como esperabas?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿A quién de esta sala le has juzgado sin conocerlo bien al principio?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es el secreto que llevas guardando más tiempo?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué has hecho por miedo al qué dirán?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es tu peor manía cuando te sientes ignorado?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿A quién le has mentido sobre tus sentimientos?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es tu mayor inseguridad en el trabajo o los estudios?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué has fingido que no te importaba y en realidad te dolió?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la última vez que lloraste a solas y por qué?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿A quién le has copiado una idea sin darle crédito?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es tu peor manía comparándote con los demás?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué has hecho por no decepcionar a alguien aunque no querías?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es tu mayor miedo respecto al futuro?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿A quién le tienes más confianza en esta sala para contarle algo serio?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la última mentira que le contaste a tu pareja o a un amigo cercano?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo que más te gustaría cambiar de ti mismo?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es tu peor recuerdo relacionado con el dinero y una relación?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿A quién le perdonarías cualquier cosa sin pensarlo dos veces?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es el secreto más grande que guardas de tu familia?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿A quién de esta sala traicionarías si tu vida dependiera de ello?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es la mentira más grande que le has contado a tu pareja?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué es lo peor que has pensado de alguien de esta sala y nunca se lo has dicho?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es tu mayor remordimiento en la vida?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿A quién dejarías de hablar para siempre por dinero, y por cuánto?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es el secreto de {otro} que conoces y nunca has contado?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué es lo peor que le has hecho a alguien que te quería?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es la decisión que más lamentas de los últimos cinco años?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿A quién de tu vida no has perdonado del todo, aunque digas que sí?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es el secreto que más miedo te da que se sepa algún día?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué has hecho de lo que nadie en esta sala se ha enterado nunca?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es la mayor mentira que sigues manteniendo a día de hoy?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿A quién de esta sala le tienes más envidia y por qué?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es tu mayor arrepentimiento respecto a un familiar?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué es lo más cruel que le has dicho a alguien en un momento de rabia?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es la traición más grande que has sufrido y de quién?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿A quién le has fallado de una forma que todavía te pesa?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es el secreto de tu familia que más te cuesta contar?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué es lo peor que has hecho por dinero?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es la última vez que deseaste que algo malo le pasara a alguien?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿A quién de esta sala salvarías primero si solo pudieras salvar a una persona?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es tu mayor miedo sobre lo que la gente piensa de ti en realidad?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué es lo más grave que has ocultado a tu pareja o a tu familia?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es la persona a la que más daño le has hecho en tu vida?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿A quién dejarías atrás sin dudarlo si tuvieras que elegir?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es el secreto que compartes con una sola persona en el mundo?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué es lo peor que has hecho estando borracho o fuera de control?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es tu mayor remordimiento con un amigo que ya no está en tu vida?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿A quién de esta sala no invitarías a tu boda o a un evento importante tuyo?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es la verdad sobre ti que menos gente conoce?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué es lo más injusto que le has hecho a alguien sin que se diera cuenta?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es tu mayor secreto relacionado con dinero?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿A quién le guardas rencor de verdad, aunque digas que ya lo superaste?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es la peor mentira que le has contado a alguien de esta sala?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué es lo que más te arrepientes de no haber dicho a tiempo?",
+    "nivel": "extremo"
+  }
+]

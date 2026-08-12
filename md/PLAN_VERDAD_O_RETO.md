@@ -466,9 +466,13 @@ mirar la carta más larga del banco en horizontal y en vertical.
 - [x] **Fase 1** — Pantallas y configuración
 - [x] **Fase 2** — Motor de turnos y cartas (banco provisional de 20
       verdades + 17 retos, la muestra de §9 de este plan)
-- [ ] **Fase 3** — Banco de contenido (≥ 200 verdades + ≥ 200 retos):
-      pendiente, igual que en los otros juegos, a cuatro manos con el
-      usuario (§2.4)
+- [ ] **Fase 3** — Banco de contenido (≥ 200 verdades + ≥ 200 retos): 🚧 en
+      curso. Generadas 200 verdades y 200 retos (80 suave / 80 picante / 40
+      extremo en cada banco), sin duplicados exactos, con `verdades.json` +
+      `retos.json` (fuente) y `agregar.py` (da de alta en cualquiera de los
+      dos bancos). Probado con una partida de 120 turnos alternando verdad/
+      reto sin errores de consola. Pendiente de que el usuario lo revise,
+      recorte y afine (§2.4) antes de dar la fase por cerrada
 - [x] **Fase 4** — Modo fiesta, botón «Otra» y modos de juego
 - [x] **Fase 5** — Persistencia, volteo 3D y pulido (falta la prueba en
       dispositivo real, que hace el usuario)

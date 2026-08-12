@@ -23,8 +23,9 @@ principio a fin, cada uno con su banco de contenido **provisional**
   provisional de 32 preguntas (`data/quienmas/preguntas.js`).
 - **«Verdad o Reto»** (🚧 Fase 5 en curso) — chips de nivel y de modo (mixto /
   solo verdades / solo retos), carta volteable en 3D, botón «Otra» (2 cambios
-  por turno, el segundo castiga con modo fiesta), «Paso» con castigo, banco
-  provisional de 20 verdades + 17 retos (`data/verdadreto/`).
+  por turno, el segundo castiga con modo fiesta), «Paso» con castigo, banco de
+  200 verdades + 200 retos (`data/verdadreto/verdades.json` + `retos.json` +
+  `.js` generados + `agregar.py`), pendiente de que el usuario lo revise.
 
 El resto de tarjetas del hub (Preguntas incómodas, Dos mentiras y una verdad,
 El Impostor) aún no llevan a ningún sitio: se implementan en las fases 6-8.
