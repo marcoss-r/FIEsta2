@@ -185,6 +185,7 @@ con su encabezado):
 | | cuerpo de la pregunta | `qm-pregunta` |
 | | línea de castigo (`.anuncio`, `hidden`) | `qm-castigo` |
 | | progreso | `qm-progreso` |
+| | aviso de banco agotado (`.anuncio`, `hidden`) | `qm-anuncio` |
 | | botones | `qm-btn-siguiente` · `qm-btn-terminar` |
 | `qm-fin` | resumen | `qm-resumen` |
 | | botones | `qm-btn-otra-partida` · `qm-btn-hub` |
@@ -372,12 +373,17 @@ y continuando.
 
 ## 8. Checklist
 
-- [ ] **Fase 1** — Pantallas, configuración y filtro por tipo
-- [ ] **Fase 2** — Motor de preguntas y encabezados
-- [ ] **Fase 3** — Banco de contenido (≥ 400, ≥ 60 por tipo)
-- [ ] **Fase 4** — Modo fiesta y pulido
-- [ ] `APP_VERSION`, `CACHE` y `ARCHIVOS` actualizados
-- [ ] `<script>` de datos y lógica añadidos a `index.html`
+- [x] **Fase 1** — Pantallas, configuración y filtro por tipo
+- [x] **Fase 2** — Motor de preguntas y encabezados (banco provisional de 32,
+      la muestra de §9 de este plan)
+- [ ] **Fase 3** — Banco de contenido (≥ 400, ≥ 60 por tipo): pendiente,
+      igual que en «Yo nunca», se hace a cuatro manos con el usuario (§2.4)
+- [x] **Fase 4** — Modo fiesta y pulido (adelantada junto con las Fases 1-2:
+      castigo por pregunta, guardado/reanudación, `clamp()`, `APP_VERSION`/
+      `CACHE`/`ARCHIVOS` al día; falta la prueba en dispositivo real, que
+      hace el usuario)
+- [x] `APP_VERSION`, `CACHE` y `ARCHIVOS` actualizados
+- [x] `<script>` de datos y lógica añadidos a `index.html`
 
 ---
 

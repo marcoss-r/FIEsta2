@@ -1004,6 +1004,17 @@ Reutiliza el mismo esqueleto de Yo nunca (config → juego → fin, rotación de
 quien lee) y añade los cuatro tipos de pregunta, el encabezado dinámico y las
 plantillas. Seguir su plan.
 
+> 🚧 **En curso.** Ya están sus Fases 1, 2 y 4 (tarjeta del hub ya existía
+> desde la Fase 0, pantallas, configuración con chips de nivel y de tipo,
+> motor de preguntas con `{otro}` resuelto excluyendo al lector, castigo por
+> pregunta con modo fiesta, guardado/reanudación), probado de principio a fin
+> con jsdom real sobre `index.html` (rotación de lector, los cuatro
+> encabezados, aviso de banco agotado con un filtro estrecho, error de
+> combinación vacía) sin errores de consola. Banco provisional: las ~32
+> preguntas de muestra de `md/PLAN_QUIEN_ES_MAS.md` §9. **Falta su Fase 3**:
+> el banco definitivo de ≥ 400 preguntas, a cuatro manos con el usuario
+> (§2.4). `APP_VERSION`/`CACHE` = 1.4.0.
+
 ### Fase 5 — Juego 3: **Verdad o Reto**
 Añade el volteo 3D, dos bancos en vez de uno, y el botón «Otra». Seguir
 `md/PLAN_VERDAD_O_RETO.md`.

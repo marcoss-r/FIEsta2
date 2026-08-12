@@ -603,3 +603,62 @@ button.secundario:hover {
   font-weight: 600;
   color: var(--color-acento-2);
 }
+
+/* ==========================================================
+   Quién es más… (qm) — ver md/PLAN_QUIEN_ES_MAS.md §4.3
+   ========================================================== */
+
+/* Chips de tipo de pregunta: misma pinta que .chip-nivel del núcleo (§7.4),
+   pero con su propio namespace porque el filtro de tipo es propio de este
+   juego, no del núcleo. */
+.qm-chips {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 26rem;
+}
+
+.qm-chip {
+  flex: 1 1 auto;
+  padding: 0.55rem 0.9rem;
+  min-height: 40px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: var(--color-superficie);
+  color: var(--color-texto-tenue);
+  border: 1px solid transparent;
+}
+
+.qm-chip:hover {
+  background: var(--color-fondo-alt);
+}
+
+.qm-chip.activo {
+  background: var(--color-acento);
+  color: #fff;
+  border-color: var(--color-acento);
+}
+
+/* Encabezado del tipo (p. ej. "¿Quién es más probable que…"): tenue y de
+   tamaño medio, para que la pregunta en sí sea lo que más destaque. */
+.qm-encabezado {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-texto-tenue);
+}
+
+/* Cuerpo de la pregunta: lo más grande de la pantalla de juego, igual
+   tratamiento que .yn-frase (clamp() para que 3-4 líneas no obliguen a hacer
+   scroll en móviles pequeños). */
+.qm-pregunta {
+  margin: 0;
+  max-width: 30ch;
+  font-size: clamp(1.3rem, 5.5vw, 1.8rem);
+  font-weight: 700;
+  line-height: 1.35;
+  overflow-wrap: break-word;
+  color: var(--color-texto);
+}
