@@ -1,0 +1,434 @@
+# Plan de desarrollo — FIEsta 2 · «Quién es más…» 🍒
+
+> Documento pensado para que otro agente **sin contexto** pueda implementar el
+> juego leyendo solo esto y [`md/PLAN_DESARROLLO.md`](PLAN_DESARROLLO.md).
+
+---
+
+## 1. Contexto mínimo
+
+**FIEsta 2** es una web app (PWA) de juegos de fiesta por turnos que se juega
+**pasándose un solo móvil en vertical**. Todo es **HTML + CSS + JavaScript
+vanilla**: sin frameworks, sin npm, sin build step, sin CDNs. Es una **SPA de una
+sola página**: `index.html` contiene todas las pantallas como
+`<section class="pantalla" data-pantalla="…">` y solo la que tiene `.activa` se
+ve; se navega con `mostrarPantalla(nombre)`.
+
+Todos los `.js` se cargan con `<script>` desde `index.html` y **viven en el
+ámbito global**, así que **cada juego prefija absolutamente todo** con sus dos
+letras. Las de este juego son **`qm`**.
+
+El **núcleo compartido** (`js/nucleo/`) trae hecho lo que este juego no debe
+reimplementar: configuración de jugadores, niveles, modo fiesta, plantillas,
+persistencia y utilidades de azar (**§7 del plan global**, construido en la Fase 2
+del proyecto).
+
+Reglas de trabajo: **español** en interfaz, código y comentarios; **sin
+`// TODO`**; **una fase cada vez**; y **el usuario prueba la app él mismo**.
+
+---
+
+## 2. Qué es este juego
+
+El juego más rápido y ruidoso de los cinco. La app lanza una pregunta sobre el
+grupo, alguien la lee en voz alta y, **a la de tres, todos señalan a la vez** a
+quien crean. Se comenta a gritos durante veinte segundos, se pulsa «Siguiente» y
+va la próxima.
+
+La gracia está en que **no se limita a «¿quién es más probable que…?»**: el banco
+mezcla **cuatro formatos** distintos, y el encabezado lo pone la app según el
+tipo de cada pregunta.
+
+| `tipo` | Encabezado que pone la app | Ejemplo completo |
+|---|---|---|
+| `probable` | ¿Quién es más probable que… | «…acabe durmiendo en el sofá esta noche?» |
+| `adjetivo` | ¿Quién es más… | «…dramático cuando se pone malo?» |
+| `primero` | ¿Quién sería el primero en… | «…perderse en una ciudad nueva?» |
+| `nunca` | ¿Quién nunca… | «…ha ido a una fiesta sin saber de quién era?» |
+
+La app **no cuenta votos ni lleva marcador**: solo sirve las preguntas y rota
+quién lee. Todo lo demás se resuelve señalando y gritando.
+
+---
+
+## 3. Decisiones cerradas (no volver a preguntar)
+
+| Tema | Decisión |
+|---|---|
+| **Prefijo** | `qm` en estado, funciones, constantes, pantallas, IDs, clases y `localStorage`. |
+| **Nº de jugadores** | **2–12**. Por defecto 5 (es un juego que gana con grupo grande). |
+| **Pantallas** | `qm-config` → `qm-juego` → `qm-fin`. |
+| **Quién lee** | Rota **en orden**, una pregunta por jugador. Los jugadores sirven para eso y para rellenar `{otro}`. |
+| **Filtro por tipo** | ✅ **Sí.** En `qm-config` hay cuatro chips (uno por tipo), multi-selección, **los cuatro activos por defecto**, **mínimo uno**. |
+| **Cuenta atrás «3, 2, 1… ¡señalad!»** | ❌ **No se implementa.** La pregunta aparece directamente: el ritmo lo marca quien lee, y una animación obligatoria entre pregunta y pregunta se hace pesada a las veinte rondas. |
+| **Niveles de intensidad** | Los tres del núcleo, multi-selección, por defecto suave + picante. Se combinan con el filtro de tipo (**los dos filtros a la vez**). |
+| **Modo fiesta** | Interruptor global del núcleo. Con él activo, bajo la pregunta aparece una línea con un castigo concreto para **el más señalado** (`castigoAlAzar()`). |
+| **Datos** | Un solo banco `QM_PREGUNTAS` en `data/quienmas/preguntas.js`. El **encabezado no va en los datos**: lo pone la app según el `tipo` (si no, se repetiría 400 veces). |
+| **Volumen** | **≥ 400 preguntas**, con los cuatro tipos representados (**mínimo 60 de cada**). Reparto orientativo: ~40 % suave, ~40 % picante, ~20 % extremo. |
+| **Qué hace la app** | Servir preguntas sin repetir, poner el encabezado, rotar al lector, resolver `{otro}` y guardar la partida. |
+| **Qué NO hace la app** | ❌ **No cuenta votos, no hay puntos, no hay podio, no hay ganador.** Se señala con el dedo y punto. |
+| **Persistencia** | Clave `"qm_partida"`. Se guarda al servir cada pregunta; se borra en `qm-fin`. |
+| **Reanudación y repetición** | Al reanudar, el repartidor se reinicia (puede repetirse alguna pregunta ya vista). |
+| **Fin de partida** | Botón **«Terminar»** siempre visible → `qm-fin` con resumen → hub. |
+
+---
+
+## 4. Especificación
+
+### 4.1 Flujo de juego
+
+```
+hub ──► qm-config ──► qm-juego ──┐
+                          ▲      │  «Siguiente» (rota lector + pregunta nueva)
+                          └──────┘
+             «Terminar» ──────────► qm-fin ──► hub
+```
+
+**1. `qm-config`**
+- Stepper `− N +` (2–12) + lista de nombres (núcleo, §7.3).
+- Chips de **niveles** (núcleo, §7.4).
+- Chips de **tipo de pregunta** (propios del juego): *Probable* · *Adjetivo* ·
+  *El primero en* · *Nunca*. Los cuatro activos por defecto; **mínimo uno**.
+- Interruptor de modo fiesta.
+- Botones **«Empezar»** y, si hay guardado, **«Continuar partida»**.
+- Validación con `validarNombres()`; error en `#qm-error` (ámbar).
+
+**2. `qm-juego`**
+- Arriba, línea tenue: **«Lee ANA»**.
+- El **encabezado** del tipo en tamaño medio y color tenue
+  («¿Quién es más probable que…»).
+- El **cuerpo de la pregunta** en grande, con el `?` que añade la app
+  («…acabe durmiendo en el sofá esta noche?»).
+- Con modo fiesta, línea inferior: «🍻 El más señalado: **un trago doble**»
+  (castigo distinto en cada pregunta).
+- Botón primario grande **«Siguiente»** y botón secundario **«Terminar»**.
+- Línea tenue de progreso: «Pregunta 12».
+
+**3. `qm-fin`**
+- Resumen: «Habéis señalado **N** veces. Se acabó la paz.»
+- Botones **«Otra partida»** y **«Volver al inicio»**. Borra `"qm_partida"`.
+
+### 4.2 Modelo de datos
+
+```js
+// Todo el estado del juego vive aquí.
+const qmEstado = {
+  nombres: [],
+  niveles: ["suave", "picante"],
+  tipos: ["probable", "adjetivo", "primero", "nunca"],
+  indiceLector: 0,
+  preguntaActual: null,   // { texto, tipo, nivel } tal cual del banco
+  textoResuelto: "",      // con {otro} ya sustituido
+  castigoActual: "",      // solo si el modo fiesta está activo
+  contador: { preguntas: 0 },
+  repartidor: null,
+};
+
+// Los encabezados viven en el código, no en los datos.
+const QM_ENCABEZADOS = {
+  probable: "¿Quién es más probable que…",
+  adjetivo: "¿Quién es más…",
+  primero:  "¿Quién sería el primero en…",
+  nunca:    "¿Quién nunca…",
+};
+
+const QM_MIN_JUGADORES = 2;
+const QM_MAX_JUGADORES = 12;
+const QM_CLAVE_GUARDADO = "qm_partida";
+```
+
+**Formato del banco** (`data/quienmas/preguntas.js`):
+
+```js
+// Generado desde preguntas.json — no editar a mano (usar agregar.py).
+const QM_PREGUNTAS = [
+  { texto: "acabe durmiendo en el sofá esta noche",        tipo: "probable", nivel: "suave" },
+  { texto: "dramático cuando se pone malo",                tipo: "adjetivo", nivel: "suave" },
+  { texto: "perderse en una ciudad nueva",                 tipo: "primero",  nivel: "suave" },
+  { texto: "ha ido a una fiesta sin saber de quién era",   tipo: "nunca",    nivel: "picante" },
+];
+```
+
+**Convenciones de escritura del banco** (importantes: el texto tiene que encajar
+con su encabezado):
+
+- El texto **empieza en minúscula** y **no lleva `?` final** (lo pone la app).
+- `probable` → verbo en **subjuntivo** («acabe», «se case», «pida»).
+- `adjetivo` → un adjetivo o una construcción que encaje tras «¿Quién es más…».
+  Si el adjetivo tiene género, **reformular con algo invariable** («de hacer un
+  drama cuando se pone malo») o usar adjetivos que no lo tengan («exigente»,
+  «insoportable», «valiente»). Nunca escribir «dramático/a».
+- `primero` → **infinitivo** («perderse», «llorar», «pedir perdón»).
+- `nunca` → **pretérito perfecto** («ha ido», «ha probado», «ha dicho»).
+- `{otro}` es opcional y puede aparecer en cualquier tipo. **`{jugador}` no se
+  usa en este banco**: aquí no hay «turno» de nadie, se pregunta por el grupo.
+
+**Qué se guarda** (clave `"qm_partida"`):
+
+```js
+{ nombres, niveles, tipos, indiceLector, contador }
+```
+
+### 4.3 Pantallas y componentes
+
+| Pantalla | Elemento | ID |
+|---|---|---|
+| `qm-config` | contenedor de nombres | `qm-nombres` |
+| | stepper | `qm-stepper` |
+| | chips de nivel | `qm-niveles` |
+| | chips de tipo | `qm-tipos` |
+| | interruptor de modo fiesta | `qm-fiesta` |
+| | mensaje de validación | `qm-error` |
+| | botones | `qm-btn-empezar` · `qm-btn-continuar` |
+| `qm-juego` | línea «Lee …» | `qm-lector` |
+| | encabezado del tipo | `qm-encabezado` |
+| | cuerpo de la pregunta | `qm-pregunta` |
+| | línea de castigo (`.anuncio`, `hidden`) | `qm-castigo` |
+| | progreso | `qm-progreso` |
+| | botones | `qm-btn-siguiente` · `qm-btn-terminar` |
+| `qm-fin` | resumen | `qm-resumen` |
+| | botones | `qm-btn-otra-partida` · `qm-btn-hub` |
+
+**Chips de tipo** (multi-selección, mínimo uno):
+
+```html
+<div class="qm-chips" id="qm-tipos">
+  <button type="button" class="qm-chip activo" data-tipo="probable">Probable</button>
+  <button type="button" class="qm-chip activo" data-tipo="adjetivo">Adjetivo</button>
+  <button type="button" class="qm-chip activo" data-tipo="primero">El primero en</button>
+  <button type="button" class="qm-chip activo" data-tipo="nunca">Nunca</button>
+</div>
+```
+
+Al intentar desmarcar el último chip activo, **no se desmarca** (mismo
+comportamiento que los chips de nivel del núcleo).
+
+⚠️ `#qm-castigo` usa `hidden`: añadir `.anuncio[hidden] { display: none; }` al CSS
+común si no está ya (§3.3 del plan global).
+
+### 4.4 Qué del núcleo se usa y qué es propio
+
+| Del núcleo (§7 global) | Para qué |
+|---|---|
+| `mostrarPantalla(nombre)` | Navegación. |
+| `montarConfigJugadores` · `validarNombres` | `qm-config`. |
+| `montarSelectorNiveles` · `filtrarPorNivel` | Chips de nivel y filtrado. |
+| `montarInterruptorModoFiesta` · `modoFiestaActivo` · `castigoAlAzar` | Línea de castigo bajo la pregunta. |
+| `crearRepartidor(banco)` | Servir preguntas sin repetir. |
+| `rellenarPlantilla` · `otrosNecesarios` | Resolver `{otro}` y descartar textos sin candidatos. |
+| `guardarJSON` · `cargarJSON` · `hayGuardado` · `borrarGuardado` | «Continuar partida». |
+
+**Propio de este juego:** los chips de tipo (`qm-chip`), el mapa
+`QM_ENCABEZADOS`, el filtrado combinado nivel + tipo y la rotación del lector.
+
+---
+
+## 5. Convenciones para no chocar con los otros juegos
+
+- **Estado**: `qmEstado`. **Funciones**: `qmEmpezarPartida()`,
+  `qmServirPregunta()`, `qmRender()`, `qmSiguiente()`, `qmTerminar()`,
+  `qmGuardar()`, `qmReanudar()`, `qmFiltrarBanco()`.
+  **Constantes**: `QM_ENCABEZADOS`, `QM_MIN_JUGADORES`…
+- **Pantallas**: `data-pantalla="qm-config|qm-juego|qm-fin"`.
+- **IDs** empiezan por `qm-`; **clases CSS** por `.qm-`.
+- **`localStorage`**: solo `"qm_partida"`.
+- **`<script>` en `index.html`** (§6.2 global):
+
+```html
+<script src="data/quienmas/preguntas.js"></script>
+…
+<script src="js/quienmas/main.js"></script>
+```
+
+- **CSS**: bloque propio al final de `css/estilos.css`, abierto con
+  `/* ===== Quién es más… (qm) ===== */`.
+- Wiring dentro de su propio `DOMContentLoaded`; **el núcleo no se toca**.
+
+---
+
+## 6. Desarrollo por fases
+
+### Fase 1 — Pantallas, configuración y filtro por tipo
+
+🎯 Que se pueda configurar una partida eligiendo niveles **y** tipos.
+
+🛠️ A construir
+- Las 3 pantallas en `index.html` con los IDs de §4.3.
+- Bloque CSS `qm`: chips de tipo (misma pinta que los de nivel del núcleo, pero
+  con su prefijo), encabezado tenue + pregunta grande, botón «Siguiente» ancho.
+- `js/quienmas/main.js` con `qmEstado`, wiring, `montarConfigJugadores`,
+  `montarSelectorNiveles`, interruptor de modo fiesta y chips de tipo con la
+  regla de «mínimo uno».
+- `qmEmpezarPartida()`: valida, vuelca la configuración y pasa a `qm-juego`.
+
+✅ Aceptación
+- Los cuatro chips de tipo empiezan activos y se pueden desmarcar salvo el
+  último.
+- Nombres vacíos o repetidos bloquean el paso.
+- La consola está limpia.
+
+🔍 Qué debe probar el usuario
+Desmarcar tres tipos y comprobar que el cuarto ya no se puede desmarcar.
+
+---
+
+### Fase 2 — Motor de preguntas y encabezados
+
+🎯 Que el juego sea jugable con un banco de prueba.
+
+🛠️ A construir
+- Banco provisional de ~40 preguntas con los cuatro tipos.
+- `qmFiltrarBanco()`: filtra por nivel (`filtrarPorNivel`), por tipo (los chips)
+  y descarta textos cuyo `otrosNecesarios(texto) > nombres.length - 1`.
+- `crearRepartidor()` y `qmServirPregunta()`.
+- `qmRender()`: pinta `QM_ENCABEZADOS[tipo]`, el cuerpo con `?` al final y la
+  línea «Lee NOMBRE».
+- Rotación del lector en orden en cada «Siguiente».
+- Contador y `qm-fin` con el resumen real.
+- Aviso de banco agotado en el `.anuncio` y rebarajado.
+
+✅ Aceptación
+- Las cuatro combinaciones encabezado + cuerpo se leen bien en voz alta, sin
+  concordancias raras.
+- 40 preguntas seguidas sin repetición.
+- Desmarcar un tipo hace que ese tipo no vuelva a salir en toda la partida.
+
+🔍 Qué debe probar el usuario
+Leer 15 preguntas en voz alta y avisar de cualquier frase que suene forzada: eso
+es un fallo de convención de escritura, no de código.
+
+---
+
+### Fase 3 — Banco de contenido (≥ 400)
+
+🎯 Contenido definitivo, con los cuatro tipos bien representados.
+
+🛠️ A construir
+- `data/quienmas/preguntas.json` (fuente) y `preguntas.js` (generado).
+- `data/quienmas/agregar.py`: pregunta texto, tipo y nivel; valida el tipo y el
+  nivel; **avisa si el texto empieza por mayúscula o acaba en `?`** (error típico
+  al pegar una frase entera); evita duplicados; regenera el `.js`.
+- Contenido a cuatro manos (§2.4 global): tanda de 30–50, validar tono, producir.
+
+✅ Aceptación
+- ≥ 400 preguntas, ≥ 60 de cada tipo, reparto ~40/40/20 por nivel.
+- Ninguna se solapa con «Preguntas incómodas» (allí se responde hablando, aquí se
+  señala).
+- Ningún `adjetivo` con género marcado.
+
+🔍 Qué debe probar el usuario
+Jugar solo con un tipo activo (p. ej. «Nunca») y ver si aguanta 20 preguntas
+seguidas sin cansar.
+
+---
+
+### Fase 4 — Modo fiesta y pulido
+
+🎯 Cerrar el juego.
+
+🛠️ A construir
+- Con modo fiesta activo, `castigoAlAzar()` en `#qm-castigo` **en cada pregunta**
+  («🍻 El más señalado: …»); con el modo apagado, el `.anuncio` va `hidden`.
+- `qmGuardar()` al servir cada pregunta, `qmReanudar()` y borrado en `qm-fin`.
+- `clamp()` en el cuerpo de la pregunta; `env(safe-area-inset-*)` en el botón
+  volver y la fila inferior.
+- Subir `APP_VERSION` y `CACHE`, y añadir los archivos nuevos a `ARCHIVOS`.
+
+✅ Aceptación
+- El castigo cambia de una pregunta a otra.
+- Con el modo apagado no aparece ninguna línea de castigo.
+- Se reanuda una partida a medias con los mismos filtros de nivel y tipo.
+- La pregunta más larga cabe sin scroll en 360 px.
+
+🔍 Qué debe probar el usuario
+Una ronda larga en el móvil, con modo fiesta encendido, cerrando la app a mitad
+y continuando.
+
+---
+
+## 7. Casos borde
+
+- **2 jugadores**: el juego pierde gracia pero funciona; se descartan los textos
+  con `{otro2}`.
+- **Un solo tipo + un solo nivel**: es la combinación que antes agota el banco.
+  Al agotarse, avisar y rebarajar.
+- **Combinación vacía** (p. ej. solo «extremo» + solo «primero» y no hay
+  entradas): volver a `qm-config` con el error «No hay preguntas para esta
+  combinación de nivel y tipo».
+- **`{otro}`**: se resuelve excluyendo al **lector** (`{jugador}` = lector), para
+  que quien lee no acabe preguntando por sí mismo.
+- **Textos con género en `adjetivo`**: es un problema de contenido, no de código;
+  se corrige en el banco (ver convenciones de §4.2).
+- **Textos larguísimos**: `clamp()` + `overflow-wrap`; la caja crece, la pantalla
+  no hace scroll.
+- **Nombres repetidos o vacíos**: bloqueados en la configuración.
+- **Recarga a mitad**: se reanuda con una pregunta nueva del mismo filtro (aquí
+  no hay secreto que proteger ni turno a medias).
+- **`localStorage` bloqueado**: sin «Continuar», el resto igual.
+- **Doble toque en «Siguiente»**: deshabilitar el botón hasta que se haya
+  renderizado la pregunta siguiente, para no saltarse ninguna.
+
+---
+
+## 8. Checklist
+
+- [ ] **Fase 1** — Pantallas, configuración y filtro por tipo
+- [ ] **Fase 2** — Motor de preguntas y encabezados
+- [ ] **Fase 3** — Banco de contenido (≥ 400, ≥ 60 por tipo)
+- [ ] **Fase 4** — Modo fiesta y pulido
+- [ ] `APP_VERSION`, `CACHE` y `ARCHIVOS` actualizados
+- [ ] `<script>` de datos y lógica añadidos a `index.html`
+
+---
+
+## 9. Muestra de contenido (para fijar el tono)
+
+~32 entradas de referencia, con los cuatro tipos. Van al banco tal cual.
+
+```js
+// ── probable
+{ texto: "acabe durmiendo en el sofá esta noche",                    tipo: "probable", nivel: "suave" },
+{ texto: "pierda el móvil en los próximos tres meses",               tipo: "probable", nivel: "suave" },
+{ texto: "se apunte a un gimnasio y no vaya nunca",                  tipo: "probable", nivel: "suave" },
+{ texto: "llore viendo un anuncio",                                  tipo: "probable", nivel: "suave" },
+{ texto: "se enamore de alguien a quien conoció esa misma noche",    tipo: "probable", nivel: "picante" },
+{ texto: "conteste un mensaje a las cuatro de la mañana",            tipo: "probable", nivel: "picante" },
+{ texto: "acabe montando una escena en una boda",                    tipo: "probable", nivel: "picante" },
+{ texto: "se case con {otro} si el mundo se acabara mañana",         tipo: "probable", nivel: "picante" },
+{ texto: "haya mentido en algo gordo esta misma semana",             tipo: "probable", nivel: "extremo" },
+{ texto: "deje de hablarse con alguien de esta sala en un año",      tipo: "probable", nivel: "extremo" },
+
+// ── adjetivo
+{ texto: "de hacer un drama cuando se pone malo",                    tipo: "adjetivo", nivel: "suave" },
+{ texto: "insoportable antes del primer café",                       tipo: "adjetivo", nivel: "suave" },
+{ texto: "exigente con los demás y blando consigo mismo",            tipo: "adjetivo", nivel: "suave" },
+{ texto: "de organizar planes que luego cancela",                    tipo: "adjetivo", nivel: "suave" },
+{ texto: "de perdonar demasiado rápido",                             tipo: "adjetivo", nivel: "picante" },
+{ texto: "de decir «no me importa» cuando le importa muchísimo",     tipo: "adjetivo", nivel: "picante" },
+{ texto: "dependiente de que le digan que lo está haciendo bien",    tipo: "adjetivo", nivel: "picante" },
+{ texto: "de guardar rencor durante años sin decirlo",               tipo: "adjetivo", nivel: "extremo" },
+
+// ── primero
+{ texto: "perderse en una ciudad nueva",                             tipo: "primero", nivel: "suave" },
+{ texto: "quedarse dormido en el cine",                              tipo: "primero", nivel: "suave" },
+{ texto: "pedir el postre antes que nadie",                          tipo: "primero", nivel: "suave" },
+{ texto: "montar el karaoke en una reunión familiar",                tipo: "primero", nivel: "suave" },
+{ texto: "escribir a su ex después de tres copas",                   tipo: "primero", nivel: "picante" },
+{ texto: "contar un secreto que le habían pedido guardar",           tipo: "primero", nivel: "picante" },
+{ texto: "abandonar el grupo si la cosa se pusiera fea",             tipo: "primero", nivel: "extremo" },
+{ texto: "reconocer que ha estado fingiendo estar bien",             tipo: "primero", nivel: "extremo" },
+
+// ── nunca
+{ texto: "ha ido a una fiesta sin saber de quién era",               tipo: "nunca", nivel: "suave" },
+{ texto: "ha cantado en un karaoke delante de desconocidos",         tipo: "nunca", nivel: "suave" },
+{ texto: "se ha ido de un sitio sin despedirse de nadie",            tipo: "nunca", nivel: "suave" },
+{ texto: "ha cotilleado el móvil de alguien",                        tipo: "nunca", nivel: "picante" },
+{ texto: "ha inventado una excusa para cortar una conversación",     tipo: "nunca", nivel: "picante" },
+{ texto: "ha dicho «te quiero» sin sentirlo",                        tipo: "nunca", nivel: "extremo" },
+```
+
+> **Criterio de contenido (§12 global):** «Extremo» debe ser **incómodo, no
+> cruel**. Nada que humille por aspecto, orientación, origen o salud mental.
+> Ojo especial en este juego: como se **señala a una persona real**, una pregunta
+> mal calibrada duele de verdad. Si una entrada solo funciona haciendo daño,
+> fuera.

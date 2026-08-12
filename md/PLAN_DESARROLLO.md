@@ -486,6 +486,18 @@ const NIVELES = [
   mostrar un overlay de aviso (una sola vez, recordado en `localStorage`):
   juego para mayores de edad, bebed con cabeza, cualquiera puede pasar de un reto.
 
+**API exacta** (nombres cerrados en la Fase 1: los cinco planes de juego llaman a
+estas funciones tal cual, así que la Fase 2 debe implementarlas con este nombre):
+
+```js
+NIVELES                                   // la constante de arriba
+montarSelectorNiveles(contenedor, alCambiar)  // → { obtenerNiveles(), fijarNiveles(ids) }
+filtrarPorNivel(banco, nivelesElegidos)
+montarInterruptorModoFiesta(contenedor, alCambiar)
+modoFiestaActivo()                        // lee localStorage "modo_fiesta"
+castigoAlAzar()                           // una entrada de data/comun/castigos.js
+```
+
 ### 7.5 `js/nucleo/plantillas.js`
 
 Los bancos contienen huecos que se rellenan con nombres de la partida:
@@ -499,8 +511,13 @@ Los bancos contienen huecos que se rellenan con nombres de la partida:
 ```js
 rellenarPlantilla(texto, { jugador, otros })  // {jugador} = quien tiene el turno
                                               // {otro}, {otro2} = otros distintos, sin repetir
-tienePlantilla(texto)                         // para no elegir textos con {otro} si solo hay 2 jugadores
+tienePlantilla(texto)                         // true si el texto tiene algún hueco
+otrosNecesarios(texto)                        // 0, 1 o 2: cuántos {otro} distintos pide el texto
 ```
+
+`otrosNecesarios()` es lo que usan los cinco juegos para **descartar al filtrar el
+banco** los textos imposibles con pocos jugadores (regla: se descarta si
+`otrosNecesarios(texto) > nombres.length - 1`).
 
 ### 7.6 `js/nucleo/handoff.js`
 
@@ -808,16 +825,26 @@ abren su ventana, la consola está limpia y las tarjetas aún no llevan a ningú
 ### Fase 1 — Los cinco planes de juego  ← **empieza por aquí si ya hay Fase 0**
 Escribir, en `md/`, un plan por juego siguiendo **la plantilla de §11**, partiendo
 de la ficha de diseño correspondiente de §9.
-- [ ] `md/PLAN_VERDAD_O_RETO.md`
-- [ ] `md/PLAN_QUIEN_ES_MAS.md`
-- [ ] `md/PLAN_DOS_MENTIRAS.md`
-- [ ] `md/PLAN_EL_IMPOSTOR.md`
-- [ ] `md/PLAN_PREGUNTAS_INCOMODAS.md`
+- [x] `md/PLAN_VERDAD_O_RETO.md`
+- [x] `md/PLAN_QUIEN_ES_MAS.md`
+- [x] `md/PLAN_DOS_MENTIRAS.md`
+- [x] `md/PLAN_EL_IMPOSTOR.md`
+- [x] `md/PLAN_PREGUNTAS_INCOMODAS.md`
 
 En cada uno hay que **cerrar los «(a decidir en su plan)»** de su ficha: proponer
 una opción concreta y razonada, y dejar la decisión escrita en su tabla de
 decisiones. **Cada plan tiene sus propias fases internas**, y una de ellas es
 siempre la del banco de contenido (≥ 400).
+
+**Decisiones cerradas en esta fase** (el detalle y el porqué, en cada plan):
+
+| Juego | Se decidió |
+|---|---|
+| **Verdad o Reto** | Carta con **volteo 3D**; **sí** hay modos «solo verdades» y «solo retos»; y **botón «Otra»** (máx. 2 por turno, para verdades y retos; el 2.º con castigo si el modo fiesta está activo). |
+| **Quién es más…** | **Sí** al filtro por tipo en la configuración; **no** a la cuenta atrás «3, 2, 1». |
+| **Dos mentiras** | Temporizador de 60 s **opcional y apagado por defecto**; el tema **se muestra a todo el grupo** (no es secreto). |
+| **El Impostor** | Los 2 impostores **no se conocen entre ellos**; y el juego **no guarda la partida en curso**, solo la configuración (`"im_config"`), porque reanudar filtraría información. |
+| **Preguntas incómodas** | **Sí** al botón «Devolver la pregunta», pero **solo con el modo fiesta** y como recurso escaso: **una por jugador y partida**, no encadenable y no disponible en las preguntas de tipo `grupo`. |
 
 **✅ Aceptación:** los 5 planes existen, son autosuficientes (otro agente sin
 contexto podría implementarlos leyendo solo ese plan + este documento) y no
@@ -969,7 +996,7 @@ Válidos para los cinco juegos; cada plan añadirá los suyos.
 ## 13. Checklist global
 
 - [ ] **Fase 0** — Infraestructura y tema rojo
-- [ ] **Fase 1** — Los cinco planes de juego (`md/`)
+- [x] **Fase 1** — Los cinco planes de juego (`md/`)
 - [ ] **Fase 2** — Núcleo compartido
 - [ ] **Fase 3** — Verdad o Reto
 - [ ] **Fase 4** — Preguntas incómodas
