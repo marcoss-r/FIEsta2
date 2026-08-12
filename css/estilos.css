@@ -662,3 +662,139 @@ button.secundario:hover {
   overflow-wrap: break-word;
   color: var(--color-texto);
 }
+
+/* ==========================================================
+   Verdad o Reto (vr) — ver md/PLAN_VERDAD_O_RETO.md §4.3
+   ========================================================== */
+
+/* Chips de modo: mismo look que .chip-nivel del núcleo, pero de selección
+   ÚNICA (JS: elegir() sustituye en vez de alternar). */
+.vr-chips {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 26rem;
+}
+
+.vr-chip {
+  flex: 1 1 auto;
+  padding: 0.55rem 0.9rem;
+  min-height: 40px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: var(--color-superficie);
+  color: var(--color-texto-tenue);
+  border: 1px solid transparent;
+}
+
+.vr-chip:hover {
+  background: var(--color-fondo-alt);
+}
+
+.vr-chip.activo {
+  background: var(--color-acento);
+  color: #fff;
+  border-color: var(--color-acento);
+}
+
+/* Botones grandes de vr-turno: VERDAD / RETO (o el único de los modos no
+   mixtos), más grandes que un botón normal porque son el centro de la
+   pantalla, no una acción secundaria. */
+.vr-btn-grande {
+  width: 100%;
+  max-width: 22rem;
+  padding: 1.4rem;
+  font-size: 1.3rem;
+  letter-spacing: 0.03em;
+}
+
+.vr-btn-reto {
+  background: var(--color-acento-2);
+}
+
+.vr-btn-reto:hover {
+  background: var(--color-acento-oscuro);
+}
+
+.vr-fila-elegir {
+  max-width: 22rem;
+}
+
+.vr-fila-elegir button {
+  flex: 1 1 0;
+}
+
+/* Carta volteable en 3D. El "perspective" tiene que vivir en un ANCESTRO de
+   .vr-carta (no en ella misma: perspective no afecta a la transformación del
+   propio elemento, solo a la de sus hijos), así que va en la pantalla. */
+.pantalla[data-pantalla="vr-carta"] {
+  perspective: 1000px;
+}
+
+.vr-carta {
+  position: relative;
+  width: min(72vw, 260px);
+  height: min(48vh, 320px);
+  transform-style: preserve-3d;
+  transition: transform var(--duracion-transicion) var(--curva-transicion);
+}
+
+.vr-carta.volteada {
+  transform: rotateY(180deg);
+}
+
+/* backface-visibility:hidden es lo que hace que cada cara solo se vea cuando
+   está "de frente": sin esto, el dorso se seguiría viendo (en espejo) por
+   detrás de la cara frontal. */
+.vr-carta-cara {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1.5rem;
+  border-radius: var(--radio-borde);
+  text-align: center;
+  backface-visibility: hidden;
+}
+
+.vr-carta-dorso {
+  background: var(--color-acento-oscuro);
+  font-size: 3rem;
+}
+
+/* La cara frontal nace ya girada 180°: al voltear el contenedor entero
+   (.vr-carta.volteada), queda mirando hacia la cámara. */
+.vr-carta-frente {
+  background: var(--color-superficie);
+  transform: rotateY(180deg);
+}
+
+.vr-carta-tipo {
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--color-texto-tenue);
+}
+
+.vr-tipo-verdad {
+  color: var(--color-acento);
+}
+
+.vr-tipo-reto {
+  color: var(--color-acento-2);
+}
+
+.vr-carta-texto {
+  margin: 0;
+  max-width: 26ch;
+  font-size: clamp(1rem, 4.5vw, 1.35rem);
+  font-weight: 700;
+  line-height: 1.35;
+  overflow-wrap: break-word;
+  color: var(--color-texto);
+}

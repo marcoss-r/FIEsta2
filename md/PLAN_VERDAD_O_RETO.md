@@ -202,7 +202,9 @@ IDs exactos, para que la implementación no tenga que inventar nomenclatura:
 | | etiqueta del tipo | `vr-carta-tipo` |
 | | texto de la carta | `vr-carta-texto` |
 | | castigo (`.anuncio`, `hidden` por defecto) | `vr-castigo` |
+| | aviso de banco agotado (`.anuncio`, `hidden`) | `vr-anuncio` |
 | | botones | `vr-btn-hecho` · `vr-btn-paso` · `vr-btn-otra` |
+| | botón «Siguiente» tras el castigo de «Paso» (`hidden` por defecto) | `vr-btn-siguiente-paso` |
 | | terminar | `vr-btn-terminar-2` |
 | `vr-fin` | texto del resumen | `vr-resumen` |
 | | botones | `vr-btn-otra-partida` · `vr-btn-hub` |
@@ -461,13 +463,17 @@ mirar la carta más larga del banco en horizontal y en vertical.
 
 ## 8. Checklist
 
-- [ ] **Fase 1** — Pantallas y configuración
-- [ ] **Fase 2** — Motor de turnos y cartas
-- [ ] **Fase 3** — Banco de contenido (≥ 200 verdades + ≥ 200 retos)
-- [ ] **Fase 4** — Modo fiesta, botón «Otra» y modos de juego
-- [ ] **Fase 5** — Persistencia, volteo 3D y pulido
-- [ ] `APP_VERSION` subida, `CACHE` subido y `ARCHIVOS` actualizado en `sw.js`
-- [ ] `<script>` de datos y de lógica añadidos a `index.html` en su orden
+- [x] **Fase 1** — Pantallas y configuración
+- [x] **Fase 2** — Motor de turnos y cartas (banco provisional de 20
+      verdades + 17 retos, la muestra de §9 de este plan)
+- [ ] **Fase 3** — Banco de contenido (≥ 200 verdades + ≥ 200 retos):
+      pendiente, igual que en los otros juegos, a cuatro manos con el
+      usuario (§2.4)
+- [x] **Fase 4** — Modo fiesta, botón «Otra» y modos de juego
+- [x] **Fase 5** — Persistencia, volteo 3D y pulido (falta la prueba en
+      dispositivo real, que hace el usuario)
+- [x] `APP_VERSION` subida, `CACHE` subido y `ARCHIVOS` actualizado en `sw.js`
+- [x] `<script>` de datos y de lógica añadidos a `index.html` en su orden
 
 ---
 

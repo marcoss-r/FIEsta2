@@ -114,8 +114,8 @@
     </section>
 
     <!-- Las pantallas de cada juego se añaden en su propia fase de desarrollo
-         (ver md/PLAN_DESARROLLO.md §10). De momento las tarjetas de vr, pi,
-         dm e im no llevan a ningún sitio: cada juego conecta su botón en su
+         (ver md/PLAN_DESARROLLO.md §10). De momento las tarjetas de pi, dm e
+         im no llevan a ningún sitio: cada juego conecta su botón en su
          main.js al implementarse. -->
 
     <!-- Yo nunca (yn) — ver md/PLAN_YO_NUNCA.md §4.3 para el mapa de IDs -->
@@ -208,6 +208,68 @@
       </div>
     </section>
 
+    <!-- Verdad o Reto (vr) — ver md/PLAN_VERDAD_O_RETO.md §4.3 para el mapa de IDs -->
+    <section class="pantalla" data-pantalla="vr-config">
+      <button type="button" class="boton-volver" data-volver="fiesta" aria-label="Volver al inicio">←</button>
+      <h1>Verdad o Reto</h1>
+      <div class="stepper" id="vr-stepper">
+        <button type="button" class="stepper-btn" data-accion="menos" aria-label="Menos jugadores">−</button>
+        <span class="stepper-valor"></span>
+        <button type="button" class="stepper-btn" data-accion="mas" aria-label="Más jugadores">+</button>
+      </div>
+      <div class="lista-scroll" id="vr-nombres"></div>
+      <div class="selector-niveles" id="vr-niveles"></div>
+      <div class="vr-chips" id="vr-modo"></div>
+      <div class="fila-switch">
+        <span>Modo fiesta</span>
+        <div id="vr-fiesta"></div>
+      </div>
+      <p class="error" id="vr-error"></p>
+      <div class="fila-botones">
+        <button type="button" class="secundario" id="vr-btn-continuar" hidden>Continuar partida</button>
+        <button type="button" id="vr-btn-empezar">Empezar</button>
+      </div>
+    </section>
+
+    <section class="pantalla" data-pantalla="vr-turno">
+      <h1 id="vr-nombre-turno"></h1>
+      <p class="ayuda" id="vr-progreso"></p>
+      <div class="fila-botones vr-fila-elegir">
+        <button type="button" class="vr-btn-grande vr-btn-verdad" id="vr-btn-verdad">VERDAD</button>
+        <button type="button" class="vr-btn-grande vr-btn-reto" id="vr-btn-reto">RETO</button>
+      </div>
+      <button type="button" class="vr-btn-grande" id="vr-btn-unico" hidden></button>
+      <button type="button" class="secundario" id="vr-btn-terminar">Terminar</button>
+    </section>
+
+    <section class="pantalla" data-pantalla="vr-carta">
+      <div class="vr-carta" id="vr-carta">
+        <div class="vr-carta-cara vr-carta-dorso">🍒</div>
+        <div class="vr-carta-cara vr-carta-frente">
+          <span class="vr-carta-tipo" id="vr-carta-tipo"></span>
+          <p class="vr-carta-texto" id="vr-carta-texto"></p>
+        </div>
+      </div>
+      <p class="anuncio" id="vr-castigo" hidden></p>
+      <p class="anuncio" id="vr-anuncio" hidden></p>
+      <div class="fila-botones" id="vr-fila-carta">
+        <button type="button" class="secundario" id="vr-btn-paso">Paso ✖</button>
+        <button type="button" class="secundario" id="vr-btn-otra">Otra 🔄</button>
+        <button type="button" id="vr-btn-hecho">Hecho ✔</button>
+      </div>
+      <button type="button" id="vr-btn-siguiente-paso" hidden>Siguiente</button>
+      <button type="button" class="secundario" id="vr-btn-terminar-2">Terminar</button>
+    </section>
+
+    <section class="pantalla" data-pantalla="vr-fin">
+      <h1>¡Partida terminada!</h1>
+      <p id="vr-resumen"></p>
+      <div class="fila-botones">
+        <button type="button" class="secundario" id="vr-btn-otra-partida">Otra partida</button>
+        <button type="button" id="vr-btn-hub">Volver al inicio</button>
+      </div>
+    </section>
+
     <!-- Aviso de tono (§7.4): overlay GLOBAL, fuera de cualquier .pantalla
          para poder mostrarse encima de cualquier juego (si viviera dentro de
          una .pantalla, heredaría su opacity/visibility cuando esa pantalla no
@@ -239,10 +301,13 @@
   <script src="data/comun/castigos.js"></script>
   <script src="data/yonunca/frases.js"></script>
   <script src="data/quienmas/preguntas.js"></script>
+  <script src="data/verdadreto/verdades.js"></script>
+  <script src="data/verdadreto/retos.js"></script>
 
   <!-- 3. Lógica de cada juego -->
   <script src="js/yonunca/main.js"></script>
   <script src="js/quienmas/main.js"></script>
+  <script src="js/verdadreto/main.js"></script>
 
   <!-- 4. Arranque: SIEMPRE el último (es quien muestra el hub) -->
   <script src="js/nucleo/arranque.js"></script>

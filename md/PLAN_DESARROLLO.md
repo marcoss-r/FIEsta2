@@ -1019,6 +1019,20 @@ plantillas. Seguir su plan.
 Añade el volteo 3D, dos bancos en vez de uno, y el botón «Otra». Seguir
 `md/PLAN_VERDAD_O_RETO.md`.
 
+> 🚧 **En curso.** Ya están sus Fases 1, 2, 4 y 5 (pantallas, configuración con
+> chips de nivel y de modo —selección única—, motor de turnos sobre dos
+> bancos, volteo 3D de la carta, botón «Otra» con el segundo cambio
+> castigando en modo fiesta, «Paso» con castigo y el botón «Siguiente» propio,
+> «Solo verdades»/«Solo retos» con el botón único, guardado/reanudación
+> siempre al principio del turno), probada de principio a fin con jsdom real
+> sobre `index.html` (volteo de carta, contador de «Otra», castigo del
+> segundo cambio y del «Paso», reanudación a media partida) sin errores de
+> consola, más una revisión visual con capturas de pantalla headless (layout
+> de la carta y de los botones). Banco provisional: las ~20 verdades y ~17
+> retos de muestra de `md/PLAN_VERDAD_O_RETO.md` §9. **Falta su Fase 3**: el
+> banco definitivo de ≥ 200 verdades y ≥ 200 retos, a cuatro manos con el
+> usuario (§2.4). `APP_VERSION`/`CACHE` = 1.5.0.
+
 ### Fase 6 — Juego 4: **Preguntas incómodas**
 Reutiliza casi todo lo de Verdad o Reto; añade los tres formatos y la rotación de
 destinatario. Seguir su plan.
