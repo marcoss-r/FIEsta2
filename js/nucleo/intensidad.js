@@ -1,13 +1,17 @@
 // Núcleo: niveles de intensidad y modo fiesta, transversales a los seis
 // juegos (§7.4).
 
+// El nivel más fuerte se llama internamente "extremo" (id de siempre, usado en
+// todos los bancos de datos), pero se MUESTRA como "Salseo": no busca ser
+// gratuitamente extremo, sino generar temas de conversación jugosos entre
+// amigos (§12 global, actualizado).
 const NIVELES = [
   { id: "suave", nombre: "Suave", emoji: "🙂", desc: "Apto para cualquier grupo" },
   { id: "picante", nombre: "Picante", emoji: "🌶️", desc: "Sube la temperatura" },
-  { id: "extremo", nombre: "Extremo", emoji: "🔥", desc: "Solo con gente de confianza" },
+  { id: "extremo", nombre: "Salseo", emoji: "👀", desc: "Para generar conversación entre amigos" },
 ];
 
-// Solo Suave y Picante empiezan activos: que "Extremo" sea una decisión
+// Solo Suave y Picante empiezan activos: que "Salseo" sea una decisión
 // consciente, no el punto de partida.
 const NIVELES_POR_DEFECTO = ["suave", "picante"];
 
@@ -39,7 +43,7 @@ function montarSelectorNiveles(contenedor, alCambiar) {
       elegidos = elegidos.filter((n) => n !== id);
     } else {
       elegidos = elegidos.concat(id);
-      if (id === "extremo") mostrarAvisoTonoSiPrimeraVez();
+      if (id === "extremo") mostrarAvisoTonoSiPrimeraVez(); // "Salseo"
     }
     render();
     alCambiar(elegidos.slice());
@@ -93,7 +97,7 @@ function castigoAlAzar() {
   return elegirAlAzar(CASTIGOS_COMUNES);
 }
 
-// La primera vez que se activa "Extremo" o el modo fiesta, un overlay
+// La primera vez que se activa "Salseo" o el modo fiesta, un overlay
 // recuerda que es contenido para mayores de edad y que nadie está obligado a
 // nada. Se recuerda en localStorage y no vuelve a salir.
 function mostrarAvisoTonoSiPrimeraVez() {

@@ -1122,9 +1122,14 @@ Válidos para los seis juegos; cada plan añadirá los suyos.
   de esquina) debe sumar `env(safe-area-inset-*)`.
 
 **De producto**
-- **Contenido ofensivo**: «Extremo» debe ser incómodo, no cruel. Nada que humille
-  por identidad (aspecto, orientación, origen, salud mental). Si una entrada solo
-  funciona haciendo daño de verdad, fuera.
+- **Contenido ofensivo**: el nivel más fuerte (id interno `"extremo"`, sin tocar
+  en los datos; se muestra como **«Salseo»** desde la Fase 3 de «Yo nunca»,
+  decisión del usuario — ver `md/PLAN_YO_NUNCA.md`) debe ser incómodo, no cruel.
+  Nada que humille por identidad (aspecto, orientación, origen, salud mental).
+  Si una entrada solo funciona haciendo daño de verdad, fuera. Los cinco planes
+  de juego que aún no han llegado a su fase de contenido siguen usando el
+  nombre «Extremo» en sus muestras de referencia: se actualizan a «Salseo» al
+  empezar cada una.
 - **Consentimiento**: cualquiera puede pasar de cualquier reto o pregunta; el
   botón «Paso» siempre está visible y no se penaliza más allá del castigo simbólico.
 

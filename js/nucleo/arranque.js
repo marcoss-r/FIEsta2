@@ -2,18 +2,18 @@
 // Debe cargarse el ÚLTIMO: al terminar muestra el hub de juegos.
 
 // Versión de la app. Al subirla, sube también CACHE en sw.js (otro contexto, no ve esto).
-const APP_VERSION = "1.2.2";
+const APP_VERSION = "1.3.0";
 
 // Textos de la ventana de información de cada juego (la ⓘ de las tarjetas del hub).
 const INFO_JUEGOS = {
   yn: {
     titulo: "Yo nunca",
     texto:
-      "El clásico de beber. La app lee una frase que empieza por «Yo nunca…»: " +
-      "quien SÍ lo ha hecho, baja un dedo (todos empezáis con 5, contados a " +
-      "mano) o, si está activo el modo fiesta, bebe. La app solo sirve las " +
-      "frases sin repetir y rota quién lee: no lleva la cuenta de dedos ni de " +
-      "tragos.",
+      "El clásico de beber. La app lee una frase que empieza por «Yo nunca…» " +
+      "(cosas ya hechas, o cosas que quizá probarías): si es tu caso, baja un " +
+      "dedo (todos empezáis con 5, contados a mano) o, si está activo el modo " +
+      "fiesta, bebe. La app solo sirve las frases sin repetir y rota quién " +
+      "lee: no lleva la cuenta de dedos ni de tragos.",
   },
   vr: {
     titulo: "Verdad o Reto",

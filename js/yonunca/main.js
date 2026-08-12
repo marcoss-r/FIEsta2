@@ -24,11 +24,14 @@ let ynSelectorNiveles = null;
 // pueden divergir (§4.3 del plan del juego). Acepta el estado del modo fiesta
 // ya conocido (p. ej. el del propio evento del interruptor) para no depender
 // de releer localStorage, que puede estar bloqueado (incógnito).
+// El texto es neutro en tiempo verbal ("si es tu caso" y no "quien lo haya
+// hecho"): el banco mezcla frases de cosas ya hechas ("he mentido...") con
+// hipotéticas ("probaría...") y la instrucción tiene que valer para ambas.
 function ynTextoInstruccion(fiestaActiva) {
   const activo = fiestaActiva !== undefined ? fiestaActiva : modoFiestaActivo();
   return activo
-    ? "Quien lo haya hecho, bebe."
-    : "Quien lo haya hecho, baja un dedo (empezáis con 5 cada uno).";
+    ? "Si es tu caso, bebe."
+    : "Si es tu caso, baja un dedo (empezáis con 5 cada uno).";
 }
 
 function ynActualizarRegla(fiestaActiva) {

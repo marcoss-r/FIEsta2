@@ -11,10 +11,11 @@ incómodas · Dos mentiras y una verdad · El Impostor.
 
 ✅ **Fases 0, 1 y 2 completas**, y 🚧 **Fase 3 en curso**: **«Yo nunca»** ya se
 juega de principio a fin — hub con sus 6 tarjetas, configuración de jugadores y
-niveles, modo fiesta, rotación de quien lee y partida guardable/reanudable —
-con una primera tanda de 67 frases en el banco definitivo (`data/yonunca/
-frases.json` + `frases.js` generado + `agregar.py`), pendiente de validar el
-tono con el usuario antes de seguir hasta las ≥ 400. El resto de tarjetas del hub
+niveles (el más fuerte se llama «Salseo», no «Extremo»), modo fiesta, rotación
+de quien lee y partida guardable/reanudable — con 633 frases en el banco
+(`data/yonunca/frases.json` + `frases.js` generado + `agregar.py`), mezclando
+confesiones («he...») e hipotéticas («probaría...»). Pendiente de que el
+usuario lo recorte y afine antes de cerrar la fase. El resto de tarjetas del hub
 (Quién es más…, Verdad o Reto, Preguntas incómodas, Dos mentiras y una verdad,
 El Impostor) aún no llevan a ningún sitio: se implementan en las fases 4-8.
 

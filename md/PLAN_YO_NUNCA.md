@@ -60,13 +60,15 @@ usando el mínimo posible de piezas.
 | **Nº de jugadores** | **2–12**. Por defecto 5. |
 | **Pantallas** | `yn-config` → `yn-juego` → `yn-fin`. |
 | **Quién lee** | Rota **en orden** (nunca sorteo), una frase por jugador. |
-| **Mecánica de resolución** | **La app no la gestiona.** Sin modo fiesta: cada jugador lleva sus propios **5 dedos** fuera de la app y baja uno si «lo ha hecho». Con modo fiesta: quien lo ha hecho **bebe**, sin gestión de dedos. La instrucción visible cambia según el interruptor, pero **nunca hay un contador en la app**: es la misma filosofía de «sin marcador» que el resto de FIEsta 2 (§8 del plan global). |
+| **Mecánica de resolución** | **La app no la gestiona.** Sin modo fiesta: cada jugador lleva sus propios **5 dedos** fuera de la app y baja uno si es su caso. Con modo fiesta: quien es su caso **bebe**, sin gestión de dedos. La instrucción («Si es tu caso, baja un dedo / bebe») es neutra en tiempo verbal a propósito, porque el banco mezcla frases de cosas ya hechas («he mentido…») con hipotéticas («probaría…», ver «Tipos de frase» más abajo). **Nunca hay un contador en la app**: es la misma filosofía de «sin marcador» que el resto de FIEsta 2 (§8 del plan global). |
+| **Tipos de frase** | El banco mezcla dos registros: **confesión** («he mentido sobre mi edad») y **hipotética** («probaría el paracaidismo», «me atrevería a…»). No hay un campo `tipo` que las distinga: basta con que el propio texto, en pretérito perfecto o en condicional, complete «Yo nunca…» con sentido. |
+| **Nivel «Salseo»** | El nivel que en el núcleo se llama internamente `"extremo"` (mismo id en todos los bancos y juegos, no se toca) se **muestra** como **«Salseo»** (`js/nucleo/intensidad.js`, `NIVELES`): no busca ser gratuito, sino generar temas de conversación entre amigos. Criterio de contenido igual que antes (§12 global): incómodo, no cruel. |
 | **¿Se explica la regla de los dedos?** | Sí, en el overlay ⓘ del hub (`INFO_JUEGOS`, ya soportado desde la Fase 0): una frase breve para quien no conozca el juego de mesa. No hace falta un overlay nuevo. |
 | **Plantillas** | ❌ **No se usan** (`{jugador}`, `{otro}`). El banco es autoconclusivo: nunca señala a una persona por nombre. Cuando una entrada picante involucra al grupo, se escribe en **genérico** («…alguien de este grupo»), nunca insertando un nombre real. |
 | **Niveles de intensidad** | Los tres del núcleo, multi-selección, por defecto suave + picante. |
 | **Modo fiesta** | Interruptor global del núcleo. Aquí **no dispara `castigoAlAzar()`**: solo cambia el texto de la instrucción de «baja un dedo» a «bebe». La propia frase ya es el disparador; no hay «fallo» que castigar. |
 | **Datos** | Un solo banco `YN_FRASES` en `data/yonunca/frases.js`. |
-| **Volumen** | **≥ 400 frases.** Reparto orientativo: ~40 % suave, ~40 % picante, ~20 % extremo. Un solo formato: no hay tipos que repartir (a diferencia de «Quién es más…» o «Preguntas incómodas»). |
+| **Volumen** | **~200 frases por nivel** (~600 en total, por decisión explícita del usuario — supera el mínimo de 400 del plan global). Un solo formato: no hay tipos que repartir (a diferencia de «Quién es más…» o «Preguntas incómodas»). |
 | **Qué hace la app** | Servir frases sin repetir, rotar quién lee, mostrar la instrucción correcta según el modo fiesta y guardar la partida. |
 | **Qué NO hace la app** | ❌ No cuenta dedos, ❌ no cuenta tragos, ❌ no hay puntos, podio ni ganador. Todo eso se gestiona a mano, fuera de la app. |
 | **Persistencia** | Clave `"yn_partida"`. Se guarda al servir cada frase; se borra en `yn-fin`. |
@@ -91,9 +93,8 @@ hub ──► yn-config ──► yn-juego ──┐
 - Chips de niveles (núcleo, §7.4).
 - Interruptor de **modo fiesta** (núcleo, §7.4). Debajo, una línea tenue fija que
   explica la regla que va a regir la partida y **cambia con el interruptor**:
-  - Apagado: «Quien haya hecho lo que diga la frase, baja un dedo (empezáis con
-    5 cada uno).»
-  - Encendido: «Quien haya hecho lo que diga la frase, bebe.»
+  - Apagado: «Si es tu caso, baja un dedo (empezáis con 5 cada uno).»
+  - Encendido: «Si es tu caso, bebe.»
 - Botón **«Empezar»** y, si hay guardado, **«Continuar partida»**.
 - Validación con `validarNombres()`; error en `#yn-error` (ámbar).
 
@@ -103,8 +104,7 @@ hub ──► yn-config ──► yn-juego ──┐
 - El cuerpo de la frase en grande, debajo: «…he fingido estar dormido para no
   hablar con alguien».
 - Línea de instrucción (la misma de `yn-config`, reflejando el modo fiesta
-  actual): «Quien lo haya hecho, **baja un dedo**» o «Quien lo haya hecho,
-  **bebe**».
+  actual): «Si es tu caso, **baja un dedo**» o «Si es tu caso, **bebe**».
 - Botón primario grande **«Siguiente»** y botón secundario **«Terminar»**.
 - Línea tenue de progreso: «Frase 12».
 
@@ -295,7 +295,7 @@ el interruptor a mitad de partida para ver que la instrucción se actualiza.
 
 ---
 
-### Fase 3 — Banco de contenido (≥ 400)
+### Fase 3 — Banco de contenido (~200 por nivel)
 
 🎯 Contenido definitivo.
 
@@ -307,15 +307,21 @@ el interruptor a mitad de partida para ver que la instrucción se actualiza.
   error); evita duplicados; regenera el `.js`.
 - Contenido a cuatro manos (§2.4 global): tanda de 30–50, validar el tono con el
   usuario, y **solo después** producir en volumen.
+- Nivel «Salseo» (antes «Extremo», ver tabla de decisiones): frases que generen
+  tema de conversación entre amigos, incómodo pero no cruel.
+- Picante algo más explícito que la tanda inicial (decisión del usuario tras
+  ver la primera muestra).
+- Frases hipotéticas («probaría…», «me atrevería a…») mezcladas con las de
+  confesión, repartidas por los tres niveles.
 
 ✅ Aceptación
-- ≥ 400 frases, reparto ~40/40/20 por nivel.
+- ~200 frases por nivel (~600 en total).
 - Ninguna usa `{otro}` ni nombra a una persona concreta.
 - Ninguna se solapa con el tipo `nunca` de «Quién es más…» (ese banco pregunta
   **quién del grupo** nunca ha hecho algo; este pregunta **por uno mismo**).
 
 🔍 Qué debe probar el usuario
-Jugar solo con «extremo» y decidir si el filo es el que quiere para su grupo.
+Jugar solo con «Salseo» y decidir si el filo es el que quiere para su grupo.
 
 ---
 
@@ -372,9 +378,15 @@ instalada, modo avión para confirmar que la 6ª tarjeta también funciona offli
 
 - [x] **Fase 1** — Tarjeta del hub, pantallas y configuración
 - [x] **Fase 2** — Motor de frases y rotación
-- [ ] **Fase 3** — Banco de contenido (≥ 400): 🚧 en curso, primera tanda de 67
-      (`data/yonunca/frases.json` + `agregar.py`), pendiente de validar el tono
-      con el usuario antes de seguir produciendo
+- [ ] **Fase 3** — Banco de contenido (~200 por nivel): 🚧 en curso. Primera
+      tanda de 67 validada por el usuario, que pidió: renombrar «Extremo» a
+      «Salseo» (hecho, `js/nucleo/intensidad.js`), picante más explícito,
+      «Salseo» orientado a generar conversación, y frases hipotéticas además
+      de las de confesión (hecho, `ynTextoInstruccion()` neutra en tiempo
+      verbal). Generadas 633 frases (223 suave / 204 picante / 206 salseo),
+      sin duplicados exactos, probadas con el juego completo en jsdom (0
+      errores de consola). Pendiente de que el usuario la recorte y afine
+      (§2.4) antes de dar la fase por cerrada
 - [x] **Fase 4** — Persistencia y pulido (adelantada junto con las Fases 1-2:
       guardado/reanudación, `clamp()` en la frase, `APP_VERSION`/`CACHE`/`ARCHIVOS`
       al día; falta la prueba en dispositivo real y modo avión, que hace el usuario)
