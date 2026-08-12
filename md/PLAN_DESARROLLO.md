@@ -916,12 +916,10 @@ Poner en pie el esqueleto de la app, copiando de `../DescriptIA` lo indicado en 
 **✅ Aceptación:** se abre `index.html`, se ve el hub rojo con 5 tarjetas, las ⓘ
 abren su ventana, la consola está limpia y las tarjetas aún no llevan a ningún sitio.
 
-> ⚠️ **Pendiente, añadido después de cerrar esta fase:** «Yo nunca» (§9.6) se
-> decidió como sexto juego **después** de que la Fase 0 ya estuviera cerrada y
-> fusionada, así que el hub actual solo tiene 5 tarjetas e `INFO_JUEGOS` solo
-> lista 5 juegos. **Añadir la 6ª tarjeta («Yo nunca»), su entrada en
-> `INFO_JUEGOS` y el hueco en `sw.js`/`ARCHIVOS` es el primer paso de la Fase 3**
-> (se hace junto con ese juego, no antes, siguiendo la regla de §6.2: «no se
+> ✅ **Resuelto en la Fase 3:** «Yo nunca» (§9.6) se decidió como sexto juego
+> **después** de que la Fase 0 ya estuviera cerrada y fusionada. La 6ª tarjeta,
+> su entrada en `INFO_JUEGOS` y el hueco en `sw.js`/`ARCHIVOS` se añadieron al
+> empezar la Fase 3, junto con ese juego (siguiendo la regla de §6.2: «no se
 > toca el núcleo para añadir un juego, salvo su entrada en `INFO_JUEGOS`»).
 
 ### Fase 1 — Los seis planes de juego  ← **empieza por aquí si ya hay Fase 0**
@@ -991,6 +989,15 @@ Es el más simple de los seis y el que **valida el núcleo entero** (jugadores,
 niveles, modo fiesta, repartidor, persistencia) con el mínimo de piezas: no usa
 plantillas ni handoff. Incluye añadir su tarjeta al hub (ver aviso de la Fase 0).
 Seguir `md/PLAN_YO_NUNCA.md`.
+
+> 🚧 **En curso.** Ya están sus Fases 1, 2 y 4 (tarjeta del hub, `INFO_JUEGOS`,
+> pantallas, configuración, motor de rotación, persistencia y `APP_VERSION`/
+> `CACHE` = 1.2.0), probado con una integración jsdom completa sobre
+> `index.html` real (sirviendo por HTTP para que `localStorage` funcione igual
+> que en el navegador) sin errores de consola. El banco usa de momento las ~27
+> frases de muestra de `md/PLAN_YO_NUNCA.md` §9. **Falta su Fase 3: el banco
+> definitivo de ≥ 400 frases**, que se hace a cuatro manos con el usuario
+> (§2.4) antes de dar la fase global por cerrada.
 
 ### Fase 4 — Juego 2: **Quién es más…**
 Reutiliza el mismo esqueleto de Yo nunca (config → juego → fin, rotación de

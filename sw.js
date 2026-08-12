@@ -2,7 +2,7 @@
 // pueda instalar y funcione sin conexión. Para publicar una actualización,
 // sube el número de versión (CACHE) y se refrescará en el siguiente arranque.
 // CACHE y APP_VERSION (js/nucleo/arranque.js) van unificados.
-const CACHE = "fiesta2-v1.1.0";
+const CACHE = "fiesta2-v1.2.0";
 
 const ARCHIVOS = [
   "./",
@@ -16,6 +16,8 @@ const ARCHIVOS = [
   "./js/nucleo/plantillas.js",
   "./js/nucleo/handoff.js",
   "./data/comun/castigos.js",
+  "./data/yonunca/frases.js",
+  "./js/yonunca/main.js",
   "./js/nucleo/arranque.js",
   "./site.webmanifest",
   "./icons/icono.svg",

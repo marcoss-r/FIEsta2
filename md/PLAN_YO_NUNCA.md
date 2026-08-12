@@ -28,10 +28,9 @@ Reglas de trabajo: **español** en interfaz, código y comentarios; **sin
 navegador — nunca la abras ni la sirvas tú para «comprobar» un cambio de
 interfaz.
 
-> ⚠️ **Este juego se añadió después de la Fase 0** (§9.6 y §10 del plan global).
-> El hub actual (`index.html`, `js/nucleo/arranque.js`, `sw.js`) todavía **no**
-> tiene la tarjeta de «Yo nunca»: **añadirla es el primer paso de la Fase 1 de
-> este plan** (ver §6.1 más abajo).
+> ✅ **Este juego se añadió después de la Fase 0** (§9.6 y §10 del plan global),
+> así que su tarjeta en el hub (`index.html`, `js/nucleo/arranque.js`, `sw.js`)
+> se añadió al empezar la Fase 1 de este plan, ya completada.
 
 ---
 
@@ -371,10 +370,12 @@ instalada, modo avión para confirmar que la 6ª tarjeta también funciona offli
 
 ## 8. Checklist
 
-- [ ] **Fase 1** — Tarjeta del hub, pantallas y configuración
-- [ ] **Fase 2** — Motor de frases y rotación
+- [x] **Fase 1** — Tarjeta del hub, pantallas y configuración
+- [x] **Fase 2** — Motor de frases y rotación
 - [ ] **Fase 3** — Banco de contenido (≥ 400)
-- [ ] **Fase 4** — Persistencia y pulido
+- [x] **Fase 4** — Persistencia y pulido (adelantada junto con las Fases 1-2:
+      guardado/reanudación, `clamp()` en la frase, `APP_VERSION`/`CACHE`/`ARCHIVOS`
+      al día; falta la prueba en dispositivo real y modo avión, que hace el usuario)
 - [ ] `APP_VERSION`, `CACHE` y `ARCHIVOS` actualizados (incluida la tarjeta del hub)
 - [ ] `<script>` de datos y lógica añadidos a `index.html`
 - [ ] `INFO_JUEGOS` en `js/nucleo/arranque.js` incluye «Yo nunca»

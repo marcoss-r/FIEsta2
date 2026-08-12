@@ -9,15 +9,13 @@ incómodas · Dos mentiras y una verdad · El Impostor.
 
 ## Estado
 
-✅ **Fases 0, 1 y 2 completas.** El esqueleto de la app está en pie (tema rojo,
-iconos, hub con las 5 tarjetas de juego originales y su ⓘ de información, aunque
-todavía no llevan a ningún sitio), los seis planes de juego ya están escritos en
-`md/`, y el **núcleo compartido** (`js/nucleo/`: jugadores, niveles de
-intensidad, modo fiesta, plantillas de texto, persistencia y handoff) está
-implementado y probado. **«Yo nunca» se añadió después de cerrar la Fase 0**,
-así que su tarjeta en el hub se añade al empezar su propia fase de
-implementación (ver `md/PLAN_YO_NUNCA.md`). Lo siguiente es la **Fase 3** (el
-primer juego: Yo nunca).
+✅ **Fases 0, 1 y 2 completas**, y 🚧 **Fase 3 en curso**: **«Yo nunca»** ya se
+juega de principio a fin — hub con sus 6 tarjetas, configuración de jugadores y
+niveles, modo fiesta, rotación de quien lee y partida guardable/reanudable —
+con un banco provisional de ~27 frases. Falta su banco definitivo (≥ 400,
+`md/PLAN_YO_NUNCA.md` §9) para cerrar la fase. El resto de tarjetas del hub
+(Quién es más…, Verdad o Reto, Preguntas incómodas, Dos mentiras y una verdad,
+El Impostor) aún no llevan a ningún sitio: se implementan en las fases 4-8.
 
 ## Por dónde empezar
 
@@ -57,8 +55,10 @@ python icons/generar_icono.py
 
 Cada juego guardará su banco en `data/<juego>/` como un `.json` (fuente) + un
 `.js` generado (`const XX_BANCO = […]`) + un script `agregar.py` para dar de
-alta entradas desde consola, igual que en FIEsta 1. Se implementa junto con
-cada juego (a partir de la Fase 3); de momento esas carpetas están vacías.
+alta entradas desde consola, igual que en FIEsta 1. `data/yonunca/frases.js`
+existe ya, pero solo como banco **provisional** (~27 entradas escritas a mano);
+el `.json` fuente y `agregar.py` llegan con el banco definitivo (Fase 3 de
+`md/PLAN_YO_NUNCA.md`). El resto de carpetas de juego siguen vacías.
 
 ## Tecnología
 

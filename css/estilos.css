@@ -557,3 +557,26 @@ button.secundario:hover {
   text-align: left;
   margin: 0;
 }
+
+/* ==========================================================
+   Yo nunca (yn) — ver md/PLAN_YO_NUNCA.md §4.3
+   ========================================================== */
+
+/* Cuerpo de la frase: lo más grande de la pantalla de juego. clamp() para que
+   las frases de 3-4 líneas no obliguen a hacer scroll en móviles pequeños. */
+.yn-frase {
+  margin: 0;
+  max-width: 30ch;
+  font-size: clamp(1.3rem, 5.5vw, 1.8rem);
+  font-weight: 700;
+  line-height: 1.35;
+  overflow-wrap: break-word;
+  color: var(--color-texto);
+}
+
+.yn-instruccion {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-acento-2);
+}

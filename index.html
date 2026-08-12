@@ -69,17 +69,27 @@
       <p class="fiesta-version" id="app-version"></p>
       <p>Elige un juego para empezar.</p>
       <div class="lista-juegos">
-        <button type="button" class="juego-card" id="btn-juego-vr">
+        <button type="button" class="juego-card" id="btn-juego-yn">
           <!-- La ⓘ es un <span> (no puede haber un botón dentro de otro botón);
                su click se captura en arranque.js con stopPropagation. -->
-          <span class="juego-card-info" data-info="vr" aria-label="Información de Verdad o Reto">i</span>
-          <span class="juego-card-nombre">Verdad o Reto</span>
-          <span class="juego-card-desc">Eliges verdad o reto y la app te lo sirve</span>
+          <span class="juego-card-info" data-info="yn" aria-label="Información de Yo nunca">i</span>
+          <span class="juego-card-nombre">Yo nunca</span>
+          <span class="juego-card-desc">Frases para bajar un dedo o beber</span>
         </button>
         <button type="button" class="juego-card" id="btn-juego-qm">
           <span class="juego-card-info" data-info="qm" aria-label="Información de Quién es más…">i</span>
           <span class="juego-card-nombre">Quién es más…</span>
           <span class="juego-card-desc">Preguntas para señalar a alguien del grupo</span>
+        </button>
+        <button type="button" class="juego-card" id="btn-juego-vr">
+          <span class="juego-card-info" data-info="vr" aria-label="Información de Verdad o Reto">i</span>
+          <span class="juego-card-nombre">Verdad o Reto</span>
+          <span class="juego-card-desc">Eliges verdad o reto y la app te lo sirve</span>
+        </button>
+        <button type="button" class="juego-card" id="btn-juego-pi">
+          <span class="juego-card-info" data-info="pi" aria-label="Información de Preguntas incómodas">i</span>
+          <span class="juego-card-nombre">Preguntas incómodas</span>
+          <span class="juego-card-desc">Preguntas directas y afiladas a una persona</span>
         </button>
         <button type="button" class="juego-card" id="btn-juego-dm">
           <span class="juego-card-info" data-info="dm" aria-label="Información de Dos mentiras y una verdad">i</span>
@@ -90,11 +100,6 @@
           <span class="juego-card-info" data-info="im" aria-label="Información de El Impostor">i</span>
           <span class="juego-card-nombre">El Impostor</span>
           <span class="juego-card-desc">Todos ven una palabra menos el impostor</span>
-        </button>
-        <button type="button" class="juego-card" id="btn-juego-pi">
-          <span class="juego-card-info" data-info="pi" aria-label="Información de Preguntas incómodas">i</span>
-          <span class="juego-card-nombre">Preguntas incómodas</span>
-          <span class="juego-card-desc">Preguntas directas y afiladas a una persona</span>
         </button>
       </div>
 
@@ -109,8 +114,54 @@
     </section>
 
     <!-- Las pantallas de cada juego se añaden en su propia fase de desarrollo
-         (ver md/PLAN_DESARROLLO.md §10). De momento las tarjetas de arriba no
-         llevan a ningún sitio: cada juego conecta su botón en su main.js. -->
+         (ver md/PLAN_DESARROLLO.md §10). De momento las tarjetas de vr, qm, pi,
+         dm e im no llevan a ningún sitio: cada juego conecta su botón en su
+         main.js al implementarse. -->
+
+    <!-- Yo nunca (yn) — ver md/PLAN_YO_NUNCA.md §4.3 para el mapa de IDs -->
+    <section class="pantalla" data-pantalla="yn-config">
+      <button type="button" class="boton-volver" data-volver="fiesta" aria-label="Volver al inicio">←</button>
+      <h1>Yo nunca</h1>
+      <div class="stepper" id="yn-stepper">
+        <button type="button" class="stepper-btn" data-accion="menos" aria-label="Menos jugadores">−</button>
+        <span class="stepper-valor"></span>
+        <button type="button" class="stepper-btn" data-accion="mas" aria-label="Más jugadores">+</button>
+      </div>
+      <div class="lista-scroll" id="yn-nombres"></div>
+      <div class="selector-niveles" id="yn-niveles"></div>
+      <div class="fila-switch">
+        <span>Modo fiesta (bebe en vez de bajar el dedo)</span>
+        <div id="yn-fiesta"></div>
+      </div>
+      <p class="ayuda" id="yn-regla"></p>
+      <p class="error" id="yn-error"></p>
+      <div class="fila-botones">
+        <button type="button" class="secundario" id="yn-btn-continuar" hidden>Continuar partida</button>
+        <button type="button" id="yn-btn-empezar">Empezar</button>
+      </div>
+    </section>
+
+    <section class="pantalla" data-pantalla="yn-juego">
+      <p class="ayuda" id="yn-lector"></p>
+      <h1 id="yn-encabezado">Yo nunca…</h1>
+      <p class="yn-frase" id="yn-frase"></p>
+      <p class="yn-instruccion" id="yn-instruccion"></p>
+      <p class="ayuda" id="yn-progreso"></p>
+      <p class="anuncio" id="yn-anuncio" hidden></p>
+      <div class="fila-botones">
+        <button type="button" class="secundario" id="yn-btn-terminar">Terminar</button>
+        <button type="button" id="yn-btn-siguiente">Siguiente</button>
+      </div>
+    </section>
+
+    <section class="pantalla" data-pantalla="yn-fin">
+      <h1>¡Partida terminada!</h1>
+      <p id="yn-resumen"></p>
+      <div class="fila-botones">
+        <button type="button" class="secundario" id="yn-btn-otra-partida">Otra partida</button>
+        <button type="button" id="yn-btn-hub">Volver al inicio</button>
+      </div>
+    </section>
 
     <!-- Aviso de tono (§7.4): overlay GLOBAL, fuera de cualquier .pantalla
          para poder mostrarse encima de cualquier juego (si viviera dentro de
@@ -141,8 +192,10 @@
 
   <!-- 2. Datos -->
   <script src="data/comun/castigos.js"></script>
+  <script src="data/yonunca/frases.js"></script>
 
-  <!-- 3. Lógica de cada juego: llega en la Fase 3 (Yo nunca) -->
+  <!-- 3. Lógica de cada juego -->
+  <script src="js/yonunca/main.js"></script>
 
   <!-- 4. Arranque: SIEMPRE el último (es quien muestra el hub) -->
   <script src="js/nucleo/arranque.js"></script>
