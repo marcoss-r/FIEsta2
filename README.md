@@ -9,9 +9,10 @@ El Impostor · Preguntas incómodas.
 
 ## Estado
 
-✅ **Fase 0 completa:** esqueleto de la app, tema rojo e iconos. El hub muestra
-las 5 tarjetas de juego (con su ⓘ de información), pero aún no llevan a ningún
-sitio: cada juego se conecta en su propia fase.
+✅ **Fase 0 y Fase 1 completas.** El esqueleto de la app está en pie (tema rojo,
+iconos, hub con las 5 tarjetas de juego y su ⓘ de información, aunque todavía no
+llevan a ningún sitio) y los cinco planes de juego ya están escritos en `md/`.
+Lo siguiente es la **Fase 2** (núcleo compartido).
 
 ## Por dónde empezar
 
@@ -19,7 +20,14 @@ Lee **[`md/PLAN_DESARROLLO.md`](md/PLAN_DESARROLLO.md)**: es la fuente de la
 verdad del proyecto (qué se construye, qué se reutiliza de la app original, la
 paleta, la arquitectura, las decisiones cerradas y las fases de desarrollo).
 
-Después, cada juego tendrá su propio plan en `md/` (los escribe la Fase 1).
+Después, cada juego tiene su propio plan, autosuficiente y con las decisiones ya
+cerradas:
+
+- [`md/PLAN_VERDAD_O_RETO.md`](md/PLAN_VERDAD_O_RETO.md) (`vr`)
+- [`md/PLAN_QUIEN_ES_MAS.md`](md/PLAN_QUIEN_ES_MAS.md) (`qm`)
+- [`md/PLAN_DOS_MENTIRAS.md`](md/PLAN_DOS_MENTIRAS.md) (`dm`)
+- [`md/PLAN_EL_IMPOSTOR.md`](md/PLAN_EL_IMPOSTOR.md) (`im`)
+- [`md/PLAN_PREGUNTAS_INCOMODAS.md`](md/PLAN_PREGUNTAS_INCOMODAS.md) (`pi`)
 
 ## Cómo abrir el proyecto
 
