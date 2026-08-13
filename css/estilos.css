@@ -827,3 +827,34 @@ button.secundario:hover {
   overflow-wrap: break-word;
   color: var(--color-texto);
 }
+
+/* ==========================================================
+   Preguntas incómodas (pi) — ver md/PLAN_PREGUNTAS_INCOMODAS.md §4.3
+   ========================================================== */
+
+/* Encabezado del destinatario ("ANA," o "Para todos"): a diferencia de
+   qm-encabezado (tenue), aquí va en grande porque es lo primero que hay que
+   leer en voz alta antes de la pregunta. */
+.pi-destinatario {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-acento);
+  text-align: center;
+}
+
+.pi-pregunta {
+  margin: 0;
+  max-width: 30ch;
+  font-size: clamp(1.3rem, 5.5vw, 1.8rem);
+  font-weight: 700;
+  line-height: 1.35;
+  overflow-wrap: break-word;
+  color: var(--color-texto);
+}
+
+/* #pi-btn-devolver usa hidden: el atributo pierde contra el display:flex de
+   .fila-botones (§3.3 del plan global) sin esta regla. */
+#pi-btn-devolver[hidden] {
+  display: none;
+}

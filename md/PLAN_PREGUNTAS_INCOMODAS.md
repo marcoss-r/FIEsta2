@@ -185,6 +185,7 @@ Campos: `texto`, `tipo` (`"dirigida"` | `"cruzada"` | `"grupo"`) y `nivel`
 | | línea tenue auxiliar (tipo `grupo`) | `pi-nota` |
 | | castigo / aviso (`.anuncio`, `hidden`) | `pi-castigo` |
 | | botones | `pi-btn-respondio` · `pi-btn-salta` · `pi-btn-devolver` |
+| | botón «Siguiente» tras el castigo de «Se lo salta» (`hidden` por defecto) | `pi-btn-siguiente-salta` |
 | | terminar | `pi-btn-terminar` |
 | `pi-fin` | resumen | `pi-resumen` |
 | | botones | `pi-btn-otra-partida` · `pi-btn-hub` |
@@ -390,13 +391,21 @@ devolución ya gastada sigue gastada.
 
 ## 8. Checklist
 
-- [ ] **Fase 1** — Pantallas, configuración y rotación
-- [ ] **Fase 2** — Motor de preguntas y los tres formatos
-- [ ] **Fase 3** — Banco de contenido (≥ 400, ≥ 80 por tipo)
-- [ ] **Fase 4** — Modo fiesta y devoluciones
-- [ ] **Fase 5** — Persistencia y pulido
-- [ ] `APP_VERSION`, `CACHE` y `ARCHIVOS` actualizados
-- [ ] `<script>` de datos y lógica añadidos a `index.html`
+- [x] **Fase 1** — Pantallas, configuración y rotación
+- [x] **Fase 2** — Motor de preguntas y los tres formatos (banco provisional
+      de 30, la muestra de §9 de este plan)
+- [ ] **Fase 3** — Banco de contenido (≥ 400, ≥ 80 por tipo): pendiente,
+      igual que en el resto de juegos, se hace a cuatro manos con el
+      usuario (§2.4)
+- [x] **Fase 4** — Modo fiesta y devoluciones (adelantada junto con las
+      Fases 1-2: castigo en «Se lo salta», botón «Devolver» con las cuatro
+      reglas, contador de devueltas)
+- [x] **Fase 5** — Persistencia y pulido (adelantada junto con las Fases
+      1-2: guardado/reanudación con devoluciones restantes, `clamp()`,
+      `APP_VERSION`/`CACHE`/`ARCHIVOS` al día; falta la prueba en
+      dispositivo real, que hace el usuario)
+- [x] `APP_VERSION`, `CACHE` y `ARCHIVOS` actualizados
+- [x] `<script>` de datos y lógica añadidos a `index.html`
 
 ---
 

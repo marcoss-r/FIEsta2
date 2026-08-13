@@ -27,13 +27,20 @@ principio a fin, cada uno con su banco de contenido **provisional**
   difieren beben (con modo fiesta); termina con un ranking de parejas por
   coincidencias.
 - **«Verdad o Reto»** (🚧 Fase 5 en curso) — chips de nivel y de modo (mixto /
-  solo verdades / solo retos), carta volteable en 3D, botón «Otra» (2 cambios
-  por turno, el segundo castiga con modo fiesta), «Paso» con castigo, banco de
-  200 verdades + 200 retos (`data/verdadreto/verdades.json` + `retos.json` +
-  `.js` generados + `agregar.py`), pendiente de que el usuario lo revise.
+  solo verdades / solo retos), carta volteable en 3D, «Paso» (en verdad o en
+  reto) con castigo ponderado (30 % beber / 20 % prenda / 50 % otros), «Otro
+  reto» sin límite ni castigo en los retos (no existe en las verdades), banco
+  de 200 verdades + 200 retos (`data/verdadreto/verdades.json` + `retos.json`
+  + `.js` generados + `agregar.py`), pendiente de que el usuario lo revise.
+- **«Preguntas incómodas»** (🚧 Fase 6 en curso) — la app elige a quién y qué
+  preguntar (tres formatos: `dirigida`, `cruzada` y `grupo`), rotación de
+  destinatario y lector, «Se lo salta» con castigo, botón «Devolver» (solo
+  con modo fiesta, una vez por jugador y partida, no encadenable), banco
+  provisional de 30 preguntas (`data/incomodas/preguntas.js`, la muestra de
+  `md/PLAN_PREGUNTAS_INCOMODAS.md` §9).
 
-El resto de tarjetas del hub (Preguntas incómodas, Dos mentiras y una verdad,
-El Impostor) aún no llevan a ningún sitio: se implementan en las fases 6-8.
+El resto de tarjetas del hub (Dos mentiras y una verdad, El Impostor) aún no
+llevan a ningún sitio: se implementan en las fases 7-8.
 
 ## Por dónde empezar
 
@@ -76,11 +83,12 @@ Cada juego guardará su banco en `data/<juego>/` como un `.json` (fuente) + un
 alta entradas desde consola, igual que en FIEsta 1. `data/yonunca/` ya sigue
 este patrón completo: `frases.json` (fuente, 649 entradas) + `frases.js`
 (generado) + `agregar.py` (da de alta frases nuevas y regenera el `.js`; nunca
-se edita `frases.js` a mano). `data/quienmas/preguntas.js` existe ya, pero
-solo como banco **provisional** (32 entradas escritas a mano, la muestra de
-`md/PLAN_QUIEN_ES_MAS.md` §9); su `.json` fuente y `agregar.py` llegan con el
-banco definitivo (Fase 3 de ese plan). El resto de carpetas de juego siguen
-vacías.
+se edita `frases.js` a mano). `data/quienmas/preguntas.js` y
+`data/incomodas/preguntas.js` existen ya, pero solo como bancos
+**provisionales** (32 y 30 entradas escritas a mano respectivamente, las
+muestras de sus planes §9); su `.json` fuente y `agregar.py` llegan con el
+banco definitivo de cada uno (su Fase 3). El resto de carpetas de juego
+siguen vacías.
 
 ## Tecnología
 
