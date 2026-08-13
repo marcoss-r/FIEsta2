@@ -663,6 +663,35 @@ button.secundario:hover {
   color: var(--color-texto);
 }
 
+/* Modo parejas (§10 del plan): línea "A vs B", destacada porque es lo primero
+   que hay que leer al salir una pareja nueva a la palestra. */
+.qm-vs {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color-acento-2);
+  text-align: center;
+}
+
+/* Lista de ranking: puede llegar a tener muchas filas (hasta 66 parejas con
+   12 jugadores), de ahí que qm-ranking use .pantalla.con-scroll. */
+.qm-ranking-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 26rem;
+}
+
+.qm-ranking-item {
+  margin: 0;
+  background: var(--color-superficie);
+  border-radius: var(--radio-borde-chico);
+  padding: 0.6rem 0.9rem;
+  text-align: left;
+  font-weight: 600;
+}
+
 /* ==========================================================
    Verdad o Reto (vr) — ver md/PLAN_VERDAD_O_RETO.md §4.3
    ========================================================== */

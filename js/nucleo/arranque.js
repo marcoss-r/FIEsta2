@@ -2,7 +2,7 @@
 // Debe cargarse el ÚLTIMO: al terminar muestra el hub de juegos.
 
 // Versión de la app. Al subirla, sube también CACHE en sw.js (otro contexto, no ve esto).
-const APP_VERSION = "1.5.1";
+const APP_VERSION = "1.5.2";
 
 // Textos de la ventana de información de cada juego (la ⓘ de las tarjetas del hub).
 const INFO_JUEGOS = {
@@ -27,7 +27,11 @@ const INFO_JUEGOS = {
     texto:
       "La app lanza una pregunta sobre el grupo (quién es más probable que…, " +
       "quién sería el primero en…, quién nunca…) y a la de tres todos señalan a " +
-      "la vez a quien crean. Se comenta a gritos y se pasa a la siguiente.",
+      "la vez a quien crean. Se comenta a gritos y se pasa a la siguiente. En el " +
+      "modo parejas, la app sortea una pareja de entre todos y le hace 8 " +
+      "preguntas: si coinciden se libran, si difieren, bebe quien lleve el modo " +
+      "fiesta encendido. Recorre todas las parejas posibles y acaba con un " +
+      "ranking.",
   },
   dm: {
     titulo: "Dos mentiras y una verdad",

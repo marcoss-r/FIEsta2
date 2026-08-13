@@ -20,7 +20,12 @@ principio a fin, cada uno con su banco de contenido **provisional**
   hipotéticas («probaría...»); pendiente de que el usuario lo recorte y afine.
 - **«Quién es más…»** (🚧 Fase 4 en curso) — chips de nivel y de tipo de
   pregunta, encabezado dinámico, castigo por pregunta con modo fiesta, banco
-  provisional de 32 preguntas (`data/quienmas/preguntas.js`).
+  provisional de 32 preguntas (`data/quienmas/preguntas.js`). Incluye además
+  un **modo parejas** (`md/PLAN_QUIEN_ES_MAS.md` §10): sortea una pareja de
+  entre todos los jugadores y recorre, en orden aleatorio, todas las
+  combinaciones posibles, 8 preguntas cada una; si coinciden se libran, si
+  difieren beben (con modo fiesta); termina con un ranking de parejas por
+  coincidencias.
 - **«Verdad o Reto»** (🚧 Fase 5 en curso) — chips de nivel y de modo (mixto /
   solo verdades / solo retos), carta volteable en 3D, botón «Otra» (2 cambios
   por turno, el segundo castiga con modo fiesta), «Paso» con castigo, banco de

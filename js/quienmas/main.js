@@ -4,6 +4,14 @@
 const QM_MIN_JUGADORES = 2;
 const QM_MAX_JUGADORES = 12;
 const QM_CLAVE_GUARDADO = "qm_partida";
+const QM_RONDAS_PAREJA = 8;
+
+// Modo parejas (§10 del plan): selección ÚNICA, a diferencia de los chips de
+// nivel y de tipo, que son multi-selección.
+const QM_MODOS = [
+  { id: "normal", nombre: "Normal" },
+  { id: "parejas", nombre: "Parejas" },
+];
 
 // Los encabezados viven en el código, no en los datos: si fueran parte de
 // cada entrada del banco, se repetirían cientos de veces.
@@ -28,12 +36,23 @@ const qmEstado = {
   nombres: [],
   niveles: [],
   tipos: [],
+  modo: "normal", // "normal" | "parejas"
   indiceLector: 0,
   preguntaActual: null,
   textoResuelto: "",
   castigoActual: "",
   contador: { preguntas: 0 },
   repartidor: null,
+  // Sub-estado propio del modo parejas (§10 del plan).
+  parejas: {
+    repartidor: null,
+    combinaciones: [], // [[i, j], …] índices sobre qmEstado.nombres, barajadas
+    indiceCombinacion: 0,
+    ronda: 0, // 1..QM_RONDAS_PAREJA de la pareja actual
+    coincidencias: 0,
+    diferencias: 0,
+    ranking: [], // [{ a, b, coincidencias, diferencias }, …] parejas ya completadas
+  },
 };
 
 // Referencias a los componentes montados en qm-config: se crean una sola vez
@@ -41,6 +60,7 @@ const qmEstado = {
 let qmConfigJugadores = null;
 let qmSelectorNiveles = null;
 let qmSelectorTipos = null;
+let qmSelectorModo = null;
 
 function qmMontarSelectorTipos(contenedor, alCambiar) {
   let elegidos = QM_TIPOS.map((tipo) => tipo.id); // los cuatro activos por defecto
@@ -75,21 +95,48 @@ function qmMontarSelectorTipos(contenedor, alCambiar) {
   return { obtenerTipos: () => elegidos.slice() };
 }
 
+function qmMontarSelectorModo(contenedor, alCambiar) {
+  let elegido = "normal";
+
+  function render() {
+    contenedor.innerHTML = "";
+    QM_MODOS.forEach((modo) => {
+      const chip = document.createElement("button");
+      chip.type = "button";
+      chip.className = "qm-chip" + (modo.id === elegido ? " activo" : "");
+      chip.dataset.modo = modo.id;
+      chip.textContent = modo.nombre;
+      chip.addEventListener("click", () => elegir(modo.id));
+      contenedor.appendChild(chip);
+    });
+  }
+
+  function elegir(id) {
+    if (id === elegido) return;
+    elegido = id;
+    render();
+    alCambiar(elegido);
+  }
+
+  render();
+  return { obtenerModo: () => elegido };
+}
+
 // Filtra por nivel (núcleo) y por tipo (chips propios), y descarta las
-// preguntas cuyo {otro}/{otro2} no puede resolverse con los jugadores
-// disponibles (el lector nunca puede ser su propio {otro}).
-function qmFiltrarBanco() {
+// preguntas cuyo {otro}/{otro2} no puede resolverse con los "disponibles"
+// que pase cada modo: el modo normal excluye al lector (nombres.length - 1),
+// el modo parejas no excluye a nadie (nombres.length), porque ahí nadie lee
+// para sí mismo (§10.4 del plan).
+function qmFiltrarBanco(disponibles) {
   const porNivel = filtrarPorNivel(QM_PREGUNTAS, qmEstado.niveles);
   const porTipo = porNivel.filter((pregunta) => qmEstado.tipos.includes(pregunta.tipo));
-  return porTipo.filter(
-    (pregunta) => otrosNecesarios(pregunta.texto) <= qmEstado.nombres.length - 1
-  );
+  return porTipo.filter((pregunta) => otrosNecesarios(pregunta.texto) <= disponibles);
 }
 
 // Prepara el repartidor con el banco ya filtrado. Devuelve false (y muestra
 // el error) si la combinación de nivel y tipo deja el banco vacío.
 function qmIniciarMotor() {
-  const banco = qmFiltrarBanco();
+  const banco = qmFiltrarBanco(qmEstado.nombres.length - 1);
   if (banco.length === 0) {
     document.getElementById("qm-error").textContent =
       "No hay preguntas para esta combinación de nivel y tipo.";
@@ -134,13 +181,192 @@ function qmRender() {
   }
 }
 
+// ===== Modo parejas (§10 del plan) =====
+
+// Todas las combinaciones de 2 sobre n jugadores (por índice), barajadas.
+function qmGenerarCombinaciones(n) {
+  const combinaciones = [];
+  for (let i = 0; i < n; i++) {
+    for (let j = i + 1; j < n; j++) {
+      combinaciones.push([i, j]);
+    }
+  }
+  return barajar(combinaciones);
+}
+
+function qmParejaActual() {
+  const [i, j] = qmEstado.parejas.combinaciones[qmEstado.parejas.indiceCombinacion];
+  return [qmEstado.nombres[i], qmEstado.nombres[j]];
+}
+
+// Prepara el repartidor (uno solo para todo el torneo) y sortea el orden de
+// las parejas. Devuelve false (y muestra el error) si el banco filtrado
+// queda vacío.
+function qmIniciarMotorParejas() {
+  const banco = qmFiltrarBanco(qmEstado.nombres.length);
+  if (banco.length === 0) {
+    document.getElementById("qm-error").textContent =
+      "No hay preguntas para esta combinación de nivel y tipo.";
+    return false;
+  }
+  qmEstado.parejas.repartidor = crearRepartidor(banco);
+  qmEstado.parejas.combinaciones = qmGenerarCombinaciones(qmEstado.nombres.length);
+  qmEstado.parejas.indiceCombinacion = 0;
+  qmEstado.parejas.ronda = 0;
+  qmEstado.parejas.coincidencias = 0;
+  qmEstado.parejas.diferencias = 0;
+  qmEstado.parejas.ranking = [];
+  return true;
+}
+
+function qmServirPreguntaPareja() {
+  const { valor, agotado } = qmEstado.parejas.repartidor.siguiente();
+  qmEstado.preguntaActual = valor;
+  // Sin lector: {otro}/{otro2} se resuelve con todos los jugadores como
+  // candidatos, nadie se excluye (a diferencia del modo normal).
+  qmEstado.textoResuelto = rellenarPlantilla(valor.texto, {
+    jugador: undefined,
+    otros: qmEstado.nombres,
+  });
+
+  const anuncio = document.getElementById("qm-pareja-anuncio");
+  anuncio.hidden = !agotado;
+  if (agotado) {
+    anuncio.textContent = "Se han acabado las preguntas con este filtro: volvemos a barajar.";
+  }
+}
+
+function qmRenderPareja() {
+  const [a, b] = qmParejaActual();
+  document.getElementById("qm-pareja-vs").textContent = `${a} vs ${b}`;
+  document.getElementById("qm-pareja-progreso").textContent =
+    `Pareja ${qmEstado.parejas.indiceCombinacion + 1} de ${qmEstado.parejas.combinaciones.length} · ` +
+    `Ronda ${qmEstado.parejas.ronda} de ${QM_RONDAS_PAREJA}`;
+  document.getElementById("qm-pareja-encabezado").textContent =
+    QM_ENCABEZADOS[qmEstado.preguntaActual.tipo];
+  document.getElementById("qm-pareja-pregunta").textContent = `${qmEstado.textoResuelto}?`;
+
+  document.getElementById("qm-pareja-resultado").hidden = true;
+  document.getElementById("qm-btn-coinciden").hidden = false;
+  document.getElementById("qm-btn-difieren").hidden = false;
+  document.getElementById("qm-btn-siguiente-pareja").hidden = true;
+}
+
+// Registra si la pareja ha coincidido o no en esta ronda (lo decide quien
+// lleva el móvil, la app no puede saber a quién han señalado).
+function qmElegirResultado(coinciden) {
+  const [a, b] = qmParejaActual();
+  const resultadoEl = document.getElementById("qm-pareja-resultado");
+  if (coinciden) {
+    qmEstado.parejas.coincidencias++;
+    resultadoEl.textContent = "🙌 ¡Coinciden! Se libran.";
+  } else {
+    qmEstado.parejas.diferencias++;
+    resultadoEl.textContent = modoFiestaActivo()
+      ? `🍻 ${a} y ${b}: ${castigoAlAzar()}`
+      : "😬 Han diferido.";
+  }
+  resultadoEl.hidden = false;
+  document.getElementById("qm-btn-coinciden").hidden = true;
+  document.getElementById("qm-btn-difieren").hidden = true;
+  document.getElementById("qm-btn-siguiente-pareja").hidden = false;
+  qmGuardar();
+}
+
+// Cierra la pareja actual (ya completó sus 8 rondas): la manda al ranking y
+// avanza a la siguiente combinación.
+function qmCerrarParejaActual() {
+  const [a, b] = qmParejaActual();
+  qmEstado.parejas.ranking.push({
+    a,
+    b,
+    coincidencias: qmEstado.parejas.coincidencias,
+    diferencias: qmEstado.parejas.diferencias,
+  });
+  qmEstado.parejas.indiceCombinacion++;
+  qmEstado.parejas.ronda = 0;
+  qmEstado.parejas.coincidencias = 0;
+  qmEstado.parejas.diferencias = 0;
+}
+
+// Botón «Siguiente» de qm-pareja: pasa a la ronda siguiente de la pareja
+// actual o, si ya jugó sus 8 rondas, cierra la pareja y sortea la próxima
+// pregunta para la siguiente (o muestra el ranking si ya no quedan).
+function qmSiguienteRondaPareja() {
+  if (qmEstado.parejas.ronda >= QM_RONDAS_PAREJA) {
+    qmCerrarParejaActual();
+    if (qmEstado.parejas.indiceCombinacion >= qmEstado.parejas.combinaciones.length) {
+      qmMostrarRanking();
+      return;
+    }
+  }
+  qmEstado.parejas.ronda++;
+  qmServirPreguntaPareja();
+  qmRenderPareja();
+  qmGuardar();
+}
+
+// Pinta el ranking (solo parejas que completaron sus 8 rondas) y navega a
+// qm-ranking. La llaman tanto el fin automático como «Terminar».
+function qmMostrarRanking() {
+  const ranking = qmEstado.parejas.ranking
+    .slice()
+    .sort((x, y) => y.coincidencias - x.coincidencias);
+
+  const contenedor = document.getElementById("qm-ranking-lista");
+  contenedor.innerHTML = "";
+  if (ranking.length === 0) {
+    const vacio = document.createElement("p");
+    vacio.textContent = "Ninguna pareja completó sus 8 rondas.";
+    contenedor.appendChild(vacio);
+  } else {
+    ranking.forEach((pareja, indice) => {
+      const item = document.createElement("p");
+      item.className = "qm-ranking-item";
+      item.textContent =
+        `${indice + 1}. ${pareja.a} y ${pareja.b} — ` +
+        `${pareja.coincidencias} de ${QM_RONDAS_PAREJA} coincidencias`;
+      contenedor.appendChild(item);
+    });
+  }
+
+  borrarGuardado(QM_CLAVE_GUARDADO);
+  mostrarPantalla("qm-ranking");
+}
+
+// «Otra partida» desde qm-ranking: mismo grupo, niveles y tipos, nuevo
+// sorteo de combinaciones.
+function qmOtraPartidaParejas() {
+  if (!qmIniciarMotorParejas()) {
+    mostrarPantalla("qm-config");
+    return;
+  }
+  qmEstado.parejas.ronda = 1;
+  qmServirPreguntaPareja();
+  mostrarPantalla("qm-pareja");
+  qmRenderPareja();
+  qmGuardar();
+}
+
 function qmGuardar() {
   guardarJSON(QM_CLAVE_GUARDADO, {
     nombres: qmEstado.nombres,
     niveles: qmEstado.niveles,
     tipos: qmEstado.tipos,
+    modo: qmEstado.modo,
     indiceLector: qmEstado.indiceLector,
     contador: qmEstado.contador,
+    parejas:
+      qmEstado.modo === "parejas"
+        ? {
+            combinaciones: qmEstado.parejas.combinaciones,
+            indiceCombinacion: qmEstado.parejas.indiceCombinacion,
+            ronda: qmEstado.parejas.ronda,
+            coincidencias: qmEstado.parejas.coincidencias,
+            diferencias: qmEstado.parejas.diferencias,
+            ranking: qmEstado.parejas.ranking,
+          }
+        : null,
   });
 }
 
@@ -157,6 +383,18 @@ function qmEmpezarPartida() {
   qmEstado.nombres = nombres;
   qmEstado.niveles = qmSelectorNiveles.obtenerNiveles();
   qmEstado.tipos = qmSelectorTipos.obtenerTipos();
+  qmEstado.modo = qmSelectorModo.obtenerModo();
+
+  if (qmEstado.modo === "parejas") {
+    if (!qmIniciarMotorParejas()) return;
+    qmEstado.parejas.ronda = 1;
+    qmServirPreguntaPareja();
+    mostrarPantalla("qm-pareja");
+    qmRenderPareja();
+    qmGuardar();
+    return;
+  }
+
   qmEstado.indiceLector = 0;
   qmEstado.contador.preguntas = 0;
   if (!qmIniciarMotor()) return;
@@ -187,6 +425,31 @@ function qmReanudar() {
   qmEstado.nombres = guardado.nombres;
   qmEstado.niveles = guardado.niveles;
   qmEstado.tipos = guardado.tipos;
+  qmEstado.modo = guardado.modo || "normal";
+
+  if (qmEstado.modo === "parejas" && guardado.parejas) {
+    const banco = qmFiltrarBanco(qmEstado.nombres.length);
+    if (banco.length === 0) {
+      document.getElementById("qm-error").textContent =
+        "No hay preguntas para esta combinación de nivel y tipo.";
+      mostrarPantalla("qm-config");
+      return;
+    }
+    qmEstado.parejas.repartidor = crearRepartidor(banco);
+    qmEstado.parejas.combinaciones = guardado.parejas.combinaciones;
+    qmEstado.parejas.indiceCombinacion = guardado.parejas.indiceCombinacion;
+    qmEstado.parejas.ronda = guardado.parejas.ronda;
+    qmEstado.parejas.coincidencias = guardado.parejas.coincidencias;
+    qmEstado.parejas.diferencias = guardado.parejas.diferencias;
+    qmEstado.parejas.ranking = guardado.parejas.ranking;
+
+    qmServirPreguntaPareja();
+    mostrarPantalla("qm-pareja");
+    qmRenderPareja();
+    qmGuardar();
+    return;
+  }
+
   qmEstado.indiceLector = guardado.indiceLector;
   qmEstado.contador = guardado.contador;
   if (!qmIniciarMotor()) {
@@ -226,6 +489,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   qmSelectorNiveles = montarSelectorNiveles(document.getElementById("qm-niveles"), () => {});
   qmSelectorTipos = qmMontarSelectorTipos(document.getElementById("qm-tipos"), () => {});
+  qmSelectorModo = qmMontarSelectorModo(document.getElementById("qm-modo"), () => {});
 
   montarInterruptorModoFiesta(document.getElementById("qm-fiesta"), () => {});
 
@@ -240,4 +504,13 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("qm-btn-terminar").addEventListener("click", qmTerminar);
   document.getElementById("qm-btn-otra-partida").addEventListener("click", qmOtraPartida);
   document.getElementById("qm-btn-hub").addEventListener("click", () => mostrarPantalla("fiesta"));
+
+  document.getElementById("qm-btn-coinciden").addEventListener("click", () => qmElegirResultado(true));
+  document.getElementById("qm-btn-difieren").addEventListener("click", () => qmElegirResultado(false));
+  document
+    .getElementById("qm-btn-siguiente-pareja")
+    .addEventListener("click", qmSiguienteRondaPareja);
+  document.getElementById("qm-btn-terminar-parejas").addEventListener("click", qmMostrarRanking);
+  document.getElementById("qm-btn-ranking-otra").addEventListener("click", qmOtraPartidaParejas);
+  document.getElementById("qm-btn-ranking-hub").addEventListener("click", () => mostrarPantalla("fiesta"));
 });

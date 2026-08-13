@@ -70,6 +70,7 @@ quién lee. Todo lo demás se resuelve señalando y gritando.
 | **Persistencia** | Clave `"qm_partida"`. Se guarda al servir cada pregunta; se borra en `qm-fin`. |
 | **Reanudación y repetición** | Al reanudar, el repartidor se reinicia (puede repetirse alguna pregunta ya vista). |
 | **Fin de partida** | Botón **«Terminar»** siempre visible → `qm-fin` con resumen → hub. |
+| **Modo parejas** | Ampliación (ver §10): selector de modo en `qm-config` (chip único, no multi-selección). Reutiliza niveles, tipos y banco. |
 
 ---
 
@@ -384,6 +385,9 @@ y continuando.
       hace el usuario)
 - [x] `APP_VERSION`, `CACHE` y `ARCHIVOS` actualizados
 - [x] `<script>` de datos y lógica añadidos a `index.html`
+- [x] **Modo parejas** (ver §10) — pedido por el usuario tras cerrar las
+      Fases 1-2-4; se implementa reutilizando el banco y los filtros
+      existentes, sin banco propio ni fase nueva de contenido.
 
 ---
 
@@ -438,3 +442,121 @@ y continuando.
 > Ojo especial en este juego: como se **señala a una persona real**, una pregunta
 > mal calibrada duele de verdad. Si una entrada solo funciona haciendo daño,
 > fuera.
+
+---
+
+## 10. Modo parejas (ampliación)
+
+Pedido por el usuario después de cerrar las Fases 1-2-4. Es un **modo
+alternativo** dentro del mismo juego, no un juego nuevo: reutiliza jugadores,
+niveles, tipos y el banco `QM_PREGUNTAS` tal cual.
+
+### 10.1 Qué es
+
+En vez de que todos señalen a la vez sobre el grupo, se sortea **una pareja**
+de entre todos los jugadores y sale «a la palestra». Se le hacen **8
+preguntas seguidas** (el mismo banco de siempre) y, para cada una, **ambos
+señalan a la vez a quien crean** — pero esta vez solo entre ellos dos importa
+si **coinciden o no**. La app no puede saber a quién han señalado (igual que
+en el modo normal, es un juego de dedo y voz), así que quien lleva el móvil
+**pulsa el resultado real** tras cada pregunta.
+
+Terminadas las 8 rondas de una pareja, sale otra: el juego recorre **todas
+las combinaciones posibles de parejas** de los jugadores apuntados, en orden
+aleatorio, cada una exactamente una vez, y termina automáticamente al
+agotarlas. Al final (o al pulsar «Terminar» antes de tiempo) se muestra un
+**ranking de parejas** ordenado por número de coincidencias.
+
+### 10.2 Decisiones cerradas de esta ampliación
+
+| Tema | Decisión |
+|---|---|
+| **Activación** | Chip de selección **única** en `qm-config` (`qm-modo`: Normal / Parejas), mismo look que `.qm-chip` pero sin multi-selección (patrón ya usado en `vr-modo` de Verdad o Reto). |
+| **Combinaciones** | **Todas** las combinaciones de 2 sobre los jugadores apuntados (C(n,2)), barajadas una vez al empezar. Cada combinación se juega **exactamente una vez**, nunca se repite en la misma partida. |
+| **Rondas por pareja** | Fijo: **8** (`QM_RONDAS_PAREJA`). |
+| **Registro del resultado** | Dos botones tras cada pregunta: **«Coinciden»** / **«Difieren»**. Los pulsa quien lleva el móvil, según lo que ha pasado de verdad. |
+| **Castigo** | Solo si **difieren**: con modo fiesta activo, `castigoAlAzar()` dirigido a la pareja («🍻 Ana y Luis: un trago»); con el modo apagado, solo un aviso neutro («Han diferido»), sin forzar nada (igual criterio que el resto del juego: sin modo fiesta, no hay consecuencia impuesta por la app). |
+| **Sin «lector»** | En este modo nadie lee por turno: se muestra «A vs B» en vez de «Lee NOMBRE». El hueco `{otro}`/`{otro2}` se resuelve con **todos** los jugadores como candidatos (no se excluye a nadie, a diferencia del modo normal que excluye al lector). |
+| **Repartidor** | Uno solo para **todo el torneo** de parejas (no uno por pareja), para no repetir preguntas entre parejas distintas hasta agotar el banco filtrado. |
+| **Filtros** | Reutiliza los mismos chips de nivel y de tipo de `qm-config`; el filtrado de banco también descarta textos cuyo `otrosNecesarios` no se pueda cubrir con `nombres.length` (ver §10.4). |
+| **Fin de partida** | Automático al agotar todas las combinaciones, o manual con **«Terminar»** (siempre visible en `qm-pareja`). Ambos caminos llevan a `qm-ranking`. |
+| **Qué entra en el ranking** | Solo las parejas que **completaron sus 8 rondas**. Si se pulsa «Terminar» a mitad de una pareja, esa pareja en curso se descarta (no se cuenta con datos parciales). |
+| **Orden del ranking** | Descendente por nº de coincidencias (de 8). Empates: se mantiene el orden en que terminaron, sin desempate especial. |
+| **Persistencia** | Misma clave `"qm_partida"`, con un campo `modo` y, si es `"parejas"`, el sub-estado (`combinaciones`, `indiceCombinacion`, `ronda`, `coincidencias`, `diferencias`, `ranking`). Al reanudar, el repartidor se reinicia (mismo criterio que el resto de la app) y se sirve una pregunta nueva para la ronda en curso. |
+| **Jugadores** | Mismo rango 2–12. Con 2 jugadores solo hay una combinación posible (ellos mismos): el torneo son 8 rondas y termina. |
+
+### 10.3 Flujo
+
+```
+qm-config (chip de modo) ──► modo "parejas" ──► qm-pareja ──┐
+                                                    ▲        │ «Siguiente» tras marcar
+                                                    └────────┘  Coinciden/Difieren
+                     «Terminar» ─────────────┐
+        (combinaciones agotadas) ────────────┴──► qm-ranking ──► hub
+                                                       │
+                                              «Otra partida» (nuevo sorteo,
+                                               mismos jugadores/filtros)
+```
+
+### 10.4 Modelo de datos (ampliación de `qmEstado`)
+
+```js
+const QM_RONDAS_PAREJA = 8;
+
+const QM_MODOS = [
+  { id: "normal", nombre: "Normal" },
+  { id: "parejas", nombre: "Parejas" },
+];
+
+// Añadido a qmEstado:
+qmEstado.modo = "normal";           // "normal" | "parejas"
+qmEstado.parejas = {
+  repartidor: null,                 // uno solo para todo el torneo
+  combinaciones: [],                // [[i, j], …] índices sobre qmEstado.nombres, barajadas
+  indiceCombinacion: 0,
+  ronda: 0,                         // 1..QM_RONDAS_PAREJA de la pareja actual
+  coincidencias: 0,
+  diferencias: 0,
+  ranking: [],                      // [{ a, b, coincidencias, diferencias }, …] parejas ya completadas
+};
+```
+
+`qmFiltrarBanco(disponibles)` se generaliza con un parámetro (antes fijo a
+`nombres.length - 1`): el modo normal sigue pasando `nombres.length - 1`
+(excluye al lector), el modo parejas pasa `nombres.length` (nadie se
+excluye).
+
+### 10.5 Pantallas y componentes nuevos
+
+| Pantalla | Elemento | ID |
+|---|---|---|
+| `qm-config` | chip de modo (selección única) | `qm-modo` |
+| `qm-pareja` | línea «A vs B» | `qm-pareja-vs` |
+| | progreso («Pareja 2 de 10 · Ronda 3 de 8») | `qm-pareja-progreso` |
+| | encabezado del tipo | `qm-pareja-encabezado` |
+| | cuerpo de la pregunta | `qm-pareja-pregunta` |
+| | resultado de la ronda (`.anuncio`, `hidden`) | `qm-pareja-resultado` |
+| | aviso de banco agotado (`.anuncio`, `hidden`) | `qm-pareja-anuncio` |
+| | botones de registro | `qm-btn-coinciden` · `qm-btn-difieren` |
+| | botón «Siguiente» (`hidden` hasta marcar resultado) | `qm-btn-siguiente-pareja` |
+| | botón «Terminar» (siempre visible) | `qm-btn-terminar-parejas` |
+| `qm-ranking` | lista de ranking | `qm-ranking-lista` |
+| | botones | `qm-btn-ranking-otra` · `qm-btn-ranking-hub` |
+
+### 10.6 Casos borde propios de este modo
+
+- **Combinación de nivel/tipo vacía**: mismo error que el modo normal, en
+  `#qm-error`, sin salir de `qm-config`.
+- **Banco agotado a mitad de torneo**: mismo aviso que el resto de juegos
+  (`.anuncio`), rebaraja y sigue, nunca bloquea.
+- **`{otro}` puede nombrar a uno de los dos de la pareja actual**: no se
+  excluye, es un simple hueco de texto dentro de la pregunta, no tiene
+  relación con a quién señalan después.
+- **Terminar en la ronda 8 justo antes de pulsar «Siguiente»**: esa pareja
+  cuenta como completada solo si ya se pulsó Coinciden/Difieren de la ronda 8
+  (es decir, si ya está en `ranking`); si se pulsa «Terminar» con la
+  pregunta 8 aún sin resultado, se descarta como el resto de parejas a
+  medias.
+- **Doble toque en los botones de resultado**: se ocultan nada más pulsar
+  uno (aparece «Siguiente» en su lugar), igual criterio que el resto de
+  botones de una sola vez de la app.
