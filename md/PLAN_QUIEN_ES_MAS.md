@@ -378,8 +378,11 @@ y continuando.
 - [x] **Fase 1** — Pantallas, configuración y filtro por tipo
 - [x] **Fase 2** — Motor de preguntas y encabezados (banco provisional de 32,
       la muestra de §9 de este plan)
-- [ ] **Fase 3** — Banco de contenido (≥ 400, ≥ 60 por tipo): pendiente,
-      igual que en «Yo nunca», se hace a cuatro manos con el usuario (§2.4)
+- [x] **Fase 3** — Banco de contenido (≥ 400, ≥ 60 por tipo): 400 preguntas
+      (100 por tipo, 40 suave / 40 picante / 20 extremo en cada uno), sin
+      duplicados exactos, con `preguntas.json` (fuente) y `agregar.py`.
+      Probado con jsdom: 300 preguntas seguidas sin repetirse, 0 errores de
+      consola. Pendiente de que el usuario lo revise y afine (§2.4)
 - [x] **Fase 4** — Modo fiesta y pulido (adelantada junto con las Fases 1-2:
       castigo por pregunta, guardado/reanudación, `clamp()`, `APP_VERSION`/
       `CACHE`/`ARCHIVOS` al día; falta la prueba en dispositivo real, que

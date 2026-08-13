@@ -1,0 +1,2002 @@
+[
+  {
+    "texto": "acabe durmiendo en el sofá esta noche",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "pierda el móvil en los próximos tres meses",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "se apunte a un gimnasio y no vaya nunca",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "llore viendo un anuncio",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "se enamore de alguien a quien conoció esa misma noche",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "conteste un mensaje a las cuatro de la mañana",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "acabe montando una escena en una boda",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "se case con {otro} si el mundo se acabara mañana",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "haya mentido en algo gordo esta misma semana",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "deje de hablarse con alguien de esta sala en un año",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "de hacer un drama cuando se pone malo",
+    "tipo": "adjetivo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "insoportable antes del primer café",
+    "tipo": "adjetivo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "exigente con los demás y blando consigo mismo",
+    "tipo": "adjetivo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "de organizar planes que luego cancela",
+    "tipo": "adjetivo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "de perdonar demasiado rápido",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de decir «no me importa» cuando le importa muchísimo",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "dependiente de que le digan que lo está haciendo bien",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de guardar rencor durante años sin decirlo",
+    "tipo": "adjetivo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "perderse en una ciudad nueva",
+    "tipo": "primero",
+    "nivel": "suave"
+  },
+  {
+    "texto": "quedarse dormido en el cine",
+    "tipo": "primero",
+    "nivel": "suave"
+  },
+  {
+    "texto": "pedir el postre antes que nadie",
+    "tipo": "primero",
+    "nivel": "suave"
+  },
+  {
+    "texto": "montar el karaoke en una reunión familiar",
+    "tipo": "primero",
+    "nivel": "suave"
+  },
+  {
+    "texto": "escribir a su ex después de tres copas",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "contar un secreto que le habían pedido guardar",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "abandonar el grupo si la cosa se pusiera fea",
+    "tipo": "primero",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "reconocer que ha estado fingiendo estar bien",
+    "tipo": "primero",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "ha ido a una fiesta sin saber de quién era",
+    "tipo": "nunca",
+    "nivel": "suave"
+  },
+  {
+    "texto": "ha cantado en un karaoke delante de desconocidos",
+    "tipo": "nunca",
+    "nivel": "suave"
+  },
+  {
+    "texto": "se ha ido de un sitio sin despedirse de nadie",
+    "tipo": "nunca",
+    "nivel": "suave"
+  },
+  {
+    "texto": "ha cotilleado el móvil de alguien",
+    "tipo": "nunca",
+    "nivel": "picante"
+  },
+  {
+    "texto": "ha inventado una excusa para cortar una conversación",
+    "tipo": "nunca",
+    "nivel": "picante"
+  },
+  {
+    "texto": "ha dicho «te quiero» sin sentirlo",
+    "tipo": "nunca",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "se quede dormido en el sofá viendo una peli",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "llegue tarde a su propia fiesta de cumpleaños",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "se olvide las llaves de casa esta semana",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "mande un audio de dos minutos para decir algo que cabía en una frase",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "se compre algo solo porque estaba de oferta",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "tenga la nevera vacía ahora mismo",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "se quede sin batería en el peor momento",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "pierda el autobús por pararse a mirar el móvil",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "se ría en un momento inoportuno",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "cante en la ducha sin darse cuenta de que se le oye",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "tenga más de veinte pestañas abiertas en el móvil",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "se apunte a un plan sin leer bien de qué iba",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "deje una serie a medias durante meses",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "se quede sin gasolina por no querer parar",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "pida perdón por algo que no era culpa suya",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "tenga una lista de tareas pendientes desde hace un año",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "se disfrace el último para Halloween",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "se pierda dentro de su propia ciudad",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "mande el mismo mensaje sin querer a dos personas",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "se quede en pijama todo el día sin salir",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "tenga un cajón lleno de cables que no sabe para qué son",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "se compre ropa que nunca llega a estrenar",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "termine bailando encima de una silla",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "se le olvide una cita importante",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "duerma la siesta más larga de la fiesta",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "le entre hambre a las tantas de la noche",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "se pierda el final de una peli por quedarse dormido",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "tenga el móvil al 1% todo el día",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "reserve un plan y luego no tenga ganas de ir",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "tenga una app que usó una sola vez y nunca borró",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "se le rompa algo el mismo día que lo ha comprado",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "tenga que volver a casa porque se dejó algo a medio camino",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "se equivoque de nombre al saludar a alguien",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "cuente la misma anécdota más de tres veces al mismo grupo",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "se quede en la puerta de casa buscando las llaves diez minutos",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "tenga la casa hecha un desastre ahora mismo",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "tenga una conversación pendiente que lleva evitando meses",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "se arrepienta de un mensaje en cuanto lo manda",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "mienta sobre estar ocupado para no quedar con alguien",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "cotillee el perfil de un ex sin que se entere",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "se enamore de quien menos le conviene",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "guarde una foto vergonzosa de alguien de este grupo",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "tenga una relación complicada con su familia",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "ligue mandando un meme",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "se líe con alguien de esta sala si se lo propusieran",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "mienta en una primera cita para dar mejor imagen",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "tenga un historial de búsquedas que no enseñaría a nadie",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "le dé más like a un ex del que debería",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "finja que no ha visto un mensaje para no responder",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "tenga celos sin admitirlo",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "se acueste tarde hablando con alguien que le gusta",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "deje a alguien en visto durante días a propósito",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "hable mal de alguien y luego quede con esa persona como si nada",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "tenga un plan B por si el plan A no sale bien en una cita",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "se invente una excusa para no ir a un plan familiar",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "le cueste decir que no le apetece algo",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "haya sentido algo por el ex de un amigo",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "se pase de la raya bromeando y tenga que pedir perdón",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "mande indirectas en redes sociales",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "tenga guardado un mensaje que nunca se atrevió a mandar",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "se compare con los demás más de lo que admite",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "tenga miedo a quedarse solo",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "finja estar bien cuando no lo está",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "tenga más paciencia con desconocidos que con su familia",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "se sienta más cómodo mintiendo un poco que quedando mal",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "tenga un secreto que solo sabe una persona de esta sala",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "le dé vergüenza pedir ayuda aunque la necesite",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "juzgue a alguien por su vida en redes sin conocerle de verdad",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "mantenga contacto con un ex «por si acaso»",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "se avergüence de algo que dijo hace años",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "tenga la autoestima más baja de lo que aparenta",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "acabe hablando de temas profundos borracho",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "haya besado a alguien solo por despecho",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "haya sentido alivio al enterarse de una ruptura ajena",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "haya mentido sobre algo importante para no perder a alguien",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "deje de hablarle a alguien de esta sala sin darle explicaciones",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "haya deseado que le fuera mal a alguien cercano",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "tenga un secreto que cambiaría cómo le ve el grupo",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "haya usado a alguien para superar a otra persona",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "rompa una promesa importante si le conviene",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "haya sido desleal con una amistad, no con una pareja",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "haya fingido un sentimiento que no tenía por interés",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "sea capaz de guardar un secreto ajeno para siempre, cueste lo que cueste",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "haya dejado de defender a alguien por miedo al qué dirán",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "se alegre en el fondo de un fracaso ajeno",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "haya mentido en algo grave a su familia",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "corte una relación por mensaje en vez de la cara",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "haya traicionado la confianza de alguien de este grupo",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "sea capaz de mentir mirando a los ojos sin inmutarse",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "haya elegido el dinero antes que a una amistad",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "de perderse las cosas importantes por quedarse dormido",
+    "tipo": "adjetivo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "de subestimar cuánto tarda en arreglarse",
+    "tipo": "adjetivo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "de dejarlo todo para el último momento",
+    "tipo": "adjetivo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "de hablar solo en voz alta sin darse cuenta",
+    "tipo": "adjetivo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "de tener la casa llena de plantas a medio cuidar",
+    "tipo": "adjetivo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "exigente pidiendo comida a domicilio",
+    "tipo": "adjetivo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "de cambiar de planes a última hora",
+    "tipo": "adjetivo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "de tener siempre una excusa lista",
+    "tipo": "adjetivo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "de perder las cosas justo cuando más las necesita",
+    "tipo": "adjetivo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "quisquilloso con la comida",
+    "tipo": "adjetivo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "de contarlo todo con pelos y señales",
+    "tipo": "adjetivo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "de dormirse en cualquier sitio",
+    "tipo": "adjetivo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "de dejar mensajes en visto sin querer",
+    "tipo": "adjetivo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "torpe llevando cosas en las manos",
+    "tipo": "adjetivo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "de hablar con las manos más de la cuenta",
+    "tipo": "adjetivo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "de reírse en los momentos serios",
+    "tipo": "adjetivo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "de tomarse las cosas con humor",
+    "tipo": "adjetivo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "impaciente en las colas",
+    "tipo": "adjetivo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "de acumular notificaciones sin mirar",
+    "tipo": "adjetivo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "de improvisar en vez de planear",
+    "tipo": "adjetivo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "de decir que sí a todo sin pensarlo",
+    "tipo": "adjetivo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "despistado con las fechas importantes",
+    "tipo": "adjetivo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "de tararear canciones sin darse cuenta",
+    "tipo": "adjetivo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "de guardar entradas y billetes de viajes antiguos",
+    "tipo": "adjetivo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "de organizar el armario por colores",
+    "tipo": "adjetivo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "de tener siempre snacks a mano",
+    "tipo": "adjetivo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "de hacer la lista de la compra y olvidarla en casa",
+    "tipo": "adjetivo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "curioso con la vida de los demás",
+    "tipo": "adjetivo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "de hablar solo mientras cocina",
+    "tipo": "adjetivo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "de tener treinta ventanas abiertas en el ordenador",
+    "tipo": "adjetivo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "de llegar el primero a todos los planes",
+    "tipo": "adjetivo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "de decir «cinco minutos» y tardar media hora",
+    "tipo": "adjetivo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "de recordar cumpleaños que nadie más recuerda",
+    "tipo": "adjetivo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "de hacer planes que luego no cumple",
+    "tipo": "adjetivo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "de tomarse una siesta en cualquier sitio",
+    "tipo": "adjetivo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "de cantar mal a propósito para hacer reír",
+    "tipo": "adjetivo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "de guardar rencor más tiempo del que admite",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de necesitar que le den la razón",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de compararse con los demás en redes",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de idealizar a la gente al principio de conocerla",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de tener el corazón roto más veces de las que cuenta",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de dar celos sin darse cuenta",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de necesitar aprobación ajena para sentirse bien",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de romper corazones sin mala intención",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de dejar a alguien «en visto» a propósito",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de tener mano dura con quien le hace daño",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de aguantar más de lo que debería en una relación",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de fingir que está bien cuando no lo está",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de sentir celos de sus propios amigos",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de cortar por lo sano sin dar explicaciones",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "capaz de mentir con cara de póker",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de necesitar tener siempre la última palabra",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de guardar un as bajo la manga en las discusiones",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de vengarse con indirectas",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de dar más cariño del que recibe",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de perdonar demasiado rápido a quien no lo merece",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de mantener el contacto con exes «solo como amigos»",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de necesitar espacio justo cuando le dan cariño",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de sentirse atraído por quien no le conviene",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de decir que no le importa cuando le importa muchísimo",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de callarse lo que de verdad piensa por no discutir",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de exagerar una historia para quedar mejor",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de tener una lista de razones para no confiar en alguien",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de juzgar rápido y arrepentirse después",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de necesitar tener razón incluso equivocándose",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de dar consejos que él mismo no sigue",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de sentirse solo rodeado de gente",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de tener más paciencia con desconocidos que con quien quiere",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de fingir indiferencia cuando en realidad le duele",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de esconder cómo se siente de verdad",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de aferrarse a algo que sabe que no tiene futuro",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de tener un ego más frágil de lo que aparenta",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de necesitar sentirse deseado constantemente",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "capaz de mentir a la cara sin que se le note",
+    "tipo": "adjetivo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "de guardar rencor toda la vida sin decirlo nunca",
+    "tipo": "adjetivo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "de manipular una situación a su favor",
+    "tipo": "adjetivo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "capaz de romper una amistad por orgullo",
+    "tipo": "adjetivo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "de anteponer su ego a la felicidad de otro",
+    "tipo": "adjetivo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "de callarse una traición para no perder la paz",
+    "tipo": "adjetivo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "de fingir una amistad por interés",
+    "tipo": "adjetivo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "capaz de mentir para no perder a alguien",
+    "tipo": "adjetivo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "de guardar un secreto que podría hacer mucho daño",
+    "tipo": "adjetivo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "capaz de sabotear a alguien sin que se note",
+    "tipo": "adjetivo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "de sentir envidia de sus personas más cercanas",
+    "tipo": "adjetivo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "capaz de dejar de hablarle a alguien de la nada",
+    "tipo": "adjetivo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "de anteponer el dinero a una amistad",
+    "tipo": "adjetivo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "capaz de usar la confianza de alguien en su contra",
+    "tipo": "adjetivo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "de guardar más secretos de los que parece",
+    "tipo": "adjetivo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "capaz de fingir perdón sin sentirlo de verdad",
+    "tipo": "adjetivo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "de tener un lado oscuro que casi nadie conoce",
+    "tipo": "adjetivo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "capaz de dejar tirado a alguien si le conviene",
+    "tipo": "adjetivo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "de sentirse aliviado con el fracaso de otro",
+    "tipo": "adjetivo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "quedarse dormido en una reunión familiar",
+    "tipo": "primero",
+    "nivel": "suave"
+  },
+  {
+    "texto": "proponer cambiar de planes a última hora",
+    "tipo": "primero",
+    "nivel": "suave"
+  },
+  {
+    "texto": "perder el vuelo por llegar tarde",
+    "tipo": "primero",
+    "nivel": "suave"
+  },
+  {
+    "texto": "pedir la cuenta en una cena de grupo",
+    "tipo": "primero",
+    "nivel": "suave"
+  },
+  {
+    "texto": "rendirse en un juego de mesa",
+    "tipo": "primero",
+    "nivel": "suave"
+  },
+  {
+    "texto": "quedarse sin batería y no darse cuenta",
+    "tipo": "primero",
+    "nivel": "suave"
+  },
+  {
+    "texto": "cambiar de canción en una fiesta",
+    "tipo": "primero",
+    "nivel": "suave"
+  },
+  {
+    "texto": "hacer una videollamada sin avisar",
+    "tipo": "primero",
+    "nivel": "suave"
+  },
+  {
+    "texto": "mandar el mensaje de buenos días al grupo",
+    "tipo": "primero",
+    "nivel": "suave"
+  },
+  {
+    "texto": "proponer pedir comida a domicilio",
+    "tipo": "primero",
+    "nivel": "suave"
+  },
+  {
+    "texto": "reírse en una foto de grupo arruinando la pose",
+    "tipo": "primero",
+    "nivel": "suave"
+  },
+  {
+    "texto": "dormirse viendo una peli",
+    "tipo": "primero",
+    "nivel": "suave"
+  },
+  {
+    "texto": "llegar tarde a una quedada",
+    "tipo": "primero",
+    "nivel": "suave"
+  },
+  {
+    "texto": "rendirse haciendo una manualidad complicada",
+    "tipo": "primero",
+    "nivel": "suave"
+  },
+  {
+    "texto": "perderse usando el GPS",
+    "tipo": "primero",
+    "nivel": "suave"
+  },
+  {
+    "texto": "cancelar un plan por cansancio",
+    "tipo": "primero",
+    "nivel": "suave"
+  },
+  {
+    "texto": "pedir ayuda para montar un mueble",
+    "tipo": "primero",
+    "nivel": "suave"
+  },
+  {
+    "texto": "hacer una locura por una apuesta tonta",
+    "tipo": "primero",
+    "nivel": "suave"
+  },
+  {
+    "texto": "proponer un brindis en una cena",
+    "tipo": "primero",
+    "nivel": "suave"
+  },
+  {
+    "texto": "quejarse del tiempo",
+    "tipo": "primero",
+    "nivel": "suave"
+  },
+  {
+    "texto": "sugerir irse a dormir en una fiesta",
+    "tipo": "primero",
+    "nivel": "suave"
+  },
+  {
+    "texto": "mandar una foto borrosa al grupo sin querer",
+    "tipo": "primero",
+    "nivel": "suave"
+  },
+  {
+    "texto": "perder las llaves del coche",
+    "tipo": "primero",
+    "nivel": "suave"
+  },
+  {
+    "texto": "reconocer que se ha perdido pidiendo indicaciones",
+    "tipo": "primero",
+    "nivel": "suave"
+  },
+  {
+    "texto": "hacer una broma que no sale bien",
+    "tipo": "primero",
+    "nivel": "suave"
+  },
+  {
+    "texto": "proponer hacer una escapada de fin de semana",
+    "tipo": "primero",
+    "nivel": "suave"
+  },
+  {
+    "texto": "cambiar de opinión sobre un plan",
+    "tipo": "primero",
+    "nivel": "suave"
+  },
+  {
+    "texto": "quedarse sin argumentos discutiendo por tonterías",
+    "tipo": "primero",
+    "nivel": "suave"
+  },
+  {
+    "texto": "rendirse a mitad de una dieta",
+    "tipo": "primero",
+    "nivel": "suave"
+  },
+  {
+    "texto": "reírse de su propio chiste antes de contarlo",
+    "tipo": "primero",
+    "nivel": "suave"
+  },
+  {
+    "texto": "sugerir cambiar de restaurante ya en la puerta",
+    "tipo": "primero",
+    "nivel": "suave"
+  },
+  {
+    "texto": "tirar la toalla montando algo de IKEA",
+    "tipo": "primero",
+    "nivel": "suave"
+  },
+  {
+    "texto": "proponer volver a casa en una fiesta",
+    "tipo": "primero",
+    "nivel": "suave"
+  },
+  {
+    "texto": "subir una foto vergonzosa sin darse cuenta",
+    "tipo": "primero",
+    "nivel": "suave"
+  },
+  {
+    "texto": "pedir el número de una tienda para reclamar algo",
+    "tipo": "primero",
+    "nivel": "suave"
+  },
+  {
+    "texto": "mandar un audio kilométrico sin necesidad",
+    "tipo": "primero",
+    "nivel": "suave"
+  },
+  {
+    "texto": "escribirle a un ex después de una discusión",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "confesar que le gusta alguien del grupo",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "llorar viendo una peli romántica delante de todos",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "hablar mal de alguien a sus espaldas",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "sentir celos de un amigo con éxito",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "rendirse en una relación que no funciona",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "pedir perdón después de una discusión",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "reconocer que se ha equivocado en una pelea",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "cotillear el móvil de su pareja",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "mandar un mensaje pasivo-agresivo",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "desaparecer sin avisar tras una cita",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "contarle un secreto ajeno a otra persona",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "juzgar a alguien por su nueva pareja",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "sentir envidia de la vida de otro en redes",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "mentir para librarse de un plan",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "arrepentirse públicamente de algo que dijo",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "quedar con un ex «solo para hablar»",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "dejar de seguir a alguien en redes tras una pelea",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "buscar el perfil de un ex a las tantas",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "inventarse una excusa para no ver a la familia",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "llorar por una canción sin razón aparente",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "confesar una inseguridad delante del grupo",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "sentirse celoso sin motivo real",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "romper el hielo tras una pelea con el grupo",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "reconocer que ha idealizado a alguien",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "quedarse callado en una discusión familiar",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "buscar excusas para no quedar con alguien",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "cambiar de tema cuando le preguntan por su ex",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "borrar fotos de una relación pasada",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "hablar de más tras unas copas",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "arrepentirse de un tatuaje o corte de pelo",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "confesar que estaba mintiendo sobre algo pequeño",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "sentirse inseguro comparándose con otros",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "quedar con alguien solo por no estar solo",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "pedir consejo sobre una relación tóxica",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "reconocer que sigue pensando en un ex",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "contar una mentira piadosa para no herir a alguien",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "desahogarse llorando por estrés acumulado",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "confesar una mentira que lleva ocultando años",
+    "tipo": "primero",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "reconocer que ha sido desleal en una relación",
+    "tipo": "primero",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "admitir que ha mentido sobre algo importante a su familia",
+    "tipo": "primero",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "reconocer que ha dejado de querer a alguien sin decírselo",
+    "tipo": "primero",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "confesar que ha traicionado la confianza de un amigo",
+    "tipo": "primero",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "admitir que odió a alguien de este grupo en algún momento",
+    "tipo": "primero",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "reconocer un error que le costó una amistad",
+    "tipo": "primero",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "confesar que ha sido cruel con alguien a propósito",
+    "tipo": "primero",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "admitir que ha mentido para hacer daño",
+    "tipo": "primero",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "reconocer que se alegró del sufrimiento ajeno",
+    "tipo": "primero",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "confesar un secreto familiar incómodo",
+    "tipo": "primero",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "admitir que ha usado a alguien emocionalmente",
+    "tipo": "primero",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "reconocer que rompió una promesa importante a propósito",
+    "tipo": "primero",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "confesar que ha mentido sobre sus sentimientos por interés",
+    "tipo": "primero",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "admitir que dejó de hablarle a alguien sin razón real",
+    "tipo": "primero",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "reconocer que ha guardado un secreto que dolía mucho",
+    "tipo": "primero",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "confesar que ha sido desleal con alguien de confianza",
+    "tipo": "primero",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "admitir que antepuso su orgullo a pedir perdón",
+    "tipo": "primero",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "ha dormido con la ropa puesta por accidente",
+    "tipo": "nunca",
+    "nivel": "suave"
+  },
+  {
+    "texto": "ha mandado un audio pensando que era mensaje de texto",
+    "tipo": "nunca",
+    "nivel": "suave"
+  },
+  {
+    "texto": "se ha quedado sin cobertura en el peor momento",
+    "tipo": "nunca",
+    "nivel": "suave"
+  },
+  {
+    "texto": "ha llorado viendo un anuncio de la tele",
+    "tipo": "nunca",
+    "nivel": "suave"
+  },
+  {
+    "texto": "ha bailado solo en casa como si nadie mirara",
+    "tipo": "nunca",
+    "nivel": "suave"
+  },
+  {
+    "texto": "se ha reído tanto que le ha dolido la tripa",
+    "tipo": "nunca",
+    "nivel": "suave"
+  },
+  {
+    "texto": "ha perdido la cuenta de cuántas veces ha visto su serie favorita",
+    "tipo": "nunca",
+    "nivel": "suave"
+  },
+  {
+    "texto": "ha llamado a alguien por el nombre equivocado",
+    "tipo": "nunca",
+    "nivel": "suave"
+  },
+  {
+    "texto": "se ha quedado dormido en el transporte público",
+    "tipo": "nunca",
+    "nivel": "suave"
+  },
+  {
+    "texto": "ha cocinado algo que ha salido fatal y lo ha dicho igualmente",
+    "tipo": "nunca",
+    "nivel": "suave"
+  },
+  {
+    "texto": "se ha comprado algo solo por el envase",
+    "tipo": "nunca",
+    "nivel": "suave"
+  },
+  {
+    "texto": "ha buscado su propio nombre en internet",
+    "tipo": "nunca",
+    "nivel": "suave"
+  },
+  {
+    "texto": "ha hablado con una mascota como si le entendiera",
+    "tipo": "nunca",
+    "nivel": "suave"
+  },
+  {
+    "texto": "se ha puesto a limpiar la casa a medianoche sin motivo",
+    "tipo": "nunca",
+    "nivel": "suave"
+  },
+  {
+    "texto": "ha discutido con el GPS en voz alta",
+    "tipo": "nunca",
+    "nivel": "suave"
+  },
+  {
+    "texto": "ha fingido que entendía un chiste que no pilló",
+    "tipo": "nunca",
+    "nivel": "suave"
+  },
+  {
+    "texto": "se ha reído en un momento serio por los nervios",
+    "tipo": "nunca",
+    "nivel": "suave"
+  },
+  {
+    "texto": "ha tenido una alarma con un nombre random para hacerse reír",
+    "tipo": "nunca",
+    "nivel": "suave"
+  },
+  {
+    "texto": "ha mandado un mensaje sin querer al grupo equivocado",
+    "tipo": "nunca",
+    "nivel": "suave"
+  },
+  {
+    "texto": "se ha quedado sin palabras al conocer a alguien famoso",
+    "tipo": "nunca",
+    "nivel": "suave"
+  },
+  {
+    "texto": "ha llorado de la risa hasta no poder respirar",
+    "tipo": "nunca",
+    "nivel": "suave"
+  },
+  {
+    "texto": "se ha perdido en un centro comercial",
+    "tipo": "nunca",
+    "nivel": "suave"
+  },
+  {
+    "texto": "ha hablado solo practicando lo que iba a decir",
+    "tipo": "nunca",
+    "nivel": "suave"
+  },
+  {
+    "texto": "ha vuelto a casa a por algo que se le olvidó y ha llegado tarde",
+    "tipo": "nunca",
+    "nivel": "suave"
+  },
+  {
+    "texto": "ha cambiado de asiento en el cine varias veces antes de sentarse",
+    "tipo": "nunca",
+    "nivel": "suave"
+  },
+  {
+    "texto": "se ha quedado con hambre después de comer por vergüenza a repetir",
+    "tipo": "nunca",
+    "nivel": "suave"
+  },
+  {
+    "texto": "ha tenido una canción pegada en la cabeza todo el día",
+    "tipo": "nunca",
+    "nivel": "suave"
+  },
+  {
+    "texto": "se ha reído de algo que no tenía tanta gracia por compromiso",
+    "tipo": "nunca",
+    "nivel": "suave"
+  },
+  {
+    "texto": "ha guardado un mensaje de voz durante meses sin escucharlo",
+    "tipo": "nunca",
+    "nivel": "suave"
+  },
+  {
+    "texto": "se ha equivocado de fecha para algo importante",
+    "tipo": "nunca",
+    "nivel": "suave"
+  },
+  {
+    "texto": "ha fingido estar de acuerdo con un plan que no le apetecía",
+    "tipo": "nunca",
+    "nivel": "suave"
+  },
+  {
+    "texto": "ha comido algo caducado sin darse cuenta",
+    "tipo": "nunca",
+    "nivel": "suave"
+  },
+  {
+    "texto": "se ha quedado en la ducha más tiempo del necesario para pensar",
+    "tipo": "nunca",
+    "nivel": "suave"
+  },
+  {
+    "texto": "ha hecho una videollamada sin arreglarse",
+    "tipo": "nunca",
+    "nivel": "suave"
+  },
+  {
+    "texto": "ha vuelto a ver una película solo por la nostalgia",
+    "tipo": "nunca",
+    "nivel": "suave"
+  },
+  {
+    "texto": "se ha reído nerviosamente en una situación seria",
+    "tipo": "nunca",
+    "nivel": "suave"
+  },
+  {
+    "texto": "ha tenido que fingir que sabía de qué le estaban hablando",
+    "tipo": "nunca",
+    "nivel": "suave"
+  },
+  {
+    "texto": "ha fingido que estaba bien para no preocupar a nadie",
+    "tipo": "nunca",
+    "nivel": "picante"
+  },
+  {
+    "texto": "ha sentido celos de un amigo por su pareja",
+    "tipo": "nunca",
+    "nivel": "picante"
+  },
+  {
+    "texto": "ha buscado el perfil de alguien que le gusta varias veces al día",
+    "tipo": "nunca",
+    "nivel": "picante"
+  },
+  {
+    "texto": "ha mentido sobre sus sentimientos por miedo al rechazo",
+    "tipo": "nunca",
+    "nivel": "picante"
+  },
+  {
+    "texto": "ha guardado silencio para evitar una discusión que necesitaba tener",
+    "tipo": "nunca",
+    "nivel": "picante"
+  },
+  {
+    "texto": "ha idealizado a alguien que apenas conocía",
+    "tipo": "nunca",
+    "nivel": "picante"
+  },
+  {
+    "texto": "ha sentido alivio al terminar una relación",
+    "tipo": "nunca",
+    "nivel": "picante"
+  },
+  {
+    "texto": "se ha arrepentido de decir «te quiero» demasiado pronto",
+    "tipo": "nunca",
+    "nivel": "picante"
+  },
+  {
+    "texto": "ha comparado a alguien nuevo con un ex",
+    "tipo": "nunca",
+    "nivel": "picante"
+  },
+  {
+    "texto": "ha fingido que no le importaba algo que sí le dolía",
+    "tipo": "nunca",
+    "nivel": "picante"
+  },
+  {
+    "texto": "ha llorado por algo que parecía una tontería para los demás",
+    "tipo": "nunca",
+    "nivel": "picante"
+  },
+  {
+    "texto": "ha sentido que quería a alguien más de lo que le querían a él",
+    "tipo": "nunca",
+    "nivel": "picante"
+  },
+  {
+    "texto": "ha mentido para evitar quedar con alguien",
+    "tipo": "nunca",
+    "nivel": "picante"
+  },
+  {
+    "texto": "se ha sentido inseguro por algo que dijeron en broma",
+    "tipo": "nunca",
+    "nivel": "picante"
+  },
+  {
+    "texto": "ha tenido miedo a que le dejaran de querer",
+    "tipo": "nunca",
+    "nivel": "picante"
+  },
+  {
+    "texto": "ha guardado una conversación por si la necesitaba más adelante",
+    "tipo": "nunca",
+    "nivel": "picante"
+  },
+  {
+    "texto": "ha sentido envidia de la relación de otra pareja",
+    "tipo": "nunca",
+    "nivel": "picante"
+  },
+  {
+    "texto": "ha fingido una sonrisa en una foto estando mal",
+    "tipo": "nunca",
+    "nivel": "picante"
+  },
+  {
+    "texto": "se ha sentido más cómodo mintiendo que diciendo la verdad",
+    "tipo": "nunca",
+    "nivel": "picante"
+  },
+  {
+    "texto": "ha dudado de si le seguían queriendo",
+    "tipo": "nunca",
+    "nivel": "picante"
+  },
+  {
+    "texto": "ha tenido que perdonar algo que en el fondo no ha olvidado",
+    "tipo": "nunca",
+    "nivel": "picante"
+  },
+  {
+    "texto": "ha sentido que no encajaba en su propio grupo de amigos",
+    "tipo": "nunca",
+    "nivel": "picante"
+  },
+  {
+    "texto": "ha buscado validación en gente que no le convenía",
+    "tipo": "nunca",
+    "nivel": "picante"
+  },
+  {
+    "texto": "se ha sentido culpable sin haber hecho nada malo",
+    "tipo": "nunca",
+    "nivel": "picante"
+  },
+  {
+    "texto": "ha mentido sobre estar bien económicamente",
+    "tipo": "nunca",
+    "nivel": "picante"
+  },
+  {
+    "texto": "ha fingido interés en algo para agradar a alguien",
+    "tipo": "nunca",
+    "nivel": "picante"
+  },
+  {
+    "texto": "ha sentido que se apagaba en una relación",
+    "tipo": "nunca",
+    "nivel": "picante"
+  },
+  {
+    "texto": "se ha comparado con las publicaciones de otros en redes",
+    "tipo": "nunca",
+    "nivel": "picante"
+  },
+  {
+    "texto": "ha tenido pensamientos que no compartiría con nadie",
+    "tipo": "nunca",
+    "nivel": "picante"
+  },
+  {
+    "texto": "ha sentido que merecía más de lo que le daban",
+    "tipo": "nunca",
+    "nivel": "picante"
+  },
+  {
+    "texto": "ha mentido para proteger a alguien de una verdad dolorosa",
+    "tipo": "nunca",
+    "nivel": "picante"
+  },
+  {
+    "texto": "se ha sentido invisible en una relación",
+    "tipo": "nunca",
+    "nivel": "picante"
+  },
+  {
+    "texto": "ha necesitado desahogarse y no ha tenido a quién",
+    "tipo": "nunca",
+    "nivel": "picante"
+  },
+  {
+    "texto": "ha fingido que una ruptura no le afectaba",
+    "tipo": "nunca",
+    "nivel": "picante"
+  },
+  {
+    "texto": "ha sentido que traicionaba sus propios valores por encajar",
+    "tipo": "nunca",
+    "nivel": "picante"
+  },
+  {
+    "texto": "se ha sentido juzgado por su propia familia",
+    "tipo": "nunca",
+    "nivel": "picante"
+  },
+  {
+    "texto": "ha querido a alguien que sabía que no le convenía",
+    "tipo": "nunca",
+    "nivel": "picante"
+  },
+  {
+    "texto": "ha sentido que amaba en silencio sin decir nada",
+    "tipo": "nunca",
+    "nivel": "picante"
+  },
+  {
+    "texto": "ha mentido para evitar perder a alguien importante",
+    "tipo": "nunca",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "ha sentido alivio al recibir una mala noticia ajena",
+    "tipo": "nunca",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "ha guardado un secreto que podría cambiarlo todo",
+    "tipo": "nunca",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "ha traicionado la confianza de alguien de este grupo",
+    "tipo": "nunca",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "ha deseado en secreto que algo le saliera mal a otro",
+    "tipo": "nunca",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "ha fingido perdonar sin hacerlo de verdad",
+    "tipo": "nunca",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "ha mentido sobre algo que después dolió mucho más",
+    "tipo": "nunca",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "se ha alegrado del fracaso de alguien cercano",
+    "tipo": "nunca",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "ha roto una promesa que sabía que le importaba mucho a otro",
+    "tipo": "nunca",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "ha ocultado algo que debería haber contado",
+    "tipo": "nunca",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "ha dejado que culpen a otro de algo que hizo él",
+    "tipo": "nunca",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "ha sentido que odiaba a alguien que quiere",
+    "tipo": "nunca",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "ha mentido a su familia sobre algo grave",
+    "tipo": "nunca",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "ha usado la confianza de alguien en su propio beneficio",
+    "tipo": "nunca",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "ha fingido una amistad por conveniencia",
+    "tipo": "nunca",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "ha guardado rencor sin decirlo durante años",
+    "tipo": "nunca",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "ha antepuesto su orgullo a pedir perdón por algo grave",
+    "tipo": "nunca",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "ha dejado de hablarle a alguien sin darle explicaciones",
+    "tipo": "nunca",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "ha sentido que ya no reconocía a la persona en la que se ha convertido",
+    "tipo": "nunca",
+    "nivel": "extremo"
+  }
+]

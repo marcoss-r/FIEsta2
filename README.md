@@ -20,12 +20,12 @@ principio a fin, cada uno con su banco de contenido **provisional**
   hipotéticas («probaría...»); pendiente de que el usuario lo recorte y afine.
 - **«Quién es más…»** (🚧 Fase 4 en curso) — chips de nivel y de tipo de
   pregunta, encabezado dinámico, castigo por pregunta con modo fiesta, banco
-  provisional de 32 preguntas (`data/quienmas/preguntas.js`). Incluye además
-  un **modo parejas** (`md/PLAN_QUIEN_ES_MAS.md` §10): sortea una pareja de
-  entre todos los jugadores y recorre, en orden aleatorio, todas las
-  combinaciones posibles, 8 preguntas cada una; si coinciden se libran, si
-  difieren beben (con modo fiesta); termina con un ranking de parejas por
-  coincidencias.
+  de 400 preguntas (100 por tipo, `data/quienmas/preguntas.json` + `.js`
+  generado + `agregar.py`). Incluye además un **modo parejas**
+  (`md/PLAN_QUIEN_ES_MAS.md` §10): sortea una pareja de entre todos los
+  jugadores y recorre, en orden aleatorio, todas las combinaciones posibles,
+  8 preguntas cada una; si coinciden se libran, si difieren beben (con modo
+  fiesta); termina con un ranking de parejas por coincidencias.
 - **«Verdad o Reto»** (🚧 Fase 5 en curso) — chips de nivel y de modo (mixto /
   solo verdades / solo retos), carta volteable en 3D, «Paso» (en verdad o en
   reto) con castigo ponderado (30 % beber / 20 % prenda / 50 % otros), «Otro
@@ -83,11 +83,12 @@ Cada juego guardará su banco en `data/<juego>/` como un `.json` (fuente) + un
 alta entradas desde consola, igual que en FIEsta 1. `data/yonunca/` ya sigue
 este patrón completo: `frases.json` (fuente, 649 entradas) + `frases.js`
 (generado) + `agregar.py` (da de alta frases nuevas y regenera el `.js`; nunca
-se edita `frases.js` a mano). `data/quienmas/preguntas.js` y
-`data/incomodas/preguntas.js` existen ya, pero solo como bancos
-**provisionales** (32 y 30 entradas escritas a mano respectivamente, las
-muestras de sus planes §9); su `.json` fuente y `agregar.py` llegan con el
-banco definitivo de cada uno (su Fase 3). El resto de carpetas de juego
+se edita `frases.js` a mano). `data/quienmas/` sigue ahora el mismo patrón:
+`preguntas.json` (fuente, 400 entradas) + `preguntas.js` (generado) +
+`agregar.py`. `data/incomodas/preguntas.js` existe ya, pero solo como banco
+**provisional** (30 entradas escritas a mano, la muestra de
+`md/PLAN_PREGUNTAS_INCOMODAS.md` §9); su `.json` fuente y `agregar.py`
+llegan con el banco definitivo (su Fase 3). El resto de carpetas de juego
 siguen vacías.
 
 ## Tecnología
