@@ -293,11 +293,21 @@ function vrPaso() {
   // se enseña el castigo, sustituyendo Hecho/Paso/Otra por un único botón.
   const castigoEl = document.getElementById("vr-castigo");
   castigoEl.hidden = false;
-  castigoEl.textContent = `🍻 ${vrEstado.nombres[vrEstado.indiceTurno]}: ${castigoAlAzar()}`;
+  castigoEl.textContent = `${vrEstado.nombres[vrEstado.indiceTurno]}: ${vrCastigoPasar()}`;
   document.getElementById("vr-btn-hecho").hidden = true;
   document.getElementById("vr-btn-paso").hidden = true;
   document.getElementById("vr-btn-otra").hidden = true;
   document.getElementById("vr-btn-siguiente-paso").hidden = false;
+}
+
+// Castigo de «Paso» y del segundo cambio de «Otra»: a diferencia de
+// castigoAlAzar() del núcleo (que usa Quién es más…, con prendas y retos
+// variados), aquí solo hay dos opciones posibles — pedido así por el
+// usuario — y no se elige, se ofrece al azar con 50/50.
+function vrCastigoPasar() {
+  return Math.random() < 0.5
+    ? `🍻 Bebe ${enteroAleatorio(2, 5)} tragos`
+    : "🎽 Quítate una prenda";
 }
 
 function vrOtraCarta() {
@@ -313,7 +323,7 @@ function vrOtraCarta() {
   const castigoEl = document.getElementById("vr-castigo");
   if (esSegundoCambio && modoFiestaActivo()) {
     castigoEl.hidden = false;
-    castigoEl.textContent = `🍻 ${vrEstado.nombres[vrEstado.indiceTurno]}: ${castigoAlAzar()}`;
+    castigoEl.textContent = `${vrEstado.nombres[vrEstado.indiceTurno]}: ${vrCastigoPasar()}`;
   } else {
     castigoEl.hidden = true;
   }

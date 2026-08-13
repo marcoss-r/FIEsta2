@@ -62,7 +62,7 @@ los turnos.
 | **Presentación de la carta** | **Volteo 3D**: la carta entra boca abajo y se voltea al servir el texto (patrón `.cf-carta` de FIEsta 1). |
 | **Botón «Otra»** | ✅ Existe, para **verdades y retos**. **Máximo 2 cambios por turno.** El **primero siempre es gratis**; el **segundo, si el modo fiesta está activo, muestra un castigo** antes de servir la carta nueva. Sin modo fiesta, los dos son gratis. Al gastar los dos, el botón se deshabilita hasta el turno siguiente. |
 | **Niveles de intensidad** | Los tres del núcleo (`suave` / `picante` / `extremo`), multi-selección, por defecto suave + picante. Filtran **los dos bancos a la vez**. |
-| **Modo fiesta** | Interruptor global del núcleo (persistente entre partidas). Añade castigo a **«Paso»** y al **segundo «Otra»**. |
+| **Modo fiesta** | Interruptor global del núcleo (persistente entre partidas). Añade castigo a **«Paso»** y al **segundo «Otra»**. A diferencia de Quién es más… (que usa `castigoAlAzar()` del núcleo, con prendas/retos variados), aquí el castigo está **restringido a solo dos opciones** (`vrCastigoPasar()`, propio del juego): **beber entre 2 y 5 tragos** (cantidad al azar) o **quitarse una prenda**. No se elige, se ofrece al azar con 50/50. Sin modo fiesta, «Paso» sigue sin castigo (mismo criterio que el resto de la app: sin modo fiesta, la app no impone nada). |
 | **Datos** | **Dos bancos separados**: `VR_VERDADES` y `VR_RETOS`, en `data/verdadreto/`. |
 | **Volumen** | **≥ 400 en total: ≥ 200 verdades y ≥ 200 retos.** Reparto orientativo por banco: ~40 % suave, ~40 % picante, ~20 % extremo. |
 | **Qué hace la app** | Servir contenido sin repetir, ordenar turnos, resolver plantillas (`{jugador}`, `{otro}`), guardar la partida y llevar un contador de verdades/retos/pasos. |
@@ -246,11 +246,17 @@ cualquier regla de autor que ponga `display: flex` (§3.3 del plan global).
 | `mostrarPantalla(nombre)` | Toda la navegación. |
 | `montarConfigJugadores({…})` · `validarNombres()` | `vr-config` entera. |
 | `montarSelectorNiveles(…)` · `filtrarPorNivel(banco, niveles)` | Chips de nivel y filtrado de los dos bancos. |
-| `montarInterruptorModoFiesta(…)` · `modoFiestaActivo()` · `castigoAlAzar()` | Modo fiesta, «Paso» y segundo «Otra». |
+| `montarInterruptorModoFiesta(…)` · `modoFiestaActivo()` | Modo fiesta, «Paso» y segundo «Otra». |
 | `crearRepartidor(banco)` | Servir verdades y retos sin repetir. |
 | `rellenarPlantilla(texto, { jugador, otros })` · `otrosNecesarios(texto)` | Resolver `{jugador}` / `{otro}` y descartar textos imposibles al filtrar. |
 | `guardarJSON` · `cargarJSON` · `hayGuardado` · `borrarGuardado` | «Continuar partida». |
-| `barajar` · `elegirAlAzar` | Auxiliares. |
+| `barajar` · `elegirAlAzar` · `enteroAleatorio` | Auxiliares (`enteroAleatorio` para los 2-5 tragos de `vrCastigoPasar()`). |
+
+**Propio de este juego:** `vrCastigoPasar()` — a diferencia de `castigoAlAzar()`
+del núcleo (usado por Quién es más…), aquí el castigo no viene del banco
+compartido `CASTIGOS_COMUNES`: solo hay dos opciones posibles, beber (2-5
+tragos al azar) o quitarse una prenda, pedido explícitamente por el usuario
+para este juego.
 
 **Propio de Verdad o Reto:** los chips de modo (`vr-chip`), la carta volteable
 (`.vr-carta*`), el contador de cambios por turno, el contador del resumen y el
