@@ -1044,10 +1044,10 @@ destinatario. Seguir su plan.
 > con las cuatro reglas (solo con modo fiesta, una vez por jugador, no
 > encadenable, no en `grupo`), persistencia con devoluciones restantes.
 > Probado con jsdom (rotación en 4 y 2 jugadores, devolución, reanudación,
-> 0 errores de consola) y capturas de Playwright. Banco provisional: las ~30
-> preguntas de muestra de `md/PLAN_PREGUNTAS_INCOMODAS.md` §9. Fase 3
-> (≥ 400) pendiente, a cuatro manos con el usuario (§2.4).
-> `APP_VERSION`/`CACHE` = 1.6.0.
+> 0 errores de consola) y capturas de Playwright. **Fase 3 completa**: 400
+> preguntas (160 dirigida + 160 cruzada + 80 grupo, 40/40/20 por nivel en
+> cada tipo), con `preguntas.json`/`agregar.py`, pendiente de que el
+> usuario lo revise y afine (§2.4). `APP_VERSION`/`CACHE` = 1.6.2.
 
 ### Fase 7 — Juego 5: **Dos mentiras y una verdad**
 Añade el flujo por turnos con tema, «Otro tema» y (si se decide) temporizador.

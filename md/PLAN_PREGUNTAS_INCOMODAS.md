@@ -394,9 +394,13 @@ devolución ya gastada sigue gastada.
 - [x] **Fase 1** — Pantallas, configuración y rotación
 - [x] **Fase 2** — Motor de preguntas y los tres formatos (banco provisional
       de 30, la muestra de §9 de este plan)
-- [ ] **Fase 3** — Banco de contenido (≥ 400, ≥ 80 por tipo): pendiente,
-      igual que en el resto de juegos, se hace a cuatro manos con el
-      usuario (§2.4)
+- [x] **Fase 3** — Banco de contenido (≥ 400, ≥ 80 por tipo): 400 preguntas
+      (160 dirigida, 160 cruzada, 80 grupo; 40/40/20 suave/picante/extremo
+      en cada tipo), sin duplicados exactos, con `preguntas.json` (fuente)
+      y `agregar.py`. Probado con jsdom: 350 turnos con los tres niveles
+      activos, ninguna `cruzada` apunta jamás a su propio destinatario, 0
+      errores de consola. Pendiente de que el usuario lo revise y afine
+      (§2.4)
 - [x] **Fase 4** — Modo fiesta y devoluciones (adelantada junto con las
       Fases 1-2: castigo en «Se lo salta», botón «Devolver» con las cuatro
       reglas, contador de devueltas)

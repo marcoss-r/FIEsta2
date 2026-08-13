@@ -35,9 +35,9 @@ principio a fin, cada uno con su banco de contenido **provisional**
 - **«Preguntas incómodas»** (🚧 Fase 6 en curso) — la app elige a quién y qué
   preguntar (tres formatos: `dirigida`, `cruzada` y `grupo`), rotación de
   destinatario y lector, «Se lo salta» con castigo, botón «Devolver» (solo
-  con modo fiesta, una vez por jugador y partida, no encadenable), banco
-  provisional de 30 preguntas (`data/incomodas/preguntas.js`, la muestra de
-  `md/PLAN_PREGUNTAS_INCOMODAS.md` §9).
+  con modo fiesta, una vez por jugador y partida, no encadenable), banco de
+  400 preguntas (160 dirigida + 160 cruzada + 80 grupo,
+  `data/incomodas/preguntas.json` + `.js` generado + `agregar.py`).
 
 El resto de tarjetas del hub (Dos mentiras y una verdad, El Impostor) aún no
 llevan a ningún sitio: se implementan en las fases 7-8.
@@ -83,12 +83,9 @@ Cada juego guardará su banco en `data/<juego>/` como un `.json` (fuente) + un
 alta entradas desde consola, igual que en FIEsta 1. `data/yonunca/` ya sigue
 este patrón completo: `frases.json` (fuente, 649 entradas) + `frases.js`
 (generado) + `agregar.py` (da de alta frases nuevas y regenera el `.js`; nunca
-se edita `frases.js` a mano). `data/quienmas/` sigue ahora el mismo patrón:
-`preguntas.json` (fuente, 400 entradas) + `preguntas.js` (generado) +
-`agregar.py`. `data/incomodas/preguntas.js` existe ya, pero solo como banco
-**provisional** (30 entradas escritas a mano, la muestra de
-`md/PLAN_PREGUNTAS_INCOMODAS.md` §9); su `.json` fuente y `agregar.py`
-llegan con el banco definitivo (su Fase 3). El resto de carpetas de juego
+se edita `frases.js` a mano). `data/quienmas/` y `data/incomodas/` siguen
+ahora el mismo patrón: `preguntas.json` (fuente, 400 entradas cada uno) +
+`preguntas.js` (generado) + `agregar.py`. El resto de carpetas de juego
 siguen vacías.
 
 ## Tecnología

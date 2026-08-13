@@ -1,0 +1,2002 @@
+[
+  {
+    "texto": "¿Qué es lo que más te cuesta reconocer de ti mismo?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es la excusa que más repites y ya nadie se cree?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué plan te da una pereza brutal pero nunca dices que no?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué cosa haces cuando estás solo que jamás harías delante de nadie?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué mentira piadosa has contado esta misma semana?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo peor que has pensado de alguien de esta sala?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿A quién de aquí has criticado a sus espaldas?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué te dolió y nunca dijiste que te había dolido?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Con quién de aquí has tenido más ganas de discutir y te has callado?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué parte de tu vida estás fingiendo que va mejor de lo que va?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿De qué te arrepientes de verdad y todavía no has pedido perdón?",
+    "tipo": "dirigida",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué le estás ocultando ahora mismo a alguien de esta sala?",
+    "tipo": "dirigida",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es la cosa más egoísta que has hecho por tu propio beneficio?",
+    "tipo": "dirigida",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué le pedirías prestado a {otro} sabiendo que no se lo vas a devolver?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué manía de {otro} imitarías ahora mismo?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿En qué se te parece {otro} más de lo que le gustaría admitir?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "Si tuvieras que irte de viaje con {otro} un mes, ¿qué norma pondrías el primer día?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué cambiarías de {otro} si pudieras?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué consejo le has dado a {otro} que en el fondo sabías que era malo?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué le perdonarías a {otro} que no le perdonarías a nadie más?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál fue la primera impresión que te dio {otro} y cuánto ha cambiado?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué le has ocultado a {otro} para no tener la conversación?",
+    "tipo": "cruzada",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "Si mañana {otro} desapareciera de tu vida, ¿qué echarías de menos y qué no?",
+    "tipo": "cruzada",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué es lo más duro que le dirías a {otro} si supieras que no se va a enfadar?",
+    "tipo": "cruzada",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Quién de aquí guarda el secreto más gordo?",
+    "tipo": "grupo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí sería el peor compañero de piso y por qué?",
+    "tipo": "grupo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí llegaría tarde a su propia boda?",
+    "tipo": "grupo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí ha cambiado más desde que os conocéis, para bien o para mal?",
+    "tipo": "grupo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí necesita escuchar una verdad que nadie le dice?",
+    "tipo": "grupo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué se dice de alguien de esta sala cuando no está delante?",
+    "tipo": "grupo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué manía tuya sabes que vuelve loco a todo el mundo?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es la excusa más floja que has usado para no ir a un plan?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué cosa haces en tu casa que nunca harías si hubiera visita?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu mayor manía comiendo?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo primero que miras del móvil al despertarte?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es la mentira más tonta que sigues contando por costumbre?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué canción te da vergüenza reconocer que te encanta?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu mayor manía limpiando o sin limpiar?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo más raro que has comido por probar?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es la prenda que más veces te has puesto sin lavar?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué app tienes instalada y no recuerdas por qué?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu horario ideal para dormir si nadie te lo impidiera?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo que más veces has perdido en tu vida?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu peor hábito conduciendo o de peatón?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué serie o película has visto más veces de las que admitirías?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu excusa favorita para llegar tarde?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo más caro que te has comprado por un capricho?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu comida de emergencia cuando no quieres cocinar?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo que más te cuesta tirar aunque no sirva para nada?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu mayor manía en el móvil?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué canción no puedes evitar cantar en la ducha?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es la app que más tiempo te quita al día?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo más tarde que has llegado a dormir sin motivo real?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu excusa habitual para no hacer ejercicio?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo más ridículo que has hecho por conseguir algo gratis?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu peor recuerdo de un examen?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo que menos te gusta de ti mismo físicamente?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es la cosa más random que sabes hacer bien?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo que siempre dices que vas a empezar a hacer y nunca empiezas?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu palabra o muletilla que más repites sin darte cuenta?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo más vergonzoso que te ha pasado en clase o en el trabajo?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu manía al hablar por teléfono?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo que más veces has fingido entender sin entenderlo?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu mayor manía viajando?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo más tonto por lo que has discutido con alguien?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es la cosa que más veces has repetido sin darte cuenta de que molestaba?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo peor que has escrito en un grupo por error?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu excusa más usada para no contestar un mensaje?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo que más rápido te saca de quicio?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu manía al aparcar o al conducir?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo más raro que guardas «por si acaso»?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu peor costumbre en redes sociales?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo que más veces has cambiado de opinión en un mismo día?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es la mayor tontería que te ha hecho llorar de risa?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo que más te cuesta admitir que se te da mal?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu peor manía comprando comida?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo último que buscaste en internet sin pensar que alguien lo vería?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu excusa preferida para no hacer planes entre semana?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo que más veces has dejado a medias en tu vida?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu mayor manía al vestirte?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo que más te avergüenza de tu adolescencia?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es la mentira piadosa que más repites?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo que más rápido te aburre?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu manía al hacer la maleta?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo más random que se te da sorprendentemente bien?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu peor manía durmiendo?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo que más veces has dicho «esta es la última vez» y no lo ha sido?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu mayor manía en el supermercado?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo que más te cuesta reconocer que te gusta?",
+    "tipo": "dirigida",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo peor que has pensado de alguien de esta sala y nunca lo has dicho?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la mentira más grande que le has contado a tu familia?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo que más te cuesta perdonar de verdad?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la razón real por la que terminó tu última relación?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo que más te arrepientes de haber dicho en una discusión?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es el mensaje que escribiste y borraste antes de mandarlo?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo que más celos te da admitir que sientes?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la persona a la que más le has mentido en tu vida?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo que nunca le dirías a la cara a alguien aunque lo pienses?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es tu mayor inseguridad que casi nadie conoce?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo que más te ha dolido y nunca dijiste que te dolía?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la razón por la que has dejado de hablar con alguien sin explicación?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo peor que has hecho por miedo a estar solo?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la mentira que llevas contando desde hace más tiempo?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo que más te cuesta admitir que sigues sintiendo por alguien?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la conversación que llevas evitando desde hace meses?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo más egoísta que has hecho por amor?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es el secreto que más tiempo llevas guardando?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo que más envidia te da de la vida de otra persona?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la última vez que fingiste estar bien sin estarlo?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo que más te asusta de comprometerte con alguien?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la crítica que más te ha dolido de alguien cercano?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo que nunca has confesado por miedo a decepcionar a alguien?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es el motivo real por el que evitas cierto plan familiar?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo peor que has pensado sobre ti mismo en un mal momento?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la persona de la que más te costaría separarte?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo que más rabia te da que te digan sobre ti?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la mayor mentira que te has dicho a ti mismo?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo que más te cuesta dejar ir del pasado?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la última vez que sentiste que no encajabas en un grupo?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo que más te ha costado perdonarte a ti mismo?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es el momento en que más solo te has sentido rodeado de gente?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo que más te cuesta reconocer que hiciste mal en una ruptura?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la razón por la que dejaste de confiar en alguien?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo que más miedo te da que descubran de ti?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la última vez que dijiste «te quiero» sin estar seguro?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo que más te duele que nadie te haya preguntado nunca?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es el peor consejo que le has dado a alguien sabiendo que era malo?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo que más te cuesta admitir que necesitas ayuda?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la vez que más celos has sentido de un amigo?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo que más te avergüenza de cómo reaccionaste ante una ruptura?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es el secreto de otra persona que más te ha costado guardar?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo que más te cuesta decir en voz alta sobre tu familia?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la vez que más te has arrepentido de guardar silencio?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo que más te duele de una amistad que se acabó?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la última vez que mentiste para no quedar mal?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo que más te cuesta admitir que te importa la opinión ajena?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es el momento en que más te has sentido juzgado por tu familia?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo que más te ha costado superar de una ruptura?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la razón por la que sigues hablando con un ex?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo que más te asusta de que te conozcan de verdad?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la vez que más has fingido estar de acuerdo con algo para no discutir?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo que más te cuesta admitir que hiciste por despecho?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es el momento en que más te has sentido invisible para alguien?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo que más te duele que hayan asumido de ti sin conocerte?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la vez que más te has sentido usado por alguien?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo que más te cuesta perdonar de tu propia familia?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la última vez que sentiste que amabas en silencio?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo que más te ha costado aceptar de ti mismo?",
+    "tipo": "dirigida",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la decisión que tomaste sabiendo que iba a hacer daño a alguien?",
+    "tipo": "dirigida",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué verdad sobre ti mismo te ha costado más años aceptar?",
+    "tipo": "dirigida",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es la vez que más te ha costado no explotar de rabia con alguien que quieres?",
+    "tipo": "dirigida",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es la traición más grande que has hecho y nunca has confesado?",
+    "tipo": "dirigida",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué es lo peor que le has deseado a alguien en un momento de rabia?",
+    "tipo": "dirigida",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es el secreto que, si saliera a la luz, más daño haría a alguien de aquí?",
+    "tipo": "dirigida",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué es lo más cruel que has dicho para hacer daño a propósito?",
+    "tipo": "dirigida",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es la mentira más grave que le has contado a alguien que confiaba en ti?",
+    "tipo": "dirigida",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué es lo que has hecho de lo que te sientes más culpable y nunca lo has dicho?",
+    "tipo": "dirigida",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es la persona a la que más daño le has hecho sin que lo sepa?",
+    "tipo": "dirigida",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué es lo peor que has pensado sobre alguien de esta sala?",
+    "tipo": "dirigida",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es la vez que más te alegraste del sufrimiento de otra persona?",
+    "tipo": "dirigida",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué relación has dejado morir a propósito sin decir la verdad?",
+    "tipo": "dirigida",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es el momento en que más te alejaste de tus valores por conveniencia?",
+    "tipo": "dirigida",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué es lo más grave que has ocultado a tu familia?",
+    "tipo": "dirigida",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es la traición que más te ha costado perdonar y nunca lo has dicho?",
+    "tipo": "dirigida",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué es lo que más te avergüenza haber hecho por celos?",
+    "tipo": "dirigida",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es el motivo real, y nunca contado, de por qué cortaste con alguien?",
+    "tipo": "dirigida",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué es lo peor que has hecho sabiendo perfectamente que estaba mal?",
+    "tipo": "dirigida",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es la persona con la que has sido más cruel en tu vida?",
+    "tipo": "dirigida",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué es lo que has fingido sentir por interés durante más tiempo?",
+    "tipo": "dirigida",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es el secreto de tu familia que menos gente conoce?",
+    "tipo": "dirigida",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué es lo más deshonesto que has hecho para conseguir algo que querías?",
+    "tipo": "dirigida",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es la mentira que sostienes desde hace más años?",
+    "tipo": "dirigida",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué es lo que has hecho que, si lo supiera la persona implicada, dejaría de hablarte?",
+    "tipo": "dirigida",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es el momento en que anteponer tu orgullo te costó más caro?",
+    "tipo": "dirigida",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué es lo peor que has permitido que le hicieran a alguien sin defenderlo?",
+    "tipo": "dirigida",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es la relación en la que más mentiste sobre lo que sentías de verdad?",
+    "tipo": "dirigida",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué es lo más oscuro que has pensado de ti mismo y nunca has dicho en voz alta?",
+    "tipo": "dirigida",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que sería lo primero que notaría {otro} si cambiaras de peinado?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué le regalarías a {otro} si supieras que le va a hacer muchísima ilusión?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué palabra usarías para describir a {otro} en un mal día?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que pediría {otro} en su última cena?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que pediría {otro} de aperitivo si invitara a cenar a este grupo?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué papel haría {otro} en una peli sobre este grupo?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál crees que es la mayor manía de {otro} que él mismo no reconoce?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué consejo le darías a {otro} que seguramente no va a seguir?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "Si {otro} tuviera un lema de vida, ¿cuál sería?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que hace {otro} cuando nadie le ve?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué app crees que tiene {otro} más abierta en el móvil?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué serie crees que le pega ver a {otro}?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál crees que sería el superpoder ideal para {otro}?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que pediría {otro} de comer si pudiera elegir sin límite?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué manía tiene {otro} que te ha contagiado sin querer?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cómo describirías el humor de {otro} en una palabra?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que le diría {otro} a su yo de hace diez años?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué animal crees que le pega a {otro} y por qué?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que echaría de menos {otro} si se mudara lejos?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué canción crees que define a {otro} ahora mismo?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que haría {otro} si le tocara la lotería mañana?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál crees que es el mayor miedo tonto de {otro}?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué manía tiene {otro} para dormir que te hace gracia?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que le gustaría que le dijeran más a menudo a {otro}?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué trabajo crees que se le daría fatal a {otro}?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que pide {otro} siempre que va al mismo sitio?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "Si {otro} tuviera que llevar un cartel con una frase, ¿cuál sería?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que hace {otro} los domingos por la tarde?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué costumbre de {otro} adoptarías si pudieras?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que le da más pereza a {otro} de todo lo que hace?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál crees que fue la primera impresión que te dio {otro}?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que llevaría {otro} en una mochila de emergencia?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que le gustaría aprender a {otro} si tuviera tiempo?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Con qué personaje de ficción compararías a {otro}?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que pediría {otro} de deseo a una estrella fugaz?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué manía tiene {otro} en el coche o en el transporte?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que sería lo primero que haría {otro} si fuera invisible un día?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué palabra usa {otro} demasiado a menudo?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que opina {otro} de sí mismo que no dice en voz alta?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que haría {otro} de premio si ganara un concurso random?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que le gustaría cambiar {otro} de su rutina diaria?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que hace {otro} para relajarse de verdad?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué manía de {otro} te costaría más aguantar viviendo juntos?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que le daría más vergüenza a {otro} hacer en público?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que pediría {otro} prestado sabiendo que no se lo va a devolver?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué recuerdo crees que atesora más {otro} de este grupo?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que le gustaría a {otro} que la gente supiera de él o ella sin tener que decirlo?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Con qué frase resumirías cómo se comporta {otro} en una fiesta?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que haría {otro} distinto si pudiera repetir el último año?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que le pediría {otro} a un genio si solo tuviera un deseo tonto?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que le molesta más a {otro} y nunca lo dice?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que fue lo mejor que le pasó a {otro} este año?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué manía tiene {otro} organizando planes?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que hace {otro} antes de dormir todas las noches?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que le gustaría a {otro} que le preguntaran más?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que opina {otro} de este juego ahora mismo?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que sería lo último que tiraría {otro} de su casa?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que le daría más ilusión a {otro} de aquí a un año?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que diría {otro} si le preguntaran su mayor virtud?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que es lo que más ha cambiado de {otro} desde que le conoces?",
+    "tipo": "cruzada",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que le pedirías prestado a {otro} sabiendo que no se lo vas a devolver?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que {otro} cambiaría de ti si pudiera, aunque nunca te lo diga?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que {otro} se calla de ti por no discutir?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que {otro} necesitaría escuchar de ti y nunca se lo has dicho?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que oculta {otro} que nadie de aquí sabe?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que le daría más miedo perder a {otro}?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué le has perdonado a {otro} que no le perdonarías a nadie más?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que piensa {otro} de verdad cuando discutís?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué secreto crees que guarda {otro} sobre alguien de este grupo?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que le dolería más escuchar a {otro} de alguien que quiere?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que le costaría más admitir a {otro} en este juego?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que siente {otro} por alguien de este grupo y nunca lo ha dicho?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que ha mentido {otro} sobre sí mismo alguna vez?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que le daría más celos a {otro}?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que cambiarías de la relación que tienes con {otro}?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que le da más rabia de ti a {otro} y nunca lo dice?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que haría {otro} si tuviera que elegir entre su orgullo y pedir perdón?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que le preocupa a {otro} de su futuro?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que es lo que más ha ocultado {otro} a su familia?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que sintió {otro} la última vez que le hicieron daño?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que le costaría más perdonar a {otro}?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que opina {otro} realmente de tu forma de ser?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que se calla {otro} para no discutir contigo?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que le da más inseguridad a {otro} de su vida ahora mismo?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que haría {otro} si supiera que no va a haber consecuencias?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que sigue sintiendo {otro} por alguien de su pasado?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que le dolió a {otro} y nunca te lo dijo?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que es lo que más envidia {otro} de otra persona?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que ha fingido sentir {otro} por quedar bien alguna vez?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que le daría más vergüenza a {otro} que se supiera de él o ella?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que ha mentido {otro} para no perder a alguien?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que le pediría {otro} a su yo del futuro?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que le cuesta más reconocer a {otro} de sus propios errores?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que siente {otro} cuando le comparan con otra persona?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que haría {otro} si supiera que le queda poco tiempo con alguien?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que le duele más a {otro} de su relación con su familia?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que oculta {otro} detrás de su sentido del humor?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que le costaría más confesarle {otro} a su pareja o futura pareja?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que piensa {otro} en los momentos de silencio incómodo?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que sacrificaría {otro} por no perder a alguien importante?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que evita hablar {otro} porque le remueve algo?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que es lo que más ha cambiado a {otro} en los últimos años?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que se arrepiente {otro} de no haber dicho a tiempo?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que finge {otro} que no le afecta y en realidad sí?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que teme {otro} que piensen de él o ella los demás?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que le ha costado más superar a {otro} este último año?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que esconde {otro} bajo esa seguridad que muestra?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que le gustaría escuchar a {otro} y nadie se lo dice?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que ha callado {otro} por no herir a alguien de aquí?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que le pesa más a {otro} de decisiones pasadas?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que siente {otro} de verdad cuando está solo?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que le ha dolido a {otro} de este mismo grupo sin decirlo?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que le da más miedo perder a {otro} además de a las personas?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que ha idealizado {otro} de alguien que ya no está?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que le gustaría cambiar {otro} de una decisión pasada?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que oculta {otro} tras sus silencios?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que le costaría más admitir {otro} sobre su forma de querer?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que siente {otro} que nunca ha sabido poner en palabras?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que ha perdonado {otro} sin decirlo en voz alta?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que teme {otro} descubrir de sí mismo con el tiempo?",
+    "tipo": "cruzada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que {otro} perdonaría de ti solo por no querer perderte?",
+    "tipo": "cruzada",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que {otro} ha dejado pasar de ti por no montar un drama?",
+    "tipo": "cruzada",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que {otro} teme que descubras de él o ella algún día?",
+    "tipo": "cruzada",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que le has hecho a {otro} de lo que más te arrepientes?",
+    "tipo": "cruzada",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que {otro} nunca te ha perdonado del todo?",
+    "tipo": "cruzada",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que sabe {otro} de ti que preferirías que no supiera?",
+    "tipo": "cruzada",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué le has mentido a {otro} sobre algo que de verdad le importaba?",
+    "tipo": "cruzada",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que {otro} ha sacrificado por ti sin que se lo hayas agradecido?",
+    "tipo": "cruzada",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que {otro} piensa de ti que nunca te ha dicho a la cara?",
+    "tipo": "cruzada",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que traicionarías de tu relación con {otro} si te conviniera a ti mismo?",
+    "tipo": "cruzada",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que le has hecho sentir a {otro} sin darte cuenta del daño?",
+    "tipo": "cruzada",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que {otro} guarda de ti que podría hacerte mucho daño si lo contara?",
+    "tipo": "cruzada",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que {otro} ha callado por miedo a perderte?",
+    "tipo": "cruzada",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que {otro} cambiaría de vosotros dos si pudiera?",
+    "tipo": "cruzada",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué secreto tuyo confiarías a {otro} y a nadie más de esta sala?",
+    "tipo": "cruzada",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que {otro} ha fingido sentir por ti en algún momento?",
+    "tipo": "cruzada",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que {otro} nunca te dirá aunque se lo preguntes directamente?",
+    "tipo": "cruzada",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que {otro} te ha perdonado sin que tú lo supieras nunca?",
+    "tipo": "cruzada",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que {otro} piensa de verdad cuando discutís y se calla?",
+    "tipo": "cruzada",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué le debes a {otro} y todavía no le has pedido perdón?",
+    "tipo": "cruzada",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que {otro} teme más perder de vuestra relación?",
+    "tipo": "cruzada",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que has hecho que {otro} nunca te reprochó pero le dolió?",
+    "tipo": "cruzada",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que {otro} se guarda por no romper este grupo?",
+    "tipo": "cruzada",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que {otro} sospecha de ti y nunca ha confirmado?",
+    "tipo": "cruzada",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que {otro} necesitaría escuchar de ti ahora mismo?",
+    "tipo": "cruzada",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que {otro} ha dejado de decirte por miedo a tu reacción?",
+    "tipo": "cruzada",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que {otro} recuerda de una pelea vuestra que tú ya olvidaste?",
+    "tipo": "cruzada",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que {otro} nunca superó del todo de algo que le hiciste?",
+    "tipo": "cruzada",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que {otro} cambiaría de sí mismo si supiera que te haría más feliz?",
+    "tipo": "cruzada",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Quién de aquí sería el más despistado en un viaje en grupo?",
+    "tipo": "grupo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí tardaría más en arreglarse para salir?",
+    "tipo": "grupo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí se perdería primero en una ciudad nueva?",
+    "tipo": "grupo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí sería el mejor guía turístico sin haber estudiado nada?",
+    "tipo": "grupo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí aguantaría menos tiempo sin móvil?",
+    "tipo": "grupo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí ganaría un concurso de comer rápido?",
+    "tipo": "grupo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí sería el primero en rendirse acampando?",
+    "tipo": "grupo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí organizaría mejor una fiesta sorpresa?",
+    "tipo": "grupo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí sería el peor compañero de piso?",
+    "tipo": "grupo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí tiene la peor letra escribiendo a mano?",
+    "tipo": "grupo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí ganaría en un karaoke sin haber ensayado?",
+    "tipo": "grupo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí sería el más gracioso en una entrevista de trabajo?",
+    "tipo": "grupo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí sobreviviría más tiempo en una isla desierta?",
+    "tipo": "grupo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí tardaría más en darse cuenta de que ha perdido algo?",
+    "tipo": "grupo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí sería el mejor mintiendo en un juego de mesa?",
+    "tipo": "grupo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí llegaría antes a millonario y quién antes a la ruina?",
+    "tipo": "grupo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí ganaría una discusión sin tener razón?",
+    "tipo": "grupo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí sería el más cotilla del barrio?",
+    "tipo": "grupo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí duraría menos haciendo dieta?",
+    "tipo": "grupo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí sería el mejor imitando a los demás?",
+    "tipo": "grupo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí montaría el plan más random un domingo cualquiera?",
+    "tipo": "grupo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí sería el más dramático teniendo un simple resfriado?",
+    "tipo": "grupo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí ganaría en una guerra de cosquillas?",
+    "tipo": "grupo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí tardaría más en pedir en un restaurante?",
+    "tipo": "grupo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí sería el peor jugando al escondite?",
+    "tipo": "grupo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí acabaría dormido primero en una peli?",
+    "tipo": "grupo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí sería el más caótico haciendo la maleta?",
+    "tipo": "grupo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí ganaría más seguidores si subiera contenido random?",
+    "tipo": "grupo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí sería el más difícil de sorprender?",
+    "tipo": "grupo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí es el que más ha cambiado su forma de querer con los años?",
+    "tipo": "grupo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí sería capaz de perdonar algo imperdonable por amor?",
+    "tipo": "grupo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí guarda el secreto más gordo del grupo?",
+    "tipo": "grupo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí sería capaz de aguantar una mentira más tiempo?",
+    "tipo": "grupo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí tiene la relación más complicada con su familia?",
+    "tipo": "grupo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí sería el primero en perdonar una traición grande?",
+    "tipo": "grupo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí es el que más disimula cuando algo le duele?",
+    "tipo": "grupo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí ha cambiado más de opinión sobre alguien de este grupo?",
+    "tipo": "grupo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí sería capaz de guardar un secreto ajeno para siempre?",
+    "tipo": "grupo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí tiene más miedo a que le dejen de querer?",
+    "tipo": "grupo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí necesita más una charla sincera con alguien de su vida?",
+    "tipo": "grupo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí es el que más idealiza a la gente al conocerla?",
+    "tipo": "grupo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí es el más celoso sin admitirlo?",
+    "tipo": "grupo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí ha tenido la ruptura más dura del grupo?",
+    "tipo": "grupo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí se compara más con los demás en redes?",
+    "tipo": "grupo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí tiene menos paciencia con su propia familia?",
+    "tipo": "grupo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí es el que más rencor guarda en silencio?",
+    "tipo": "grupo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí ha tenido que perdonar algo más difícil este año?",
+    "tipo": "grupo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí sería capaz de cortar una relación sin dar explicaciones?",
+    "tipo": "grupo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí es el que más miedo tiene a quedarse solo?",
+    "tipo": "grupo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí es el que menos habla de cómo se siente de verdad?",
+    "tipo": "grupo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí sería el más difícil de engañar en una relación?",
+    "tipo": "grupo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí es el que más ha madurado este último año?",
+    "tipo": "grupo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí es el que más aguanta antes de estallar?",
+    "tipo": "grupo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí necesita más un cambio grande en su vida ahora mismo?",
+    "tipo": "grupo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí es el que más ha luchado por una relación que no funcionaba?",
+    "tipo": "grupo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí es el que más se sacrifica por los demás sin que se lo pidan?",
+    "tipo": "grupo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí es el más difícil de leer emocionalmente?",
+    "tipo": "grupo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí tiene el ego más frágil aunque no lo parezca?",
+    "tipo": "grupo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí sería el que más lucharía por recuperar a alguien?",
+    "tipo": "grupo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí ha mentido más veces de las que el grupo cree?",
+    "tipo": "grupo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Quién de aquí es capaz de mentir mejor sin que se le note?",
+    "tipo": "grupo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Quién de aquí ha traicionado la confianza de alguien de este grupo alguna vez?",
+    "tipo": "grupo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Quién de aquí es el que más secretos ajenos guarda sin haberlo pedido?",
+    "tipo": "grupo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Quién de aquí sería capaz de dejar de hablarle a alguien sin dar explicaciones?",
+    "tipo": "grupo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Quién de aquí ha sentido alivio con el fracaso de otra persona de aquí?",
+    "tipo": "grupo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Quién de aquí antepone más su orgullo a pedir perdón?",
+    "tipo": "grupo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Quién de aquí es capaz de guardar un secreto que podría hacer mucho daño?",
+    "tipo": "grupo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Quién de aquí ha mentido más veces a su familia sobre algo importante?",
+    "tipo": "grupo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Quién de aquí es capaz de fingir una amistad por conveniencia?",
+    "tipo": "grupo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Quién de aquí tiene el secreto más grande sin contar a nadie de este grupo?",
+    "tipo": "grupo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Quién de aquí es capaz de sabotear a alguien sin que se note?",
+    "tipo": "grupo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Quién de aquí ha sido más desleal alguna vez sin que se supiera?",
+    "tipo": "grupo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Quién de aquí guarda más rencor del que aparenta?",
+    "tipo": "grupo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Quién de aquí sería capaz de mentir para no perder a alguien importante?",
+    "tipo": "grupo",
+    "nivel": "extremo"
+  }
+]
