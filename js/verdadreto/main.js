@@ -4,7 +4,6 @@
 
 const VR_MIN_JUGADORES = 2;
 const VR_MAX_JUGADORES = 12;
-const VR_MAX_CAMBIOS = 2; // "Otra" por turno
 const VR_CLAVE_GUARDADO = "vr_partida";
 
 // Selector de modo, propio de este juego (selección ÚNICA, a diferencia de
@@ -23,7 +22,6 @@ const vrEstado = {
   indiceTurno: 0,
   tipoActual: null,
   textoActual: "",
-  cambiosUsados: 0,
   contador: { verdades: 0, retos: 0, pasos: 0, cambios: 0 },
   repartidorVerdades: null,
   repartidorRetos: null,
@@ -152,20 +150,23 @@ function vrRenderCarta() {
   carta.classList.add("volteada");
 }
 
+// «Otra» solo existe para retos («no puedo hacer este reto por el sitio
+// donde estoy», no una negativa): sin límite de veces y sin castigo. En
+// verdad no existe — solo hay «Hecho» y «Paso» (§10 de decisiones de esta
+// ampliación en el plan).
 function vrActualizarBotonOtra() {
-  const restantes = VR_MAX_CAMBIOS - vrEstado.cambiosUsados;
   const boton = document.getElementById("vr-btn-otra");
-  boton.textContent = `Otra 🔄 · quedan ${restantes}`;
-  boton.disabled = restantes <= 0;
+  boton.hidden = vrEstado.tipoActual !== "reto";
+  boton.textContent = "Otro reto 🔄";
 }
 
-// Deja la pantalla de la carta en su estado normal (botones Hecho/Paso/Otra
-// visibles, sin castigo a la vista). Se llama siempre que empieza un turno
-// nuevo, para no arrastrar el aviso de "Paso" del turno anterior.
+// Deja la pantalla de la carta en su estado normal (Hecho/Paso visibles,
+// "Otra" según el tipo, sin castigo a la vista). Se llama siempre que
+// empieza un turno nuevo, para no arrastrar el aviso de "Paso" del turno
+// anterior. La visibilidad de "Otra" la decide vrActualizarBotonOtra().
 function vrRestablecerBotonesCarta() {
   document.getElementById("vr-btn-hecho").hidden = false;
   document.getElementById("vr-btn-paso").hidden = false;
-  document.getElementById("vr-btn-otra").hidden = false;
   document.getElementById("vr-btn-siguiente-paso").hidden = true;
   document.getElementById("vr-castigo").hidden = true;
 }
@@ -177,7 +178,6 @@ function vrElegir(tipo) {
   const repartidor = tipo === "verdad" ? vrEstado.repartidorVerdades : vrEstado.repartidorRetos;
   if (!repartidor) return;
 
-  vrEstado.cambiosUsados = 0;
   vrServirCarta(tipo);
   vrRestablecerBotonesCarta();
   vrActualizarBotonOtra();
@@ -268,7 +268,6 @@ function vrReanudar() {
 
 function vrSiguienteTurno() {
   vrEstado.indiceTurno = (vrEstado.indiceTurno + 1) % vrEstado.nombres.length;
-  vrEstado.cambiosUsados = 0;
   vrEstado.tipoActual = null;
   mostrarPantalla("vr-turno");
   vrRenderTurno();
@@ -291,42 +290,27 @@ function vrPaso() {
 
   // Con modo fiesta activo, el turno no pasa hasta pulsar "Siguiente": antes
   // se enseña el castigo, sustituyendo Hecho/Paso/Otra por un único botón.
+  // Pesos del castigo (30 % beber, 20 % prenda, 50 % el resto del banco):
+  // pedido así por el usuario para este juego, no se elige, se ofrece al azar.
   const castigoEl = document.getElementById("vr-castigo");
   castigoEl.hidden = false;
-  castigoEl.textContent = `${vrEstado.nombres[vrEstado.indiceTurno]}: ${vrCastigoPasar()}`;
+  castigoEl.textContent =
+    `${vrEstado.nombres[vrEstado.indiceTurno]}: ` +
+    castigoPonderado({ beber: 0.3, prenda: 0.2, otros: 0.5 });
   document.getElementById("vr-btn-hecho").hidden = true;
   document.getElementById("vr-btn-paso").hidden = true;
   document.getElementById("vr-btn-otra").hidden = true;
   document.getElementById("vr-btn-siguiente-paso").hidden = false;
 }
 
-// Castigo de «Paso» y del segundo cambio de «Otra»: a diferencia de
-// castigoAlAzar() del núcleo (que usa Quién es más…, con prendas y retos
-// variados), aquí solo hay dos opciones posibles — pedido así por el
-// usuario — y no se elige, se ofrece al azar con 50/50.
-function vrCastigoPasar() {
-  return Math.random() < 0.5
-    ? `🍻 Bebe ${enteroAleatorio(2, 5)} tragos`
-    : "🎽 Quítate una prenda";
-}
-
+// «Otra» (solo para retos): pide un reto nuevo porque el actual no se puede
+// hacer en ese sitio, no porque no se quiera. Por eso no tiene límite de
+// veces ni castigo, a diferencia de «Paso» (§10 de esta ampliación).
 function vrOtraCarta() {
-  if (vrEstado.cambiosUsados >= VR_MAX_CAMBIOS) return; // el botón ya está deshabilitado; por si acaso
-  vrEstado.cambiosUsados++;
+  if (vrEstado.tipoActual !== "reto") return; // el botón está oculto en verdad; red de seguridad barata
   vrEstado.contador.cambios++;
-  const esSegundoCambio = vrEstado.cambiosUsados === VR_MAX_CAMBIOS;
-
   vrServirCarta(vrEstado.tipoActual);
   vrRenderCarta();
-  vrActualizarBotonOtra();
-
-  const castigoEl = document.getElementById("vr-castigo");
-  if (esSegundoCambio && modoFiestaActivo()) {
-    castigoEl.hidden = false;
-    castigoEl.textContent = `${vrEstado.nombres[vrEstado.indiceTurno]}: ${vrCastigoPasar()}`;
-  } else {
-    castigoEl.hidden = true;
-  }
 }
 
 function vrTerminar() {

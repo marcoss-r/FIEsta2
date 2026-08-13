@@ -1,7 +1,10 @@
-// Banco de castigos del modo fiesta (§7.4): castigoAlAzar() elige uno al azar
-// cuando alguien pasa de un reto/pregunta o falla. Mezcla de tragos y
-// prendas, pensada para cualquiera de los seis juegos.
-const CASTIGOS_COMUNES = [
+// Banco de castigos del modo fiesta (§7.4). Dividido en tres categorías para
+// poder pedir un castigo con pesos por categoría (ver castigoPonderado() en
+// js/nucleo/intensidad.js): quien llama a la función decide qué proporción
+// quiere de cada una. CASTIGOS_COMUNES (la unión de las tres) se mantiene
+// para castigoAlAzar(), que elige de las tres por igual sin pesos.
+
+const CASTIGOS_BEBER = [
   "Un trago",
   "Dos tragos",
   "Un trago doble",
@@ -15,32 +18,50 @@ const CASTIGOS_COMUNES = [
   "Bebe con los ojos cerrados",
   "Bebe sin usar las manos",
   "Bebe con la mano contraria a la que sueles usar",
-  "Cuenta hasta diez en otro idioma o bebe",
-  "Baila 10 segundos o bebe",
-  "Haz una imitación de alguien del grupo o bebe",
-  "Canta el estribillo de una canción o bebe",
+  "Un trago por cada mensaje sin leer que tengas ahora mismo",
+  "Un trago si te ríes en los próximos 30 segundos",
+  "Un trago doble y brindas con todo el grupo",
+  "Un trago si eres quien lleva más tiempo sin mirar el móvil",
+  "Bebe si has sido tú quien ha propuesto el plan de hoy",
+  "Un trago por cada vez que digas 'eh' en tu próxima frase",
+  "El último en tocarse la nariz bebe",
+  "Bebe dos tragos seguidos sin respirar entre ellos",
+  "Bebe con la cabeza echada hacia atrás",
+  "Un trago doble si esta ronda te tocaba a ti elegir la música",
+];
+
+const CASTIGOS_PRENDA = [
   "Quítate un calcetín",
   "Quítate un zapato",
   "Quítate la gorra, las gafas o un accesorio",
+  "Quítate una pulsera, un anillo o un collar",
+  "Quítate el cinturón",
+  "Quítate una capa de ropa (chaqueta, sudadera…)",
+  "Quítate ambos calcetines",
+];
+
+const CASTIGOS_OTROS = [
+  "Cuenta hasta diez en otro idioma",
+  "Baila 10 segundos",
+  "Haz una imitación de alguien del grupo",
+  "Canta el estribillo de una canción",
   "Cámbiate de sitio con la persona que tengas más lejos",
   "Deja tu móvil boca arriba en el centro dos minutos",
   "Habla con acento raro hasta tu próximo turno",
-  "Haz 5 sentadillas o bebe",
+  "Haz 5 sentadillas",
   "Deja que el grupo elija tu próxima frase",
-  "Un trago por cada mensaje sin leer que tengas ahora mismo",
   "Regala un cumplido sincero a quien tengas a la derecha",
-  "Cuenta un secreto sin importancia o bebe",
+  "Cuenta un secreto sin importancia",
   "Haz de estatua 15 segundos",
-  "El último en tocarse la nariz bebe",
-  "Un trago si te ríes en los próximos 30 segundos",
   "Pide perdón por algo random a quien quieras",
-  "Un trago doble y brindas con todo el grupo",
   "Habla en susurros hasta el siguiente turno",
-  "Levántate y siéntate tres veces antes de beber",
-  "Enseña la última foto que has hecho o bebe",
-  "Un trago si eres quien lleva más tiempo sin mirar el móvil",
+  "Levántate y siéntate tres veces seguidas",
+  "Enseña la última foto que has hecho",
   "Deja que alguien te ponga un mote nuevo para el resto de la partida",
-  "Bebe si has sido tú quien ha propuesto el plan de hoy",
   "Repite la última frase que dijiste, pero cantando",
-  "Un trago por cada vez que digas 'eh' en tu próxima frase",
+  "Haz una imitación de un animal durante 10 segundos",
+  "Cuenta un chiste, bueno o malo",
+  "Camina como un robot hasta tu próximo turno",
 ];
+
+const CASTIGOS_COMUNES = [...CASTIGOS_BEBER, ...CASTIGOS_PRENDA, ...CASTIGOS_OTROS];

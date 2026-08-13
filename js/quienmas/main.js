@@ -155,9 +155,13 @@ function qmServirPregunta() {
   const otros = qmEstado.nombres.filter((_, indice) => indice !== qmEstado.indiceLector);
   qmEstado.textoResuelto = rellenarPlantilla(valor.texto, { jugador: lector, otros });
 
-  // El castigo es propio de cada pregunta: con modo fiesta activo cambia en
-  // cada "Siguiente", no es fijo durante toda la partida.
-  qmEstado.castigoActual = modoFiestaActivo() ? castigoAlAzar() : "";
+  // El castigo es propio de cada pregunta: cambia en cada "Siguiente", no es
+  // fijo durante toda la partida. Con modo fiesta, casi siempre es beber (el
+  // 10 % restante, quitarse una prenda); sin modo fiesta, se usan los
+  // castigos "neutros" del banco (bailar, imitar…), nunca beber ni prenda.
+  qmEstado.castigoActual = modoFiestaActivo()
+    ? castigoPonderado({ beber: 0.9, prenda: 0.1 })
+    : castigoPonderado({ otros: 1 });
 
   const anuncio = document.getElementById("qm-anuncio");
   anuncio.hidden = !agotado;
@@ -174,11 +178,12 @@ function qmRender() {
   document.getElementById("qm-pregunta").textContent = `${qmEstado.textoResuelto}?`;
   document.getElementById("qm-progreso").textContent = `Pregunta ${qmEstado.contador.preguntas}`;
 
+  // Ahora siempre hay castigo (con o sin modo fiesta, ver qmServirPregunta),
+  // así que esta línea ya no se oculta nunca; el emoji es neutro porque el
+  // castigo puede no tener nada que ver con beber.
   const castigoEl = document.getElementById("qm-castigo");
-  castigoEl.hidden = !qmEstado.castigoActual;
-  if (qmEstado.castigoActual) {
-    castigoEl.textContent = `🍻 El más señalado: ${qmEstado.castigoActual}`;
-  }
+  castigoEl.hidden = false;
+  castigoEl.textContent = `🎯 El más señalado: ${qmEstado.castigoActual}`;
 }
 
 // ===== Modo parejas (§10 del plan) =====

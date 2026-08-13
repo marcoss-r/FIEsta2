@@ -97,6 +97,23 @@ function castigoAlAzar() {
   return elegirAlAzar(CASTIGOS_COMUNES);
 }
 
+// Como castigoAlAzar(), pero eligiendo antes una categoría con pesos: por
+// ejemplo castigoPonderado({ beber: 0.3, prenda: 0.2, otros: 0.5 }). Los
+// pesos no hace falta que sumen 1 (se normalizan); una categoría omitida o a
+// 0 nunca sale. Cada juego pide la mezcla que le interese, en vez de que la
+// probabilidad dependa de cuántas entradas tenga cada categoría en el banco.
+function castigoPonderado(pesos) {
+  const categorias = { beber: CASTIGOS_BEBER, prenda: CASTIGOS_PRENDA, otros: CASTIGOS_OTROS };
+  const entradas = Object.entries(pesos).filter(([, peso]) => peso > 0);
+  const total = entradas.reduce((suma, [, peso]) => suma + peso, 0);
+  let punto = Math.random() * total;
+  for (const [nombre, peso] of entradas) {
+    if (punto < peso) return elegirAlAzar(categorias[nombre]);
+    punto -= peso;
+  }
+  return elegirAlAzar(categorias[entradas[entradas.length - 1][0]]);
+}
+
 // La primera vez que se activa "Salseo" o el modo fiesta, un overlay
 // recuerda que es contenido para mayores de edad y que nadie está obligado a
 // nada. Se recuerda en localStorage y no vuelve a salir.

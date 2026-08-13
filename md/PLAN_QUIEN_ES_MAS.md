@@ -62,7 +62,7 @@ quién lee. Todo lo demás se resuelve señalando y gritando.
 | **Filtro por tipo** | ✅ **Sí.** En `qm-config` hay cuatro chips (uno por tipo), multi-selección, **los cuatro activos por defecto**, **mínimo uno**. |
 | **Cuenta atrás «3, 2, 1… ¡señalad!»** | ❌ **No se implementa.** La pregunta aparece directamente: el ritmo lo marca quien lee, y una animación obligatoria entre pregunta y pregunta se hace pesada a las veinte rondas. |
 | **Niveles de intensidad** | Los tres del núcleo, multi-selección, por defecto suave + picante. Se combinan con el filtro de tipo (**los dos filtros a la vez**). |
-| **Modo fiesta** | Interruptor global del núcleo. Con él activo, bajo la pregunta aparece una línea con un castigo concreto para **el más señalado** (`castigoAlAzar()`). |
+| **Modo fiesta** | Interruptor global del núcleo. Bajo la pregunta **siempre** aparece una línea con un castigo concreto para **el más señalado** (ampliación pedida por el usuario, ver más abajo). Con modo fiesta: `castigoPonderado({ beber: 0.9, prenda: 0.1 })`. Sin modo fiesta: `castigoPonderado({ otros: 1 })` (bailar, imitar…, nunca beber ni prenda). |
 | **Datos** | Un solo banco `QM_PREGUNTAS` en `data/quienmas/preguntas.js`. El **encabezado no va en los datos**: lo pone la app según el `tipo` (si no, se repetiría 400 veces). |
 | **Volumen** | **≥ 400 preguntas**, con los cuatro tipos representados (**mínimo 60 de cada**). Reparto orientativo: ~40 % suave, ~40 % picante, ~20 % extremo. |
 | **Qué hace la app** | Servir preguntas sin repetir, poner el encabezado, rotar al lector, resolver `{otro}` y guardar la partida. |
@@ -100,8 +100,8 @@ hub ──► qm-config ──► qm-juego ──┐
   («¿Quién es más probable que…»).
 - El **cuerpo de la pregunta** en grande, con el `?` que añade la app
   («…acabe durmiendo en el sofá esta noche?»).
-- Con modo fiesta, línea inferior: «🍻 El más señalado: **un trago doble**»
-  (castigo distinto en cada pregunta).
+- Línea inferior **siempre visible** (ampliación, ver más abajo): «🎯 El más
+  señalado: **un trago doble**» (castigo distinto en cada pregunta).
 - Botón primario grande **«Siguiente»** y botón secundario **«Terminar»**.
 - Línea tenue de progreso: «Pregunta 12».
 
@@ -120,7 +120,7 @@ const qmEstado = {
   indiceLector: 0,
   preguntaActual: null,   // { texto, tipo, nivel } tal cual del banco
   textoResuelto: "",      // con {otro} ya sustituido
-  castigoActual: "",      // solo si el modo fiesta está activo
+  castigoActual: "",      // siempre hay uno; los pesos cambian según el modo fiesta
   contador: { preguntas: 0 },
   repartidor: null,
 };
@@ -215,7 +215,7 @@ común si no está ya (§3.3 del plan global).
 | `mostrarPantalla(nombre)` | Navegación. |
 | `montarConfigJugadores` · `validarNombres` | `qm-config`. |
 | `montarSelectorNiveles` · `filtrarPorNivel` | Chips de nivel y filtrado. |
-| `montarInterruptorModoFiesta` · `modoFiestaActivo` · `castigoAlAzar` | Línea de castigo bajo la pregunta. |
+| `montarInterruptorModoFiesta` · `modoFiestaActivo` · `castigoPonderado` | Línea de castigo bajo la pregunta (siempre visible; los pesos cambian según el modo fiesta). |
 | `crearRepartidor(banco)` | Servir preguntas sin repetir. |
 | `rellenarPlantilla` · `otrosNecesarios` | Resolver `{otro}` y descartar textos sin candidatos. |
 | `guardarJSON` · `cargarJSON` · `hayGuardado` · `borrarGuardado` | «Continuar partida». |
@@ -338,7 +338,8 @@ seguidas sin cansar.
 
 ✅ Aceptación
 - El castigo cambia de una pregunta a otra.
-- Con el modo apagado no aparece ninguna línea de castigo.
+- (Ampliación posterior, ver checklist: con el modo apagado ya no se oculta
+  la línea, muestra un castigo "neutro" en vez de nada.)
 - Se reanuda una partida a medias con los mismos filtros de nivel y tipo.
 - La pregunta más larga cabe sin scroll en 360 px.
 
@@ -388,6 +389,12 @@ y continuando.
 - [x] **Modo parejas** (ver §10) — pedido por el usuario tras cerrar las
       Fases 1-2-4; se implementa reutilizando el banco y los filtros
       existentes, sin banco propio ni fase nueva de contenido.
+- [x] **Castigo siempre visible, con pesos por categoría** (ampliación
+      pedida por el usuario, solo en el modo normal, no en parejas — ese
+      sigue con `castigoAlAzar()` y solo con modo fiesta): con modo fiesta,
+      `castigoPonderado({ beber: 0.9, prenda: 0.1 })`; sin modo fiesta,
+      `castigoPonderado({ otros: 1 })`. La línea `#qm-castigo` deja de
+      ocultarse nunca.
 
 ---
 

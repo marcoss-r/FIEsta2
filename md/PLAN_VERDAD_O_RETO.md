@@ -60,9 +60,9 @@ los turnos.
 | **Pantallas** | `vr-config` → `vr-turno` → `vr-carta` → `vr-fin`. |
 | **Modos de juego** | **Tres**: `mixto` (por defecto, eliges en cada turno), `verdades` (solo verdades) y `retos` (solo retos). Se elige en `vr-config` con chips. |
 | **Presentación de la carta** | **Volteo 3D**: la carta entra boca abajo y se voltea al servir el texto (patrón `.cf-carta` de FIEsta 1). |
-| **Botón «Otra»** | ✅ Existe, para **verdades y retos**. **Máximo 2 cambios por turno.** El **primero siempre es gratis**; el **segundo, si el modo fiesta está activo, muestra un castigo** antes de servir la carta nueva. Sin modo fiesta, los dos son gratis. Al gastar los dos, el botón se deshabilita hasta el turno siguiente. |
+| **Botón «Otra»** | ✅ Existe **solo para retos**, nunca para verdades (ampliación pedida por el usuario): representa «no puedo hacer este reto por el sitio donde estoy», no una negativa, así que **no tiene límite de veces ni castigo**. En verdad no existe ese botón: solo hay «Hecho» y «Paso». |
 | **Niveles de intensidad** | Los tres del núcleo (`suave` / `picante` / `extremo`), multi-selección, por defecto suave + picante. Filtran **los dos bancos a la vez**. |
-| **Modo fiesta** | Interruptor global del núcleo (persistente entre partidas). Añade castigo a **«Paso»** y al **segundo «Otra»**. A diferencia de Quién es más… (que usa `castigoAlAzar()` del núcleo, con prendas/retos variados), aquí el castigo está **restringido a solo dos opciones** (`vrCastigoPasar()`, propio del juego): **beber entre 2 y 5 tragos** (cantidad al azar) o **quitarse una prenda**. No se elige, se ofrece al azar con 50/50. Sin modo fiesta, «Paso» sigue sin castigo (mismo criterio que el resto de la app: sin modo fiesta, la app no impone nada). |
+| **Modo fiesta** | Interruptor global del núcleo (persistente entre partidas). Añade castigo a **«Paso»** (en verdad o en reto: significa «no quiero hacerlo/contestarlo», sí es una negativa). Usa `castigoPonderado({ beber: 0.3, prenda: 0.2, otros: 0.5 })` del núcleo (ver `js/nucleo/intensidad.js`): 30 % de las veces toca beber, 20 % quitarse una prenda, 50 % uno de los castigos "neutros" del banco (bailar, imitar…). No se elige, se ofrece al azar. Sin modo fiesta, «Paso» sigue sin castigo (mismo criterio que el resto de la app: sin modo fiesta, la app no impone nada). |
 | **Datos** | **Dos bancos separados**: `VR_VERDADES` y `VR_RETOS`, en `data/verdadreto/`. |
 | **Volumen** | **≥ 400 en total: ≥ 200 verdades y ≥ 200 retos.** Reparto orientativo por banco: ~40 % suave, ~40 % picante, ~20 % extremo. |
 | **Qué hace la app** | Servir contenido sin repetir, ordenar turnos, resolver plantillas (`{jugador}`, `{otro}`), guardar la partida y llevar un contador de verdades/retos/pasos. |
@@ -84,7 +84,7 @@ hub  ──►  vr-config  ──►  vr-turno  ◄─────────�
                               ▼                    │
                           vr-carta  ── Hecho ✔ ────┤
                               │      ── Paso ✖ ────┘
-                              │      ── Otra 🔄 (se queda en vr-carta)
+                              │      ── Otro reto 🔄 (solo en reto; se queda en vr-carta)
                               │
               «Terminar» ─────┴─────►  vr-fin  ──►  hub
 ```
@@ -115,12 +115,15 @@ hub  ──►  vr-config  ──►  vr-turno  ◄─────────�
 - Etiqueta del tipo arriba (VERDAD / RETO) con el color correspondiente.
 - La carta se **voltea en 3D** y muestra el texto ya resuelto (plantillas
   rellenadas con nombres reales de la partida).
-- Botones: **«Hecho ✔»** (éxito), **«Paso ✖»** (secundario) y
-  **«Otra 🔄 · quedan N»** (secundario, se deshabilita al llegar a 0).
-- **«Paso»** con modo fiesta: antes de pasar turno se muestra el castigo en un
-  `.anuncio` («🍻 Ana: un trago doble») y un botón **«Siguiente»**.
-- **«Otra»**: si es el segundo cambio y el modo fiesta está activo, primero se
-  muestra el castigo y luego se voltea la carta nueva.
+- Botones: **«Hecho ✔»** (éxito), **«Paso ✖»** (secundario) y, **solo en
+  reto**, **«Otro reto 🔄»** (secundario, sin límite de veces, nunca se
+  deshabilita). En verdad, «Otro reto» está oculto: solo hay Hecho y Paso.
+- **«Paso»** (en verdad o en reto): con modo fiesta, antes de pasar turno se
+  muestra el castigo ponderado en un `.anuncio` («Ana: Un trago doble») y un
+  botón **«Siguiente»**; sin modo fiesta, pasa turno directo sin castigo.
+- **«Otro reto»**: sirve un reto nuevo al instante, sin castigo ni aviso —
+  representa que el reto actual no se puede hacer en ese sitio, no que no se
+  quiera hacer.
 - Botón secundario **«Terminar»**.
 
 **4. `vr-fin`**
@@ -246,17 +249,16 @@ cualquier regla de autor que ponga `display: flex` (§3.3 del plan global).
 | `mostrarPantalla(nombre)` | Toda la navegación. |
 | `montarConfigJugadores({…})` · `validarNombres()` | `vr-config` entera. |
 | `montarSelectorNiveles(…)` · `filtrarPorNivel(banco, niveles)` | Chips de nivel y filtrado de los dos bancos. |
-| `montarInterruptorModoFiesta(…)` · `modoFiestaActivo()` | Modo fiesta, «Paso» y segundo «Otra». |
+| `montarInterruptorModoFiesta(…)` · `modoFiestaActivo()` · `castigoPonderado(pesos)` | Modo fiesta y «Paso». |
 | `crearRepartidor(banco)` | Servir verdades y retos sin repetir. |
 | `rellenarPlantilla(texto, { jugador, otros })` · `otrosNecesarios(texto)` | Resolver `{jugador}` / `{otro}` y descartar textos imposibles al filtrar. |
 | `guardarJSON` · `cargarJSON` · `hayGuardado` · `borrarGuardado` | «Continuar partida». |
-| `barajar` · `elegirAlAzar` · `enteroAleatorio` | Auxiliares (`enteroAleatorio` para los 2-5 tragos de `vrCastigoPasar()`). |
+| `barajar` · `elegirAlAzar` | Auxiliares. |
 
-**Propio de este juego:** `vrCastigoPasar()` — a diferencia de `castigoAlAzar()`
-del núcleo (usado por Quién es más…), aquí el castigo no viene del banco
-compartido `CASTIGOS_COMUNES`: solo hay dos opciones posibles, beber (2-5
-tragos al azar) o quitarse una prenda, pedido explícitamente por el usuario
-para este juego.
+**Propio de este juego:** el reparto de pesos que se le pasa a
+`castigoPonderado({ beber: 0.3, prenda: 0.2, otros: 0.5 })` — el propio
+`castigoPonderado()` es del núcleo (§7 global) y lo comparte con Quién es
+más…, que le pasa otros pesos distintos.
 
 **Propio de Verdad o Reto:** los chips de modo (`vr-chip`), la carta volteable
 (`.vr-carta*`), el contador de cambios por turno, el contador del resumen y el
@@ -484,6 +486,11 @@ mirar la carta más larga del banco en horizontal y en vertical.
       dispositivo real, que hace el usuario)
 - [x] `APP_VERSION` subida, `CACHE` subido y `ARCHIVOS` actualizado en `sw.js`
 - [x] `<script>` de datos y de lógica añadidos a `index.html` en su orden
+- [x] **Castigo de «Paso» ponderado y «Otra» solo en reto** (ampliación
+      pedida por el usuario): `castigoPonderado({ beber: 0.3, prenda: 0.2,
+      otros: 0.5 })` del núcleo en «Paso» (verdad o reto); botón «Otra»
+      eliminado en verdad y convertido en «Otro reto» sin límite ni castigo
+      en reto, porque representa un impedimento del sitio, no una negativa
 
 ---
 
