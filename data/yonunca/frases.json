@@ -876,19 +876,19 @@
     "nivel": "suave"
   },
   {
-    "texto": "he querido besar a alguien de este grupo",
+    "texto": "he querido liarme con alguien de este grupo",
     "nivel": "picante"
   },
   {
-    "texto": "he cotilleado el móvil de alguien sin permiso",
+    "texto": "me he sentido atraído físicamente por alguien de este grupo",
     "nivel": "picante"
   },
   {
-    "texto": "he mentido para librarme de un plan",
+    "texto": "he espiado el móvil de alguien sin permiso",
     "nivel": "picante"
   },
   {
-    "texto": "me he arrepentido de un mensaje justo después de enviarlo",
+    "texto": "me he arrepentido de un mensaje de amor justo después de enviarlo",
     "nivel": "picante"
   },
   {
@@ -896,15 +896,15 @@
     "nivel": "picante"
   },
   {
-    "texto": "he fingido que me iba bien en el trabajo cuando no era así",
+    "texto": "he fingido que me iba bien en una relación cuando no era así",
     "nivel": "picante"
   },
   {
-    "texto": "he hablado mal de alguien que está en esta sala",
+    "texto": "he tenido un sueño erótico con alguien de aquí",
     "nivel": "picante"
   },
   {
-    "texto": "he tenido un sueño con alguien que está aquí ahora mismo",
+    "texto": "he tenido un sueño erótico con alguien que no debería",
     "nivel": "picante"
   },
   {
@@ -913,10 +913,18 @@
   },
   {
     "texto": "he dicho una mentira para quedar mejor en una entrevista",
-    "nivel": "picante"
+    "nivel": "suave"
   },
   {
     "texto": "he mandado una foto subida de tono a la persona equivocada por error",
+    "nivel": "picante"
+  },
+  {
+    "texto": "he mandado nudes",
+    "nivel": "picante"
+  },
+  {
+    "texto": "he guardado fotos sugerentes que no debería tener",
     "nivel": "picante"
   },
   {
@@ -928,11 +936,11 @@
     "nivel": "picante"
   },
   {
-    "texto": "he tenido fantasías con más de una persona de este grupo en algún momento",
+    "texto": "he tenido fantasías alguna persona de este grupo en algún momento",
     "nivel": "picante"
   },
   {
-    "texto": "he probado un juguete o accesorio erótico por curiosidad",
+    "texto": "he probado un juguete o accesorio erótico",
     "nivel": "picante"
   },
   {
@@ -952,35 +960,47 @@
     "nivel": "picante"
   },
   {
+    "texto": "me he abierto una cuenta en apps de citas",
+    "nivel": "picante"
+  },
+  {
     "texto": "he stalkeado el perfil de un ex hasta encontrar con quién está saliendo ahora",
     "nivel": "picante"
   },
   {
-    "texto": "me he planteado seriamente tener una relación abierta",
+    "texto": "me he planteado tener una relación abierta",
     "nivel": "picante"
   },
   {
-    "texto": "he tenido curiosidad por probar algo con más de una persona a la vez",
+    "texto": "tendría una relación abierta",
     "nivel": "picante"
   },
   {
-    "texto": "he fingido que dormía para no tener que hablar de qué somos después de pasar la noche juntos",
+    "texto": "he hecho un trío",
     "nivel": "picante"
   },
   {
-    "texto": "he tenido una relación de mensajes subidos de tono con alguien a quien nunca llegué a conocer en persona",
+    "texto": "haría un trío",
     "nivel": "picante"
   },
   {
-    "texto": "he sentido más química con alguien fuera de mi relación de la que me gustaría admitir",
+    "texto": "he fingido que dormía para no tener que hablar después de tener sexo",
     "nivel": "picante"
   },
   {
-    "texto": "he guardado ropa interior o algo de una expareja sin decírselo a nadie",
+    "texto": "he tenido una relación de mensajes subidos de tono con alguien a quien no conocía en persona",
     "nivel": "picante"
   },
   {
-    "texto": "he tenido sexo pensando en otra persona sin querer",
+    "texto": "he sentido más química con alguien que no es mi pareja o expareja de la que me gustaría admitir",
+    "nivel": "picante"
+  },
+  {
+    "texto": "he guardado ropa interior o algo de una expareja o pareja",
+    "nivel": "picante"
+  },
+  {
+    "texto": "he pensado en otra persona mientras tenía sexo",
     "nivel": "picante"
   },
   {
@@ -988,7 +1008,7 @@
     "nivel": "picante"
   },
   {
-    "texto": "he tenido una cita a la vez con dos personas sin decirles la una a la otra",
+    "texto": "he estado quedando simultáneamente con dos personas sin que ninguna lo supiera",
     "nivel": "picante"
   },
   {
@@ -1000,7 +1020,7 @@
     "nivel": "picante"
   },
   {
-    "texto": "he tenido pareja sexual bastante mayor o menor que yo sin contarlo en su momento",
+    "texto": "he tenido pareja sexual bastante mayor o menor que yo",
     "nivel": "picante"
   },
   {
@@ -1012,11 +1032,7 @@
     "nivel": "picante"
   },
   {
-    "texto": "he tenido sexo el mismo día que conocí a alguien",
-    "nivel": "picante"
-  },
-  {
-    "texto": "he confundido lujuria con amor al menos una vez en mi vida",
+    "texto": "he tenido sexo con alguien el mismo día que lo conocí",
     "nivel": "picante"
   },
   {
@@ -1024,7 +1040,15 @@
     "nivel": "picante"
   },
   {
+    "texto": "he hecho un ranking de personas con valoraciones en función de su atractivo físico",
+    "nivel": "picante"
+  },
+  {
     "texto": "he sentido celos de una expareja de mi pareja actual sin ningún motivo real",
+    "nivel": "picante"
+  },
+  {
+    "texto": "he sentido celos de la pareja de mi expareja",
     "nivel": "picante"
   },
   {
@@ -1032,15 +1056,19 @@
     "nivel": "picante"
   },
   {
+    "texto": "he fingido un orgasmo",
+    "nivel": "picante"
+  },
+  {
     "texto": "me he grabado o me han grabado en un momento íntimo con consentimiento",
     "nivel": "picante"
   },
   {
-    "texto": "he tenido dudas sobre mi orientación en algún momento de mi vida",
+    "texto": "he tenido dudas sobre mi orientación sexual en algún momento de mi vida",
     "nivel": "picante"
   },
   {
-    "texto": "he tenido una cita a ciegas que acabó en algo más de lo esperado",
+    "texto": "he tenido una cita a ciegas",
     "nivel": "picante"
   },
   {
@@ -1056,7 +1084,7 @@
     "nivel": "picante"
   },
   {
-    "texto": "he sentido atracción por alguien mucho más joven o mayor que yo de una forma que me sorprendió a mí mismo/a",
+    "texto": "he sentido atracción por alguien mucho más joven o mayor que yo",
     "nivel": "picante"
   },
   {
@@ -1064,11 +1092,51 @@
     "nivel": "picante"
   },
   {
-    "texto": "he tenido una relación a distancia con más contacto por videollamada íntima que en persona",
+    "texto": "he sido atado en la cama",
     "nivel": "picante"
   },
   {
-    "texto": "he probado a jugar con el poder en la cama, dejando que alguien mandara del todo",
+    "texto": "he atado a alguien en la cama",
+    "nivel": "picante"
+  },
+  {
+    "texto": "he tenido una relación a distancia",
+    "nivel": "picante"
+  },
+  {
+    "texto": "tendría una relación a distancia",
+    "nivel": "picante"
+  },
+  {
+    "texto": "he mantenido relaciones sexuales por videollamada",
+    "nivel": "picante"
+  },
+  {
+    "texto": "he tenido una llamada sexual únicamente por audio",
+    "nivel": "picante"
+  },
+  {
+    "texto": "he dejado que me dominasen por completo en la cama",
+    "nivel": "picante"
+  },
+  {
+    "texto": "he dominado a alguien por completo en la cama",
+    "nivel": "picante"
+  },
+  {
+    "texto": "he probado los hielos en la cama",
+    "nivel": "picante"
+  },
+  {
+    "texto": "he probado los halls en la cama",
+    "nivel": "picante"
+  },
+  {
+    "texto": "he tenido sexo borracho",
+    "nivel": "picante"
+  },
+  {
+    "texto": "he tenido relaciones sexuales que impliquen los pies de alguna manera",
     "nivel": "picante"
   },
   {
@@ -1076,15 +1144,19 @@
     "nivel": "picante"
   },
   {
-    "texto": "he tenido curiosidad por el bdsm aunque nunca lo haya probado del todo",
+    "texto": "he sido pillado manteniendo relaciones sexuales",
     "nivel": "picante"
   },
   {
-    "texto": "he tenido sexo en un probador, un baño público o un sitio parecido",
+    "texto": "he sido pillado masturbándome o viendo porno",
     "nivel": "picante"
   },
   {
-    "texto": "he mandado nudes sabiendo perfectamente el riesgo que corría",
+    "texto": "he tenido curiosidad por el bdsm",
+    "nivel": "picante"
+  },
+  {
+    "texto": "he tenido sexo en un probador o un baño público",
     "nivel": "picante"
   },
   {
@@ -1092,11 +1164,15 @@
     "nivel": "picante"
   },
   {
-    "texto": "he tenido pensamientos sobre un profesor, jefe o superior en algún momento sin que pasara nada más",
+    "texto": "he tenido pensamientos explícitos sobre un profesor, jefe o superior",
     "nivel": "picante"
   },
   {
     "texto": "he confundido a alguien que solo quería sexo con alguien que buscaba una relación",
+    "nivel": "picante"
+  },
+  {
+    "texto": "he olvidado el nombre de alguien con quien me haya liado",
     "nivel": "picante"
   },
   {
@@ -1120,7 +1196,15 @@
     "nivel": "picante"
   },
   {
+    "texto": "he tenido un fetiche extraño que me da vergüenza admitir",
+    "nivel": "picante"
+  },
+  {
     "texto": "he sentido celos con solo ver un me gusta de alguien en las redes de mi pareja",
+    "nivel": "picante"
+  },
+  {
+    "texto": "he sentido celos de alguien del entorno de mi pareja",
     "nivel": "picante"
   },
   {
@@ -1144,11 +1228,19 @@
     "nivel": "picante"
   },
   {
-    "texto": "he probado a intercambiar fotos íntimas con alguien que conocí por internet",
+    "texto": "he tenido pareja mientras seguía teniendo sentimientos por un ex",
     "nivel": "picante"
   },
   {
-    "texto": "he tenido pareja mientras seguía teniendo sentimientos por un ex",
+    "texto": "he sido infiel manteniendo relaciones sexuales con alguien que no era mi pareja",
+    "nivel": "picante"
+  },
+  {
+    "texto": "he sido infiel besando a alguien que no era mi pareja",
+    "nivel": "picante"
+  },
+  {
+    "texto": "he sido infiel sentimentalmente a mi pareja",
     "nivel": "picante"
   },
   {
@@ -1156,7 +1248,23 @@
     "nivel": "picante"
   },
   {
-    "texto": "he tenido sexo sin protección alguna vez sabiendo el riesgo que corría",
+    "texto": "he tenido sexo sin protección",
+    "nivel": "picante"
+  },
+  {
+    "texto": "he tenido un susto",
+    "nivel": "picante"
+  },
+  {
+    "texto": "he visto el resultado de una prueba de embarazo que me concernía",
+    "nivel": "picante"
+  },
+  {
+    "texto": "me he hecho una prueba de ETS",
+    "nivel": "picante"
+  },
+  {
+    "texto": "he tenido ninguna ITS o ETS",
     "nivel": "picante"
   },
   {
@@ -1176,7 +1284,11 @@
     "nivel": "picante"
   },
   {
-    "texto": "he participado en un juego de beber que acabó con más ropa fuera de la que esperaba",
+    "texto": "he tenido dudas sobre mi relación actual",
+    "nivel": "picante"
+  },
+  {
+    "texto": "he participado en un juego de beber que acabó en un beso con alguien",
     "nivel": "picante"
   },
   {
@@ -1184,7 +1296,11 @@
     "nivel": "picante"
   },
   {
-    "texto": "he roto una regla que tenía conmigo mismo/a sobre no liarme con amigos de amigos",
+    "texto": "me he liado con amigos de amigos",
+    "nivel": "picante"
+  },
+  {
+    "texto": "me he liado con la misma persona que un amigo o amiga cercana",
     "nivel": "picante"
   },
   {
@@ -1196,7 +1312,7 @@
     "nivel": "picante"
   },
   {
-    "texto": "he tenido una relación con alguien que mis amigos no aprobaban del todo",
+    "texto": "he tenido una relación con alguien que mis amigos no aprobaban",
     "nivel": "picante"
   },
   {
@@ -1205,6 +1321,18 @@
   },
   {
     "texto": "he sentido atracción por el ex de un amigo o amiga cercana",
+    "nivel": "picante"
+  },
+  {
+    "texto": "he sentido atracción por la pareja de un amigo o amiga cercana",
+    "nivel": "picante"
+  },
+  {
+    "texto": "he sentido atracción por un amigo o amiga de mi pareja",
+    "nivel": "picante"
+  },
+  {
+    "texto": "he sentido atracción por mi mejor amigo o amiga",
     "nivel": "picante"
   },
   {
@@ -1224,19 +1352,27 @@
     "nivel": "picante"
   },
   {
-    "texto": "he tenido sexo la primera noche de conocer a alguien más de una vez en mi vida",
+    "texto": "he tenido sexo con más de una persona en un mismo día",
     "nivel": "picante"
   },
   {
-    "texto": "he fingido estar bien con una ruptura abierta cuando por dentro quería exclusividad",
+    "texto": "me he liado con más de una persona en un mismo día",
     "nivel": "picante"
   },
   {
-    "texto": "he tenido pareja y he flirteado con otra persona solo para sentirme deseado/a",
+    "texto": "dejaría a alguien por pedirme abrir la relación",
     "nivel": "picante"
   },
   {
-    "texto": "he borrado el historial de una app de citas antes de que alguien me pillara con el móvil",
+    "texto": "he tenido pareja y he tonteado con otra persona solo para sentirme deseado/a",
+    "nivel": "picante"
+  },
+  {
+    "texto": "he borrado el historial de búsquedas de instagram para que alguien no vea a quien stalkeo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "he borrado el historial del navegador para ocultar búsquedas explícitas",
     "nivel": "picante"
   },
   {
@@ -1248,11 +1384,7 @@
     "nivel": "picante"
   },
   {
-    "texto": "he tenido una relación con alguien solo por no estar soltero/a en una época de mi vida",
-    "nivel": "picante"
-  },
-  {
-    "texto": "he sentido que me gustaban dos personas a la vez sin saber a cuál elegir",
+    "texto": "he sentido que me gustaban dos personas a la vez",
     "nivel": "picante"
   },
   {
@@ -1280,6 +1412,10 @@
     "nivel": "picante"
   },
   {
+    "texto": "he tenido un follamigo",
+    "nivel": "picante"
+  },
+  {
     "texto": "he tenido sexo el mismo día de una primera cita más de una vez",
     "nivel": "picante"
   },
@@ -1296,6 +1432,10 @@
     "nivel": "picante"
   },
   {
+    "texto": "he sentido atracción alguien que no me atraía físicamente pero sí por su forma de ser",
+    "nivel": "picante"
+  },
+  {
     "texto": "he tenido una etapa en la que ligaba solo para subirme la autoestima, sin buscar nada más",
     "nivel": "picante"
   },
@@ -1304,11 +1444,15 @@
     "nivel": "picante"
   },
   {
-    "texto": "he tenido sexo con alguien y al día siguiente he fingido que fue solo diversión cuando quería algo más",
+    "texto": "he querido tener algo con la misma persona que un amigo o amiga cercana",
     "nivel": "picante"
   },
   {
     "texto": "he sentido celos de un desconocido solo por cómo miraba a mi pareja",
+    "nivel": "picante"
+  },
+  {
+    "texto": "me he metido en una pelea con alguien por cómo miraba a mi pareja",
     "nivel": "picante"
   },
   {
@@ -1320,11 +1464,7 @@
     "nivel": "picante"
   },
   {
-    "texto": "he fingido estar dormido/a para no tener que hablar después de un encuentro incómodo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "he tenido sexo con alguien solo para superar a un ex",
+    "texto": "he pensado que un clavo saca otro clavo y he empezado algo con alguien para olvidar a otra persona",
     "nivel": "picante"
   },
   {
@@ -1333,6 +1473,10 @@
   },
   {
     "texto": "he tenido pareja y he guardado una conversación subida de tono de antes de la relación sin borrarla",
+    "nivel": "picante"
+  },
+  {
+    "texto": "he tenido una conversación subida de tono con alguien cuando estaba de algo con otra persona",
     "nivel": "picante"
   },
   {
@@ -1352,6 +1496,10 @@
     "nivel": "picante"
   },
   {
+    "texto": "he tenido sexo con una expareja después de dejarlo",
+    "nivel": "picante"
+  },
+  {
     "texto": "he fingido tener planes para no quedar con alguien que me estaba tirando la caña sin que me interesara",
     "nivel": "picante"
   },
@@ -1368,11 +1516,11 @@
     "nivel": "picante"
   },
   {
-    "texto": "he tenido sexo con las luces encendidas por primera vez y me costó al principio",
+    "texto": "he sentido que una persona me atraía más después de una copa de más de lo que me atraía sobrio/a",
     "nivel": "picante"
   },
   {
-    "texto": "he sentido que una persona me atraía más después de una copa de más de lo que me atraía sobrio/a",
+    "texto": "he sentido que me pongo caliente al beber",
     "nivel": "picante"
   },
   {
@@ -1388,7 +1536,7 @@
     "nivel": "picante"
   },
   {
-    "texto": "he tenido una charla incómoda sobre qué somos que preferiría no haber tenido nunca",
+    "texto": "he tenido una charla incómoda sobre qué somos",
     "nivel": "picante"
   },
   {
@@ -1396,7 +1544,7 @@
     "nivel": "picante"
   },
   {
-    "texto": "he tenido pareja mientras dudaba en secreto si esa era la persona con la que quería estar",
+    "texto": "he mandado un mensaje subido de tono de broma cuando en realidad iba en serio",
     "nivel": "picante"
   },
   {
@@ -1412,11 +1560,19 @@
     "nivel": "picante"
   },
   {
+    "texto": "me acostaría con alguien con ideales opuestos",
+    "nivel": "picante"
+  },
+  {
     "texto": "he sentido celos de un ex que ni siquiera recordaba hasta que lo mencionaron",
     "nivel": "picante"
   },
   {
     "texto": "he tenido una relación en la que la parte física funcionaba mejor que la parte de hablar",
+    "nivel": "picante"
+  },
+  {
+    "texto": "he tenido sexo con alguien con quien no hubo ningún tipo de conexión sexual",
     "nivel": "picante"
   },
   {
@@ -1436,23 +1592,15 @@
     "nivel": "picante"
   },
   {
-    "texto": "he fingido madurez sexual que en realidad no tenía la primera vez que alguien me lo preguntó",
-    "nivel": "picante"
-  },
-  {
     "texto": "he sentido que alguien me atraía justo porque estaba prohibido, no por la persona en sí",
     "nivel": "picante"
   },
   {
-    "texto": "he tenido pareja y he guardado sentimientos por un ex por si acaso",
+    "texto": "he tenido pareja y he tenido otras personas detrás por si no funcionaba",
     "nivel": "picante"
   },
   {
     "texto": "he confesado que fantaseaba con alguien de mi entorno a un amigo de mucha confianza",
-    "nivel": "picante"
-  },
-  {
-    "texto": "he tenido sexo de reconciliación sabiendo que la relación no iba a durar de todas formas",
     "nivel": "picante"
   },
   {
@@ -1472,11 +1620,15 @@
     "nivel": "picante"
   },
   {
-    "texto": "he tenido pareja y he mantenido una amistad peligrosa con alguien que sabía que me atraía",
+    "texto": "he provocado la ruptura de una relación para poder estar con alguien que me gustaba",
     "nivel": "picante"
   },
   {
-    "texto": "he confesado a alguien que me gustaba solo porque estaba borracho/a y no me habría atrevido sobrio/a",
+    "texto": "he sido los cuernos de alguien",
+    "nivel": "picante"
+  },
+  {
+    "texto": "he tenido pareja y he mantenido una amistad peligrosa con alguien que sabía que me atraía",
     "nivel": "picante"
   },
   {
@@ -1496,14 +1648,6 @@
     "nivel": "picante"
   },
   {
-    "texto": "he fingido que se me había roto el móvil justo cuando me preguntaban por una conversación comprometida",
-    "nivel": "picante"
-  },
-  {
-    "texto": "he tenido sexo en la primera cita más de lo que admito normalmente",
-    "nivel": "picante"
-  },
-  {
     "texto": "he sentido que una relación funcionaba mejor cuando había algo de distancia física de por medio",
     "nivel": "picante"
   },
@@ -1512,7 +1656,15 @@
     "nivel": "picante"
   },
   {
-    "texto": "he fingido estar cansado/a para librarme de tener intimidad cuando en realidad no me apetecía por otro motivo",
+    "texto": "he besado a alguien apasionadamente delante de otras personas",
+    "nivel": "picante"
+  },
+  {
+    "texto": "he fingido estar cansado/a para librarme de tener intimidad cuando en realidad no me apetecía",
+    "nivel": "picante"
+  },
+  {
+    "texto": "he tapado los cuernos de un amigo o amiga para que no se enterara su pareja",
     "nivel": "picante"
   },
   {
@@ -1520,11 +1672,7 @@
     "nivel": "picante"
   },
   {
-    "texto": "he tenido una conversación subida de tono con alguien y he cambiado de tema justo cuando entró alguien a la habitación",
-    "nivel": "picante"
-  },
-  {
-    "texto": "he confesado a alguien un gusto en la cama que me daba vergüenza admitir",
+    "texto": "he hecho tocamientos explícitos a alguien con otras personas en la habitación",
     "nivel": "picante"
   },
   {
@@ -1533,10 +1681,6 @@
   },
   {
     "texto": "he fingido que un ex y yo lo dejamos de mutuo acuerdo cuando en realidad me dejaron a mí",
-    "nivel": "picante"
-  },
-  {
-    "texto": "he tenido sexo con alguien solo porque me sentía solo/a esa noche, no porque me atrajera de verdad",
     "nivel": "picante"
   },
   {
@@ -1560,19 +1704,7 @@
     "nivel": "picante"
   },
   {
-    "texto": "he tenido curiosidad por saber qué se siente estando con más de una persona a la vez, aunque nunca lo haya hecho",
-    "nivel": "picante"
-  },
-  {
     "texto": "he fingido que un piropo no me había afectado cuando por dentro me subió la autoestima un montón",
-    "nivel": "picante"
-  },
-  {
-    "texto": "he tenido pareja y he notado más química con alguien de fuera de la relación de la que me gustaría reconocer en voz alta",
-    "nivel": "picante"
-  },
-  {
-    "texto": "probaría un trío si se dieran las circunstancias adecuadas",
     "nivel": "picante"
   },
   {
@@ -1580,19 +1712,7 @@
     "nivel": "picante"
   },
   {
-    "texto": "tendría una aventura de una noche sin ataduras si surgiera la ocasión perfecta",
-    "nivel": "picante"
-  },
-  {
-    "texto": "probaría una relación abierta durante un tiempo solo por curiosidad",
-    "nivel": "picante"
-  },
-  {
-    "texto": "me atrevería a mandar un mensaje subido de tono a alguien que me gusta sin saber cómo va a reaccionar",
-    "nivel": "picante"
-  },
-  {
-    "texto": "probaría el bondage o algo parecido si me lo propusiera la persona adecuada",
+    "texto": "tendría una aventura de una noche si no hubiese repercusiones",
     "nivel": "picante"
   },
   {
@@ -1600,7 +1720,7 @@
     "nivel": "picante"
   },
   {
-    "texto": "probaría a tener sexo en un sitio público arriesgado",
+    "texto": "he tenido sexo en la calle",
     "nivel": "picante"
   },
   {
@@ -1608,11 +1728,7 @@
     "nivel": "picante"
   },
   {
-    "texto": "probaría una app de citas específica para encuentros de una noche",
-    "nivel": "picante"
-  },
-  {
-    "texto": "me atrevería a hacer un striptease si me lo pidiera la persona adecuada",
+    "texto": "he hecho o me han hecho un striptease",
     "nivel": "picante"
   },
   {
@@ -1624,19 +1740,15 @@
     "nivel": "picante"
   },
   {
-    "texto": "probaría el sexo virtual con alguien que solo conozco por internet",
+    "texto": "he sobrepasado los límites de infidelidad que me había establecido mi pareja",
     "nivel": "picante"
   },
   {
-    "texto": "me dejaría llevar en una noche de fiesta sin poner límites de antemano",
+    "texto": "probaría a grabarme en un momento íntimo",
     "nivel": "picante"
   },
   {
-    "texto": "probaría a grabarme en un momento íntimo si confiara del todo en la otra persona",
-    "nivel": "picante"
-  },
-  {
-    "texto": "le pediría el número a un desconocido o desconocida atractivo/a sin pensarlo",
+    "texto": "le pediría el número a un desconocido o desconocida atractivo/a por la calle",
     "nivel": "picante"
   },
   {
@@ -1660,19 +1772,7 @@
     "nivel": "picante"
   },
   {
-    "texto": "me atrevería a besar a alguien en público delante de todo el grupo ahora mismo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "probaría a salir con alguien mucho mayor o menor que yo sin prejuicios",
-    "nivel": "picante"
-  },
-  {
-    "texto": "le pediría a mi pareja hacer un trío sin miedo a su reacción",
-    "nivel": "picante"
-  },
-  {
-    "texto": "probaría a tener una relación solo física, sin ningún tipo de compromiso",
+    "texto": "le pediría a mi pareja hacer un trío si su reacción fuese positiva",
     "nivel": "picante"
   },
   {
@@ -1684,295 +1784,303 @@
     "nivel": "picante"
   },
   {
-    "texto": "le confesaría a alguien de este grupo que me pareció atractivo/a la primera vez que lo vi",
+    "texto": "he sentido atracción física por alguien de este grupo la primera vez que lo vi",
     "nivel": "picante"
   },
   {
-    "texto": "probaría a hacer topless o algo parecido en una playa nudista",
+    "texto": "he resistido la tentación de ser infiel a mi pareja con alguien",
     "nivel": "picante"
   },
   {
-    "texto": "he sentido celos de alguien que está en esta sala",
+    "texto": "me bañaría desnudo en una playa nudista",
+    "nivel": "picante"
+  },
+  {
+    "texto": "me he callado algo por no enfadar a alguien de este grupo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "mentiría jugando este juego para no quedar mal con alguien de este grupo",
     "nivel": "extremo"
   },
   {
-    "texto": "he roto algo a propósito y he dejado que culparan a otro",
+    "texto": "he evitado decir lo que pienso de verdad para no discutir con alguien que está aquí",
     "nivel": "extremo"
   },
   {
-    "texto": "he fingido un sentimiento que no tenía para no herir a alguien",
+    "texto": "me he tragado una opinión esta misma noche para no incomodar a alguien de este grupo",
     "nivel": "extremo"
   },
   {
-    "texto": "he guardado un secreto que no era mío durante años",
+    "texto": "he preferido callarme algo importante antes que crear tensión con alguien de aquí",
     "nivel": "extremo"
   },
   {
-    "texto": "he deseado que una relación se acabara sin atreverme a decirlo",
+    "texto": "he fingido estar de acuerdo con alguien de este grupo solo para evitar una discusión",
     "nivel": "extremo"
   },
   {
-    "texto": "he dejado de hablar con alguien sin darle explicaciones",
+    "texto": "he dejado pasar un comentario que me molestó de alguien de aquí sin decir nada",
     "nivel": "extremo"
   },
   {
-    "texto": "he mentido sobre algo importante a mi familia",
+    "texto": "he evitado sacar un tema esta noche por miedo a la reacción de alguien de este grupo",
     "nivel": "extremo"
   },
   {
-    "texto": "he deseado no haber conocido a alguien que sigue en mi vida",
+    "texto": "me he mordido la lengua delante de alguien de aquí más de una vez",
     "nivel": "extremo"
   },
   {
-    "texto": "he fingido perdonar algo que en realidad nunca superé",
+    "texto": "he preferido guardarme una queja sobre alguien de este grupo antes que decirla en voz alta",
     "nivel": "extremo"
   },
   {
-    "texto": "he dejado que alguien se llevara la culpa de algo que había hecho yo",
+    "texto": "he callado lo que pienso de una decisión de alguien de este grupo por no meterme",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido alivio ante una mala noticia de alguien cercano",
+    "texto": "he evitado un tema concreto esta noche porque sabía que incomodaría a alguien de aquí",
     "nivel": "extremo"
   },
   {
-    "texto": "he roto una promesa importante sabiendo el daño que iba a hacer",
+    "texto": "me he guardado un consejo que le daría a alguien de este grupo por miedo a cómo se lo tomaría",
     "nivel": "extremo"
   },
   {
-    "texto": "he deseado en secreto que la pareja de un amigo o una amiga no funcionara",
+    "texto": "he preferido no corregir a alguien de aquí delante de los demás para no dejarlo en evidencia",
     "nivel": "extremo"
   },
   {
-    "texto": "he ocultado algo a mi familia durante años por miedo a su reacción",
+    "texto": "he dejado que alguien de este grupo pensara que estoy bien con algo que en realidad no me gusta",
     "nivel": "extremo"
   },
   {
-    "texto": "he mentido de una forma en la que alguien salió perjudicado por mi culpa",
+    "texto": "he evitado decirle a alguien de aquí que algo que hizo me sentó mal",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que le caigo mejor a la pareja de un amigo que el propio amigo",
+    "texto": "me he callado una opinión sobre la pareja de alguien de este grupo",
     "nivel": "extremo"
   },
   {
-    "texto": "he hablado mal de alguien de este grupo a sus espaldas más de una vez",
+    "texto": "he fingido que no me importaba un comentario de alguien de aquí cuando sí me afectó",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido envidia del éxito de un amigo cercano",
+    "texto": "he evitado un enfrentamiento con alguien de este grupo cambiando de tema a propósito",
     "nivel": "extremo"
   },
   {
-    "texto": "he deseado en secreto que un amigo y su pareja rompieran",
+    "texto": "he preferido quedar bien con alguien de aquí antes que decirle la verdad",
     "nivel": "extremo"
   },
   {
-    "texto": "he tenido un favorito entre mis propios hermanos o primos y nunca lo he admitido",
+    "texto": "he pensado que alguien de aquí sobra en el plan",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que quiero más a un amigo que a algún familiar directo",
+    "texto": "he pensado que este grupo funcionaría mejor sin alguien que está aquí",
     "nivel": "extremo"
   },
   {
-    "texto": "he pensado en dejar de hablarle a alguien de este grupo sin decir por qué",
+    "texto": "he sentido que alguien de este grupo no encaja del todo con el resto",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido alivio cuando a un amigo le ha ido mal algo que a mí me daba envidia",
+    "texto": "he pensado que la noche sería distinta si alguien de aquí no hubiera venido",
     "nivel": "extremo"
   },
   {
-    "texto": "he tenido un secreto de un amigo que he estado a punto de contar sin querer",
+    "texto": "he sentido que alguien de este grupo está de más en algunos planes",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que un amigo se ha alejado desde que le va mejor en la vida",
+    "texto": "he pensado que a este grupo le sobra alguien que está presente ahora mismo",
     "nivel": "extremo"
   },
   {
-    "texto": "he juzgado en silencio una decisión importante de alguien de este grupo",
+    "texto": "he sentido que alguien de aquí se invitó solo sin que nadie lo propusiera",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que mis padres tienen un hijo favorito y no soy yo",
+    "texto": "he pensado que la conversación fluiría mejor sin alguien de este grupo",
     "nivel": "extremo"
   },
   {
-    "texto": "he tenido la sensación de que finjo más de lo que debería con mi propia familia",
+    "texto": "he sentido que alguien de aquí no pega con el resto del grupo",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que quiero alejarme de mi familia una temporada sin saber cómo decirlo",
+    "texto": "he pensado que este plan habría sido mejor sin alguien que está en esta sala",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido celos de la relación que tiene un amigo con sus padres",
+    "texto": "he sentido que alguien de este grupo se cuela en planes a los que no le invitaron de verdad",
     "nivel": "extremo"
   },
   {
-    "texto": "he pensado que un amigo se merecía la ruptura que tuvo",
+    "texto": "he pensado que alguien de aquí solo viene porque conoce a otra persona del grupo",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que estoy con mis amigos por costumbre más que por conexión real en este último año",
+    "texto": "he sentido que sin alguien de este grupo el ambiente sería más relajado",
     "nivel": "extremo"
   },
   {
-    "texto": "he tenido pensamientos de que sería más feliz sin cierta persona de mi entorno",
+    "texto": "he pensado que a alguien de aquí no le apetece estar en este plan tanto como al resto",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que compito en secreto con un amigo cercano",
+    "texto": "he sentido que alguien de este grupo desentona con la energía del resto esta noche",
     "nivel": "extremo"
   },
   {
-    "texto": "he ocultado a mi familia una decisión importante de mi vida por miedo a su reacción",
+    "texto": "le he ocultado algo a alguien de este grupo a propósito",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que alguien de este grupo me tiene manía y nunca hemos hablado de ello",
+    "texto": "he sabido algo sobre alguien de aquí y he decidido no contárselo",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que finjo estar bien delante de mis amigos cuando por dentro no lo estoy",
+    "texto": "he guardado un secreto de alguien de este grupo que me pesa",
     "nivel": "extremo"
   },
   {
-    "texto": "he tenido la sensación de que le importo menos a mi mejor amigo de lo que él o ella me importa a mí",
+    "texto": "he escondido a alguien de aquí que hablé mal de él o ella en otro momento",
     "nivel": "extremo"
   },
   {
-    "texto": "he pensado que sería más feliz viviendo lejos de mi familia",
+    "texto": "he ocultado a alguien de este grupo que salí con otra persona del grupo sin avisarle",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que quiero más a los amigos de mi pareja que a los míos propios",
+    "texto": "he sabido un secreto de alguien de aquí antes que el resto del grupo",
     "nivel": "extremo"
   },
   {
-    "texto": "he guardado dinero que le debía a un amigo esperando que se le olvidara",
+    "texto": "he dejado que alguien de este grupo se enterara de algo importante por otra persona en vez de por mí",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que juzgo a mis amigos por decisiones que yo mismo he tomado también",
+    "texto": "he ocultado a alguien de aquí que hice un plan sin contar con él o ella",
     "nivel": "extremo"
   },
   {
-    "texto": "he tenido la sensación de estar en un grupo de amigos solo por inercia, no por elección",
+    "texto": "he guardado información sobre alguien de este grupo que, si la contara, cambiaría cómo lo ven los demás",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que un amigo solo aparece cuando le conviene",
+    "texto": "he escondido a alguien de aquí un mensaje que hablaba de él o ella",
     "nivel": "extremo"
   },
   {
-    "texto": "he pensado que la pareja de un amigo mío no le conviene nada",
+    "texto": "he sabido algo que le haría daño a alguien de este grupo y he preferido no decírselo",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que me alegro un poco por dentro de los problemas de alguien que me cae mal",
+    "texto": "he ocultado a alguien de aquí que estuve de acuerdo con una crítica que le hicieron",
     "nivel": "extremo"
   },
   {
-    "texto": "he ocultado a mis amigos un problema económico serio por vergüenza",
+    "texto": "he guardado un secreto sobre la pareja de alguien de este grupo",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que mi familia no me conoce de verdad",
+    "texto": "he dejado que alguien de aquí crea algo que no es del todo cierto sin corregirlo",
     "nivel": "extremo"
   },
   {
-    "texto": "he tenido la sensación de que finjo ser alguien distinto según el grupo en el que esté",
+    "texto": "he ocultado a alguien de este grupo mi opinión real sobre una decisión suya importante",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido resentimiento hacia un hermano o hermana por cómo lo trataron mis padres",
+    "texto": "he cambiado de personalidad cuando estoy con este grupo respecto a cuando estoy con otras personas",
     "nivel": "extremo"
   },
   {
-    "texto": "he pensado seriamente en cortar la relación con un familiar",
+    "texto": "he sabido que alguien de aquí hablaba mal de otra persona del grupo y no se lo he contado a nadie",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que un amigo cercano me tiene celos y nunca lo hemos hablado",
+    "texto": "he escondido a alguien de este grupo que me molestó algo que hizo hace tiempo",
     "nivel": "extremo"
   },
   {
-    "texto": "he ocultado a mis padres con quién estaba saliendo de verdad",
+    "texto": "he ocultado a alguien de aquí que sé un secreto suyo que no debería saber",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que prefiero la compañía de mis amigos a la de mi propia familia",
+    "texto": "he guardado silencio sobre algo que vi hacer a alguien de este grupo",
     "nivel": "extremo"
   },
   {
-    "texto": "he tenido la sensación de que cuando el grupo se ríe de alguien que no está delante, en el fondo me incomoda pero me río igual",
+    "texto": "he hablado mal de alguien de este grupo a sus espaldas",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que estoy manteniendo una amistad muerta solo por la costumbre",
+    "texto": "he criticado a alguien de aquí con otra persona del propio grupo",
     "nivel": "extremo"
   },
   {
-    "texto": "he pensado que alguien de este grupo cambia según con quién está",
+    "texto": "he comentado con alguien de este grupo algo negativo sobre otra persona presente",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que le tengo más cariño a la mascota de la familia que a algún familiar",
+    "texto": "me he reído de un comentario sobre alguien de aquí que en el fondo no me pareció bien",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que mis logros importan menos en mi familia que los de otro hermano",
+    "texto": "he participado en una conversación criticando a alguien de este grupo que no estaba delante en ese momento",
     "nivel": "extremo"
   },
   {
-    "texto": "he ocultado una opinión política o religiosa a mi familia por miedo a la reacción",
+    "texto": "he exagerado un defecto de alguien de aquí al contárselo a otra persona del grupo",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que finjo interés en la vida de alguien solo por educación",
+    "texto": "he cotilleado con alguien de este grupo sobre la vida de otra persona presente",
     "nivel": "extremo"
   },
   {
-    "texto": "he pensado que sería más feliz si cierta persona en la vida de un amigo desapareciera de la ecuación",
+    "texto": "he dado la razón a alguien de aquí criticando a otra persona del grupo solo por no llevar la contraria",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que guardo rencor a alguien de este grupo por algo que nunca le he dicho",
+    "texto": "he comentado con otra persona del grupo algo privado que me contó alguien de aquí",
     "nivel": "extremo"
   },
   {
-    "texto": "he tenido la sensación de que un amigo solo me cuenta la mitad de las cosas",
+    "texto": "he participado en un grupo de whatsapp aparte hablando de alguien que también está en esta sala",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que me comparo constantemente con un amigo cercano y salgo perdiendo en mi cabeza",
+    "texto": "he dejado que se hablara mal de alguien de este grupo delante de mí sin defenderlo",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que la persona con la que más hablo no es en realidad mi amigo más cercano de verdad",
+    "texto": "he exagerado una anécdota sobre alguien de aquí para hacer más gracia a costa suya",
     "nivel": "extremo"
   },
   {
-    "texto": "he pensado que la relación de mis padres es peor de lo que aparentan de cara a fuera",
+    "texto": "he comparado a alguien de este grupo con otra persona presente de forma poco favorable",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que finjo estar de acuerdo con las decisiones de mis padres por no discutir",
+    "texto": "he hablado con alguien de aquí sobre lo que pienso realmente de otra persona del grupo",
     "nivel": "extremo"
   },
   {
-    "texto": "he ocultado a mi pareja una amistad que sé que le incomodaría",
+    "texto": "me he sumado a una broma sobre alguien de este grupo que en el fondo no le hizo ninguna gracia",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que un amigo se aprovecha de mi generosidad",
+    "texto": "he sentido celos de alguien de este grupo",
     "nivel": "extremo"
   },
   {
-    "texto": "he tenido la sensación de que preferiría que un amigo cercano se mudara lejos",
+    "texto": "he envidiado algo de la vida de alguien que está aquí esta noche",
     "nivel": "extremo"
   },
   {
@@ -1980,227 +2088,183 @@
     "nivel": "extremo"
   },
   {
-    "texto": "he pensado que mis amigos hablan de mí cuando no estoy",
+    "texto": "he envidiado la relación de pareja de alguien de este grupo",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que finjo llevarme mejor con la familia de mi pareja de lo que en realidad me llevo",
+    "texto": "he sentido celos de lo bien que le va a alguien de este grupo últimamente",
     "nivel": "extremo"
   },
   {
-    "texto": "he ocultado a mi familia cuánto gano o cuánto debo",
+    "texto": "he envidiado en secreto un logro reciente de alguien de aquí",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que quiero más a un sobrino o sobrina que a mis propios hermanos",
+    "texto": "he sentido celos de la confianza que tienen dos personas de este grupo entre ellas",
     "nivel": "extremo"
   },
   {
-    "texto": "he pensado en serio en no invitar a alguien de este grupo a algo importante de mi vida",
+    "texto": "he envidiado el aspecto físico de alguien de aquí más de una vez",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que un amigo me usa como plan b",
+    "texto": "he sentido celos de que alguien de este grupo le caiga mejor a otra persona presente que yo",
     "nivel": "extremo"
   },
   {
-    "texto": "he tenido la sensación de que en el fondo disfruto un poco del drama de mi grupo de amigos",
+    "texto": "he envidiado la seguridad que tiene alguien de aquí en sí mismo o en sí misma",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que guardo las apariencias con mi familia en fechas señaladas más de lo que me gustaría",
+    "texto": "he sentido celos de un viaje o un plan que hizo alguien de este grupo sin mí",
     "nivel": "extremo"
   },
   {
-    "texto": "he pensado que alguien de este grupo no sería mi amigo si nos conociéramos hoy por primera vez",
+    "texto": "he sentido celos de que alguien de este grupo destaque más que yo cuando salimos",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que no me cae bien la pareja de un amigo y nunca se lo he dicho",
+    "texto": "he envidiado la casa, el coche o el sueldo de alguien de este grupo",
     "nivel": "extremo"
   },
   {
-    "texto": "he ocultado a mis amigos que no me gusta su pareja",
+    "texto": "he sentido celos de que alguien de este grupo consiga las cosas sin esforzarse tanto como yo",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que un amigo cercano ha cambiado para peor desde que tiene pareja",
+    "texto": "he envidiado que a alguien de aquí le resulte más fácil hacer amigos que a mí",
     "nivel": "extremo"
   },
   {
-    "texto": "he pensado que sería más feliz si tuviera menos contacto con parte de mi familia",
+    "texto": "he sentido celos de una amistad que tiene alguien de este grupo fuera de este círculo",
     "nivel": "extremo"
   },
   {
-    "texto": "he guardado un secreto de un amigo pensando que quizá debería habérselo contado a otra persona",
+    "texto": "he envidiado el cuerpo o la forma física de alguien de aquí",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido más comodidad con mis suegros que con mis propios padres en algún momento",
+    "texto": "he sentido celos al ver a alguien de este grupo triunfar en algo que yo también intenté",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que una amistad ya cumplió su etapa y sigue solo por costumbre",
+    "texto": "he envidiado que alguien de aquí parezca tenerlo todo más resuelto que yo a esta edad",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que mis padres compiten entre ellos por caerme mejor a mí",
+    "texto": "he tenido un ranking mental de mis favoritos dentro de este grupo",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido celos de lo bien que le va a un hermano o hermana en algo concreto",
+    "texto": "hay alguien de este grupo con quien tengo mucha más confianza que con el resto",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que finjo estar de acuerdo con la política o religión de mi familia por evitar conflictos",
+    "texto": "he comparado a alguien de este grupo con otra persona presente y he sacado conclusiones que nunca he dicho en voz alta",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que un amigo solo me llama cuando tiene un problema",
+    "texto": "he pensado que si tuviera que salvar a una sola persona de este grupo, ya sé a quién elegiría",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que doy más de lo que recibo en una amistad concreta desde hace tiempo",
+    "texto": "he clasificado sin querer a la gente de este grupo por lo bien que me caen",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que me caería mejor la ex pareja de un amigo que su pareja actual",
+    "texto": "he pensado que hay alguien de este grupo al que quiero más que a los demás",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que mi familia idealiza a un familiar que ya no está y eso me pesa",
+    "texto": "he comparado mi amistad con dos personas de este grupo y he notado que una pesa más que la otra",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que finjo ilusión por la boda o el bebé de alguien cuando en realidad me da algo de envidia",
+    "texto": "he pensado que si el grupo se dividiera, sé con quién me quedaría",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que estoy en un grupo de amigos por estatus más que por cariño real",
+    "texto": "he sentido que valoro más la opinión de una persona de este grupo que la del resto",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que un amigo cambia de bando en las discusiones según le convenga",
+    "texto": "he pensado que hay alguien en este grupo al que invitaría antes que a otro a un plan pequeño",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que oculto a mi familia lo infeliz que soy en algún área de mi vida",
+    "texto": "he tenido claro durante toda la noche quién es mi persona favorita de este grupo",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido curiosidad morbosa por saber qué se dice de mí cuando no estoy delante",
+    "texto": "he comparado el sentido del humor de alguien de aquí con el de otra persona presente",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que un amigo me necesita más de lo que yo lo necesito a él",
+    "texto": "he pensado que hay una persona de este grupo cuya opinión me importa más que la de las demás",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido resentimiento hacia mis padres por decisiones que tomaron cuando yo era pequeño",
+    "texto": "he clasificado en mi cabeza quién de este grupo es más fiable que el resto",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que finjo cercanía con parte de mi familia solo en bodas y funerales",
+    "texto": "guardo rencor a alguien de este grupo por algo que nunca le he dicho",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que un amigo se ha vuelto irreconocible desde que le va bien económicamente",
+    "texto": "me ha molestado algo que hizo alguien de aquí y no se lo he dicho todavía",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que prefiero pasar las fiestas con amigos antes que con mi propia familia",
+    "texto": "sigo un poco molesto/a con alguien de este grupo por algo que pasó hace tiempo",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que un amigo habla de mí distinto según con quién esté",
+    "texto": "no he perdonado del todo a alguien de aquí aunque de cara afuera parezca que sí",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que me guardo mis problemas de pareja para no darle la razón a mi familia sobre algo que ya me advirtieron",
+    "texto": "he guardado durante meses el enfado por algo que dijo alguien de este grupo",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que compito con un amigo por caerle mejor a una tercera persona",
+    "texto": "sigo pensando en un comentario de alguien de aquí que me sentó mal y nunca lo hablamos",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que hay un tema del que mi familia nunca habla aunque todos sabemos que existe",
+    "texto": "he fingido que se me olvidó una discusión con alguien de este grupo cuando en realidad la recuerdo perfectamente",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que finjo respeto por la opinión de un familiar mientras pienso todo lo contrario",
+    "texto": "me sigue doliendo algo que hizo alguien de aquí y nunca se lo he reprochado",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que un amigo cercano me ha reemplazado por un grupo nuevo de amigos",
+    "texto": "he guardado rencor a alguien de este grupo por cómo actuó en un momento difícil para mí",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que oculto a mis amigos lo mal que me llevo en realidad con mi pareja",
+    "texto": "sigo sin entender por qué alguien de aquí hizo algo que me dolió, y nunca se lo pregunté",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que uno de mis padres me usa como confidente en contra del otro",
+    "texto": "he fingido normalidad con alguien de este grupo mientras por dentro seguía enfadado/a",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que doy la razón a un amigo en una discusión solo para no quedar mal, aunque piense distinto",
+    "texto": "me molestó una broma de alguien de aquí que nunca dije que me había molestado",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que hay una persona de este grupo de la que, si desapareciera, no me acordaría mucho",
+    "texto": "he guardado durante tiempo el enfado por sentirme excluido/a de un plan de alguien de este grupo",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que trabajo en equipo con un compañero solo por conveniencia, no porque me caiga bien",
+    "texto": "sigo resentido/a con alguien de aquí por algo que prometió y no cumplió",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que un compañero de trabajo se lleva el mérito de cosas que hago yo",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "he ocultado a mi familia una herencia o un tema de dinero para evitar peleas",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "he sentido que uno de mis hermanos siempre ha sido el favorito claro de mis padres",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "he sentido que finjo llevarme bien con un cuñado o cuñada por el bien de la familia",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "he sentido alivio cuando se ha cancelado un plan familiar que no me apetecía nada",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "he sentido que evito a propósito a un familiar en las reuniones grandes",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "he llevado la cuenta mental de los favores que le he hecho a un amigo sin que él lleve la misma cuenta",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "he sentido que no encajo del todo en mi propia familia",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "he sentido que discrepo totalmente de cómo un amigo está educando a sus hijos, sin decírselo",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "he sentido que juzgo en silencio la carrera profesional que ha elegido un amigo cercano",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "he sentido que echo de menos a un familiar del que me distancié y nunca se lo he dicho",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "he sentido más cercanía con la familia de mi pareja que con la mía propia",
+    "texto": "he fingido que ya lo había superado con alguien de este grupo cuando en realidad todavía me pesa",
     "nivel": "extremo"
   },
   {
@@ -2208,195 +2272,219 @@
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que tengo un ranking mental de quién es mi mejor amigo dentro del grupo",
+    "texto": "he pensado que alguien de aquí no sería mi amigo si nos conociéramos por primera vez ahora",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que un amigo nuevo le ha quitado protagonismo a una amistad de toda la vida",
+    "texto": "he dudado de si alguien de este grupo es de verdad mi amigo o solo alguien con quien coincido",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que no le caigo bien a la pareja de un buen amigo mío",
+    "texto": "he pensado que una amistad de este grupo sigue solo por costumbre, no por elección",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido vergüenza de un familiar delante de mis amigos alguna vez",
+    "texto": "he dudado de si a alguien de aquí le importaría de verdad si dejara de venir a los planes",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que comparo a mi familia con la de un amigo y salgo perdiendo",
+    "texto": "he pensado que hay alguien en este grupo con quien ya no tengo mucho en común",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que quiero saltarme una tradición familiar y no sé cómo decirlo sin que se enfaden",
+    "texto": "he dudado de si alguien de este grupo me tiene el mismo cariño que yo a él o ella",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido más comodidad con mis suegros que con mis propios padres en alguna ocasión concreta",
+    "texto": "he pensado que si conociera hoy a alguien de aquí, probablemente no encajaríamos tanto",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que mis padres compiten entre ellos por caerme mejor a mí en fechas señaladas",
+    "texto": "he dudado de si una amistad de este grupo aguantaría sin las demás personas de por medio",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que finjo estar de acuerdo con la política o religión de mi familia por evitar un disgusto",
+    "texto": "he pensado que alguien de aquí solo mantiene el contacto por el grupo, no por mí",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que estoy más unido a mis compañeros de trabajo que a algunos amigos de toda la vida",
+    "texto": "he dudado de si alguien de este grupo notaría mi ausencia en los próximos planes",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que un amigo solo me invita a planes cuando le faltan personas",
+    "texto": "he pensado que hay una amistad en este grupo que ya cumplió su etapa",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que finjo alegría en un grupo de whatsapp familiar que en realidad tengo silenciado",
+    "texto": "he dudado de si le caigo tan bien a alguien de aquí como él o ella me cae a mí",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que hay una persona de mi familia con la que solo hablo por navidad y ninguno de los dos hace nada por cambiarlo",
+    "texto": "he pensado que sin este grupo de por medio, alguien de aquí y yo no seríamos amigos",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que un amigo se ha puesto de parte de otra persona en una discusión que me afectaba directamente a mí",
+    "texto": "he dudado de si alguien de este grupo finge más cariño del que siente de verdad",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que prefiero que mi pareja no coincida con cierta parte de mi familia",
+    "texto": "he pensado en dejar de hablarle a alguien de este grupo sin dar explicaciones",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que doy más prioridad a mis amigos que a mi pareja en según qué decisiones",
+    "texto": "he considerado alejarme de alguien de aquí sin montar un drama",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que hay una jerarquía no dicha en mi grupo de amigos y yo no estoy arriba",
+    "texto": "he pensado en poner distancia con alguien de este grupo después de esta etapa",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que un amigo cambió de personalidad al entrar en una nueva relación y lo echo de menos",
+    "texto": "he fantaseado con dejar el grupo entero por culpa de una sola persona de aquí",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que finjo estar de acuerdo con las bromas de mi familia que en el fondo no me hacen ninguna gracia",
+    "texto": "he pensado en dejar de contestar a alguien de este grupo hasta que se cansara de escribirme",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que me cuesta alegrarme del todo por las buenas noticias de cierto amigo",
+    "texto": "he considerado seriamente dejar de quedar con alguien de aquí",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que un familiar me trata como al hijo o hija responsable solo porque nunca le llevo la contraria",
+    "texto": "he pensado en poner una excusa para no coincidir con alguien de este grupo en el próximo plan",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que una discusión de pareja mía se comentó en mi grupo de amigos más de lo que me hubiera gustado",
+    "texto": "he fantaseado con un grupo de amigos sin cierta persona que está aquí",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que me guardo mi opinión sobre la crianza de los hijos de un amigo por no meterme donde no me llaman",
+    "texto": "he pensado en alejarme poco a poco de alguien de este grupo sin que se note demasiado",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que hay un miembro de mi familia al que evito llamar aunque debería",
+    "texto": "he considerado hablar menos con alguien de aquí a propósito",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que un amigo se lleva mejor con mi pareja que conmigo últimamente",
+    "texto": "he pensado en dejar un grupo de whatsapp con alguien de este grupo dentro y no me he atrevido",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que finjo no darme cuenta de las indirectas de un familiar en las comidas",
+    "texto": "he fantaseado con mudarme lejos en parte para tener menos contacto con alguien de aquí",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que sería más fácil mi vida si dos personas de mi entorno dejaran de llevarse tan mal entre ellas",
+    "texto": "he dudado de si puedo confiar del todo en alguien de este grupo",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que un amigo me copia decisiones importantes de la vida y no sé si tomármelo bien o mal",
+    "texto": "he sospechado que alguien de aquí ha compartido algo mío que le pedí que no contara",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que oculto a mi familia con quién comparto piso o con quién paso más tiempo de verdad",
+    "texto": "he dejado de contarle cosas importantes a alguien de este grupo por algo que pasó antes",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que estoy en un grupo de amigos donde solo dos personas deciden siempre los planes",
+    "texto": "he compartido un secreto de alguien de aquí con otra persona sin que lo supiera",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que envidio la relación de pareja de un amigo más que cualquier otra cosa de su vida",
+    "texto": "he sospechado que alguien de este grupo no fue del todo sincero conmigo en algo importante",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que un familiar mayor me juzga por decisiones que ya he tomado y no voy a cambiar",
+    "texto": "he dudado de si alguien de aquí hablaría de mí igual que habla de otras personas del grupo",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que finjo no importarme quedarme fuera de un plan que sé que han hecho sin avisarme",
+    "texto": "he dejado de confiar mis problemas a alguien de este grupo después de sentirme juzgado/a",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que hay una rivalidad silenciosa entre dos amigos míos y me toca hacer equilibrios",
+    "texto": "he sospechado que alguien de aquí exagera las cosas cuando las cuenta a los demás",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que un amigo me pide consejo solo para acabar haciendo lo que ya había decidido de antemano",
+    "texto": "he dudado de la versión que dio alguien de este grupo sobre algo que pasó",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que mi familia compara mi vida con la de un primo o prima como si fuera una competición",
+    "texto": "he dejado de compartir planes con alguien de aquí por miedo a que se los contara a quien no debía",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que me cuesta admitir que envidio la relación que tiene un amigo con su pareja",
+    "texto": "he sospechado que alguien de este grupo se pone de mi parte delante de mí y luego dice otra cosa",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que oculto a mis amigos que a veces prefiero estar solo/a antes que quedar con ellos",
+    "texto": "he dudado de si alguien de aquí guardaría un secreto mío si se lo contara ahora mismo",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que un amigo se ha convertido en más una obligación que en un placer",
+    "texto": "he sentido que hay una jerarquía no dicha en este grupo y yo no estoy arriba",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que finjo estar orgulloso/a de un familiar del que en realidad me avergüenzo un poco",
+    "texto": "he sentido que dos personas de este grupo se llevan mal y me toca hacer equilibrios",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que hay un secreto familiar del que todos hablan menos delante de mí",
+    "texto": "me he enterado de un plan de parte de este grupo al que no me invitaron",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que prefiero que ciertos amigos no se conozcan entre ellos",
+    "texto": "he sentido que en este grupo hay subgrupos que casi nunca se mezclan de verdad",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que un amigo solo valora mi opinión cuando le da la razón",
+    "texto": "he sentido que alguien de este grupo decide siempre los planes sin preguntar al resto",
     "nivel": "extremo"
   },
   {
-    "texto": "he sentido que me cuesta perdonar del todo a un familiar aunque de cara afuera diga que ya está olvidado",
+    "texto": "he notado que hay tensión entre dos personas de este grupo que nadie quiere nombrar",
     "nivel": "extremo"
   },
   {
-    "texto": "confesaría quién creo que se lleva peor con quién dentro de este grupo si me lo preguntaran",
+    "texto": "he sentido que en este grupo solo unas pocas personas tienen la última palabra",
     "nivel": "extremo"
   },
   {
-    "texto": "le diría a un amigo que su pareja no me cae bien si me lo preguntara directamente esta noche",
+    "texto": "he sentido que me esfuerzo más que otras personas de este grupo en mantener la amistad viva",
     "nivel": "extremo"
   },
   {
-    "texto": "elegiría no invitar a un familiar concreto a un evento importante de mi vida si pudiera evitarlo sin líos",
+    "texto": "he notado que alguien de este grupo cambia de actitud según quién más esté delante",
     "nivel": "extremo"
   },
   {
-    "texto": "confesaría si alguna vez he sentido envidia sana o no tan sana de un hermano o hermana",
+    "texto": "he sentido que hay una persona de este grupo a la que todos tratan con más cuidado que al resto",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "he notado que se forman corrillos dentro de este grupo cuando estamos todos juntos",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "he sentido que un plan de este grupo se organizó a propósito sin contar con alguien de aquí",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "he notado que alguien de este grupo siempre acaba siendo el centro de todas las conversaciones",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "he sentido que en este grupo hay una alianza no hablada entre un par de personas",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "he notado que cuando alguien de este grupo no está, se habla de él o ella de forma distinta",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "confesaría ahora mismo quién de este grupo me cae mejor si me obligaran a elegir",
     "nivel": "extremo"
   },
   {
@@ -2404,115 +2492,127 @@
     "nivel": "extremo"
   },
   {
-    "texto": "le contaría a mi familia un secreto que llevo guardando años si supiera que lo entenderían",
+    "texto": "le diría a alguien de este grupo algo que llevo tiempo callándome si me obligaran ahora",
     "nivel": "extremo"
   },
   {
-    "texto": "elegiría distanciarme de un amigo antes que de mi pareja si algún día tuviera que elegir",
+    "texto": "confesaría quién creo que finge más dentro de este grupo si me lo preguntaran directamente",
     "nivel": "extremo"
   },
   {
-    "texto": "confesaría si preferiría la vida de otra persona de este grupo antes que la mía propia",
+    "texto": "diría abiertamente si creo que alguien de este grupo cambió para peor desde que le va bien",
     "nivel": "extremo"
   },
   {
-    "texto": "diría abiertamente si creo que un amigo se casó o emparejó con la persona equivocada",
+    "texto": "le confesaría a alguien de aquí que a veces me cuesta alegrarme del todo por sus logros",
     "nivel": "extremo"
   },
   {
-    "texto": "le preguntaría directamente a un familiar por qué siempre ha tratado distinto a otro hermano",
+    "texto": "diría quién de este grupo creo que aporta menos a la amistad de lo que recibe",
     "nivel": "extremo"
   },
   {
-    "texto": "confesaría si alguna vez he deseado tener menos contacto con parte de mi familia",
+    "texto": "confesaría si alguna vez he pensado que este grupo estaría mejor sin alguien que está aquí",
     "nivel": "extremo"
   },
   {
-    "texto": "elegiría cortar una amistad de años si descubriera que me ha mentido en algo gordo",
+    "texto": "le diría a alguien de este grupo que su pareja no me cae del todo bien si me lo preguntara esta noche",
     "nivel": "extremo"
   },
   {
-    "texto": "diría quién creo que finge más dentro de este grupo de amigos",
+    "texto": "diría quién de este grupo creo que se lleva peor con quién si me presionaran a contestar",
     "nivel": "extremo"
   },
   {
-    "texto": "le contaría a un amigo si su relación de pareja me preocupa de verdad",
+    "texto": "confesaría si alguna vez he sentido que sobro en este grupo",
     "nivel": "extremo"
   },
   {
-    "texto": "confesaría si prefiero a mis suegros antes que a mis propios padres",
+    "texto": "le diría a alguien de aquí que un comentario suyo me sentó mal en su momento, si tuviera la ocasión ahora",
     "nivel": "extremo"
   },
   {
-    "texto": "elegiría saltarme una tradición familiar este mismo año si no hubiera consecuencias",
+    "texto": "diría en voz alta si creo que alguien de este grupo solo aparece cuando le conviene",
     "nivel": "extremo"
   },
   {
-    "texto": "diría en voz alta si algún amigo de este grupo me da más envidia que alegría cuando le va bien",
+    "texto": "confesaría quién de este grupo creo que tiene más secretos sin contar",
     "nivel": "extremo"
   },
   {
-    "texto": "le confesaría a mi familia que a veces me siento el raro o la rara de la familia",
+    "texto": "le confesaría a alguien de aquí que a veces siento celos de su vida",
     "nivel": "extremo"
   },
   {
-    "texto": "confesaría si algún día he preferido pasar tiempo con la familia de un amigo antes que con la mía",
+    "texto": "diría abiertamente si creo que dos personas de este grupo deberían hablar las cosas de una vez",
     "nivel": "extremo"
   },
   {
-    "texto": "diría abiertamente si creo que una amistad de este grupo ya no tiene mucho sentido mantenerla",
+    "texto": "confesaría si preferiría pasar tiempo con otro grupo de amigos antes que con este",
     "nivel": "extremo"
   },
   {
-    "texto": "le diría a un familiar algo que llevo años callándome por evitar el conflicto",
+    "texto": "le diría a alguien de este grupo la verdad sobre lo que pienso de una decisión suya, aunque no me la haya pedido",
     "nivel": "extremo"
   },
   {
-    "texto": "confesaría si me sentiría aliviado/a si cierta persona de mi entorno se mudara lejos",
+    "texto": "diría quién de este grupo creo que cambia más según con quién está",
     "nivel": "extremo"
   },
   {
-    "texto": "elegiría no asistir a una reunión familiar entera si tuviera una excusa perfecta",
+    "texto": "confesaría si alguna vez he sentido que le importo menos a alguien de este grupo de lo que él o ella me importa a mí",
     "nivel": "extremo"
   },
   {
-    "texto": "diría quién de este grupo creo que tiene más secretos sin contar",
+    "texto": "he competido en secreto con alguien de este grupo sin que lo supiera",
     "nivel": "extremo"
   },
   {
-    "texto": "le preguntaría a mi pareja qué piensa de verdad de mi familia, aunque la respuesta me doliera",
+    "texto": "he usado a alguien de este grupo como plan b cuando no tenía otros planes",
     "nivel": "extremo"
   },
   {
-    "texto": "confesaría si alguna vez he preferido el consejo de un amigo al de mis propios padres",
+    "texto": "he sentido que alguien de este grupo me usa como plan b cuando no tiene otros planes",
     "nivel": "extremo"
   },
   {
-    "texto": "elegiría hablar claro con un amigo sobre algo que me molesta de él en vez de callármelo para siempre",
+    "texto": "he juzgado a alguien de este grupo por algo que yo mismo/a he hecho también",
     "nivel": "extremo"
   },
   {
-    "texto": "diría en voz alta si creo que a alguien de este grupo el éxito le ha cambiado el carácter",
+    "texto": "he llevado la cuenta mental de los favores que le he hecho a alguien de este grupo sin que él o ella lleve la misma cuenta",
     "nivel": "extremo"
   },
   {
-    "texto": "confesaría si alguna vez he sentido que mi familia me quiere más por lo que consigo que por quién soy",
+    "texto": "he fingido alegría por una noticia de alguien de este grupo que en realidad me dio un poco de envidia",
     "nivel": "extremo"
   },
   {
-    "texto": "elegiría dejar de fingir en las cenas familiares y decir lo que pienso de verdad, aunque incomode",
+    "texto": "he notado que trato distinto a alguien de este grupo cuando el resto no está delante",
     "nivel": "extremo"
   },
   {
-    "texto": "diría quién de este grupo creo que aporta menos a la amistad en proporción a lo que recibe",
+    "texto": "he sentido que le exijo más a alguien de este grupo de lo que me exijo a mí mismo/a",
     "nivel": "extremo"
   },
   {
-    "texto": "le confesaría a un familiar que cierta tradición o comentario suyo cada año me sienta mal",
+    "texto": "he dejado que alguien de este grupo se disculpara por algo que en realidad fue culpa mía también",
     "nivel": "extremo"
   },
   {
-    "texto": "confesaría delante de todos si alguna vez he sentido que encajo mejor con otro grupo de amigos que con este",
+    "texto": "he sentido que perdono más rápido a unas personas de este grupo que a otras por las mismas cosas",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "he presionado sin darme cuenta a alguien de este grupo para que se pusiera de mi lado en algo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "he sentido alivio cuando a alguien de este grupo le ha salido mal algo que a mí me daba un poco de envidia",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "he notado que cambio de opinión sobre algo solo porque lo dijo primero alguien de este grupo al que admiro",
     "nivel": "extremo"
   },
   {
