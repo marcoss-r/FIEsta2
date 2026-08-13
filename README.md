@@ -15,7 +15,7 @@ principio a fin, cada uno con su banco de contenido **provisional**
 
 - **«Yo nunca»** (🚧 Fase 3 en curso) — jugadores y niveles (el más fuerte se
   llama «Salseo», no «Extremo»), modo fiesta, rotación de quien lee, partida
-  guardable/reanudable, 633 frases en el banco (`data/yonunca/frases.json` +
+  guardable/reanudable, 649 frases en el banco (`data/yonunca/frases.json` +
   `frases.js` generado + `agregar.py`), mezclando confesiones («he...») e
   hipotéticas («probaría...»); pendiente de que el usuario lo recorte y afine.
 - **«Quién es más…»** (🚧 Fase 4 en curso) — chips de nivel y de tipo de
@@ -74,7 +74,7 @@ python icons/generar_icono.py
 Cada juego guardará su banco en `data/<juego>/` como un `.json` (fuente) + un
 `.js` generado (`const XX_BANCO = […]`) + un script `agregar.py` para dar de
 alta entradas desde consola, igual que en FIEsta 1. `data/yonunca/` ya sigue
-este patrón completo: `frases.json` (fuente, 633 entradas) + `frases.js`
+este patrón completo: `frases.json` (fuente, 649 entradas) + `frases.js`
 (generado) + `agregar.py` (da de alta frases nuevas y regenera el `.js`; nunca
 se edita `frases.js` a mano). `data/quienmas/preguntas.js` existe ya, pero
 solo como banco **provisional** (32 entradas escritas a mano, la muestra de

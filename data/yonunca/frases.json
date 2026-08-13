@@ -56,7 +56,7 @@
     "nivel": "suave"
   },
   {
-    "texto": "he mirado el perfil de alguien en redes sin darle like para que no se enterara",
+    "texto": "he stalkeado a alguien y se me ha escapado un like",
     "nivel": "suave"
   },
   {
@@ -80,11 +80,7 @@
     "nivel": "suave"
   },
   {
-    "texto": "he fingido que se me caía el móvil para colgar una llamada",
-    "nivel": "suave"
-  },
-  {
-    "texto": "he copiado una respuesta en un examen sin que se dieran cuenta",
+    "texto": "he copiado en un examen sin que me pillaran",
     "nivel": "suave"
   },
   {
@@ -116,7 +112,7 @@
     "nivel": "suave"
   },
   {
-    "texto": "he tenido más de 50 notificaciones sin abrir a propósito",
+    "texto": "he tenido muchas notificaciones sin abrir para hacerme el chulo",
     "nivel": "suave"
   },
   {
@@ -124,7 +120,7 @@
     "nivel": "suave"
   },
   {
-    "texto": "he dejado un audio de whatsapp de más de tres minutos sin avisar",
+    "texto": "he dejado un audio largo de WhatsApp a medias porque me daba pereza",
     "nivel": "suave"
   },
   {
@@ -132,11 +128,11 @@
     "nivel": "suave"
   },
   {
-    "texto": "he cambiado de canción en cuanto alguien más ha cogido el mando del coche",
+    "texto": "he quitado canciones de los demás para poner las mías",
     "nivel": "suave"
   },
   {
-    "texto": "he silenciado un grupo de whatsapp sin decírselo a nadie",
+    "texto": "he silenciado un grupo de WhatsApp porque me enfadaba la conversación",
     "nivel": "suave"
   },
   {
@@ -252,7 +248,7 @@
     "nivel": "suave"
   },
   {
-    "texto": "he dicho que algo estaba de camino cuando ni lo había empezado",
+    "texto": "he dicho que estaba cerca de terminar algo y ni lo había empezado",
     "nivel": "suave"
   },
   {
@@ -272,11 +268,11 @@
     "nivel": "suave"
   },
   {
-    "texto": "he tropezado en la calle y he seguido andando como si nada",
+    "texto": "me he comido una farola o una señal andando por la calle",
     "nivel": "suave"
   },
   {
-    "texto": "he tenido comida entre los dientes toda una comida sin que nadie me avisara",
+    "texto": "he visto a alguien con comida entre los dientes y no he dicho nada",
     "nivel": "suave"
   },
   {
@@ -292,7 +288,7 @@
     "nivel": "suave"
   },
   {
-    "texto": "he fingido que no sabía el final de algo para no hacer spoiler mal",
+    "texto": "he fingido que no sabía el final de algo para no hacer spoiler",
     "nivel": "suave"
   },
   {
@@ -312,7 +308,7 @@
     "nivel": "suave"
   },
   {
-    "texto": "he llegado el último a una quedada y he dicho que el tráfico estaba fatal sin comprobarlo",
+    "texto": "he dicho que estaba llegando a una quedada y no había ni salido de casa",
     "nivel": "suave"
   },
   {
@@ -392,11 +388,11 @@
     "nivel": "suave"
   },
   {
-    "texto": "he cambiado mi acento sin querer al hablar con alguien de otro país",
+    "texto": "he cambiado mi acento sin querer al hablar con alguien de otra ciudad",
     "nivel": "suave"
   },
   {
-    "texto": "me he probado ropa en una tienda solo para hacer tiempo",
+    "texto": "me he probado ropa en una tienda que estaba seguro de que no me iba a comprar",
     "nivel": "suave"
   },
   {
@@ -464,7 +460,7 @@
     "nivel": "suave"
   },
   {
-    "texto": "he tenido una lista de propósitos de año nuevo que no he cumplido ni uno",
+    "texto": "he tenido una lista de propósitos de año nuevo y no he cumplido ninguno",
     "nivel": "suave"
   },
   {
@@ -504,11 +500,11 @@
     "nivel": "suave"
   },
   {
-    "texto": "he adelantado el reloj del coche a propósito para llegar más puntual",
+    "texto": "he adelantado algún reloj a propósito para ser más puntual",
     "nivel": "suave"
   },
   {
-    "texto": "he tocado el claxon con más ganas de las necesarias",
+    "texto": "he tenido un episodio de road rage",
     "nivel": "suave"
   },
   {
@@ -516,7 +512,7 @@
     "nivel": "suave"
   },
   {
-    "texto": "me he saltado un semáforo en ámbar pensando que estaba dando el pego de responsable",
+    "texto": "me he saltado un semáforo en ámbar en el que me podría haber parado",
     "nivel": "suave"
   },
   {
@@ -544,7 +540,7 @@
     "nivel": "suave"
   },
   {
-    "texto": "he mentido sobre mi altura o mi peso en algún formulario sin importancia",
+    "texto": "he mentido sobre mi altura o mi peso",
     "nivel": "suave"
   },
   {
@@ -584,7 +580,7 @@
     "nivel": "suave"
   },
   {
-    "texto": "he fingido que se me había estropeado el despertador para dormir cinco minutos más",
+    "texto": "he fingido que no me había sonado la alarma para dormir cinco minutos más",
     "nivel": "suave"
   },
   {
@@ -592,7 +588,7 @@
     "nivel": "suave"
   },
   {
-    "texto": "he escrito un mensaje larguísimo y al final he mandado solo «vale»",
+    "texto": "he escrito un mensaje larguísimo para al final borrarlo y mandar un «vale»",
     "nivel": "suave"
   },
   {
@@ -600,11 +596,11 @@
     "nivel": "suave"
   },
   {
-    "texto": "he tenido el móvil en modo avión sin avión de por medio, solo para desconectar",
+    "texto": "he puesto el móvil en modo avión solo para desconectar",
     "nivel": "suave"
   },
   {
-    "texto": "he inventado una palabra que ahora usa toda mi familia sin saber que me la inventé yo",
+    "texto": "he inventado una palabra que ahora usa toda mi familia",
     "nivel": "suave"
   },
   {
@@ -612,15 +608,15 @@
     "nivel": "suave"
   },
   {
-    "texto": "he fingido que estaba de acuerdo con una película que en realidad no me gustó nada",
+    "texto": "he fingido que me gustaba una peli solo porque le gustaba al resto cuando en realidad la odio",
     "nivel": "suave"
   },
   {
-    "texto": "he salido del cine antes de que acabaran los créditos por costumbre",
+    "texto": "he salido del cine antes de la escena post créditos",
     "nivel": "suave"
   },
   {
-    "texto": "he vuelto a entrar al cine para ver una escena que me perdí",
+    "texto": "he ido al baño mientras estaba en el cine más de una vez",
     "nivel": "suave"
   },
   {
@@ -660,7 +656,7 @@
     "nivel": "suave"
   },
   {
-    "texto": "he metido la caja del delivery a la basura antes de que llegaran invitados",
+    "texto": "he acumulado restos de comida del delivery como si fuese ElXokas",
     "nivel": "suave"
   },
   {
@@ -684,10 +680,6 @@
     "nivel": "suave"
   },
   {
-    "texto": "he tenido un número de la suerte sin saber muy bien por qué lo elegí",
-    "nivel": "suave"
-  },
-  {
     "texto": "he dejado que otra persona explicara algo mal sin corregirla por no quedar mal yo",
     "nivel": "suave"
   },
@@ -708,11 +700,11 @@
     "nivel": "suave"
   },
   {
-    "texto": "he fingido no acordarme de una promesa pequeña para no tener que cumplirla",
+    "texto": "he fingido no acordarme de una promesa para no tener que cumplirla",
     "nivel": "suave"
   },
   {
-    "texto": "he mandado una felicitación de cumpleaños tarde fingiendo que la había mandado a tiempo",
+    "texto": "he mandado una felicitación de cumpleaños el día que no era sin querer",
     "nivel": "suave"
   },
   {
@@ -744,7 +736,7 @@
     "nivel": "suave"
   },
   {
-    "texto": "he tenido una alarma puesta con un nombre gracioso solo para hacerme reír al verla",
+    "texto": "he tenido una alarma con una canción como tono",
     "nivel": "suave"
   },
   {
@@ -752,11 +744,11 @@
     "nivel": "suave"
   },
   {
-    "texto": "probaría a bailar en la calle sin que me diera vergüenza",
+    "texto": "bailaría en la calle por dinero si fuese pobre",
     "nivel": "suave"
   },
   {
-    "texto": "me apuntaría a un karaoke sin haberlo hecho nunca antes",
+    "texto": "cantaría yo solo una canción en el karaoke",
     "nivel": "suave"
   },
   {
@@ -776,11 +768,11 @@
     "nivel": "suave"
   },
   {
-    "texto": "dormiría una noche entera fuera de casa sin avisar a nadie, solo por probar",
+    "texto": "dormiría una noche entera fuera de casa sin avisar a nadie",
     "nivel": "suave"
   },
   {
-    "texto": "probaría un deporte de riesgo sin pensarlo dos veces",
+    "texto": "probaría un deporte de riesgo (puenting, parapente…)",
     "nivel": "suave"
   },
   {
@@ -788,7 +780,7 @@
     "nivel": "suave"
   },
   {
-    "texto": "probaría una dieta rarísima solo por ver qué tal",
+    "texto": "probaría una dieta vegana por una semana",
     "nivel": "suave"
   },
   {
@@ -796,15 +788,11 @@
     "nivel": "suave"
   },
   {
-    "texto": "probaría a hacer puenting o algo parecido",
-    "nivel": "suave"
-  },
-  {
     "texto": "dormiría en una tienda de campaña en pleno enero sin quejarme",
     "nivel": "suave"
   },
   {
-    "texto": "probaría el picante más fuerte que hubiera en la mesa sin dudarlo",
+    "texto": "probaría el picante más fuerte que hubiera en el mundo",
     "nivel": "suave"
   },
   {
@@ -824,7 +812,7 @@
     "nivel": "suave"
   },
   {
-    "texto": "probaría a aprender un instrumento nuevo de mayor",
+    "texto": "probaría a aprender un instrumento nuevo",
     "nivel": "suave"
   },
   {
@@ -840,7 +828,7 @@
     "nivel": "suave"
   },
   {
-    "texto": "probaría el ayuno intermitente solo por curiosidad",
+    "texto": "estaría un día sin comer",
     "nivel": "suave"
   },
   {
@@ -848,7 +836,7 @@
     "nivel": "suave"
   },
   {
-    "texto": "probaría a hacer surf aunque me diera miedo el mar",
+    "texto": "probaría a hacer surf con olas de 5 metros",
     "nivel": "suave"
   },
   {
@@ -856,35 +844,31 @@
     "nivel": "suave"
   },
   {
-    "texto": "probaría un plato que no sé ni pronunciar",
+    "texto": "probaría un plato de comida callejera de la India",
     "nivel": "suave"
   },
   {
-    "texto": "me apuntaría a un reality si me lo propusieran",
+    "texto": "iría a un reality show de Telecinco",
     "nivel": "suave"
   },
   {
-    "texto": "cambiaría mi outfit por el de un desconocido durante un día",
+    "texto": "cambiaría mi outfit por el de un amigo durante un día",
     "nivel": "suave"
   },
   {
-    "texto": "probaría a dormir sin móvil una semana entera",
+    "texto": "probaría a desconectar del móvil durante medio mes",
     "nivel": "suave"
   },
   {
-    "texto": "me presentaría voluntario/a a subir a un escenario sin practicar",
+    "texto": "haría una actuación de teatro",
     "nivel": "suave"
   },
   {
-    "texto": "probaría a hacer autostop hasta el pueblo de al lado",
+    "texto": "pondría mi coche en blablacar",
     "nivel": "suave"
   },
   {
-    "texto": "haría un curso de improvisación sin tener ni idea de actuar",
-    "nivel": "suave"
-  },
-  {
-    "texto": "me tiraría en tirolina sin pensarlo",
+    "texto": "me pondría a rapear con gente que acabo de conocer",
     "nivel": "suave"
   },
   {
@@ -2530,5 +2514,85 @@
   {
     "texto": "confesaría delante de todos si alguna vez he sentido que encajo mejor con otro grupo de amigos que con este",
     "nivel": "extremo"
+  },
+  {
+    "texto": "le he dado la vuelta a la ropa interior para ponérmela de nuevo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "he estado más de 3 días sin ducharme",
+    "nivel": "suave"
+  },
+  {
+    "texto": "he usado una prenda que sabía que olía a sucio",
+    "nivel": "suave"
+  },
+  {
+    "texto": "he llorado con una peli o serie",
+    "nivel": "suave"
+  },
+  {
+    "texto": "he llorado con un libro",
+    "nivel": "suave"
+  },
+  {
+    "texto": "me he equivocado de chat de WhatsApp",
+    "nivel": "suave"
+  },
+  {
+    "texto": "he puesto un propósito de año nuevo solo por quedar bien porque no lo iba a cumplir",
+    "nivel": "suave"
+  },
+  {
+    "texto": "me he saltado un semáforo claramente en rojo con el coche",
+    "nivel": "suave"
+  },
+  {
+    "texto": "he sido multado",
+    "nivel": "suave"
+  },
+  {
+    "texto": "he puesto el móvil en modo avión para no estar ansioso cuando esperaba la respuesta a un mensaje",
+    "nivel": "suave"
+  },
+  {
+    "texto": "he ido a un candlelight",
+    "nivel": "suave"
+  },
+  {
+    "texto": "he ido a un concierto de música clásica",
+    "nivel": "suave"
+  },
+  {
+    "texto": "he ido a un concierto solo por la compañía",
+    "nivel": "suave"
+  },
+  {
+    "texto": "he ido a un concierto solo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "he ido al cine solo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "he fingido que me gustaba un artista solo porque era el favorito de la persona que me gustaba",
+    "nivel": "suave"
+  },
+  {
+    "texto": "he cambiado mi forma de ser según con quién estuviera hablando",
+    "nivel": "suave"
+  },
+  {
+    "texto": "me he olvidado de felicitar a alguien importante para mí en su cumpleaños",
+    "nivel": "suave"
+  },
+  {
+    "texto": "dormiría una noche en la calle por 100 euros",
+    "nivel": "suave"
+  },
+  {
+    "texto": "me metería a un ring con Ilia Topuria durante 20 segundos por 5000 euros",
+    "nivel": "suave"
   }
 ]

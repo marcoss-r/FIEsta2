@@ -385,8 +385,13 @@ instalada, modo avión para confirmar que la 6ª tarjeta también funciona offli
       de las de confesión (hecho, `ynTextoInstruccion()` neutra en tiempo
       verbal). Generadas 633 frases (223 suave / 204 picante / 206 salseo),
       sin duplicados exactos, probadas con el juego completo en jsdom (0
-      errores de consola). Pendiente de que el usuario la recorte y afine
-      (§2.4) antes de dar la fase por cerrada
+      errores de consola). Primera revisión del usuario sobre el nivel
+      suave: 45 frases reescritas, 4 eliminadas y 20 nuevas (633 → 649
+      frases en total, 239 suave), aplicado con un script puntual sobre
+      `frases.json` que reproduce exactamente `regenerar_js()` de
+      `agregar.py`. Picante y extremo, sin revisar todavía. Pendiente de
+      que el usuario siga recortando y afinando (§2.4) antes de dar la
+      fase por cerrada
 - [x] **Fase 4** — Persistencia y pulido (adelantada junto con las Fases 1-2:
       guardado/reanudación, `clamp()` en la frase, `APP_VERSION`/`CACHE`/`ARCHIVOS`
       al día; falta la prueba en dispositivo real y modo avión, que hace el usuario)
