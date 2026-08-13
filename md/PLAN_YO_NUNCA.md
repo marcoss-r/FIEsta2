@@ -389,9 +389,13 @@ instalada, modo avión para confirmar que la 6ª tarjeta también funciona offli
       suave: 45 frases reescritas, 4 eliminadas y 20 nuevas (633 → 649
       frases en total, 239 suave), aplicado con un script puntual sobre
       `frases.json` que reproduce exactamente `regenerar_js()` de
-      `agregar.py`. Picante y extremo, sin revisar todavía. Pendiente de
-      que el usuario siga recortando y afinando (§2.4) antes de dar la
-      fase por cerrada
+      `agregar.py`. A continuación, el usuario revisó **picante y salseo**
+      directamente en `frases.json` (edición manual + regeneración del
+      `.js`, commit `7830742`): picante pasó de 204 a 229 frases (+102 /
+      −77) y salseo se reescribió casi por completo, de 206 a 205 (+202 /
+      −203). Banco actual: 674 frases (240 suave / 229 picante / 205
+      salseo). Pendiente de que el usuario siga recortando y afinando
+      (§2.4) antes de dar la fase por cerrada
 - [x] **Fase 4** — Persistencia y pulido (adelantada junto con las Fases 1-2:
       guardado/reanudación, `clamp()` en la frase, `APP_VERSION`/`CACHE`/`ARCHIVOS`
       al día; falta la prueba en dispositivo real y modo avión, que hace el usuario)
