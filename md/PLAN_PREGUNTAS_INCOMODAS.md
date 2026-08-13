@@ -410,6 +410,13 @@ devolución ya gastada sigue gastada.
       dispositivo real, que hace el usuario)
 - [x] `APP_VERSION`, `CACHE` y `ARCHIVOS` actualizados
 - [x] `<script>` de datos y lógica añadidos a `index.html`
+- [x] **Ajuste de tono y limpieza de duplicados fantasma** (pedido por el
+      usuario, leyendo el banco ya revisado de `data/yonunca/frases.json`):
+      picante y extremo reescritos por completo (picante más explícito;
+      extremo centrado en la dinámica de **este grupo concreto**). Suave se
+      mantiene, con un duplicado fantasma corregido tras pasar un detector
+      de similitud por todo el banco. 400 preguntas en total sin cambios de
+      volumen.
 
 ---
 

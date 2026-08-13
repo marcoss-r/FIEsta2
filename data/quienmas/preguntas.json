@@ -20,36 +20,6 @@
     "nivel": "suave"
   },
   {
-    "texto": "se enamore de alguien a quien conoció esa misma noche",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "conteste un mensaje a las cuatro de la mañana",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "acabe montando una escena en una boda",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "se case con {otro} si el mundo se acabara mañana",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "haya mentido en algo gordo esta misma semana",
-    "tipo": "probable",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "deje de hablarse con alguien de esta sala en un año",
-    "tipo": "probable",
-    "nivel": "extremo"
-  },
-  {
     "texto": "de hacer un drama cuando se pone malo",
     "tipo": "adjetivo",
     "nivel": "suave"
@@ -68,26 +38,6 @@
     "texto": "de organizar planes que luego cancela",
     "tipo": "adjetivo",
     "nivel": "suave"
-  },
-  {
-    "texto": "de perdonar demasiado rápido",
-    "tipo": "adjetivo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "de decir «no me importa» cuando le importa muchísimo",
-    "tipo": "adjetivo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "dependiente de que le digan que lo está haciendo bien",
-    "tipo": "adjetivo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "de guardar rencor durante años sin decirlo",
-    "tipo": "adjetivo",
-    "nivel": "extremo"
   },
   {
     "texto": "perderse en una ciudad nueva",
@@ -110,26 +60,6 @@
     "nivel": "suave"
   },
   {
-    "texto": "escribir a su ex después de tres copas",
-    "tipo": "primero",
-    "nivel": "picante"
-  },
-  {
-    "texto": "contar un secreto que le habían pedido guardar",
-    "tipo": "primero",
-    "nivel": "picante"
-  },
-  {
-    "texto": "abandonar el grupo si la cosa se pusiera fea",
-    "tipo": "primero",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "reconocer que ha estado fingiendo estar bien",
-    "tipo": "primero",
-    "nivel": "extremo"
-  },
-  {
     "texto": "ha ido a una fiesta sin saber de quién era",
     "tipo": "nunca",
     "nivel": "suave"
@@ -143,21 +73,6 @@
     "texto": "se ha ido de un sitio sin despedirse de nadie",
     "tipo": "nunca",
     "nivel": "suave"
-  },
-  {
-    "texto": "ha cotilleado el móvil de alguien",
-    "tipo": "nunca",
-    "nivel": "picante"
-  },
-  {
-    "texto": "ha inventado una excusa para cortar una conversación",
-    "tipo": "nunca",
-    "nivel": "picante"
-  },
-  {
-    "texto": "ha dicho «te quiero» sin sentirlo",
-    "tipo": "nunca",
-    "nivel": "extremo"
   },
   {
     "texto": "se quede dormido en el sofá viendo una peli",
@@ -340,276 +255,6 @@
     "nivel": "suave"
   },
   {
-    "texto": "tenga una conversación pendiente que lleva evitando meses",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "se arrepienta de un mensaje en cuanto lo manda",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "mienta sobre estar ocupado para no quedar con alguien",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "cotillee el perfil de un ex sin que se entere",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "se enamore de quien menos le conviene",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "guarde una foto vergonzosa de alguien de este grupo",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "tenga una relación complicada con su familia",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "ligue mandando un meme",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "se líe con alguien de esta sala si se lo propusieran",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "mienta en una primera cita para dar mejor imagen",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "tenga un historial de búsquedas que no enseñaría a nadie",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "le dé más like a un ex del que debería",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "finja que no ha visto un mensaje para no responder",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "tenga celos sin admitirlo",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "se acueste tarde hablando con alguien que le gusta",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "deje a alguien en visto durante días a propósito",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "hable mal de alguien y luego quede con esa persona como si nada",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "tenga un plan B por si el plan A no sale bien en una cita",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "se invente una excusa para no ir a un plan familiar",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "le cueste decir que no le apetece algo",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "haya sentido algo por el ex de un amigo",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "se pase de la raya bromeando y tenga que pedir perdón",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "mande indirectas en redes sociales",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "tenga guardado un mensaje que nunca se atrevió a mandar",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "se compare con los demás más de lo que admite",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "tenga miedo a quedarse solo",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "finja estar bien cuando no lo está",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "tenga más paciencia con desconocidos que con su familia",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "se sienta más cómodo mintiendo un poco que quedando mal",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "tenga un secreto que solo sabe una persona de esta sala",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "le dé vergüenza pedir ayuda aunque la necesite",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "juzgue a alguien por su vida en redes sin conocerle de verdad",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "mantenga contacto con un ex «por si acaso»",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "se avergüence de algo que dijo hace años",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "tenga la autoestima más baja de lo que aparenta",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "acabe hablando de temas profundos borracho",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "haya besado a alguien solo por despecho",
-    "tipo": "probable",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "haya sentido alivio al enterarse de una ruptura ajena",
-    "tipo": "probable",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "haya mentido sobre algo importante para no perder a alguien",
-    "tipo": "probable",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "deje de hablarle a alguien de esta sala sin darle explicaciones",
-    "tipo": "probable",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "haya deseado que le fuera mal a alguien cercano",
-    "tipo": "probable",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "tenga un secreto que cambiaría cómo le ve el grupo",
-    "tipo": "probable",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "haya usado a alguien para superar a otra persona",
-    "tipo": "probable",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "rompa una promesa importante si le conviene",
-    "tipo": "probable",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "haya sido desleal con una amistad, no con una pareja",
-    "tipo": "probable",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "haya fingido un sentimiento que no tenía por interés",
-    "tipo": "probable",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "sea capaz de guardar un secreto ajeno para siempre, cueste lo que cueste",
-    "tipo": "probable",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "haya dejado de defender a alguien por miedo al qué dirán",
-    "tipo": "probable",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "se alegre en el fondo de un fracaso ajeno",
-    "tipo": "probable",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "haya mentido en algo grave a su familia",
-    "tipo": "probable",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "corte una relación por mensaje en vez de la cara",
-    "tipo": "probable",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "haya traicionado la confianza de alguien de este grupo",
-    "tipo": "probable",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "sea capaz de mentir mirando a los ojos sin inmutarse",
-    "tipo": "probable",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "haya elegido el dinero antes que a una amistad",
-    "tipo": "probable",
-    "nivel": "extremo"
-  },
-  {
     "texto": "de perderse las cosas importantes por quedarse dormido",
     "tipo": "adjetivo",
     "nivel": "suave"
@@ -780,7 +425,7 @@
     "nivel": "suave"
   },
   {
-    "texto": "de tomarse una siesta en cualquier sitio",
+    "texto": "de dejar la mitad de cualquier serie sin acabar",
     "tipo": "adjetivo",
     "nivel": "suave"
   },
@@ -788,286 +433,6 @@
     "texto": "de cantar mal a propósito para hacer reír",
     "tipo": "adjetivo",
     "nivel": "suave"
-  },
-  {
-    "texto": "de guardar rencor más tiempo del que admite",
-    "tipo": "adjetivo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "de necesitar que le den la razón",
-    "tipo": "adjetivo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "de compararse con los demás en redes",
-    "tipo": "adjetivo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "de idealizar a la gente al principio de conocerla",
-    "tipo": "adjetivo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "de tener el corazón roto más veces de las que cuenta",
-    "tipo": "adjetivo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "de dar celos sin darse cuenta",
-    "tipo": "adjetivo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "de necesitar aprobación ajena para sentirse bien",
-    "tipo": "adjetivo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "de romper corazones sin mala intención",
-    "tipo": "adjetivo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "de dejar a alguien «en visto» a propósito",
-    "tipo": "adjetivo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "de tener mano dura con quien le hace daño",
-    "tipo": "adjetivo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "de aguantar más de lo que debería en una relación",
-    "tipo": "adjetivo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "de fingir que está bien cuando no lo está",
-    "tipo": "adjetivo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "de sentir celos de sus propios amigos",
-    "tipo": "adjetivo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "de cortar por lo sano sin dar explicaciones",
-    "tipo": "adjetivo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "capaz de mentir con cara de póker",
-    "tipo": "adjetivo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "de necesitar tener siempre la última palabra",
-    "tipo": "adjetivo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "de guardar un as bajo la manga en las discusiones",
-    "tipo": "adjetivo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "de vengarse con indirectas",
-    "tipo": "adjetivo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "de dar más cariño del que recibe",
-    "tipo": "adjetivo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "de perdonar demasiado rápido a quien no lo merece",
-    "tipo": "adjetivo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "de mantener el contacto con exes «solo como amigos»",
-    "tipo": "adjetivo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "de necesitar espacio justo cuando le dan cariño",
-    "tipo": "adjetivo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "de sentirse atraído por quien no le conviene",
-    "tipo": "adjetivo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "de decir que no le importa cuando le importa muchísimo",
-    "tipo": "adjetivo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "de callarse lo que de verdad piensa por no discutir",
-    "tipo": "adjetivo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "de exagerar una historia para quedar mejor",
-    "tipo": "adjetivo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "de tener una lista de razones para no confiar en alguien",
-    "tipo": "adjetivo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "de juzgar rápido y arrepentirse después",
-    "tipo": "adjetivo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "de necesitar tener razón incluso equivocándose",
-    "tipo": "adjetivo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "de dar consejos que él mismo no sigue",
-    "tipo": "adjetivo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "de sentirse solo rodeado de gente",
-    "tipo": "adjetivo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "de tener más paciencia con desconocidos que con quien quiere",
-    "tipo": "adjetivo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "de fingir indiferencia cuando en realidad le duele",
-    "tipo": "adjetivo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "de esconder cómo se siente de verdad",
-    "tipo": "adjetivo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "de aferrarse a algo que sabe que no tiene futuro",
-    "tipo": "adjetivo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "de tener un ego más frágil de lo que aparenta",
-    "tipo": "adjetivo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "de necesitar sentirse deseado constantemente",
-    "tipo": "adjetivo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "capaz de mentir a la cara sin que se le note",
-    "tipo": "adjetivo",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "de guardar rencor toda la vida sin decirlo nunca",
-    "tipo": "adjetivo",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "de manipular una situación a su favor",
-    "tipo": "adjetivo",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "capaz de romper una amistad por orgullo",
-    "tipo": "adjetivo",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "de anteponer su ego a la felicidad de otro",
-    "tipo": "adjetivo",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "de callarse una traición para no perder la paz",
-    "tipo": "adjetivo",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "de fingir una amistad por interés",
-    "tipo": "adjetivo",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "capaz de mentir para no perder a alguien",
-    "tipo": "adjetivo",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "de guardar un secreto que podría hacer mucho daño",
-    "tipo": "adjetivo",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "capaz de sabotear a alguien sin que se note",
-    "tipo": "adjetivo",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "de sentir envidia de sus personas más cercanas",
-    "tipo": "adjetivo",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "capaz de dejar de hablarle a alguien de la nada",
-    "tipo": "adjetivo",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "de anteponer el dinero a una amistad",
-    "tipo": "adjetivo",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "capaz de usar la confianza de alguien en su contra",
-    "tipo": "adjetivo",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "de guardar más secretos de los que parece",
-    "tipo": "adjetivo",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "capaz de fingir perdón sin sentirlo de verdad",
-    "tipo": "adjetivo",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "de tener un lado oscuro que casi nadie conoce",
-    "tipo": "adjetivo",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "capaz de dejar tirado a alguien si le conviene",
-    "tipo": "adjetivo",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "de sentirse aliviado con el fracaso de otro",
-    "tipo": "adjetivo",
-    "nivel": "extremo"
   },
   {
     "texto": "quedarse dormido en una reunión familiar",
@@ -1248,286 +613,6 @@
     "texto": "mandar un audio kilométrico sin necesidad",
     "tipo": "primero",
     "nivel": "suave"
-  },
-  {
-    "texto": "escribirle a un ex después de una discusión",
-    "tipo": "primero",
-    "nivel": "picante"
-  },
-  {
-    "texto": "confesar que le gusta alguien del grupo",
-    "tipo": "primero",
-    "nivel": "picante"
-  },
-  {
-    "texto": "llorar viendo una peli romántica delante de todos",
-    "tipo": "primero",
-    "nivel": "picante"
-  },
-  {
-    "texto": "hablar mal de alguien a sus espaldas",
-    "tipo": "primero",
-    "nivel": "picante"
-  },
-  {
-    "texto": "sentir celos de un amigo con éxito",
-    "tipo": "primero",
-    "nivel": "picante"
-  },
-  {
-    "texto": "rendirse en una relación que no funciona",
-    "tipo": "primero",
-    "nivel": "picante"
-  },
-  {
-    "texto": "pedir perdón después de una discusión",
-    "tipo": "primero",
-    "nivel": "picante"
-  },
-  {
-    "texto": "reconocer que se ha equivocado en una pelea",
-    "tipo": "primero",
-    "nivel": "picante"
-  },
-  {
-    "texto": "cotillear el móvil de su pareja",
-    "tipo": "primero",
-    "nivel": "picante"
-  },
-  {
-    "texto": "mandar un mensaje pasivo-agresivo",
-    "tipo": "primero",
-    "nivel": "picante"
-  },
-  {
-    "texto": "desaparecer sin avisar tras una cita",
-    "tipo": "primero",
-    "nivel": "picante"
-  },
-  {
-    "texto": "contarle un secreto ajeno a otra persona",
-    "tipo": "primero",
-    "nivel": "picante"
-  },
-  {
-    "texto": "juzgar a alguien por su nueva pareja",
-    "tipo": "primero",
-    "nivel": "picante"
-  },
-  {
-    "texto": "sentir envidia de la vida de otro en redes",
-    "tipo": "primero",
-    "nivel": "picante"
-  },
-  {
-    "texto": "mentir para librarse de un plan",
-    "tipo": "primero",
-    "nivel": "picante"
-  },
-  {
-    "texto": "arrepentirse públicamente de algo que dijo",
-    "tipo": "primero",
-    "nivel": "picante"
-  },
-  {
-    "texto": "quedar con un ex «solo para hablar»",
-    "tipo": "primero",
-    "nivel": "picante"
-  },
-  {
-    "texto": "dejar de seguir a alguien en redes tras una pelea",
-    "tipo": "primero",
-    "nivel": "picante"
-  },
-  {
-    "texto": "buscar el perfil de un ex a las tantas",
-    "tipo": "primero",
-    "nivel": "picante"
-  },
-  {
-    "texto": "inventarse una excusa para no ver a la familia",
-    "tipo": "primero",
-    "nivel": "picante"
-  },
-  {
-    "texto": "llorar por una canción sin razón aparente",
-    "tipo": "primero",
-    "nivel": "picante"
-  },
-  {
-    "texto": "confesar una inseguridad delante del grupo",
-    "tipo": "primero",
-    "nivel": "picante"
-  },
-  {
-    "texto": "sentirse celoso sin motivo real",
-    "tipo": "primero",
-    "nivel": "picante"
-  },
-  {
-    "texto": "romper el hielo tras una pelea con el grupo",
-    "tipo": "primero",
-    "nivel": "picante"
-  },
-  {
-    "texto": "reconocer que ha idealizado a alguien",
-    "tipo": "primero",
-    "nivel": "picante"
-  },
-  {
-    "texto": "quedarse callado en una discusión familiar",
-    "tipo": "primero",
-    "nivel": "picante"
-  },
-  {
-    "texto": "buscar excusas para no quedar con alguien",
-    "tipo": "primero",
-    "nivel": "picante"
-  },
-  {
-    "texto": "cambiar de tema cuando le preguntan por su ex",
-    "tipo": "primero",
-    "nivel": "picante"
-  },
-  {
-    "texto": "borrar fotos de una relación pasada",
-    "tipo": "primero",
-    "nivel": "picante"
-  },
-  {
-    "texto": "hablar de más tras unas copas",
-    "tipo": "primero",
-    "nivel": "picante"
-  },
-  {
-    "texto": "arrepentirse de un tatuaje o corte de pelo",
-    "tipo": "primero",
-    "nivel": "picante"
-  },
-  {
-    "texto": "confesar que estaba mintiendo sobre algo pequeño",
-    "tipo": "primero",
-    "nivel": "picante"
-  },
-  {
-    "texto": "sentirse inseguro comparándose con otros",
-    "tipo": "primero",
-    "nivel": "picante"
-  },
-  {
-    "texto": "quedar con alguien solo por no estar solo",
-    "tipo": "primero",
-    "nivel": "picante"
-  },
-  {
-    "texto": "pedir consejo sobre una relación tóxica",
-    "tipo": "primero",
-    "nivel": "picante"
-  },
-  {
-    "texto": "reconocer que sigue pensando en un ex",
-    "tipo": "primero",
-    "nivel": "picante"
-  },
-  {
-    "texto": "contar una mentira piadosa para no herir a alguien",
-    "tipo": "primero",
-    "nivel": "picante"
-  },
-  {
-    "texto": "desahogarse llorando por estrés acumulado",
-    "tipo": "primero",
-    "nivel": "picante"
-  },
-  {
-    "texto": "confesar una mentira que lleva ocultando años",
-    "tipo": "primero",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "reconocer que ha sido desleal en una relación",
-    "tipo": "primero",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "admitir que ha mentido sobre algo importante a su familia",
-    "tipo": "primero",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "reconocer que ha dejado de querer a alguien sin decírselo",
-    "tipo": "primero",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "confesar que ha traicionado la confianza de un amigo",
-    "tipo": "primero",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "admitir que odió a alguien de este grupo en algún momento",
-    "tipo": "primero",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "reconocer un error que le costó una amistad",
-    "tipo": "primero",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "confesar que ha sido cruel con alguien a propósito",
-    "tipo": "primero",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "admitir que ha mentido para hacer daño",
-    "tipo": "primero",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "reconocer que se alegró del sufrimiento ajeno",
-    "tipo": "primero",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "confesar un secreto familiar incómodo",
-    "tipo": "primero",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "admitir que ha usado a alguien emocionalmente",
-    "tipo": "primero",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "reconocer que rompió una promesa importante a propósito",
-    "tipo": "primero",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "confesar que ha mentido sobre sus sentimientos por interés",
-    "tipo": "primero",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "admitir que dejó de hablarle a alguien sin razón real",
-    "tipo": "primero",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "reconocer que ha guardado un secreto que dolía mucho",
-    "tipo": "primero",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "confesar que ha sido desleal con alguien de confianza",
-    "tipo": "primero",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "admitir que antepuso su orgullo a pedir perdón",
-    "tipo": "primero",
-    "nivel": "extremo"
   },
   {
     "texto": "ha dormido con la ropa puesta por accidente",
@@ -1715,287 +800,1202 @@
     "nivel": "suave"
   },
   {
-    "texto": "ha fingido que estaba bien para no preocupar a nadie",
+    "texto": "haya tenido un rollo de una noche sin decírselo a nadie de aquí",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "finja que no le atrae alguien de este grupo cuando sí le atrae",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "haya mandado una foto subida de tono a la persona equivocada",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "tenga una lista mental de con quién de aquí se liaría",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "haya fingido un orgasmo alguna vez",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "se líe con alguien de esta sala esta misma noche si se diera la ocasión",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "tenga fantasías con alguien que no debería",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "haya sido infiel sin que su pareja lo sepa",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "cotillee las redes de un ex más de lo que admite",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "tenga un historial de citas que sorprendería a todos",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "haya confundido la atracción física con algo más",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "se atreva a mandar un mensaje subido de tono esta noche",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "haya tenido pensamientos nada inocentes sobre alguien de este grupo",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "haya estado con más de una persona en la misma semana",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "tenga una app de citas que nadie sabe que usa",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "haya fingido estar soltero para ligar",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "se guarde fotos que no debería tener guardadas",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "haya tenido celos de alguien sin ningún motivo real",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "se líe con un ex si se lo encontrara esta noche",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "tenga más experiencia de la que aparenta",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "haya roto las reglas de una relación abierta",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "tenga un tipo muy claro y todos aquí lo sepan",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "haya dado señales mixtas a propósito para tener el control",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "finja indiferencia con alguien que en realidad le gusta mucho",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "haya tenido un lío con alguien del trabajo o de clase",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "sea capaz de seducir a quien se proponga",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "haya guardado ropa interior de alguien sin decírselo",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "tenga más contactos guardados con nombres falsos de los que admite",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "haya tenido sexo pensando en otra persona",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "se atreva a confesar su plan perfecto para una noche ahora mismo",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "haya sido la otra persona en una infidelidad sin saberlo",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "tenga el listón más bajo de lo que presume en el amor",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "haya fingido que le gustaba algo en la intimidad para no incomodar",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "se ponga más nervioso ligando de lo que aparenta",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "haya tenido una relación a distancia con más mentiras de las normales",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "sea capaz de tener algo con el ex de un amigo",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "haya dejado que alguien pensara que había más feeling del que había",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "tenga el corazón repartido entre dos personas ahora mismo",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "haya mandado indirectas subidas de tono sin que se notara demasiado",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "se atreva a decir con quién de aquí tendría una cita a ciegas",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "haya mentido sobre algo grave a alguien de este grupo",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "tenga un ranking secreto de a quién de aquí quiere más",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "haya hablado mal de alguien de esta sala a sus espaldas esta misma semana",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "sepa un secreto de alguien de aquí que cambiaría cómo le ven los demás",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "haya sentido que sobra en este grupo alguna vez",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "crea que hay alguien de aquí al que no perdonaría una traición",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "haya comparado a dos personas de este grupo y sacado conclusiones que nunca ha dicho",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "sienta que le importa más a este grupo de lo que el grupo le importa a él",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "haya considerado alejarse de alguien de aquí sin decir por qué",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "tenga más confianza con una persona de fuera que con alguien de este grupo",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "haya guardado un secreto de alguien de aquí que le pesa de verdad",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "crea que alguien de este grupo finge más de lo que parece",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "haya sentido envidia de alguien de esta sala",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "considere que este grupo estaría mejor sin alguien que está aquí",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "haya cambiado de opinión sobre alguien de aquí sin decírselo nunca",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "tenga una razón real para desconfiar de alguien de este grupo",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "haya defendido menos a alguien de aquí de lo que debería por miedo al qué dirán",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "sienta que hay alguien de este grupo al que ya no reconoce",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "haya sentido alivio con un problema de alguien de esta sala",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "crea que hay una amistad en este grupo que no va a durar",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "de tontear con más de una persona a la vez",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de dar celos a propósito para llamar la atención",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "capaz de ligar sin decir una palabra",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de tener un tipo muy concreto y que se le note",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de mandar mensajes subidos de tono sin pensarlo",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de confundir cariño con deseo",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de ser infiel con la mirada, aunque no pase nada más",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de necesitar sentirse deseado por más de una persona",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de jugar con dos personas a la vez sin decidirse",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de flirtear incluso estando pillado",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de guardar fotos comprometidas por si acaso",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de tener una lista de «qué pasaría si» con gente de este grupo",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "capaz de seducir sin proponérselo",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de confundir la costumbre con el amor en una relación larga",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de necesitar validación física para sentirse bien",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de dar más morbo del que reconoce",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de tener fantasías que nunca ha contado a nadie",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de disfrutar más lo prohibido que los planes fáciles",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de ser posesivo sin llamarlo celos",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de necesitar la aprobación de un ex aunque diga que no le importa",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de dejarse llevar más rápido de lo que admite",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de tener un radar para detectar quién le mira con interés",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "capaz de coquetear delante de su pareja sin darse cuenta",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de tener más tonteos activos de los que confiesa",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de necesitar sentir que gusta, aunque no quiera nada serio",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de idealizar el sexo en una relación nueva",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de aguantar más infidelidades emocionales de las que debería",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de tener celos del pasado de su pareja",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de necesitar sentirse el centro de atención en una cita",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "capaz de mentir sobre su número de parejas anteriores",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de tontear por mensaje más de lo que haría en persona",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de tener un ex al que sigue comparando con todos",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de necesitar la emoción de lo prohibido para sentir algo",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de dejarse llevar por la atracción antes que por la cabeza",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de guardar una charla subida de tono sin borrarla",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de necesitar gustar a todo el mundo, no solo a quien le interesa",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de confundir la intensidad con el amor de verdad",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "capaz de coquetear con tal de sentirse deseado",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de tener un historial amoroso más movido de lo que aparenta",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "de necesitar drama para sentir que algo le importa de verdad",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "capaz de fingir que no le importa alguien de este grupo cuando sí le importa",
+    "tipo": "adjetivo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "de comparar en secreto a la gente de este grupo entre sí",
+    "tipo": "adjetivo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "capaz de guardar un secreto de alguien de aquí para siempre",
+    "tipo": "adjetivo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "de sentir que aporta menos a este grupo de lo que recibe",
+    "tipo": "adjetivo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "capaz de mentir a la cara a alguien de esta sala",
+    "tipo": "adjetivo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "de tener más paciencia con desconocidos que con alguien de aquí",
+    "tipo": "adjetivo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "capaz de dejar de hablarle a alguien de este grupo sin explicaciones",
+    "tipo": "adjetivo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "de guardar rencor a alguien de aquí sin haberlo dicho nunca",
+    "tipo": "adjetivo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "capaz de sabotear a alguien de este grupo sin que se note",
+    "tipo": "adjetivo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "de fingir cercanía con alguien de aquí por no quedar mal",
+    "tipo": "adjetivo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "capaz de elegir a un desconocido antes que a alguien de este grupo si le conviene",
+    "tipo": "adjetivo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "de tener favoritismos claros dentro de este grupo aunque lo niegue",
+    "tipo": "adjetivo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "capaz de traicionar la confianza de alguien de esta sala",
+    "tipo": "adjetivo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "de sentirse aliviado si alguien de aquí se alejara del grupo",
+    "tipo": "adjetivo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "capaz de mentir sobre lo que opina de alguien de este grupo",
+    "tipo": "adjetivo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "de anteponer su orgullo a arreglar las cosas con alguien de aquí",
+    "tipo": "adjetivo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "capaz de hablar de más sobre alguien de esta sala con gente de fuera",
+    "tipo": "adjetivo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "de fingir que está todo bien con alguien de aquí cuando no lo está",
+    "tipo": "adjetivo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "capaz de quedarse callado viendo que le hacen daño a alguien de este grupo",
+    "tipo": "adjetivo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "de tener más lealtad hacia fuera que hacia dentro de este grupo",
+    "tipo": "adjetivo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "confesar que ha tenido un rollo con alguien de este grupo",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "escribirle a un ex a las tantas de la noche",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "reconocer que ha sido infiel emocionalmente",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "confesar que finge orgasmos",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "admitir que ha tenido dudas sobre su orientación",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "reconocer que ha usado a alguien solo para sentirse deseado",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "confesar que tiene un tipo muy claro dentro de este grupo",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "admitir que ha comparado a su pareja con un ex en la intimidad",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "reconocer que ha mentido sobre su número de parejas",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "confesar que ha tenido fantasías con más de una persona presente",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "admitir que se ha liado con el ex de alguien",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "reconocer que ha sentido más química con un amigo que con su pareja",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "confesar que ha guardado fotos que no debería",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "admitir que ha dado celos a propósito",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "reconocer que ha tenido una relación abierta y no funcionó",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "confesar que ha fingido estar soltero para ligar",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "admitir que se ha enamorado de la persona equivocada más de una vez",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "reconocer que ha sido la tercera persona en una relación sin saberlo",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "confesar que tiene un ex al que sigue stalkeando",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "admitir que ha estado con alguien solo por despecho",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "reconocer que ha jugado con los sentimientos de alguien a propósito",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "confesar que ha sentido atracción por el mejor amigo de su pareja",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "admitir que ha mentido sobre estar enamorado",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "reconocer que ha vuelto con un ex sabiendo que era mala idea",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "confesar que ha tenido celos de una amistad de su pareja",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "admitir que ha priorizado el físico sobre todo lo demás alguna vez",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "reconocer que ha confundido deseo con amor",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "confesar que ha tenido una cita a ciegas que salió fatal",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "admitir que ha seguido tonteando después de tener pareja",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "reconocer que ha idealizado a alguien solo por atracción física",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "confesar que ha tenido pensamientos impuros en un mal momento",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "admitir que se ha arrepentido de una noche con alguien",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "reconocer que ha usado la intimidad para reconciliarse en vez de hablar",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "confesar que ha tenido una relación a distancia con más dudas de las que admitía",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "admitir que ha sido infiel sin llegar a nada físico",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "reconocer que ha tenido más contacto del debido con un ex",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "confesar que ha sentido celos de alguien sin ningún derecho a sentirlos",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "admitir que ha dejado que alguien se hiciera ilusiones a propósito",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "reconocer que ha tenido dudas justo antes de un compromiso ajeno",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "confesar que ha comparado físicamente a dos personas de este grupo",
+    "tipo": "primero",
+    "nivel": "picante"
+  },
+  {
+    "texto": "confesar quién de este grupo le cae peor de lo que aparenta",
+    "tipo": "primero",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "reconocer que ha hablado mal de alguien de esta sala a sus espaldas",
+    "tipo": "primero",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "admitir que ha comparado a dos personas de este grupo sin decirlo",
+    "tipo": "primero",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "confesar que ha sentido que sobra en este grupo",
+    "tipo": "primero",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "reconocer que ha dejado de defender a alguien de aquí por no meterse",
+    "tipo": "primero",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "admitir que desconfía de alguien de esta sala",
+    "tipo": "primero",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "confesar que ha compartido un secreto de alguien de aquí con otra persona",
+    "tipo": "primero",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "reconocer que se alegró de un tropiezo de alguien de este grupo",
+    "tipo": "primero",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "admitir que ha fingido cercanía con alguien de aquí",
+    "tipo": "primero",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "confesar quién de este grupo cree que finge más",
+    "tipo": "primero",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "reconocer que ha pensado en alejarse de este grupo alguna vez",
+    "tipo": "primero",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "admitir que tiene más confianza con alguien de fuera que con este grupo",
+    "tipo": "primero",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "confesar que ha juzgado a alguien de esta sala sin conocer toda la historia",
+    "tipo": "primero",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "reconocer que ha guardado un secreto de alguien de aquí que le pesa",
+    "tipo": "primero",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "admitir que ha antepuesto su comodidad al bienestar de alguien de este grupo",
+    "tipo": "primero",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "confesar cuál cree que es la amistad más frágil de este grupo",
+    "tipo": "primero",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "reconocer que ha sentido celos de alguien de esta sala",
+    "tipo": "primero",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "admitir que ha mentido sobre lo que piensa de alguien de aquí",
+    "tipo": "primero",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "confesar que ha dejado que alguien de este grupo cargue con una culpa que no era suya",
+    "tipo": "primero",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "reconocer que no confía del todo en alguien que está en esta sala",
+    "tipo": "primero",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "ha fingido un orgasmo",
     "tipo": "nunca",
     "nivel": "picante"
   },
   {
-    "texto": "ha sentido celos de un amigo por su pareja",
+    "texto": "ha tenido un rollo de una noche del que se arrepiente",
     "tipo": "nunca",
     "nivel": "picante"
   },
   {
-    "texto": "ha buscado el perfil de alguien que le gusta varias veces al día",
+    "texto": "ha mandado una foto subida de tono a la persona equivocada",
     "tipo": "nunca",
     "nivel": "picante"
   },
   {
-    "texto": "ha mentido sobre sus sentimientos por miedo al rechazo",
+    "texto": "ha sentido atracción por alguien de este grupo",
     "tipo": "nunca",
     "nivel": "picante"
   },
   {
-    "texto": "ha guardado silencio para evitar una discusión que necesitaba tener",
+    "texto": "ha tenido celos de un ex de su pareja",
     "tipo": "nunca",
     "nivel": "picante"
   },
   {
-    "texto": "ha idealizado a alguien que apenas conocía",
+    "texto": "se ha liado con alguien solo por aburrimiento",
     "tipo": "nunca",
     "nivel": "picante"
   },
   {
-    "texto": "ha sentido alivio al terminar una relación",
+    "texto": "ha comparado físicamente a dos personas que conoce",
     "tipo": "nunca",
     "nivel": "picante"
   },
   {
-    "texto": "se ha arrepentido de decir «te quiero» demasiado pronto",
+    "texto": "ha tenido dudas sobre si quería a alguien de verdad o solo le gustaba",
     "tipo": "nunca",
     "nivel": "picante"
   },
   {
-    "texto": "ha comparado a alguien nuevo con un ex",
+    "texto": "ha guardado una conversación subida de tono más tiempo del necesario",
     "tipo": "nunca",
     "nivel": "picante"
   },
   {
-    "texto": "ha fingido que no le importaba algo que sí le dolía",
+    "texto": "ha sentido más química con un desconocido que con su pareja",
     "tipo": "nunca",
     "nivel": "picante"
   },
   {
-    "texto": "ha llorado por algo que parecía una tontería para los demás",
+    "texto": "ha fingido estar interesado solo por cortesía",
     "tipo": "nunca",
     "nivel": "picante"
   },
   {
-    "texto": "ha sentido que quería a alguien más de lo que le querían a él",
+    "texto": "ha tenido una cita que terminó en algo más de lo esperado",
     "tipo": "nunca",
     "nivel": "picante"
   },
   {
-    "texto": "ha mentido para evitar quedar con alguien",
+    "texto": "se ha arrepentido de un mensaje subido de tono nada más enviarlo",
     "tipo": "nunca",
     "nivel": "picante"
   },
   {
-    "texto": "se ha sentido inseguro por algo que dijeron en broma",
+    "texto": "ha sentido celos de alguien sin ningún motivo real",
     "tipo": "nunca",
     "nivel": "picante"
   },
   {
-    "texto": "ha tenido miedo a que le dejaran de querer",
+    "texto": "ha tenido pensamientos sobre alguien que no debería",
     "tipo": "nunca",
     "nivel": "picante"
   },
   {
-    "texto": "ha guardado una conversación por si la necesitaba más adelante",
+    "texto": "ha priorizado la atracción física sobre la conexión real",
     "tipo": "nunca",
     "nivel": "picante"
   },
   {
-    "texto": "ha sentido envidia de la relación de otra pareja",
+    "texto": "se ha enamorado de alguien que sabía que no le convenía",
     "tipo": "nunca",
     "nivel": "picante"
   },
   {
-    "texto": "ha fingido una sonrisa en una foto estando mal",
+    "texto": "ha tenido que fingir indiferencia con alguien que le gustaba mucho",
     "tipo": "nunca",
     "nivel": "picante"
   },
   {
-    "texto": "se ha sentido más cómodo mintiendo que diciendo la verdad",
+    "texto": "ha usado a alguien para superar a otra persona",
     "tipo": "nunca",
     "nivel": "picante"
   },
   {
-    "texto": "ha dudado de si le seguían queriendo",
+    "texto": "ha sentido que quería más a alguien de lo que le querían a él",
     "tipo": "nunca",
     "nivel": "picante"
   },
   {
-    "texto": "ha tenido que perdonar algo que en el fondo no ha olvidado",
+    "texto": "ha dudado de si seguía enamorado de su pareja",
     "tipo": "nunca",
     "nivel": "picante"
   },
   {
-    "texto": "ha sentido que no encajaba en su propio grupo de amigos",
+    "texto": "ha tenido una noche de la que no se enorgullece",
     "tipo": "nunca",
     "nivel": "picante"
   },
   {
-    "texto": "ha buscado validación en gente que no le convenía",
+    "texto": "ha idealizado un rollo pasajero como si fuera algo serio",
     "tipo": "nunca",
     "nivel": "picante"
   },
   {
-    "texto": "se ha sentido culpable sin haber hecho nada malo",
+    "texto": "ha sentido celos de una amistad muy cercana de su pareja",
     "tipo": "nunca",
     "nivel": "picante"
   },
   {
-    "texto": "ha mentido sobre estar bien económicamente",
+    "texto": "se ha planteado si la atracción era suficiente para una relación",
     "tipo": "nunca",
     "nivel": "picante"
   },
   {
-    "texto": "ha fingido interés en algo para agradar a alguien",
+    "texto": "ha mentido sobre haber superado a un ex",
     "tipo": "nunca",
     "nivel": "picante"
   },
   {
-    "texto": "ha sentido que se apagaba en una relación",
+    "texto": "ha tenido que elegir entre la razón y la atracción, y ha ganado la atracción",
     "tipo": "nunca",
     "nivel": "picante"
   },
   {
-    "texto": "se ha comparado con las publicaciones de otros en redes",
+    "texto": "se ha sentido más deseado hablando con alguien nuevo que con su pareja",
     "tipo": "nunca",
     "nivel": "picante"
   },
   {
-    "texto": "ha tenido pensamientos que no compartiría con nadie",
+    "texto": "ha confundido la nostalgia con querer volver con un ex",
     "tipo": "nunca",
     "nivel": "picante"
   },
   {
-    "texto": "ha sentido que merecía más de lo que le daban",
+    "texto": "ha sentido que una relación se sostenía solo por la parte física",
     "tipo": "nunca",
     "nivel": "picante"
   },
   {
-    "texto": "ha mentido para proteger a alguien de una verdad dolorosa",
+    "texto": "ha tenido que admitir que seguía pensando en alguien del pasado",
     "tipo": "nunca",
     "nivel": "picante"
   },
   {
-    "texto": "se ha sentido invisible en una relación",
+    "texto": "se ha dejado llevar por el morbo de lo prohibido",
     "tipo": "nunca",
     "nivel": "picante"
   },
   {
-    "texto": "ha necesitado desahogarse y no ha tenido a quién",
+    "texto": "ha sentido que gustar a alguien le daba más seguridad de la que debería",
     "tipo": "nunca",
     "nivel": "picante"
   },
   {
-    "texto": "ha fingido que una ruptura no le afectaba",
+    "texto": "ha tenido que reconocer que no sentía lo mismo que al principio",
     "tipo": "nunca",
     "nivel": "picante"
   },
   {
-    "texto": "ha sentido que traicionaba sus propios valores por encajar",
+    "texto": "se ha sentido culpable por seguir tonteando con alguien",
     "tipo": "nunca",
     "nivel": "picante"
   },
   {
-    "texto": "se ha sentido juzgado por su propia familia",
+    "texto": "ha comparado su vida amorosa con la de otra persona de este grupo",
     "tipo": "nunca",
     "nivel": "picante"
   },
   {
-    "texto": "ha querido a alguien que sabía que no le convenía",
+    "texto": "ha sentido que una relación se apagaba y ha seguido fingiendo que no",
     "tipo": "nunca",
     "nivel": "picante"
   },
   {
-    "texto": "ha sentido que amaba en silencio sin decir nada",
+    "texto": "ha tenido que admitir que la primera impresión física pesó más que el resto",
     "tipo": "nunca",
     "nivel": "picante"
   },
   {
-    "texto": "ha mentido para evitar perder a alguien importante",
+    "texto": "se ha preguntado si conocía de verdad a la persona con la que estaba",
+    "tipo": "nunca",
+    "nivel": "picante"
+  },
+  {
+    "texto": "ha sentido que merecía a alguien que le hiciera sentir más deseado",
+    "tipo": "nunca",
+    "nivel": "picante"
+  },
+  {
+    "texto": "ha mentido sobre algo grave a alguien de este grupo",
     "tipo": "nunca",
     "nivel": "extremo"
   },
   {
-    "texto": "ha sentido alivio al recibir una mala noticia ajena",
+    "texto": "ha sentido que sobraba en este grupo",
     "tipo": "nunca",
     "nivel": "extremo"
   },
   {
-    "texto": "ha guardado un secreto que podría cambiarlo todo",
+    "texto": "ha hablado mal de alguien de esta sala a sus espaldas",
     "tipo": "nunca",
     "nivel": "extremo"
   },
   {
-    "texto": "ha traicionado la confianza de alguien de este grupo",
+    "texto": "ha comparado a dos personas de este grupo y ha sacado conclusiones que nunca dijo",
     "tipo": "nunca",
     "nivel": "extremo"
   },
   {
-    "texto": "ha deseado en secreto que algo le saliera mal a otro",
+    "texto": "ha guardado un secreto de alguien de aquí que le pesa de verdad",
     "tipo": "nunca",
     "nivel": "extremo"
   },
   {
-    "texto": "ha fingido perdonar sin hacerlo de verdad",
+    "texto": "ha sentido alivio con un problema de alguien de esta sala",
     "tipo": "nunca",
     "nivel": "extremo"
   },
   {
-    "texto": "ha mentido sobre algo que después dolió mucho más",
+    "texto": "ha considerado alejarse de este grupo sin decir por qué",
     "tipo": "nunca",
     "nivel": "extremo"
   },
   {
-    "texto": "se ha alegrado del fracaso de alguien cercano",
+    "texto": "ha desconfiado de alguien de este grupo sin decírselo nunca",
     "tipo": "nunca",
     "nivel": "extremo"
   },
   {
-    "texto": "ha roto una promesa que sabía que le importaba mucho a otro",
+    "texto": "ha dejado de defender a alguien de aquí por miedo al qué dirán",
     "tipo": "nunca",
     "nivel": "extremo"
   },
   {
-    "texto": "ha ocultado algo que debería haber contado",
+    "texto": "ha sentido que este grupo estaría mejor sin alguien que está en él",
     "tipo": "nunca",
     "nivel": "extremo"
   },
   {
-    "texto": "ha dejado que culpen a otro de algo que hizo él",
+    "texto": "ha traicionado la confianza de alguien de esta sala",
     "tipo": "nunca",
     "nivel": "extremo"
   },
   {
-    "texto": "ha sentido que odiaba a alguien que quiere",
+    "texto": "ha fingido cercanía con alguien de este grupo por no quedar mal",
     "tipo": "nunca",
     "nivel": "extremo"
   },
   {
-    "texto": "ha mentido a su familia sobre algo grave",
+    "texto": "ha tenido más lealtad hacia alguien de fuera que hacia este grupo",
     "tipo": "nunca",
     "nivel": "extremo"
   },
   {
-    "texto": "ha usado la confianza de alguien en su propio beneficio",
+    "texto": "ha sentido envidia de alguien de esta sala",
     "tipo": "nunca",
     "nivel": "extremo"
   },
   {
-    "texto": "ha fingido una amistad por conveniencia",
+    "texto": "ha cambiado de opinión sobre alguien de aquí sin decírselo",
     "tipo": "nunca",
     "nivel": "extremo"
   },
   {
-    "texto": "ha guardado rencor sin decirlo durante años",
+    "texto": "ha compartido un secreto de alguien de este grupo con otra persona",
     "tipo": "nunca",
     "nivel": "extremo"
   },
   {
-    "texto": "ha antepuesto su orgullo a pedir perdón por algo grave",
+    "texto": "ha sentido que ya no reconocía a alguien de esta sala",
     "tipo": "nunca",
     "nivel": "extremo"
   },
   {
-    "texto": "ha dejado de hablarle a alguien sin darle explicaciones",
+    "texto": "ha antepuesto su orgullo a arreglar las cosas con alguien de aquí",
     "tipo": "nunca",
     "nivel": "extremo"
   },
   {
-    "texto": "ha sentido que ya no reconocía a la persona en la que se ha convertido",
+    "texto": "ha dejado que culpen a otra persona de este grupo de algo que hizo él",
+    "tipo": "nunca",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "ha pensado que hay una amistad en este grupo que no va a durar",
     "tipo": "nunca",
     "nivel": "extremo"
   }

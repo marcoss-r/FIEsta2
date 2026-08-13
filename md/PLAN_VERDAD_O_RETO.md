@@ -492,6 +492,13 @@ mirar la carta más larga del banco en horizontal y en vertical.
       otros: 0.5 })` del núcleo en «Paso» (verdad o reto); botón «Otra»
       eliminado en verdad y convertido en «Otro reto» sin límite ni castigo
       en reto, porque representa un impedimento del sitio, no una negativa
+- [x] **Ajuste de tono y limpieza de duplicados fantasma** (pedido por el
+      usuario, leyendo el banco ya revisado de `data/yonunca/frases.json`):
+      picante y extremo reescritos por completo en verdades y en retos
+      (picante más explícito; extremo centrado en la dinámica de **este
+      grupo concreto**). Suave se mantiene, con varios duplicados fantasma
+      corregidos tras pasar un detector de similitud por los dos bancos.
+      360 + 360 entradas en total sin cambios de volumen.
 
 ---
 

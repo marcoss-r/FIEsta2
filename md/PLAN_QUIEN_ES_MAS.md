@@ -398,6 +398,15 @@ y continuando.
       `castigoPonderado({ beber: 0.9, prenda: 0.1 })`; sin modo fiesta,
       `castigoPonderado({ otros: 1 })`. La línea `#qm-castigo` deja de
       ocultarse nunca.
+- [x] **Ajuste de tono y limpieza de duplicados fantasma** (pedido por el
+      usuario, leyendo el banco ya revisado de `data/yonunca/frases.json`):
+      picante y extremo reescritos por completo (picante más explícito;
+      extremo centrado en la dinámica de **este grupo concreto** — favoritismos,
+      secretos y tensiones entre quienes juegan, no solo confesiones
+      genéricas). Suave se mantiene, con un puñado de duplicados fantasma
+      corregidos (misma idea, distinta redacción) tras pasar un detector de
+      similitud por todo el banco. 400 preguntas en total sin cambios de
+      volumen (100 por tipo, 40/40/20 por nivel).
 
 ---
 
