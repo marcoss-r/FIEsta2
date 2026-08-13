@@ -1028,11 +1028,12 @@ Añade el volteo 3D, dos bancos en vez de uno, y el botón «Otra». Seguir
 > sobre `index.html` (volteo de carta, contador de «Otra», castigo del
 > segundo cambio y del «Paso», reanudación a media partida) sin errores de
 > consola, más una revisión visual con capturas de pantalla headless (layout
-> de la carta y de los botones). Banco provisional: las ~20 verdades y ~17
-> retos de muestra de `md/PLAN_VERDAD_O_RETO.md` §9. **Fase 3 en marcha**:
-> generadas 200 verdades y 200 retos (80/80/40 por nivel en cada banco), con
-> `verdades.json`/`retos.json` (fuente) y `agregar.py`, pendiente de que el
-> usuario lo revise y afine (§2.4). `APP_VERSION`/`CACHE` = 1.5.1.
+> de la carta y de los botones). Banco provisional inicial: las ~20 verdades
+> y ~17 retos de muestra de `md/PLAN_VERDAD_O_RETO.md` §9. **Fase 3
+> completa y ampliada**: 360 verdades y 360 retos (120 por nivel en cada
+> banco, por encima del mínimo original de 200), con `verdades.json`/
+> `retos.json` (fuente) y `agregar.py`, pendiente de que el usuario lo
+> revise y afine (§2.4). `APP_VERSION`/`CACHE` = 1.6.3.
 
 ### Fase 6 — Juego 4: **Preguntas incómodas**
 Reutiliza casi todo lo de Verdad o Reto; añade los tres formatos y la rotación de

@@ -64,7 +64,7 @@ los turnos.
 | **Niveles de intensidad** | Los tres del núcleo (`suave` / `picante` / `extremo`), multi-selección, por defecto suave + picante. Filtran **los dos bancos a la vez**. |
 | **Modo fiesta** | Interruptor global del núcleo (persistente entre partidas). Añade castigo a **«Paso»** (en verdad o en reto: significa «no quiero hacerlo/contestarlo», sí es una negativa). Usa `castigoPonderado({ beber: 0.3, prenda: 0.2, otros: 0.5 })` del núcleo (ver `js/nucleo/intensidad.js`): 30 % de las veces toca beber, 20 % quitarse una prenda, 50 % uno de los castigos "neutros" del banco (bailar, imitar…). No se elige, se ofrece al azar. Sin modo fiesta, «Paso» sigue sin castigo (mismo criterio que el resto de la app: sin modo fiesta, la app no impone nada). |
 | **Datos** | **Dos bancos separados**: `VR_VERDADES` y `VR_RETOS`, en `data/verdadreto/`. |
-| **Volumen** | **≥ 400 en total: ≥ 200 verdades y ≥ 200 retos.** Reparto orientativo por banco: ~40 % suave, ~40 % picante, ~20 % extremo. |
+| **Volumen** | **≥ 400 en total: ≥ 200 verdades y ≥ 200 retos** (mínimo original). Ampliado después a petición del usuario a **360 + 360 (120 por nivel en cada banco)**. |
 | **Qué hace la app** | Servir contenido sin repetir, ordenar turnos, resolver plantillas (`{jugador}`, `{otro}`), guardar la partida y llevar un contador de verdades/retos/pasos. |
 | **Qué NO hace la app** | ❌ No hay votaciones, ni puntos, ni podio, ni ganador. ❌ No comprueba si el reto se ha cumplido: eso lo dice el grupo en voz alta. |
 | **Turnos** | Rotación **en orden** (nunca sorteo), empezando por el primer jugador de la lista. Sin límite de rondas. |
@@ -474,13 +474,14 @@ mirar la carta más larga del banco en horizontal y en vertical.
 - [x] **Fase 1** — Pantallas y configuración
 - [x] **Fase 2** — Motor de turnos y cartas (banco provisional de 20
       verdades + 17 retos, la muestra de §9 de este plan)
-- [ ] **Fase 3** — Banco de contenido (≥ 200 verdades + ≥ 200 retos): 🚧 en
-      curso. Generadas 200 verdades y 200 retos (80 suave / 80 picante / 40
-      extremo en cada banco), sin duplicados exactos, con `verdades.json` +
-      `retos.json` (fuente) y `agregar.py` (da de alta en cualquiera de los
-      dos bancos). Probado con una partida de 120 turnos alternando verdad/
-      reto sin errores de consola. Pendiente de que el usuario lo revise,
-      recorte y afine (§2.4) antes de dar la fase por cerrada
+- [x] **Fase 3** — Banco de contenido: **360 verdades + 360 retos** (120
+      suave / 120 picante / 120 extremo en cada banco — ampliado a petición
+      del usuario por encima del mínimo original de ≥ 200 cada uno), sin
+      duplicados exactos, con `verdades.json` + `retos.json` (fuente) y
+      `agregar.py` (da de alta en cualquiera de los dos bancos). Probado
+      con una partida de 200 turnos alternando verdad/reto con los tres
+      niveles activos, sin errores de consola. Pendiente de que el usuario
+      lo revise, recorte y afine (§2.4) antes de dar la fase por cerrada
 - [x] **Fase 4** — Modo fiesta, botón «Otra» y modos de juego
 - [x] **Fase 5** — Persistencia, volteo 3D y pulido (falta la prueba en
       dispositivo real, que hace el usuario)

@@ -798,5 +798,645 @@
   {
     "texto": "¿Qué es lo que más te arrepientes de no haber dicho a tiempo?",
     "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es la app que más usas y menos deberías admitir?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué serie has abandonado a mitad sin razón aparente?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu comida de consuelo cuando tienes un mal día?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué cosa random sabes hacer que sorprende a la gente?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es la mentira más tonta que le has dicho a un profesor o jefe?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué canción te sabes entera aunque odies admitirlo?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu mayor manía cuando viajas en coche?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo más caro que te has comprado sin pensarlo dos veces?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu horario ideal si nadie te pusiera despertador?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué app llevas más tiempo sin abrir aunque la sigas teniendo instalada?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu excusa más repetida para no salir a hacer deporte?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo más raro que has buscado en internet por curiosidad?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es la prenda de ropa que más veces llevas puesta?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo que más veces has fingido saber sobre un tema?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu peor manía comiendo delante de otros?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo último que compraste solo por el envase o el diseño?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu mayor manía ordenando o desordenando tu cuarto?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo que siempre dices que vas a hacer mañana y nunca haces?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es la peli que has visto más veces en tu vida?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo más tarde que te has quedado despierto sin motivo?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu manía más rara con las fechas de caducidad?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo que menos te gusta hacer en tu casa?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es el objeto más inútil que guardas en un cajón?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo primero que harías si te tocara la lotería mañana?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu mayor manía usando el mando de la tele?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo más vergonzoso que te ha pasado en un supermercado?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu excusa habitual para no contestar mensajes rápido?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo que más veces has perdido y vuelto a comprar?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu manía más rara durmiendo?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo que más te cuesta admitir que se te da mal?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu peor recuerdo de un cumpleaños?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo que más veces has cambiado de opinión en el mismo día?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu manía en el probador de una tienda?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo más random que llevas siempre encima?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu mayor manía haciendo la compra?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo que te daría más pereza tener que hacer ahora mismo?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es la mentira piadosa que más repites a tu familia?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo que más veces te has arrepentido de comprar?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu manía más tonta con el móvil al 1%?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo más raro que has hecho por no aburrirte?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es la razón real por la que dejaste de hablar con un amigo?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué mentira le has contado a tu familia para evitar un conflicto?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es el mensaje que has escrito y borrado sin enviar?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo que más celos te da admitir que sientes?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la persona a la que más veces has mentido en tu vida?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo que nunca le dirías a la cara a alguien aunque lo pienses?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la inseguridad que más te ha costado disimular esta última semana?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo que más te ha dolido y nunca dijiste que te dolía?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la razón por la que dejaste de confiar en alguien?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo peor que has hecho por miedo a estar solo?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la conversación que llevas evitando desde hace meses?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo más egoísta que has hecho por amor?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es el secreto que más tiempo llevas guardando?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo que más envidia te da de la vida de otra persona?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la última vez que fingiste estar bien sin estarlo?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo que más te asusta de comprometerte con alguien?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la crítica que más te ha dolido de alguien cercano?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo que más rabia te da que te digan sobre ti?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la mayor mentira que te has dicho a ti mismo?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo que más te cuesta dejar ir del pasado?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es el momento en que más solo te has sentido rodeado de gente?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo que más te cuesta reconocer que hiciste mal en una ruptura?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la última vez que dijiste «te quiero» sin estar seguro?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo que más te duele que nadie te haya preguntado nunca?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es el peor consejo que le has dado a alguien sabiendo que era malo?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo que más te cuesta admitir que necesitas ayuda?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la vez que más celos has sentido de un amigo?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo que más te avergüenza de cómo reaccionaste ante una ruptura?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es el secreto de otra persona que más te ha costado guardar?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo que más te cuesta decir en voz alta sobre tu familia?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la vez que más te has arrepentido de guardar silencio?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo que más te duele de una amistad que se acabó?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la última vez que mentiste para no quedar mal?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo que más te cuesta admitir que te importa la opinión ajena?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es el momento en que más te has sentido juzgado por tu familia?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo que más te ha costado superar de una ruptura?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la razón por la que sigues hablando con un ex?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo que más te asusta de que te conozcan de verdad?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la vez que más has fingido estar de acuerdo con algo para no discutir?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo que más te cuesta admitir que hiciste por despecho?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la mentira más grande que sigues sosteniendo hoy?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿A quién de esta sala le has envidiado en secreto?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué harías si supieras que no habría ninguna consecuencia?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es el rencor que guardas desde hace más tiempo sin decirlo?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué persona de tu vida te cuesta más perdonar de verdad?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es la promesa que rompiste y nunca confesaste?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué es lo más cruel que has dicho a propósito para hacer daño?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es el motivo real por el que terminó tu última amistad importante?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿A quién le has sido desleal sin que lo sepa hasta hoy?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué es lo que más culpa te produce de tu pasado?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es el secreto de {otro} que sabes y nunca contarías sin este juego?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué has hecho por celos de lo que te arrepientes?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es la vez que más te alegraste del fracaso de alguien?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué relación dejaste morir sin decir la verdad de por qué?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es la traición que más te ha costado superar?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿A quién le debes una disculpa que nunca has dado?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué es lo más deshonesto que has hecho por conseguir algo que querías?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es el secreto familiar que menos gente conoce?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué has hecho sabiendo perfectamente que estaba mal?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Con quién has sido más cruel en tu vida y por qué?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué has fingido sentir por interés durante más tiempo?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es la mentira que sostienes desde hace más años sin que nadie lo sepa?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué es lo que has hecho que, si se supiera, cambiaría cómo te ve este grupo?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es el momento en que anteponer tu orgullo te costó más caro?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué has permitido que le hicieran a alguien sin defenderlo?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿En qué relación mentiste más sobre lo que sentías de verdad?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué es lo más oscuro que has pensado de ti mismo?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es la persona a la que más daño le has hecho sin que lo sepa?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué es lo peor que le has deseado a alguien en un momento de rabia?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es el secreto que, si saliera a la luz, más daño haría a alguien de aquí?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué es lo más cruel que te han dicho y nunca lo perdonaste del todo?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es la mentira más grave que le has contado a alguien que confiaba en ti?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿De qué te sientes más culpable y nunca lo has dicho en voz alta?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es la vez que te alegraste del sufrimiento de otra persona?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué es lo más grave que has ocultado a tu familia?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es la traición que más te ha costado perdonar y nunca lo has dicho?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué es lo que más te avergüenza haber hecho por celos?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es el motivo real, nunca contado, de por qué cortaste con alguien?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿A quién le has mentido sobre tus sentimientos por interés?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es la mentira que le dijiste a tu familia sobre algo importante de tu vida?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que nunca te perdonarían si lo supieran?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es la persona que más ha confiado en ti y más se lo has fallado?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué has hecho para evitar perder a alguien que sabías que no te convenía?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es el momento en que dejaste que alguien cargara con la culpa de algo tuyo?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué has ocultado durante años por miedo a decepcionar a alguien?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es la última vez que sentiste alivio con una mala noticia ajena?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿A quién dejaste de defender por miedo al qué dirán?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué es lo más injusto que has hecho sabiendo que lo era?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es el secreto que más te pesa guardar de alguien de este grupo?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué has usado de alguien en tu propio beneficio sin que lo notara?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es la relación que sacrificarías por orgullo antes que pedir perdón?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿A qué persona le has fallado más de una vez sin cambiar nada?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué es lo más falso que has fingido sentir en una relación?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es tu mayor miedo sobre lo que la gente pensaría si te conociera de verdad?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué es lo que menos te enorgullece de cómo has tratado a tu familia?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es la última vez que mentiste sobre algo que dolió mucho más después?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿A quién le has guardado rencor sin decírselo nunca?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué has hecho por dinero de lo que no te sientes orgulloso?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es el momento en que más lejos llegaste con tal de no perder a alguien?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué es lo que has callado por no romper este grupo?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es la vez que sentiste que ya no reconocías a la persona en la que te habías convertido?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué le ocultarías siempre a tu familia aunque te preguntaran directamente?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es la peor decisión que tomaste sabiendo que iba a hacer daño a alguien?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué has hecho que jamás confesarías si no fuera por este juego?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿A quién le mentiste sobre algo que después le dolió mucho más al descubrirlo?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es la traición más pequeña que hiciste más veces de las que admites?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que la gente de este grupo no sabe de ti y cambiaría todo si lo supieran?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es el precio que pusiste a una amistad sin decirlo en voz alta?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué has hecho sabiendo que herías a alguien, solo por no quedar mal tú?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es la mentira que le dijiste a alguien que confiaba ciegamente en ti?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿A quién has usado como apoyo emocional sin darle nada a cambio?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué has fingido perdonar sin hacerlo de verdad?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es la última vez que priorizaste tu comodidad sobre el bienestar de alguien?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué relación cambiarías si pudieras borrar una sola decisión tuya?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es el secreto que llevas cargando solo, sin habérselo contado a nadie?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué le has hecho a alguien de este grupo que todavía no sabe que fuiste tú?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es la persona a la que más idealizaste y por qué te decepcionó tanto?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué has justificado durante años aunque en el fondo sepas que estuvo mal?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es la mentira que contarías otra vez aunque supieras el daño que hizo?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué es lo que más miedo te da que se sepa de ti en esta misma sala?",
+    "nivel": "extremo"
   }
 ]
