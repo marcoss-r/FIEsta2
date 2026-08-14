@@ -1,5 +1,15 @@
 # Plan de desarrollo — FIEsta 2 · «Preguntas incómodas» 🍒
 
+> ❌ **Juego eliminado.** Se implementó por completo (pantallas, banco de 400
+> preguntas) y luego el usuario pidió quitarlo por redundante con «Verdad o
+> Reto» en modo «solo verdades»: su contenido sin duplicados fantasma se
+> fusionó en `data/verdadreto/verdades.json` y todo el código de `pi` se
+> borró (`js/incomodas/`, `data/incomodas/`, pantallas y tarjeta del hub en
+> `index.html`, entrada en `sw.js`). Este documento se conserva como
+> referencia histórica de su diseño; no describe nada que exista hoy en el
+> código. Ver la nota correspondiente en
+> [`md/PLAN_DESARROLLO.md`](PLAN_DESARROLLO.md) §9.5.
+
 > Documento pensado para que otro agente **sin contexto** pueda implementar el
 > juego leyendo solo esto y [`md/PLAN_DESARROLLO.md`](PLAN_DESARROLLO.md).
 

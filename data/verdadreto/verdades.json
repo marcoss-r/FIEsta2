@@ -1462,5 +1462,1145 @@
   {
     "texto": "¿Qué es lo último que perdonarías a {otro} antes de romper del todo con él o ella?",
     "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál es la excusa que más repites y ya nadie se cree?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué plan te da una pereza brutal pero nunca dices que no?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué cosa haces cuando estás solo que jamás harías delante de nadie?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué mentira piadosa has contado esta misma semana?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué le pedirías prestado a {otro} sabiendo que no se lo vas a devolver?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué manía de {otro} imitarías ahora mismo?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿En qué se te parece {otro} más de lo que le gustaría admitir?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "Si tuvieras que irte de viaje con {otro} un mes, ¿qué norma pondrías el primer día?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí guarda el secreto más gordo?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí sería el peor compañero de piso y por qué?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí llegaría tarde a su propia boda?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué manía tuya sabes que vuelve loco a todo el mundo?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es la excusa más floja que has usado para no ir a un plan?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué cosa haces en tu casa que nunca harías si hubiera visita?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué canción te da vergüenza reconocer que te encanta?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué app tienes instalada y no recuerdas por qué?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué serie o película has visto más veces de las que admitirías?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu comida de emergencia cuando no quieres cocinar?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué canción no puedes evitar cantar en la ducha?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es la cosa más random que sabes hacer bien?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu manía al hablar por teléfono?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es la cosa que más veces has repetido sin darte cuenta de que molestaba?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo peor que has escrito en un grupo por error?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo que más rápido te saca de quicio?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu manía al aparcar o al conducir?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu peor costumbre en redes sociales?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es la mayor tontería que te ha hecho llorar de risa?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo último que buscaste en internet sin pensar que alguien lo vería?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu excusa preferida para no hacer planes entre semana?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo que más te avergüenza de tu adolescencia?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo que más rápido te aburre?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo más random que se te da sorprendentemente bien?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo que más veces has dicho «esta es la última vez» y no lo ha sido?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que sería lo primero que notaría {otro} si cambiaras de peinado?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué le regalarías a {otro} si supieras que le va a hacer muchísima ilusión?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué palabra usarías para describir a {otro} en un mal día?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que pediría {otro} en su última cena?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que pediría {otro} de aperitivo si invitara a cenar a este grupo?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué papel haría {otro} en una peli sobre este grupo?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál crees que es la mayor manía de {otro} que él mismo no reconoce?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué consejo le darías a {otro} que seguramente no va a seguir?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "Si {otro} tuviera un lema de vida, ¿cuál sería?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que hace {otro} cuando nadie le ve?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué app crees que tiene {otro} más abierta en el móvil?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué serie crees que le pega ver a {otro}?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál crees que sería el superpoder ideal para {otro}?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que pediría {otro} de comer si pudiera elegir sin límite?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué manía tiene {otro} que te ha contagiado sin querer?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cómo describirías el humor de {otro} en una palabra?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que le diría {otro} a su yo de hace diez años?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué animal crees que le pega a {otro} y por qué?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que echaría de menos {otro} si se mudara lejos?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué canción crees que define a {otro} ahora mismo?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál crees que es el mayor miedo tonto de {otro}?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que le gustaría que le dijeran más a menudo a {otro}?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué trabajo crees que se le daría fatal a {otro}?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que pide {otro} siempre que va al mismo sitio?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "Si {otro} tuviera que llevar un cartel con una frase, ¿cuál sería?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que hace {otro} los domingos por la tarde?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué costumbre de {otro} adoptarías si pudieras?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que le da más pereza a {otro} de todo lo que hace?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál crees que fue la primera impresión que te dio {otro}?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que llevaría {otro} en una mochila de emergencia?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que le gustaría aprender a {otro} si tuviera tiempo?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Con qué personaje de ficción compararías a {otro}?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que pediría {otro} de deseo a una estrella fugaz?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué manía tiene {otro} en el coche o en el transporte?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que sería lo primero que haría {otro} si fuera invisible un día?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué palabra usa {otro} demasiado a menudo?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que opina {otro} de sí mismo que no dice en voz alta?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que haría {otro} de premio si ganara un concurso random?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que le gustaría cambiar {otro} de su rutina diaria?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que hace {otro} para relajarse de verdad?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué manía de {otro} te costaría más aguantar viviendo juntos?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que le daría más vergüenza a {otro} hacer en público?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que pediría {otro} prestado sabiendo que no se lo va a devolver?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué recuerdo crees que atesora más {otro} de este grupo?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que le gustaría a {otro} que la gente supiera de él o ella sin tener que decirlo?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Con qué frase resumirías cómo se comporta {otro} en una fiesta?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que haría {otro} distinto si pudiera repetir el último año?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que le pediría {otro} a un genio si solo tuviera un deseo tonto?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que le molesta más a {otro} y nunca lo dice?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que fue lo mejor que le pasó a {otro} este año?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué manía tiene {otro} organizando planes?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que hace {otro} antes de dormir todas las noches?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que le gustaría a {otro} que le preguntaran más?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que opina {otro} de este juego ahora mismo?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que sería lo último que tiraría {otro} de su casa?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que le daría más ilusión a {otro} de aquí a un año?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que diría {otro} si le preguntaran su mayor virtud?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que es lo que más ha cambiado de {otro} desde que le conoces?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí sería el más despistado en un viaje en grupo?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí tardaría más en arreglarse para salir?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí se perdería primero en una ciudad nueva?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí sería el mejor guía turístico sin haber estudiado nada?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí aguantaría menos tiempo sin móvil?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí ganaría un concurso de comer rápido?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí sería el primero en rendirse acampando?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí organizaría mejor una fiesta sorpresa?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí tardaría más en notar que le han cambiado los muebles de sitio?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí tiene la peor letra escribiendo a mano?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí ganaría en un karaoke sin haber ensayado?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí sería el más gracioso en una entrevista de trabajo?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí sobreviviría más tiempo en una isla desierta?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí tardaría más en darse cuenta de que ha perdido algo?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí sería el mejor mintiendo en un juego de mesa?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí llegaría antes a millonario y quién antes a la ruina?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí ganaría una discusión sin tener razón?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí sería el más cotilla del barrio?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí duraría menos haciendo dieta?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí sería el mejor imitando a los demás?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí montaría el plan más random un domingo cualquiera?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí sería el más dramático teniendo un simple resfriado?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí ganaría en una guerra de cosquillas?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí tardaría más en pedir en un restaurante?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí sería el peor jugando al escondite?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí acabaría dormido primero en una peli?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí sería el más caótico haciendo la maleta?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí ganaría más seguidores si subiera contenido random?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Quién de aquí sería el más difícil de sorprender?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es la mentira más tonta que sigues contando por costumbre?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué manía tiene {otro} para dormir que te hace gracia?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu manía al hacer la maleta?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo más ridículo que has hecho por conseguir algo gratis?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo que menos te gusta de ti mismo físicamente?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo que más te cuesta reconocer de ti mismo?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo que más veces has dejado a medias en tu vida?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu mayor manía limpiando o sin limpiar?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo que más te cuesta reconocer que te gusta?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo que más veces has perdido en tu vida?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es la prenda que más veces te has puesto sin lavar?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu mayor manía al vestirte?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu mayor manía en el supermercado?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo más tarde que has llegado a dormir sin motivo real?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Cuál es tu peor manía comprando comida?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué crees que haría {otro} si le tocara la lotería mañana?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo más vergonzoso que te ha pasado en clase o en el trabajo?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo primero que miras del móvil al despertarte?",
+    "nivel": "suave"
+  },
+  {
+    "texto": "¿Qué es lo más atrevido que has hecho en público sin que nadie se diera cuenta?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Has tenido pensamientos nada inocentes sobre alguien de esta sala?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Con quién has tenido la tensión sexual más fuerte sin que pasara nada?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué parte de tu cuerpo te da más inseguridad en la intimidad?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la razón real por la que le fuiste infiel a alguien, si alguna vez lo fuiste?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la vez que más has fingido para que la otra persona no se sintiera mal?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Con quién crees que se liaría {otro} de este grupo si tuviera que elegir?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que le atrae de ti a {otro}, aunque nunca te lo haya dicho?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Crees que {otro} ha tenido pensamientos nada inocentes con alguien de aquí?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que {otro} nunca confesaría sobre su vida amorosa?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Crees que {otro} finge más seguridad de la que tiene ligando?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que le da más celos a {otro} en el amor?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que le atrae a {otro} que nunca admitiría en público?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Crees que {otro} sigue pensando en algún ex más de lo que dice?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que le daría más vergüenza a {otro} confesar sobre una cita?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Crees que {otro} ha tenido más rollos de una noche de los que cuenta?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que busca {otro} de verdad en una relación y nunca lo dice?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Crees que {otro} confunde la atracción física con algo más a menudo?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que haría {otro} si le gustara alguien de este mismo grupo?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Crees que {otro} tiene un tipo muy claro dentro de esta sala?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que le daría más morbo a {otro} y nunca lo diría?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Crees que {otro} ha mentido sobre su número de parejas anteriores?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que {otro} esconde de su vida amorosa al resto del grupo?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Crees que {otro} sería capaz de tontear con alguien teniendo pareja?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que le costaría más confesar a {otro} sobre una relación pasada?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Crees que {otro} ha sentido celos de alguien de este grupo alguna vez?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que haría {otro} si supiera que le gusta a alguien de aquí?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Crees que {otro} idealiza demasiado rápido a la gente que le gusta?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que le da más inseguridad a {otro} a la hora de ligar?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Crees que {otro} sigue en contacto con algún ex más de lo normal?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que haría {otro} en una cita a ciegas con alguien de este grupo?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Crees que {otro} ha confundido cariño con deseo alguna vez?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que le atrae físicamente a {otro} de las personas en general?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Crees que {otro} tiene más experiencia de la que aparenta?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que haría {otro} si su pareja le pusiera celos a propósito?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Crees que {otro} ha tenido dudas sobre lo que siente por alguien de aquí?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que le daría más vergüenza a {otro} que se supiera sobre su vida amorosa?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Crees que {otro} necesita sentirse deseado más de lo que admite?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que haría {otro} si le confesaran que le gusta a alguien de este grupo?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que le pesa más a {otro} de una relación que no funcionó?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Crees que {otro} tiene más celos de los que muestra?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que busca {otro} cuando tontea con alguien, algo serio o solo diversión?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que le da más vergüenza a {otro} de sus citas pasadas?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Crees que {otro} confía en el amor a primera vista?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que haría {otro} si tuviera una segunda oportunidad con un ex?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Crees que {otro} ha jugado con los sentimientos de alguien alguna vez?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que le atrae más a {otro} de una persona, el físico o la personalidad?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Crees que {otro} sería capaz de tener un lío con el ex de un amigo?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que haría {otro} si descubriera que le han sido infiel?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Crees que {otro} tiene un límite claro que nunca cruzaría en una relación?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que le daría más morbo a {otro}, lo prohibido o lo seguro?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Crees que {otro} ha mentido sobre estar enamorado alguna vez?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que siente {otro} de verdad por alguien de este grupo?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Crees que {otro} necesita drama para sentir que una relación le importa?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que le daría más celos a {otro} ver en redes sociales?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Crees que {otro} ha tenido más contacto del debido con un ex?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que haría {otro} si le gustaran dos personas a la vez?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Crees que {otro} prioriza la atracción física antes que la conexión real?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que le costaría más admitir a {otro} sobre su forma de amar?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Crees que {otro} tendría una cita con alguien de este grupo si se lo propusieran?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que haría {otro} si supiera que ya no siente lo mismo por su pareja?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que le daría más vergüenza a {otro} confesar sobre sus fantasías?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Crees que {otro} disfrutaría más de una relación tranquila o de una intensa y complicada?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que {otro} necesita escuchar de alguien que le gusta y nunca se lo dicen?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que haría {otro} si tuviera que elegir entre la razón y la atracción?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí es más probable que tenga un ligue secreto ahora mismo?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí sería más capaz de mantener una relación abierta?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí es el más ligón sin que se le note?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí tiene más experiencia de la que aparenta?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí sería capaz de liarse con el ex de otra persona del grupo?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí cae más rápido cuando se enamora?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí tiene más celos de los que admite?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí es el más difícil de conquistar de este grupo?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí confunde más a menudo el deseo con el amor?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí sería capaz de dar celos a propósito para llamar la atención?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí tiene el radar más afinado para saber a quién le gusta?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí sería el peor guardando el secreto de una cita?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí es el más intenso enamorándose?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí necesita más sentirse deseado?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí tiene más probabilidades de seguir hablando con un ex?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí es el más misterioso con su vida amorosa?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí sería capaz de tontear estando en una relación seria?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí tiene el peor gusto eligiendo pareja, con cariño?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí es el más propenso a confundir la costumbre con el amor?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí aguantaría más tiempo en una relación que no funciona?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí sería capaz de mentir sobre su número de parejas?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí tiene más tensión sin resolver con alguien de este grupo?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí necesita más drama para sentir que algo le importa?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí sería el más capaz de dejarlo todo por amor?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí es el más propenso a comparar a sus parejas con un ex?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí tiene más miedo a comprometerse de verdad?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí sería capaz de perdonar una infidelidad por amor?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí es el más probable que acabe liándose esta noche?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí tiene la vida amorosa más movida de todo el grupo?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí sería capaz de dejar plantada una cita por quedar con este grupo?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí ha tenido la ruptura más dramática?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Quién de aquí ha idealizado más rápido a alguien solo por atracción física?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la mentira más grande que le has dicho a una pareja para no discutir?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Crees que {otro} ha sentido más atracción por alguien prohibido que por alguien fácil?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Crees que {otro} ha estado con alguien solo por despecho?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué crees que {otro} sabe de ti que preferirías que no supiera?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que {otro} piensa de ti que nunca te ha dicho a la cara?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que traicionarías de {otro} si te conviniera lo suficiente?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que {otro} guarda de ti que podría hacerte daño si lo contara?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que {otro} cambiaría de su relación contigo si pudiera?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué secreto tuyo confiarías solo a {otro} y a nadie más de esta sala?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que {otro} ha fingido sentir por alguien de este grupo alguna vez?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que {otro} nunca te dirá aunque se lo preguntes directamente?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué le debes a {otro} y todavía no le has pedido perdón?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que {otro} teme más perder de su relación contigo?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que has hecho que {otro} nunca te reprochó pero le dolió de verdad?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que {otro} sospecha de ti y nunca ha confirmado?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que {otro} necesitaría escuchar de ti ahora mismo y no se lo has dicho?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que {otro} ha dejado de decirte por miedo a tu reacción?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que {otro} recuerda de una pelea vuestra que tú ya olvidaste?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que {otro} nunca superó del todo de algo que le hiciste?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que {otro} cambiaría de sí mismo si supiera que te haría más feliz?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que {otro} piensa de verdad de tu forma de tratar a este grupo?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que {otro} ha mentido para no herirte alguna vez?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que {otro} nunca ha perdonado a otra persona de esta sala?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que {otro} teme que descubras de él o ella algún día?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que {otro} ha callado sobre otra persona de este grupo por protegerte?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que {otro} sacrificaría antes de perder tu confianza?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que {otro} ha ocultado sobre lo que siente por este grupo?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que {otro} haría si supiera que hoy es su última oportunidad de decirte la verdad?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué se dice de alguien de esta sala cuando no está delante?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Quién de aquí es capaz de mentir mejor sin que se le note?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Quién de aquí ha traicionado la confianza de alguien de este grupo alguna vez?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Quién de aquí guarda más secretos ajenos de los que debería?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Quién de aquí sería capaz de dejar de hablarle a alguien de este grupo sin explicaciones?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Quién de aquí ha sentido alivio con el fracaso de otra persona de esta sala?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Quién de aquí antepone más su orgullo a pedir perdón dentro de este grupo?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Quién de aquí es capaz de guardar un secreto que podría hacer mucho daño?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Quién de aquí tiene el favoritismo más claro dentro de este grupo?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Quién de aquí es capaz de fingir una amistad por conveniencia?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Quién de aquí tiene el secreto más grande sin contar a nadie de esta sala?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Quién de aquí es capaz de sabotear a alguien de este grupo sin que se note?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Quién de aquí ha sido más desleal alguna vez sin que se supiera?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Quién de aquí guarda más rencor del que aparenta hacia alguien de aquí?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Quién de aquí sería capaz de mentir para no perder su sitio en este grupo?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Quién de aquí es el que más ha cambiado la opinión que tiene de otra persona de esta sala sin decirlo?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que {otro} ha ocultado a este grupo por miedo a lo que pensaran?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que {otro} te ha perdonado sin que tú lo supieras nunca?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que {otro} nunca te ha perdonado del todo, aunque diga que sí?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que le has hecho a {otro} de lo que más te arrepientes?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que {otro} ha callado por miedo a romper este grupo?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué crees que {otro} se guarda por no romper la paz de este grupo?",
+    "nivel": "extremo"
   }
 ]

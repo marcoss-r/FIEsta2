@@ -64,7 +64,7 @@ los turnos.
 | **Niveles de intensidad** | Los tres del núcleo (`suave` / `picante` / `extremo`), multi-selección, por defecto suave + picante. Filtran **los dos bancos a la vez**. |
 | **Modo fiesta** | Interruptor global del núcleo (persistente entre partidas). Añade castigo a **«Paso»** (en verdad o en reto: significa «no quiero hacerlo/contestarlo», sí es una negativa). Usa `castigoPonderado({ beber: 0.3, prenda: 0.2, otros: 0.5 })` del núcleo (ver `js/nucleo/intensidad.js`): 30 % de las veces toca beber, 20 % quitarse una prenda, 50 % uno de los castigos "neutros" del banco (bailar, imitar…). No se elige, se ofrece al azar. Sin modo fiesta, «Paso» sigue sin castigo (mismo criterio que el resto de la app: sin modo fiesta, la app no impone nada). |
 | **Datos** | **Dos bancos separados**: `VR_VERDADES` y `VR_RETOS`, en `data/verdadreto/`. |
-| **Volumen** | **≥ 400 en total: ≥ 200 verdades y ≥ 200 retos** (mínimo original). Ampliado después a petición del usuario a **360 + 360 (120 por nivel en cada banco)**. Tras la corrección de retos-que-eran-verdades, verdades quedó en **366** (120/124/122) por las pocas conversiones no duplicadas; retos se mantiene en **360** (120/120/120). |
+| **Volumen** | **≥ 400 en total: ≥ 200 verdades y ≥ 200 retos** (mínimo original). Ampliado después a petición del usuario a **360 + 360 (120 por nivel en cada banco)**. Tras la corrección de retos-que-eran-verdades, verdades quedó en **366** (120/124/122). Tras eliminar «Preguntas incómodas» y fusionar su contenido no duplicado, verdades queda en **651** (258/224/169); retos se mantiene en **360** (120/120/120). |
 | **Qué hace la app** | Servir contenido sin repetir, ordenar turnos, resolver plantillas (`{jugador}`, `{otro}`), guardar la partida y llevar un contador de verdades/retos/pasos. |
 | **Qué NO hace la app** | ❌ No hay votaciones, ni puntos, ni podio, ni ganador. ❌ No comprueba si el reto se ha cumplido: eso lo dice el grupo en voz alta. |
 | **Turnos** | Rotación **en orden** (nunca sorteo), empezando por el primer jugador de la lista. Sin límite de rondas. |
@@ -521,6 +521,23 @@ mirar la carta más larga del banco en horizontal y en vertical.
       `PLAN_DESARROLLO.md`). Retos queda en 360 (120/120/120, ~20 de
       confesión + ~100 de acción por nivel en picante y extremo). Probado de
       nuevo con la partida de 200 turnos, sin errores de consola.
+- [x] **Fusión de «Preguntas incómodas» y eliminación de ese juego** (pedido
+      por el usuario: «Verdad o Reto» en modo «solo verdades» ya cubre lo
+      mismo que `pi`, dos juegos redundantes de menos). Las 400 preguntas de
+      `data/incomodas/preguntas.json` se compararon una a una contra las
+      verdades ya existentes con el mismo detector de similitud; se
+      revisaron a mano los casos límite (score 0.6-0.75) para recuperar
+      preguntas realmente distintas que el detector marcaba como duplicado
+      solo por compartir plantilla («¿Cuál es tu mayor manía [dominio]?» con
+      dominios distintos no es duplicado) y para descartar duplicados reales
+      con score bajo por casualidad léxica. Resultado: **285 preguntas
+      nuevas** fusionadas al final de `verdades.json` (138 suave + 100
+      picante + 47 extremo), verdades pasa de 366 a **651** (258/224/169).
+      El resto (115 preguntas) eran duplicados fantasma del propio banco de
+      verdades. Tras la fusión se borró el juego `pi` entero: pantallas
+      `pi-config`/`pi-juego`/`pi-fin` y tarjeta del hub en `index.html`,
+      `js/incomodas/`, `data/incomodas/`, entradas en `sw.js` y CSS
+      específico. `APP_VERSION`/`CACHE` a 1.6.6.
 
 ---
 

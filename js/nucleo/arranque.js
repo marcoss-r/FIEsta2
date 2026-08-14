@@ -2,7 +2,7 @@
 // Debe cargarse el ÚLTIMO: al terminar muestra el hub de juegos.
 
 // Versión de la app. Al subirla, sube también CACHE en sw.js (otro contexto, no ve esto).
-const APP_VERSION = "1.6.5";
+const APP_VERSION = "1.6.6";
 
 // Textos de la ventana de información de cada juego (la ⓘ de las tarjetas del hub).
 const INFO_JUEGOS = {
@@ -47,14 +47,6 @@ const INFO_JUEGOS = {
       "recibe una pista. Por turnos, cada uno dice una palabra relacionada sin " +
       "delatarse ni delatar; al final, el grupo debate y acusa a quien crea que " +
       "es el impostor.",
-  },
-  pi: {
-    titulo: "Preguntas incómodas",
-    texto:
-      "Preguntas directas y afiladas: la app elige a quién se le pregunta y qué " +
-      "se le pregunta. El jugador anterior la lee en voz alta; el destinatario " +
-      "responde o se la salta (con castigo si hay modo fiesta). Con modo fiesta, " +
-      "cada jugador puede además devolver una pregunta por partida.",
   },
 };
 

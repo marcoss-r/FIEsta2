@@ -4,8 +4,13 @@ Colección de juegos de fiesta por turnos para jugar **pasándose un solo móvil
 Hermana de [FIEsta](../DescriptIA) (misma arquitectura y enfoque), con juegos
 nuevos y estética roja.
 
-**Los seis juegos:** Yo nunca · Quién es más… · Verdad o Reto · Preguntas
-incómodas · Dos mentiras y una verdad · El Impostor.
+**Los cinco juegos:** Yo nunca · Quién es más… · Verdad o Reto · Dos mentiras
+y una verdad · El Impostor.
+
+> Hubo un sexto juego, **«Preguntas incómodas»**, implementado y luego
+> eliminado por redundante con «Verdad o Reto» en modo «solo verdades»: su
+> contenido se fusionó en el banco de verdades de `vr` (ver más abajo).
+> Detalles en `md/PLAN_DESARROLLO.md` §9.5 y `md/PLAN_PREGUNTAS_INCOMODAS.md`.
 
 ## Estado
 
@@ -30,17 +35,13 @@ principio a fin, cada uno con su banco de contenido **provisional**
   solo verdades / solo retos), carta volteable en 3D, «Paso» (en verdad o en
   reto) con castigo ponderado (30 % beber / 20 % prenda / 50 % otros), «Otro
   reto» sin límite ni castigo en los retos (no existe en las verdades), banco
-  de 366 verdades (120 suave / 124 picante / 122 extremo) + 360 retos (120
-  por nivel; los retos vuelven a ser dares de acción reales en vez de
-  confesiones disfrazadas — ver «Ajustes de contenido» en el plan del juego,
-  `data/verdadreto/verdades.json` + `retos.json` + `.js` generados +
-  `agregar.py`), pendiente de que el usuario lo revise.
-- **«Preguntas incómodas»** (🚧 Fase 6 en curso) — la app elige a quién y qué
-  preguntar (tres formatos: `dirigida`, `cruzada` y `grupo`), rotación de
-  destinatario y lector, «Se lo salta» con castigo, botón «Devolver» (solo
-  con modo fiesta, una vez por jugador y partida, no encadenable), banco de
-  400 preguntas (160 dirigida + 160 cruzada + 80 grupo,
-  `data/incomodas/preguntas.json` + `.js` generado + `agregar.py`).
+  de 651 verdades (258 suave / 224 picante / 169 extremo, tras fusionar el
+  contenido no duplicado de «Preguntas incómodas», el sexto juego original,
+  eliminado) + 360 retos (120 por nivel; los retos vuelven a ser dares de
+  acción reales en vez de confesiones disfrazadas — ver «Ajustes de
+  contenido» en el plan del juego, `data/verdadreto/verdades.json` +
+  `retos.json` + `.js` generados + `agregar.py`), pendiente de que el
+  usuario lo revise.
 
 El resto de tarjetas del hub (Dos mentiras y una verdad, El Impostor) aún no
 llevan a ningún sitio: se implementan en las fases 7-8.
@@ -57,9 +58,10 @@ cerradas:
 - [`md/PLAN_YO_NUNCA.md`](md/PLAN_YO_NUNCA.md) (`yn`)
 - [`md/PLAN_QUIEN_ES_MAS.md`](md/PLAN_QUIEN_ES_MAS.md) (`qm`)
 - [`md/PLAN_VERDAD_O_RETO.md`](md/PLAN_VERDAD_O_RETO.md) (`vr`)
-- [`md/PLAN_PREGUNTAS_INCOMODAS.md`](md/PLAN_PREGUNTAS_INCOMODAS.md) (`pi`)
 - [`md/PLAN_DOS_MENTIRAS.md`](md/PLAN_DOS_MENTIRAS.md) (`dm`)
 - [`md/PLAN_EL_IMPOSTOR.md`](md/PLAN_EL_IMPOSTOR.md) (`im`)
+- [`md/PLAN_PREGUNTAS_INCOMODAS.md`](md/PLAN_PREGUNTAS_INCOMODAS.md) (`pi`,
+  juego eliminado — referencia histórica)
 
 ## Cómo abrir el proyecto
 
@@ -86,10 +88,9 @@ Cada juego guardará su banco en `data/<juego>/` como un `.json` (fuente) + un
 alta entradas desde consola, igual que en FIEsta 1. `data/yonunca/` ya sigue
 este patrón completo: `frases.json` (fuente, 674 entradas) + `frases.js`
 (generado) + `agregar.py` (da de alta frases nuevas y regenera el `.js`; nunca
-se edita `frases.js` a mano). `data/quienmas/` y `data/incomodas/` siguen
-ahora el mismo patrón: `preguntas.json` (fuente, 400 entradas cada uno) +
-`preguntas.js` (generado) + `agregar.py`. El resto de carpetas de juego
-siguen vacías.
+se edita `frases.js` a mano). `data/quienmas/` sigue ahora el mismo patrón:
+`preguntas.json` (fuente, 400 entradas) + `preguntas.js` (generado) +
+`agregar.py`. El resto de carpetas de juego siguen vacías.
 
 ## Tecnología
 

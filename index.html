@@ -86,11 +86,6 @@
           <span class="juego-card-nombre">Verdad o Reto</span>
           <span class="juego-card-desc">Eliges verdad o reto y la app te lo sirve</span>
         </button>
-        <button type="button" class="juego-card" id="btn-juego-pi">
-          <span class="juego-card-info" data-info="pi" aria-label="Información de Preguntas incómodas">i</span>
-          <span class="juego-card-nombre">Preguntas incómodas</span>
-          <span class="juego-card-desc">Preguntas directas y afiladas a una persona</span>
-        </button>
         <button type="button" class="juego-card" id="btn-juego-dm">
           <span class="juego-card-info" data-info="dm" aria-label="Información de Dos mentiras y una verdad">i</span>
           <span class="juego-card-nombre">Dos mentiras y una verdad</span>
@@ -298,54 +293,6 @@
       </div>
     </section>
 
-    <!-- Preguntas incómodas (pi) — ver md/PLAN_PREGUNTAS_INCOMODAS.md §4.3 para el mapa de IDs -->
-    <section class="pantalla" data-pantalla="pi-config">
-      <button type="button" class="boton-volver" data-volver="fiesta" aria-label="Volver al inicio">←</button>
-      <h1>Preguntas incómodas</h1>
-      <div class="stepper" id="pi-stepper">
-        <button type="button" class="stepper-btn" data-accion="menos" aria-label="Menos jugadores">−</button>
-        <span class="stepper-valor"></span>
-        <button type="button" class="stepper-btn" data-accion="mas" aria-label="Más jugadores">+</button>
-      </div>
-      <div class="lista-scroll" id="pi-nombres"></div>
-      <div class="selector-niveles" id="pi-niveles"></div>
-      <div class="fila-switch">
-        <span>Modo fiesta</span>
-        <div id="pi-fiesta"></div>
-      </div>
-      <p class="ayuda">Con el modo fiesta, cada jugador puede devolver una pregunta por partida</p>
-      <p class="error" id="pi-error"></p>
-      <div class="fila-botones">
-        <button type="button" class="secundario" id="pi-btn-continuar" hidden>Continuar partida</button>
-        <button type="button" id="pi-btn-empezar">Empezar</button>
-      </div>
-    </section>
-
-    <section class="pantalla" data-pantalla="pi-juego">
-      <p class="ayuda" id="pi-lector"></p>
-      <p class="pi-destinatario" id="pi-destinatario"></p>
-      <p class="pi-pregunta" id="pi-pregunta"></p>
-      <p class="ayuda" id="pi-nota" hidden></p>
-      <p class="anuncio" id="pi-castigo" hidden></p>
-      <p class="anuncio" id="pi-anuncio" hidden></p>
-      <div class="fila-botones">
-        <button type="button" class="secundario" id="pi-btn-salta">Se lo salta ✖</button>
-        <button type="button" class="secundario" id="pi-btn-devolver" hidden>Devolver ↩</button>
-        <button type="button" id="pi-btn-respondio">Respondió ✔</button>
-      </div>
-      <button type="button" id="pi-btn-siguiente-salta" hidden>Siguiente</button>
-      <button type="button" class="secundario" id="pi-btn-terminar">Terminar</button>
-    </section>
-
-    <section class="pantalla" data-pantalla="pi-fin">
-      <h1>¡Partida terminada!</h1>
-      <p id="pi-resumen"></p>
-      <div class="fila-botones">
-        <button type="button" class="secundario" id="pi-btn-otra-partida">Otra partida</button>
-        <button type="button" id="pi-btn-hub">Volver al inicio</button>
-      </div>
-    </section>
-
     <!-- Aviso de tono (§7.4): overlay GLOBAL, fuera de cualquier .pantalla
          para poder mostrarse encima de cualquier juego (si viviera dentro de
          una .pantalla, heredaría su opacity/visibility cuando esa pantalla no
@@ -379,13 +326,11 @@
   <script src="data/quienmas/preguntas.js"></script>
   <script src="data/verdadreto/verdades.js"></script>
   <script src="data/verdadreto/retos.js"></script>
-  <script src="data/incomodas/preguntas.js"></script>
 
   <!-- 3. Lógica de cada juego -->
   <script src="js/yonunca/main.js"></script>
   <script src="js/quienmas/main.js"></script>
   <script src="js/verdadreto/main.js"></script>
-  <script src="js/incomodas/main.js"></script>
 
   <!-- 4. Arranque: SIEMPRE el último (es quien muestra el hub) -->
   <script src="js/nucleo/arranque.js"></script>

@@ -33,19 +33,26 @@ para jugarse **pasándose un solo móvil en vertical**. Es la hermana mayor de
 misma arquitectura, misma forma de trabajar… pero **contenido nuevo, más adulto
 y verbal** (nada de mímica ni de equipos), y **estética roja** en lugar de azul.
 
-**Los seis juegos de FIEsta 2:**
+**Los cinco juegos de FIEsta 2:**
 
 | # | Juego | Prefijo | En una frase |
 |---|-------|---------|--------------|
 | 1 | **Yo nunca** | `yn` | El clásico de beber: se lee una frase y quien la haya hecho, baja un dedo (o bebe, en modo fiesta). |
 | 2 | **Quién es más…** | `qm` | Preguntas para señalar a alguien del grupo (no solo «quién es más probable que…»). |
 | 3 | **Verdad o Reto** | `vr` | El clásico: eliges verdad o reto y la app te lo sirve. |
-| 4 | **Preguntas incómodas** | `pi` | Preguntas directas y afiladas, dirigidas a una persona concreta. |
-| 5 | **Dos mentiras y una verdad** | `dm` | La app te da el **tema**; tú cuentas tres cosas y el grupo adivina cuál es verdad. |
-| 6 | **El Impostor** | `im` | Todos ven una palabra menos el impostor, que solo recibe una **pista**. |
+| 4 | **Dos mentiras y una verdad** | `dm` | La app te da el **tema**; tú cuentas tres cosas y el grupo adivina cuál es verdad. |
+| 5 | **El Impostor** | `im` | Todos ven una palabra menos el impostor, que solo recibe una **pista**. |
 
 > El orden de esta tabla sigue el **orden de implementación** (§10), no el orden
 > alfabético ni el de complejidad estricta.
+>
+> **Preguntas incómodas (`pi`) se eliminó** tras la Fase 6 (pedido del
+> usuario): su función —preguntas directas dirigidas a una persona— ya la
+> cubre «Verdad o Reto» en modo «solo verdades», así que en vez de mantener
+> dos juegos casi redundantes, el contenido de `pi` sin duplicados fantasma
+> se fusionó en el banco de verdades de `vr` y el juego se borró entero
+> (pantallas, `js/incomodas/`, `data/incomodas/`). El §9.5 de este documento
+> queda como referencia histórica de cómo funcionaba.
 
 **Principios que no se negocian** (heredados de FIEsta y validados en producción):
 
@@ -339,7 +346,6 @@ FIEsta2/
 │   ├── yonunca/main.js
 │   ├── quienmas/main.js
 │   ├── verdadreto/main.js
-│   ├── incomodas/main.js
 │   ├── dosmentiras/main.js
 │   └── impostor/main.js        (+ reparto.js si crece)
 ├── data/
@@ -347,7 +353,6 @@ FIEsta2/
 │   ├── yonunca/frases.json + .js + agregar.py
 │   ├── quienmas/preguntas.json + .js + agregar.py
 │   ├── verdadreto/{verdades,retos}.json + .js + agregar.py
-│   ├── incomodas/preguntas.json + .js + agregar.py
 │   ├── dosmentiras/temas.json + .js + agregar.py
 │   └── impostor/palabras.json + .js + agregar.py
 └── md/
@@ -355,10 +360,13 @@ FIEsta2/
     ├── PLAN_YO_NUNCA.md
     ├── PLAN_QUIEN_ES_MAS.md
     ├── PLAN_VERDAD_O_RETO.md
-    ├── PLAN_PREGUNTAS_INCOMODAS.md
     ├── PLAN_DOS_MENTIRAS.md
     └── PLAN_EL_IMPOSTOR.md
 ```
+
+`incomodas/` (juego «Preguntas incómodas», `pi`) existió en `js/` y `data/` y
+se borró al eliminar el juego (ver nota de §1). `PLAN_PREGUNTAS_INCOMODAS.md`
+se mantiene fuera de este árbol como registro histórico de su diseño.
 
 ### 6.2 Orden de los `<script>` en `index.html`
 
@@ -406,9 +414,9 @@ Como todo es global, **cada juego prefija absolutamente todo** con sus dos letra
 | Clave de `localStorage` | `"xx_partida"` | `"vr_partida"` |
 
 Prefijos asignados: **`yn`** Yo nunca · **`vr`** Verdad o Reto · **`qm`** Quién es
-más… · **`dm`** Dos mentiras y una verdad · **`im`** El Impostor · **`pi`**
-Preguntas incómodas. Lo del núcleo va **sin prefijo** (`mostrarPantalla`,
-`barajar`…).
+más… · **`dm`** Dos mentiras y una verdad · **`im`** El Impostor. Lo del
+núcleo va **sin prefijo** (`mostrarPantalla`, `barajar`…). El prefijo `pi`
+(Preguntas incómodas) quedó libre al eliminarse ese juego.
 
 ---
 
@@ -794,7 +802,14 @@ automáticamente de la categoría: quedarían todas iguales).
 
 ---
 
-### 9.5 Preguntas incómodas — `pi`
+### 9.5 Preguntas incómodas — `pi` (eliminado, referencia histórica)
+
+> **Este juego se eliminó** (pedido del usuario, después de la Fase 6): su
+> función quedaba cubierta por «Verdad o Reto» jugado en modo «solo
+> verdades», así que en vez de mantener dos juegos casi redundantes se
+> fusionó el contenido de `pi` sin duplicados fantasma en el banco de
+> verdades de `vr` y se borró el código de `pi` entero. El resto de esta
+> sección se deja tal cual para no perder el rastro de cómo estaba diseñado.
 
 **Idea:** preguntas directas, personales y afiladas. La app **elige a quién se le
 pregunta** y **qué se le pregunta**. Responder o pagar el castigo.
@@ -946,7 +961,7 @@ siempre la del banco de contenido (≥ 400).
 | **Quién es más…** | **Sí** al filtro por tipo en la configuración; **no** a la cuenta atrás «3, 2, 1». |
 | **Dos mentiras** | Temporizador de 60 s **opcional y apagado por defecto**; el tema **se muestra a todo el grupo** (no es secreto). |
 | **El Impostor** | Los 2 impostores **no se conocen entre ellos**; y el juego **no guarda la partida en curso**, solo la configuración (`"im_config"`), porque reanudar filtraría información. |
-| **Preguntas incómodas** | **Sí** al botón «Devolver la pregunta», pero **solo con el modo fiesta** y como recurso escaso: **una por jugador y partida**, no encadenable y no disponible en las preguntas de tipo `grupo`. |
+| **Preguntas incómodas** *(eliminado más tarde, ver §9.5)* | **Sí** al botón «Devolver la pregunta», pero **solo con el modo fiesta** y como recurso escaso: **una por jugador y partida**, no encadenable y no disponible en las preguntas de tipo `grupo`. |
 
 **✅ Aceptación:** los 6 planes existen, son autosuficientes (otro agente sin
 contexto podría implementarlos leyendo solo ese plan + este documento) y no
@@ -1035,20 +1050,23 @@ Añade el volteo 3D, dos bancos en vez de uno, y el botón «Otra». Seguir
 > `retos.json` (fuente) y `agregar.py`, pendiente de que el usuario lo
 > revise y afine (§2.4). `APP_VERSION`/`CACHE` = 1.6.3.
 
-### Fase 6 — Juego 4: **Preguntas incómodas**
+### Fase 6 — Juego 4: **Preguntas incómodas** *(eliminada, ver más abajo)*
 Reutiliza casi todo lo de Verdad o Reto; añade los tres formatos y la rotación de
 destinatario. Seguir su plan.
 
-> 🚧 **En curso.** Fases 1-2-4-5 de `md/PLAN_PREGUNTAS_INCOMODAS.md`
-> implementadas: pantallas, rotación destinatario/lector, los tres formatos
-> (`dirigida`/`cruzada`/`grupo`), «Se lo salta» con castigo, botón «Devolver»
-> con las cuatro reglas (solo con modo fiesta, una vez por jugador, no
-> encadenable, no en `grupo`), persistencia con devoluciones restantes.
-> Probado con jsdom (rotación en 4 y 2 jugadores, devolución, reanudación,
-> 0 errores de consola) y capturas de Playwright. **Fase 3 completa**: 400
-> preguntas (160 dirigida + 160 cruzada + 80 grupo, 40/40/20 por nivel en
-> cada tipo), con `preguntas.json`/`agregar.py`, pendiente de que el
-> usuario lo revise y afine (§2.4). `APP_VERSION`/`CACHE` = 1.6.2.
+> ❌ **Eliminada por completo tras haber estado implementada.** Se llegaron a
+> completar sus fases 1-2-4-5 (pantallas, rotación destinatario/lector, los
+> tres formatos `dirigida`/`cruzada`/`grupo`, «Se lo salta» con castigo,
+> botón «Devolver» con sus cuatro reglas, persistencia) y su Fase 3 (400
+> preguntas, 160 dirigida + 160 cruzada + 80 grupo). Pero, ya con el juego
+> jugable y su banco terminado, el usuario decidió que «Preguntas
+> incómodas» era redundante con «Verdad o Reto» jugado en modo «solo
+> verdades» y pidió eliminarlo: el contenido sin duplicados fantasma se
+> fusionó en el banco de verdades de `vr` (que pasó de 366 a 651 entradas)
+> y se borró todo el código de `pi` (pantallas, `js/incomodas/`,
+> `data/incomodas/`, entrada del hub). `md/PLAN_PREGUNTAS_INCOMODAS.md` y
+> el §9.5 de este documento quedan como referencia histórica de su diseño.
+> `APP_VERSION`/`CACHE` = 1.6.6.
 
 ### Fase 7 — Juego 5: **Dos mentiras y una verdad**
 Añade el flujo por turnos con tema, «Otro tema» y (si se decide) temporizador.
@@ -1181,7 +1199,7 @@ Válidos para los seis juegos; cada plan añadirá los suyos.
 - [ ] **Fase 3** — Yo nunca
 - [ ] **Fase 4** — Quién es más…
 - [ ] **Fase 5** — Verdad o Reto
-- [ ] **Fase 6** — Preguntas incómodas
+- [x] **Fase 6** — Preguntas incómodas *(implementada y luego eliminada; contenido fusionado en `vr`, ver Fase 6 arriba)*
 - [ ] **Fase 7** — Dos mentiras y una verdad
 - [ ] **Fase 8** — El Impostor
 - [ ] **Fase 9** — Pulido global y publicación
