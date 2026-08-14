@@ -30,7 +30,9 @@ principio a fin, cada uno con su banco de contenido **provisional**
   solo verdades / solo retos), carta volteable en 3D, «Paso» (en verdad o en
   reto) con castigo ponderado (30 % beber / 20 % prenda / 50 % otros), «Otro
   reto» sin límite ni castigo en los retos (no existe en las verdades), banco
-  de 360 verdades + 360 retos (120 por nivel en cada banco,
+  de 366 verdades (120 suave / 124 picante / 122 extremo) + 360 retos (120
+  por nivel; los retos vuelven a ser dares de acción reales en vez de
+  confesiones disfrazadas — ver «Ajustes de contenido» en el plan del juego,
   `data/verdadreto/verdades.json` + `retos.json` + `.js` generados +
   `agregar.py`), pendiente de que el usuario lo revise.
 - **«Preguntas incómodas»** (🚧 Fase 6 en curso) — la app elige a quién y qué

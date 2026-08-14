@@ -64,7 +64,7 @@ los turnos.
 | **Niveles de intensidad** | Los tres del núcleo (`suave` / `picante` / `extremo`), multi-selección, por defecto suave + picante. Filtran **los dos bancos a la vez**. |
 | **Modo fiesta** | Interruptor global del núcleo (persistente entre partidas). Añade castigo a **«Paso»** (en verdad o en reto: significa «no quiero hacerlo/contestarlo», sí es una negativa). Usa `castigoPonderado({ beber: 0.3, prenda: 0.2, otros: 0.5 })` del núcleo (ver `js/nucleo/intensidad.js`): 30 % de las veces toca beber, 20 % quitarse una prenda, 50 % uno de los castigos "neutros" del banco (bailar, imitar…). No se elige, se ofrece al azar. Sin modo fiesta, «Paso» sigue sin castigo (mismo criterio que el resto de la app: sin modo fiesta, la app no impone nada). |
 | **Datos** | **Dos bancos separados**: `VR_VERDADES` y `VR_RETOS`, en `data/verdadreto/`. |
-| **Volumen** | **≥ 400 en total: ≥ 200 verdades y ≥ 200 retos** (mínimo original). Ampliado después a petición del usuario a **360 + 360 (120 por nivel en cada banco)**. |
+| **Volumen** | **≥ 400 en total: ≥ 200 verdades y ≥ 200 retos** (mínimo original). Ampliado después a petición del usuario a **360 + 360 (120 por nivel en cada banco)**. Tras la corrección de retos-que-eran-verdades, verdades quedó en **366** (120/124/122) por las pocas conversiones no duplicadas; retos se mantiene en **360** (120/120/120). |
 | **Qué hace la app** | Servir contenido sin repetir, ordenar turnos, resolver plantillas (`{jugador}`, `{otro}`), guardar la partida y llevar un contador de verdades/retos/pasos. |
 | **Qué NO hace la app** | ❌ No hay votaciones, ni puntos, ni podio, ni ganador. ❌ No comprueba si el reto se ha cumplido: eso lo dice el grupo en voz alta. |
 | **Turnos** | Rotación **en orden** (nunca sorteo), empezando por el primer jugador de la lista. Sin límite de rondas. |
@@ -499,6 +499,28 @@ mirar la carta más larga del banco en horizontal y en vertical.
       grupo concreto**). Suave se mantiene, con varios duplicados fantasma
       corregidos tras pasar un detector de similitud por los dos bancos.
       360 + 360 entradas en total sin cambios de volumen.
+- [x] **Corrección: los retos picante/extremo se habían convertido en
+      verdades disfrazadas** (detectado por el usuario tras revisar el `.md`
+      de la Fase 3: casi el 100 % de los retos picante y extremo del ajuste
+      de tono anterior empezaban por «Confiesa…/Dile…/Cuéntale…», es decir,
+      pedían *decir* algo en vez de *hacer* algo). Arreglo en tres pasos:
+      1) se conservaron ~20 de esos retos de confesión por nivel (los más
+      directos, tipo «Dile a {otro}…», más 1 reto de mostrar algo); 2) el
+      resto se convirtió a formato pregunta y se comprobó contra el banco de
+      verdades ya existente con un detector de similitud — la inmensa
+      mayoría resultaron ser duplicados fantasma del propio ajuste de tono
+      anterior (ambos bancos se habían reescrito en paralelo con el mismo
+      contenido), así que solo sobrevivieron 6 preguntas genuinamente
+      nuevas, añadidas al final de `verdades.json` (picante 120→124, extremo
+      120→122); 3) se generaron 100 retos de acción nuevos por nivel
+      (picante y extremo), con inspiración de búsquedas en internet sobre
+      dinámicas de «verdad o reto» reales (baile/posturas, móvil y redes,
+      llamadas y mensajes, comida y bebida, contacto físico con `{otro}`,
+      actuación, resistencia, exposición ligera), evitando nada humillante
+      por físico/orientación/origen/salud mental (criterio de §12 de
+      `PLAN_DESARROLLO.md`). Retos queda en 360 (120/120/120, ~20 de
+      confesión + ~100 de acción por nivel en picante y extremo). Probado de
+      nuevo con la partida de 200 turnos, sin errores de consola.
 
 ---
 

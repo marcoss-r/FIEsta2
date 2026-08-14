@@ -244,6 +244,10 @@ const VR_VERDADES = [
   { texto: "¿Cuál es la vez que más te has arrepentido de un piropo que soltaste?", nivel: "picante" },
   { texto: "¿Has confundido la intensidad de una relación con que fuera buena para ti?", nivel: "picante" },
   { texto: "¿Cuál es tu mayor inseguridad sobre cómo te ven en el terreno amoroso?", nivel: "picante" },
+  { texto: "¿Cuál ha sido tu cita más movida?", nivel: "picante" },
+  { texto: "¿Alguna vez has jugado con los sentimientos de alguien a propósito?", nivel: "picante" },
+  { texto: "¿Alguna vez has sentido que le gustabas más a {otro} de lo que te gustaba tú?", nivel: "picante" },
+  { texto: "¿Cuál ha sido el mensaje más atrevido que has recibido nunca?", nivel: "picante" },
 
   // ── extremo
   { texto: "¿Cuál es el secreto de alguien de esta sala que sabes y nunca has contado?", nivel: "extremo" },
@@ -366,4 +370,6 @@ const VR_VERDADES = [
   { texto: "¿Qué es lo que cambiarías de este grupo si pudieras hacerlo sin que nadie se enterara?", nivel: "extremo" },
   { texto: "¿Cuál es la última vez que sentiste que este grupo no te conocía de verdad?", nivel: "extremo" },
   { texto: "¿Cuál es la persona de esta sala con la que menos te gustaría cambiar de vida ahora mismo?", nivel: "extremo" },
+  { texto: "¿Qué es lo que más te ha costado no reprocharle nunca a {otro}?", nivel: "extremo" },
+  { texto: "¿Qué es lo último que perdonarías a {otro} antes de romper del todo con él o ella?", nivel: "extremo" },
 ];

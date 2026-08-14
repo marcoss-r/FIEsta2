@@ -1438,5 +1438,29 @@
   {
     "texto": "¿Cuál es la persona de esta sala con la que menos te gustaría cambiar de vida ahora mismo?",
     "nivel": "extremo"
+  },
+  {
+    "texto": "¿Cuál ha sido tu cita más movida?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Alguna vez has jugado con los sentimientos de alguien a propósito?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Alguna vez has sentido que le gustabas más a {otro} de lo que te gustaba tú?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál ha sido el mensaje más atrevido que has recibido nunca?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué es lo que más te ha costado no reprocharle nunca a {otro}?",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "¿Qué es lo último que perdonarías a {otro} antes de romper del todo con él o ella?",
+    "nivel": "extremo"
   }
 ]
