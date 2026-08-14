@@ -15,11 +15,12 @@ const QM_MODOS = [
 
 // Los encabezados viven en el código, no en los datos: si fueran parte de
 // cada entrada del banco, se repetirían cientos de veces.
+// «primero» y «nunca» se fusionaron dentro de «probable» (ver
+// md/PLAN_QUIEN_ES_MAS.md): sus preguntas ahora empiezan por «sea el primero
+// en…» o «nunca…» dentro del propio texto.
 const QM_ENCABEZADOS = {
   probable: "¿Quién es más probable que…",
   adjetivo: "¿Quién es más…",
-  primero: "¿Quién sería el primero en…",
-  nunca: "¿Quién nunca…",
 };
 
 // Filtro de tipo, propio de este juego (a diferencia del de nivel, que es del
@@ -27,8 +28,6 @@ const QM_ENCABEZADOS = {
 const QM_TIPOS = [
   { id: "probable", nombre: "Probable" },
   { id: "adjetivo", nombre: "Adjetivo" },
-  { id: "primero", nombre: "El primero en" },
-  { id: "nunca", nombre: "Nunca" },
 ];
 
 // Todo el estado de la partida vive aquí.

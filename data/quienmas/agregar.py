@@ -16,7 +16,7 @@ CARPETA = Path(__file__).resolve().parent
 RUTA_JSON = CARPETA / "preguntas.json"
 RUTA_JS = CARPETA / "preguntas.js"
 NIVELES = ("suave", "picante", "extremo")
-TIPOS = ("probable", "adjetivo", "primero", "nunca")
+TIPOS = ("probable", "adjetivo")
 
 
 def cargar():

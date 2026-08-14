@@ -2,7 +2,7 @@
 // Debe cargarse el ÚLTIMO: al terminar muestra el hub de juegos.
 
 // Versión de la app. Al subirla, sube también CACHE en sw.js (otro contexto, no ve esto).
-const APP_VERSION = "1.6.6";
+const APP_VERSION = "1.6.7";
 
 // Textos de la ventana de información de cada juego (la ⓘ de las tarjetas del hub).
 const INFO_JUEGOS = {
@@ -25,9 +25,9 @@ const INFO_JUEGOS = {
   qm: {
     titulo: "Quién es más…",
     texto:
-      "La app lanza una pregunta sobre el grupo (quién es más probable que…, " +
-      "quién sería el primero en…, quién nunca…) y a la de tres todos señalan a " +
-      "la vez a quien crean. Se comenta a gritos y se pasa a la siguiente. En el " +
+      "La app lanza una pregunta sobre el grupo (quién es más probable que… o " +
+      "quién es más…) y a la de tres todos señalan a la vez a quien crean. Se " +
+      "comenta a gritos y se pasa a la siguiente. En el " +
       "modo parejas, la app sortea una pareja de entre todos y le hace 8 " +
       "preguntas: si coinciden se libran, si difieren, bebe quien lleve el modo " +
       "fiesta encendido. Recorre todas las parejas posibles y acaba con un " +

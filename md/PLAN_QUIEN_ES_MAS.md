@@ -36,15 +36,24 @@ quien crean. Se comenta a gritos durante veinte segundos, se pulsa «Siguiente»
 va la próxima.
 
 La gracia está en que **no se limita a «¿quién es más probable que…?»**: el banco
-mezcla **cuatro formatos** distintos, y el encabezado lo pone la app según el
+mezcla **dos formatos** distintos, y el encabezado lo pone la app según el
 tipo de cada pregunta.
+
+> **Nota (reestructuración posterior):** el banco arrancó con **cuatro** tipos
+> (`probable`, `adjetivo`, `primero`, `nunca` — ver §6 y §9 más abajo, que
+> documentan esa versión original). El usuario pidió después fusionar
+> `primero` y `nunca` dentro de `probable` (ambos se pueden reformular
+> siempre como «¿quién es más probable que…?»: «sea el primero en…» / «nunca
+> haya…») y depurar `adjetivo` para que solo queden adjetivos genuinos (las
+> construcciones «de + infinitivo» que eran en realidad «probable» disfrazado
+> también se fusionaron). Ver el bloque de checklist correspondiente en §8
+> para el detalle exacto. Esta tabla ya refleja el estado **actual**, de solo
+> dos tipos:
 
 | `tipo` | Encabezado que pone la app | Ejemplo completo |
 |---|---|---|
 | `probable` | ¿Quién es más probable que… | «…acabe durmiendo en el sofá esta noche?» |
 | `adjetivo` | ¿Quién es más… | «…dramático cuando se pone malo?» |
-| `primero` | ¿Quién sería el primero en… | «…perderse en una ciudad nueva?» |
-| `nunca` | ¿Quién nunca… | «…ha ido a una fiesta sin saber de quién era?» |
 
 La app **no cuenta votos ni lleva marcador**: solo sirve las preguntas y rota
 quién lee. Todo lo demás se resuelve señalando y gritando.
@@ -59,12 +68,12 @@ quién lee. Todo lo demás se resuelve señalando y gritando.
 | **Nº de jugadores** | **2–12**. Por defecto 5 (es un juego que gana con grupo grande). |
 | **Pantallas** | `qm-config` → `qm-juego` → `qm-fin`. |
 | **Quién lee** | Rota **en orden**, una pregunta por jugador. Los jugadores sirven para eso y para rellenar `{otro}`. |
-| **Filtro por tipo** | ✅ **Sí.** En `qm-config` hay cuatro chips (uno por tipo), multi-selección, **los cuatro activos por defecto**, **mínimo uno**. |
+| **Filtro por tipo** | ✅ **Sí.** En `qm-config` hay dos chips (uno por tipo: `probable`, `adjetivo`), multi-selección, **los dos activos por defecto**, **mínimo uno**. (Originalmente eran cuatro chips; `primero` y `nunca` se fusionaron en `probable`, ver nota de §2.) |
 | **Cuenta atrás «3, 2, 1… ¡señalad!»** | ❌ **No se implementa.** La pregunta aparece directamente: el ritmo lo marca quien lee, y una animación obligatoria entre pregunta y pregunta se hace pesada a las veinte rondas. |
 | **Niveles de intensidad** | Los tres del núcleo, multi-selección, por defecto suave + picante. Se combinan con el filtro de tipo (**los dos filtros a la vez**). |
 | **Modo fiesta** | Interruptor global del núcleo. Bajo la pregunta **siempre** aparece una línea con un castigo concreto para **el más señalado** (ampliación pedida por el usuario, ver más abajo). Con modo fiesta: `castigoPonderado({ beber: 0.9, prenda: 0.1 })`. Sin modo fiesta: `castigoPonderado({ otros: 1 })` (bailar, imitar…, nunca beber ni prenda). |
 | **Datos** | Un solo banco `QM_PREGUNTAS` en `data/quienmas/preguntas.js`. El **encabezado no va en los datos**: lo pone la app según el `tipo` (si no, se repetiría 400 veces). |
-| **Volumen** | **≥ 400 preguntas**, con los cuatro tipos representados (**mínimo 60 de cada**). Reparto orientativo: ~40 % suave, ~40 % picante, ~20 % extremo. |
+| **Volumen** | **≥ 400 preguntas**, con los tipos representados. Reparto orientativo: ~40 % suave, ~40 % picante, ~20 % extremo. Tras la fusión de §2: **520 preguntas** (432 `probable` + 88 `adjetivo`). |
 | **Qué hace la app** | Servir preguntas sin repetir, poner el encabezado, rotar al lector, resolver `{otro}` y guardar la partida. |
 | **Qué NO hace la app** | ❌ **No cuenta votos, no hay puntos, no hay podio, no hay ganador.** Se señala con el dedo y punto. |
 | **Persistencia** | Clave `"qm_partida"`. Se guarda al servir cada pregunta; se borra en `qm-fin`. |
@@ -88,8 +97,8 @@ hub ──► qm-config ──► qm-juego ──┐
 **1. `qm-config`**
 - Stepper `− N +` (2–12) + lista de nombres (núcleo, §7.3).
 - Chips de **niveles** (núcleo, §7.4).
-- Chips de **tipo de pregunta** (propios del juego): *Probable* · *Adjetivo* ·
-  *El primero en* · *Nunca*. Los cuatro activos por defecto; **mínimo uno**.
+- Chips de **tipo de pregunta** (propios del juego): *Probable* · *Adjetivo*.
+  Los dos activos por defecto; **mínimo uno**.
 - Interruptor de modo fiesta.
 - Botones **«Empezar»** y, si hay guardado, **«Continuar partida»**.
 - Validación con `validarNombres()`; error en `#qm-error` (ámbar).
@@ -116,7 +125,7 @@ hub ──► qm-config ──► qm-juego ──┐
 const qmEstado = {
   nombres: [],
   niveles: ["suave", "picante"],
-  tipos: ["probable", "adjetivo", "primero", "nunca"],
+  tipos: ["probable", "adjetivo"],
   indiceLector: 0,
   preguntaActual: null,   // { texto, tipo, nivel } tal cual del banco
   textoResuelto: "",      // con {otro} ya sustituido
@@ -129,8 +138,6 @@ const qmEstado = {
 const QM_ENCABEZADOS = {
   probable: "¿Quién es más probable que…",
   adjetivo: "¿Quién es más…",
-  primero:  "¿Quién sería el primero en…",
-  nunca:    "¿Quién nunca…",
 };
 
 const QM_MIN_JUGADORES = 2;
@@ -145,8 +152,6 @@ const QM_CLAVE_GUARDADO = "qm_partida";
 const QM_PREGUNTAS = [
   { texto: "acabe durmiendo en el sofá esta noche",        tipo: "probable", nivel: "suave" },
   { texto: "dramático cuando se pone malo",                tipo: "adjetivo", nivel: "suave" },
-  { texto: "perderse en una ciudad nueva",                 tipo: "primero",  nivel: "suave" },
-  { texto: "ha ido a una fiesta sin saber de quién era",   tipo: "nunca",    nivel: "picante" },
 ];
 ```
 
@@ -154,13 +159,21 @@ const QM_PREGUNTAS = [
 con su encabezado):
 
 - El texto **empieza en minúscula** y **no lleva `?` final** (lo pone la app).
-- `probable` → verbo en **subjuntivo** («acabe», «se case», «pida»).
-- `adjetivo` → un adjetivo o una construcción que encaje tras «¿Quién es más…».
-  Si el adjetivo tiene género, **reformular con algo invariable** («de hacer un
-  drama cuando se pone malo») o usar adjetivos que no lo tengan («exigente»,
-  «insoportable», «valiente»). Nunca escribir «dramático/a».
-- `primero` → **infinitivo** («perderse», «llorar», «pedir perdón»).
-- `nunca` → **pretérito perfecto** («ha ido», «ha probado», «ha dicho»).
+- `probable` → verbo en **subjuntivo** («acabe», «se case», «pida»). Las ideas
+  de «quién sería el primero en…» y «quién nunca…» (tipos ya fusionados aquí,
+  ver §2) se reformulan dentro de este mismo tipo: «sea el primero en pedir el
+  postre», «nunca haya cantado en un karaoke».
+- `adjetivo` → un adjetivo o una construcción corta que encaje tras «¿Quién es
+  más…» **y sea un rasgo, no una acción**: «dominante en la cama», «puntual»,
+  «rencoroso». Si el adjetivo tiene género, **reformular con algo invariable**
+  o usar adjetivos que no lo tengan («exigente», «insoportable», «valiente»).
+  Nunca escribir «dramático/a». Las construcciones «de + infinitivo» / «capaz
+  de + infinitivo» («de dormirse en cualquier sitio») son en realidad
+  `probable` disfrazado («se duerma en cualquier sitio») — si describen una
+  **acción/costumbre**, van a `probable`; si describen un **rasgo estable**,
+  se pueden dejar como adjetivo usando «capaz de + infinitivo» tal cual
+  («sea capaz de ligar sin decir una palabra» ya es válido como `probable`,
+  no hace falta forzarlo a adjetivo).
 - `{otro}` es opcional y puede aparecer en cualquier tipo. **`{jugador}` no se
   usa en este banco**: aquí no hay «turno» de nadie, se pregunta por el grupo.
 
@@ -197,8 +210,6 @@ con su encabezado):
 <div class="qm-chips" id="qm-tipos">
   <button type="button" class="qm-chip activo" data-tipo="probable">Probable</button>
   <button type="button" class="qm-chip activo" data-tipo="adjetivo">Adjetivo</button>
-  <button type="button" class="qm-chip activo" data-tipo="primero">El primero en</button>
-  <button type="button" class="qm-chip activo" data-tipo="nunca">Nunca</button>
 </div>
 ```
 
@@ -249,6 +260,15 @@ común si no está ya (§3.3 del plan global).
 ---
 
 ## 6. Desarrollo por fases
+
+> **Nota:** las fases que siguen describen la versión **original** del juego,
+> con **cuatro** tipos de pregunta (`probable`, `adjetivo`, `primero`,
+> `nunca`). Esa versión ya está cerrada e implementada tal como se describe.
+> Después, el usuario pidió fusionar `primero` y `nunca` dentro de `probable`
+> y depurar `adjetivo` (ver la nota de §2 y el bullet correspondiente en el
+> checklist de §8): el texto de las fases se deja sin tocar como registro
+> histórico, pero **ya no describe el estado actual del juego** en lo que
+> respecta al número de tipos.
 
 ### Fase 1 — Pantallas, configuración y filtro por tipo
 
@@ -355,7 +375,7 @@ y continuando.
   con `{otro2}`.
 - **Un solo tipo + un solo nivel**: es la combinación que antes agota el banco.
   Al agotarse, avisar y rebarajar.
-- **Combinación vacía** (p. ej. solo «extremo» + solo «primero» y no hay
+- **Combinación vacía** (p. ej. solo «extremo» + solo «adjetivo» y no hay
   entradas): volver a `qm-config` con el error «No hay preguntas para esta
   combinación de nivel y tipo».
 - **`{otro}`**: se resuelve excluyendo al **lector** (`{jugador}` = lector), para
@@ -407,12 +427,51 @@ y continuando.
       corregidos (misma idea, distinta redacción) tras pasar un detector de
       similitud por todo el banco. 400 preguntas en total sin cambios de
       volumen (100 por tipo, 40/40/20 por nivel).
+- [x] **Fusión de tipos: de cuatro a dos** (pedido por el usuario, con el
+      banco ya en 446 preguntas tras una edición manual suya —
+      `data/quienmas/preguntas.json`, commit «Actualizar tarjetas de quien es
+      más»):
+      - `primero` (100 entradas) se reescribió entera como `probable`,
+        anteponiendo «sea el primero en » al texto original (infinitivo sin
+        tocar, cero riesgo de conjugación): «perderse en una ciudad nueva» →
+        «sea el primero en perderse en una ciudad nueva».
+      - `nunca` (100 entradas) se reescribió entera como `probable`,
+        convirtiendo el auxiliar («ha…» → «nunca haya…», «se ha…» → «nunca se
+        haya…»); 5 casos con una segunda acción coordinada bajo el mismo
+        «nunca» se corrigieron a mano para que el segundo verbo también
+        llevara «haya» (p. ej. «...y ha seguido fingiendo» → «...y haya
+        seguido fingiendo»).
+      - `adjetivo` (97 entradas) se depuró: se dejaron **13** adjetivos
+        genuinos de nivel suave («dramático», «puntual», «impulsivo»…); las
+        **84** restantes (construcciones «de + infinitivo» / «capaz de +
+        infinitivo», que en realidad eran «probable» disfrazado, p. ej. «de
+        dormirse en cualquier sitio») se reescribieron como `probable`
+        («se duerma en cualquier sitio», «sea capaz de ligar sin decir una
+        palabra»).
+      - Como la categoría `adjetivo` quedó casi vacía en picante/extremo
+        (0 supervivientes en ambos), se añadieron **75 adjetivos nuevos**
+        genuinos (22 suave, 35 picante, 18 extremo) para no dejarla escasa.
+      - Se corrigió además un **`que` redundante** al inicio de 35 de las
+        149 entradas `probable` originales (el encabezado de la app ya
+        termina en «…que», así que el texto no debe repetirlo:
+        «que se quede atrapado…» → «se quede atrapado…»).
+      - Se encontró y eliminó **1 duplicado exacto** preexistente en los
+        datos («se le olvide una cita importante», repetido dos veces en
+        `probable`/suave).
+      - Resultado: **520 preguntas** (432 `probable` + 88 `adjetivo`; suave
+        174+35, picante 174+35, extremo 84+18). `QM_TIPOS` y
+        `QM_ENCABEZADOS` en `js/quienmas/main.js` se redujeron a los dos
+        tipos vigentes; `agregar.py` actualizado igual.
+      - Verificado con jsdom: sin `{otro}` sin resolver, sin duplicados
+        exactos, filtro por tipo funcionando con solo dos chips, 150 turnos
+        seguidos sin errores de consola.
 
 ---
 
 ## 9. Muestra de contenido (para fijar el tono)
 
-~32 entradas de referencia, con los cuatro tipos. Van al banco tal cual.
+~32 entradas de referencia, con los cuatro tipos **originales** (histórico:
+`primero` y `nunca` ya no existen como tipo, ver nota de §2 y §6).
 
 ```js
 // ── probable
