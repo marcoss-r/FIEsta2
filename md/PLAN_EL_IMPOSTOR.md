@@ -490,13 +490,15 @@ la palabra de ninguna manera.
 
 ## 8. Checklist
 
-- [ ] **Fase 1** — Pantallas y configuración (steppers y reglas)
-- [ ] **Fase 2** — Reparto secreto con handoff
-- [ ] **Fase 3** — Rondas, acusación y revelación
-- [ ] **Fase 4** — Banco de contenido (≥ 400 palabras con pista a mano)
-- [ ] **Fase 5** — Modo fiesta, persistencia de configuración y pulido
-- [ ] `APP_VERSION`, `CACHE` y `ARCHIVOS` actualizados
-- [ ] `<script>` de datos y lógica añadidos a `index.html`
+- [x] **Fase 1** — Pantallas y configuración (steppers y reglas)
+- [x] **Fase 2** — Reparto secreto con handoff
+- [x] **Fase 3** — Rondas, acusación y revelación
+- [ ] **Fase 4** — Banco de contenido (≥ 400 palabras con pista a mano). De
+      momento, banco **provisional** de 28 palabras (las de muestra de §9),
+      pendiente de que el usuario lo revise a cuatro manos.
+- [x] **Fase 5** — Modo fiesta, persistencia de configuración y pulido
+- [x] `APP_VERSION`, `CACHE` y `ARCHIVOS` actualizados
+- [x] `<script>` de datos y lógica añadidos a `index.html`
 
 ---
 

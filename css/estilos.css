@@ -866,3 +866,61 @@ button.secundario:hover {
   font-variant-numeric: tabular-nums;
   color: var(--color-acento-2);
 }
+
+/* ==========================================================
+   El Impostor (im) — ver md/PLAN_EL_IMPOSTOR.md §4.3
+   ========================================================== */
+
+/* Contenido secreto del handoff (§7.6 del núcleo): mismo tratamiento grande
+   que el resto de "cartas" del juego (yn-frase, dm-tema-texto…). */
+.im-secreto-titulo {
+  margin: 0;
+  max-width: 24ch;
+  font-size: clamp(1.4rem, 6vw, 2rem);
+  font-weight: 800;
+  line-height: 1.3;
+  overflow-wrap: break-word;
+  color: var(--color-texto);
+}
+
+/* El impostor lee "ERES EL IMPOSTOR" en el color de acento, para que no haya
+   duda de que su pantalla es distinta a la de un inocente. */
+.im-secreto-titulo.im-impostor {
+  color: var(--color-acento);
+}
+
+.im-secreto-pista {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-acento-2);
+}
+
+.im-secreto-nota {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--color-texto-tenue);
+}
+
+/* Lista de nombres de la acusación: botones (no párrafos), para poder marcar
+   selección única con .seleccionado. */
+.im-nombre {
+  width: 100%;
+  text-align: left;
+  background: var(--color-superficie);
+  color: var(--color-texto);
+}
+
+.im-nombre:hover {
+  background: var(--color-fondo-alt);
+}
+
+.im-nombre.seleccionado {
+  background: var(--color-acento);
+  color: #fff;
+}
+
+/* Veredicto de la revelación: lo primero que se lee al llegar a la pantalla. */
+#im-veredicto {
+  max-width: 22ch;
+}

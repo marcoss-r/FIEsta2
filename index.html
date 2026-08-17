@@ -109,9 +109,8 @@
     </section>
 
     <!-- Las pantallas de cada juego se añaden en su propia fase de desarrollo
-         (ver md/PLAN_DESARROLLO.md §10). De momento las tarjetas de dm e im
-         no llevan a ningún sitio: cada juego conecta su botón en su main.js
-         al implementarse. -->
+         (ver md/PLAN_DESARROLLO.md §10); cada juego conecta el botón de su
+         tarjeta en su propio main.js al implementarse. -->
 
     <!-- Yo nunca (yn) — ver md/PLAN_YO_NUNCA.md §4.3 para el mapa de IDs -->
     <section class="pantalla" data-pantalla="yn-config">
@@ -353,6 +352,78 @@
       </div>
     </section>
 
+    <!-- El Impostor (im) — ver md/PLAN_EL_IMPOSTOR.md §4.3 -->
+    <section class="pantalla" data-pantalla="im-config">
+      <button type="button" class="boton-volver" data-volver="fiesta" aria-label="Volver al inicio">←</button>
+      <h1>El Impostor</h1>
+      <div class="stepper" id="im-stepper">
+        <button type="button" class="stepper-btn" data-accion="menos" aria-label="Menos jugadores">−</button>
+        <span class="stepper-valor"></span>
+        <button type="button" class="stepper-btn" data-accion="mas" aria-label="Más jugadores">+</button>
+      </div>
+      <div class="lista-scroll" id="im-nombres"></div>
+      <div class="fila-switch">
+        <span>Impostores</span>
+        <div class="stepper" id="im-stepper-impostores">
+          <button type="button" class="stepper-btn" data-accion="menos" aria-label="Menos impostores">−</button>
+          <span class="stepper-valor"></span>
+          <button type="button" class="stepper-btn" data-accion="mas" aria-label="Más impostores">+</button>
+        </div>
+      </div>
+      <p class="ayuda" id="im-ayuda-impostores"></p>
+      <div class="fila-switch">
+        <span>Rondas de palabras</span>
+        <div class="stepper" id="im-stepper-rondas">
+          <button type="button" class="stepper-btn" data-accion="menos" aria-label="Menos rondas">−</button>
+          <span class="stepper-valor"></span>
+          <button type="button" class="stepper-btn" data-accion="mas" aria-label="Más rondas">+</button>
+        </div>
+      </div>
+      <div class="selector-niveles" id="im-niveles"></div>
+      <div class="fila-switch">
+        <span>Modo fiesta</span>
+        <div id="im-fiesta"></div>
+      </div>
+      <p class="error" id="im-error"></p>
+      <div class="fila-botones">
+        <button type="button" class="secundario" id="im-btn-config-guardada" hidden>Usar la última configuración</button>
+        <button type="button" id="im-btn-empezar">Empezar</button>
+      </div>
+    </section>
+
+    <section class="pantalla" data-pantalla="im-reparto">
+      <div id="im-handoff"></div>
+    </section>
+
+    <section class="pantalla" data-pantalla="im-ronda">
+      <p class="ayuda" id="im-progreso"></p>
+      <h1 id="im-nombre-turno"></h1>
+      <p class="ayuda">Di <strong>una palabra</strong> relacionada con la secreta</p>
+      <div class="fila-botones">
+        <button type="button" class="secundario" id="im-btn-terminar">Terminar</button>
+        <button type="button" id="im-btn-siguiente">Siguiente</button>
+      </div>
+    </section>
+
+    <section class="pantalla" data-pantalla="im-acusacion">
+      <h1>¿Quién es el impostor?</h1>
+      <p class="ayuda">Debatid en voz alta y tocad un nombre</p>
+      <div class="lista-scroll" id="im-lista-acusados"></div>
+      <button type="button" id="im-btn-confirmar" disabled>Confirmar acusación</button>
+    </section>
+
+    <section class="pantalla" data-pantalla="im-revelacion">
+      <h1 id="im-veredicto"></h1>
+      <p id="im-quien"></p>
+      <p id="im-palabra"></p>
+      <p id="im-pista"></p>
+      <p class="anuncio" id="im-castigo" hidden></p>
+      <div class="fila-botones">
+        <button type="button" class="secundario" id="im-btn-hub">Terminar</button>
+        <button type="button" id="im-btn-otra-ronda">Otra ronda</button>
+      </div>
+    </section>
+
     <!-- Aviso de tono (§7.4): overlay GLOBAL, fuera de cualquier .pantalla
          para poder mostrarse encima de cualquier juego (si viviera dentro de
          una .pantalla, heredaría su opacity/visibility cuando esa pantalla no
@@ -387,12 +458,14 @@
   <script src="data/verdadreto/verdades.js"></script>
   <script src="data/verdadreto/retos.js"></script>
   <script src="data/dosmentiras/temas.js"></script>
+  <script src="data/impostor/palabras.js"></script>
 
   <!-- 3. Lógica de cada juego -->
   <script src="js/yonunca/main.js"></script>
   <script src="js/quienmas/main.js"></script>
   <script src="js/verdadreto/main.js"></script>
   <script src="js/dosmentiras/main.js"></script>
+  <script src="js/impostor/main.js"></script>
 
   <!-- 4. Arranque: SIEMPRE el último (es quien muestra el hub) -->
   <script src="js/nucleo/arranque.js"></script>

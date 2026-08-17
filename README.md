@@ -14,9 +14,10 @@ y una verdad · El Impostor.
 
 ## Estado
 
-✅ **Fases 0, 1 y 2 completas**. Los tres primeros juegos ya se juegan de
-principio a fin, cada uno con su banco de contenido **provisional**
-(pendiente de su Fase 3, el banco definitivo, a cuatro manos con el usuario):
+✅ **Fases 0, 1 y 2 completas**. Los cinco juegos ya se juegan de principio a
+fin, cada uno con su banco de contenido **provisional** (pendiente de su fase
+de contenido definitivo, a cuatro manos con el usuario), salvo «Dos mentiras y
+una verdad», que ya tiene su banco cerrado:
 
 - **«Yo nunca»** (🚧 Fase 3 en curso) — jugadores y niveles (el más fuerte se
   llama «Salseo», no «Extremo»), modo fiesta, rotación de quien lee, partida
@@ -60,9 +61,22 @@ principio a fin, cada uno con su banco de contenido **provisional**
   verdades con facilidad), `data/dosmentiras/temas.json` + `.js` generado +
   `agregar.py` (`md/PLAN_DOS_MENTIRAS.md`), pendiente de que el usuario lo
   pruebe y lo revise.
-
-La tarjeta del hub que aún no lleva a ningún sitio es El Impostor: se
-implementa en la fase 8.
+- **«El Impostor»** (🚧 Fase 4 en curso) — todos reciben la misma palabra
+  secreta menos el impostor (o los dos impostores, a partir de 7 jugadores,
+  que no se conocen entre sí), que solo recibe una pista; reparto secreto con
+  el **handoff** del núcleo (el contenido nunca existe en el DOM antes de
+  «Ver mi palabra» ni después de «Ocultar y pasar»), steppers propios de
+  impostores (1-2) y rondas de palabras (1-3, el primero en hablar nunca es
+  el impostor), acusación por selección única y revelación con los tres casos
+  (1 impostor, 2 acertados, 2 con uno escapado) y castigo con modo fiesta.
+  Este juego **no guarda la partida en curso** (reanudar a medias filtraría
+  quién es el impostor): solo recuerda la configuración
+  (`"im_config"`, botón «Usar la última configuración»), nunca el reparto ni
+  el progreso — recargar a mitad de un reparto siempre vuelve a la
+  configuración. Banco **provisional** de 28 palabras con su pista escrita a
+  mano (`data/impostor/palabras.js`, tomadas de `md/PLAN_EL_IMPOSTOR.md` §9),
+  pendiente de su Fase 4 (banco definitivo, ≥ 400 palabras, a cuatro manos con
+  el usuario).
 
 ## Por dónde empezar
 
@@ -108,7 +122,9 @@ este patrón completo: `frases.json` (fuente, 674 entradas) + `frases.js`
 (generado) + `agregar.py` (da de alta frases nuevas y regenera el `.js`; nunca
 se edita `frases.js` a mano). `data/quienmas/` (570 entradas),
 `data/verdadreto/` (651 verdades + 360 retos) y `data/dosmentiras/` (160
-temas) siguen el mismo patrón. El resto de carpetas de juego siguen vacías.
+temas) siguen el mismo patrón. `data/impostor/` de momento solo tiene
+`palabras.js` (28 palabras de muestra, sin `.json` ni `agregar.py` todavía):
+el patrón completo llega con su Fase 4.
 
 ## Tecnología
 
