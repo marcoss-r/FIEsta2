@@ -48,9 +48,18 @@ principio a fin, cada uno con su banco de contenido **provisional**
   contenido» en el plan del juego, `data/verdadreto/verdades.json` +
   `retos.json` + `.js` generados + `agregar.py`), pendiente de que el
   usuario lo revise.
+- **«Dos mentiras y una verdad»** (🚧 Fases 1, 2, 4 y 5 hechas) — la app da
+  el **tema** (o la frase ya empezada, tipo `arranque`) para que nadie se
+  quede en blanco; el tema se ve a la vista de todo el grupo, «Otro tema»
+  hasta 2 veces por turno sin castigo, temporizador opcional de 60 s (propio
+  del juego, no confundir con el modo fiesta) que al agotarse pasa solo a la
+  vista de contar, y castigo (`castigoAlAzar()`) si el modo fiesta está
+  activo. Banco **provisional** de 30 temas (la muestra del plan);
+  `data/dosmentiras/temas.js`, pendiente el banco definitivo de ≥ 400 (Fase
+  3, `md/PLAN_DOS_MENTIRAS.md`).
 
-El resto de tarjetas del hub (Dos mentiras y una verdad, El Impostor) aún no
-llevan a ningún sitio: se implementan en las fases 7-8.
+La tarjeta del hub que aún no lleva a ningún sitio es El Impostor: se
+implementa en la fase 8.
 
 ## Por dónde empezar
 

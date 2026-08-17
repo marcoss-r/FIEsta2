@@ -828,3 +828,41 @@ button.secundario:hover {
   overflow-wrap: break-word;
   color: var(--color-texto);
 }
+
+/* ==========================================================
+   Dos mentiras y una verdad (dm) — ver md/PLAN_DOS_MENTIRAS.md §4.3
+   ========================================================== */
+
+/* Tema en grande (vista "pensar"): mismo tratamiento que .yn-frase/.qm-pregunta. */
+.dm-tema-texto {
+  margin: 0;
+  max-width: 30ch;
+  font-size: clamp(1.3rem, 5.5vw, 1.8rem);
+  font-weight: 700;
+  line-height: 1.35;
+  overflow-wrap: break-word;
+  color: var(--color-texto);
+}
+
+/* Eco del tema en la vista "contar": más pequeño, el grupo lo sigue
+   necesitando a la vista para vigilar que las tres frases van del tema, pero
+   ya no es el protagonista (lo son las instrucciones). */
+.dm-tema-eco {
+  margin: 0;
+  max-width: 30ch;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.3;
+  overflow-wrap: break-word;
+  color: var(--color-texto-tenue);
+}
+
+/* Contador del temporizador opcional: dígitos grandes y tabulares (para que
+   no "baile" el ancho al cambiar de segundo a segundo). */
+.dm-temporizador {
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-acento-2);
+}

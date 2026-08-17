@@ -436,13 +436,17 @@ En el móvil: partida a medias → cerrar → reabrir → continuar.
 
 ## 8. Checklist
 
-- [ ] **Fase 1** — Pantallas y configuración
-- [ ] **Fase 2** — Motor de temas y turnos
-- [ ] **Fase 3** — Banco de contenido (≥ 400, ≥ 120 por tipo)
-- [ ] **Fase 4** — Temporizador y modo fiesta
-- [ ] **Fase 5** — Persistencia y pulido
-- [ ] `APP_VERSION`, `CACHE` y `ARCHIVOS` actualizados
-- [ ] `<script>` de datos y lógica añadidos a `index.html`
+- [x] **Fase 1** — Pantallas y configuración
+- [x] **Fase 2** — Motor de temas y turnos (banco provisional de 30 temas,
+      la muestra de §9 de este plan)
+- [ ] **Fase 3** — Banco de contenido (≥ 400, ≥ 120 por tipo): pendiente,
+      igual que en los otros juegos, a cuatro manos con el usuario (§2.4
+      global)
+- [x] **Fase 4** — Temporizador y modo fiesta
+- [x] **Fase 5** — Persistencia y pulido (falta la prueba en dispositivo
+      real, que hace el usuario)
+- [x] `APP_VERSION`, `CACHE` y `ARCHIVOS` actualizados
+- [x] `<script>` de datos y lógica añadidos a `index.html`
 
 ---
 

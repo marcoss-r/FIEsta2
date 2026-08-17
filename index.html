@@ -292,6 +292,67 @@
       </div>
     </section>
 
+    <section class="pantalla" data-pantalla="dm-config">
+      <button type="button" class="boton-volver" data-volver="fiesta" aria-label="Volver al inicio">←</button>
+      <h1>Dos mentiras y una verdad</h1>
+      <div class="stepper" id="dm-stepper">
+        <button type="button" class="stepper-btn" data-accion="menos" aria-label="Menos jugadores">−</button>
+        <span class="stepper-valor"></span>
+        <button type="button" class="stepper-btn" data-accion="mas" aria-label="Más jugadores">+</button>
+      </div>
+      <div class="lista-scroll" id="dm-nombres"></div>
+      <div class="selector-niveles" id="dm-niveles"></div>
+      <div class="fila-switch">
+        <span>Temporizador de 60 s</span>
+        <div id="dm-timer-switch"></div>
+      </div>
+      <div class="fila-switch">
+        <span>Modo fiesta</span>
+        <div id="dm-fiesta"></div>
+      </div>
+      <p class="error" id="dm-error"></p>
+      <div class="fila-botones">
+        <button type="button" class="secundario" id="dm-btn-continuar" hidden>Continuar partida</button>
+        <button type="button" id="dm-btn-empezar">Empezar</button>
+      </div>
+    </section>
+
+    <section class="pantalla" data-pantalla="dm-turno">
+      <h1 id="dm-nombre-turno"></h1>
+      <p class="ayuda" id="dm-progreso"></p>
+      <button type="button" id="dm-btn-ver-tema">Ver mi tema</button>
+      <button type="button" class="secundario" id="dm-btn-terminar">Terminar</button>
+    </section>
+
+    <section class="pantalla" data-pantalla="dm-tema">
+      <div class="vista" id="dm-vista-pensar">
+        <p class="dm-tema-texto" id="dm-tema-texto"></p>
+        <p class="ayuda">Cuenta tres cosas sobre esto: <strong>dos mentira y una verdad</strong></p>
+        <p class="dm-temporizador" id="dm-temporizador" hidden></p>
+        <p class="anuncio" id="dm-aviso" hidden></p>
+        <div class="fila-botones">
+          <button type="button" class="secundario" id="dm-btn-otro-tema">Otro tema 🔄</button>
+          <button type="button" id="dm-btn-listo">Ya lo tengo</button>
+        </div>
+      </div>
+      <div class="vista" id="dm-vista-contar" hidden>
+        <p class="dm-tema-eco" id="dm-tema-eco"></p>
+        <p class="ayuda" id="dm-instrucciones"></p>
+        <p class="anuncio" id="dm-castigo" hidden></p>
+        <button type="button" id="dm-btn-siguiente">Siguiente jugador</button>
+        <button type="button" class="secundario" id="dm-btn-terminar-2">Terminar</button>
+      </div>
+    </section>
+
+    <section class="pantalla" data-pantalla="dm-fin">
+      <h1>¡Partida terminada!</h1>
+      <p id="dm-resumen"></p>
+      <div class="fila-botones">
+        <button type="button" class="secundario" id="dm-btn-otra-partida">Otra partida</button>
+        <button type="button" id="dm-btn-hub">Volver al inicio</button>
+      </div>
+    </section>
+
     <!-- Aviso de tono (§7.4): overlay GLOBAL, fuera de cualquier .pantalla
          para poder mostrarse encima de cualquier juego (si viviera dentro de
          una .pantalla, heredaría su opacity/visibility cuando esa pantalla no
@@ -325,11 +386,13 @@
   <script src="data/quienmas/preguntas.js"></script>
   <script src="data/verdadreto/verdades.js"></script>
   <script src="data/verdadreto/retos.js"></script>
+  <script src="data/dosmentiras/temas.js"></script>
 
   <!-- 3. Lógica de cada juego -->
   <script src="js/yonunca/main.js"></script>
   <script src="js/quienmas/main.js"></script>
   <script src="js/verdadreto/main.js"></script>
+  <script src="js/dosmentiras/main.js"></script>
 
   <!-- 4. Arranque: SIEMPRE el último (es quien muestra el hub) -->
   <script src="js/nucleo/arranque.js"></script>
