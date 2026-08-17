@@ -65,7 +65,7 @@ hablando.
 | **Niveles de intensidad** | Los tres del núcleo, multi-selección, por defecto suave + picante. |
 | **Modo fiesta** | Interruptor global del núcleo. Con él activo, en la sub-vista *contar* se muestra un castigo concreto: «🍻 Quien falle: **…** · Si no acierta nadie, bebe el grupo». |
 | **Datos** | Un solo banco `DM_TEMAS` en `data/dosmentiras/temas.js`, con dos `tipo`: **`tema`** (ámbito abierto: «Tus viajes») y **`arranque`** (frase ya empezada, más dirigida). |
-| **Volumen** | **≥ 400 temas**, con los dos tipos representados (**mínimo 120 de cada**). Reparto orientativo: ~40 % suave, ~40 % picante, ~20 % extremo. |
+| **Volumen** | ~~≥ 400 temas (mínimo 120 de cada tipo)~~. Ajustado a petición del usuario (400 eran muchos): **160 temas, 80 de cada tipo** (32 suave + 32 picante + 16 extremo en cada uno, ~40 %/40 %/20 %). Los temas deben ser **amplios**: da igual el tipo, tienen que dar pie a inventar dos mentiras y recordar una verdad con facilidad, nunca exigir un recuerdo concreto y difícil de fabricar. |
 | **Qué hace la app** | Dar el tema, ordenar los turnos, contar los cambios, cronometrar (si se pide) y guardar la partida. |
 | **Qué NO hace la app** | ❌ No recoge las tres frases, ❌ no gestiona la votación, ❌ no guarda cuál era la verdad, ❌ no hay puntos ni ganador. Todo eso se habla en voz alta. |
 | **Turnos** | Rotación **en orden**, sin límite de rondas. |
@@ -336,22 +336,27 @@ demasiado abiertos.
 
 ---
 
-### Fase 3 — Banco de contenido (≥ 400)
+### Fase 3 — Banco de contenido (160, 80 de cada tipo)
 
-🎯 Contenido definitivo con los dos tipos bien representados.
+🎯 Contenido definitivo con los dos tipos bien representados. Objetivo
+reducido de ≥ 400 a **160** a petición del usuario: con temas suficientemente
+amplios, 400 eran muchos más de los necesarios.
 
 🛠️ A construir
 - `data/dosmentiras/temas.json` (fuente) y `temas.js` (generado).
-- `data/dosmentiras/agregar.py`: pregunta texto, tipo y nivel; valida el tipo y
+- `data/dosmentiras/agregar.py`: pregunta tipo, texto y nivel; valida el tipo y
   el nivel; **avisa si un `tema` acaba en punto o pasa de ~40 caracteres** (señal
   de que en realidad es un `arranque`); evita duplicados; regenera el `.js`.
 - Contenido a cuatro manos (§2.4 global): tanda de 30–50, validar tono, producir.
 
 ✅ Aceptación
-- ≥ 400 temas, ≥ 120 de cada tipo, reparto ~40/40/20 por nivel.
+- **160 temas, 80 de cada tipo**, reparto 32/32/16 (~40 %/40 %/20 %) por nivel
+  dentro de cada tipo.
 - Todos los `tema` son ámbitos cortos; todos los `arranque` son frases completas.
-- Ningún tema exige tener una vida concreta («Tus hijos», «Tu divorcio» solo en
-  niveles altos y con alternativa: mejor «La familia»).
+- Todos los temas son **amplios**: dan pie a inventar dos mentiras y recordar
+  una verdad con facilidad, sin exigir un recuerdo concreto y difícil de
+  fabricar. Ningún tema exige tener una vida concreta («Tus hijos», «Tu
+  divorcio» solo en niveles altos y con alternativa: mejor «La familia»).
 
 🔍 Qué debe probar el usuario
 Jugar con solo «suave» y comprobar que a nadie se le queda cara de «yo de esto no
@@ -439,9 +444,11 @@ En el móvil: partida a medias → cerrar → reabrir → continuar.
 - [x] **Fase 1** — Pantallas y configuración
 - [x] **Fase 2** — Motor de temas y turnos (banco provisional de 30 temas,
       la muestra de §9 de este plan)
-- [ ] **Fase 3** — Banco de contenido (≥ 400, ≥ 120 por tipo): pendiente,
-      igual que en los otros juegos, a cuatro manos con el usuario (§2.4
-      global)
+- [x] **Fase 3** — Banco de contenido: **160 temas** (80 `tema` + 80
+      `arranque`, 32/32/16 por nivel en cada tipo), objetivo reducido de
+      ≥ 400 a 160 a petición del usuario y con temas amplios para poder
+      inventar y recordar con facilidad (`data/dosmentiras/temas.json` +
+      `.js` generado + `agregar.py`)
 - [x] **Fase 4** — Temporizador y modo fiesta
 - [x] **Fase 5** — Persistencia y pulido (falta la prueba en dispositivo
       real, que hace el usuario)

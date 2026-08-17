@@ -48,15 +48,18 @@ principio a fin, cada uno con su banco de contenido **provisional**
   contenido» en el plan del juego, `data/verdadreto/verdades.json` +
   `retos.json` + `.js` generados + `agregar.py`), pendiente de que el
   usuario lo revise.
-- **«Dos mentiras y una verdad»** (🚧 Fases 1, 2, 4 y 5 hechas) — la app da
-  el **tema** (o la frase ya empezada, tipo `arranque`) para que nadie se
-  quede en blanco; el tema se ve a la vista de todo el grupo, «Otro tema»
-  hasta 2 veces por turno sin castigo, temporizador opcional de 60 s (propio
-  del juego, no confundir con el modo fiesta) que al agotarse pasa solo a la
+- **«Dos mentiras y una verdad»** (✅ Fases 1-5 completas) — la app da el
+  **tema** (o la frase ya empezada, tipo `arranque`) para que nadie se quede
+  en blanco; el tema se ve a la vista de todo el grupo, «Otro tema» hasta 2
+  veces por turno sin castigo, temporizador opcional de 60 s (propio del
+  juego, no confundir con el modo fiesta) que al agotarse pasa solo a la
   vista de contar, y castigo (`castigoAlAzar()`) si el modo fiesta está
-  activo. Banco **provisional** de 30 temas (la muestra del plan);
-  `data/dosmentiras/temas.js`, pendiente el banco definitivo de ≥ 400 (Fase
-  3, `md/PLAN_DOS_MENTIRAS.md`).
+  activo. Banco de **160 temas** (80 `tema` + 80 `arranque`, 32/32/16 por
+  nivel en cada tipo; objetivo reducido de ≥ 400 a 160 a petición del
+  usuario, con temas **amplios** para poder inventar mentiras y recordar
+  verdades con facilidad), `data/dosmentiras/temas.json` + `.js` generado +
+  `agregar.py` (`md/PLAN_DOS_MENTIRAS.md`), pendiente de que el usuario lo
+  pruebe y lo revise.
 
 La tarjeta del hub que aún no lleva a ningún sitio es El Impostor: se
 implementa en la fase 8.
@@ -103,9 +106,9 @@ Cada juego guardará su banco en `data/<juego>/` como un `.json` (fuente) + un
 alta entradas desde consola, igual que en FIEsta 1. `data/yonunca/` ya sigue
 este patrón completo: `frases.json` (fuente, 674 entradas) + `frases.js`
 (generado) + `agregar.py` (da de alta frases nuevas y regenera el `.js`; nunca
-se edita `frases.js` a mano). `data/quienmas/` sigue ahora el mismo patrón:
-`preguntas.json` (fuente, 400 entradas) + `preguntas.js` (generado) +
-`agregar.py`. El resto de carpetas de juego siguen vacías.
+se edita `frases.js` a mano). `data/quienmas/` (570 entradas),
+`data/verdadreto/` (651 verdades + 360 retos) y `data/dosmentiras/` (160
+temas) siguen el mismo patrón. El resto de carpetas de juego siguen vacías.
 
 ## Tecnología
 
