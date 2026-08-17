@@ -608,9 +608,10 @@ button.secundario:hover {
    Quién es más… (qm) — ver md/PLAN_QUIEN_ES_MAS.md §4.3
    ========================================================== */
 
-/* Chips de tipo de pregunta: misma pinta que .chip-nivel del núcleo (§7.4),
-   pero con su propio namespace porque el filtro de tipo es propio de este
-   juego, no del núcleo. */
+/* Chips de nivel y de modo, propios de este juego: misma pinta que
+   .chip-nivel del núcleo (§7.4), pero con su propio namespace porque qm no
+   usa los tres niveles estándar (solo Normal/Picante, ver
+   md/PLAN_QUIEN_ES_MAS.md) ni tiene equivalente de "modo" en el núcleo. */
 .qm-chips {
   display: flex;
   gap: 0.5rem;

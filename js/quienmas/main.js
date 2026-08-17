@@ -18,23 +18,32 @@ const QM_MODOS = [
 // «primero» y «nunca» se fusionaron dentro de «probable» (ver
 // md/PLAN_QUIEN_ES_MAS.md): sus preguntas ahora empiezan por «sea el primero
 // en…» o «nunca…» dentro del propio texto.
+// El tipo ya NO se elige de cara al usuario (ver §2 del plan, "sin
+// separación probable/adjetivo"): se mantiene en los datos solo para que la
+// app sepa qué encabezado poner. Por eso ya no hay chips de tipo ni
+// `qmEstado.tipos`: el banco filtrado siempre incluye los dos tipos.
 const QM_ENCABEZADOS = {
   probable: "¿Quién es más probable que…",
   adjetivo: "¿Quién es más…",
 };
 
-// Filtro de tipo, propio de este juego (a diferencia del de nivel, que es del
-// núcleo): mismo patrón de chips multi-selección con mínimo uno activo.
-const QM_TIPOS = [
-  { id: "probable", nombre: "Probable" },
-  { id: "adjetivo", nombre: "Adjetivo" },
+// Niveles propios de este juego (a diferencia de la mayoría de juegos, que
+// usan los tres niveles del núcleo): solo dos, porque aquí "picante" agrupa
+// todo lo relacionado con pareja/sexo/infidelidades/drogas/alcohol/tabaco/
+// adicciones/racismo/machismo/homofobia/orientación sexual, y "normal" el
+// resto (ver md/PLAN_QUIEN_ES_MAS.md). Mismo patrón de chips multi-selección
+// con mínimo uno activo que el selector de niveles del núcleo, pero con su
+// propio namespace porque el conjunto de niveles no es el estándar.
+const QM_NIVELES = [
+  { id: "normal", nombre: "Normal", emoji: "🙂" },
+  { id: "picante", nombre: "Picante", emoji: "🌶️" },
 ];
+const QM_NIVELES_POR_DEFECTO = ["normal"];
 
 // Todo el estado de la partida vive aquí.
 const qmEstado = {
   nombres: [],
   niveles: [],
-  tipos: [],
   modo: "normal", // "normal" | "parejas"
   indiceLector: 0,
   preguntaActual: null,
@@ -58,21 +67,24 @@ const qmEstado = {
 // al cargar la página y se reutilizan en cada partida.
 let qmConfigJugadores = null;
 let qmSelectorNiveles = null;
-let qmSelectorTipos = null;
 let qmSelectorModo = null;
 
-function qmMontarSelectorTipos(contenedor, alCambiar) {
-  let elegidos = QM_TIPOS.map((tipo) => tipo.id); // los cuatro activos por defecto
+// Chips de nivel propios de qm (§7.4 del núcleo, pero con QM_NIVELES en vez
+// de los tres niveles estándar): al activar "picante" por primera vez se
+// avisa del tono, igual que hace el núcleo al activar "Salseo", porque aquí
+// es el nivel que agrupa el contenido más fuerte.
+function qmMontarSelectorNiveles(contenedor, alCambiar) {
+  let elegidos = QM_NIVELES_POR_DEFECTO.slice();
 
   function render() {
     contenedor.innerHTML = "";
-    QM_TIPOS.forEach((tipo) => {
+    QM_NIVELES.forEach((nivel) => {
       const chip = document.createElement("button");
       chip.type = "button";
-      chip.className = "qm-chip" + (elegidos.includes(tipo.id) ? " activo" : "");
-      chip.dataset.tipo = tipo.id;
-      chip.textContent = tipo.nombre;
-      chip.addEventListener("click", () => alternar(tipo.id));
+      chip.className = "qm-chip" + (elegidos.includes(nivel.id) ? " activo" : "");
+      chip.dataset.nivel = nivel.id;
+      chip.textContent = `${nivel.emoji} ${nivel.nombre}`;
+      chip.addEventListener("click", () => alternar(nivel.id));
       contenedor.appendChild(chip);
     });
   }
@@ -80,9 +92,10 @@ function qmMontarSelectorTipos(contenedor, alCambiar) {
   function alternar(id) {
     if (elegidos.includes(id)) {
       if (elegidos.length === 1) return; // mínimo uno activo
-      elegidos = elegidos.filter((t) => t !== id);
+      elegidos = elegidos.filter((n) => n !== id);
     } else {
       elegidos = elegidos.concat(id);
+      if (id === "picante") mostrarAvisoTonoSiPrimeraVez();
     }
     render();
     alCambiar(elegidos.slice());
@@ -91,7 +104,7 @@ function qmMontarSelectorTipos(contenedor, alCambiar) {
   render();
   alCambiar(elegidos.slice());
 
-  return { obtenerTipos: () => elegidos.slice() };
+  return { obtenerNiveles: () => elegidos.slice() };
 }
 
 function qmMontarSelectorModo(contenedor, alCambiar) {
@@ -121,24 +134,23 @@ function qmMontarSelectorModo(contenedor, alCambiar) {
   return { obtenerModo: () => elegido };
 }
 
-// Filtra por nivel (núcleo) y por tipo (chips propios), y descarta las
+// Filtra por nivel (chips propios de qm, ver QM_NIVELES) y descarta las
 // preguntas cuyo {otro}/{otro2} no puede resolverse con los "disponibles"
 // que pase cada modo: el modo normal excluye al lector (nombres.length - 1),
 // el modo parejas no excluye a nadie (nombres.length), porque ahí nadie lee
-// para sí mismo (§10.4 del plan).
+// para sí mismo (§10.4 del plan). El tipo ya no se filtra: siempre entran
+// los dos (probable y adjetivo), el tipo solo decide el encabezado.
 function qmFiltrarBanco(disponibles) {
   const porNivel = filtrarPorNivel(QM_PREGUNTAS, qmEstado.niveles);
-  const porTipo = porNivel.filter((pregunta) => qmEstado.tipos.includes(pregunta.tipo));
-  return porTipo.filter((pregunta) => otrosNecesarios(pregunta.texto) <= disponibles);
+  return porNivel.filter((pregunta) => otrosNecesarios(pregunta.texto) <= disponibles);
 }
 
 // Prepara el repartidor con el banco ya filtrado. Devuelve false (y muestra
-// el error) si la combinación de nivel y tipo deja el banco vacío.
+// el error) si el nivel elegido deja el banco vacío.
 function qmIniciarMotor() {
   const banco = qmFiltrarBanco(qmEstado.nombres.length - 1);
   if (banco.length === 0) {
-    document.getElementById("qm-error").textContent =
-      "No hay preguntas para esta combinación de nivel y tipo.";
+    document.getElementById("qm-error").textContent = "No hay preguntas para este nivel.";
     return false;
   }
   qmEstado.repartidor = crearRepartidor(banco);
@@ -209,8 +221,7 @@ function qmParejaActual() {
 function qmIniciarMotorParejas() {
   const banco = qmFiltrarBanco(qmEstado.nombres.length);
   if (banco.length === 0) {
-    document.getElementById("qm-error").textContent =
-      "No hay preguntas para esta combinación de nivel y tipo.";
+    document.getElementById("qm-error").textContent = "No hay preguntas para este nivel.";
     return false;
   }
   qmEstado.parejas.repartidor = crearRepartidor(banco);
@@ -356,7 +367,6 @@ function qmGuardar() {
   guardarJSON(QM_CLAVE_GUARDADO, {
     nombres: qmEstado.nombres,
     niveles: qmEstado.niveles,
-    tipos: qmEstado.tipos,
     modo: qmEstado.modo,
     indiceLector: qmEstado.indiceLector,
     contador: qmEstado.contador,
@@ -386,7 +396,6 @@ function qmEmpezarPartida() {
 
   qmEstado.nombres = nombres;
   qmEstado.niveles = qmSelectorNiveles.obtenerNiveles();
-  qmEstado.tipos = qmSelectorTipos.obtenerTipos();
   qmEstado.modo = qmSelectorModo.obtenerModo();
 
   if (qmEstado.modo === "parejas") {
@@ -428,14 +437,12 @@ function qmReanudar() {
 
   qmEstado.nombres = guardado.nombres;
   qmEstado.niveles = guardado.niveles;
-  qmEstado.tipos = guardado.tipos;
   qmEstado.modo = guardado.modo || "normal";
 
   if (qmEstado.modo === "parejas" && guardado.parejas) {
     const banco = qmFiltrarBanco(qmEstado.nombres.length);
     if (banco.length === 0) {
-      document.getElementById("qm-error").textContent =
-        "No hay preguntas para esta combinación de nivel y tipo.";
+      document.getElementById("qm-error").textContent = "No hay preguntas para este nivel.";
       mostrarPantalla("qm-config");
       return;
     }
@@ -491,8 +498,7 @@ document.addEventListener("DOMContentLoaded", () => {
     alCambiar: () => (document.getElementById("qm-error").textContent = ""),
   });
 
-  qmSelectorNiveles = montarSelectorNiveles(document.getElementById("qm-niveles"), () => {});
-  qmSelectorTipos = qmMontarSelectorTipos(document.getElementById("qm-tipos"), () => {});
+  qmSelectorNiveles = qmMontarSelectorNiveles(document.getElementById("qm-niveles"), () => {});
   qmSelectorModo = qmMontarSelectorModo(document.getElementById("qm-modo"), () => {});
 
   montarInterruptorModoFiesta(document.getElementById("qm-fiesta"), () => {});

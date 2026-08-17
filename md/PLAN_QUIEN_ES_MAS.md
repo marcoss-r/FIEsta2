@@ -39,16 +39,19 @@ La gracia está en que **no se limita a «¿quién es más probable que…?»**:
 mezcla **dos formatos** distintos, y el encabezado lo pone la app según el
 tipo de cada pregunta.
 
-> **Nota (reestructuración posterior):** el banco arrancó con **cuatro** tipos
-> (`probable`, `adjetivo`, `primero`, `nunca` — ver §6 y §9 más abajo, que
-> documentan esa versión original). El usuario pidió después fusionar
+> **Nota (reestructuraciones posteriores):** el banco arrancó con **cuatro**
+> tipos (`probable`, `adjetivo`, `primero`, `nunca` — ver §6 y §9 más abajo,
+> que documentan esa versión original). El usuario pidió después fusionar
 > `primero` y `nunca` dentro de `probable` (ambos se pueden reformular
 > siempre como «¿quién es más probable que…?»: «sea el primero en…» / «nunca
 > haya…») y depurar `adjetivo` para que solo queden adjetivos genuinos (las
 > construcciones «de + infinitivo» que eran en realidad «probable» disfrazado
-> también se fusionaron). Ver el bloque de checklist correspondiente en §8
-> para el detalle exacto. Esta tabla ya refleja el estado **actual**, de solo
-> dos tipos:
+> también se fusionaron). Más tarde pidió además que `tipo` dejara de
+> filtrarse de cara al usuario: ya **no hay chips de tipo** en `qm-config`,
+> el banco siempre incluye `probable` y `adjetivo` a la vez, y `tipo` se
+> queda solo como dato interno para que la app sepa qué encabezado poner (ver
+> el checklist de §8). Esta tabla sigue reflejando los dos tipos porque
+> siguen existiendo **en los datos**, aunque ya no sean un filtro visible:
 
 | `tipo` | Encabezado que pone la app | Ejemplo completo |
 |---|---|---|
@@ -68,18 +71,18 @@ quién lee. Todo lo demás se resuelve señalando y gritando.
 | **Nº de jugadores** | **2–12**. Por defecto 5 (es un juego que gana con grupo grande). |
 | **Pantallas** | `qm-config` → `qm-juego` → `qm-fin`. |
 | **Quién lee** | Rota **en orden**, una pregunta por jugador. Los jugadores sirven para eso y para rellenar `{otro}`. |
-| **Filtro por tipo** | ✅ **Sí.** En `qm-config` hay dos chips (uno por tipo: `probable`, `adjetivo`), multi-selección, **los dos activos por defecto**, **mínimo uno**. (Originalmente eran cuatro chips; `primero` y `nunca` se fusionaron en `probable`, ver nota de §2.) |
+| **Filtro por tipo** | ❌ **No, de cara al usuario.** `tipo` (`probable`/`adjetivo`) ya no tiene chip ni se filtra: el banco siempre incluye los dos. Se queda solo como dato interno para elegir el encabezado (`QM_ENCABEZADOS[tipo]`). (Originalmente eran cuatro chips, luego dos — ver nota de §2 — y ahora ninguno.) |
 | **Cuenta atrás «3, 2, 1… ¡señalad!»** | ❌ **No se implementa.** La pregunta aparece directamente: el ritmo lo marca quien lee, y una animación obligatoria entre pregunta y pregunta se hace pesada a las veinte rondas. |
-| **Niveles de intensidad** | Los tres del núcleo, multi-selección, por defecto suave + picante. Se combinan con el filtro de tipo (**los dos filtros a la vez**). |
+| **Niveles de intensidad** | ⚠️ **Propios de este juego, NO los tres del núcleo.** Solo dos: `normal` y `picante` (chips `QM_NIVELES` en `js/quienmas/main.js`, no `montarSelectorNiveles` del núcleo). `picante` agrupa todo lo relacionado con pareja, sexo, infidelidades, drogas, alcohol, tabaco, adicciones, racismo, machismo, homofobia y orientación sexual (venga del `suave`, `picante` o `extremo` originales); `normal` es el resto. Por defecto solo `normal` activo (mínimo uno); al activar `picante` por primera vez sale el mismo aviso de tono que el núcleo muestra al activar «Salseo» (`mostrarAvisoTonoSiPrimeraVez()`, reutilizada). |
 | **Modo fiesta** | Interruptor global del núcleo. Bajo la pregunta **siempre** aparece una línea con un castigo concreto para **el más señalado** (ampliación pedida por el usuario, ver más abajo). Con modo fiesta: `castigoPonderado({ beber: 0.9, prenda: 0.1 })`. Sin modo fiesta: `castigoPonderado({ otros: 1 })` (bailar, imitar…, nunca beber ni prenda). |
-| **Datos** | Un solo banco `QM_PREGUNTAS` en `data/quienmas/preguntas.js`. El **encabezado no va en los datos**: lo pone la app según el `tipo` (si no, se repetiría 400 veces). |
-| **Volumen** | **≥ 400 preguntas**, con los tipos representados. Reparto orientativo: ~40 % suave, ~40 % picante, ~20 % extremo. Tras la fusión de §2: **584 preguntas** (488 `probable` + 96 `adjetivo`, tras una edición manual posterior del usuario sobre `preguntas.js`). |
+| **Datos** | Un solo banco `QM_PREGUNTAS` en `data/quienmas/preguntas.js`. El **encabezado no va en los datos**: lo pone la app según el `tipo` (si no, se repetiría cientos de veces). |
+| **Volumen** | **584 preguntas** (488 `probable` + 96 `adjetivo` de cara a los datos; 343 `normal` + 241 `picante` de cara al jugador). Cifras tras dos rondas de fusión y una edición manual del usuario sobre `preguntas.js` — ver checklist de §8. |
 | **Qué hace la app** | Servir preguntas sin repetir, poner el encabezado, rotar al lector, resolver `{otro}` y guardar la partida. |
 | **Qué NO hace la app** | ❌ **No cuenta votos, no hay puntos, no hay podio, no hay ganador.** Se señala con el dedo y punto. |
 | **Persistencia** | Clave `"qm_partida"`. Se guarda al servir cada pregunta; se borra en `qm-fin`. |
 | **Reanudación y repetición** | Al reanudar, el repartidor se reinicia (puede repetirse alguna pregunta ya vista). |
 | **Fin de partida** | Botón **«Terminar»** siempre visible → `qm-fin` con resumen → hub. |
-| **Modo parejas** | Ampliación (ver §10): selector de modo en `qm-config` (chip único, no multi-selección). Reutiliza niveles, tipos y banco. |
+| **Modo parejas** | Ampliación (ver §10): selector de modo en `qm-config` (chip único, no multi-selección). Reutiliza niveles y banco (ya no hay tipos que reutilizar, ver arriba). |
 
 ---
 
@@ -96,9 +99,11 @@ hub ──► qm-config ──► qm-juego ──┐
 
 **1. `qm-config`**
 - Stepper `− N +` (2–12) + lista de nombres (núcleo, §7.3).
-- Chips de **niveles** (núcleo, §7.4).
-- Chips de **tipo de pregunta** (propios del juego): *Probable* · *Adjetivo*.
-  Los dos activos por defecto; **mínimo uno**.
+- Chips de **niveles**, propios del juego (`QM_NIVELES`, NO el selector de
+  niveles del núcleo): *Normal* · *Picante*. Solo *Normal* activo por
+  defecto; **mínimo uno**.
+- Sin chips de tipo: `probable`/`adjetivo` ya no se filtran de cara al
+  usuario (ver nota de §2 y decisión de §3).
 - Interruptor de modo fiesta.
 - Botones **«Empezar»** y, si hay guardado, **«Continuar partida»**.
 - Validación con `validarNombres()`; error en `#qm-error` (ámbar).
@@ -121,11 +126,11 @@ hub ──► qm-config ──► qm-juego ──┐
 ### 4.2 Modelo de datos
 
 ```js
-// Todo el estado del juego vive aquí.
+// Todo el estado del juego vive aquí. Ya no hay campo "tipos": el banco
+// siempre incluye probable + adjetivo, tipo solo decide el encabezado.
 const qmEstado = {
   nombres: [],
-  niveles: ["suave", "picante"],
-  tipos: ["probable", "adjetivo"],
+  niveles: ["normal"],
   indiceLector: 0,
   preguntaActual: null,   // { texto, tipo, nivel } tal cual del banco
   textoResuelto: "",      // con {otro} ya sustituido
@@ -140,6 +145,13 @@ const QM_ENCABEZADOS = {
   adjetivo: "¿Quién es más…",
 };
 
+// Niveles propios de qm (NO los tres del núcleo): ver decisión de §3.
+const QM_NIVELES = [
+  { id: "normal", nombre: "Normal", emoji: "🙂" },
+  { id: "picante", nombre: "Picante", emoji: "🌶️" },
+];
+const QM_NIVELES_POR_DEFECTO = ["normal"];
+
 const QM_MIN_JUGADORES = 2;
 const QM_MAX_JUGADORES = 12;
 const QM_CLAVE_GUARDADO = "qm_partida";
@@ -150,8 +162,8 @@ const QM_CLAVE_GUARDADO = "qm_partida";
 ```js
 // Generado desde preguntas.json — no editar a mano (usar agregar.py).
 const QM_PREGUNTAS = [
-  { texto: "acabe durmiendo en el sofá esta noche",        tipo: "probable", nivel: "suave" },
-  { texto: "dramático cuando se pone malo",                tipo: "adjetivo", nivel: "suave" },
+  { texto: "acabe durmiendo en el sofá esta noche",        tipo: "probable", nivel: "normal" },
+  { texto: "dramático cuando se pone malo",                tipo: "adjetivo", nivel: "normal" },
 ];
 ```
 
@@ -176,11 +188,18 @@ con su encabezado):
   no hace falta forzarlo a adjetivo).
 - `{otro}` es opcional y puede aparecer en cualquier tipo. **`{jugador}` no se
   usa en este banco**: aquí no hay «turno» de nadie, se pregunta por el grupo.
+- `nivel` → **`normal` o `picante`, propios de qm** (no los tres del núcleo).
+  Va a `picante` todo lo que toque pareja, sexo, infidelidades, drogas,
+  alcohol, tabaco, adicciones, racismo, machismo, homofobia u orientación
+  sexual; el resto va a `normal`. Es una decisión de contenido, no de tono:
+  una frase mundana sobre la pareja de alguien («llame papá o mamá a su
+  pareja») es `picante` igual que una explícita, porque el filtro separa por
+  **tema**, no por lo fuerte que suene.
 
 **Qué se guarda** (clave `"qm_partida"`):
 
 ```js
-{ nombres, niveles, tipos, indiceLector, contador }
+{ nombres, niveles, indiceLector, contador }
 ```
 
 ### 4.3 Pantallas y componentes
@@ -189,8 +208,7 @@ con su encabezado):
 |---|---|---|
 | `qm-config` | contenedor de nombres | `qm-nombres` |
 | | stepper | `qm-stepper` |
-| | chips de nivel | `qm-niveles` |
-| | chips de tipo | `qm-tipos` |
+| | chips de nivel (propios de qm) | `qm-niveles` |
 | | interruptor de modo fiesta | `qm-fiesta` |
 | | mensaje de validación | `qm-error` |
 | | botones | `qm-btn-empezar` · `qm-btn-continuar` |
@@ -204,17 +222,20 @@ con su encabezado):
 | `qm-fin` | resumen | `qm-resumen` |
 | | botones | `qm-btn-otra-partida` · `qm-btn-hub` |
 
-**Chips de tipo** (multi-selección, mínimo uno):
+**Chips de nivel** (propios de qm, multi-selección, mínimo uno, solo `normal`
+activo por defecto):
 
 ```html
-<div class="qm-chips" id="qm-tipos">
-  <button type="button" class="qm-chip activo" data-tipo="probable">Probable</button>
-  <button type="button" class="qm-chip activo" data-tipo="adjetivo">Adjetivo</button>
+<div class="qm-chips" id="qm-niveles">
+  <button type="button" class="qm-chip activo" data-nivel="normal">🙂 Normal</button>
+  <button type="button" class="qm-chip" data-nivel="picante">🌶️ Picante</button>
 </div>
 ```
 
 Al intentar desmarcar el último chip activo, **no se desmarca** (mismo
-comportamiento que los chips de nivel del núcleo).
+comportamiento que los chips de nivel del núcleo). Al activar `picante` por
+primera vez, se dispara `mostrarAvisoTonoSiPrimeraVez()` (núcleo), igual que
+hace el núcleo con «Salseo» en el resto de juegos.
 
 ⚠️ `#qm-castigo` usa `hidden`: añadir `.anuncio[hidden] { display: none; }` al CSS
 común si no está ya (§3.3 del plan global).
@@ -225,14 +246,23 @@ común si no está ya (§3.3 del plan global).
 |---|---|
 | `mostrarPantalla(nombre)` | Navegación. |
 | `montarConfigJugadores` · `validarNombres` | `qm-config`. |
-| `montarSelectorNiveles` · `filtrarPorNivel` | Chips de nivel y filtrado. |
+| `filtrarPorNivel` | Filtrado por nivel (la función es agnóstica al conjunto de niveles, así que sirve igual con `QM_NIVELES` que con los tres del núcleo). |
+| `mostrarAvisoTonoSiPrimeraVez` | Aviso de tono al activar `picante` (mismo mecanismo que «Salseo» en el resto de juegos). |
 | `montarInterruptorModoFiesta` · `modoFiestaActivo` · `castigoPonderado` | Línea de castigo bajo la pregunta (siempre visible; los pesos cambian según el modo fiesta). |
 | `crearRepartidor(banco)` | Servir preguntas sin repetir. |
 | `rellenarPlantilla` · `otrosNecesarios` | Resolver `{otro}` y descartar textos sin candidatos. |
 | `guardarJSON` · `cargarJSON` · `hayGuardado` · `borrarGuardado` | «Continuar partida». |
 
-**Propio de este juego:** los chips de tipo (`qm-chip`), el mapa
-`QM_ENCABEZADOS`, el filtrado combinado nivel + tipo y la rotación del lector.
+⚠️ **`montarSelectorNiveles` del núcleo NO se usa aquí**: ese componente
+está atado a los tres niveles globales (`NIVELES`/`NIVELES_POR_DEFECTO` de
+`js/nucleo/intensidad.js`), y qm necesita solo dos (`normal`/`picante`,
+`QM_NIVELES`). Por eso qm tiene su propio `qmMontarSelectorNiveles`, calcado
+del patrón del núcleo pero con su propia lista.
+
+**Propio de este juego:** el mapa `QM_ENCABEZADOS`, los chips de nivel
+propios (`qmMontarSelectorNiveles`, `QM_NIVELES`, `qm-chip`) y la rotación
+del lector. El tipo (`probable`/`adjetivo`) ya no tiene filtro ni chip: vive
+en los datos únicamente para elegir encabezado.
 
 ---
 
@@ -373,11 +403,10 @@ y continuando.
 
 - **2 jugadores**: el juego pierde gracia pero funciona; se descartan los textos
   con `{otro2}`.
-- **Un solo tipo + un solo nivel**: es la combinación que antes agota el banco.
-  Al agotarse, avisar y rebarajar.
-- **Combinación vacía** (p. ej. solo «extremo» + solo «adjetivo» y no hay
-  entradas): volver a `qm-config` con el error «No hay preguntas para esta
-  combinación de nivel y tipo».
+- **Un solo nivel activo** (`normal` o `picante`): es la combinación que antes
+  agota el banco. Al agotarse, avisar y rebarajar.
+- **Nivel vacío** (no debería pasar con el banco actual, pero por si acaso):
+  volver a `qm-config` con el error «No hay preguntas para este nivel».
 - **`{otro}`**: se resuelve excluyendo al **lector** (`{jugador}` = lector), para
   que quien lee no acabe preguntando por sí mismo.
 - **Textos con género en `adjetivo`**: es un problema de contenido, no de código;
@@ -479,6 +508,33 @@ y continuando.
       haberse equivocado») y 3 entradas `probable` con un «que» redundante
       al inicio («que mande un texto kilométrico…», «que mande un audio de
       10 minutos…», «que nunca cambie de tipo de persona que le gusta»).
+- [x] **«que» redundante corregido y niveles reducidos a normal/picante**
+      (pedido por el usuario): las 3 entradas `probable` señaladas arriba se
+      corrigieron quitando el «que» inicial. Los tres niveles
+      (`suave`/`picante`/`extremo`) se sustituyeron por dos, propios de qm:
+      `normal` y `picante`. `picante` (nuevo) = todo lo que ya era `picante`
+      + los `suave`/`extremo` sobre pareja, sexo, infidelidades, drogas,
+      alcohol, tabaco, adicciones, racismo, machismo, homofobia u
+      orientación sexual (18 entradas movidas, clasificadas por palabra
+      clave con revisión manual de falsos positivos — p. ej. «cita
+      importante» NO es picante, «se deje el sueldo en la lotería» SÍ).
+      `normal` (nuevo) = el resto. Resultado: 343 `normal` + 241 `picante`
+      (584 en total, sin cambio de volumen). El filtro de tipo
+      (`probable`/`adjetivo`) desaparece de cara al usuario: ya no hay chips
+      de tipo en `qm-config`, el banco siempre incluye los dos; `tipo` se
+      queda solo como dato interno para el encabezado. Cambios de código:
+      `QM_NIVELES`/`QM_NIVELES_POR_DEFECTO`/`qmMontarSelectorNiveles`
+      nuevos en `js/quienmas/main.js` (ya no se usa `montarSelectorNiveles`
+      del núcleo para este juego); `QM_TIPOS`/`qmMontarSelectorTipos`/
+      `qmEstado.tipos` eliminados; `#qm-tipos` eliminado de `index.html`,
+      `#qm-niveles` pasa de `.selector-niveles` a `.qm-chips`; `agregar.py`
+      con `NIVELES = ("normal", "picante")`. Por defecto solo `normal`
+      activo; activar `picante` dispara el aviso de tono (igual que
+      «Salseo» en el resto de juegos). Verificado con jsdom: 2 chips de
+      nivel, `picante` empieza desactivado, el aviso de tono aparece al
+      activarlo, sin «que que» duplicado, 300 turnos sin errores.
+      **Pendiente** (el usuario lo tratará después): los 3 duplicados
+      exactos siguen sin resolver.
 
 ---
 
@@ -541,7 +597,8 @@ y continuando.
 
 Pedido por el usuario después de cerrar las Fases 1-2-4. Es un **modo
 alternativo** dentro del mismo juego, no un juego nuevo: reutiliza jugadores,
-niveles, tipos y el banco `QM_PREGUNTAS` tal cual.
+niveles y el banco `QM_PREGUNTAS` tal cual (el tipo ya no es un filtro, ver
+§2 y §3).
 
 ### 10.1 Qué es
 
@@ -570,7 +627,7 @@ agotarlas. Al final (o al pulsar «Terminar» antes de tiempo) se muestra un
 | **Castigo** | Solo si **difieren**: con modo fiesta activo, `castigoAlAzar()` dirigido a la pareja («🍻 Ana y Luis: un trago»); con el modo apagado, solo un aviso neutro («Han diferido»), sin forzar nada (igual criterio que el resto del juego: sin modo fiesta, no hay consecuencia impuesta por la app). |
 | **Sin «lector»** | En este modo nadie lee por turno: se muestra «A vs B» en vez de «Lee NOMBRE». El hueco `{otro}`/`{otro2}` se resuelve con **todos** los jugadores como candidatos (no se excluye a nadie, a diferencia del modo normal que excluye al lector). |
 | **Repartidor** | Uno solo para **todo el torneo** de parejas (no uno por pareja), para no repetir preguntas entre parejas distintas hasta agotar el banco filtrado. |
-| **Filtros** | Reutiliza los mismos chips de nivel y de tipo de `qm-config`; el filtrado de banco también descarta textos cuyo `otrosNecesarios` no se pueda cubrir con `nombres.length` (ver §10.4). |
+| **Filtros** | Reutiliza los mismos chips de nivel de `qm-config` (ya no hay chips de tipo, ver §2/§3); el filtrado de banco también descarta textos cuyo `otrosNecesarios` no se pueda cubrir con `nombres.length` (ver §10.4). |
 | **Fin de partida** | Automático al agotar todas las combinaciones, o manual con **«Terminar»** (siempre visible en `qm-pareja`). Ambos caminos llevan a `qm-ranking`. |
 | **Qué entra en el ranking** | Solo las parejas que **completaron sus 8 rondas**. Si se pulsa «Terminar» a mitad de una pareja, esa pareja en curso se descarta (no se cuenta con datos parciales). |
 | **Orden del ranking** | Descendente por nº de coincidencias (de 8). Empates: se mantiene el orden en que terminaron, sin desempate especial. |
@@ -637,8 +694,8 @@ excluye).
 
 ### 10.6 Casos borde propios de este modo
 
-- **Combinación de nivel/tipo vacía**: mismo error que el modo normal, en
-  `#qm-error`, sin salir de `qm-config`.
+- **Nivel vacío**: mismo error que el modo normal, en `#qm-error`, sin salir
+  de `qm-config`.
 - **Banco agotado a mitad de torneo**: mismo aviso que el resto de juegos
   (`.anuncio`), rebaraja y sigue, nunca bloquea.
 - **`{otro}` puede nombrar a uno de los dos de la pareja actual**: no se

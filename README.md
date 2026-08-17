@@ -23,12 +23,16 @@ principio a fin, cada uno con su banco de contenido **provisional**
   guardable/reanudable, 674 frases en el banco (`data/yonunca/frases.json` +
   `frases.js` generado + `agregar.py`), mezclando confesiones («he...») e
   hipotéticas («probaría...»); pendiente de que el usuario lo recorte y afine.
-- **«Quién es más…»** (🚧 Fase 4 en curso) — chips de nivel y de tipo de
-  pregunta, encabezado dinámico, castigo por pregunta con modo fiesta, banco
-  de 584 preguntas en dos tipos, `probable` (488) y `adjetivo` (96); los
-  tipos originales `primero` y `nunca` se fusionaron dentro de `probable`
-  (`data/quienmas/preguntas.json` + `.js` generado + `agregar.py`, ver
-  `md/PLAN_QUIEN_ES_MAS.md`). Incluye además un **modo parejas**
+- **«Quién es más…»** (🚧 Fase 4 en curso) — chips de nivel propios del
+  juego (**Normal** / **Picante**, no los tres del núcleo: picante agrupa
+  pareja, sexo, infidelidades, drogas, alcohol, tabaco, adicciones, racismo,
+  machismo, homofobia y orientación sexual), encabezado dinámico, castigo
+  por pregunta con modo fiesta, banco de 584 preguntas (343 normal / 241
+  picante); el tipo de pregunta (`probable`/`adjetivo`, con los antiguos
+  `primero`/`nunca` fusionados en `probable`) ya no se filtra de cara al
+  usuario, solo decide el encabezado (`data/quienmas/preguntas.json` + `.js`
+  generado + `agregar.py`, ver `md/PLAN_QUIEN_ES_MAS.md`). Incluye además un
+  **modo parejas**
   (`md/PLAN_QUIEN_ES_MAS.md` §10): sortea una pareja de entre todos los
   jugadores y recorre, en orden aleatorio, todas las combinaciones posibles,
   8 preguntas cada una; si coinciden se libran, si difieren beben (con modo

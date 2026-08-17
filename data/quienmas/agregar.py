@@ -15,7 +15,7 @@ from pathlib import Path
 CARPETA = Path(__file__).resolve().parent
 RUTA_JSON = CARPETA / "preguntas.json"
 RUTA_JS = CARPETA / "preguntas.js"
-NIVELES = ("suave", "picante", "extremo")
+NIVELES = ("normal", "picante")
 TIPOS = ("probable", "adjetivo")
 
 
