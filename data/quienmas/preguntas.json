@@ -90,7 +90,7 @@
     "nivel": "normal"
   },
   {
-    "texto": "se olvide las llaves de casa",
+    "texto": "se olvide las llaves de casa dentro",
     "tipo": "probable",
     "nivel": "normal"
   },
@@ -240,11 +240,6 @@
     "nivel": "normal"
   },
   {
-    "texto": "reserve un plan y luego no tenga ganas de ir",
-    "tipo": "probable",
-    "nivel": "normal"
-  },
-  {
     "texto": "haga un plan para cancelarlo en el último momento",
     "tipo": "probable",
     "nivel": "normal"
@@ -303,11 +298,6 @@
     "texto": "no entienda un juego nuevo de cartas",
     "tipo": "probable",
     "nivel": "normal"
-  },
-  {
-    "texto": "lo deje con su pareja",
-    "tipo": "probable",
-    "nivel": "picante"
   },
   {
     "texto": "se moleste si su pareja sale de fiesta",
@@ -430,17 +420,7 @@
     "nivel": "picante"
   },
   {
-    "texto": "haya fingido estar soltero para ligar",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
     "texto": "se guarde fotos que no debería tener guardadas",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "haya tenido celos de alguien sin ningún motivo real",
     "tipo": "probable",
     "nivel": "picante"
   },
@@ -615,11 +595,6 @@
     "nivel": "normal"
   },
   {
-    "texto": "hable mal de alguien de esta sala a sus espaldas",
-    "tipo": "probable",
-    "nivel": "normal"
-  },
-  {
     "texto": "sepa un secreto de alguien de aquí que cambiaría cómo le ven los demás",
     "tipo": "probable",
     "nivel": "normal"
@@ -651,11 +626,6 @@
   },
   {
     "texto": "tenga más confianza con otro grupo de amigos que con este",
-    "tipo": "probable",
-    "nivel": "normal"
-  },
-  {
-    "texto": "haya guardado un secreto de alguien de aquí que le pesa de verdad",
     "tipo": "probable",
     "nivel": "normal"
   },
@@ -985,11 +955,6 @@
     "nivel": "picante"
   },
   {
-    "texto": "finja un orgasmo",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
     "texto": "cambie su orientación sexual",
     "tipo": "probable",
     "nivel": "picante"
@@ -1051,11 +1016,6 @@
   },
   {
     "texto": "se enamore de la persona más equivocada",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "sea la tercera persona en una relación",
     "tipo": "probable",
     "nivel": "picante"
   },
@@ -1200,11 +1160,6 @@
     "nivel": "normal"
   },
   {
-    "texto": "sienta que sobra en este grupo",
-    "tipo": "probable",
-    "nivel": "normal"
-  },
-  {
     "texto": "no defienda a alguien de aquí por no meterse en líos",
     "tipo": "probable",
     "nivel": "normal"
@@ -1276,11 +1231,6 @@
   },
   {
     "texto": "mienta sobre alguien de aquí",
-    "tipo": "probable",
-    "nivel": "normal"
-  },
-  {
-    "texto": "sea el primero en sentirse mal tras haberse equivocado",
     "tipo": "probable",
     "nivel": "normal"
   },
@@ -1755,11 +1705,6 @@
     "nivel": "normal"
   },
   {
-    "texto": "nunca haya sentido envidia de alguien de esta sala",
-    "tipo": "probable",
-    "nivel": "normal"
-  },
-  {
     "texto": "nunca hubiese conocido al resto",
     "tipo": "probable",
     "nivel": "normal"
@@ -1910,11 +1855,6 @@
     "nivel": "picante"
   },
   {
-    "texto": "dé celos a propósito para llamar la atención",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
     "texto": "sea capaz de ligar sin decir una palabra",
     "tipo": "probable",
     "nivel": "picante"
@@ -1946,11 +1886,6 @@
   },
   {
     "texto": "flirtee incluso estando pillado",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "guarde fotos comprometidas por si acaso",
     "tipo": "probable",
     "nivel": "picante"
   },
@@ -2631,11 +2566,6 @@
   },
   {
     "texto": "celoso sin motivo",
-    "tipo": "adjetivo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "posesivo con su pareja",
     "tipo": "adjetivo",
     "nivel": "picante"
   },

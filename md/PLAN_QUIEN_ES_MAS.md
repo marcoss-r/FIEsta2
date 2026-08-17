@@ -76,7 +76,7 @@ quién lee. Todo lo demás se resuelve señalando y gritando.
 | **Niveles de intensidad** | ⚠️ **Propios de este juego, NO los tres del núcleo.** Solo dos: `normal` y `picante` (chips `QM_NIVELES` en `js/quienmas/main.js`, no `montarSelectorNiveles` del núcleo). `picante` agrupa todo lo relacionado con pareja, sexo, infidelidades, drogas, alcohol, tabaco, adicciones, racismo, machismo, homofobia y orientación sexual (venga del `suave`, `picante` o `extremo` originales); `normal` es el resto. Por defecto solo `normal` activo (mínimo uno); al activar `picante` por primera vez sale el mismo aviso de tono que el núcleo muestra al activar «Salseo» (`mostrarAvisoTonoSiPrimeraVez()`, reutilizada). |
 | **Modo fiesta** | Interruptor global del núcleo. Bajo la pregunta **siempre** aparece una línea con un castigo concreto para **el más señalado** (ampliación pedida por el usuario, ver más abajo). Con modo fiesta: `castigoPonderado({ beber: 0.9, prenda: 0.1 })`. Sin modo fiesta: `castigoPonderado({ otros: 1 })` (bailar, imitar…, nunca beber ni prenda). |
 | **Datos** | Un solo banco `QM_PREGUNTAS` en `data/quienmas/preguntas.js`. El **encabezado no va en los datos**: lo pone la app según el `tipo` (si no, se repetiría cientos de veces). |
-| **Volumen** | **584 preguntas** (488 `probable` + 96 `adjetivo` de cara a los datos; 343 `normal` + 241 `picante` de cara al jugador). Cifras tras dos rondas de fusión y una edición manual del usuario sobre `preguntas.js` — ver checklist de §8. |
+| **Volumen** | **570 preguntas** (475 `probable` + 95 `adjetivo` de cara a los datos; 337 `normal` + 233 `picante` de cara al jugador). Cifras tras dos rondas de fusión, una edición manual del usuario sobre `preguntas.js` y una limpieza de duplicados/coincidencias — ver checklist de §8. |
 | **Qué hace la app** | Servir preguntas sin repetir, poner el encabezado, rotar al lector, resolver `{otro}` y guardar la partida. |
 | **Qué NO hace la app** | ❌ **No cuenta votos, no hay puntos, no hay podio, no hay ganador.** Se señala con el dedo y punto. |
 | **Persistencia** | Clave `"qm_partida"`. Se guarda al servir cada pregunta; se borra en `qm-fin`. |
@@ -533,8 +533,20 @@ y continuando.
       «Salseo» en el resto de juegos). Verificado con jsdom: 2 chips de
       nivel, `picante` empieza desactivado, el aviso de tono aparece al
       activarlo, sin «que que» duplicado, 300 turnos sin errores.
-      **Pendiente** (el usuario lo tratará después): los 3 duplicados
-      exactos siguen sin resolver.
+- [x] **Limpieza de duplicados y coincidencias** (pedido por el usuario):
+      se generó un listado de duplicados exactos y de entradas con el mismo
+      significado en otra redacción (detector de similitud léxica +
+      revisión manual completa del banco para cazar sinónimos sin
+      solapamiento de palabras, como «pase más de una semana sin ducharse»
+      / «se duche menos»), agrupado en pares numerados (`1a`/`1b`…) y
+      entregado al usuario para que eligiera qué borrar. El usuario pidió
+      eliminar 14 entradas (los 3 duplicados exactos + 11 coincidencias) y
+      modificar una («se olvide las llaves de casa» → «se olvide las llaves
+      de casa dentro», para diferenciarla de «pierda las llaves de casa»).
+      Resultado: **570 preguntas** (antes 584): 475 `probable` (277 normal +
+      198 picante) + 95 `adjetivo` (60 normal + 35 picante); 337 `normal` +
+      233 `picante` de cara al jugador. Verificado con jsdom: sin
+      duplicados exactos, 300 turnos sin repetirse, sin errores de consola.
 
 ---
 

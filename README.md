@@ -27,7 +27,7 @@ principio a fin, cada uno con su banco de contenido **provisional**
   juego (**Normal** / **Picante**, no los tres del núcleo: picante agrupa
   pareja, sexo, infidelidades, drogas, alcohol, tabaco, adicciones, racismo,
   machismo, homofobia y orientación sexual), encabezado dinámico, castigo
-  por pregunta con modo fiesta, banco de 584 preguntas (343 normal / 241
+  por pregunta con modo fiesta, banco de 570 preguntas (337 normal / 233
   picante); el tipo de pregunta (`probable`/`adjetivo`, con los antiguos
   `primero`/`nunca` fusionados en `probable`) ya no se filtra de cara al
   usuario, solo decide el encabezado (`data/quienmas/preguntas.json` + `.js`
