@@ -490,7 +490,6 @@ const QM_PREGUNTAS = [
   { texto: "pagase por los nudes de una persona que conoce", tipo: "probable", nivel: "picante" },
   { texto: "solo haya probado el sexo vanila", tipo: "probable", nivel: "picante" },
   { texto: "se de a la bebida tras una ruptura", tipo: "probable", nivel: "picante" },
- 
 
   // ── adjetivo
   { texto: "dramático", tipo: "adjetivo", nivel: "suave" },

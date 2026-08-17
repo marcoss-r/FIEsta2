@@ -73,7 +73,7 @@ quién lee. Todo lo demás se resuelve señalando y gritando.
 | **Niveles de intensidad** | Los tres del núcleo, multi-selección, por defecto suave + picante. Se combinan con el filtro de tipo (**los dos filtros a la vez**). |
 | **Modo fiesta** | Interruptor global del núcleo. Bajo la pregunta **siempre** aparece una línea con un castigo concreto para **el más señalado** (ampliación pedida por el usuario, ver más abajo). Con modo fiesta: `castigoPonderado({ beber: 0.9, prenda: 0.1 })`. Sin modo fiesta: `castigoPonderado({ otros: 1 })` (bailar, imitar…, nunca beber ni prenda). |
 | **Datos** | Un solo banco `QM_PREGUNTAS` en `data/quienmas/preguntas.js`. El **encabezado no va en los datos**: lo pone la app según el `tipo` (si no, se repetiría 400 veces). |
-| **Volumen** | **≥ 400 preguntas**, con los tipos representados. Reparto orientativo: ~40 % suave, ~40 % picante, ~20 % extremo. Tras la fusión de §2: **520 preguntas** (432 `probable` + 88 `adjetivo`). |
+| **Volumen** | **≥ 400 preguntas**, con los tipos representados. Reparto orientativo: ~40 % suave, ~40 % picante, ~20 % extremo. Tras la fusión de §2: **584 preguntas** (488 `probable` + 96 `adjetivo`, tras una edición manual posterior del usuario sobre `preguntas.js`). |
 | **Qué hace la app** | Servir preguntas sin repetir, poner el encabezado, rotar al lector, resolver `{otro}` y guardar la partida. |
 | **Qué NO hace la app** | ❌ **No cuenta votos, no hay puntos, no hay podio, no hay ganador.** Se señala con el dedo y punto. |
 | **Persistencia** | Clave `"qm_partida"`. Se guarda al servir cada pregunta; se borra en `qm-fin`. |
@@ -465,6 +465,20 @@ y continuando.
       - Verificado con jsdom: sin `{otro}` sin resolver, sin duplicados
         exactos, filtro por tipo funcionando con solo dos chips, 150 turnos
         seguidos sin errores de consola.
+- [x] **Sincronización tras edición manual del usuario** (el usuario editó
+      `preguntas.js` directamente en dos commits — «actualizar js quien mas»,
+      «Actulizar preguntas js de quienmas» — añadiendo, quitando y
+      reescribiendo preguntas a mano): `preguntas.json` se regeneró
+      parseando el `.js` (fuente de la verdad pasó a ser el `.js` en ese
+      momento), y `preguntas.js` se volvió a generar desde ese `.json` con
+      `agregar.py` para recuperar el formato canónico. Resultado: **584
+      preguntas** (488 `probable` + 96 `adjetivo`). Se detectaron y se
+      **dejaron sin tocar** (pendientes de que el usuario decida): 3
+      duplicados exactos («lo deje con su pareja», «hable mal de alguien de
+      esta sala a sus espaldas», «sea el primero en sentirse mal tras
+      haberse equivocado») y 3 entradas `probable` con un «que» redundante
+      al inicio («que mande un texto kilométrico…», «que mande un audio de
+      10 minutos…», «que nunca cambie de tipo de persona que le gusta»).
 
 ---
 

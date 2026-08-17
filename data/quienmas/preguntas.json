@@ -295,7 +295,57 @@
     "nivel": "suave"
   },
   {
+    "texto": "lea un libro de autoayuda",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "no entienda un juego nuevo de cartas",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "lo deje con su pareja",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "se moleste si su pareja sale de fiesta",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "tenga celosa a su pareja por alguien de este grupo",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "se moleste si su pareja queda a solas con alguien del sexo opuesto",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "espíe a su pareja a partir de la ubicación",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "oculte los cuernos de un amigo",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
     "texto": "tenga la casa hecha un desastre",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "acabe jubilado jugando a la petanca",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "se haga un retoque estético",
     "tipo": "probable",
     "nivel": "suave"
   },
@@ -735,42 +785,37 @@
     "nivel": "suave"
   },
   {
-    "texto": "simp",
-    "tipo": "probable",
-    "nivel": "suave"
-  },
-  {
     "texto": "sea el primero en perderse en una ciudad nueva",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "sea el primero en quedarse dormido en el cine",
+    "texto": "se duerma en el cine",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "sea el primero en pedir el postre antes que nadie",
+    "texto": "sea el primero en llamar al camarero para pedir",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "sea el primero en montar el karaoke en una reunión familiar",
+    "texto": "se ponga a cantar sin venir a cuento",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "sea el primero en quedarse dormido en una reunión familiar",
+    "texto": "saque un tema controvertido en una reunión familiar",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "sea el primero en proponer cambiar de planes a última hora",
+    "texto": "sea el primero en proponer planes por el grupo",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "sea el primero en perder el vuelo por llegar tarde",
+    "texto": "pierda un vuelo por llegar tarde",
     "tipo": "probable",
     "nivel": "suave"
   },
@@ -780,12 +825,7 @@
     "nivel": "suave"
   },
   {
-    "texto": "sea el primero en rendirse en un juego de mesa",
-    "tipo": "probable",
-    "nivel": "suave"
-  },
-  {
-    "texto": "sea el primero en quedarse sin batería y no darse cuenta",
+    "texto": "sea el primero en rendirse en un juego de mesa tras haber perdido",
     "tipo": "probable",
     "nivel": "suave"
   },
@@ -800,7 +840,7 @@
     "nivel": "suave"
   },
   {
-    "texto": "sea el primero en mandar el mensaje de buenos días al grupo",
+    "texto": "mande un mensaje de buenos días por el grupo",
     "tipo": "probable",
     "nivel": "suave"
   },
@@ -810,22 +850,17 @@
     "nivel": "suave"
   },
   {
-    "texto": "sea el primero en reírse en una foto de grupo arruinando la pose",
+    "texto": "sea al que no le convence una foto que se ha hecho con el grupo",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "sea el primero en dormirse viendo una peli",
+    "texto": "sea el primero en dormirse en una fiesta de pijamas",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "sea el primero en llegar tarde a una quedada",
-    "tipo": "probable",
-    "nivel": "suave"
-  },
-  {
-    "texto": "sea el primero en rendirse haciendo una manualidad complicada",
+    "texto": "se rinda haciendo una manualidad complicada",
     "tipo": "probable",
     "nivel": "suave"
   },
@@ -835,17 +870,17 @@
     "nivel": "suave"
   },
   {
-    "texto": "sea el primero en cancelar un plan por cansancio",
+    "texto": "se canse de un plan y se vaya a casa",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "sea el primero en pedir ayuda para montar un mueble",
+    "texto": "necesite ayuda para montar un mueble",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "sea el primero en hacer una locura por una apuesta tonta",
+    "texto": "haga una locura por una apuesta tonta",
     "tipo": "probable",
     "nivel": "suave"
   },
@@ -855,32 +890,27 @@
     "nivel": "suave"
   },
   {
-    "texto": "sea el primero en quejarse del tiempo",
+    "texto": "mire el tiempo el antes de hacer un plan",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "sea el primero en sugerir irse a dormir en una fiesta",
+    "texto": "sea el primero en irse de la discoteca",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "sea el primero en mandar una foto borrosa al grupo sin querer",
+    "texto": "mande una foto sin contexto al grupo",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "sea el primero en perder las llaves del coche",
+    "texto": "sea el primero en reconocer que ha hecho algo mal",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "sea el primero en reconocer que se ha perdido pidiendo indicaciones",
-    "tipo": "probable",
-    "nivel": "suave"
-  },
-  {
-    "texto": "sea el primero en hacer una broma que no sale bien",
+    "texto": "haga una broma que no haga reir a nadie",
     "tipo": "probable",
     "nivel": "suave"
   },
@@ -890,22 +920,22 @@
     "nivel": "suave"
   },
   {
-    "texto": "sea el primero en cambiar de opinión sobre un plan",
+    "texto": "intente modificar un plan existente para hacer algo que le interesa más",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "sea el primero en quedarse sin argumentos discutiendo por tonterías",
+    "texto": "sea el primero en empezar una discusión por una tontería",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "sea el primero en rendirse a mitad de una dieta",
+    "texto": "sea el primero en rendirse haciendo dieta",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "sea el primero en reírse de su propio chiste antes de contarlo",
+    "texto": "se ría de su propio chiste antes de contarlo",
     "tipo": "probable",
     "nivel": "suave"
   },
@@ -915,37 +945,37 @@
     "nivel": "suave"
   },
   {
-    "texto": "sea el primero en tirar la toalla montando algo de IKEA",
+    "texto": "vaya a IKEA únicamente a darse una vuelta y comer perritos",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "sea el primero en proponer volver a casa en una fiesta",
+    "texto": "sea el alma de la fiesta",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "sea el primero en subir una foto vergonzosa sin darse cuenta",
+    "texto": "suba una foto en redes en la que sale bastante mal",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "sea el primero en pedir el número de una tienda para reclamar algo",
+    "texto": "le pida el número de teléfono a alguien que le parezca atractivo",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "sea el primero en mandar un audio kilométrico sin necesidad",
+    "texto": "que mande un texto kilométrico por el grupo",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "sea el primero en confesar que ha tenido un rollo con alguien de este grupo",
+    "texto": "que mande un audio de 10 minutos por el grupo",
     "tipo": "probable",
-    "nivel": "picante"
+    "nivel": "suave"
   },
   {
-    "texto": "sea el primero en escribirle a un ex a las tantas de la noche",
+    "texto": "escriba a un ex a las tantas de la noche",
     "tipo": "probable",
     "nivel": "picante"
   },
@@ -955,37 +985,37 @@
     "nivel": "picante"
   },
   {
-    "texto": "sea el primero en confesar que finge orgasmos",
+    "texto": "finja un orgasmo",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "sea el primero en admitir que ha tenido dudas sobre su orientación",
+    "texto": "cambie su orientación sexual",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "sea el primero en reconocer que ha usado a alguien solo para sentirse deseado",
+    "texto": "use a alguien solo para sentirse deseado",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "sea el primero en confesar que tiene un tipo muy claro dentro de este grupo",
+    "texto": "que nunca cambie de tipo de persona que le gusta",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "sea el primero en admitir que ha comparado a su pareja con un ex en la intimidad",
+    "texto": "haya comparado a su pareja con un ex en la intimidad",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "sea el primero en reconocer que ha mentido sobre su número de parejas",
+    "texto": "mienta sobre el número de parejas que ha tenido",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "sea el primero en confesar que ha tenido fantasías con más de una persona presente",
+    "texto": "haya tenido fantasías con más de una persona presente",
     "tipo": "probable",
     "nivel": "picante"
   },
@@ -995,72 +1025,72 @@
     "nivel": "picante"
   },
   {
-    "texto": "sea el primero en reconocer que ha sentido más química con un amigo que con su pareja",
+    "texto": "sienta más química con un amigo que con su pareja",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "sea el primero en confesar que ha guardado fotos que no debería",
+    "texto": "reciba un nude no deseado",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "sea el primero en admitir que ha dado celos a propósito",
+    "texto": "de celos a su pareja a propósito",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "sea el primero en reconocer que ha tenido una relación abierta y no funcionó",
+    "texto": "sea el primero en quemarse en una relación abierta",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "sea el primero en confesar que ha fingido estar soltero para ligar",
+    "texto": "finja estar soltero para ligar",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "sea el primero en admitir que se ha enamorado de la persona equivocada más de una vez",
+    "texto": "se enamore de la persona más equivocada",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "sea el primero en reconocer que ha sido la tercera persona en una relación sin saberlo",
+    "texto": "sea la tercera persona en una relación",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "sea el primero en confesar que tiene un ex al que sigue stalkeando",
+    "texto": "vuelva con su ex",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "sea el primero en admitir que ha estado con alguien solo por despecho",
+    "texto": "esté con alguien solo por despecho",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "sea el primero en reconocer que ha jugado con los sentimientos de alguien a propósito",
+    "texto": "juegue con los sentimientos de alguien a propósito",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "sea el primero en confesar que ha sentido atracción por el mejor amigo de su pareja",
+    "texto": "sienta atracción por el mejor amigo de su pareja",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "sea el primero en admitir que ha mentido sobre estar enamorado",
+    "texto": "mienta sobre estar enamorado",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "sea el primero en reconocer que ha vuelto con un ex sabiendo que era mala idea",
+    "texto": "siga en una relación solo por compromiso y no por amor",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "sea el primero en confesar que ha tenido celos de una amistad de su pareja",
+    "texto": "tenga celos de una amistad de su pareja",
     "tipo": "probable",
     "nivel": "picante"
   },
@@ -1070,7 +1100,7 @@
     "nivel": "picante"
   },
   {
-    "texto": "sea el primero en reconocer que ha confundido deseo con amor",
+    "texto": "le guste más el sexo que hacer el amor",
     "tipo": "probable",
     "nivel": "picante"
   },
@@ -1080,232 +1110,262 @@
     "nivel": "picante"
   },
   {
-    "texto": "sea el primero en admitir que ha seguido tonteando después de tener pareja",
+    "texto": "admita que ha seguido tonteando aun con pareja",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "sea el primero en reconocer que ha idealizado a alguien solo por atracción física",
+    "texto": "idealice la personalidad de alguien solo por su atractivo físico",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "sea el primero en confesar que ha tenido pensamientos impuros en un mal momento",
+    "texto": "tenga pensamientos impuros en un mal momento",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "sea el primero en admitir que se ha arrepentido de una noche con alguien",
+    "texto": "se arrepienta de una noche con alguien",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "sea el primero en reconocer que ha usado la intimidad para reconciliarse en vez de hablar",
+    "texto": "eche un polvo de reconciliación en vez de hablar",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "sea el primero en confesar que ha tenido una relación a distancia con más dudas de las que admitía",
+    "texto": "dure menos en una relación a distancia",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "sea el primero en admitir que ha sido infiel sin llegar a nada físico",
+    "texto": "sea el primero en admitir que ha sido infiel",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "sea el primero en reconocer que ha tenido más contacto del debido con un ex",
+    "texto": "haya hablado a su ex teniendo pareja",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "sea el primero en confesar que ha sentido celos de alguien sin ningún derecho a sentirlos",
+    "texto": "se ponga celoso por algo sin fundamento",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "sea el primero en admitir que ha dejado que alguien se hiciera ilusiones a propósito",
+    "texto": "tenga celos de la pareja de un amigo",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "sea el primero en reconocer que ha tenido dudas justo antes de un compromiso ajeno",
+    "texto": "se abra una cuenta de OnlyFans",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "sea el primero en confesar que ha comparado físicamente a dos personas de este grupo",
+    "texto": "venda fotos de sus pies en internet",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "sea el primero en confesar quién de este grupo le cae peor de lo que aparenta",
+    "texto": "ligue nada más entrar a la discoteca",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "se grabe teniendo sexo",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "use juguetes en la cama",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "tenga sexo anal",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "oculte que alguien de aquí le cae peor de lo que aparenta",
     "tipo": "probable",
     "nivel": "extremo"
   },
   {
-    "texto": "sea el primero en reconocer que ha hablado mal de alguien de esta sala a sus espaldas",
+    "texto": "hable mal de alguien de esta sala a sus espaldas",
     "tipo": "probable",
     "nivel": "extremo"
   },
   {
-    "texto": "sea el primero en admitir que ha comparado a dos personas de este grupo sin decirlo",
+    "texto": "sienta que sobra en este grupo",
     "tipo": "probable",
     "nivel": "extremo"
   },
   {
-    "texto": "sea el primero en confesar que ha sentido que sobra en este grupo",
+    "texto": "no defienda a alguien de aquí por no meterse en líos",
     "tipo": "probable",
     "nivel": "extremo"
   },
   {
-    "texto": "sea el primero en reconocer que ha dejado de defender a alguien de aquí por no meterse",
+    "texto": "sea el primero en salir en defensa de alguien de aquí",
     "tipo": "probable",
     "nivel": "extremo"
   },
   {
-    "texto": "sea el primero en admitir que desconfía de alguien de esta sala",
+    "texto": "desconfíe de las personas de esta sala",
     "tipo": "probable",
     "nivel": "extremo"
   },
   {
-    "texto": "sea el primero en confesar que ha compartido un secreto de alguien de aquí con otra persona",
+    "texto": "comparta un secreto de alguien de aquí con otra persona",
     "tipo": "probable",
     "nivel": "extremo"
   },
   {
-    "texto": "sea el primero en reconocer que se alegró de un tropiezo de alguien de este grupo",
+    "texto": "se alegre de un tropiezo de alguien de este grupo",
     "tipo": "probable",
     "nivel": "extremo"
   },
   {
-    "texto": "sea el primero en admitir que ha fingido cercanía con alguien de aquí",
+    "texto": "se acerque más a alguien únicamente por interés",
     "tipo": "probable",
     "nivel": "extremo"
   },
   {
-    "texto": "sea el primero en confesar quién de este grupo cree que finge más",
+    "texto": "esté aquí solo por interés",
     "tipo": "probable",
     "nivel": "extremo"
   },
   {
-    "texto": "sea el primero en reconocer que ha pensado en alejarse de este grupo alguna vez",
+    "texto": "finja algo para ser el centro de atención",
     "tipo": "probable",
     "nivel": "extremo"
   },
   {
-    "texto": "sea el primero en admitir que tiene más confianza con alguien de fuera que con este grupo",
+    "texto": "se aleje del grupo por una pareja",
     "tipo": "probable",
     "nivel": "extremo"
   },
   {
-    "texto": "sea el primero en confesar que ha juzgado a alguien de esta sala sin conocer toda la historia",
+    "texto": "juzgue a alguien de aquí por algo que sucedió antes de conocerse",
     "tipo": "probable",
     "nivel": "extremo"
   },
   {
-    "texto": "sea el primero en reconocer que ha guardado un secreto de alguien de aquí que le pesa",
+    "texto": "le pesen los secretos que guarda de los demás",
     "tipo": "probable",
     "nivel": "extremo"
   },
   {
-    "texto": "sea el primero en admitir que ha antepuesto su comodidad al bienestar de alguien de este grupo",
+    "texto": "anteponga su comodidad al bienestar de alguien de este grupo",
     "tipo": "probable",
     "nivel": "extremo"
   },
   {
-    "texto": "sea el primero en confesar cuál cree que es la amistad más frágil de este grupo",
+    "texto": "sea el primero en hablar mal de alguien de aquí tras una pelea",
     "tipo": "probable",
     "nivel": "extremo"
   },
   {
-    "texto": "sea el primero en reconocer que ha sentido celos de alguien de esta sala",
+    "texto": "se ponga celoso en cuanto a amistades",
     "tipo": "probable",
     "nivel": "extremo"
   },
   {
-    "texto": "sea el primero en admitir que ha mentido sobre lo que piensa de alguien de aquí",
+    "texto": "mienta sobre alguien de aquí",
     "tipo": "probable",
     "nivel": "extremo"
   },
   {
-    "texto": "sea el primero en confesar que ha dejado que alguien de este grupo cargue con una culpa que no era suya",
+    "texto": "sea el primero en sentirse mal tras haberse equivocado",
     "tipo": "probable",
     "nivel": "extremo"
   },
   {
-    "texto": "sea el primero en reconocer que no confía del todo en alguien que está en esta sala",
+    "texto": "sea el primero en sentirse mal tras haberse equivocado",
     "tipo": "probable",
     "nivel": "extremo"
   },
   {
-    "texto": "nunca haya ido a una fiesta sin saber de quién era",
+    "texto": "ponerle la cruz a alguien por una pelea",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "se quede en casa en vez de salir de fiesta",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "nunca haya cantado en un karaoke delante de desconocidos",
+    "texto": "nunca haya salido de fiesta sin beber",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "nunca se haya ido de un sitio sin despedirse de nadie",
+    "texto": "se niegue a cantar en un karaoke",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "nunca haya dormido con la ropa puesta por accidente",
+    "texto": "se vaya de un sitio sin despedirse de nadie",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "nunca haya mandado un audio pensando que era mensaje de texto",
+    "texto": "duerma con ropa de calle puesta por pereza",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "nunca se haya quedado sin cobertura en el peor momento",
+    "texto": "sea el que más tarda en responder un mensaje",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "nunca haya llorado viendo un anuncio de la tele",
+    "texto": "nunca coja el teléfono cuando recibe una llamada",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "nunca haya bailado solo en casa como si nadie mirara",
+    "texto": "nunca haya llorado en una discusión",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "nunca se haya reído tanto que le ha dolido la tripa",
+    "texto": "baile solo en casa cuando nadie mira",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "nunca haya perdido la cuenta de cuántas veces ha visto su serie favorita",
+    "texto": "se haya meado de la risa literalmente",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "nunca haya llamado a alguien por el nombre equivocado",
+    "texto": "se vea una serie en el menor tiempo posible",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "nunca se haya quedado dormido en el transporte público",
+    "texto": "nunca se haya equivocado al llamar por su nombre a alguien",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "nunca haya cocinado algo que ha salido fatal y lo haya dicho igualmente",
+    "texto": "se quede dormido en el transporte público",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "nunca se haya comprado algo solo por el envase",
+    "texto": "pida algo en un restaurante y se quede sin comer porque no le gusta",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "se compre un libro solo porque la portada es bonita",
     "tipo": "probable",
     "nivel": "suave"
   },
@@ -1315,32 +1375,27 @@
     "nivel": "suave"
   },
   {
-    "texto": "nunca haya hablado con una mascota como si le entendiera",
+    "texto": "hable con su mascota como si le entendiera",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "nunca se haya puesto a limpiar la casa a medianoche sin motivo",
+    "texto": "se ponga a pasar la aspiradora a las 12 de la noche",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "nunca haya discutido con el GPS en voz alta",
+    "texto": "eche la culpa al GPS por haberse equivocado de ruta",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "nunca haya fingido que entendía un chiste que no pilló",
+    "texto": "finja haber entendido un chiste",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "nunca se haya reído en un momento serio por los nervios",
-    "tipo": "probable",
-    "nivel": "suave"
-  },
-  {
-    "texto": "nunca haya tenido una alarma con un nombre random para hacerse reír",
+    "texto": "tenga más alarmas con nombres aleatorios",
     "tipo": "probable",
     "nivel": "suave"
   },
@@ -1350,17 +1405,17 @@
     "nivel": "suave"
   },
   {
-    "texto": "nunca se haya quedado sin palabras al conocer a alguien famoso",
+    "texto": "se haya quedado sin palabras al conocer a alguien famoso",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "nunca haya llorado de la risa hasta no poder respirar",
+    "texto": "se pierda en un centro comercial",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "nunca se haya perdido en un centro comercial",
+    "texto": "pase más prendas al probador de una tienda",
     "tipo": "probable",
     "nivel": "suave"
   },
@@ -1370,37 +1425,37 @@
     "nivel": "suave"
   },
   {
-    "texto": "nunca haya vuelto a casa a por algo que se le olvidó y haya llegado tarde",
+    "texto": "nunca se independice de casa de sus padres",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "nunca haya cambiado de asiento en el cine varias veces antes de sentarse",
+    "texto": "se quede en el cine a ver una película por la que no ha pagado tras terminar otra",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "nunca se haya quedado con hambre después de comer por vergüenza a repetir",
+    "texto": "se haya quedado con hambre después de comer por vergüenza a repetir",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "nunca haya tenido una canción pegada en la cabeza todo el día",
+    "texto": "saque el hit del verano",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "nunca se haya reído de algo que no tenía tanta gracia por compromiso",
+    "texto": "se ría de algo sin ninguna gracia por compromiso",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "nunca haya guardado un mensaje de voz durante meses sin escucharlo",
+    "texto": "te ignore si le mandas un mensaje de voz",
     "tipo": "probable",
-    "nivel": "suave"
+    "nivel": "extremo"
   },
   {
-    "texto": "nunca se haya equivocado de fecha para algo importante",
+    "texto": "falle más preguntas en un test de cultura general",
     "tipo": "probable",
     "nivel": "suave"
   },
@@ -1410,32 +1465,32 @@
     "nivel": "suave"
   },
   {
-    "texto": "nunca haya comido algo caducado sin darse cuenta",
+    "texto": "se coma algo caducado sin darse cuenta",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "nunca se haya quedado en la ducha más tiempo del necesario para pensar",
+    "texto": "medite todas las mañanas antes de despertarse",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "nunca haya hecho una videollamada sin arreglarse",
+    "texto": "se una a una videollamada del trabajo en pijama",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "nunca haya vuelto a ver una película solo por la nostalgia",
+    "texto": "eche de menos vivir con sus padres cuando se independice",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "nunca se haya reído nerviosamente en una situación seria",
+    "texto": "mienta en este juego",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "nunca haya tenido que fingir que sabía de qué le estaban hablando",
+    "texto": "nunca finja saber de un tema del que no sabe nada",
     "tipo": "probable",
     "nivel": "suave"
   },
@@ -1450,7 +1505,7 @@
     "nivel": "picante"
   },
   {
-    "texto": "nunca haya mandado una foto subida de tono a la persona equivocada",
+    "texto": "nunca haya mandado una foto subida de tono",
     "tipo": "probable",
     "nivel": "picante"
   },
@@ -1460,52 +1515,57 @@
     "nivel": "picante"
   },
   {
-    "texto": "nunca haya tenido celos de un ex de su pareja",
+    "texto": "nunca haya tenido celos",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "nunca se haya liado con alguien solo por aburrimiento",
+    "texto": "se haya liado con alguien solo por aburrimiento",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "nunca haya comparado físicamente a dos personas que conoce",
+    "texto": "fantasee con hacer un trío con personas que conoce",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "nunca haya tenido dudas sobre si quería a alguien de verdad o solo le gustaba",
+    "texto": "nunca haya tenido dudas sobre su pareja",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "nunca haya guardado una conversación subida de tono más tiempo del necesario",
+    "texto": "nunca haya tenido una conversación subida de tono por mensaje",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "nunca haya sentido más química con un desconocido que con su pareja",
+    "texto": "haya fingido estar interesado solo por cortesía",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "nunca haya fingido estar interesado solo por cortesía",
+    "texto": "se líe con alguien por no saber decir que no",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "nunca haya tenido una cita que terminó en algo más de lo esperado",
+    "texto": "nunca tenga una cita a ciegas",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "nunca se haya arrepentido de un mensaje subido de tono nada más enviarlo",
+    "texto": "mienta acerca de si le gusta alguien",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "nunca haya sentido celos de alguien sin ningún motivo real",
+    "texto": "no fuese capaz de tener un follamigo sin sentir algo por él",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "sea tóxico con su pareja",
     "tipo": "probable",
     "nivel": "picante"
   },
@@ -1520,7 +1580,17 @@
     "nivel": "picante"
   },
   {
-    "texto": "nunca se haya enamorado de alguien que sabía que no le convenía",
+    "texto": "nunca haya tenido un crush secreto",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "tenga un crush secreto",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "sea el crush secreto de alguien",
     "tipo": "probable",
     "nivel": "picante"
   },
@@ -1535,22 +1605,22 @@
     "nivel": "picante"
   },
   {
-    "texto": "nunca haya sentido que quería más a alguien de lo que le querían a él",
+    "texto": "nunca haya tenido inseguridades con su pareja",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "nunca haya dudado de si seguía enamorado de su pareja",
+    "texto": "nunca haya dudado de si la persona con la que estaba le hacía bien",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "nunca haya tenido una noche de la que no se enorgullece",
+    "texto": "no sepa salir de fiesta sin liarse con nadie",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "nunca haya idealizado un rollo pasajero como si fuera algo serio",
+    "texto": "haya idealizado hasta el extremo a alguna expareja",
     "tipo": "probable",
     "nivel": "picante"
   },
@@ -1560,7 +1630,12 @@
     "nivel": "picante"
   },
   {
-    "texto": "nunca se haya planteado si la atracción era suficiente para una relación",
+    "texto": "nunca se plantease tener una relación abierta",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "nunca se plantease tener un trío",
     "tipo": "probable",
     "nivel": "picante"
   },
@@ -1570,27 +1645,22 @@
     "nivel": "picante"
   },
   {
-    "texto": "nunca haya tenido que elegir entre la razón y la atracción, y haya ganado la atracción",
+    "texto": "se haya liado con alguien pese a que fuese gilipollas",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "nunca se haya sentido más deseado hablando con alguien nuevo que con su pareja",
+    "texto": "se haya sentido más deseado hablando con alguien nuevo que con su pareja",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "nunca haya confundido la nostalgia con querer volver con un ex",
+    "texto": "haya confundido la nostalgia con querer volver con un ex",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "nunca haya sentido que una relación se sostenía solo por la parte física",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "nunca haya tenido que admitir que seguía pensando en alguien del pasado",
+    "texto": "nunca haya mentido a su pareja",
     "tipo": "probable",
     "nivel": "picante"
   },
@@ -1600,7 +1670,7 @@
     "nivel": "picante"
   },
   {
-    "texto": "nunca haya sentido que gustar a alguien le daba más seguridad de la que debería",
+    "texto": "nunca se sienta solo",
     "tipo": "probable",
     "nivel": "picante"
   },
@@ -1610,37 +1680,32 @@
     "nivel": "picante"
   },
   {
-    "texto": "nunca se haya sentido culpable por seguir tonteando con alguien",
+    "texto": "se haya sentido culpable por tontear con alguien",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "nunca haya comparado su vida amorosa con la de otra persona de este grupo",
+    "texto": "envidie la vida amorosa de otra persona de este grupo",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "nunca haya sentido que una relación se apagaba y haya seguido fingiendo que no",
+    "texto": "haya sentido que una relación se apagaba y haya seguido fingiendo que no",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "nunca haya tenido que admitir que la primera impresión física pesó más que el resto",
+    "texto": "admita que se fija más en el físico que en la personalidad",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "nunca se haya preguntado si conocía de verdad a la persona con la que estaba",
+    "texto": "haya sentido que merecía a alguien que le hiciera sentir más deseado",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "nunca haya sentido que merecía a alguien que le hiciera sentir más deseado",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "nunca haya mentido sobre algo grave a alguien de este grupo",
+    "texto": "nunca haya mentido a alguien de este grupo",
     "tipo": "probable",
     "nivel": "extremo"
   },
@@ -1655,27 +1720,22 @@
     "nivel": "extremo"
   },
   {
-    "texto": "nunca haya comparado a dos personas de este grupo y haya sacado conclusiones que nunca dijo",
+    "texto": "nunca haya ocultado alguna cosa al grupo",
     "tipo": "probable",
     "nivel": "extremo"
   },
   {
-    "texto": "nunca haya guardado un secreto de alguien de aquí que le pesa de verdad",
+    "texto": "nunca haya sentido envidia de alguien de aquí",
     "tipo": "probable",
     "nivel": "extremo"
   },
   {
-    "texto": "nunca haya sentido alivio con un problema de alguien de esta sala",
+    "texto": "haya considerado alejarse de este grupo sin decir por qué",
     "tipo": "probable",
     "nivel": "extremo"
   },
   {
-    "texto": "nunca haya considerado alejarse de este grupo sin decir por qué",
-    "tipo": "probable",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "nunca haya desconfiado de alguien de este grupo sin decírselo nunca",
+    "texto": "nunca haya desconfiado de alguien de este grupo",
     "tipo": "probable",
     "nivel": "extremo"
   },
@@ -1685,7 +1745,7 @@
     "nivel": "extremo"
   },
   {
-    "texto": "nunca haya sentido que este grupo estaría mejor sin alguien que está en él",
+    "texto": "nunca se haya enfadado con alguien de aquí sin decirle nada",
     "tipo": "probable",
     "nivel": "extremo"
   },
@@ -1695,22 +1755,12 @@
     "nivel": "extremo"
   },
   {
-    "texto": "nunca haya fingido cercanía con alguien de este grupo por no quedar mal",
-    "tipo": "probable",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "nunca haya tenido más lealtad hacia alguien de fuera que hacia este grupo",
-    "tipo": "probable",
-    "nivel": "extremo"
-  },
-  {
     "texto": "nunca haya sentido envidia de alguien de esta sala",
     "tipo": "probable",
     "nivel": "extremo"
   },
   {
-    "texto": "nunca haya cambiado de opinión sobre alguien de aquí sin decírselo",
+    "texto": "nunca hubiese conocido al resto",
     "tipo": "probable",
     "nivel": "extremo"
   },
@@ -1720,17 +1770,12 @@
     "nivel": "extremo"
   },
   {
-    "texto": "nunca haya sentido que ya no reconocía a alguien de esta sala",
-    "tipo": "probable",
-    "nivel": "extremo"
-  },
-  {
     "texto": "nunca haya antepuesto su orgullo a arreglar las cosas con alguien de aquí",
     "tipo": "probable",
     "nivel": "extremo"
   },
   {
-    "texto": "nunca haya dejado que culpen a otra persona de este grupo de algo que hizo él",
+    "texto": "haya dejado que culpen a otra persona de este grupo de algo que hizo él",
     "tipo": "probable",
     "nivel": "extremo"
   },
@@ -1755,7 +1800,17 @@
     "nivel": "suave"
   },
   {
+    "texto": "lo cuente todo de la manera más escueta posible",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
     "texto": "se duerma en cualquier sitio",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "vaya al baño cualquier sitio",
     "tipo": "probable",
     "nivel": "suave"
   },
@@ -1765,17 +1820,7 @@
     "nivel": "suave"
   },
   {
-    "texto": "hable con las manos más de la cuenta",
-    "tipo": "probable",
-    "nivel": "suave"
-  },
-  {
-    "texto": "se ría en los momentos serios",
-    "tipo": "probable",
-    "nivel": "suave"
-  },
-  {
-    "texto": "se tome las cosas con humor",
+    "texto": "se tome todo como una broma",
     "tipo": "probable",
     "nivel": "suave"
   },
@@ -1795,7 +1840,7 @@
     "nivel": "suave"
   },
   {
-    "texto": "tararee canciones sin darse cuenta",
+    "texto": "tenga una colección de alguna temática extraña",
     "tipo": "probable",
     "nivel": "suave"
   },
@@ -1820,12 +1865,12 @@
     "nivel": "suave"
   },
   {
-    "texto": "hable solo mientras cocina",
+    "texto": "escuche un podcast mientras conduce",
     "tipo": "probable",
     "nivel": "suave"
   },
   {
-    "texto": "tenga treinta ventanas abiertas en el ordenador",
+    "texto": "tenga treinta ventanas abiertas en el ordenador y se queje de que va lento",
     "tipo": "probable",
     "nivel": "suave"
   },
@@ -1850,7 +1895,7 @@
     "nivel": "suave"
   },
   {
-    "texto": "deje la mitad de cualquier serie sin acabar",
+    "texto": "deje la mitad todas las series que empieza",
     "tipo": "probable",
     "nivel": "suave"
   },
@@ -1875,22 +1920,17 @@
     "nivel": "picante"
   },
   {
-    "texto": "tenga un tipo muy concreto y que se le note",
+    "texto": "le guste un tipo muy concreto de persona",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "mande mensajes subidos de tono sin pensarlo",
+    "texto": "confunda caricias y cariño con deseo",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "confunda cariño con deseo",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "sea infiel con la mirada, aunque no pase nada más",
+    "texto": "sea infiel con la mirada",
     "tipo": "probable",
     "nivel": "picante"
   },
@@ -1915,7 +1955,7 @@
     "nivel": "picante"
   },
   {
-    "texto": "tenga una lista de «qué pasaría si» con gente de este grupo",
+    "texto": "se haya planteado qué pasaría si alguien del grupo se le lanzase",
     "tipo": "probable",
     "nivel": "picante"
   },
@@ -1935,7 +1975,7 @@
     "nivel": "picante"
   },
   {
-    "texto": "dé más morbo del que reconoce",
+    "texto": "dé más morbo del se pueda imaginar",
     "tipo": "probable",
     "nivel": "picante"
   },
@@ -1945,27 +1985,22 @@
     "nivel": "picante"
   },
   {
-    "texto": "disfrute más lo prohibido que los planes fáciles",
+    "texto": "sea posesivo en una relación",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "sea posesivo sin llamarlo celos",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "necesite la aprobación de un ex aunque diga que no le importa",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "se deje llevar más rápido de lo que admite",
+    "texto": "se deje llevar demasiado rápido",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
     "texto": "tenga un radar para detectar quién le mira con interés",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "tenga un radar para detectar personas homosexuales de su mismo sexo",
     "tipo": "probable",
     "nivel": "picante"
   },
@@ -1985,7 +2020,7 @@
     "nivel": "picante"
   },
   {
-    "texto": "idealice el sexo en una relación nueva",
+    "texto": "tenga el sexo como lo más importante en una relación",
     "tipo": "probable",
     "nivel": "picante"
   },
@@ -1995,27 +2030,22 @@
     "nivel": "picante"
   },
   {
+    "texto": "perdonase una infidelidad completa",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
     "texto": "tenga celos del pasado de su pareja",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "necesite sentirse el centro de atención en una cita",
+    "texto": "tontee por mensaje mucho más de lo que haría en persona",
     "tipo": "probable",
     "nivel": "picante"
   },
   {
-    "texto": "sea capaz de mentir sobre su número de parejas anteriores",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "tontee por mensaje más de lo que haría en persona",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "tenga un ex al que sigue comparando con todos",
+    "texto": "tenga una expareja a la que sigue comparando con todos",
     "tipo": "probable",
     "nivel": "picante"
   },
@@ -2025,12 +2055,7 @@
     "nivel": "picante"
   },
   {
-    "texto": "se deje llevar por la atracción antes que por la cabeza",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "guarde una charla subida de tono sin borrarla",
+    "texto": "piense más con sus partes íntimas que con la cabeza",
     "tipo": "probable",
     "nivel": "picante"
   },
@@ -2045,12 +2070,7 @@
     "nivel": "picante"
   },
   {
-    "texto": "sea capaz de coquetear con tal de sentirse deseado",
-    "tipo": "probable",
-    "nivel": "picante"
-  },
-  {
-    "texto": "tenga un historial amoroso más movido de lo que aparenta",
+    "texto": "tenga un historial amoroso más movido de lo que cuenta",
     "tipo": "probable",
     "nivel": "picante"
   },
@@ -2065,12 +2085,7 @@
     "nivel": "extremo"
   },
   {
-    "texto": "compare en secreto a la gente de este grupo entre sí",
-    "tipo": "probable",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "sea capaz de guardar un secreto de alguien de aquí para siempre",
+    "texto": "sea capaz de guardar un secreto de alguien de aquí sin contarlo a nadie sin que se lo pidan",
     "tipo": "probable",
     "nivel": "extremo"
   },
@@ -2105,11 +2120,6 @@
     "nivel": "extremo"
   },
   {
-    "texto": "finja cercanía con alguien de aquí por no quedar mal",
-    "tipo": "probable",
-    "nivel": "extremo"
-  },
-  {
     "texto": "sea capaz de elegir a un desconocido antes que a alguien de este grupo si le conviene",
     "tipo": "probable",
     "nivel": "extremo"
@@ -2120,22 +2130,7 @@
     "nivel": "extremo"
   },
   {
-    "texto": "sea capaz de traicionar la confianza de alguien de esta sala",
-    "tipo": "probable",
-    "nivel": "extremo"
-  },
-  {
     "texto": "se sienta aliviado si alguien de aquí se alejara del grupo",
-    "tipo": "probable",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "sea capaz de mentir sobre lo que opina de alguien de este grupo",
-    "tipo": "probable",
-    "nivel": "extremo"
-  },
-  {
-    "texto": "anteponga su orgullo a arreglar las cosas con alguien de aquí",
     "tipo": "probable",
     "nivel": "extremo"
   },
@@ -2145,22 +2140,312 @@
     "nivel": "extremo"
   },
   {
-    "texto": "finja que está todo bien con alguien de aquí cuando no lo está",
+    "texto": "sea capaz de finjir durante años que está todo bien con alguien de aquí cuando no lo está",
     "tipo": "probable",
     "nivel": "extremo"
   },
   {
-    "texto": "sea capaz de quedarse callado viendo que le hacen daño a alguien de este grupo",
+    "texto": "tenga un pato de mascota",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "cambie un plan establecido por uno mejor que le ha salido a última hora",
     "tipo": "probable",
     "nivel": "extremo"
   },
   {
-    "texto": "tenga más lealtad hacia fuera que hacia dentro de este grupo",
+    "texto": "se acueste con un amigo de su ex",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "se enamore de dos personas a la vez",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "salga con alguien solo por su dinero",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "salga con alguien solo por el sexo",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "tenga que hacerse una prueba de ETS",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "diga más mentiras a lo largo del día",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "con su marcha, se rompa el grupo",
     "tipo": "probable",
     "nivel": "extremo"
+  },
+  {
+    "texto": "haga alguna chorrada por 5 euros",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "se olvide del cumpleaños de los demás",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "empiece una discusión de política",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "finja que no conoce al resto en público",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "tenga una segunda vida oculta",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "de repente sea detenido por narcotráfico",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "le de un amarillo fumándose un porro",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "fume un paquete de tabaco en un día",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "pruebe drogas duras",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "se deje el sueldo en apuestas deportivas",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "invierta en criptomonedas",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "funde un partido político",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "acabe una noche en un puticlub",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "se deje el sueldo en lotería",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "deje toda su vida y desaparezca para empezar de cero",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "vaya a la universidad cuando se jubile",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "fuese más travieso de pequeño",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "sea despedido del trabajo por motivos disciplinarios",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "aprenda a tocar un instrumento nuevo",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "se recluya en un monasterio por devoción a Dios",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "sea adicto a la cafeína",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "tenga la historia más loca de fiesta",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "tenga más discusiones con sus amigos",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "se gaste su sueldo en viajes",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "tenga la casa más bonita",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "se bañe el primero en en agua congelada",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "se salga primero del agua del mar porque le da miedo",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "se vuelva ravero",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "tenga sexo escuchando música",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "tenga una carrera como deportista de élite",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "se duche menos",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "tenga una carrera como modelo de ropa interior",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "presencie el fin del mundo",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "sea el primero en morir en una peli de miedo",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "gaste dinero en compras dentro de un videojuego",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "sea presidente del gobierno",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "fuese corrupto si llegase a político",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "sea exitoso si funda un partido político",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "sea el último en casarse",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "se muera el primero",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "falte a la boda de alguien de aquí",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "se haga groupie de su cantante favorito",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "abra un podcast",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "pruebe los esteroides",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "se haga influencer",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "nunca haya probado las drogas",
+    "tipo": "probable",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "se quede sin pelo",
+    "tipo": "probable",
+    "nivel": "suave"
+  },
+  {
+    "texto": "pagase por los nudes de una persona que conoce",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "solo haya probado el sexo vanila",
+    "tipo": "probable",
+    "nivel": "picante"
+  },
+  {
+    "texto": "se de a la bebida tras una ruptura",
+    "tipo": "probable",
+    "nivel": "picante"
   },
   {
     "texto": "dramático",
+    "tipo": "adjetivo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "simp",
     "tipo": "adjetivo",
     "nivel": "suave"
   },
@@ -2210,7 +2495,7 @@
     "nivel": "suave"
   },
   {
-    "texto": "impaciente en las colas",
+    "texto": "impaciente",
     "tipo": "adjetivo",
     "nivel": "suave"
   },
@@ -2220,7 +2505,7 @@
     "nivel": "suave"
   },
   {
-    "texto": "curioso con la vida de los demás",
+    "texto": "cotilla con la vida de los demás",
     "tipo": "adjetivo",
     "nivel": "suave"
   },
@@ -2235,7 +2520,7 @@
     "nivel": "suave"
   },
   {
-    "texto": "cotilla con el wasap ajeno",
+    "texto": "dado a gesticular",
     "tipo": "adjetivo",
     "nivel": "suave"
   },
@@ -2300,14 +2585,14 @@
     "nivel": "suave"
   },
   {
-    "texto": "nostálgico con las canciones de siempre",
+    "texto": "bienqueda",
     "tipo": "adjetivo",
     "nivel": "suave"
   },
   {
-    "texto": "cabezón defendiendo sus opiniones",
+    "texto": "parecido a Torrente",
     "tipo": "adjetivo",
-    "nivel": "suave"
+    "nivel": "extremo"
   },
   {
     "texto": "gafe",
@@ -2320,12 +2605,22 @@
     "nivel": "suave"
   },
   {
+    "texto": "extrovertido",
+    "tipo": "adjetivo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "introvertido con gente que acaba de conocer",
+    "tipo": "adjetivo",
+    "nivel": "suave"
+  },
+  {
     "texto": "ingenuo con los desconocidos",
     "tipo": "adjetivo",
     "nivel": "suave"
   },
   {
-    "texto": "cero práctico montando muebles",
+    "texto": "manazas montando muebles",
     "tipo": "adjetivo",
     "nivel": "suave"
   },
@@ -2360,7 +2655,7 @@
     "nivel": "picante"
   },
   {
-    "texto": "voluble en el amor",
+    "texto": "pasota en el amor",
     "tipo": "adjetivo",
     "nivel": "picante"
   },
@@ -2370,22 +2665,22 @@
     "nivel": "picante"
   },
   {
+    "texto": "atractivo",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
     "texto": "frío tras una ruptura",
     "tipo": "adjetivo",
     "nivel": "picante"
   },
   {
-    "texto": "rencoroso con un ex",
+    "texto": "rencoroso con sus exparejas",
     "tipo": "adjetivo",
     "nivel": "picante"
   },
   {
     "texto": "picaflor",
-    "tipo": "adjetivo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "despistado ligando",
     "tipo": "adjetivo",
     "nivel": "picante"
   },
@@ -2400,7 +2695,7 @@
     "nivel": "picante"
   },
   {
-    "texto": "tímido ligando",
+    "texto": "vergonzoso ligando",
     "tipo": "adjetivo",
     "nivel": "picante"
   },
@@ -2420,17 +2715,22 @@
     "nivel": "picante"
   },
   {
+    "texto": "caliente",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "bellaco",
+    "tipo": "adjetivo",
+    "nivel": "picante"
+  },
+  {
     "texto": "vergonzoso hablando de sexo",
     "tipo": "adjetivo",
     "nivel": "picante"
   },
   {
     "texto": "morboso",
-    "tipo": "adjetivo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "fogoso",
     "tipo": "adjetivo",
     "nivel": "picante"
   },
@@ -2451,11 +2751,6 @@
   },
   {
     "texto": "desconfiado en el amor",
-    "tipo": "adjetivo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "pasional",
     "tipo": "adjetivo",
     "nivel": "picante"
   },
@@ -2485,7 +2780,7 @@
     "nivel": "picante"
   },
   {
-    "texto": "romántico empedernido",
+    "texto": "romántico",
     "tipo": "adjetivo",
     "nivel": "picante"
   },
@@ -2495,17 +2790,7 @@
     "nivel": "picante"
   },
   {
-    "texto": "entregado en una relación",
-    "tipo": "adjetivo",
-    "nivel": "picante"
-  },
-  {
     "texto": "dependiente emocionalmente",
-    "tipo": "adjetivo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "libre en el amor",
     "tipo": "adjetivo",
     "nivel": "picante"
   },
@@ -2575,11 +2860,6 @@
     "nivel": "extremo"
   },
   {
-    "texto": "sobreprotector",
-    "tipo": "adjetivo",
-    "nivel": "extremo"
-  },
-  {
     "texto": "celoso de las amistades ajenas",
     "tipo": "adjetivo",
     "nivel": "extremo"
@@ -2595,8 +2875,48 @@
     "nivel": "extremo"
   },
   {
-    "texto": "desconfiado con la gente nueva",
+    "texto": "racista",
     "tipo": "adjetivo",
     "nivel": "extremo"
+  },
+  {
+    "texto": "machista",
+    "tipo": "adjetivo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "homófobo",
+    "tipo": "adjetivo",
+    "nivel": "extremo"
+  },
+  {
+    "texto": "workaholic",
+    "tipo": "adjetivo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "pijo",
+    "tipo": "adjetivo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "cani",
+    "tipo": "adjetivo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "choni",
+    "tipo": "adjetivo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "fiestero",
+    "tipo": "adjetivo",
+    "nivel": "suave"
+  },
+  {
+    "texto": "maleante",
+    "tipo": "adjetivo",
+    "nivel": "suave"
   }
 ]

@@ -25,7 +25,7 @@ principio a fin, cada uno con su banco de contenido **provisional**
   hipotéticas («probaría...»); pendiente de que el usuario lo recorte y afine.
 - **«Quién es más…»** (🚧 Fase 4 en curso) — chips de nivel y de tipo de
   pregunta, encabezado dinámico, castigo por pregunta con modo fiesta, banco
-  de 520 preguntas en dos tipos, `probable` (432) y `adjetivo` (88); los
+  de 584 preguntas en dos tipos, `probable` (488) y `adjetivo` (96); los
   tipos originales `primero` y `nunca` se fusionaron dentro de `probable`
   (`data/quienmas/preguntas.json` + `.js` generado + `agregar.py`, ver
   `md/PLAN_QUIEN_ES_MAS.md`). Incluye además un **modo parejas**
