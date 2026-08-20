@@ -590,6 +590,31 @@ mirar la carta más larga del banco en horizontal y en vertical.
       «Salseo» en el resto de juegos). Verificado con jsdom: 2 chips de
       nivel (Normal/Picante), `picante` empieza desactivado, el aviso de
       tono aparece al activarlo. `APP_VERSION`/`CACHE` a 1.10.0.
+- [x] **Primera revisión del usuario: 6 verdades modificadas, 15 eliminadas
+      y corrección de la reclasificación normal/picante**: el usuario revisó
+      a mano las primeras ~120 verdades `normal` y pidió reescribir 6 (p. ej.
+      «barriga» → «tripa» en la V065, o el enunciado completo de la V16 y la
+      V82) y eliminar 15 por repetitivas o de relleno (verdades 858 en total,
+      antes 873). También detectó que, a partir de la verdad 120 de la lista
+      `normal`, había un bloque entero de contenido sobre atracción,
+      liarse, ruptura, deseo, etc. mal clasificado como `normal`: la
+      reclasificación de la tanda anterior solo buscaba palabras muy
+      literales (`sexo`, `beso`, `pareja`…) y no cubría este vocabulario más
+      indirecto. Se amplió el diccionario de palabras clave de
+      `relaciones_amorosas`/`relaciones_sexuales` (`liad`/`atrae`/`atracción`/
+      `química`/`relación`/`ruptura`/`indirecta`/`red flag`/`piropo`/
+      `deseo`/`deseado`/`orientación`/`fantasía`/`enamor`/`sensual`/`subido
+      de tono`, entre otras) y se revisaron a mano los nuevos positivos para
+      cazar falsos positivos (p. ej. «lo peor que le has deseado a alguien
+      en un momento de rabia» es un deseo de mal agüero, no romántico; «la
+      relación de este grupo» es la dinámica del grupo de amigos, no una
+      pareja) y casos ambiguos tipo «me gusta»/«atrevido» (solo se marcan
+      picante cuando el sujeto es una persona que gusta a alguien o el
+      contenido es explícitamente subido de tono, nunca «me gusta hacer
+      X»). Resultado final: verdades **615 normal + 243 picante** (858 en
+      total); retos **518 normal + 143 picante** (661 en total, sin cambios
+      de contenido en retos esta vez). `APP_VERSION`/`CACHE` a 1.10.1.
+      Pendiente de que el usuario siga revisando el resto del `.md`.
 
 ---
 
