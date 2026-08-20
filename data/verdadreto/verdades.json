@@ -453,7 +453,7 @@
   },
   {
     "texto": "¿Cuál es el sitio más arriesgado en el que has estado a punto de que os pillaran?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Qué es lo que más te excita que nunca le has confesado a nadie?",
@@ -465,7 +465,7 @@
   },
   {
     "texto": "¿Has guardado fotos comprometidas de alguien?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Cuál es la vez que más rápido te has liado con alguien tras conocerle?",
@@ -513,7 +513,7 @@
   },
   {
     "texto": "¿Cuál es la mayor tontería que has hecho por alguien que te atraía?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Qué es lo más celoso que te has puesto sin tener ningún derecho?",
@@ -537,7 +537,7 @@
   },
   {
     "texto": "¿Cuál es la vez que más te has arrepentido de una noche con alguien?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Has usado a alguien solo para sentirte deseado?",
@@ -561,7 +561,7 @@
   },
   {
     "texto": "¿Cuál es la persona que más te ha hecho perder la cabeza?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Has fingido estar soltero para ligar con alguien?",
@@ -613,11 +613,11 @@
   },
   {
     "texto": "¿Cuál es el momento más incómodo que has vivido tras pasar la noche con alguien?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Qué es lo que más rápido te tira para atrás en alguien que te gustaba?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Has priorizado el físico sobre todo lo demás en una relación?",
@@ -637,7 +637,7 @@
   },
   {
     "texto": "¿Cuál es tu mayor inseguridad comparándote con los ligues de tus amigos?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Has dado celos a propósito para llamar la atención de alguien?",
@@ -645,7 +645,7 @@
   },
   {
     "texto": "¿Cuál es la vez que más has fingido interés por alguien solo por no estar solo?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Qué es lo que más te sorprendería que la gente supiera de tu vida amorosa?",
@@ -689,11 +689,11 @@
   },
   {
     "texto": "¿Has tenido que fingir que dormías para no hablar después de estar con alguien?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Cuál es la persona que más veces ha vuelto a tu vida sin que debiera?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Qué es lo más atrevido que harías si supieras que no hay consecuencias?",
@@ -705,7 +705,7 @@
   },
   {
     "texto": "¿Cuál es tu mayor miedo a la hora de comprometerte de verdad?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Has tenido celos de una amistad muy cercana de tu pareja?",
@@ -713,7 +713,7 @@
   },
   {
     "texto": "¿Cuál es la vez que más rápido te has enfriado con alguien que te gustaba?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Qué es lo que más morbo te da que nunca confesarías en otro contexto?",
@@ -721,7 +721,7 @@
   },
   {
     "texto": "¿Has estado con alguien solo por despecho?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Cuál es tu manía más rara ligando por mensaje?",
@@ -729,7 +729,7 @@
   },
   {
     "texto": "¿Has tenido que admitir que ya no sentías lo mismo por alguien?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Cuál es la vez que más te ha costado superar a un ex?",
@@ -753,7 +753,7 @@
   },
   {
     "texto": "¿Cuál es tu experiencia más rara con una app de citas?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Has sentido que merecías a alguien que te hiciera sentir más deseado?",
@@ -761,7 +761,7 @@
   },
   {
     "texto": "¿Cuál es la vez que más te ha costado decir que ya no sentías lo mismo?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Has fingido que te gustaba algo en la intimidad para no incomodar?",
@@ -773,7 +773,7 @@
   },
   {
     "texto": "¿Has tenido dudas justo antes de un compromiso serio?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Cuál es la vez que más te ha costado admitir que estabas celoso?",
@@ -793,7 +793,7 @@
   },
   {
     "texto": "¿Cuál es la vez que más te ha dolido que no correspondieran a tus sentimientos?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Has necesitado sentirte deseado por más de una persona a la vez?",
@@ -805,11 +805,11 @@
   },
   {
     "texto": "¿Has tenido pensamientos impuros en un momento inoportuno?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Cuál es tu experiencia más incómoda presentando a alguien a tu familia?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Has sentido que una relación se apagaba y seguido fingiendo que no?",
@@ -837,7 +837,7 @@
   },
   {
     "texto": "¿Has tenido que fingir indiferencia con alguien que te gustaba mucho?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Cuál es tu peor manía comparando a tus parejas con las de antes?",
@@ -853,15 +853,15 @@
   },
   {
     "texto": "¿Has tenido que admitir que seguías pensando en alguien del pasado?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Cuál es tu peor experiencia en una despedida de soltero o soltera?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Has dejado que alguien se hiciera ilusiones a propósito?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Cuál es tu mayor manía cuando sales de fiesta buscando ligar?",
@@ -873,7 +873,7 @@
   },
   {
     "texto": "¿Cuál es la vez que más te ha costado admitir que preferías estar soltero?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Has sentido que gustar a alguien te daba más seguridad de la que debería?",
@@ -881,11 +881,11 @@
   },
   {
     "texto": "¿Cuál es tu peor manía en las primeras citas?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Has tenido que elegir entre dos personas que te gustaban a la vez?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Cuál es la vez que más te has arrepentido de un piropo que soltaste?",
@@ -1249,7 +1249,7 @@
   },
   {
     "texto": "¿Cuál es el motivo real, nunca contado, de por qué cortaste con alguien?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Cuál es la mentira que le dijiste a tu familia sobre algo importante de tu vida?",
@@ -1385,11 +1385,11 @@
   },
   {
     "texto": "¿Alguna vez has jugado con los sentimientos de alguien a propósito?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Alguna vez has sentido que le gustabas más a {otro} de lo que te gustaba tú?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Cuál ha sido el mensaje más atrevido que has recibido nunca?",
@@ -1957,11 +1957,11 @@
   },
   {
     "texto": "¿Qué es lo más atrevido que has hecho en público sin que nadie se diera cuenta?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Has tenido pensamientos nada inocentes sobre alguien de esta sala?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Con quién has tenido la tensión sexual más fuerte sin que pasara nada?",
@@ -1977,11 +1977,11 @@
   },
   {
     "texto": "¿Cuál es la vez que más has fingido para que la otra persona no se sintiera mal?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Con quién crees que se liaría {otro} de este grupo si tuviera que elegir?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Qué crees que le atrae de ti a {otro}, aunque nunca te lo haya dicho?",
@@ -1989,7 +1989,7 @@
   },
   {
     "texto": "¿Crees que {otro} ha tenido pensamientos nada inocentes con alguien de aquí?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Qué crees que {otro} nunca confesaría sobre su vida amorosa?",
@@ -2017,7 +2017,7 @@
   },
   {
     "texto": "¿Crees que {otro} ha tenido más rollos de una noche de los que cuenta?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Qué crees que busca {otro} de verdad en una relación y nunca lo dice?",
@@ -2033,7 +2033,7 @@
   },
   {
     "texto": "¿Crees que {otro} tiene un tipo muy claro dentro de esta sala?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Qué crees que le daría más morbo a {otro} y nunca lo diría?",
@@ -2089,7 +2089,7 @@
   },
   {
     "texto": "¿Crees que {otro} tiene más experiencia de la que aparenta?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Qué crees que haría {otro} si su pareja le pusiera celos a propósito?",
@@ -2097,7 +2097,7 @@
   },
   {
     "texto": "¿Crees que {otro} ha tenido dudas sobre lo que siente por alguien de aquí?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Qué crees que le daría más vergüenza a {otro} que se supiera sobre su vida amorosa?",
@@ -2121,11 +2121,11 @@
   },
   {
     "texto": "¿Qué crees que busca {otro} cuando tontea con alguien, algo serio o solo diversión?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Qué crees que le da más vergüenza a {otro} de sus citas pasadas?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Crees que {otro} confía en el amor a primera vista?",
@@ -2137,7 +2137,7 @@
   },
   {
     "texto": "¿Crees que {otro} ha jugado con los sentimientos de alguien alguna vez?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Qué crees que le atrae más a {otro} de una persona, el físico o la personalidad?",
@@ -2165,7 +2165,7 @@
   },
   {
     "texto": "¿Qué crees que siente {otro} de verdad por alguien de este grupo?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Crees que {otro} necesita drama para sentir que una relación le importa?",
@@ -2189,7 +2189,7 @@
   },
   {
     "texto": "¿Qué crees que le costaría más admitir a {otro} sobre su forma de amar?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Crees que {otro} tendría una cita con alguien de este grupo si se lo propusieran?",
@@ -2229,7 +2229,7 @@
   },
   {
     "texto": "¿Quién de aquí tiene más experiencia de la que aparenta?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Quién de aquí sería capaz de liarse con el ex de otra persona del grupo?",
@@ -2245,7 +2245,7 @@
   },
   {
     "texto": "¿Quién de aquí es el más difícil de conquistar de este grupo?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Quién de aquí confunde más a menudo el deseo con el amor?",
@@ -2317,7 +2317,7 @@
   },
   {
     "texto": "¿Quién de aquí tiene más miedo a comprometerse de verdad?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Quién de aquí sería capaz de perdonar una infidelidad por amor?",
@@ -2325,7 +2325,7 @@
   },
   {
     "texto": "¿Quién de aquí es el más probable que acabe liándose esta noche?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Quién de aquí tiene la vida amorosa más movida de todo el grupo?",
@@ -2353,7 +2353,7 @@
   },
   {
     "texto": "¿Crees que {otro} ha estado con alguien solo por despecho?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Qué crees que {otro} sabe de ti que preferirías que no supiera?",
@@ -2381,7 +2381,7 @@
   },
   {
     "texto": "¿Qué crees que {otro} ha fingido sentir por alguien de este grupo alguna vez?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Qué crees que {otro} nunca te dirá aunque se lo preguntes directamente?",
@@ -2573,7 +2573,7 @@
   },
   {
     "texto": "¿Tienes algún fetiche?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Quién es la última persona que has buscado en Instagram?",
@@ -2605,11 +2605,11 @@
   },
   {
     "texto": "¿Quién de las personas de este grupo tiene el cuerpo más bonito?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Te arrepientes de haberte acostado con alguien?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Cuál es el lugar más extraño en el que has orinado?",
@@ -2645,7 +2645,7 @@
   },
   {
     "texto": "¿Qué opinas del poliamor?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Cuál es la peor experiencia íntima que has tenido?",
@@ -2669,7 +2669,7 @@
   },
   {
     "texto": "¿Has infringido alguna vez la ley?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Cuál ha sido tu peor caída?",
@@ -2677,7 +2677,7 @@
   },
   {
     "texto": "¿Has robado algo de alguna tienda?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Qué es lo último que has grabado en el móvil?",
@@ -2741,7 +2741,7 @@
   },
   {
     "texto": "¿Has tenido alguna vez un enfrentamiento con la ley?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Cuál es tu peor hábito?",
@@ -2773,7 +2773,7 @@
   },
   {
     "texto": "¿Y el más placentero?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Te han pillado alguna vez haciendo algo que no debías?",
@@ -2797,7 +2797,7 @@
   },
   {
     "texto": "¿Alguna vez te has acostado con alguien y te has arrepentido?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Cuál es la mayor idea errónea sobre ti?",
@@ -2941,7 +2941,7 @@
   },
   {
     "texto": "¿Cuál es el mejor lugar para hacerlo?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Qué es algo que nunca harás en la cama?",
@@ -2953,7 +2953,7 @@
   },
   {
     "texto": "¿Alguna vez has ido a una playa nudista?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Has tenido una relación 'poliamorosa'?",
@@ -2969,11 +2969,11 @@
   },
   {
     "texto": "¿Has hecho 'ghosting'?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Te han hecho 'ghosting'?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Alguna vez has salido con zapatillas de andar por casa a la calle?",
@@ -3029,11 +3029,11 @@
   },
   {
     "texto": "¿Alguna vez has olido tus genitales?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Alguna vez has hecho un 'simpa'?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Alguna vez te has tirado un pedo y culpado a otra persona?",
@@ -3041,7 +3041,7 @@
   },
   {
     "texto": "¿Te has acostado con alguien y lo has ignorado después?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Qué es que más te gusta de tu físico?",
@@ -3049,7 +3049,7 @@
   },
   {
     "texto": "¿Alguna vez te ha gustado un amigo?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Qué es lo más loco que has comprado en un viaje?",
@@ -3081,7 +3081,7 @@
   },
   {
     "texto": "¿Te has ido de algún sitio sin pagar?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Guardas en la mesita de noche juguetes sexuales?",
@@ -3093,7 +3093,7 @@
   },
   {
     "texto": "¿Has ido a un sex-shop alguna vez?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Alguna vez has dudado sobre tu sexualidad?",
@@ -3101,7 +3101,7 @@
   },
   {
     "texto": "¿Tendrías un lío con alguien de la política?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Qué película odias por encima de todo?",
@@ -3141,7 +3141,7 @@
   },
   {
     "texto": "¿Te has colado en un concierto sin entrada?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Has pedido un autógrafo a alguien famoso?",
@@ -3165,11 +3165,11 @@
   },
   {
     "texto": "¿Alguna vez has tenido que maquillarte un chupetón?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Alguna vez has hecho un chupetón a alguien?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Te gustaría ser otra persona?",
@@ -3185,15 +3185,15 @@
   },
   {
     "texto": "¿Te has equivocado mandándolas alguna vez?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Cuál ha sido el mensaje más guarro que has recibido?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Alguna vez has rechazado a alguien sólo por su físico?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Cuál es el último mensaje que has mandado?",
@@ -3233,7 +3233,7 @@
   },
   {
     "texto": "¿Alguna vez has tenido una ETS?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "Si pudieras no volver a ver a alguien nunca más... ¿a quién elegirías?",
@@ -3265,11 +3265,11 @@
   },
   {
     "texto": "¿Alguna vez has tenido que usar un anticonceptivo de emergencia?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Cuántas veces lo has hecho en una noche?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Serías capaz de matar a alguien?",
@@ -3285,7 +3285,7 @@
   },
   {
     "texto": "¿Alguna vez han estado a punto de pillarte tocándote?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Con quién pensaste la última vez que te masturbaste?",
@@ -3297,7 +3297,7 @@
   },
   {
     "texto": "¿Has practicado algo de bdsm?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Alguna vez has tenido un orgasmo en sueños?",
@@ -3321,7 +3321,7 @@
   },
   {
     "texto": "¿Cuándo fue la última vez que alguien te vio sin ropa?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿A quién no te gustaría ver desnudo?",
@@ -3341,7 +3341,7 @@
   },
   {
     "texto": "De este grupo, ¿a quién besarías antes?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Alguna vez has dado un teléfono falso a alguien?",
@@ -3401,11 +3401,11 @@
   },
   {
     "texto": "¿Te han arrestado alguna vez?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Has mentido a la policía alguna vez?",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "¿Alguna vez te has tirado un pedo en un ascensor?",

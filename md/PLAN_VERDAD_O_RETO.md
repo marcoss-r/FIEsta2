@@ -615,6 +615,37 @@ mirar la carta más larga del banco en horizontal y en vertical.
       total); retos **518 normal + 143 picante** (661 en total, sin cambios
       de contenido en retos esta vez). `APP_VERSION`/`CACHE` a 1.10.1.
       Pendiente de que el usuario siga revisando el resto del `.md`.
+- [x] **Tercera pasada del filtro normal/picante (v3), tras un segundo aviso
+      del usuario**: seguía habiendo contenido claramente picante marcado
+      como `normal` a partir de la verdad 106. Dos causas de raíz:
+      1. **Las regex estaban escritas sobre formas conjugadas concretas, no
+         sobre la raíz**, así que se les escapaban todas las demás
+         flexiones: `\bcita\b` no cazaba «citas», `\bligue\b` no cazaba
+         «ligues», `\brobar\b` no cazaba «robado», `\bbesar\b` no cazaba
+         «besarías», `\bliad` no cazaba «liaría», `\btontear` no cazaba
+         «tontea», `\brollo de una noche` no cazaba «rollos de una noche».
+         Ahora todos los patrones se escriben sobre la raíz.
+      2. **Faltaba vocabulario entero**: fetiche, genitales, chupetón, ETS,
+         bdsm, sex-shop, sext, streaper, escote, nudista, guarro,
+         anticonceptivo, poliamor, ghosting, romántica, acostarse, conquistar,
+         despecho, soltero, comprometerse, perder la cabeza, y por el lado
+         ilegal la ley, infringir, arrestar, policía, simpa, irse sin pagar.
+      Además hay preguntas que **ninguna palabra clave puede cazar** porque
+      solo se entienden por el contexto: varias son la segunda mitad de la
+      anterior («¿Y el más placentero?» va detrás de «el sueño más extraño»;
+      «¿Te has equivocado mandándolas alguna vez?» detrás de «¿has enviado
+      nudes?») o son eufemismos puros («¿Cuál es el mejor lugar para
+      hacerlo?», «¿Cuántas veces lo has hecho en una noche?»). Esas van una
+      a una en un conjunto `FORZAR_PICANTE`, y las que coinciden con una
+      palabra clave sin tratar el tema (el «picante» de comida, «pedir un
+      deseo», «hacer ilusión» de un regalo, «la relación de este grupo» como
+      dinámica de amigos) en `FORZAR_NORMAL`. También se acotó «gustar»: solo
+      es romántico cuando el sujeto es una persona («alguien que te
+      gustaba»), nunca con cosas («un trabajo que te gustaría probar»).
+      Resultado: verdades **529 normal + 329 picante**; retos **498 normal +
+      163 picante** (858 y 661 en total, sin cambio de volumen). Se releyeron
+      a mano las 529 verdades y los 498 retos que quedan en `normal` para
+      confirmar que no queda nada. `APP_VERSION`/`CACHE` a 1.10.2.
 
 ---
 

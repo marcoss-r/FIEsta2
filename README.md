@@ -45,8 +45,8 @@ una verdad», que ya tiene su banco cerrado:
   retos, connotación sexual como besos o quitarse prendas), carta volteable
   en 3D, «Paso» (en verdad o en reto) con castigo ponderado (30 % beber /
   20 % prenda / 50 % otros), «Otro reto» sin límite ni castigo en los retos
-  (no existe en las verdades), banco de 858 verdades (615 normal / 243
-  picante) + 661 retos (518 / 143), tras fusionar el contenido no duplicado
+  (no existe en las verdades), banco de 858 verdades (529 normal / 329
+  picante) + 661 retos (498 / 163), tras fusionar el contenido no duplicado
   de «Preguntas incómodas» (el sexto juego original, eliminado) y una tanda
   de 222 verdades + 350 retos importados y adaptados a la voz del juego
   (retos pasados de infinitivo a imperativo) desde una recopilación externa,

@@ -285,7 +285,7 @@
   },
   {
     "texto": "Dile a {otro} con quién de este grupo te liarías si no fuerais amigos",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "Enséñale al grupo el mensaje subido de tono más arriesgado que tengas guardado, si te atreves",
@@ -305,7 +305,7 @@
   },
   {
     "texto": "Dile a {otro} la mayor tontería que has hecho por alguien que te atraía",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "Dile a {otro} qué harías si supieras que no hay consecuencias",
@@ -333,7 +333,7 @@
   },
   {
     "texto": "Dile a {otro} qué es lo que más rápido te tira para atrás en alguien que te gustaba",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "Dile a {otro} lo más incómodo que te ha pasado con un ex en una fiesta",
@@ -689,11 +689,11 @@
   },
   {
     "texto": "Actúa una escena romántica de película con {otro}, sin tocarle",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "Haz de streaper torpe durante 10 segundos, con la ropa puesta",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "Interpreta una escena de celos con quien tengas más cerca",
@@ -705,7 +705,7 @@
   },
   {
     "texto": "Actúa como si acabaras de recibir la mejor noticia romántica de tu vida",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "Haz de protagonista de telenovela confesando un amor prohibido inventado",
@@ -733,7 +733,7 @@
   },
   {
     "texto": "Haz de casting para una peli romántica presentando tu mejor mirada",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "Interpreta una ruptura dramática por teléfono, con alguien imaginario",
@@ -833,7 +833,7 @@
   },
   {
     "texto": "Deja que {otro} te elija la próxima prenda que te quites del armario para el resto de la noche, sin quitártela ahora",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "Haz de fotógrafo y dirige una sesión de fotos sexy improvisada a {otro} durante 20 segundos",
@@ -973,7 +973,7 @@
   },
   {
     "texto": "Da un baile lento de 15 segundos con {otro}, con ropa puesta y a una distancia que decida el grupo",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "Deja que te venden los ojos y {otro} te guíe solo con las manos por la sala durante un minuto",
@@ -1033,7 +1033,7 @@
   },
   {
     "texto": "Haz de doble de acción en una escena de persecución romántica imaginaria por la sala",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "Aguanta sin moverte ni un segundo en la postura más ridícula que el grupo te pida, durante un minuto",
@@ -1213,7 +1213,7 @@
   },
   {
     "texto": "Aguanta con un cubito de hielo en el escote o el cuello hasta que se derrita",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "Mantén los brazos en cruz durante un minuto entero sin bajarlos",
@@ -1381,7 +1381,7 @@
   },
   {
     "texto": "Quítate cuatro prendas de ropa",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "Métete en un cubo de agua helada",
@@ -1389,7 +1389,7 @@
   },
   {
     "texto": "Pregúntale a alguien por la calle si cree que eres atractivo",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "Abraza a la primera persona que encuentres",
@@ -1481,7 +1481,7 @@
   },
   {
     "texto": "Envía un 'sext' a la última persona de tu agenda telefónica",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "Muestra tu cara de orgasmo",
@@ -1649,7 +1649,7 @@
   },
   {
     "texto": "Muerde la oreja a alguien",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "Ponte unos calcetines desaparejados",
@@ -1765,7 +1765,7 @@
   },
   {
     "texto": "Habla con una persona fuera del grupo que te atraiga",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "Gatea lo más sensualmente posible frente a los demás",
@@ -2389,7 +2389,7 @@
   },
   {
     "texto": "Haz una lista con las partes del cuerpo que más te gustan de otra persona del grupo",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "Manda un mensaje sólo con emojis, otra persona de tu elección tendrá que decodificarlos",
@@ -2481,7 +2481,7 @@
   },
   {
     "texto": "Canta a alguien una canción romántica a capela",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "Pide una foto divertida a alguien de la calle",
@@ -2529,7 +2529,7 @@
   },
   {
     "texto": "Haz una bolsa de palomitas. Te la tendrás que comer de la manera más atractiva posible.",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "Coge una escoba y haz tu baile más sensual con ella",
@@ -2541,7 +2541,7 @@
   },
   {
     "texto": "Come algo de una parte del cuerpo de otro jugador",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "Háblale sucio a otro jugador durante toda la noche",
