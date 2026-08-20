@@ -538,6 +538,25 @@ mirar la carta más larga del banco en horizontal y en vertical.
       `pi-config`/`pi-juego`/`pi-fin` y tarjeta del hub en `index.html`,
       `js/incomodas/`, `data/incomodas/`, entradas en `sw.js` y CSS
       específico. `APP_VERSION`/`CACHE` a 1.6.6.
+- [ ] **Importación de una recopilación externa (pendiente de revisión del
+      usuario)**: el usuario pasó un PDF con «580 preguntas originales y
+      diferentes para jugar a Verdad o reto» (Cosmopolitan). Se extrajo el
+      texto (223 verdades + 357 retos numerados), se comparó contra los
+      bancos existentes con un detector de similitud (sin coincidencias
+      relevantes: la fuente usa un tono de listicle genérico, muy distinto
+      al de este banco) y se descartaron a mano 3 retos: uno redundante con
+      el mecanismo entero de «Dos mentiras y una verdad» y dos casi calcados
+      de un reto ya existente, más 4 duplicados internos de la propia lista
+      y 1 verdad casi calcada de una ya existente. Los retos (en infinitivo
+      en la fuente) se pasaron a la voz imperativa «tú» del resto del banco,
+      con diccionario de conjugación irregular a mano y arreglo manual de
+      ~20 frases con verbos encadenados (`y publicarla` → `y publícala`) o
+      texto confuso del origen. Nivel asignado con heurística por palabras
+      clave y revisión manual de los cubos «picante»/«extremo». Resultado:
+      **+222 verdades y +350 retos** (verdades 651→873, retos 360→710).
+      `APP_VERSION`/`CACHE` a 1.9.0. Pendiente de que el usuario revise el
+      `.md` de reparto y diga qué entradas eliminar o modificar antes de dar
+      esta tanda por cerrada.
 
 ---
 

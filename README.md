@@ -42,13 +42,13 @@ una verdad», que ya tiene su banco cerrado:
   solo verdades / solo retos), carta volteable en 3D, «Paso» (en verdad o en
   reto) con castigo ponderado (30 % beber / 20 % prenda / 50 % otros), «Otro
   reto» sin límite ni castigo en los retos (no existe en las verdades), banco
-  de 651 verdades (258 suave / 224 picante / 169 extremo, tras fusionar el
-  contenido no duplicado de «Preguntas incómodas», el sexto juego original,
-  eliminado) + 360 retos (120 por nivel; los retos vuelven a ser dares de
-  acción reales en vez de confesiones disfrazadas — ver «Ajustes de
-  contenido» en el plan del juego, `data/verdadreto/verdades.json` +
-  `retos.json` + `.js` generados + `agregar.py`), pendiente de que el
-  usuario lo revise.
+  de 873 verdades (421 suave / 251 picante / 201 extremo) + 710 retos (414 /
+  159 / 137), tras fusionar el contenido no duplicado de «Preguntas
+  incómodas» (el sexto juego original, eliminado) y una tanda de 222 verdades
+  + 350 retos importados y adaptados a la voz del juego (retos pasados de
+  infinitivo a imperativo) desde una recopilación externa, pendiente de que
+  el usuario la revise y pode (`data/verdadreto/verdades.json` + `retos.json`
+  + `.js` generados + `agregar.py`).
 - **«Dos mentiras y una verdad»** (✅ Fases 1-5 completas) — la app da el
   **tema** (o la frase ya empezada, tipo `arranque`) para que nadie se quede
   en blanco; el tema se ve a la vista de todo el grupo, «Otro tema» hasta 2
