@@ -553,10 +553,13 @@ mirar la carta más larga del banco en horizontal y en vertical.
       ~20 frases con verbos encadenados (`y publicarla` → `y publícala`) o
       texto confuso del origen. Nivel asignado con heurística por palabras
       clave y revisión manual de los cubos «picante»/«extremo». Resultado:
-      **+222 verdades y +350 retos** (verdades 651→873, retos 360→710).
-      `APP_VERSION`/`CACHE` a 1.9.0. Pendiente de que el usuario revise el
-      `.md` de reparto y diga qué entradas eliminar o modificar antes de dar
-      esta tanda por cerrada.
+      **+222 verdades y +350 retos** (verdades 651→873, retos 360→**661**:
+      el usuario editó a mano 49 retos existentes en paralelo, con push
+      directo a `main` mientras se hacía esta importación — se fusionó sin
+      conflicto real, regenerando `retos.js` desde el `retos.json` ya
+      fusionado). `APP_VERSION`/`CACHE` a 1.9.0. Pendiente de que el usuario
+      revise el `.md` de reparto y diga qué entradas eliminar o modificar
+      antes de dar esta tanda por cerrada.
 
 ---
 

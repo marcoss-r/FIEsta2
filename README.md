@@ -42,7 +42,7 @@ una verdad», que ya tiene su banco cerrado:
   solo verdades / solo retos), carta volteable en 3D, «Paso» (en verdad o en
   reto) con castigo ponderado (30 % beber / 20 % prenda / 50 % otros), «Otro
   reto» sin límite ni castigo en los retos (no existe en las verdades), banco
-  de 873 verdades (421 suave / 251 picante / 201 extremo) + 710 retos (414 /
+  de 873 verdades (421 suave / 251 picante / 201 extremo) + 661 retos (365 /
   159 / 137), tras fusionar el contenido no duplicado de «Preguntas
   incómodas» (el sexto juego original, eliminado) y una tanda de 222 verdades
   + 350 retos importados y adaptados a la voz del juego (retos pasados de
