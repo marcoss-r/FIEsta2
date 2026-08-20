@@ -61,7 +61,7 @@ los turnos.
 | **Modos de juego** | **Tres**: `mixto` (por defecto, eliges en cada turno), `verdades` (solo verdades) y `retos` (solo retos). Se elige en `vr-config` con chips. |
 | **Presentación de la carta** | **Volteo 3D**: la carta entra boca abajo y se voltea al servir el texto (patrón `.cf-carta` de FIEsta 1). |
 | **Botón «Otra»** | ✅ Existe **solo para retos**, nunca para verdades (ampliación pedida por el usuario): representa «no puedo hacer este reto por el sitio donde estoy», no una negativa, así que **no tiene límite de veces ni castigo**. En verdad no existe ese botón: solo hay «Hecho» y «Paso». |
-| **Niveles de intensidad** | Los tres del núcleo (`suave` / `picante` / `extremo`), multi-selección, por defecto suave + picante. Filtran **los dos bancos a la vez**. |
+| **Niveles de intensidad** | ⚠️ **Propios de este juego, NO los tres del núcleo.** Solo dos: `normal` y `picante` (chips `VR_NIVELES` en `js/verdadreto/main.js`, no `montarSelectorNiveles` del núcleo, mismo patrón que `qm`). `picante` agrupa drogas, alcohol, adicciones, cosas ilegales, relaciones amorosas, relaciones sexuales y (en retos) connotación sexual como besos o quitarse prendas; `normal` es el resto. Por defecto solo `normal` activo (mínimo uno); al activar `picante` por primera vez sale el mismo aviso de tono que el núcleo muestra al activar «Salseo» (`mostrarAvisoTonoSiPrimeraVez()`, reutilizada). Filtran **los dos bancos a la vez**. |
 | **Modo fiesta** | Interruptor global del núcleo (persistente entre partidas). Añade castigo a **«Paso»** (en verdad o en reto: significa «no quiero hacerlo/contestarlo», sí es una negativa). Usa `castigoPonderado({ beber: 0.3, prenda: 0.2, otros: 0.5 })` del núcleo (ver `js/nucleo/intensidad.js`): 30 % de las veces toca beber, 20 % quitarse una prenda, 50 % uno de los castigos "neutros" del banco (bailar, imitar…). No se elige, se ofrece al azar. Sin modo fiesta, «Paso» sigue sin castigo (mismo criterio que el resto de la app: sin modo fiesta, la app no impone nada). |
 | **Datos** | **Dos bancos separados**: `VR_VERDADES` y `VR_RETOS`, en `data/verdadreto/`. |
 | **Volumen** | **≥ 400 en total: ≥ 200 verdades y ≥ 200 retos** (mínimo original). Ampliado después a petición del usuario a **360 + 360 (120 por nivel en cada banco)**. Tras la corrección de retos-que-eran-verdades, verdades quedó en **366** (120/124/122). Tras eliminar «Preguntas incómodas» y fusionar su contenido no duplicado, verdades queda en **651** (258/224/169); retos se mantiene en **360** (120/120/120). |
@@ -560,6 +560,36 @@ mirar la carta más larga del banco en horizontal y en vertical.
       fusionado). `APP_VERSION`/`CACHE` a 1.9.0. Pendiente de que el usuario
       revise el `.md` de reparto y diga qué entradas eliminar o modificar
       antes de dar esta tanda por cerrada.
+- [x] **Niveles reducidos a normal/picante, siguiendo el patrón de `qm`**
+      (pedido por el usuario, antes de que revisara el reparto de la
+      importación anterior): los tres niveles del núcleo (`suave`/`picante`/
+      `extremo`) se sustituyeron por dos, propios de vr: `normal` y
+      `picante`. `picante` (nuevo) = drogas, alcohol, adicciones, cosas
+      ilegales, relaciones amorosas, relaciones sexuales y (en retos)
+      connotación sexual como besos o quitarse prendas; `normal` (nuevo) = el
+      resto. Reclasificación por palabra clave (regex sobre texto
+      normalizado sin acentos: `droga`/`marihuana`/…, `alcohol`/`beber`/
+      `copa`/`chupito`/…, `adicci`/`tabaco`/`fumar`/…, `ilegal`/`robar`/
+      `multa`/…, `pareja`/`ex`/`celos`/`cita`/`amor`/`ligar`/…, `sexo`/
+      `intim`/`morbo`/`en la cama`/…, `bes[ao]`/`quitar…prenda`/`ropa
+      interior`/`sexy`/`seduc`/…) con revisión manual completa de las dos
+      listas «picante» resultantes para cazar falsos positivos (2 casos:
+      «Come algo picante sin beber agua…» y «Tómate una copa con unas gotas
+      de picante» — el reto es de picante de comida, no de alcohol) y
+      falsos negativos (patrones ampliados tras revisar a mano las ~400
+      entradas que antes eran `picante`/`extremo` y quedaron en `normal`,
+      para no perder ninguna con drogas/alcohol/sexo/relaciones mal
+      detectada). Resultado: verdades **728 normal + 145 picante** (873 en
+      total, sin cambio de volumen); retos **540 normal + 121 picante** (661
+      en total). Cambios de código: `VR_NIVELES`/`VR_NIVELES_POR_DEFECTO`/
+      `vrMontarSelectorNiveles` nuevos en `js/verdadreto/main.js` (ya no se
+      usa `montarSelectorNiveles` del núcleo para este juego); `agregar.py`
+      con `NIVELES = ("normal", "picante")`; `#vr-niveles` pasa de
+      `.selector-niveles` a `.vr-chips` en `index.html`. Por defecto solo
+      `normal` activo; activar `picante` dispara el aviso de tono (igual que
+      «Salseo» en el resto de juegos). Verificado con jsdom: 2 chips de
+      nivel (Normal/Picante), `picante` empieza desactivado, el aviso de
+      tono aparece al activarlo. `APP_VERSION`/`CACHE` a 1.10.0.
 
 ---
 

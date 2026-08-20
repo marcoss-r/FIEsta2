@@ -38,17 +38,21 @@ una verdad», que ya tiene su banco cerrado:
   jugadores y recorre, en orden aleatorio, todas las combinaciones posibles,
   8 preguntas cada una; si coinciden se libran, si difieren beben (con modo
   fiesta); termina con un ranking de parejas por coincidencias.
-- **«Verdad o Reto»** (🚧 Fase 5 en curso) — chips de nivel y de modo (mixto /
-  solo verdades / solo retos), carta volteable en 3D, «Paso» (en verdad o en
-  reto) con castigo ponderado (30 % beber / 20 % prenda / 50 % otros), «Otro
-  reto» sin límite ni castigo en los retos (no existe en las verdades), banco
-  de 873 verdades (421 suave / 251 picante / 201 extremo) + 661 retos (365 /
-  159 / 137), tras fusionar el contenido no duplicado de «Preguntas
-  incómodas» (el sexto juego original, eliminado) y una tanda de 222 verdades
-  + 350 retos importados y adaptados a la voz del juego (retos pasados de
-  infinitivo a imperativo) desde una recopilación externa, pendiente de que
-  el usuario la revise y pode (`data/verdadreto/verdades.json` + `retos.json`
-  + `.js` generados + `agregar.py`).
+- **«Verdad o Reto»** (🚧 Fase 5 en curso) — chips de modo (mixto / solo
+  verdades / solo retos) y chips de nivel **propios del juego** (**Normal** /
+  **Picante**, no los tres del núcleo: picante agrupa drogas, alcohol,
+  adicciones, cosas ilegales, relaciones amorosas, relaciones sexuales y, en
+  retos, connotación sexual como besos o quitarse prendas), carta volteable
+  en 3D, «Paso» (en verdad o en reto) con castigo ponderado (30 % beber /
+  20 % prenda / 50 % otros), «Otro reto» sin límite ni castigo en los retos
+  (no existe en las verdades), banco de 873 verdades (728 normal / 145
+  picante) + 661 retos (540 / 121), tras fusionar el contenido no duplicado
+  de «Preguntas incómodas» (el sexto juego original, eliminado) y una tanda
+  de 222 verdades + 350 retos importados y adaptados a la voz del juego
+  (retos pasados de infinitivo a imperativo) desde una recopilación externa,
+  pendiente de que el usuario la revise y pode
+  (`data/verdadreto/verdades.json` + `retos.json` + `.js` generados +
+  `agregar.py`).
 - **«Dos mentiras y una verdad»** (✅ Fases 1-5 completas) — la app da el
   **tema** (o la frase ya empezada, tipo `arranque`) para que nadie se quede
   en blanco; el tema se ve a la vista de todo el grupo, «Otro tema» hasta 2
@@ -121,7 +125,7 @@ alta entradas desde consola, igual que en FIEsta 1. `data/yonunca/` ya sigue
 este patrón completo: `frases.json` (fuente, 674 entradas) + `frases.js`
 (generado) + `agregar.py` (da de alta frases nuevas y regenera el `.js`; nunca
 se edita `frases.js` a mano). `data/quienmas/` (570 entradas),
-`data/verdadreto/` (651 verdades + 360 retos) y `data/dosmentiras/` (160
+`data/verdadreto/` (873 verdades + 661 retos) y `data/dosmentiras/` (160
 temas) siguen el mismo patrón. `data/impostor/` de momento solo tiene
 `palabras.js` (28 palabras de muestra, sin `.json` ni `agregar.py` todavía):
 el patrón completo llega con su Fase 4.

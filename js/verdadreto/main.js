@@ -14,6 +14,19 @@ const VR_MODOS = [
   { id: "retos", nombre: "Solo retos" },
 ];
 
+// Niveles propios de este juego (a diferencia de la mayoría de juegos, que
+// usan los tres niveles del núcleo): solo dos, porque aquí "picante" agrupa
+// todo lo relacionado con drogas, alcohol, adicciones, cosas ilegales,
+// relaciones amorosas, relaciones sexuales y retos con connotación sexual
+// (besos, quitar prendas...); "normal" es el resto. Mismo patrón de chips
+// multi-selección con mínimo uno activo que el selector del núcleo, pero con
+// su propio namespace porque el conjunto de niveles no es el estándar.
+const VR_NIVELES = [
+  { id: "normal", nombre: "Normal", emoji: "🙂" },
+  { id: "picante", nombre: "Picante", emoji: "🌶️" },
+];
+const VR_NIVELES_POR_DEFECTO = ["normal"];
+
 // Todo el estado de la partida vive aquí.
 const vrEstado = {
   nombres: [],
@@ -32,6 +45,43 @@ const vrEstado = {
 let vrConfigJugadores = null;
 let vrSelectorNiveles = null;
 let vrSelectorModo = null;
+
+// Chips de nivel propios de vr (§7.4 del núcleo, pero con VR_NIVELES en vez
+// de los tres niveles estándar): al activar "picante" por primera vez se
+// avisa del tono, igual que hace el núcleo al activar "Salseo".
+function vrMontarSelectorNiveles(contenedor, alCambiar) {
+  let elegidos = VR_NIVELES_POR_DEFECTO.slice();
+
+  function render() {
+    contenedor.innerHTML = "";
+    VR_NIVELES.forEach((nivel) => {
+      const chip = document.createElement("button");
+      chip.type = "button";
+      chip.className = "vr-chip" + (elegidos.includes(nivel.id) ? " activo" : "");
+      chip.dataset.nivel = nivel.id;
+      chip.textContent = `${nivel.emoji} ${nivel.nombre}`;
+      chip.addEventListener("click", () => alternar(nivel.id));
+      contenedor.appendChild(chip);
+    });
+  }
+
+  function alternar(id) {
+    if (elegidos.includes(id)) {
+      if (elegidos.length === 1) return; // mínimo uno activo
+      elegidos = elegidos.filter((n) => n !== id);
+    } else {
+      elegidos = elegidos.concat(id);
+      if (id === "picante") mostrarAvisoTonoSiPrimeraVez();
+    }
+    render();
+    alCambiar(elegidos.slice());
+  }
+
+  render();
+  alCambiar(elegidos.slice());
+
+  return { obtenerNiveles: () => elegidos.slice() };
+}
 
 function vrMontarSelectorModo(contenedor, alCambiar) {
   let elegido = "mixto";
@@ -331,7 +381,7 @@ document.addEventListener("DOMContentLoaded", () => {
     alCambiar: () => (document.getElementById("vr-error").textContent = ""),
   });
 
-  vrSelectorNiveles = montarSelectorNiveles(document.getElementById("vr-niveles"), () => {});
+  vrSelectorNiveles = vrMontarSelectorNiveles(document.getElementById("vr-niveles"), () => {});
   vrSelectorModo = vrMontarSelectorModo(document.getElementById("vr-modo"), () => {});
 
   montarInterruptorModoFiesta(document.getElementById("vr-fiesta"), () => {});

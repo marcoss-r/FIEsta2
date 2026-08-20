@@ -13,7 +13,7 @@ import sys
 from pathlib import Path
 
 CARPETA = Path(__file__).resolve().parent
-NIVELES = ("suave", "picante", "extremo")
+NIVELES = ("normal", "picante")
 BANCOS = {
     "verdad": {"json": CARPETA / "verdades.json", "js": CARPETA / "verdades.js", "const": "VR_VERDADES"},
     "reto": {"json": CARPETA / "retos.json", "js": CARPETA / "retos.js", "const": "VR_RETOS"},
