@@ -653,6 +653,13 @@ mirar la carta más larga del banco en horizontal y en vertical.
       163 picante** (858 y 661 en total, sin cambio de volumen). Se releyeron
       a mano las 529 verdades y los 498 retos que quedan en `normal` para
       confirmar que no queda nada. `APP_VERSION`/`CACHE` a 1.10.2.
+- [x] **Segunda revisión del usuario sobre `verdades.json`/`.js`**, editando
+      directamente el banco (fuera de este asistente): 34 verdades eliminadas
+      por repetitivas o de relleno y varias reformuladas para sonar menos
+      forzadas (p. ej. «¿Cuál es el motivo real por el que dejarías de confiar
+      del todo en alguien de aquí?» → «¿Qué haría que dejaras de confiar del
+      todo en alguien de aquí?»). Resultado: verdades **824 en total (501
+      normal + 323 picante)**; retos sin cambios (661, 498/163).
 - [x] **«Otra» habilitado también en verdad, con el matiz de que lo pide el
       grupo** (pedido por el usuario): antes «Otra» solo existía en reto; ahora
       existe en los dos tipos, sin límite ni castigo en ninguno, pero en
