@@ -200,14 +200,19 @@ function vrRenderCarta() {
   carta.classList.add("volteada");
 }
 
-// «Otra» solo existe para retos («no puedo hacer este reto por el sitio
-// donde estoy», no una negativa): sin límite de veces y sin castigo. En
-// verdad no existe — solo hay «Hecho» y «Paso» (§10 de decisiones de esta
-// ampliación en el plan).
+// «Otra» existe en los dos tipos, sin límite de veces y sin castigo, pero con
+// un matiz distinto en cada uno: en reto es «no puedo hacer este por el sitio
+// donde estoy», no una negativa; en verdad es una decisión de LOS DEMÁS
+// jugadores, no de quien tiene el turno (a quien le toca no puede escaquearse
+// pidiendo otra pregunta más fácil — para eso ya está «Paso», que sí cuenta y
+// sí castiga con modo fiesta). La nota #vr-nota-verdad deja claro ese matiz y
+// recuerda que el grupo también puede inventarse su propia pregunta.
 function vrActualizarBotonOtra() {
   const boton = document.getElementById("vr-btn-otra");
-  boton.hidden = vrEstado.tipoActual !== "reto";
-  boton.textContent = "Otro reto 🔄";
+  const esVerdad = vrEstado.tipoActual === "verdad";
+  boton.hidden = false;
+  boton.textContent = esVerdad ? "Otra pregunta 🔄" : "Otro reto 🔄";
+  document.getElementById("vr-nota-verdad").hidden = !esVerdad;
 }
 
 // Deja la pantalla de la carta en su estado normal (Hecho/Paso visibles,
@@ -350,14 +355,15 @@ function vrPaso() {
   document.getElementById("vr-btn-hecho").hidden = true;
   document.getElementById("vr-btn-paso").hidden = true;
   document.getElementById("vr-btn-otra").hidden = true;
+  document.getElementById("vr-nota-verdad").hidden = true;
   document.getElementById("vr-btn-siguiente-paso").hidden = false;
 }
 
-// «Otra» (solo para retos): pide un reto nuevo porque el actual no se puede
-// hacer en ese sitio, no porque no se quiera. Por eso no tiene límite de
-// veces ni castigo, a diferencia de «Paso» (§10 de esta ampliación).
+// «Otra»: sirve una carta nueva del mismo tipo al instante. Sin límite de
+// veces ni castigo en ninguno de los dos tipos, a diferencia de «Paso»: en
+// reto porque el actual no se puede hacer en ese sitio, no porque no se
+// quiera; en verdad porque la decide el grupo, no quien tiene el turno.
 function vrOtraCarta() {
-  if (vrEstado.tipoActual !== "reto") return; // el botón está oculto en verdad; red de seguridad barata
   vrEstado.contador.cambios++;
   vrServirCarta(vrEstado.tipoActual);
   vrRenderCarta();

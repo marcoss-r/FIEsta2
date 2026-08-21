@@ -43,7 +43,10 @@ Si sale **Verdad**, respondes una pregunta personal en voz alta. Si sale
 el turno pasa al siguiente. Si no quieres hacerlo, pulsas **«Paso»**: nadie te
 obliga (y con el modo fiesta activo, pagas un castigo simbólico). Si el reto es
 literalmente **imposible** en ese momento (pide un objeto que no hay, un sitio
-donde no estáis), puedes pedir **«Otra»** hasta dos veces por turno.
+donde no estáis), puedes pedir **«Otra»**, sin límite de veces. En verdad
+también existe «Otra», pero la piden **los demás**, no quien tiene el turno —
+y el grupo siempre puede saltarse la pregunta de la app e inventarse una
+propia.
 
 No hay puntos, no hay ganador y no hay rondas: se juega hasta que el grupo se
 cansa y alguien pulsa **«Terminar»**. La app solo sirve el contenido y ordena
@@ -60,7 +63,7 @@ los turnos.
 | **Pantallas** | `vr-config` → `vr-turno` → `vr-carta` → `vr-fin`. |
 | **Modos de juego** | **Tres**: `mixto` (por defecto, eliges en cada turno), `verdades` (solo verdades) y `retos` (solo retos). Se elige en `vr-config` con chips. |
 | **Presentación de la carta** | **Volteo 3D**: la carta entra boca abajo y se voltea al servir el texto (patrón `.cf-carta` de FIEsta 1). |
-| **Botón «Otra»** | ✅ Existe **solo para retos**, nunca para verdades (ampliación pedida por el usuario): representa «no puedo hacer este reto por el sitio donde estoy», no una negativa, así que **no tiene límite de veces ni castigo**. En verdad no existe ese botón: solo hay «Hecho» y «Paso». |
+| **Botón «Otra»** | ✅ Existe **en los dos tipos**, sin límite de veces ni castigo en ninguno, pero con un matiz distinto (ampliación pedida por el usuario): en **reto** representa «no puedo hacer este reto por el sitio donde estoy», no una negativa; en **verdad** representa que **el grupo** (los demás jugadores, no quien tiene el turno) decide pedir otra pregunta — quien tiene el turno no puede usarlo para escaquearse de una pregunta incómoda, para eso está «Paso», que sí cuenta y sí castiga con modo fiesta. Etiqueta dinámica: «Otro reto 🔄» / «Otra pregunta 🔄». En verdad, además, se muestra una nota (`#vr-nota-verdad`) recordando ambas cosas y que el grupo puede inventarse su propia pregunta en vez de usar la de la app. |
 | **Niveles de intensidad** | ⚠️ **Propios de este juego, NO los tres del núcleo.** Solo dos: `normal` y `picante` (chips `VR_NIVELES` en `js/verdadreto/main.js`, no `montarSelectorNiveles` del núcleo, mismo patrón que `qm`). `picante` agrupa drogas, alcohol, adicciones, cosas ilegales, relaciones amorosas, relaciones sexuales y (en retos) connotación sexual como besos o quitarse prendas; `normal` es el resto. Por defecto solo `normal` activo (mínimo uno); al activar `picante` por primera vez sale el mismo aviso de tono que el núcleo muestra al activar «Salseo» (`mostrarAvisoTonoSiPrimeraVez()`, reutilizada). Filtran **los dos bancos a la vez**. |
 | **Modo fiesta** | Interruptor global del núcleo (persistente entre partidas). Añade castigo a **«Paso»** (en verdad o en reto: significa «no quiero hacerlo/contestarlo», sí es una negativa). Usa `castigoPonderado({ beber: 0.3, prenda: 0.2, otros: 0.5 })` del núcleo (ver `js/nucleo/intensidad.js`): 30 % de las veces toca beber, 20 % quitarse una prenda, 50 % uno de los castigos "neutros" del banco (bailar, imitar…). No se elige, se ofrece al azar. Sin modo fiesta, «Paso» sigue sin castigo (mismo criterio que el resto de la app: sin modo fiesta, la app no impone nada). |
 | **Datos** | **Dos bancos separados**: `VR_VERDADES` y `VR_RETOS`, en `data/verdadreto/`. |
@@ -84,7 +87,7 @@ hub  ──►  vr-config  ──►  vr-turno  ◄─────────�
                               ▼                    │
                           vr-carta  ── Hecho ✔ ────┤
                               │      ── Paso ✖ ────┘
-                              │      ── Otro reto 🔄 (solo en reto; se queda en vr-carta)
+                              │      ── Otra 🔄 (reto o verdad; se queda en vr-carta)
                               │
               «Terminar» ─────┴─────►  vr-fin  ──►  hub
 ```
@@ -115,15 +118,20 @@ hub  ──►  vr-config  ──►  vr-turno  ◄─────────�
 - Etiqueta del tipo arriba (VERDAD / RETO) con el color correspondiente.
 - La carta se **voltea en 3D** y muestra el texto ya resuelto (plantillas
   rellenadas con nombres reales de la partida).
-- Botones: **«Hecho ✔»** (éxito), **«Paso ✖»** (secundario) y, **solo en
-  reto**, **«Otro reto 🔄»** (secundario, sin límite de veces, nunca se
-  deshabilita). En verdad, «Otro reto» está oculto: solo hay Hecho y Paso.
+- Botones: **«Hecho ✔»** (éxito), **«Paso ✖»** (secundario) y **«Otra 🔄»**
+  (secundario, sin límite de veces, nunca se deshabilita), con etiqueta
+  dinámica: «Otro reto 🔄» en reto, «Otra pregunta 🔄» en verdad.
 - **«Paso»** (en verdad o en reto): con modo fiesta, antes de pasar turno se
   muestra el castigo ponderado en un `.anuncio` («Ana: Un trago doble») y un
   botón **«Siguiente»**; sin modo fiesta, pasa turno directo sin castigo.
-- **«Otro reto»**: sirve un reto nuevo al instante, sin castigo ni aviso —
-  representa que el reto actual no se puede hacer en ese sitio, no que no se
-  quiera hacer.
+- **«Otra»**: sirve una carta nueva del mismo tipo al instante, sin castigo ni
+  aviso. En reto representa que el reto actual no se puede hacer en ese sitio,
+  no que no se quiera hacer. En verdad, la decisión de pedir otra es **de los
+  demás jugadores**, no de quien tiene el turno (quien tiene el turno no
+  puede usarla para escaquearse de una pregunta incómoda: para eso está
+  «Paso»). Debajo de los botones se muestra una nota (`#vr-nota-verdad`, solo
+  visible en verdad) que recuerda ese matiz y que el grupo puede saltarse la
+  pregunta de la app e inventarse una propia para ese turno.
 - Botón secundario **«Terminar»**.
 
 **4. `vr-fin`**
@@ -141,20 +149,18 @@ hub  ──►  vr-config  ──►  vr-turno  ◄─────────�
 // nunca guardar información solo en el DOM.
 const vrEstado = {
   nombres: [],              // ["Ana", "Luis", …] en orden de turno
-  niveles: ["suave", "picante"],
+  niveles: ["normal", "picante"],
   modo: "mixto",            // "mixto" | "verdades" | "retos"
   indiceTurno: 0,           // a quién le toca (índice en nombres)
   tipoActual: null,         // "verdad" | "reto" — el de la carta en pantalla
   textoActual: "",          // ya con las plantillas resueltas
-  cambiosUsados: 0,         // «Otra» gastados en este turno (0…VR_MAX_CAMBIOS)
-  contador: { verdades: 0, retos: 0, pasos: 0, cambios: 0 },
+  contador: { verdades: 0, retos: 0, pasos: 0, cambios: 0 }, // "cambios" = «Otra» pedidos, sin límite
   repartidorVerdades: null, // crearRepartidor() sobre el banco ya filtrado
   repartidorRetos: null,
 };
 
 const VR_MIN_JUGADORES = 2;
 const VR_MAX_JUGADORES = 12;
-const VR_MAX_CAMBIOS = 2;     // «Otra» por turno
 const VR_CLAVE_GUARDADO = "vr_partida";
 ```
 
@@ -207,6 +213,7 @@ IDs exactos, para que la implementación no tenga que inventar nomenclatura:
 | | castigo (`.anuncio`, `hidden` por defecto) | `vr-castigo` |
 | | aviso de banco agotado (`.anuncio`, `hidden`) | `vr-anuncio` |
 | | botones | `vr-btn-hecho` · `vr-btn-paso` · `vr-btn-otra` |
+| | nota de «Otra»/pregunta propia (`.ayuda`, solo en verdad, `hidden` por defecto) | `vr-nota-verdad` |
 | | botón «Siguiente» tras el castigo de «Paso» (`hidden` por defecto) | `vr-btn-siguiente-paso` |
 | | terminar | `vr-btn-terminar-2` |
 | `vr-fin` | texto del resumen | `vr-resumen` |
@@ -646,6 +653,18 @@ mirar la carta más larga del banco en horizontal y en vertical.
       163 picante** (858 y 661 en total, sin cambio de volumen). Se releyeron
       a mano las 529 verdades y los 498 retos que quedan en `normal` para
       confirmar que no queda nada. `APP_VERSION`/`CACHE` a 1.10.2.
+- [x] **«Otra» habilitado también en verdad, con el matiz de que lo pide el
+      grupo** (pedido por el usuario): antes «Otra» solo existía en reto; ahora
+      existe en los dos tipos, sin límite ni castigo en ninguno, pero en
+      verdad la decisión de pedirla es **de los demás jugadores, no de quien
+      tiene el turno** (que no puede usarla para escaquearse de una pregunta
+      incómoda — para eso sigue estando «Paso», que sí cuenta y sí castiga con
+      modo fiesta). Etiqueta dinámica del botón (`vrActualizarBotonOtra()`):
+      «Otro reto 🔄» / «Otra pregunta 🔄». Se añade una nota bajo los botones
+      (`#vr-nota-verdad`, solo visible en verdad) que recuerda ese matiz y que
+      el grupo también puede saltarse la pregunta de la app e inventarse una
+      propia para ese turno; se oculta junto con «Otra» mientras se muestra el
+      castigo de «Paso». `APP_VERSION`/`CACHE` a 1.10.3.
 
 ---
 
