@@ -1300,7 +1300,11 @@
     "nivel": "normal"
   },
   {
-    "texto": "¿Quién de aquí guarda el secreto más gordo?",
+    "texto": "Con quién de aquí convivirías mejor viviendo solos?",
+    "nivel": "normal"
+  },
+  {
+    "texto": "¿Quién de aquí guardaría el secreto más gordo?",
     "nivel": "normal"
   },
   {
@@ -1309,7 +1313,7 @@
   },
   {
     "texto": "¿Quién de aquí llegaría tarde a su propia boda?",
-    "nivel": "picante"
+    "nivel": "normal"
   },
   {
     "texto": "¿Qué manía tuya sabes que vuelve loco a todo el mundo?",
@@ -1324,31 +1328,7 @@
     "nivel": "normal"
   },
   {
-    "texto": "¿Qué canción te da vergüenza reconocer que te encanta?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué app tienes instalada y no recuerdas por qué?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué serie o película has visto más veces de las que admitirías?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Cuál es tu comida de emergencia cuando no quieres cocinar?",
-    "nivel": "normal"
-  },
-  {
     "texto": "¿Qué canción no puedes evitar cantar en la ducha?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Cuál es la cosa más random que sabes hacer bien?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Cuál es tu manía al hablar por teléfono?",
     "nivel": "normal"
   },
   {
@@ -1364,10 +1344,6 @@
     "nivel": "normal"
   },
   {
-    "texto": "¿Cuál es tu manía al aparcar o al conducir?",
-    "nivel": "normal"
-  },
-  {
     "texto": "¿Cuál es tu peor costumbre en redes sociales?",
     "nivel": "normal"
   },
@@ -1376,12 +1352,8 @@
     "nivel": "normal"
   },
   {
-    "texto": "¿Qué es lo último que buscaste en internet sin pensar que alguien lo vería?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Cuál es tu excusa preferida para no hacer planes entre semana?",
-    "nivel": "normal"
+    "texto": "¿Cuál es tu experiencia más rara con las drogas?",
+    "nivel": "picante"
   },
   {
     "texto": "¿Qué es lo que más te avergüenza de tu adolescencia?",
@@ -1389,10 +1361,6 @@
   },
   {
     "texto": "¿Qué es lo que más rápido te aburre?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué es lo más random que se te da sorprendentemente bien?",
     "nivel": "normal"
   },
   {
@@ -1416,15 +1384,7 @@
     "nivel": "normal"
   },
   {
-    "texto": "¿Qué crees que pediría {otro} de aperitivo si invitara a cenar a este grupo?",
-    "nivel": "normal"
-  },
-  {
     "texto": "¿Qué papel haría {otro} en una peli sobre este grupo?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Cuál crees que es la mayor manía de {otro} que él mismo no reconoce?",
     "nivel": "normal"
   },
   {
@@ -1432,7 +1392,7 @@
     "nivel": "normal"
   },
   {
-    "texto": "Si {otro} tuviera un lema de vida, ¿cuál sería?",
+    "texto": "Si {otro} se estuviera muriendo y necesitase un riñón, ¿se lo darías?",
     "nivel": "normal"
   },
   {
@@ -1440,23 +1400,7 @@
     "nivel": "normal"
   },
   {
-    "texto": "¿Qué app crees que tiene {otro} más abierta en el móvil?",
-    "nivel": "normal"
-  },
-  {
     "texto": "¿Qué serie crees que le pega ver a {otro}?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Cuál crees que sería el superpoder ideal para {otro}?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué crees que pediría {otro} de comer si pudiera elegir sin límite?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué manía tiene {otro} que te ha contagiado sin querer?",
     "nivel": "normal"
   },
   {
@@ -1464,27 +1408,7 @@
     "nivel": "normal"
   },
   {
-    "texto": "¿Qué crees que le diría {otro} a su yo de hace diez años?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué animal crees que le pega a {otro} y por qué?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué crees que echaría de menos {otro} si se mudara lejos?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué canción crees que define a {otro} ahora mismo?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Cuál crees que es el mayor miedo tonto de {otro}?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué crees que le gustaría que le dijeran más a menudo a {otro}?",
+    "texto": "¿Qué le dirías a tu yo de hace diez años?",
     "nivel": "normal"
   },
   {
@@ -1492,71 +1416,11 @@
     "nivel": "normal"
   },
   {
-    "texto": "¿Qué crees que pide {otro} siempre que va al mismo sitio?",
+    "texto": "¿Cuál fue la primera impresión que te dio {otro}?",
     "nivel": "normal"
   },
   {
-    "texto": "Si {otro} tuviera que llevar un cartel con una frase, ¿cuál sería?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué crees que hace {otro} los domingos por la tarde?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué costumbre de {otro} adoptarías si pudieras?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué crees que le da más pereza a {otro} de todo lo que hace?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Cuál crees que fue la primera impresión que te dio {otro}?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué crees que llevaría {otro} en una mochila de emergencia?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué crees que le gustaría aprender a {otro} si tuviera tiempo?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Con qué personaje de ficción compararías a {otro}?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué crees que pediría {otro} de deseo a una estrella fugaz?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué manía tiene {otro} en el coche o en el transporte?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué crees que sería lo primero que haría {otro} si fuera invisible un día?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué palabra usa {otro} demasiado a menudo?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué crees que opina {otro} de sí mismo que no dice en voz alta?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué crees que haría {otro} de premio si ganara un concurso random?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué crees que le gustaría cambiar {otro} de su rutina diaria?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué crees que hace {otro} para relajarse de verdad?",
+    "texto": "¿Qué crees que opina {otro} de ti que no dice en voz alta?",
     "nivel": "normal"
   },
   {
@@ -1572,11 +1436,7 @@
     "nivel": "normal"
   },
   {
-    "texto": "¿Qué recuerdo crees que atesora más {otro} de este grupo?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué crees que le gustaría a {otro} que la gente supiera de él o ella sin tener que decirlo?",
+    "texto": "¿Qué recuerdo atesoras más de este grupo?",
     "nivel": "normal"
   },
   {
@@ -1584,11 +1444,7 @@
     "nivel": "normal"
   },
   {
-    "texto": "¿Qué crees que haría {otro} distinto si pudiera repetir el último año?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué crees que le pediría {otro} a un genio si solo tuviera un deseo tonto?",
+    "texto": "¿Qué harías distinto si pudieras repetir el último año?",
     "nivel": "normal"
   },
   {
@@ -1596,19 +1452,7 @@
     "nivel": "normal"
   },
   {
-    "texto": "¿Qué crees que fue lo mejor que le pasó a {otro} este año?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué manía tiene {otro} organizando planes?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué crees que hace {otro} antes de dormir todas las noches?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué crees que le gustaría a {otro} que le preguntaran más?",
+    "texto": "¿Qué crees que fue lo mejor que te pasó este año?",
     "nivel": "normal"
   },
   {
@@ -1616,35 +1460,7 @@
     "nivel": "normal"
   },
   {
-    "texto": "¿Qué crees que sería lo último que tiraría {otro} de su casa?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué crees que le daría más ilusión a {otro} de aquí a un año?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué crees que diría {otro} si le preguntaran su mayor virtud?",
-    "nivel": "normal"
-  },
-  {
     "texto": "¿Qué crees que es lo que más ha cambiado de {otro} desde que le conoces?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Quién de aquí sería el más despistado en un viaje en grupo?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Quién de aquí tardaría más en arreglarse para salir?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Quién de aquí se perdería primero en una ciudad nueva?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Quién de aquí sería el mejor guía turístico sin haber estudiado nada?",
     "nivel": "normal"
   },
   {
@@ -1652,111 +1468,7 @@
     "nivel": "normal"
   },
   {
-    "texto": "¿Quién de aquí ganaría un concurso de comer rápido?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Quién de aquí sería el primero en rendirse acampando?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Quién de aquí organizaría mejor una fiesta sorpresa?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Quién de aquí tardaría más en notar que le han cambiado los muebles de sitio?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Quién de aquí tiene la peor letra escribiendo a mano?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Quién de aquí ganaría en un karaoke sin haber ensayado?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Quién de aquí sería el más gracioso en una entrevista de trabajo?",
-    "nivel": "normal"
-  },
-  {
     "texto": "¿Quién de aquí sobreviviría más tiempo en una isla desierta?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Quién de aquí tardaría más en darse cuenta de que ha perdido algo?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Quién de aquí sería el mejor mintiendo en un juego de mesa?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Quién de aquí llegaría antes a millonario y quién antes a la ruina?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Quién de aquí ganaría una discusión sin tener razón?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Quién de aquí sería el más cotilla del barrio?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Quién de aquí duraría menos haciendo dieta?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Quién de aquí sería el mejor imitando a los demás?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Quién de aquí montaría el plan más random un domingo cualquiera?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Quién de aquí sería el más dramático teniendo un simple resfriado?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Quién de aquí ganaría en una guerra de cosquillas?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Quién de aquí tardaría más en pedir en un restaurante?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Quién de aquí sería el peor jugando al escondite?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Quién de aquí acabaría dormido primero en una peli?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Quién de aquí sería el más caótico haciendo la maleta?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Quién de aquí ganaría más seguidores si subiera contenido random?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Quién de aquí sería el más difícil de sorprender?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Cuál es la mentira más tonta que sigues contando por costumbre?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué manía tiene {otro} para dormir que te hace gracia?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Cuál es tu manía al hacer la maleta?",
     "nivel": "normal"
   },
   {
@@ -1773,38 +1485,6 @@
   },
   {
     "texto": "¿Qué es lo que más veces has dejado a medias en tu vida?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Cuál es tu mayor manía limpiando o sin limpiar?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué es lo que más te cuesta reconocer que te gusta?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué es lo que más veces has perdido en tu vida?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Cuál es la prenda que más veces te has puesto sin lavar?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Cuál es tu mayor manía al vestirte?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Cuál es tu mayor manía en el supermercado?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué es lo más tarde que has llegado a dormir sin motivo real?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Cuál es tu peor manía comprando comida?",
     "nivel": "normal"
   },
   {
@@ -1840,10 +1520,6 @@
     "nivel": "picante"
   },
   {
-    "texto": "¿Cuál es la vez que más has fingido para que la otra persona no se sintiera mal?",
-    "nivel": "picante"
-  },
-  {
     "texto": "¿Con quién crees que se liaría {otro} de este grupo si tuviera que elegir?",
     "nivel": "picante"
   },
@@ -1864,47 +1540,11 @@
     "nivel": "picante"
   },
   {
-    "texto": "¿Qué crees que le da más celos a {otro} en el amor?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Qué crees que le atrae a {otro} que nunca admitiría en público?",
-    "nivel": "picante"
-  },
-  {
     "texto": "¿Crees que {otro} sigue pensando en algún ex más de lo que dice?",
     "nivel": "picante"
   },
   {
-    "texto": "¿Qué crees que le daría más vergüenza a {otro} confesar sobre una cita?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Crees que {otro} ha tenido más rollos de una noche de los que cuenta?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Qué crees que busca {otro} de verdad en una relación y nunca lo dice?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Crees que {otro} confunde la atracción física con algo más a menudo?",
-    "nivel": "picante"
-  },
-  {
     "texto": "¿Qué crees que haría {otro} si le gustara alguien de este mismo grupo?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Crees que {otro} tiene un tipo muy claro dentro de esta sala?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Qué crees que le daría más morbo a {otro} y nunca lo diría?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Crees que {otro} ha mentido sobre su número de parejas anteriores?",
     "nivel": "picante"
   },
   {
@@ -1916,35 +1556,7 @@
     "nivel": "picante"
   },
   {
-    "texto": "¿Qué crees que le costaría más confesar a {otro} sobre una relación pasada?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Crees que {otro} ha sentido celos de alguien de este grupo alguna vez?",
-    "nivel": "picante"
-  },
-  {
     "texto": "¿Qué crees que haría {otro} si supiera que le gusta a alguien de aquí?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Crees que {otro} idealiza demasiado rápido a la gente que le gusta?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Qué crees que le da más inseguridad a {otro} a la hora de ligar?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Crees que {otro} sigue en contacto con algún ex más de lo normal?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Qué crees que haría {otro} en una cita a ciegas con alguien de este grupo?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Crees que {otro} ha confundido cariño con deseo alguna vez?",
     "nivel": "picante"
   },
   {
@@ -1952,55 +1564,7 @@
     "nivel": "picante"
   },
   {
-    "texto": "¿Crees que {otro} tiene más experiencia de la que aparenta?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Qué crees que haría {otro} si su pareja le pusiera celos a propósito?",
-    "nivel": "picante"
-  },
-  {
     "texto": "¿Crees que {otro} ha tenido dudas sobre lo que siente por alguien de aquí?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Qué crees que le daría más vergüenza a {otro} que se supiera sobre su vida amorosa?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Crees que {otro} necesita sentirse deseado más de lo que admite?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Qué crees que haría {otro} si le confesaran que le gusta a alguien de este grupo?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Qué crees que le pesa más a {otro} de una relación que no funcionó?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Crees que {otro} tiene más celos de los que muestra?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Qué crees que busca {otro} cuando tontea con alguien, algo serio o solo diversión?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Qué crees que le da más vergüenza a {otro} de sus citas pasadas?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Crees que {otro} confía en el amor a primera vista?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Qué crees que haría {otro} si tuviera una segunda oportunidad con un ex?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Crees que {otro} ha jugado con los sentimientos de alguien alguna vez?",
     "nivel": "picante"
   },
   {
@@ -2008,75 +1572,11 @@
     "nivel": "picante"
   },
   {
-    "texto": "¿Crees que {otro} sería capaz de tener un lío con el ex de un amigo?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Qué crees que haría {otro} si descubriera que le han sido infiel?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Crees que {otro} tiene un límite claro que nunca cruzaría en una relación?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Qué crees que le daría más morbo a {otro}, lo prohibido o lo seguro?",
-    "nivel": "picante"
-  },
-  {
     "texto": "¿Crees que {otro} ha mentido sobre estar enamorado alguna vez?",
     "nivel": "picante"
   },
   {
-    "texto": "¿Qué crees que siente {otro} de verdad por alguien de este grupo?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Crees que {otro} necesita drama para sentir que una relación le importa?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Qué crees que le daría más celos a {otro} ver en redes sociales?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Crees que {otro} ha tenido más contacto del debido con un ex?",
-    "nivel": "picante"
-  },
-  {
     "texto": "¿Qué crees que haría {otro} si le gustaran dos personas a la vez?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Crees que {otro} prioriza la atracción física antes que la conexión real?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Qué crees que le costaría más admitir a {otro} sobre su forma de amar?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Crees que {otro} tendría una cita con alguien de este grupo si se lo propusieran?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Qué crees que haría {otro} si supiera que ya no siente lo mismo por su pareja?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Qué crees que le daría más vergüenza a {otro} confesar sobre sus fantasías?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Crees que {otro} disfrutaría más de una relación tranquila o de una intensa y complicada?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Qué crees que {otro} necesita escuchar de alguien que le gusta y nunca se lo dicen?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Qué crees que haría {otro} si tuviera que elegir entre la razón y la atracción?",
     "nivel": "picante"
   },
   {
@@ -2088,99 +1588,7 @@
     "nivel": "picante"
   },
   {
-    "texto": "¿Quién de aquí es el más ligón sin que se le note?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Quién de aquí tiene más experiencia de la que aparenta?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Quién de aquí sería capaz de liarse con el ex de otra persona del grupo?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Quién de aquí cae más rápido cuando se enamora?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Quién de aquí tiene más celos de los que admite?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Quién de aquí es el más difícil de conquistar de este grupo?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Quién de aquí confunde más a menudo el deseo con el amor?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Quién de aquí sería capaz de dar celos a propósito para llamar la atención?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Quién de aquí tiene el radar más afinado para saber a quién le gusta?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Quién de aquí sería el peor guardando el secreto de una cita?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Quién de aquí es el más intenso enamorándose?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Quién de aquí necesita más sentirse deseado?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Quién de aquí tiene más probabilidades de seguir hablando con un ex?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Quién de aquí es el más misterioso con su vida amorosa?",
-    "nivel": "picante"
-  },
-  {
     "texto": "¿Quién de aquí sería capaz de tontear estando en una relación seria?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Quién de aquí tiene el peor gusto eligiendo pareja, con cariño?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Quién de aquí es el más propenso a confundir la costumbre con el amor?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Quién de aquí aguantaría más tiempo en una relación que no funciona?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Quién de aquí sería capaz de mentir sobre su número de parejas?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Quién de aquí tiene más tensión sin resolver con alguien de este grupo?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Quién de aquí necesita más drama para sentir que algo le importa?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Quién de aquí sería el más capaz de dejarlo todo por amor?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Quién de aquí es el más propenso a comparar a sus parejas con un ex?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Quién de aquí tiene más miedo a comprometerse de verdad?",
     "nivel": "picante"
   },
   {
@@ -2188,83 +1596,15 @@
     "nivel": "picante"
   },
   {
-    "texto": "¿Quién de aquí es el más probable que acabe liándose esta noche?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Quién de aquí tiene la vida amorosa más movida de todo el grupo?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Quién de aquí sería capaz de dejar plantada una cita por quedar con este grupo?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Quién de aquí ha tenido la ruptura más dramática?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Quién de aquí ha idealizado más rápido a alguien solo por atracción física?",
-    "nivel": "picante"
-  },
-  {
     "texto": "¿Cuál es la mentira más grande que le has dicho a una pareja para no discutir?",
     "nivel": "picante"
-  },
-  {
-    "texto": "¿Crees que {otro} ha sentido más atracción por alguien prohibido que por alguien fácil?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Crees que {otro} ha estado con alguien solo por despecho?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Qué crees que {otro} sabe de ti que preferirías que no supiera?",
-    "nivel": "normal"
   },
   {
     "texto": "¿Qué crees que {otro} piensa de ti que nunca te ha dicho a la cara?",
     "nivel": "normal"
   },
   {
-    "texto": "¿Qué crees que traicionarías de {otro} si te conviniera lo suficiente?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué crees que {otro} guarda de ti que podría hacerte daño si lo contara?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué crees que {otro} cambiaría de su relación contigo si pudiera?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Qué secreto tuyo confiarías solo a {otro} y a nadie más de esta sala?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué crees que {otro} ha fingido sentir por alguien de este grupo alguna vez?",
-    "nivel": "picante"
-  },
-  {
     "texto": "¿Qué crees que {otro} nunca te dirá aunque se lo preguntes directamente?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué le debes a {otro} y todavía no le has pedido perdón?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué crees que {otro} teme más perder de su relación contigo?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Qué crees que has hecho que {otro} nunca te reprochó pero le dolió de verdad?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué crees que {otro} sospecha de ti y nunca ha confirmado?",
     "nivel": "normal"
   },
   {
@@ -2272,51 +1612,7 @@
     "nivel": "normal"
   },
   {
-    "texto": "¿Qué crees que {otro} ha dejado de decirte por miedo a tu reacción?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué crees que {otro} recuerda de una pelea vuestra que tú ya olvidaste?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué crees que {otro} nunca superó del todo de algo que le hiciste?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué crees que {otro} cambiaría de sí mismo si supiera que te haría más feliz?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué crees que {otro} piensa de verdad de tu forma de tratar a este grupo?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué crees que {otro} ha mentido para no herirte alguna vez?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué crees que {otro} nunca ha perdonado a otra persona de esta sala?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué crees que {otro} teme que descubras de él o ella algún día?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué crees que {otro} ha callado sobre otra persona de este grupo por protegerte?",
-    "nivel": "normal"
-  },
-  {
     "texto": "¿Qué crees que {otro} sacrificaría antes de perder tu confianza?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué crees que {otro} ha ocultado sobre lo que siente por este grupo?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué crees que {otro} haría si supiera que hoy es su última oportunidad de decirte la verdad?",
     "nivel": "normal"
   },
   {
@@ -2324,79 +1620,7 @@
     "nivel": "normal"
   },
   {
-    "texto": "¿Quién de aquí es capaz de mentir mejor sin que se le note?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Quién de aquí ha traicionado la confianza de alguien de este grupo alguna vez?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Quién de aquí guarda más secretos ajenos de los que debería?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Quién de aquí sería capaz de dejar de hablarle a alguien de este grupo sin explicaciones?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Quién de aquí ha sentido alivio con el fracaso de otra persona de esta sala?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Quién de aquí antepone más su orgullo a pedir perdón dentro de este grupo?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Quién de aquí es capaz de guardar un secreto que podría hacer mucho daño?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Quién de aquí tiene el favoritismo más claro dentro de este grupo?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Quién de aquí es capaz de fingir una amistad por conveniencia?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Quién de aquí tiene el secreto más grande sin contar a nadie de esta sala?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Quién de aquí es capaz de sabotear a alguien de este grupo sin que se note?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Quién de aquí ha sido más desleal alguna vez sin que se supiera?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Quién de aquí guarda más rencor del que aparenta hacia alguien de aquí?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Quién de aquí sería capaz de mentir para no perder su sitio en este grupo?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Quién de aquí es el que más ha cambiado la opinión que tiene de otra persona de esta sala sin decirlo?",
-    "nivel": "normal"
-  },
-  {
     "texto": "¿Qué crees que {otro} ha ocultado a este grupo por miedo a lo que pensaran?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué crees que {otro} te ha perdonado sin que tú lo supieras nunca?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué crees que {otro} nunca te ha perdonado del todo, aunque diga que sí?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué crees que le has hecho a {otro} de lo que más te arrepientes?",
     "nivel": "normal"
   },
   {
@@ -2404,23 +1628,11 @@
     "nivel": "normal"
   },
   {
-    "texto": "¿Qué crees que {otro} se guarda por no romper la paz de este grupo?",
-    "nivel": "normal"
-  },
-  {
     "texto": "¿Cuándo fue la última vez que mentiste?",
     "nivel": "normal"
   },
   {
-    "texto": "¿Qué es lo peor que has hecho en el trabajo?",
-    "nivel": "normal"
-  },
-  {
     "texto": "¿Cuándo fue la última vez que lloraste?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Y la última vez que te reíste?",
     "nivel": "normal"
   },
   {
@@ -2432,7 +1644,7 @@
     "nivel": "normal"
   },
   {
-    "texto": "¿Cuál es tu mayor fantasía?",
+    "texto": "¿Cuál es tu mayor fantasía sexual?",
     "nivel": "picante"
   },
   {
@@ -2440,32 +1652,8 @@
     "nivel": "picante"
   },
   {
-    "texto": "¿Quién es la última persona que has buscado en Instagram?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Y lo último que has buscado en Google?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Cuál fue la última enfermedad que has tenido?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Quién es la última persona que te ha seguido en Instagram?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Alguna vez has escrito a un famoso por Instagram?",
-    "nivel": "normal"
-  },
-  {
     "texto": "¿Qué es lo que te alegra que tu familia no sepa de ti?",
     "nivel": "normal"
-  },
-  {
-    "texto": "¿Has engañado alguna vez a alguien?",
-    "nivel": "picante"
   },
   {
     "texto": "¿Quién de las personas de este grupo tiene el cuerpo más bonito?",
@@ -2476,31 +1664,7 @@
     "nivel": "picante"
   },
   {
-    "texto": "¿Cuál es el lugar más extraño en el que has orinado?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Cuál es el lugar más extraño en el que has defecado?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué es lo peor que has hecho?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué es lo más extraño que has comido?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Cuál es tu problema en las relaciones?",
-    "nivel": "picante"
-  },
-  {
     "texto": "¿Cuál es el secreto que nunca le has contado a nadie?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Tienes algún talento oculto?",
     "nivel": "normal"
   },
   {
@@ -2520,10 +1684,6 @@
     "nivel": "picante"
   },
   {
-    "texto": "¿Has copiado alguna vez en un examen?",
-    "nivel": "normal"
-  },
-  {
     "texto": "Si fueras a participar en un 'reality show', ¿cuál sería?",
     "nivel": "normal"
   },
@@ -2536,28 +1696,8 @@
     "nivel": "picante"
   },
   {
-    "texto": "¿Cuál ha sido tu peor caída?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Has robado algo de alguna tienda?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Qué es lo último que has grabado en el móvil?",
-    "nivel": "normal"
-  },
-  {
     "texto": "¿Cuál es la apuesta más ridícula que has hecho nunca?",
     "nivel": "normal"
-  },
-  {
-    "texto": "¿Preferirías volver al pasado o viajar al futuro?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Alguna vez has visto a alguien robar y te has callado?",
-    "nivel": "picante"
   },
   {
     "texto": "¿Qué es lo más vergonzoso que has hecho?",
@@ -2572,30 +1712,6 @@
     "nivel": "normal"
   },
   {
-    "texto": "¿Has seguido siendo amigo de alguien porque te beneficiaba más allá de la amistad?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Cuál es el mayor error que has cometido?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué es lo más desagradable que has hecho?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿A quién te gustaría besar en esta habitación?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Y a quién darías una bofetada?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué es lo que odias que la gente sepa de ti?",
-    "nivel": "normal"
-  },
-  {
     "texto": "¿Qué es lo peor que te han hecho?",
     "nivel": "normal"
   },
@@ -2604,43 +1720,7 @@
     "nivel": "normal"
   },
   {
-    "texto": "¿Has tenido alguna vez un enfrentamiento con la ley?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Cuál es tu peor hábito?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué es lo más vergonzoso que has hecho en un taxi?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Y estando de fiesta?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Alguna vez has suplicado a alguien? ¿El qué?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué es lo peor que le has dicho a alguien?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Has orinado alguna vez en la ducha?",
-    "nivel": "normal"
-  },
-  {
     "texto": "¿Cuál es el sueño más extraño que has tenido?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Y el más placentero?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Te han pillado alguna vez haciendo algo que no debías?",
     "nivel": "normal"
   },
   {
@@ -2652,16 +1732,8 @@
     "nivel": "picante"
   },
   {
-    "texto": "¿Qué pasó en la última noche de fiesta que has tenido?",
-    "nivel": "normal"
-  },
-  {
     "texto": "¿Cuál es tu mayor arrepentimiento?",
     "nivel": "normal"
-  },
-  {
-    "texto": "¿Alguna vez te has acostado con alguien y te has arrepentido?",
-    "nivel": "picante"
   },
   {
     "texto": "¿Cuál es la mayor idea errónea sobre ti?",
@@ -2669,10 +1741,6 @@
   },
   {
     "texto": "¿Has dicho alguna vez algo de lo que te arrepientas sobre alguien de esta sala?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué es lo que te gustaría que la gente supiera de ti?",
     "nivel": "normal"
   },
   {
@@ -2684,55 +1752,15 @@
     "nivel": "picante"
   },
   {
-    "texto": "¿Has mentido alguna vez para salir de una mala cita?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Cuál es el mayor problema en el que te has metido?",
-    "nivel": "normal"
-  },
-  {
     "texto": "¿Cuándo fue la última vez que tuviste sexo fuera de casa?",
     "nivel": "picante"
-  },
-  {
-    "texto": "¿Qué es lo peor en lo que has mentido?",
-    "nivel": "normal"
   },
   {
     "texto": "¿Qué es en lo que desearías haber mentido?",
     "nivel": "normal"
   },
   {
-    "texto": "¿Qué te da más grima?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Alguna vez te has defecado encima?",
-    "nivel": "normal"
-  },
-  {
     "texto": "¿Cuál es el mejor consejo que te han dado?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué es lo máximo que has gastado en una noche de fiesta?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Has devuelto o regalado alguna vez un regalo?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Nombra alguna vez que creas que has sido un mal compañero.",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Cuál es tu placer culpable?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué es lo que solo haces cuando estás solo?",
     "nivel": "normal"
   },
   {
@@ -2745,14 +1773,6 @@
   },
   {
     "texto": "¿Tienes un amigo favorito?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Tienes un hermano favorito?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Quieres más a tu madre o a tu padre?",
     "nivel": "normal"
   },
   {
@@ -2778,18 +1798,6 @@
   {
     "texto": "¿Has tenido algún sueño erótico con alguien de aquí?",
     "nivel": "picante"
-  },
-  {
-    "texto": "¿Cuál es tu combinación de alimentos asquerosos favorita?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Cuál es la razón más tonta por la que has abandonado un club antes de tiempo?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué has comprado que haya sido el mayor despilfarro de dinero?",
-    "nivel": "normal"
   },
   {
     "texto": "Si pudieras intercambiar tu vida con alguien de esta sala, ¿quién sería?",
@@ -2824,10 +1832,6 @@
     "nivel": "picante"
   },
   {
-    "texto": "¿Has comido insectos una vez?",
-    "nivel": "normal"
-  },
-  {
     "texto": "¿Has dejado a alguna cita plantada?",
     "nivel": "picante"
   },
@@ -2840,23 +1844,7 @@
     "nivel": "picante"
   },
   {
-    "texto": "¿Alguna vez has salido con zapatillas de andar por casa a la calle?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Alguna vez has salido de casa sin ropa interior?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Alguna vez has salido de casa con la ropa interior sucia?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Alguna vez te has quedado sin dinero antes de llegar a fin de mes?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Te has escapado de casa para ir de fiesta?",
+    "texto": "¿Te has escapado de casa alguna vez?",
     "nivel": "normal"
   },
   {
@@ -2868,43 +1856,23 @@
     "nivel": "picante"
   },
   {
-    "texto": "¿Has mentido a tu jefe/profesor alguna vez?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Has mentido sobre tu edad para sacar algo a cambio?",
-    "nivel": "normal"
-  },
-  {
     "texto": "¿Te has liado con tu ex teniendo pareja?",
     "nivel": "picante"
-  },
-  {
-    "texto": "¿Cuál ha sido la mayor locura que has hecho con tu pelo?",
-    "nivel": "normal"
   },
   {
     "texto": "¿Cuál es la broma más pesada que has hecho?",
     "nivel": "normal"
   },
   {
-    "texto": "¿Y la más pesada que te han gastado?",
+    "texto": "¿Cuál es la broma más pesada que te han gastado?",
     "nivel": "normal"
   },
   {
-    "texto": "¿Alguna vez has olido tus genitales?",
+    "texto": "¿Alguna vez has medido tus genitales?",
     "nivel": "picante"
   },
   {
     "texto": "¿Alguna vez has hecho un 'simpa'?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Alguna vez te has tirado un pedo y culpado a otra persona?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Te has acostado con alguien y lo has ignorado después?",
     "nivel": "picante"
   },
   {
@@ -2913,38 +1881,6 @@
   },
   {
     "texto": "¿Alguna vez te ha gustado un amigo?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Qué es lo más loco que has comprado en un viaje?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Has comido algo de la basura?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Has comido algo caducado?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Has vomitado en la calle?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Has hecho pis en la calle?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Has recogido algún mueble de la calle?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Has comprado ropa de segunda mano?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Te has ido de algún sitio sin pagar?",
     "nivel": "picante"
   },
   {
@@ -2964,15 +1900,7 @@
     "nivel": "picante"
   },
   {
-    "texto": "¿Tendrías un lío con alguien de la política?",
-    "nivel": "picante"
-  },
-  {
     "texto": "¿Qué película odias por encima de todo?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Y qué actor o actriz?",
     "nivel": "normal"
   },
   {
@@ -2984,35 +1912,11 @@
     "nivel": "normal"
   },
   {
-    "texto": "¿Hay alguna serie que sea tu ‘guilty pleasure’?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Cuál es el último libro que dejaste sin terminar?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Tienes miedo a las arañas?",
-    "nivel": "normal"
-  },
-  {
     "texto": "¿Has tenido sexo en un avión?",
     "nivel": "picante"
   },
   {
     "texto": "¿Has hecho pis en la playa?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Te has colado en un concierto sin entrada?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Has pedido un autógrafo a alguien famoso?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Te has hecho pasar por un famoso?",
     "nivel": "normal"
   },
   {
@@ -3024,10 +1928,6 @@
     "nivel": "normal"
   },
   {
-    "texto": "¿Te debe dinero alguien?",
-    "nivel": "normal"
-  },
-  {
     "texto": "¿Alguna vez has tenido que maquillarte un chupetón?",
     "nivel": "picante"
   },
@@ -3036,23 +1936,11 @@
     "nivel": "picante"
   },
   {
-    "texto": "¿Te gustaría ser otra persona?",
-    "nivel": "normal"
-  },
-  {
     "texto": "¿Alguna vez has enviado 'nudes'?",
     "nivel": "picante"
   },
   {
-    "texto": "¿Y has recibido 'nudes'?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Te has equivocado mandándolas alguna vez?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Cuál ha sido el mensaje más guarro que has recibido?",
+    "texto": "¿Alguna vez has recibido 'nudes'?",
     "nivel": "picante"
   },
   {
@@ -3060,39 +1948,11 @@
     "nivel": "picante"
   },
   {
-    "texto": "¿Cuál es el último mensaje que has mandado?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Y que has recibido?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué no puede faltar en tu nevera?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Cuál fue la última vez que vomitaste?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué es lo más asqueroso que has comido en la vida?",
-    "nivel": "normal"
-  },
-  {
     "texto": "¿Cuál es el hábito más desagradable que tienes?",
     "nivel": "normal"
   },
   {
     "texto": "¿Cuál es la última mentira que has contado?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Quién es la última persona que has seguido en Instagram?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Cuándo fue la última vez que llamaste a tu madre y para qué?",
     "nivel": "normal"
   },
   {
@@ -3104,27 +1964,15 @@
     "nivel": "normal"
   },
   {
-    "texto": "¿Qué harías si te encontraras un maletín lleno de dinero por la calle?",
-    "nivel": "normal"
-  },
-  {
     "texto": "¿Cuál ha sido la peor etapa de tu vida?",
     "nivel": "normal"
   },
   {
-    "texto": "¿Y la mejor?",
+    "texto": "¿Cuál ha sido la mejor etapa de tu vida?",
     "nivel": "normal"
   },
   {
-    "texto": "¿Has nadado desnudo alguna vez?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Has tenido alguna vez sexo tántrico?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Qué opinión tienes sobre los disfraces eróticos?",
+    "texto": "¿Qué opinión tienes sobre los disfraces eróticos? ¿Te has puesto uno?",
     "nivel": "picante"
   },
   {
@@ -3132,12 +1980,12 @@
     "nivel": "picante"
   },
   {
-    "texto": "¿Cuántas veces lo has hecho en una noche?",
+    "texto": "¿Alguna vez has tenido que usar un test de embarazo?",
     "nivel": "picante"
   },
   {
-    "texto": "¿Serías capaz de matar a alguien?",
-    "nivel": "normal"
+    "texto": "¿Cuántas veces lo has hecho en una noche?",
+    "nivel": "picante"
   },
   {
     "texto": "¿Crees que a veces es mejor no decir la verdad?",
@@ -3152,12 +2000,8 @@
     "nivel": "picante"
   },
   {
-    "texto": "¿Con quién pensaste la última vez que te masturbaste?",
+    "texto": "¿En quién pensaste la última vez que te masturbaste?",
     "nivel": "picante"
-  },
-  {
-    "texto": "¿Qué es lo más loco que haces cuando estás solo?",
-    "nivel": "normal"
   },
   {
     "texto": "¿Has practicado algo de bdsm?",
@@ -3168,10 +2012,6 @@
     "nivel": "picante"
   },
   {
-    "texto": "¿Cuál es tu palabra grosera favorita?",
-    "nivel": "normal"
-  },
-  {
     "texto": "¿Cuál es tu técnica de seducción?",
     "nivel": "picante"
   },
@@ -3180,19 +2020,7 @@
     "nivel": "normal"
   },
   {
-    "texto": "¿Duermes desnudo o en pijama?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Cuándo fue la última vez que alguien te vio sin ropa?",
-    "nivel": "picante"
-  },
-  {
     "texto": "¿A quién no te gustaría ver desnudo?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Alguna vez has tenido una cita a ciegas?",
     "nivel": "picante"
   },
   {
@@ -3200,24 +2028,12 @@
     "nivel": "picante"
   },
   {
-    "texto": "¿Beso seco, húmedo o mojado?",
-    "nivel": "picante"
-  },
-  {
     "texto": "De este grupo, ¿a quién besarías antes?",
     "nivel": "picante"
   },
   {
-    "texto": "¿Alguna vez has dado un teléfono falso a alguien?",
-    "nivel": "normal"
-  },
-  {
     "texto": "¿Alguna vez has mentido sobre tu edad para ligar?",
     "nivel": "picante"
-  },
-  {
-    "texto": "¿Alguna vez te has hecho pis de tanto reír?",
-    "nivel": "normal"
   },
   {
     "texto": "¿Cuál era tu amor de la infancia?",
@@ -3228,19 +2044,7 @@
     "nivel": "picante"
   },
   {
-    "texto": "¿Alguna vez te has escapado de casa?",
-    "nivel": "normal"
-  },
-  {
     "texto": "¿Cuántos chupitos puedes beberte seguidos?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Si el mundo se acabara y pudieras salvar solo a una persona para sobrevivir, ¿a quién salvarías?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Has traicionado alguna vez un secreto por culpa del alcohol?",
     "nivel": "picante"
   },
   {
@@ -3252,28 +2056,12 @@
     "nivel": "picante"
   },
   {
-    "texto": "¿Has mentido alguna vez para caerle bien a alguien?",
-    "nivel": "normal"
-  },
-  {
     "texto": "¿Quién fue tu primer gran 'crush'?",
     "nivel": "picante"
   },
   {
     "texto": "¿Alguna vez te han puesto una multa?",
     "nivel": "picante"
-  },
-  {
-    "texto": "¿Te han arrestado alguna vez?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Has mentido a la policía alguna vez?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Alguna vez te has tirado un pedo en un ascensor?",
-    "nivel": "normal"
   },
   {
     "texto": "Si pudieras hacer desaparecer un país, ¿cuál sería?",
@@ -3289,10 +2077,6 @@
   },
   {
     "texto": "Si pudieras hacer que alguien desapareciera para siempre, ¿quién sería?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué es lo más raro que has hecho frente al espejo?",
     "nivel": "normal"
   }
 ]
