@@ -492,19 +492,37 @@ un giro imposible de tomar a la velocidad actual).
 
 🛠️ **A construir**
 - Sprite de la pelota.
-- `mj-canasta.js`: **30 s**, sin rampa. Se arrastra el dedo desde la pelota y al
-  soltar sale con la dirección y la fuerza del gesto; parábola con gravedad,
-  rebote en aro y tablero. Canasta = +1 y pelota nueva abajo. El aro se desplaza
-  en horizontal a **velocidad constante** (ahí está la dificultad, ya que este
-  juego no acelera). Línea de puntos que previsualiza el tiro mientras arrastras.
-  **Objetivo: 6.**
-- Escenario: tablero, aro con red dibujada y suelo de pista.
+- `mj-canasta.js`: **30 s**, sin rampa. **En tres dimensiones**, a diferencia de
+  los otros tres minijuegos (petición del usuario: «que haya una sensación de
+  distancia a la canasta, no que parezca que esté encima», tipo *Game Pigeon*).
+  La pelota se mueve en un mundo en **metros** (`x` lateral, `y` altura, `z`
+  distancia) con gravedad real de 9,8 m/s², y se proyecta con una cámara de
+  perspectiva de verdad. Se arrastra el dedo hacia arriba desde la pelota: el
+  componente vertical del gesto da la potencia (repartida entre altura y
+  distancia en proporción fija, que es lo que mantiene el arco reconocible) y el
+  lateral apunta a izquierda o derecha. El aro está a **6,6 m**, a la altura
+  reglamentaria de **3,05 m**, y se desplaza en horizontal a velocidad constante
+  (ahí está la dificultad, ya que este juego no acelera). Rebote en hierro y
+  tablero. Canasta = +1. **Objetivo: 6.**
+- **La sensación de distancia** sale de cuatro cosas, no de una: la pista
+  converge hacia el horizonte (líneas de fondo que se juntan y laterales que
+  convergen), la pelota **encoge a menos de un tercio** mientras vuela, su
+  **sombra** corre por el suelo, y el aro se dibuja en dos mitades (la de atrás
+  antes que la pelota y la de delante después) para que una canasta se vea
+  **pasar por dentro**.
+- ⚠️ La elipse del aro se dibuja **más abierta de lo que tocaría**: proyectado de
+  verdad, un aro a 6,6 m visto desde una cámara a 2,3 m mide dos píxeles de alto
+  y se lee como una raya. Es una exageración deliberada para poder ver si la
+  pelota va a entrar.
+- Línea de puntos que previsualiza el tiro mientras arrastras.
 - El minijuego se elige al azar entre **los cuatro**.
 - Repasar los cuatro objetivos con lo que haya visto el usuario probando y
   ajustarlos.
 
-✅ **Criterios de aceptación:** en 30 s da tiempo a **al menos 12-15 tiros**, o
-el objetivo de 6 no es alcanzable.
+✅ **Criterios de aceptación**
+- En 30 s da tiempo a **al menos 15 tiros**, o el objetivo de 6 no es alcanzable.
+- La física es **independiente de los fps**: el mismo gesto tiene que dar el
+  mismo tiro en una pantalla de 60 Hz y en una de 120 Hz.
 
 🔍 **Qué debe probar el usuario:** los cuatro seguidos, para decidir los
 objetivos definitivos.
@@ -640,7 +658,7 @@ Con eso, el bot óptimo saca (mediana de 12 partidas):
 | Pez | 12 | 20 | Holgado: un humano decente llega. |
 | Guepardo | 12 | 11 | El bot salta con antelación fija y no es especialmente bueno; el techo que alcanzó fue 27. |
 | Bolita | 20 | 149 | El bot es *imbatible* aquí (gira siempre en el píxel exacto), así que su cifra no dice nada. 20 es lo que sale a los ~12 s de juego humano. |
-| Canasta | 6 | 11 | Un humano que le coja el punto debería rondar 5-7. |
+| Canasta | 6 | 19 | El bot resuelve la parábola exacta y **mete todas**: 19 tiros en 30 s. El objetivo pide acertar un tercio de eso. |
 
 **Estos objetivos siguen siendo provisionales**: el bot no se pone nervioso, no
 tiene el móvil pringado ni ha bebido. Ajústalos jugando.
@@ -660,3 +678,64 @@ Lo que **no** puede probar jsdom, y tienes que mirar tú en el móvil: cómo se 
 la ruleta girando, si el pixel art se lee a ese tamaño, si los controles
 responden bien al dedo, y si los escenarios quedan bonitos. El guepardo, en
 concreto, es el sprite más tosco de los cuatro.
+
+---
+
+## 11. Revisión: la canasta, rehecha en 3D (v1.11.1)
+
+Al probarlo, el usuario pidió que la canasta se pareciera al baloncesto de
+*Game Pigeon*: **«que haya una sensación de distancia a la canasta, no que
+parezca que esté encima»**. Tenía razón — la primera versión era plana: aro y
+pelota vivían en el mismo plano 2D, así que el aro no estaba *lejos*, estaba
+*arriba*.
+
+Rehecha entera. Ahora la pelota se mueve en un mundo de tres dimensiones en
+metros con gravedad real, proyectado con una cámara de perspectiva. Lo que
+transmite la distancia no es una cosa sino cuatro, y las cuatro hacen falta:
+
+1. **La pista converge** hacia el horizonte: las líneas de fondo se van juntando
+   y las laterales se cierran. Es la que más pesa.
+2. **La pelota encoge**: 35 px de radio en la mano, 11 px al llegar al aro.
+3. **La sombra** en el suelo dice a qué altura y a qué distancia va — sin ella
+   no se distingue un tiro corto de uno bajo.
+4. **El aro se dibuja en dos mitades**, la de atrás antes que la pelota y la de
+   delante después, para que una canasta se vea *pasar por dentro* y no por
+   encima.
+
+Efecto secundario agradable: como el mundo está en metros, `redimensionar` en
+este minijuego solo tiene que rehacer la cámara. Los otros tres, que trabajan en
+píxeles, tienen que reescalar a mano todo lo que hay en pantalla.
+
+### Un fallo que solo se ve midiendo: la física dependía de los fps
+
+Con el modelo nuevo se puede *calcular* cuál es el tiro perfecto y comprobar que
+el juego lo trata como tal. No lo hacía: el tiro analíticamente perfecto cruzaba
+el plano del aro **15 cm corto**, a 5 mm de no contar como canasta.
+
+La causa era el integrador. Estaba así:
+
+```js
+p.vy -= G * dt;      // primero la gravedad
+p.y  += p.vy * dt;   // y luego se avanza con la velocidad YA nueva
+```
+
+Eso (Euler semi-implícito) deja la parábola por debajo de la real en `½·g·Δt·t`
+— un error **proporcional al tamaño del fotograma**. En una pantalla de 60 Hz el
+tiro se quedaba corto; en una de 120 Hz, Δt es la mitad y el error también, así
+que **el mismo gesto habría dado un tiro distinto según el móvil**. Un jugador
+lo habría vivido como «este juego va raro», nunca como un bug.
+
+Arreglado usando la velocidad media del paso, que para aceleración constante es
+exacto:
+
+```js
+p.y  += p.vy * dt - 0.5 * G * dt * dt;
+p.vy -= G * dt;
+```
+
+Ahora el tiro perfecto entra limpio (distancia al centro del aro: 0,000 m) y el
+bot mete **exactamente las mismas 19 canastas a 30, 60 y 120 fps**.
+
+Los otros tres minijuegos no arrastran este problema: en ellos la gravedad
+gobierna un salto o una caída donde unos centímetros no cambian nada, y no hay
+ningún «tiro exacto» que deba cuadrar.

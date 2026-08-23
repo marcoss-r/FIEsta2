@@ -45,7 +45,8 @@ una verdad», que ya tiene su banco cerrado:
   (interruptor: al elegir RETO gira una ruleta de 20 quesitos que decide entre
   reto normal 75 %, minijuego 10 %, test rápido 10 % y doble verdad 5 %, con
   banco de 200 preguntas de cultura general y cuatro minijuegos en canvas —
-  pez, guepardo, bolita zigzag y canasta — con pixel art propio; ver
+  pez, guepardo, bolita zigzag y canasta, esta última en 3D con
+  perspectiva real — con pixel art propio; ver
   `md/PLAN_MODO_ARCADE.md`), carta volteable en 3D, «Paso» (en verdad o en reto) con castigo ponderado (30 % beber /
   20 % prenda / 50 % otros), «Otra» sin límite ni castigo en los dos tipos
   (en verdad la decide el grupo, no quien tiene el turno; también puede
@@ -100,7 +101,7 @@ cerradas:
 - [`md/PLAN_VERDAD_O_RETO.md`](md/PLAN_VERDAD_O_RETO.md) (`vr`)
   - [`md/PLAN_MODO_ARCADE.md`](md/PLAN_MODO_ARCADE.md) — ampliación de `vr`:
     ruleta al elegir RETO, con minijuegos, test rápido y doble verdad
-    (✅ implementado en v1.11.0)
+    (✅ implementado; la canasta rehecha en 3D en v1.11.1)
 - [`md/PLAN_DOS_MENTIRAS.md`](md/PLAN_DOS_MENTIRAS.md) (`dm`)
 - [`md/PLAN_EL_IMPOSTOR.md`](md/PLAN_EL_IMPOSTOR.md) (`im`)
 - [`md/PLAN_PREGUNTAS_INCOMODAS.md`](md/PLAN_PREGUNTAS_INCOMODAS.md) (`pi`,

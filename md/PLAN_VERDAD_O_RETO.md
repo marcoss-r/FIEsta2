@@ -3,12 +3,11 @@
 > Documento pensado para que otro agente **sin contexto** pueda implementar el
 > juego leyendo solo esto y [`md/PLAN_DESARROLLO.md`](PLAN_DESARROLLO.md).
 
-> ⚠️ **Ampliación en curso:** el **modo arcade** (ruleta al elegir RETO, con
-> minijuegos, test rápido y doble verdad) tiene su propio plan en
+> ⚠️ **Ampliación ya implementada:** el **modo arcade** (ruleta al elegir RETO,
+> con minijuegos, test rápido y doble verdad) tiene su propio plan en
 > [`md/PLAN_MODO_ARCADE.md`](PLAN_MODO_ARCADE.md), y **elimina los chips de modo**
-> (mixto / solo verdades / solo retos) que describe este documento. Mientras esa
-> Fase A no esté hecha, lo que manda aquí sigue siendo válido; a partir de ella,
-> el plan del arcade tiene prioridad sobre las filas marcadas abajo.
+> (mixto / solo verdades / solo retos) que describe este documento. En todo lo
+> que se solape, manda el plan del arcade, no este.
 
 ---
 
@@ -740,7 +739,8 @@ mirar la carta más larga del banco en horizontal y en vertical.
       preguntas** de cultura general (`trivia.json`/`.js` +
       `agregar_trivia.py`), pixel art propio en `sprites.js` y cuatro
       minijuegos en canvas (pez, guepardo, bolita zigzag y canasta) con un
-      motor común. La doble verdad encadena dos verdades **una detrás de
+      motor común; la canasta se rehízo en 3D con perspectiva real en
+      v1.11.1 para que se note la distancia al aro. La doble verdad encadena dos verdades **una detrás de
       otra**, cada una con su Hecho/Paso y sin «Otra». Las partidas guardadas
       por versiones anteriores (con `modo` y sin `arcade`) siguen
       reanudándose, con el arcade apagado.
