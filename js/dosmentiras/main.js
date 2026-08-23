@@ -76,7 +76,7 @@ function dmYaLoTengo() {
   document.getElementById("dm-tema-eco").textContent = dmEstado.temaActual.texto;
   document.getElementById("dm-instrucciones").textContent =
     `${nombre} cuenta sus tres frases. El grupo debate y vota a mano alzada. ` +
-    `Después, ${nombre} revela cuál era la verdad.`;
+    `Después, ${nombre} revela cuál era la mentira.`;
 
   const castigoEl = document.getElementById("dm-castigo");
   if (modoFiestaActivo()) {
