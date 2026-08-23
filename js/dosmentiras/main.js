@@ -5,19 +5,15 @@
 const DM_MIN_JUGADORES = 3;
 const DM_MAX_JUGADORES = 12;
 const DM_MAX_CAMBIOS = 2; // "Otro tema" por turno
-const DM_SEGUNDOS = 60; // duración del temporizador opcional
 const DM_CLAVE_GUARDADO = "dm_partida";
 
 // Todo el estado de la partida vive aquí.
 const dmEstado = {
   nombres: [],
   niveles: [],
-  conTemporizador: false,
   indiceTurno: 0,
   temaActual: null,
   cambiosUsados: 0,
-  idTemporizador: null,
-  segundosRestantes: 0,
   contador: { turnos: 0, cambios: 0 },
   repartidor: null,
 };
@@ -26,27 +22,6 @@ const dmEstado = {
 // al cargar la página y se reutilizan en cada partida.
 let dmConfigJugadores = null;
 let dmSelectorNiveles = null;
-let dmInterruptorTemporizador = null;
-
-// Interruptor propio del temporizador: a diferencia del de modo fiesta (que
-// es global y persistente), este es de partida y "apagado por defecto, no se
-// recuerda entre partidas" (§3 del plan) — mismo markup que .switch, sin
-// leer ni guardar nada en localStorage.
-function dmMontarInterruptorTemporizador(contenedor, alCambiar) {
-  contenedor.innerHTML = "";
-  const label = document.createElement("label");
-  label.className = "switch";
-  const input = document.createElement("input");
-  input.type = "checkbox";
-  const pista = document.createElement("span");
-  pista.className = "switch-pista";
-  label.append(input, pista);
-  contenedor.appendChild(label);
-
-  input.addEventListener("change", () => alCambiar(input.checked));
-
-  return { activo: () => input.checked };
-}
 
 // Filtra el banco por nivel y arma el repartidor. Sin plantillas que
 // resolver: el tema es sobre uno mismo, nunca señala a otro jugador (§4.2).
@@ -62,47 +37,11 @@ function dmIniciarMotor() {
   return true;
 }
 
-function dmFormatoTiempo(segundos) {
-  const m = Math.floor(segundos / 60);
-  const s = segundos % 60;
-  return `${m}:${String(s).padStart(2, "0")}`;
-}
-
 function dmActualizarBotonOtroTema() {
   const boton = document.getElementById("dm-btn-otro-tema");
   const quedan = DM_MAX_CAMBIOS - dmEstado.cambiosUsados;
   boton.textContent = `Otro tema 🔄 · quedan ${quedan}`;
   boton.disabled = quedan <= 0;
-}
-
-// Se para siempre al cambiar de tema (se rearranca aparte), al pasar a
-// "contar", en "Terminar" y en "Siguiente jugador": nunca puede quedar un
-// setInterval vivo (§4.3/§7 del plan, el error clásico de este patrón).
-function dmDetenerTemporizador() {
-  if (dmEstado.idTemporizador !== null) {
-    clearInterval(dmEstado.idTemporizador);
-    dmEstado.idTemporizador = null;
-  }
-}
-
-function dmArrancarTemporizador() {
-  dmDetenerTemporizador();
-  dmEstado.segundosRestantes = DM_SEGUNDOS;
-  const el = document.getElementById("dm-temporizador");
-  el.hidden = false;
-  el.textContent = dmFormatoTiempo(dmEstado.segundosRestantes);
-
-  dmEstado.idTemporizador = setInterval(() => {
-    dmEstado.segundosRestantes--;
-    el.textContent = dmFormatoTiempo(dmEstado.segundosRestantes);
-    if (dmEstado.segundosRestantes <= 0) {
-      dmDetenerTemporizador();
-      const aviso = document.getElementById("dm-aviso");
-      aviso.hidden = false;
-      aviso.textContent = "⏰ Se acabó el tiempo, cuenta lo que tengas";
-      dmYaLoTengo();
-    }
-  }, 1000);
 }
 
 // Sirve un tema nuevo en la vista "pensar" (al entrar en el turno o al pulsar
@@ -112,15 +51,12 @@ function dmMostrarTema() {
   dmEstado.temaActual = valor;
   document.getElementById("dm-tema-texto").textContent = valor.texto;
   dmActualizarBotonOtroTema();
-  if (dmEstado.conTemporizador) dmArrancarTemporizador();
 }
 
 function dmVerTema() {
   dmEstado.cambiosUsados = 0;
   document.getElementById("dm-vista-pensar").hidden = false;
   document.getElementById("dm-vista-contar").hidden = true;
-  document.getElementById("dm-aviso").hidden = true;
-  document.getElementById("dm-temporizador").hidden = !dmEstado.conTemporizador;
   dmMostrarTema();
   mostrarPantalla("dm-tema");
 }
@@ -129,16 +65,12 @@ function dmOtroTema() {
   if (dmEstado.cambiosUsados >= DM_MAX_CAMBIOS) return; // el botón ya está deshabilitado, red de seguridad barata
   dmEstado.cambiosUsados++;
   dmEstado.contador.cambios++;
-  document.getElementById("dm-aviso").hidden = true;
   dmMostrarTema();
 }
 
-// Idempotente a propósito: puede llegar tanto de un toque real como del
-// temporizador llegando a 0, y ambos podrían coincidir (§7 del plan).
 function dmYaLoTengo() {
   const vistaContar = document.getElementById("dm-vista-contar");
   if (!vistaContar.hidden) return; // ya se pasó a "contar", no repetir
-  dmDetenerTemporizador();
 
   const nombre = dmEstado.nombres[dmEstado.indiceTurno];
   document.getElementById("dm-tema-eco").textContent = dmEstado.temaActual.texto;
@@ -170,7 +102,6 @@ function dmGuardar() {
   guardarJSON(DM_CLAVE_GUARDADO, {
     nombres: dmEstado.nombres,
     niveles: dmEstado.niveles,
-    conTemporizador: dmEstado.conTemporizador,
     indiceTurno: dmEstado.indiceTurno,
     contador: dmEstado.contador,
   });
@@ -187,7 +118,6 @@ function dmEmpezarPartida() {
 
   dmEstado.nombres = nombres;
   dmEstado.niveles = dmSelectorNiveles.obtenerNiveles();
-  dmEstado.conTemporizador = dmInterruptorTemporizador.activo();
   dmEstado.indiceTurno = 0;
   dmEstado.contador = { turnos: 0, cambios: 0 };
   if (!dmIniciarMotor()) return;
@@ -198,7 +128,7 @@ function dmEmpezarPartida() {
 }
 
 // "Otra partida" NO empieza directamente: vuelve a dm-config con los mismos
-// nombres ya cargados, para poder cambiar niveles/temporizador si se quiere.
+// nombres ya cargados, para poder cambiar niveles si se quiere.
 function dmOtraPartida() {
   dmConfigJugadores.fijarNombres(dmEstado.nombres);
   document.getElementById("dm-error").textContent = "";
@@ -207,14 +137,13 @@ function dmOtraPartida() {
 }
 
 // Al reanudar SIEMPRE se vuelve al principio del turno en curso: nunca con un
-// tema ya servido ni el temporizador restaurado a medias (§4.2/§7 del plan).
+// tema ya servido a medias (§4.2/§7 del plan).
 function dmReanudar() {
   const guardado = cargarJSON(DM_CLAVE_GUARDADO);
   if (!guardado) return;
 
   dmEstado.nombres = guardado.nombres;
   dmEstado.niveles = guardado.niveles;
-  dmEstado.conTemporizador = guardado.conTemporizador;
   dmEstado.indiceTurno = guardado.indiceTurno;
   dmEstado.contador = guardado.contador;
   if (!dmIniciarMotor()) {
@@ -228,7 +157,6 @@ function dmReanudar() {
 }
 
 function dmSiguienteJugador() {
-  dmDetenerTemporizador();
   dmEstado.contador.turnos++;
   dmEstado.indiceTurno = (dmEstado.indiceTurno + 1) % dmEstado.nombres.length;
   mostrarPantalla("dm-turno");
@@ -237,7 +165,6 @@ function dmSiguienteJugador() {
 }
 
 function dmTerminar() {
-  dmDetenerTemporizador();
   document.getElementById("dm-resumen").textContent =
     `${dmEstado.contador.turnos} rondas de mentiras. ` +
     `${dmEstado.contador.cambios} temas rechazados por difíciles.`;
@@ -256,10 +183,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   dmSelectorNiveles = montarSelectorNiveles(document.getElementById("dm-niveles"), () => {});
-  dmInterruptorTemporizador = dmMontarInterruptorTemporizador(
-    document.getElementById("dm-timer-switch"),
-    () => {}
-  );
   montarInterruptorModoFiesta(document.getElementById("dm-fiesta"), () => {});
 
   document.getElementById("btn-juego-dm").addEventListener("click", () => {

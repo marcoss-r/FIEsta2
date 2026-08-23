@@ -14,8 +14,8 @@ const VR_CLAVE_GUARDADO = "vr_partida";
 // multi-selección con mínimo uno activo que el selector del núcleo, pero con
 // su propio namespace porque el conjunto de niveles no es el estándar.
 const VR_NIVELES = [
-  { id: "normal", nombre: "Normal", emoji: "🙂" },
-  { id: "picante", nombre: "Picante", emoji: "🌶️" },
+  { id: "normal", nombre: "Normal" },
+  { id: "picante", nombre: "Picante" },
 ];
 const VR_NIVELES_POR_DEFECTO = ["normal"];
 
@@ -55,7 +55,7 @@ function vrMontarSelectorNiveles(contenedor, alCambiar) {
       chip.type = "button";
       chip.className = "vr-chip" + (elegidos.includes(nivel.id) ? " activo" : "");
       chip.dataset.nivel = nivel.id;
-      chip.textContent = `${nivel.emoji} ${nivel.nombre}`;
+      chip.textContent = nivel.nombre;
       chip.addEventListener("click", () => alternar(nivel.id));
       contenedor.appendChild(chip);
     });

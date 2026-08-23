@@ -6,9 +6,9 @@
 // gratuitamente extremo, sino generar temas de conversación jugosos entre
 // amigos (§12 global, actualizado).
 const NIVELES = [
-  { id: "suave", nombre: "Suave", emoji: "🙂", desc: "Apto para cualquier grupo" },
-  { id: "picante", nombre: "Picante", emoji: "🌶️", desc: "Sube la temperatura" },
-  { id: "extremo", nombre: "Salseo", emoji: "👀", desc: "Para generar conversación entre amigos" },
+  { id: "suave", nombre: "Suave", desc: "Apto para cualquier grupo" },
+  { id: "picante", nombre: "Picante", desc: "Sube la temperatura" },
+  { id: "extremo", nombre: "Salseo", desc: "Para generar conversación entre amigos" },
 ];
 
 // Solo Suave y Picante empiezan activos: que "Salseo" sea una decisión
@@ -31,7 +31,7 @@ function montarSelectorNiveles(contenedor, alCambiar) {
       chip.type = "button";
       chip.className = "chip-nivel" + (elegidos.includes(nivel.id) ? " activo" : "");
       chip.dataset.nivel = nivel.id;
-      chip.textContent = `${nivel.emoji} ${nivel.nombre}`;
+      chip.textContent = nivel.nombre;
       chip.addEventListener("click", () => alternar(nivel.id));
       contenedor.appendChild(chip);
     });

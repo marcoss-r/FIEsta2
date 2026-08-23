@@ -61,10 +61,9 @@ una verdad», que ya tiene su banco cerrado:
 - **«Dos mentiras y una verdad»** (✅ Fases 1-5 completas) — la app da el
   **tema** (o la frase ya empezada, tipo `arranque`) para que nadie se quede
   en blanco; el tema se ve a la vista de todo el grupo, «Otro tema» hasta 2
-  veces por turno sin castigo, temporizador opcional de 60 s (propio del
-  juego, no confundir con el modo fiesta) que al agotarse pasa solo a la
-  vista de contar, y castigo (`castigoAlAzar()`) si el modo fiesta está
-  activo. Banco de **160 temas** (80 `tema` + 80 `arranque`, 32/32/16 por
+  veces por turno sin castigo, y castigo (`castigoAlAzar()`) si el modo
+  fiesta está activo (el temporizador opcional de 60 s que tuvo en su Fase 4
+  se retiró después, ver `md/PLAN_DOS_MENTIRAS.md`). Banco de **160 temas** (80 `tema` + 80 `arranque`, 32/32/16 por
   nivel en cada tipo; objetivo reducido de ≥ 400 a 160 a petición del
   usuario, con temas **amplios** para poder inventar mentiras y recordar
   verdades con facilidad), `data/dosmentiras/temas.json` + `.js` generado +

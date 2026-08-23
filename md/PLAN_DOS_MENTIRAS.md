@@ -3,6 +3,12 @@
 > Documento pensado para que otro agente **sin contexto** pueda implementar el
 > juego leyendo solo esto y [`md/PLAN_DESARROLLO.md`](PLAN_DESARROLLO.md).
 
+> **Nota posterior:** el temporizador opcional de 60 s descrito en la Fase 4
+> de este plan se **eliminó** a petición del usuario (retoques de app,
+> v1.12.2): ni la interfaz ni el código lo mencionan ya. El resto del
+> documento se deja tal cual quedó implementado, como registro histórico de
+> esa fase.
+
 ---
 
 ## 1. Contexto mínimo
@@ -44,8 +50,6 @@ vigila que las tres frases van realmente del tema y nadie se escaquea contando
 cualquier cosa.
 
 Si el tema no te inspira, puedes pedir **«Otro tema»** hasta dos veces por turno.
-Y si el grupo quiere presión, en la configuración se puede encender un
-**temporizador de 60 segundos** para pensarlas.
 
 La app **no gestiona ni votos ni puntos**: se vota a mano alzada y se revela
 hablando.
@@ -60,7 +64,7 @@ hablando.
 | **Nº de jugadores** | **3–12** (con 2 no hay debate posible). Por defecto 4. |
 | **Pantallas** | `dm-config` → `dm-turno` → `dm-tema` → `dm-fin`. `dm-tema` tiene **dos sub-vistas** (`.vista`): *pensar* y *contar*. |
 | **¿El tema es secreto?** | ❌ **No.** Se muestra a todo el grupo, para que vigilen que las tres frases van del tema. Este juego **no usa handoff**. |
-| **Temporizador** | ✅ **Opcional, apagado por defecto.** Interruptor en `dm-config`; cuando está activo, cuenta **60 s** en la sub-vista *pensar*. Al llegar a 0 avisa y pasa a *contar*, no penaliza. |
+| **Temporizador** | ❌ **Eliminado** (v1.12.2). Existió como interruptor opcional en Fase 4; se retiró entero, ver nota al principio del documento. |
 | **Botón «Otro tema»** | ✅ **Máximo 2 cambios por turno** (para que nadie busque el tema fácil). Sin castigo, ni con modo fiesta: cambiar de tema no es rajarse. |
 | **Niveles de intensidad** | Los tres del núcleo, multi-selección, por defecto suave + picante. |
 | **Modo fiesta** | Interruptor global del núcleo. Con él activo, en la sub-vista *contar* se muestra un castigo concreto: «🍻 Quien falle: **…** · Si no acierta nadie, bebe el grupo». |

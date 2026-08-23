@@ -35,8 +35,8 @@ const QM_ENCABEZADOS = {
 // con mínimo uno activo que el selector de niveles del núcleo, pero con su
 // propio namespace porque el conjunto de niveles no es el estándar.
 const QM_NIVELES = [
-  { id: "normal", nombre: "Normal", emoji: "🙂" },
-  { id: "picante", nombre: "Picante", emoji: "🌶️" },
+  { id: "normal", nombre: "Normal" },
+  { id: "picante", nombre: "Picante" },
 ];
 const QM_NIVELES_POR_DEFECTO = ["normal"];
 
@@ -83,7 +83,7 @@ function qmMontarSelectorNiveles(contenedor, alCambiar) {
       chip.type = "button";
       chip.className = "qm-chip" + (elegidos.includes(nivel.id) ? " activo" : "");
       chip.dataset.nivel = nivel.id;
-      chip.textContent = `${nivel.emoji} ${nivel.nombre}`;
+      chip.textContent = nivel.nombre;
       chip.addEventListener("click", () => alternar(nivel.id));
       contenedor.appendChild(chip);
     });
