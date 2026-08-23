@@ -827,3 +827,49 @@ No hay ningún otro sitio que dependa de esto: la ruleta sigue con sus dos
 quesitos de minijuego y sus probabilidades intactas (75/10/10/5), y la prueba de
 humo sigue ejercitando los cuatro minijuegos uno a uno aunque solo uno salga
 sorteado.
+
+---
+
+## 14. Tercera revisión de la canasta: oclusión y pared (v1.11.4)
+
+Tres quejas del usuario probándola, y las tres eran fallos reales de dibujo, no
+de física:
+
+**«La pelota se pone siempre por delante del tablero, incluso cuando te
+pasas»** y **«con el aro pasa al revés: se pone siempre por delante de la
+pelota»**. Las dos venían de lo mismo: el `pintar()` dibujaba todo en un orden
+FIJO (tablero → aro trasero → pelota → aro delantero) sin mirar quién estaba
+más cerca de la cámara. Y encima las dos mitades del aro estaban
+**intercambiadas**: con el convenio de "aro visto un poco desde arriba", el
+borde cercano es la mitad de *abajo* de la elipse, pero la mitad que se pintaba
+encima de la pelota era la de *arriba* — la lejana. O sea que un tiro que aún
+no había llegado al aro ya aparecía "detrás" de su borde lejano.
+
+Arreglado con el **algoritmo del pintor**: cada pieza (tablero+poste, mitad
+lejana del aro con su red, pelota, mitad cercana del aro) declara su
+profundidad `z` y se pintan ordenadas de lejos a cerca en cada fotograma. La
+oclusión sale sola esté donde esté la pelota: delante del aro entero cuando aún
+no ha llegado, entre las dos mitades cuando cae por dentro, y detrás del
+tablero cuando el tiro se pasa de largo.
+
+**«Con las líneas de suelo hay una percepción errónea de la distancia.»** El
+parqué se extendía hasta z=40, creando un falso horizonte a media pantalla sin
+nada que cerrara la escena — no se sabía dónde "acababa" la sala ni, por tanto,
+a qué altura del suelo estaba la canasta. Ahora el suelo **termina en una pared**
+(z=8,5, con su zócalo marcando la junta), el poste queda visiblemente plantado
+en el parqué delante de ella, y las líneas de pista forman un **rectángulo de
+verdad** (dos laterales convergiendo hacia la canasta + línea de fondo), que es
+la referencia de profundidad más fuerte de la escena. La pared queda por detrás
+del punto donde se repone la pelota (8,2 m), así que nunca se ve una pelota
+"dentro" de la pared.
+
+### Cómo se comprueba sin ojos
+
+No puedo ver el canvas, así que la prueba usa un **contexto espía**: un
+contexto 2D falso que registra cada operación de dibujo con su color activo, y
+sobre ese registro se comprueba el ORDEN. Con la pelota en z=3 (cerca), z=5,5
+(dentro del aro) y z=6,5 (pasada), los hitos (tablero = relleno blanco, aro
+trasero = trazo #a81b2a, pelota = drawImage, aro delantero = trazo #ff4d5a)
+tienen que aparecer exactamente en el orden que dicta la profundidad. Las
+pruebas de física y la de humo general siguen en verde: nada de esto tocó
+`actualizar()`.

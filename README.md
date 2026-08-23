@@ -101,7 +101,7 @@ cerradas:
 - [`md/PLAN_VERDAD_O_RETO.md`](md/PLAN_VERDAD_O_RETO.md) (`vr`)
   - [`md/PLAN_MODO_ARCADE.md`](md/PLAN_MODO_ARCADE.md) — ampliación de `vr`:
     ruleta al elegir RETO, con minijuegos, test rápido y doble verdad
-    (✅ implementado; la canasta rehecha en 3D en v1.11.1-2)
+    (✅ implementado; la canasta rehecha en 3D en v1.11.1-4)
 - [`md/PLAN_DOS_MENTIRAS.md`](md/PLAN_DOS_MENTIRAS.md) (`dm`)
 - [`md/PLAN_EL_IMPOSTOR.md`](md/PLAN_EL_IMPOSTOR.md) (`im`)
 - [`md/PLAN_PREGUNTAS_INCOMODAS.md`](md/PLAN_PREGUNTAS_INCOMODAS.md) (`pi`,
