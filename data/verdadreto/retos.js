@@ -7,8 +7,6 @@ const VR_RETOS = [
   { texto: "Habla como un comentarista de fútbol hasta tu próximo turno", nivel: "normal" },
   { texto: "Enseña la última foto de tu galería", nivel: "normal" },
   { texto: "Ponte de pie y haz tu mejor pose de portada de disco", nivel: "normal" },
-  { texto: "Di tres cosas que te gusten de {otro}", nivel: "normal" },
-  { texto: "Di una cosa que no te guste de {otro}", nivel: "normal" },
   { texto: "Canta el estribillo de la última canción que escuchaste", nivel: "normal" },
   { texto: "Cuenta un chiste. Si nadie se ríe, cuenta otro.", nivel: "normal" },
   { texto: "Haz una imitación de un animal durante 10 segundos", nivel: "normal" },
@@ -47,7 +45,6 @@ const VR_RETOS = [
   { texto: "Haz una pose de superhéroe y mantenla 10 segundos", nivel: "normal" },
   { texto: "Describe a {otro} usando solo emojis y que el resto adivine de quién se trata", nivel: "normal" },
   { texto: "Enseña el último vídeo que hayas grabado con tu móvil", nivel: "normal" },
-  { texto: "Cuenta tres cosas buenas que te hayan pasado esta semana", nivel: "normal" },
   { texto: "Cuenta algo malo de esta semana", nivel: "normal" },
   { texto: "Haz de vendedor y trata de vendernos un objeto random de la sala", nivel: "normal" },
   { texto: "Enséñale al grupo tu mejor cara de sorpresa", nivel: "normal" },
@@ -502,7 +499,6 @@ const VR_RETOS = [
   { texto: "Hazte mal el eyeliner y sal así a la calle", nivel: "normal" },
 
   // ── picante
-  { texto: "Dile a {otro} con quién de este grupo te liarías si no fuerais amigos", nivel: "picante" },
   { texto: "Enséñale al grupo el mensaje subido de tono más arriesgado que tengas guardado, si te atreves", nivel: "picante" },
   { texto: "Dile a {otro} cuál es tu manía más rara en la intimidad", nivel: "picante" },
   { texto: "Dile a {otro} qué es lo que más celos te da confesar que sientes", nivel: "picante" },

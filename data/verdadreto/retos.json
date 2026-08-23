@@ -20,14 +20,6 @@
     "nivel": "normal"
   },
   {
-    "texto": "Di tres cosas que te gusten de {otro}",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Di una cosa que no te guste de {otro}",
-    "nivel": "normal"
-  },
-  {
     "texto": "Canta el estribillo de la última canción que escuchaste",
     "nivel": "normal"
   },
@@ -180,10 +172,6 @@
     "nivel": "normal"
   },
   {
-    "texto": "Cuenta tres cosas buenas que te hayan pasado esta semana",
-    "nivel": "normal"
-  },
-  {
     "texto": "Cuenta algo malo de esta semana",
     "nivel": "normal"
   },
@@ -282,10 +270,6 @@
   {
     "texto": "Cuenta una historia de miedo corta e inventada en 20 segundos",
     "nivel": "normal"
-  },
-  {
-    "texto": "Dile a {otro} con quién de este grupo te liarías si no fuerais amigos",
-    "nivel": "picante"
   },
   {
     "texto": "Enséñale al grupo el mensaje subido de tono más arriesgado que tengas guardado, si te atreves",

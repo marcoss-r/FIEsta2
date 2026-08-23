@@ -2076,6 +2076,62 @@
     "nivel": "normal"
   },
   {
+    "texto": "¿Qué faceta solo le muestras a tu pareja?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Te fijarías en alguien de este grupo de fiesta si no conocieras a nadie?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la parte más atractiva del género que te atrae?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Has estado a punto de dejalo con tu pareja actual alguna vez?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "Di 3 redflags inmediatas al conocer a alguien como pareja",
+    "nivel": "picante"
+  },
+  {
+    "texto": "Di algo que te enamoraría de una persona que estés conociendo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Te acostarías con otra persona si tuvieses el permiso de tu pareja? ¿Y si te lo pidiese?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Cuál es la última decisión amorosa de la que te arrepientes?",
+    "nivel": "picante"
+  },
+  {
+    "texto": "¿Qué pensamiento político no compartes para nada con {otro}?",
+    "nivel": "normal"
+  },
+  {
+    "texto": "Di tres cosas que te gusten de {otro}",
+    "nivel": "normal"
+  },
+  {
+    "texto": "Di una cosa que no te guste de {otro}",
+    "nivel": "normal"
+  },
+  {
+    "texto": "Cuenta tres cosas buenas que te hayan pasado esta semana",
+    "nivel": "normal"
+  },
+  {
+    "texto": "Cuenta algo malo de esta semana",
+    "nivel": "normal"
+  },
+  {
+    "texto": "Dile a {otro} con quién de este grupo te liarías si no fuerais amigos",
+    "nivel": "picante"
+  },
+  {
     "texto": "Si pudieras hacer que alguien desapareciera para siempre, ¿quién sería?",
     "nivel": "normal"
   }
