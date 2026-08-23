@@ -95,6 +95,9 @@ cerradas:
 - [`md/PLAN_YO_NUNCA.md`](md/PLAN_YO_NUNCA.md) (`yn`)
 - [`md/PLAN_QUIEN_ES_MAS.md`](md/PLAN_QUIEN_ES_MAS.md) (`qm`)
 - [`md/PLAN_VERDAD_O_RETO.md`](md/PLAN_VERDAD_O_RETO.md) (`vr`)
+  - [`md/PLAN_MODO_ARCADE.md`](md/PLAN_MODO_ARCADE.md) — ampliación de `vr`:
+    ruleta al elegir RETO, con minijuegos, test rápido y doble verdad
+    (🚧 planificado, sin implementar)
 - [`md/PLAN_DOS_MENTIRAS.md`](md/PLAN_DOS_MENTIRAS.md) (`dm`)
 - [`md/PLAN_EL_IMPOSTOR.md`](md/PLAN_EL_IMPOSTOR.md) (`im`)
 - [`md/PLAN_PREGUNTAS_INCOMODAS.md`](md/PLAN_PREGUNTAS_INCOMODAS.md) (`pi`,

@@ -3,6 +3,13 @@
 > Documento pensado para que otro agente **sin contexto** pueda implementar el
 > juego leyendo solo esto y [`md/PLAN_DESARROLLO.md`](PLAN_DESARROLLO.md).
 
+> ⚠️ **Ampliación en curso:** el **modo arcade** (ruleta al elegir RETO, con
+> minijuegos, test rápido y doble verdad) tiene su propio plan en
+> [`md/PLAN_MODO_ARCADE.md`](PLAN_MODO_ARCADE.md), y **elimina los chips de modo**
+> (mixto / solo verdades / solo retos) que describe este documento. Mientras esa
+> Fase A no esté hecha, lo que manda aquí sigue siendo válido; a partir de ella,
+> el plan del arcade tiene prioridad sobre las filas marcadas abajo.
+
 ---
 
 ## 1. Contexto mínimo
@@ -61,7 +68,7 @@ los turnos.
 | **Prefijo** | `vr` en estado, funciones, constantes, pantallas, IDs, clases y `localStorage`. |
 | **Nº de jugadores** | **2–12**. Por defecto 4. |
 | **Pantallas** | `vr-config` → `vr-turno` → `vr-carta` → `vr-fin`. |
-| **Modos de juego** | **Tres**: `mixto` (por defecto, eliges en cada turno), `verdades` (solo verdades) y `retos` (solo retos). Se elige en `vr-config` con chips. |
+| **Modos de juego** | ⚠️ **Sustituido por el modo arcade** (ver [`md/PLAN_MODO_ARCADE.md`](PLAN_MODO_ARCADE.md) §3, Fase A): los tres chips desaparecen y el juego pasa a ser siempre mixto, con un interruptor de arcade en su lugar. *(Decisión original, histórica: tres modos — `mixto` por defecto, `verdades` y `retos` — elegidos en `vr-config` con chips.)* |
 | **Presentación de la carta** | **Volteo 3D**: la carta entra boca abajo y se voltea al servir el texto (patrón `.cf-carta` de FIEsta 1). |
 | **Botón «Otra»** | ✅ Existe **en los dos tipos**, sin límite de veces ni castigo en ninguno, pero con un matiz distinto (ampliación pedida por el usuario): en **reto** representa «no puedo hacer este reto por el sitio donde estoy», no una negativa; en **verdad** representa que **el grupo** (los demás jugadores, no quien tiene el turno) decide pedir otra pregunta — quien tiene el turno no puede usarlo para escaquearse de una pregunta incómoda, para eso está «Paso», que sí cuenta y sí castiga con modo fiesta. Etiqueta dinámica: «Otro reto 🔄» / «Otra pregunta 🔄». En verdad, además, se muestra una nota (`#vr-nota-verdad`) recordando ambas cosas y que el grupo puede inventarse su propia pregunta en vez de usar la de la app. |
 | **Niveles de intensidad** | ⚠️ **Propios de este juego, NO los tres del núcleo.** Solo dos: `normal` y `picante` (chips `VR_NIVELES` en `js/verdadreto/main.js`, no `montarSelectorNiveles` del núcleo, mismo patrón que `qm`). `picante` agrupa drogas, alcohol, adicciones, cosas ilegales, relaciones amorosas, relaciones sexuales y (en retos) connotación sexual como besos o quitarse prendas; `normal` es el resto. Por defecto solo `normal` activo (mínimo uno); al activar `picante` por primera vez sale el mismo aviso de tono que el núcleo muestra al activar «Salseo» (`mostrarAvisoTonoSiPrimeraVez()`, reutilizada). Filtran **los dos bancos a la vez**. |
