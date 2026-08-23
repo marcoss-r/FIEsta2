@@ -6,14 +6,6 @@ const VR_MIN_JUGADORES = 2;
 const VR_MAX_JUGADORES = 12;
 const VR_CLAVE_GUARDADO = "vr_partida";
 
-// Selector de modo, propio de este juego (selección ÚNICA, a diferencia de
-// los chips de nivel del núcleo, que son multi-selección).
-const VR_MODOS = [
-  { id: "mixto", nombre: "Mixto" },
-  { id: "verdades", nombre: "Solo verdades" },
-  { id: "retos", nombre: "Solo retos" },
-];
-
 // Niveles propios de este juego (a diferencia de la mayoría de juegos, que
 // usan los tres niveles del núcleo): solo dos, porque aquí "picante" agrupa
 // todo lo relacionado con drogas, alcohol, adicciones, cosas ilegales,
@@ -31,20 +23,24 @@ const VR_NIVELES_POR_DEFECTO = ["normal"];
 const vrEstado = {
   nombres: [],
   niveles: [],
-  modo: "mixto",
+  arcade: false,
   indiceTurno: 0,
   tipoActual: null,
   textoActual: "",
   contador: { verdades: 0, retos: 0, pasos: 0, cambios: 0 },
   repartidorVerdades: null,
   repartidorRetos: null,
+  // Solo con el arcade encendido (md/PLAN_MODO_ARCADE.md): qué ha decidido la
+  // ruleta este turno y, si ha caído "doble verdad", por cuál de las dos vamos.
+  resultadoRuleta: null,
+  dobleVerdad: null,
 };
 
 // Referencias a los componentes montados en vr-config: se crean una sola vez
 // al cargar la página y se reutilizan en cada partida.
 let vrConfigJugadores = null;
 let vrSelectorNiveles = null;
-let vrSelectorModo = null;
+let vrInterruptorArcade = null;
 
 // Chips de nivel propios de vr (§7.4 del núcleo, pero con VR_NIVELES en vez
 // de los tres niveles estándar): al activar "picante" por primera vez se
@@ -83,48 +79,33 @@ function vrMontarSelectorNiveles(contenedor, alCambiar) {
   return { obtenerNiveles: () => elegidos.slice() };
 }
 
-function vrMontarSelectorModo(contenedor, alCambiar) {
-  let elegido = "mixto";
+// Interruptor propio del juego, con la misma pinta que el del modo fiesta pero
+// SIN persistencia global: el arcade se elige en cada partida y viaja dentro de
+// "vr_partida", no en una clave suelta de localStorage.
+function vrMontarInterruptorArcade(contenedor) {
+  contenedor.innerHTML = "";
+  const label = document.createElement("label");
+  label.className = "switch";
+  const input = document.createElement("input");
+  input.type = "checkbox";
+  const pista = document.createElement("span");
+  pista.className = "switch-pista";
+  label.append(input, pista);
+  contenedor.appendChild(label);
 
-  function render() {
-    contenedor.innerHTML = "";
-    VR_MODOS.forEach((modo) => {
-      const chip = document.createElement("button");
-      chip.type = "button";
-      chip.className = "vr-chip" + (modo.id === elegido ? " activo" : "");
-      chip.dataset.modo = modo.id;
-      chip.textContent = modo.nombre;
-      chip.addEventListener("click", () => elegir(modo.id));
-      contenedor.appendChild(chip);
-    });
-  }
-
-  function elegir(id) {
-    if (id === elegido) return;
-    elegido = id;
-    render();
-    alCambiar(elegido);
-  }
-
-  render();
-  return { obtenerModo: () => elegido };
-}
-
-// Si el modo es "mixto" pero uno de los dos bancos se ha quedado sin
-// entradas tras filtrar, la partida se juega igual pero solo con el tipo que
-// sí tiene contenido (§7 del plan del juego, "banco vacío tras filtrar").
-function vrModoEfectivo() {
-  if (vrEstado.modo !== "mixto") return vrEstado.modo;
-  if (!vrEstado.repartidorVerdades) return "retos";
-  if (!vrEstado.repartidorRetos) return "verdades";
-  return "mixto";
+  return {
+    activo: () => input.checked,
+    fijar(valor) {
+      input.checked = !!valor;
+    },
+  };
 }
 
 // Filtra los dos bancos por nivel y descarta los textos cuyo {otro}/{otro2}
 // no puede resolverse con los jugadores disponibles (quien tiene el turno
 // nunca puede ser su propio {otro}). Devuelve false (y muestra el error
-// bloqueante) solo si NINGÚN tipo necesario tiene contenido; si solo uno de
-// los dos se queda vacío, avisa pero deja jugar con el otro.
+// bloqueante) solo si los DOS bancos se quedan vacíos; si solo uno se queda
+// vacío, avisa pero deja jugar con el otro (§7, "banco vacío tras filtrar").
 function vrIniciarMotor() {
   const bancoVerdades = filtrarPorNivel(VR_VERDADES, vrEstado.niveles).filter(
     (v) => otrosNecesarios(v.texto) <= vrEstado.nombres.length - 1
@@ -133,28 +114,22 @@ function vrIniciarMotor() {
     (r) => otrosNecesarios(r.texto) <= vrEstado.nombres.length - 1
   );
 
-  const necesitaVerdades = vrEstado.modo !== "retos";
-  const necesitaRetos = vrEstado.modo !== "verdades";
-  const hayVerdades = !necesitaVerdades || bancoVerdades.length > 0;
-  const hayRetos = !necesitaRetos || bancoRetos.length > 0;
-
   const errorEl = document.getElementById("vr-error");
-  if (!hayVerdades && !hayRetos) {
+  if (!bancoVerdades.length && !bancoRetos.length) {
     errorEl.textContent = "No hay verdades ni retos para esta configuración.";
     return false;
   }
-  if (necesitaVerdades && bancoVerdades.length === 0) {
+  if (!bancoVerdades.length) {
     errorEl.textContent = "No hay verdades para esta configuración: solo saldrán retos.";
-  } else if (necesitaRetos && bancoRetos.length === 0) {
+  } else if (!bancoRetos.length) {
+    // Sin retos no hay ruleta: el arcade se queda inerte esa partida.
     errorEl.textContent = "No hay retos para esta configuración: solo saldrán verdades.";
   } else {
     errorEl.textContent = "";
   }
 
-  vrEstado.repartidorVerdades =
-    necesitaVerdades && bancoVerdades.length ? crearRepartidor(bancoVerdades) : null;
-  vrEstado.repartidorRetos =
-    necesitaRetos && bancoRetos.length ? crearRepartidor(bancoRetos) : null;
+  vrEstado.repartidorVerdades = bancoVerdades.length ? crearRepartidor(bancoVerdades) : null;
+  vrEstado.repartidorRetos = bancoRetos.length ? crearRepartidor(bancoRetos) : null;
   return true;
 }
 
@@ -188,7 +163,10 @@ function vrRenderCarta() {
   const tipoEl = document.getElementById("vr-carta-tipo");
   const textoEl = document.getElementById("vr-carta-texto");
 
-  tipoEl.textContent = vrEstado.tipoActual === "verdad" ? "VERDAD" : "RETO";
+  // En "doble verdad" (ruleta del modo arcade) la cabecera dice por cuál de
+  // las dos preguntas va, que si no parece que la app se haya repetido.
+  const contador = vrEstado.dobleVerdad ? ` · ${vrEstado.dobleVerdad.indice} de 2` : "";
+  tipoEl.textContent = (vrEstado.tipoActual === "verdad" ? "VERDAD" : "RETO") + contador;
   tipoEl.className =
     "vr-carta-tipo " + (vrEstado.tipoActual === "verdad" ? "vr-tipo-verdad" : "vr-tipo-reto");
   textoEl.textContent = vrEstado.textoActual;
@@ -207,12 +185,15 @@ function vrRenderCarta() {
 // pidiendo otra pregunta más fácil — para eso ya está «Paso», que sí cuenta y
 // sí castiga con modo fiesta). La nota #vr-nota-verdad deja claro ese matiz y
 // recuerda que el grupo también puede inventarse su propia pregunta.
+// En "doble verdad" no hay «Otra»: la ruleta ya ha decidido y las dos
+// preguntas van tal cual (§3 de md/PLAN_MODO_ARCADE.md).
 function vrActualizarBotonOtra() {
   const boton = document.getElementById("vr-btn-otra");
   const esVerdad = vrEstado.tipoActual === "verdad";
-  boton.hidden = false;
+  const hayOtra = !vrEstado.dobleVerdad;
+  boton.hidden = !hayOtra;
   boton.textContent = esVerdad ? "Otra pregunta 🔄" : "Otro reto 🔄";
-  document.getElementById("vr-nota-verdad").hidden = !esVerdad;
+  document.getElementById("vr-nota-verdad").hidden = !esVerdad || !hayOtra;
 }
 
 // Deja la pantalla de la carta en su estado normal (Hecho/Paso visibles,
@@ -226,6 +207,16 @@ function vrRestablecerBotonesCarta() {
   document.getElementById("vr-castigo").hidden = true;
 }
 
+// Sirve una carta y la enseña. La usan tanto los botones de vr-turno como la
+// ruleta del modo arcade, que llega aquí ya con el tipo decidido.
+function vrMostrarCarta(tipo) {
+  vrServirCarta(tipo);
+  vrRestablecerBotonesCarta();
+  vrActualizarBotonOtra();
+  mostrarPantalla("vr-carta");
+  vrRenderCarta();
+}
+
 function vrElegir(tipo) {
   // Los botones para el tipo sin repartidor están "hidden" (vrRenderTurno) y
   // un usuario real no puede tocarlos; esta comprobación es solo una red de
@@ -233,11 +224,14 @@ function vrElegir(tipo) {
   const repartidor = tipo === "verdad" ? vrEstado.repartidorVerdades : vrEstado.repartidorRetos;
   if (!repartidor) return;
 
-  vrServirCarta(tipo);
-  vrRestablecerBotonesCarta();
-  vrActualizarBotonOtra();
-  mostrarPantalla("vr-carta");
-  vrRenderCarta();
+  // Con el arcade encendido, elegir RETO no da un reto: manda a la ruleta, que
+  // es quien decide. VERDAD nunca pasa por ahí.
+  if (tipo === "reto" && vrEstado.arcade) {
+    vrRuletaAbrir();
+    return;
+  }
+
+  vrMostrarCarta(tipo);
 }
 
 function vrRenderTurno() {
@@ -247,23 +241,16 @@ function vrRenderTurno() {
     vrEstado.contador.verdades + vrEstado.contador.retos + vrEstado.contador.pasos + 1;
   document.getElementById("vr-progreso").textContent = `Turno ${numeroTurno} · ${nombre}`;
 
-  const modo = vrModoEfectivo();
-  const btnVerdad = document.getElementById("vr-btn-verdad");
-  const btnReto = document.getElementById("vr-btn-reto");
-  const btnUnico = document.getElementById("vr-btn-unico");
-
-  btnVerdad.hidden = modo !== "mixto";
-  btnReto.hidden = modo !== "mixto";
-  btnUnico.hidden = modo === "mixto";
-  if (modo === "verdades") btnUnico.textContent = "Ver mi verdad";
-  if (modo === "retos") btnUnico.textContent = "Ver mi reto";
+  // Si un banco se quedó vacío al filtrar por nivel, su botón no se ofrece.
+  document.getElementById("vr-btn-verdad").hidden = !vrEstado.repartidorVerdades;
+  document.getElementById("vr-btn-reto").hidden = !vrEstado.repartidorRetos;
 }
 
 function vrGuardar() {
   guardarJSON(VR_CLAVE_GUARDADO, {
     nombres: vrEstado.nombres,
     niveles: vrEstado.niveles,
-    modo: vrEstado.modo,
+    arcade: vrEstado.arcade,
     indiceTurno: vrEstado.indiceTurno,
     contador: vrEstado.contador,
   });
@@ -281,9 +268,11 @@ function vrEmpezarPartida() {
 
   vrEstado.nombres = nombres;
   vrEstado.niveles = vrSelectorNiveles.obtenerNiveles();
-  vrEstado.modo = vrSelectorModo.obtenerModo();
+  vrEstado.arcade = vrInterruptorArcade.activo();
   vrEstado.indiceTurno = 0;
   vrEstado.contador = { verdades: 0, retos: 0, pasos: 0, cambios: 0 };
+  vrEstado.resultadoRuleta = null;
+  vrEstado.dobleVerdad = null;
   if (!vrIniciarMotor()) return;
 
   mostrarPantalla("vr-turno");
@@ -308,9 +297,14 @@ function vrReanudar() {
 
   vrEstado.nombres = guardado.nombres;
   vrEstado.niveles = guardado.niveles;
-  vrEstado.modo = guardado.modo;
+  // Una partida guardada por una versión anterior trae "modo" y no trae
+  // "arcade": se reanuda con el arcade apagado en vez de romperse.
+  vrEstado.arcade = guardado.arcade === true;
   vrEstado.indiceTurno = guardado.indiceTurno;
   vrEstado.contador = guardado.contador;
+  vrEstado.resultadoRuleta = null;
+  vrEstado.dobleVerdad = null;
+  vrInterruptorArcade.fijar(vrEstado.arcade);
   if (!vrIniciarMotor()) {
     mostrarPantalla("vr-config");
     return;
@@ -322,16 +316,29 @@ function vrReanudar() {
 }
 
 function vrSiguienteTurno() {
+  vrArcadeLimpiar();
   vrEstado.indiceTurno = (vrEstado.indiceTurno + 1) % vrEstado.nombres.length;
   vrEstado.tipoActual = null;
+  vrEstado.resultadoRuleta = null;
+  vrEstado.dobleVerdad = null;
   mostrarPantalla("vr-turno");
   vrRenderTurno();
   vrGuardar();
 }
 
+// En "doble verdad" el turno no termina con la primera pregunta: queda otra.
+// Devuelve true si ha encadenado la segunda, false si el turno ya puede pasar.
+function vrEncadenarDobleVerdad() {
+  if (!vrEstado.dobleVerdad || vrEstado.dobleVerdad.indice !== 1) return false;
+  vrEstado.dobleVerdad.indice = 2;
+  vrMostrarCarta("verdad");
+  return true;
+}
+
 function vrHecho() {
   if (vrEstado.tipoActual === "verdad") vrEstado.contador.verdades++;
   else vrEstado.contador.retos++;
+  if (vrEncadenarDobleVerdad()) return;
   vrSiguienteTurno();
 }
 
@@ -339,6 +346,7 @@ function vrPaso() {
   vrEstado.contador.pasos++;
 
   if (!modoFiestaActivo()) {
+    if (vrEncadenarDobleVerdad()) return;
     vrSiguienteTurno();
     return;
   }
@@ -369,7 +377,15 @@ function vrOtraCarta() {
   vrRenderCarta();
 }
 
+// El "Siguiente" que aparece tras el castigo de «Paso». No siempre pasa turno:
+// si estábamos en la primera de una doble verdad, queda la segunda.
+function vrSiguienteTrasPaso() {
+  if (vrEncadenarDobleVerdad()) return;
+  vrSiguienteTurno();
+}
+
 function vrTerminar() {
+  vrArcadeLimpiar();
   document.getElementById("vr-resumen").textContent =
     `Han caído ${vrEstado.contador.verdades} verdades y ${vrEstado.contador.retos} retos. ` +
     `${vrEstado.contador.pasos} personas se han rajado.`;
@@ -388,7 +404,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   vrSelectorNiveles = vrMontarSelectorNiveles(document.getElementById("vr-niveles"), () => {});
-  vrSelectorModo = vrMontarSelectorModo(document.getElementById("vr-modo"), () => {});
+  vrInterruptorArcade = vrMontarInterruptorArcade(document.getElementById("vr-arcade"));
 
   montarInterruptorModoFiesta(document.getElementById("vr-fiesta"), () => {});
 
@@ -401,13 +417,10 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("vr-btn-continuar").addEventListener("click", vrReanudar);
   document.getElementById("vr-btn-verdad").addEventListener("click", () => vrElegir("verdad"));
   document.getElementById("vr-btn-reto").addEventListener("click", () => vrElegir("reto"));
-  document.getElementById("vr-btn-unico").addEventListener("click", () =>
-    vrElegir(vrModoEfectivo() === "retos" ? "reto" : "verdad")
-  );
   document.getElementById("vr-btn-hecho").addEventListener("click", vrHecho);
   document.getElementById("vr-btn-paso").addEventListener("click", vrPaso);
   document.getElementById("vr-btn-otra").addEventListener("click", vrOtraCarta);
-  document.getElementById("vr-btn-siguiente-paso").addEventListener("click", vrSiguienteTurno);
+  document.getElementById("vr-btn-siguiente-paso").addEventListener("click", vrSiguienteTrasPaso);
   document.getElementById("vr-btn-terminar").addEventListener("click", vrTerminar);
   document.getElementById("vr-btn-terminar-2").addEventListener("click", vrTerminar);
   document.getElementById("vr-btn-otra-partida").addEventListener("click", vrOtraPartida);

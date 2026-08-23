@@ -67,7 +67,7 @@ los turnos.
 |---|---|
 | **Prefijo** | `vr` en estado, funciones, constantes, pantallas, IDs, clases y `localStorage`. |
 | **Nº de jugadores** | **2–12**. Por defecto 4. |
-| **Pantallas** | `vr-config` → `vr-turno` → `vr-carta` → `vr-fin`. |
+| **Pantallas** | `vr-config` → `vr-turno` → `vr-carta` → `vr-fin`. Con el modo arcade se añaden `vr-ruleta`, `vr-trivia` y `vr-minijuego` (ver [`md/PLAN_MODO_ARCADE.md`](PLAN_MODO_ARCADE.md) §4.3). |
 | **Modos de juego** | ⚠️ **Sustituido por el modo arcade** (ver [`md/PLAN_MODO_ARCADE.md`](PLAN_MODO_ARCADE.md) §3, Fase A): los tres chips desaparecen y el juego pasa a ser siempre mixto, con un interruptor de arcade en su lugar. *(Decisión original, histórica: tres modos — `mixto` por defecto, `verdades` y `retos` — elegidos en `vr-config` con chips.)* |
 | **Presentación de la carta** | **Volteo 3D**: la carta entra boca abajo y se voltea al servir el texto (patrón `.cf-carta` de FIEsta 1). |
 | **Botón «Otra»** | ✅ Existe **en los dos tipos**, sin límite de veces ni castigo en ninguno, pero con un matiz distinto (ampliación pedida por el usuario): en **reto** representa «no puedo hacer este reto por el sitio donde estoy», no una negativa; en **verdad** representa que **el grupo** (los demás jugadores, no quien tiene el turno) decide pedir otra pregunta — quien tiene el turno no puede usarlo para escaquearse de una pregunta incómoda, para eso está «Paso», que sí cuenta y sí castiga con modo fiesta. Etiqueta dinámica: «Otro reto 🔄» / «Otra pregunta 🔄». En verdad, además, se muestra una nota (`#vr-nota-verdad`) recordando ambas cosas y que el grupo puede inventarse su propia pregunta en vez de usar la de la app. |
@@ -728,6 +728,22 @@ mirar la carta más larga del banco en horizontal y en vertical.
       **254** (177 / 77) sin cambios de esta ronda. `APP_VERSION`/`CACHE` a
       1.10.5. Pendiente de que el usuario siga revisando el resto del `.md`
       de similitudes (las familias de molde en particular).
+- [x] **Modo arcade** (ampliación pedida por el usuario, plan propio en
+      [`md/PLAN_MODO_ARCADE.md`](PLAN_MODO_ARCADE.md), v1.11.0). Se
+      **eliminan los tres chips de modo** (mixto / solo verdades / solo
+      retos) y en su hueco va un interruptor de **modo arcade**, propio de la
+      partida (viaja en `vr_partida`, no en una clave global). Con él
+      encendido, elegir RETO abre `vr-ruleta`: 20 quesitos iguales de 18°
+      (15 reto · 2 minijuego · 2 test rápido · 1 doble verdad = 75/10/10/5),
+      de modo que lo que se ve es la probabilidad real. Añade tres pantallas
+      (`vr-ruleta`, `vr-trivia`, `vr-minijuego`), un banco nuevo de **200
+      preguntas** de cultura general (`trivia.json`/`.js` +
+      `agregar_trivia.py`), pixel art propio en `sprites.js` y cuatro
+      minijuegos en canvas (pez, guepardo, bolita zigzag y canasta) con un
+      motor común. La doble verdad encadena dos verdades **una detrás de
+      otra**, cada una con su Hecho/Paso y sin «Otra». Las partidas guardadas
+      por versiones anteriores (con `modo` y sin `arcade`) siguen
+      reanudándose, con el arcade apagado.
 
 ---
 

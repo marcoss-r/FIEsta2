@@ -240,7 +240,14 @@
       </div>
       <div class="lista-scroll" id="vr-nombres"></div>
       <div class="vr-chips" id="vr-niveles"></div>
-      <div class="vr-chips" id="vr-modo"></div>
+      <div class="fila-switch">
+        <span>Modo arcade</span>
+        <div id="vr-arcade"></div>
+      </div>
+      <p class="ayuda">
+        Al elegir RETO gira una ruleta: casi siempre sale un reto normal, pero
+        puede caerte un minijuego, un test rápido o doble verdad.
+      </p>
       <div class="fila-switch">
         <span>Modo fiesta</span>
         <div id="vr-fiesta"></div>
@@ -259,7 +266,6 @@
         <button type="button" class="vr-btn-grande vr-btn-verdad" id="vr-btn-verdad">VERDAD</button>
         <button type="button" class="vr-btn-grande vr-btn-reto" id="vr-btn-reto">RETO</button>
       </div>
-      <button type="button" class="vr-btn-grande" id="vr-btn-unico" hidden></button>
       <button type="button" class="secundario" id="vr-btn-terminar">Terminar</button>
     </section>
 
@@ -284,6 +290,58 @@
       </p>
       <button type="button" id="vr-btn-siguiente-paso" hidden>Siguiente</button>
       <button type="button" class="secundario" id="vr-btn-terminar-2">Terminar</button>
+    </section>
+
+    <!-- Modo arcade (vr) — ver md/PLAN_MODO_ARCADE.md §4.3 -->
+    <section class="pantalla" data-pantalla="vr-ruleta">
+      <h1 id="vr-ruleta-turno"></h1>
+      <div class="vr-ruleta-caja">
+        <div class="vr-ruleta-marcador"></div>
+        <svg class="vr-ruleta-svg" id="vr-ruleta-svg" viewBox="0 0 100 100" aria-hidden="true"></svg>
+      </div>
+      <p class="vr-ruleta-resultado" id="vr-ruleta-resultado" hidden></p>
+      <div class="vr-ruleta-leyenda" id="vr-ruleta-leyenda"></div>
+      <button type="button" id="vr-btn-girar">Girar 🎰</button>
+      <button type="button" id="vr-btn-ruleta-ir" hidden>Vamos</button>
+      <button type="button" class="secundario" id="vr-btn-terminar-ruleta">Terminar</button>
+    </section>
+
+    <section class="pantalla" data-pantalla="vr-trivia">
+      <div id="vr-trivia-juego">
+        <p class="ayuda" id="vr-trivia-progreso"></p>
+        <span class="vr-trivia-categoria" id="vr-trivia-categoria"></span>
+        <p class="vr-trivia-pregunta" id="vr-trivia-pregunta"></p>
+        <div class="vr-trivia-opciones" id="vr-trivia-opciones"></div>
+      </div>
+      <div id="vr-trivia-fin" hidden>
+        <p class="vr-trivia-resultado" id="vr-trivia-resultado"></p>
+        <p class="anuncio" id="vr-trivia-castigo"></p>
+        <button type="button" id="vr-btn-trivia-siguiente">Siguiente</button>
+      </div>
+      <button type="button" class="secundario" id="vr-btn-terminar-trivia">Terminar</button>
+    </section>
+
+    <section class="pantalla" data-pantalla="vr-minijuego">
+      <div id="vr-mj-portada">
+        <h1 id="vr-mj-nombre"></h1>
+        <p class="ayuda" id="vr-mj-como"></p>
+        <p class="anuncio" id="vr-mj-objetivo"></p>
+        <button type="button" id="vr-btn-mj-empezar">Empezar</button>
+      </div>
+      <div class="vr-mj-lienzo" id="vr-mj-lienzo" hidden>
+        <canvas id="vr-mj-canvas"></canvas>
+        <div class="vr-mj-hud" id="vr-mj-hud">
+          <span id="vr-mj-puntos"></span>
+          <span id="vr-mj-tiempo"></span>
+        </div>
+        <div class="vr-mj-cuenta" id="vr-mj-cuenta" hidden></div>
+        <div class="vr-mj-final" id="vr-mj-final" hidden>
+          <p class="vr-mj-marcador" id="vr-mj-marcador"></p>
+          <p class="anuncio" id="vr-mj-castigo"></p>
+          <button type="button" id="vr-btn-mj-siguiente">Siguiente</button>
+        </div>
+      </div>
+      <button type="button" class="secundario" id="vr-btn-terminar-mj">Terminar</button>
     </section>
 
     <section class="pantalla" data-pantalla="vr-fin">
@@ -461,6 +519,8 @@
   <script src="data/quienmas/preguntas.js"></script>
   <script src="data/verdadreto/verdades.js"></script>
   <script src="data/verdadreto/retos.js"></script>
+  <script src="data/verdadreto/trivia.js"></script>
+  <script src="data/verdadreto/sprites.js"></script>
   <script src="data/dosmentiras/temas.js"></script>
   <script src="data/impostor/palabras.js"></script>
 
@@ -468,6 +528,14 @@
   <script src="js/yonunca/main.js"></script>
   <script src="js/quienmas/main.js"></script>
   <script src="js/verdadreto/main.js"></script>
+  <!-- Modo arcade: el motor y los cuatro minijuegos antes que arcade.js, que
+       en su DOMContentLoaded ya necesita las constantes VR_MJ_*. -->
+  <script src="js/verdadreto/minijuegos.js"></script>
+  <script src="js/verdadreto/mj-pez.js"></script>
+  <script src="js/verdadreto/mj-guepardo.js"></script>
+  <script src="js/verdadreto/mj-zigzag.js"></script>
+  <script src="js/verdadreto/mj-canasta.js"></script>
+  <script src="js/verdadreto/arcade.js"></script>
   <script src="js/dosmentiras/main.js"></script>
   <script src="js/impostor/main.js"></script>
 

@@ -830,6 +830,238 @@ button.secundario:hover {
 }
 
 /* ==========================================================
+   Verdad o Reto — modo arcade (vr) — ver md/PLAN_MODO_ARCADE.md §4.3
+   ========================================================== */
+
+/* La rueda y su marcador comparten caja para que el puntero quede clavado
+   arriba mientras el SVG gira por debajo. */
+/* La pantalla de la ruleta lleva mucha cosa apilada (título, rueda, resultado,
+   leyenda y tres botones) y .pantalla no hace scroll: se aprieta el gap y se
+   limita la rueda por ALTO además de por ancho, para que quepa entera en
+   móviles bajos sin que los botones se salgan. */
+.pantalla[data-pantalla="vr-ruleta"] {
+  gap: 0.7rem;
+}
+
+.vr-ruleta-caja {
+  position: relative;
+  width: min(66vw, 17rem, 34vh);
+  aspect-ratio: 1;
+}
+
+.vr-ruleta-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  /* La rotación la fija JS (transform en línea); aquí solo el punto de giro. */
+  transform-origin: 50% 50%;
+  filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.45));
+}
+
+/* Triángulo apuntando hacia abajo, encajado en el borde superior de la rueda:
+   es el "0 grados" contra el que JS calcula dónde tiene que parar. */
+.vr-ruleta-marcador {
+  position: absolute;
+  top: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 0.7rem solid transparent;
+  border-right: 0.7rem solid transparent;
+  border-top: 1.1rem solid var(--color-texto);
+  z-index: 1;
+}
+
+.vr-ruleta-resultado {
+  margin: 0;
+  font-size: clamp(1.3rem, 5.5vw, 1.8rem);
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+.vr-ruleta-leyenda {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.35rem 0.9rem;
+  max-width: 24rem;
+  font-size: 0.78rem;
+  color: var(--color-texto-tenue);
+}
+
+.vr-ruleta-leyenda-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.vr-ruleta-leyenda-item i {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+}
+
+/* --- Test rápido --- */
+
+/* Las dos vistas de la pantalla del test (preguntas / resultado) son hijas
+   directas de una .pantalla flex: sin esto se encogerían a su contenido y la
+   rejilla de opciones no tendría ancho al que estirarse. */
+#vr-trivia-juego,
+#vr-trivia-fin,
+#vr-mj-portada {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 26rem;
+}
+
+#vr-trivia-juego[hidden],
+#vr-trivia-fin[hidden],
+#vr-mj-portada[hidden] {
+  display: none;
+}
+
+.vr-trivia-categoria {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-acento-2);
+}
+
+.vr-trivia-pregunta {
+  margin: 0.6rem 0 1.2rem;
+  max-width: 26ch;
+  font-size: clamp(1.1rem, 4.8vw, 1.5rem);
+  font-weight: 700;
+  line-height: 1.35;
+  overflow-wrap: break-word;
+}
+
+.vr-trivia-opciones {
+  display: grid;
+  gap: 0.6rem;
+  width: 100%;
+  max-width: 24rem;
+}
+
+.vr-trivia-opcion {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: 2px solid var(--color-superficie);
+  border-radius: var(--radio-borde-chico);
+  background: var(--color-superficie);
+  color: var(--color-texto);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 150ms ease, border-color 150ms ease;
+}
+
+/* Los dos estados de corrección. Se marcan con clases y no con :disabled
+   porque al responder se deshabilitan las cuatro, no solo la elegida. */
+.vr-trivia-opcion.acierto {
+  border-color: var(--color-exito);
+  background: color-mix(in srgb, var(--color-exito) 22%, var(--color-superficie));
+}
+
+.vr-trivia-opcion.fallo {
+  border-color: var(--color-fallo);
+  background: color-mix(in srgb, var(--color-fallo) 22%, var(--color-superficie));
+}
+
+.vr-trivia-opcion:disabled {
+  cursor: default;
+  opacity: 1; /* que deshabilitar no apague la corrección que se acaba de pintar */
+}
+
+.vr-trivia-resultado {
+  margin: 0;
+  font-size: clamp(1.6rem, 7vw, 2.2rem);
+  font-weight: 800;
+}
+
+/* --- Minijuegos --- */
+
+/* El canvas manda sobre el alto disponible: el motor mide ESTE contenedor
+   (getBoundingClientRect) para saber a qué tamaño dibujar. */
+.vr-mj-lienzo {
+  position: relative;
+  width: 100%;
+  max-width: 30rem;
+  flex: 1 1 auto;
+  min-height: 0;
+  border-radius: var(--radio-borde);
+  overflow: hidden;
+}
+
+#vr-mj-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  /* Sin esto, arrastrar en la canasta hace scroll de la página en vez de tirar. */
+  touch-action: none;
+}
+
+.vr-mj-hud {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0.8rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-texto);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+  pointer-events: none;
+}
+
+.vr-mj-cuenta {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(3rem, 18vw, 6rem);
+  font-weight: 800;
+  color: var(--color-texto);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.8);
+  pointer-events: none;
+}
+
+.vr-mj-final {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  background: rgba(23, 7, 9, 0.88);
+}
+
+.vr-mj-marcador {
+  margin: 0;
+  font-size: clamp(1.5rem, 6.5vw, 2rem);
+  font-weight: 800;
+}
+
+/* El atributo hidden pierde contra el display de las reglas de arriba
+   (mismo caso que .vista y .juego-card-info, ver más arriba en este archivo). */
+.vr-mj-lienzo[hidden],
+.vr-mj-final[hidden],
+.vr-mj-cuenta[hidden] {
+  display: none;
+}
+
+/* ==========================================================
    Dos mentiras y una verdad (dm) — ver md/PLAN_DOS_MENTIRAS.md §4.3
    ========================================================== */
 

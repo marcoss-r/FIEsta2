@@ -2,7 +2,7 @@
 // pueda instalar y funcione sin conexión. Para publicar una actualización,
 // sube el número de versión (CACHE) y se refrescará en el siguiente arranque.
 // CACHE y APP_VERSION (js/nucleo/arranque.js) van unificados.
-const CACHE = "fiesta2-v1.10.5";
+const CACHE = "fiesta2-v1.11.0";
 
 const ARCHIVOS = [
   "./",
@@ -20,11 +20,19 @@ const ARCHIVOS = [
   "./data/quienmas/preguntas.js",
   "./data/verdadreto/verdades.js",
   "./data/verdadreto/retos.js",
+  "./data/verdadreto/trivia.js",
+  "./data/verdadreto/sprites.js",
   "./data/dosmentiras/temas.js",
   "./data/impostor/palabras.js",
   "./js/yonunca/main.js",
   "./js/quienmas/main.js",
   "./js/verdadreto/main.js",
+  "./js/verdadreto/minijuegos.js",
+  "./js/verdadreto/mj-pez.js",
+  "./js/verdadreto/mj-guepardo.js",
+  "./js/verdadreto/mj-zigzag.js",
+  "./js/verdadreto/mj-canasta.js",
+  "./js/verdadreto/arcade.js",
   "./js/dosmentiras/main.js",
   "./js/impostor/main.js",
   "./js/nucleo/arranque.js",

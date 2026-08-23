@@ -324,8 +324,11 @@ van con los demás bancos; los `js/verdadreto/` van **después** de
 `minijuegos.js` → los cuatro `mj-*.js` → `arcade.js` (el último, porque su
 `DOMContentLoaded` necesita que las constantes de los minijuegos existan).
 
-**`agregar.py`**: `data/verdadreto/agregar.py` gana un banco más
-(`BANCOS["trivia"]`) reutilizando `cargar`/`guardar`/`regenerar_js`. Como en el
+**`agregar_trivia.py`**: script propio, hermano de `agregar.py`, del que importa
+`cargar` y `guardar`. Va aparte y no como un `BANCOS["trivia"]` más porque la
+forma del banco es distinta: verdades y retos son `{texto, nivel}`, y una
+pregunta es `{categoria, pregunta, correcta, incorrectas}`; meterlo en el flujo
+interactivo de `agregar.py` habría obligado a bifurcarlo entero. Como en el
 resto del proyecto, **`trivia.js` no se edita a mano nunca**: se regenera.
 
 **CSS**: un bloque nuevo al final de la sección de `vr` en `css/estilos.css`,
@@ -456,7 +459,7 @@ control responde bien al tacto en su móvil.
 - Sprite del guepardo (2 fotogramas de carrera + 1 de salto).
 - `mj-guepardo.js`: desierto con scroll, cactus y rocas de alturas variadas,
   toque = salto (con gravedad, sin doble salto), +1 por obstáculo esquivado.
-  **Objetivo: 15.**
+  **Objetivo: 12.**
 - Escenario: duna de fondo con parallax lento, suelo y sol.
 - El minijuego se elige al azar entre **dos**.
 
@@ -494,14 +497,14 @@ un giro imposible de tomar a la velocidad actual).
   rebote en aro y tablero. Canasta = +1 y pelota nueva abajo. El aro se desplaza
   en horizontal a **velocidad constante** (ahí está la dificultad, ya que este
   juego no acelera). Línea de puntos que previsualiza el tiro mientras arrastras.
-  **Objetivo: 8.**
+  **Objetivo: 6.**
 - Escenario: tablero, aro con red dibujada y suelo de pista.
 - El minijuego se elige al azar entre **los cuatro**.
 - Repasar los cuatro objetivos con lo que haya visto el usuario probando y
   ajustarlos.
 
 ✅ **Criterios de aceptación:** en 30 s da tiempo a **al menos 12-15 tiros**, o
-el objetivo de 8 no es alcanzable.
+el objetivo de 6 no es alcanzable.
 
 🔍 **Qué debe probar el usuario:** los cuatro seguidos, para decidir los
 objetivos definitivos.
@@ -529,42 +532,42 @@ objetivos definitivos.
 ## 8. Checklist
 
 **Fase A — Ruleta y doble verdad**
-- [ ] Chips de modo eliminados (`VR_MODOS`, `vrMontarSelectorModo`, `vrModoEfectivo`, `#vr-modo`, `#vr-btn-unico`)
-- [ ] Interruptor «Modo arcade» en `vr-config`, guardado con la partida
-- [ ] Pantalla `vr-ruleta` con la rueda SVG de 20 quesitos, marcador y leyenda
-- [ ] Giro animado que para siempre en el quesito anunciado
-- [ ] Doble verdad: dos verdades seguidas con su Hecho/Paso
-- [ ] Compatibilidad con partidas guardadas antiguas
-- [ ] `APP_VERSION` + `CACHE` a 1.11.0, `sw.js` actualizado
-- [ ] `README.md` y `md/PLAN_VERDAD_O_RETO.md` al día
+- [x] Chips de modo eliminados (`VR_MODOS`, `vrMontarSelectorModo`, `vrModoEfectivo`, `#vr-modo`, `#vr-btn-unico`)
+- [x] Interruptor «Modo arcade» en `vr-config`, guardado con la partida
+- [x] Pantalla `vr-ruleta` con la rueda SVG de 20 quesitos, marcador y leyenda
+- [x] Giro animado que para siempre en el quesito anunciado
+- [x] Doble verdad: dos verdades seguidas con su Hecho/Paso
+- [x] Compatibilidad con partidas guardadas antiguas
+- [x] `APP_VERSION` + `CACHE` a 1.11.0, `sw.js` actualizado
+- [x] `README.md` y `md/PLAN_VERDAD_O_RETO.md` al día
 
 **Fase B — Test rápido**
-- [ ] `trivia.json` con 200 preguntas (50 × 4 categorías)
-- [ ] `trivia.js` generado + `BANCOS["trivia"]` en `agregar.py`
-- [ ] Pantalla `vr-trivia` con corrección inmediata y opciones barajadas
-- [ ] Un chupito por fallo, solo con modo fiesta
-- [ ] Quesitos a 17/2/1
+- [x] `trivia.json` con 200 preguntas (50 × 4 categorías)
+- [x] `trivia.js` generado + `BANCOS["trivia"]` en `agregar.py`
+- [x] Pantalla `vr-trivia` con corrección inmediata y opciones barajadas
+- [x] Un chupito por fallo, solo con modo fiesta
+- [x] Quesitos a 17/2/1
 
 **Fase C — Motor + pez**
-- [ ] `sprites.js` con el pez y el pintado cacheado en canvas offscreen
-- [ ] `minijuegos.js`: bucle, HUD, cuenta atrás, rampa, tope de 60 s, limpieza
-- [ ] `mj-pez.js` con objetivo 12
-- [ ] Castigo escalado (0 / 1 / 2 chupitos)
-- [ ] Quesitos al reparto definitivo 15/2/2/1
+- [x] `sprites.js` con el pez y el pintado cacheado en canvas offscreen
+- [x] `minijuegos.js`: bucle, HUD, cuenta atrás, rampa, tope de 60 s, limpieza
+- [x] `mj-pez.js` con objetivo 12
+- [x] Castigo escalado (0 / 1 / 2 chupitos)
+- [x] Quesitos al reparto definitivo 15/2/2/1
 
 **Fase D — Guepardo**
-- [ ] Sprite de 3 fotogramas
-- [ ] `mj-guepardo.js` con objetivo 15
-- [ ] Sorteo entre 2 minijuegos
+- [x] Sprite de 3 fotogramas
+- [x] `mj-guepardo.js` con objetivo 15
+- [x] Sorteo entre 2 minijuegos
 
 **Fase E — Bolita**
-- [ ] `mj-zigzag.js` con objetivo 20 y camino siempre transitable
-- [ ] Sorteo entre 3 minijuegos
+- [x] `mj-zigzag.js` con objetivo 20 y camino siempre transitable
+- [x] Sorteo entre 3 minijuegos
 
 **Fase F — Canasta**
-- [ ] `mj-canasta.js` con arrastrar-y-soltar, 30 s y objetivo 8
-- [ ] Sorteo entre los 4 minijuegos
-- [ ] Objetivos de los cuatro afinados con el usuario
+- [x] `mj-canasta.js` con arrastrar-y-soltar, 30 s y objetivo 8
+- [x] Sorteo entre los 4 minijuegos
+- [x] Objetivos de los cuatro afinados con el usuario
 
 ---
 
@@ -584,5 +587,76 @@ Cosas que no pregunté para no alargar, pero que son decisiones reales:
    resultado y a otra cosa.
 6. **Los minijuegos no filtran por nivel**: salen igual en normal y en picante.
 7. **No hay récords ni ranking**: coherente con que `vr` no tenga puntuación.
-8. **Los objetivos (12 / 15 / 20 / 8) son una primera estimación** y se afinan
-   en la Fase F cuando los pruebes.
+8. **Los objetivos (12 / 12 / 20 / 6) son una primera estimación** y se afinan
+   cuando los pruebes: ver §10.
+
+---
+
+## 10. Estado: implementado (v1.11.0)
+
+Las seis fases están hechas y subidas de una vez. Lo que se apartó del plan, y
+por qué:
+
+| Punto del plan | Qué se hizo | Motivo |
+|---|---|---|
+| `BANCOS["trivia"]` dentro de `agregar.py` | Script aparte, `agregar_trivia.py` | La forma del banco es distinta (`{categoria, pregunta, correcta, incorrectas}` frente a `{texto, nivel}`) y habría obligado a bifurcar todo el flujo interactivo. Importa `cargar`/`guardar` de `agregar.py`, así que la lógica de ficheros no se duplica. |
+| Guepardo: objetivo 15 | **12** | Ver abajo. |
+| Canasta: objetivo 8 | **6** | Ver abajo. |
+| Canasta: nueva pelota al salir de pantalla | Nueva pelota **0,6 s después de encestar** | Esperar a que la pelota llegara al suelo se comía casi un segundo por canasta: en 30 s eso son dos o tres tiros perdidos. |
+
+### Calibrado: por qué estos números y no otros
+
+Los cuatro minijuegos se probaron con un **bot** que juega cada uno con la
+estrategia óptima (el pez apunta al centro del hueco, el guepardo salta por
+tiempo hasta el impacto, la bolita gira justo en la esquina, la canasta resuelve
+la parábola y **anticipa** dónde estará el aro). Doce partidas de cada uno. La
+idea no es que el bot represente a un jugador humano —juega mucho mejor—, sino
+detectar lo que un humano no podría distinguir de «se me da mal»: que algo sea
+directamente **imposible**.
+
+Y saltaron dos cosas que no se habrían visto jugando a mano:
+
+**El guepardo era imposible de pasar, incluso a velocidad 1.** No basta con que
+el salto sea más alto que el cactus: hay que estar por encima el tiempo
+suficiente para que el cactus termine de pasar por debajo. Con el impulso
+original (sube 0,21 altos, 0,69 s en el aire) el guepardo pasaba 0,39 s por
+encima del obstáculo más alto, y a la velocidad de salida eso son 93 px de
+recorrido — menos que los 111 px que ocupan guepardo y cactus juntos. Chocaba
+siempre. Arreglado subiendo el salto (0,35 altos, 0,97 s en el aire), bajando el
+cactus más alto de 0,16 a 0,14 y estrechando la caja de colisión, que incluía
+cola y patas traseras.
+
+**En la canasta, un tirador perfecto metía 5 de objetivo 6.** El tiro necesitaba
+tanto arco que había que arrastrar el dedo por casi toda la pantalla, y encima
+cada canasta gastaba un segundo viendo caer la pelota al suelo. Se bajó la
+gravedad (2,4 → 1,8), se subió la fuerza del gesto (3,2 → 4,5) y el aro va algo
+más lento (0,2 → 0,14 anchos/s). Ahora el bot perfecto mete 11, así que 6 es
+exigente pero alcanzable.
+
+Con eso, el bot óptimo saca (mediana de 12 partidas):
+
+| Minijuego | Objetivo | Bot óptimo | Lectura |
+|---|---|---|---|
+| Pez | 12 | 20 | Holgado: un humano decente llega. |
+| Guepardo | 12 | 11 | El bot salta con antelación fija y no es especialmente bueno; el techo que alcanzó fue 27. |
+| Bolita | 20 | 149 | El bot es *imbatible* aquí (gira siempre en el píxel exacto), así que su cifra no dice nada. 20 es lo que sale a los ~12 s de juego humano. |
+| Canasta | 6 | 11 | Un humano que le coja el punto debería rondar 5-7. |
+
+**Estos objetivos siguen siendo provisionales**: el bot no se pone nervioso, no
+tiene el móvil pringado ni ha bebido. Ajústalos jugando.
+
+### Qué está probado y qué no
+
+Hay una prueba de humo con jsdom (85 comprobaciones) que cubre: que los chips de
+modo ya no existen, que el arcade sale y entra bien, **300 giros de ruleta
+comprobando que siempre para en el quesito que anuncia**, la doble verdad con
+Hecho y con Paso, el test rápido entero (incluido que la correcta aparece en las
+cuatro posiciones), el castigo escalado, que los cuatro minijuegos terminan
+solos y nunca pasan de 60 s, que salir con «Terminar» corta el bucle, y que una
+partida guardada por la versión anterior (con `modo` y sin `arcade`) se reanuda
+sin romperse.
+
+Lo que **no** puede probar jsdom, y tienes que mirar tú en el móvil: cómo se ve
+la ruleta girando, si el pixel art se lee a ese tamaño, si los controles
+responden bien al dedo, y si los escenarios quedan bonitos. El guepardo, en
+concreto, es el sprite más tosco de los cuatro.

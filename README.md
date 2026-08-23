@@ -38,12 +38,15 @@ una verdad», que ya tiene su banco cerrado:
   jugadores y recorre, en orden aleatorio, todas las combinaciones posibles,
   8 preguntas cada una; si coinciden se libran, si difieren beben (con modo
   fiesta); termina con un ranking de parejas por coincidencias.
-- **«Verdad o Reto»** (🚧 Fase 5 en curso) — chips de modo (mixto / solo
-  verdades / solo retos) y chips de nivel **propios del juego** (**Normal** /
+- **«Verdad o Reto»** (🚧 Fase 5 en curso) — chips de nivel **propios del juego** (**Normal** /
   **Picante**, no los tres del núcleo: picante agrupa drogas, alcohol,
   adicciones, cosas ilegales, relaciones amorosas, relaciones sexuales y, en
-  retos, connotación sexual como besos o quitarse prendas), carta volteable
-  en 3D, «Paso» (en verdad o en reto) con castigo ponderado (30 % beber /
+  retos, connotación sexual como besos o quitarse prendas), **modo arcade**
+  (interruptor: al elegir RETO gira una ruleta de 20 quesitos que decide entre
+  reto normal 75 %, minijuego 10 %, test rápido 10 % y doble verdad 5 %, con
+  banco de 200 preguntas de cultura general y cuatro minijuegos en canvas —
+  pez, guepardo, bolita zigzag y canasta — con pixel art propio; ver
+  `md/PLAN_MODO_ARCADE.md`), carta volteable en 3D, «Paso» (en verdad o en reto) con castigo ponderado (30 % beber /
   20 % prenda / 50 % otros), «Otra» sin límite ni castigo en los dos tipos
   (en verdad la decide el grupo, no quien tiene el turno; también puede
   inventarse una pregunta propia), banco de 531 verdades (301 normal / 230
@@ -97,7 +100,7 @@ cerradas:
 - [`md/PLAN_VERDAD_O_RETO.md`](md/PLAN_VERDAD_O_RETO.md) (`vr`)
   - [`md/PLAN_MODO_ARCADE.md`](md/PLAN_MODO_ARCADE.md) — ampliación de `vr`:
     ruleta al elegir RETO, con minijuegos, test rápido y doble verdad
-    (🚧 planificado, sin implementar)
+    (✅ implementado en v1.11.0)
 - [`md/PLAN_DOS_MENTIRAS.md`](md/PLAN_DOS_MENTIRAS.md) (`dm`)
 - [`md/PLAN_EL_IMPOSTOR.md`](md/PLAN_EL_IMPOSTOR.md) (`im`)
 - [`md/PLAN_PREGUNTAS_INCOMODAS.md`](md/PLAN_PREGUNTAS_INCOMODAS.md) (`pi`,
@@ -129,8 +132,9 @@ alta entradas desde consola, igual que en FIEsta 1. `data/yonunca/` ya sigue
 este patrón completo: `frases.json` (fuente, 674 entradas) + `frases.js`
 (generado) + `agregar.py` (da de alta frases nuevas y regenera el `.js`; nunca
 se edita `frases.js` a mano). `data/quienmas/` (570 entradas),
-`data/verdadreto/` (531 verdades + 254 retos) y `data/dosmentiras/` (160
-temas) siguen el mismo patrón. `data/impostor/` de momento solo tiene
+`data/verdadreto/` (531 verdades + 254 retos, más 200 preguntas de trivia del
+modo arcade con su propio `agregar_trivia.py`, y `sprites.js` con el pixel art
+de los minijuegos) y `data/dosmentiras/` (160 temas) siguen el mismo patrón. `data/impostor/` de momento solo tiene
 `palabras.js` (28 palabras de muestra, sin `.json` ni `agregar.py` todavía):
 el patrón completo llega con su Fase 4.
 

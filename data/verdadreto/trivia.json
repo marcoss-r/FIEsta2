@@ -1,0 +1,2002 @@
+[
+  {
+    "categoria": "geografia",
+    "pregunta": "¿Cuál es la capital de Australia?",
+    "correcta": "Canberra",
+    "incorrectas": [
+      "Sídney",
+      "Melbourne",
+      "Perth"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿Cuál es el río más largo del mundo?",
+    "correcta": "El Amazonas",
+    "incorrectas": [
+      "El Nilo",
+      "El Yangtsé",
+      "El Misisipi"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿En qué continente está Marruecos?",
+    "correcta": "África",
+    "incorrectas": [
+      "Asia",
+      "Europa",
+      "Oceanía"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿Cuál es el país más grande del mundo?",
+    "correcta": "Rusia",
+    "incorrectas": [
+      "Canadá",
+      "China",
+      "Estados Unidos"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿Cuál es la capital de Canadá?",
+    "correcta": "Ottawa",
+    "incorrectas": [
+      "Toronto",
+      "Montreal",
+      "Vancouver"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿Qué océano separa España de Estados Unidos?",
+    "correcta": "El Atlántico",
+    "incorrectas": [
+      "El Pacífico",
+      "El Índico",
+      "El Ártico"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿Cuál es la montaña más alta del mundo?",
+    "correcta": "El Everest",
+    "incorrectas": [
+      "El K2",
+      "El Mont Blanc",
+      "El Kilimanjaro"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿En qué país está Machu Picchu?",
+    "correcta": "Perú",
+    "incorrectas": [
+      "Bolivia",
+      "México",
+      "Ecuador"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿Cuál es la capital de Portugal?",
+    "correcta": "Lisboa",
+    "incorrectas": [
+      "Oporto",
+      "Coímbra",
+      "Braga"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿Cuál es el desierto más grande del mundo?",
+    "correcta": "La Antártida",
+    "incorrectas": [
+      "El Sáhara",
+      "El Gobi",
+      "El Kalahari"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿Qué país tiene forma de bota?",
+    "correcta": "Italia",
+    "incorrectas": [
+      "Grecia",
+      "Croacia",
+      "Portugal"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿Cuál es la capital de Japón?",
+    "correcta": "Tokio",
+    "incorrectas": [
+      "Osaka",
+      "Kioto",
+      "Nagoya"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿En qué país están las pirámides de Guiza?",
+    "correcta": "Egipto",
+    "incorrectas": [
+      "Sudán",
+      "México",
+      "Irak"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿Cuál es el país más poblado del mundo?",
+    "correcta": "India",
+    "incorrectas": [
+      "China",
+      "Estados Unidos",
+      "Indonesia"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿Qué mar baña la costa de Barcelona?",
+    "correcta": "El Mediterráneo",
+    "incorrectas": [
+      "El Cantábrico",
+      "El Adriático",
+      "El Egeo"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿Cuál es la capital de Argentina?",
+    "correcta": "Buenos Aires",
+    "incorrectas": [
+      "Córdoba",
+      "Rosario",
+      "Mendoza"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿En qué país está la ciudad de Marrakech?",
+    "correcta": "Marruecos",
+    "incorrectas": [
+      "Túnez",
+      "Argelia",
+      "Egipto"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿Cuál es la isla más grande del mundo?",
+    "correcta": "Groenlandia",
+    "incorrectas": [
+      "Australia",
+      "Madagascar",
+      "Borneo"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿Qué cordillera separa España de Francia?",
+    "correcta": "Los Pirineos",
+    "incorrectas": [
+      "Los Alpes",
+      "Los Cárpatos",
+      "Los Apeninos"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿Cuál es la capital de Alemania?",
+    "correcta": "Berlín",
+    "incorrectas": [
+      "Múnich",
+      "Hamburgo",
+      "Fráncfort"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿En qué continente está Nueva Zelanda?",
+    "correcta": "Oceanía",
+    "incorrectas": [
+      "Asia",
+      "América",
+      "África"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿Cuál es el país más pequeño del mundo?",
+    "correcta": "El Vaticano",
+    "incorrectas": [
+      "Mónaco",
+      "San Marino",
+      "Malta"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿Qué río pasa por París?",
+    "correcta": "El Sena",
+    "incorrectas": [
+      "El Loira",
+      "El Ródano",
+      "El Garona"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿Cuál es la capital de Marruecos?",
+    "correcta": "Rabat",
+    "incorrectas": [
+      "Casablanca",
+      "Marrakech",
+      "Fez"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿En qué país está el lago Titicaca?",
+    "correcta": "Entre Perú y Bolivia",
+    "incorrectas": [
+      "Entre Chile y Argentina",
+      "Entre Brasil y Paraguay",
+      "Entre Colombia y Ecuador"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿Cuál es la ciudad más poblada del mundo?",
+    "correcta": "Tokio",
+    "incorrectas": [
+      "Nueva York",
+      "Shanghái",
+      "Ciudad de México"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿Qué estrecho separa España de Marruecos?",
+    "correcta": "El de Gibraltar",
+    "incorrectas": [
+      "El del Bósforo",
+      "El de Ormuz",
+      "El de Magallanes"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿Cuál es la capital de Noruega?",
+    "correcta": "Oslo",
+    "incorrectas": [
+      "Bergen",
+      "Estocolmo",
+      "Copenhague"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿En qué país está la Selva Negra?",
+    "correcta": "Alemania",
+    "incorrectas": [
+      "Austria",
+      "Suiza",
+      "Polonia"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿Cuál es el volcán más famoso de Italia?",
+    "correcta": "El Vesubio",
+    "incorrectas": [
+      "El Etna",
+      "El Stromboli",
+      "El Teide"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿Qué país tiene más husos horarios?",
+    "correcta": "Francia",
+    "incorrectas": [
+      "Rusia",
+      "Estados Unidos",
+      "China"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿Cuál es la capital de Egipto?",
+    "correcta": "El Cairo",
+    "incorrectas": [
+      "Alejandría",
+      "Luxor",
+      "Asuán"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿En qué comunidad autónoma está Santiago de Compostela?",
+    "correcta": "Galicia",
+    "incorrectas": [
+      "Asturias",
+      "Cantabria",
+      "Castilla y León"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿Cuál es el mar más salado del mundo?",
+    "correcta": "El mar Muerto",
+    "incorrectas": [
+      "El mar Rojo",
+      "El mar Caspio",
+      "El mar Negro"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿Qué país africano tiene forma de cuerno?",
+    "correcta": "Somalia",
+    "incorrectas": [
+      "Etiopía",
+      "Kenia",
+      "Sudán"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿Cuál es la capital de Suiza?",
+    "correcta": "Berna",
+    "incorrectas": [
+      "Zúrich",
+      "Ginebra",
+      "Basilea"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿En qué país está el Taj Mahal?",
+    "correcta": "India",
+    "incorrectas": [
+      "Pakistán",
+      "Nepal",
+      "Bangladés"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿Cuál es el país más largo del mundo de norte a sur?",
+    "correcta": "Chile",
+    "incorrectas": [
+      "Brasil",
+      "Rusia",
+      "Noruega"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿Qué isla española es la más grande?",
+    "correcta": "Mallorca",
+    "incorrectas": [
+      "Tenerife",
+      "Gran Canaria",
+      "Ibiza"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿Cuál es la capital de Países Bajos?",
+    "correcta": "Ámsterdam",
+    "incorrectas": [
+      "La Haya",
+      "Róterdam",
+      "Utrecht"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿En qué país está la ciudad de Petra?",
+    "correcta": "Jordania",
+    "incorrectas": [
+      "Israel",
+      "Siria",
+      "Líbano"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿Cuántos países hay en la península ibérica?",
+    "correcta": "Dos",
+    "incorrectas": [
+      "Tres",
+      "Cuatro",
+      "Uno"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿Cuál es el río más largo de España?",
+    "correcta": "El Tajo",
+    "incorrectas": [
+      "El Ebro",
+      "El Duero",
+      "El Guadalquivir"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿Qué océano es el más grande?",
+    "correcta": "El Pacífico",
+    "incorrectas": [
+      "El Atlántico",
+      "El Índico",
+      "El Ártico"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿Cuál es la capital de Grecia?",
+    "correcta": "Atenas",
+    "incorrectas": [
+      "Salónica",
+      "Patras",
+      "Esparta"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿En qué país están las cataratas del Niágara?",
+    "correcta": "Entre Canadá y Estados Unidos",
+    "incorrectas": [
+      "Entre Brasil y Argentina",
+      "En Venezuela",
+      "En Zimbabue"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿Cuál es el pico más alto de España?",
+    "correcta": "El Teide",
+    "incorrectas": [
+      "El Mulhacén",
+      "El Aneto",
+      "El Veleta"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿Qué ciudad está atravesada por el Danubio?",
+    "correcta": "Budapest",
+    "incorrectas": [
+      "Praga",
+      "Varsovia",
+      "Bucarest"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿Cuál es la capital de Cuba?",
+    "correcta": "La Habana",
+    "incorrectas": [
+      "Santiago de Cuba",
+      "Varadero",
+      "Camagüey"
+    ]
+  },
+  {
+    "categoria": "geografia",
+    "pregunta": "¿En qué continente está el canal de Panamá?",
+    "correcta": "América",
+    "incorrectas": [
+      "África",
+      "Asia",
+      "Oceanía"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "¿Cuánto es 15 % de 220?",
+    "correcta": "33",
+    "incorrectas": [
+      "30",
+      "35",
+      "22"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "¿Cuánto es 7 × 8?",
+    "correcta": "56",
+    "incorrectas": [
+      "54",
+      "63",
+      "48"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "¿Cuántos lados tiene un hexágono?",
+    "correcta": "6",
+    "incorrectas": [
+      "5",
+      "7",
+      "8"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "¿Cuánto es 144 dividido entre 12?",
+    "correcta": "12",
+    "incorrectas": [
+      "14",
+      "11",
+      "16"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "¿Cuánto suman los ángulos de un triángulo?",
+    "correcta": "180°",
+    "incorrectas": [
+      "360°",
+      "90°",
+      "270°"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "¿Cuánto es 2 elevado a 10?",
+    "correcta": "1024",
+    "incorrectas": [
+      "512",
+      "2048",
+      "100"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "¿Cuál es la raíz cuadrada de 169?",
+    "correcta": "13",
+    "incorrectas": [
+      "12",
+      "14",
+      "17"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "¿Cuánto es 25 % de 80?",
+    "correcta": "20",
+    "incorrectas": [
+      "25",
+      "16",
+      "30"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "¿Cuántos minutos hay en tres horas y cuarto?",
+    "correcta": "195",
+    "incorrectas": [
+      "180",
+      "215",
+      "190"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "¿Cuánto es 9 × 12?",
+    "correcta": "108",
+    "incorrectas": [
+      "96",
+      "112",
+      "120"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "¿Cuál es el número primo que sigue al 13?",
+    "correcta": "17",
+    "incorrectas": [
+      "15",
+      "19",
+      "16"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "Si algo cuesta 80 € y baja un 25 %, ¿cuánto cuesta?",
+    "correcta": "60 €",
+    "incorrectas": [
+      "55 €",
+      "65 €",
+      "70 €"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "¿Cuántos grados tiene un ángulo recto?",
+    "correcta": "90",
+    "incorrectas": [
+      "45",
+      "180",
+      "120"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "¿Cuánto es un tercio de 99?",
+    "correcta": "33",
+    "incorrectas": [
+      "30",
+      "36",
+      "27"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "¿Cuánto es 0,5 × 0,5?",
+    "correcta": "0,25",
+    "incorrectas": [
+      "0,5",
+      "1",
+      "0,05"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "¿Cuántos segundos hay en media hora?",
+    "correcta": "1800",
+    "incorrectas": [
+      "1500",
+      "3600",
+      "1200"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "¿Cuál es el número romano que representa el 50?",
+    "correcta": "L",
+    "incorrectas": [
+      "C",
+      "D",
+      "X"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "¿Cuánto es 13 × 13?",
+    "correcta": "169",
+    "incorrectas": [
+      "156",
+      "144",
+      "196"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "¿Cuántas caras tiene un dado normal?",
+    "correcta": "6",
+    "incorrectas": [
+      "4",
+      "8",
+      "12"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "¿Cuánto es 1000 menos 387?",
+    "correcta": "613",
+    "incorrectas": [
+      "623",
+      "603",
+      "713"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "¿Qué número falta? 2, 6, 12, 20, __",
+    "correcta": "30",
+    "incorrectas": [
+      "28",
+      "24",
+      "32"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "¿Cuánto vale π redondeado a dos decimales?",
+    "correcta": "3,14",
+    "incorrectas": [
+      "3,15",
+      "3,12",
+      "3,41"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "¿Cuánto es 40 % de 250?",
+    "correcta": "100",
+    "incorrectas": [
+      "90",
+      "110",
+      "125"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "¿Cuántos lados tiene un octógono?",
+    "correcta": "8",
+    "incorrectas": [
+      "6",
+      "7",
+      "10"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "¿Cuál es el resultado de 6 + 4 × 2?",
+    "correcta": "14",
+    "incorrectas": [
+      "20",
+      "16",
+      "12"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "¿Cuánto es 3 al cubo?",
+    "correcta": "27",
+    "incorrectas": [
+      "9",
+      "81",
+      "18"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "Si repartes 45 caramelos entre 9 personas, ¿cuántos toca a cada una?",
+    "correcta": "5",
+    "incorrectas": [
+      "6",
+      "4",
+      "9"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "¿Cuánto es 11 × 11?",
+    "correcta": "121",
+    "incorrectas": [
+      "111",
+      "131",
+      "144"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "¿Cuántos milímetros hay en 3 centímetros?",
+    "correcta": "30",
+    "incorrectas": [
+      "300",
+      "3",
+      "0,3"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "¿Cuál es la mitad de tres cuartos?",
+    "correcta": "Tres octavos",
+    "incorrectas": [
+      "Un cuarto",
+      "Un medio",
+      "Dos tercios"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "¿Cuánto es 18 % de 50?",
+    "correcta": "9",
+    "incorrectas": [
+      "8",
+      "10",
+      "12"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "¿Cuántos días tiene un año bisiesto?",
+    "correcta": "366",
+    "incorrectas": [
+      "365",
+      "364",
+      "367"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "¿Cuál es el siguiente número de la serie 1, 1, 2, 3, 5, 8, __?",
+    "correcta": "13",
+    "incorrectas": [
+      "11",
+      "12",
+      "16"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "¿Cuánto es 250 dividido entre 5?",
+    "correcta": "50",
+    "incorrectas": [
+      "45",
+      "55",
+      "25"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "¿Cuántos grados tiene la suma de los ángulos de un cuadrado?",
+    "correcta": "360°",
+    "incorrectas": [
+      "180°",
+      "270°",
+      "540°"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "¿Cuánto es 7 al cuadrado más 1?",
+    "correcta": "50",
+    "incorrectas": [
+      "49",
+      "48",
+      "51"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "Si un tren va a 90 km/h, ¿cuánto recorre en 20 minutos?",
+    "correcta": "30 km",
+    "incorrectas": [
+      "45 km",
+      "20 km",
+      "60 km"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "¿Cuánto es 5 × 5 × 5?",
+    "correcta": "125",
+    "incorrectas": [
+      "75",
+      "100",
+      "150"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "¿Cuántos ceros tiene un millón?",
+    "correcta": "6",
+    "incorrectas": [
+      "5",
+      "7",
+      "9"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "¿Cuál es el 10 % de 10?",
+    "correcta": "1",
+    "incorrectas": [
+      "0,1",
+      "10",
+      "100"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "¿Cuánto es 84 dividido entre 4?",
+    "correcta": "21",
+    "incorrectas": [
+      "24",
+      "18",
+      "22"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "¿Qué fracción es igual a 0,75?",
+    "correcta": "3/4",
+    "incorrectas": [
+      "2/3",
+      "7/5",
+      "1/2"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "¿Cuántas horas hay en una semana?",
+    "correcta": "168",
+    "incorrectas": [
+      "148",
+      "172",
+      "196"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "¿Cuánto es 99 × 2?",
+    "correcta": "198",
+    "incorrectas": [
+      "188",
+      "208",
+      "196"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "¿Cuál es el número primo más pequeño?",
+    "correcta": "2",
+    "incorrectas": [
+      "1",
+      "3",
+      "0"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "¿Cuánto es la raíz cuadrada de 81?",
+    "correcta": "9",
+    "incorrectas": [
+      "8",
+      "7",
+      "18"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "Si algo sube de 50 € a 60 €, ¿cuánto ha subido en porcentaje?",
+    "correcta": "20 %",
+    "incorrectas": [
+      "10 %",
+      "16 %",
+      "25 %"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "¿Cuántos lados tiene un rombo?",
+    "correcta": "4",
+    "incorrectas": [
+      "3",
+      "5",
+      "6"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "¿Cuánto es 1/2 más 1/4?",
+    "correcta": "3/4",
+    "incorrectas": [
+      "2/6",
+      "1/6",
+      "2/3"
+    ]
+  },
+  {
+    "categoria": "mates",
+    "pregunta": "¿Cuánto es 12 × 15?",
+    "correcta": "180",
+    "incorrectas": [
+      "170",
+      "190",
+      "165"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿En qué año cayó el Muro de Berlín?",
+    "correcta": "1989",
+    "incorrectas": [
+      "1991",
+      "1985",
+      "1993"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿En qué año llegó Colón a América?",
+    "correcta": "1492",
+    "incorrectas": [
+      "1498",
+      "1485",
+      "1512"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿Quién fue el primer hombre en pisar la Luna?",
+    "correcta": "Neil Armstrong",
+    "incorrectas": [
+      "Buzz Aldrin",
+      "Yuri Gagarin",
+      "Michael Collins"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿En qué año empezó la Segunda Guerra Mundial?",
+    "correcta": "1939",
+    "incorrectas": [
+      "1941",
+      "1938",
+      "1945"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿Qué imperio construyó el Coliseo de Roma?",
+    "correcta": "El Imperio romano",
+    "incorrectas": [
+      "El Imperio griego",
+      "El Imperio otomano",
+      "El Imperio bizantino"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿Quién pintó la Capilla Sixtina?",
+    "correcta": "Miguel Ángel",
+    "incorrectas": [
+      "Leonardo da Vinci",
+      "Rafael",
+      "Botticelli"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿En qué año terminó la Guerra Civil española?",
+    "correcta": "1939",
+    "incorrectas": [
+      "1936",
+      "1945",
+      "1940"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿Quién fue el primer presidente de Estados Unidos?",
+    "correcta": "George Washington",
+    "incorrectas": [
+      "Thomas Jefferson",
+      "Abraham Lincoln",
+      "Benjamin Franklin"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿Qué civilización construyó las pirámides de Chichén Itzá?",
+    "correcta": "Los mayas",
+    "incorrectas": [
+      "Los aztecas",
+      "Los incas",
+      "Los olmecas"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿En qué año se hundió el Titanic?",
+    "correcta": "1912",
+    "incorrectas": [
+      "1905",
+      "1918",
+      "1923"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿Quién escribió «Don Quijote de la Mancha»?",
+    "correcta": "Cervantes",
+    "incorrectas": [
+      "Lope de Vega",
+      "Quevedo",
+      "Góngora"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿Qué muro dividió Alemania durante la Guerra Fría?",
+    "correcta": "El Muro de Berlín",
+    "incorrectas": [
+      "La Línea Maginot",
+      "El Telón de Hierro",
+      "El Muro de Adriano"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿En qué año llegó el ser humano a la Luna?",
+    "correcta": "1969",
+    "incorrectas": [
+      "1965",
+      "1972",
+      "1961"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿Quién fue la primera mujer en ganar un Nobel?",
+    "correcta": "Marie Curie",
+    "incorrectas": [
+      "Rosalind Franklin",
+      "Ada Lovelace",
+      "Dorothy Hodgkin"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿Qué emperador francés fue derrotado en Waterloo?",
+    "correcta": "Napoleón",
+    "incorrectas": [
+      "Luis XIV",
+      "Carlomagno",
+      "Luis XVI"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿En qué año empezó la Revolución francesa?",
+    "correcta": "1789",
+    "incorrectas": [
+      "1799",
+      "1776",
+      "1804"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿Qué faraón egipcio fue encontrado casi intacto en 1922?",
+    "correcta": "Tutankamón",
+    "incorrectas": [
+      "Ramsés II",
+      "Keops",
+      "Nefertiti"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿Quién fue el líder de la India en su independencia pacífica?",
+    "correcta": "Gandhi",
+    "incorrectas": [
+      "Nehru",
+      "Mandela",
+      "Buda"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿En qué siglo se inventó la imprenta de tipos móviles en Europa?",
+    "correcta": "El XV",
+    "incorrectas": [
+      "El XIII",
+      "El XVII",
+      "El XI"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿Qué barco dio la primera vuelta al mundo?",
+    "correcta": "La Victoria",
+    "incorrectas": [
+      "La Pinta",
+      "La Santa María",
+      "El Beagle"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿Quién fue asesinado en Dallas en 1963?",
+    "correcta": "John F. Kennedy",
+    "incorrectas": [
+      "Martin Luther King",
+      "Abraham Lincoln",
+      "Robert Kennedy"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿Qué civilización inventó los Juegos Olímpicos?",
+    "correcta": "La griega",
+    "incorrectas": [
+      "La romana",
+      "La egipcia",
+      "La persa"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿En qué año se proclamó la Constitución española vigente?",
+    "correcta": "1978",
+    "incorrectas": [
+      "1975",
+      "1981",
+      "1812"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿Quién lideró la Revolución rusa de 1917?",
+    "correcta": "Lenin",
+    "incorrectas": [
+      "Stalin",
+      "Trotski",
+      "Gorbachov"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿Qué antiguo pueblo escribía con jeroglíficos?",
+    "correcta": "Los egipcios",
+    "incorrectas": [
+      "Los romanos",
+      "Los fenicios",
+      "Los vikingos"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿En qué año cayó el Imperio romano de Occidente?",
+    "correcta": "476",
+    "incorrectas": [
+      "1453",
+      "313",
+      "800"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿Quién fue Cleopatra?",
+    "correcta": "La última reina de Egipto",
+    "incorrectas": [
+      "Una emperatriz romana",
+      "Una reina griega",
+      "Una faraona del Imperio Antiguo"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿Qué guerra enfrentó al Norte y al Sur de Estados Unidos?",
+    "correcta": "La Guerra de Secesión",
+    "incorrectas": [
+      "La Guerra de Independencia",
+      "La Guerra de Vietnam",
+      "La Guerra Hispano-Estadounidense"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿Quién descubrió la penicilina?",
+    "correcta": "Alexander Fleming",
+    "incorrectas": [
+      "Louis Pasteur",
+      "Robert Koch",
+      "Edward Jenner"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿Qué reyes financiaron el viaje de Colón?",
+    "correcta": "Los Reyes Católicos",
+    "incorrectas": [
+      "Carlos I y Juana",
+      "Felipe II y María",
+      "Los Austrias"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿En qué año se fundó la ONU?",
+    "correcta": "1945",
+    "incorrectas": [
+      "1919",
+      "1950",
+      "1939"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿Qué muro construyeron los romanos en Britania?",
+    "correcta": "El Muro de Adriano",
+    "incorrectas": [
+      "El Muro de Berlín",
+      "La Gran Muralla",
+      "El Limes germánico"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿Quién fue el primer emperador romano?",
+    "correcta": "Augusto",
+    "incorrectas": [
+      "Julio César",
+      "Nerón",
+      "Trajano"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿En qué país nació la democracia?",
+    "correcta": "Grecia",
+    "incorrectas": [
+      "Roma",
+      "Egipto",
+      "Persia"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿Qué acabó con la ciudad de Pompeya?",
+    "correcta": "La erupción del Vesubio",
+    "incorrectas": [
+      "Un terremoto",
+      "Una invasión bárbara",
+      "Un incendio"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿Quién escribió la teoría de la relatividad?",
+    "correcta": "Einstein",
+    "incorrectas": [
+      "Newton",
+      "Galileo",
+      "Bohr"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿En qué año se disolvió la Unión Soviética?",
+    "correcta": "1991",
+    "incorrectas": [
+      "1989",
+      "1985",
+      "1993"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿Qué dinastía construyó la Gran Muralla china tal como se ve hoy?",
+    "correcta": "La Ming",
+    "incorrectas": [
+      "La Han",
+      "La Qing",
+      "La Tang"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿Quién fue Juana de Arco?",
+    "correcta": "Una heroína francesa del siglo XV",
+    "incorrectas": [
+      "Una reina inglesa",
+      "Una santa española",
+      "Una emperatriz austríaca"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿En qué año empezó la Primera Guerra Mundial?",
+    "correcta": "1914",
+    "incorrectas": [
+      "1918",
+      "1912",
+      "1920"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿Qué explorador llegó primero al Polo Sur?",
+    "correcta": "Amundsen",
+    "incorrectas": [
+      "Scott",
+      "Shackleton",
+      "Cook"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿Qué imperio dominaba Perú antes de la llegada de los españoles?",
+    "correcta": "El inca",
+    "incorrectas": [
+      "El azteca",
+      "El maya",
+      "El chibcha"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿Quién fue Nelson Mandela?",
+    "correcta": "El primer presidente negro de Sudáfrica",
+    "incorrectas": [
+      "Un líder keniano",
+      "Un presidente nigeriano",
+      "Un rey zulú"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿En qué año se inventó la World Wide Web?",
+    "correcta": "1989",
+    "incorrectas": [
+      "1995",
+      "1983",
+      "1975"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿Qué ciudad fue arrasada por la primera bomba atómica?",
+    "correcta": "Hiroshima",
+    "incorrectas": [
+      "Nagasaki",
+      "Tokio",
+      "Osaka"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿Quién unificó Italia en el siglo XIX?",
+    "correcta": "Garibaldi",
+    "incorrectas": [
+      "Mussolini",
+      "Cavour",
+      "Víctor Manuel III"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿Qué peste mató a un tercio de Europa en el siglo XIV?",
+    "correcta": "La peste negra",
+    "incorrectas": [
+      "La viruela",
+      "El cólera",
+      "La gripe española"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿Quién fue el último rey de Francia guillotinado?",
+    "correcta": "Luis XVI",
+    "incorrectas": [
+      "Luis XIV",
+      "Luis XV",
+      "Carlos X"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿En qué año se celebró el primer Mundial de fútbol?",
+    "correcta": "1930",
+    "incorrectas": [
+      "1926",
+      "1934",
+      "1950"
+    ]
+  },
+  {
+    "categoria": "historia",
+    "pregunta": "¿Qué escritura descifró la piedra Rosetta?",
+    "correcta": "Los jeroglíficos egipcios",
+    "incorrectas": [
+      "El cuneiforme",
+      "El lineal B",
+      "Las runas"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇵🇹",
+    "correcta": "Portugal",
+    "incorrectas": [
+      "España",
+      "Italia",
+      "Brasil"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇯🇵",
+    "correcta": "Japón",
+    "incorrectas": [
+      "China",
+      "Corea del Sur",
+      "Bangladés"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇧🇷",
+    "correcta": "Brasil",
+    "incorrectas": [
+      "Argentina",
+      "Colombia",
+      "México"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇨🇦",
+    "correcta": "Canadá",
+    "incorrectas": [
+      "Estados Unidos",
+      "Suiza",
+      "Dinamarca"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇸🇪",
+    "correcta": "Suecia",
+    "incorrectas": [
+      "Noruega",
+      "Finlandia",
+      "Dinamarca"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇬🇷",
+    "correcta": "Grecia",
+    "incorrectas": [
+      "Israel",
+      "Uruguay",
+      "Finlandia"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇮🇪",
+    "correcta": "Irlanda",
+    "incorrectas": [
+      "Italia",
+      "Costa de Marfil",
+      "India"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇲🇽",
+    "correcta": "México",
+    "incorrectas": [
+      "Italia",
+      "Irlanda",
+      "Hungría"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇰🇷",
+    "correcta": "Corea del Sur",
+    "incorrectas": [
+      "Japón",
+      "Taiwán",
+      "Corea del Norte"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇨🇭",
+    "correcta": "Suiza",
+    "incorrectas": [
+      "Dinamarca",
+      "Austria",
+      "Georgia"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇦🇷",
+    "correcta": "Argentina",
+    "incorrectas": [
+      "Uruguay",
+      "Guatemala",
+      "Grecia"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇹🇷",
+    "correcta": "Turquía",
+    "incorrectas": [
+      "Túnez",
+      "Pakistán",
+      "Argelia"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇳🇱",
+    "correcta": "Países Bajos",
+    "incorrectas": [
+      "Luxemburgo",
+      "Francia",
+      "Rusia"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇮🇳",
+    "correcta": "India",
+    "incorrectas": [
+      "Níger",
+      "Irlanda",
+      "Costa de Marfil"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇩🇪",
+    "correcta": "Alemania",
+    "incorrectas": [
+      "Bélgica",
+      "Bolivia",
+      "Lituania"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇦🇺",
+    "correcta": "Australia",
+    "incorrectas": [
+      "Nueva Zelanda",
+      "Fiyi",
+      "Reino Unido"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇮🇹",
+    "correcta": "Italia",
+    "incorrectas": [
+      "México",
+      "Irlanda",
+      "Hungría"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇷🇺",
+    "correcta": "Rusia",
+    "incorrectas": [
+      "Países Bajos",
+      "Eslovenia",
+      "Serbia"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇨🇳",
+    "correcta": "China",
+    "incorrectas": [
+      "Vietnam",
+      "Turquía",
+      "Marruecos"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇬🇧",
+    "correcta": "Reino Unido",
+    "incorrectas": [
+      "Australia",
+      "Nueva Zelanda",
+      "Noruega"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇫🇷",
+    "correcta": "Francia",
+    "incorrectas": [
+      "Países Bajos",
+      "Rusia",
+      "Luxemburgo"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇺🇸",
+    "correcta": "Estados Unidos",
+    "incorrectas": [
+      "Liberia",
+      "Malasia",
+      "Chile"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇨🇱",
+    "correcta": "Chile",
+    "incorrectas": [
+      "Texas",
+      "Cuba",
+      "Puerto Rico"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇨🇺",
+    "correcta": "Cuba",
+    "incorrectas": [
+      "Puerto Rico",
+      "Chile",
+      "Uruguay"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇳🇴",
+    "correcta": "Noruega",
+    "incorrectas": [
+      "Islandia",
+      "Dinamarca",
+      "Finlandia"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇵🇱",
+    "correcta": "Polonia",
+    "incorrectas": [
+      "Indonesia",
+      "Mónaco",
+      "Austria"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇧🇪",
+    "correcta": "Bélgica",
+    "incorrectas": [
+      "Alemania",
+      "Uganda",
+      "Chad"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇦🇹",
+    "correcta": "Austria",
+    "incorrectas": [
+      "Letonia",
+      "Perú",
+      "Líbano"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇩🇰",
+    "correcta": "Dinamarca",
+    "incorrectas": [
+      "Noruega",
+      "Suiza",
+      "Islandia"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇫🇮",
+    "correcta": "Finlandia",
+    "incorrectas": [
+      "Suecia",
+      "Islandia",
+      "Grecia"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇮🇸",
+    "correcta": "Islandia",
+    "incorrectas": [
+      "Noruega",
+      "Dinamarca",
+      "Feroe"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇨🇴",
+    "correcta": "Colombia",
+    "incorrectas": [
+      "Ecuador",
+      "Venezuela",
+      "Rumanía"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇵🇪",
+    "correcta": "Perú",
+    "incorrectas": [
+      "Austria",
+      "Canadá",
+      "Letonia"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇺🇾",
+    "correcta": "Uruguay",
+    "incorrectas": [
+      "Argentina",
+      "Grecia",
+      "Israel"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇻🇪",
+    "correcta": "Venezuela",
+    "incorrectas": [
+      "Colombia",
+      "Ecuador",
+      "Rumanía"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇪🇬",
+    "correcta": "Egipto",
+    "incorrectas": [
+      "Irak",
+      "Siria",
+      "Yemen"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇿🇦",
+    "correcta": "Sudáfrica",
+    "incorrectas": [
+      "Kenia",
+      "Ghana",
+      "Zimbabue"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇳🇬",
+    "correcta": "Nigeria",
+    "incorrectas": [
+      "Pakistán",
+      "Bangladés",
+      "Costa de Marfil"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇰🇪",
+    "correcta": "Kenia",
+    "incorrectas": [
+      "Malaui",
+      "Sudán",
+      "Uganda"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇹🇭",
+    "correcta": "Tailandia",
+    "incorrectas": [
+      "Costa Rica",
+      "Laos",
+      "Camboya"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇻🇳",
+    "correcta": "Vietnam",
+    "incorrectas": [
+      "China",
+      "Marruecos",
+      "Túnez"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇵🇰",
+    "correcta": "Pakistán",
+    "incorrectas": [
+      "Turquía",
+      "Argelia",
+      "Mauritania"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇮🇱",
+    "correcta": "Israel",
+    "incorrectas": [
+      "Grecia",
+      "Finlandia",
+      "Argentina"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇸🇦",
+    "correcta": "Arabia Saudí",
+    "incorrectas": [
+      "Irak",
+      "Argelia",
+      "Libia"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇺🇦",
+    "correcta": "Ucrania",
+    "incorrectas": [
+      "Suecia",
+      "Kazajistán",
+      "Rumanía"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇷🇴",
+    "correcta": "Rumanía",
+    "incorrectas": [
+      "Chad",
+      "Moldavia",
+      "Andorra"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇭🇺",
+    "correcta": "Hungría",
+    "incorrectas": [
+      "Italia",
+      "Bulgaria",
+      "Irán"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇨🇿",
+    "correcta": "Chequia",
+    "incorrectas": [
+      "Filipinas",
+      "Eslovaquia",
+      "Eslovenia"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇲🇦",
+    "correcta": "Marruecos",
+    "incorrectas": [
+      "Túnez",
+      "Turquía",
+      "Vietnam"
+    ]
+  },
+  {
+    "categoria": "banderas",
+    "pregunta": "¿De qué país es esta bandera? 🇬🇭",
+    "correcta": "Ghana",
+    "incorrectas": [
+      "Bolivia",
+      "Etiopía",
+      "Camerún"
+    ]
+  }
+]
