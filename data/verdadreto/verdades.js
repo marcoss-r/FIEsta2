@@ -306,6 +306,15 @@ const VR_VERDADES = [
   { texto: "Cuenta tres cosas buenas que te hayan pasado esta semana", nivel: "normal" },
   { texto: "Cuenta algo malo de esta semana", nivel: "normal" },
   { texto: "Si pudieras hacer que alguien desapareciera para siempre, ¿quién sería?", nivel: "normal" },
+  { texto: "Di una persona que tengas bloqueada en instagram y el motivo", nivel: "normal" },
+  { texto: "Cuenta el apodo más raro que te han puesto alguna vez", nivel: "normal" },
+  { texto: "Dile a {otro} lo peor que le has deseado en un momento de rabia", nivel: "normal" },
+  { texto: "Dile a {otro} qué crees que nunca te perdonaría si lo supiera", nivel: "normal" },
+  { texto: "Dile a {otro} el secreto que más te pesa guardar sobre él o ella", nivel: "normal" },
+  { texto: "Dile a {otro} la traición más pequeña que hiciste más veces de las que admites", nivel: "normal" },
+  { texto: "Di dos cosas sinceras sobre los demás miembros del grupo", nivel: "normal" },
+  { texto: "Cuenta a todos una historia embarazosa sobre ti mismo", nivel: "normal" },
+  { texto: "Dile a alguien que te cae mal lo que verdaderamente piensas de él o ella", nivel: "normal" },
 
   // ── picante
   { texto: "¿Cuál ha sido tu experiencia más atrevida en la cama?", nivel: "picante" },
@@ -538,4 +547,8 @@ const VR_VERDADES = [
   { texto: "¿Te acostarías con otra persona si tuvieses el permiso de tu pareja? ¿Y si te lo pidiese?", nivel: "picante" },
   { texto: "¿Cuál es la última decisión amorosa de la que te arrepientes?", nivel: "picante" },
   { texto: "Dile a {otro} con quién de este grupo te liarías si no fuerais amigos", nivel: "picante" },
+  { texto: "Dile a {otro} qué es lo que más celos te da confesar que sientes", nivel: "picante" },
+  { texto: "Dile a {otro} la vez que más te has arrepentido de perdonar una infidelidad", nivel: "picante" },
+  { texto: "Describe como harías el amor a alguien del grupo", nivel: "picante" },
+  { texto: "Cuenta un sueño erótico que hayas tenido y que recuerdes", nivel: "picante" },
 ];

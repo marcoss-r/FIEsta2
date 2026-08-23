@@ -2134,5 +2134,57 @@
   {
     "texto": "Si pudieras hacer que alguien desapareciera para siempre, ¿quién sería?",
     "nivel": "normal"
+  },
+  {
+    "texto": "Di una persona que tengas bloqueada en instagram y el motivo",
+    "nivel": "normal"
+  },
+  {
+    "texto": "Cuenta el apodo más raro que te han puesto alguna vez",
+    "nivel": "normal"
+  },
+  {
+    "texto": "Dile a {otro} qué es lo que más celos te da confesar que sientes",
+    "nivel": "picante"
+  },
+  {
+    "texto": "Dile a {otro} la vez que más te has arrepentido de perdonar una infidelidad",
+    "nivel": "picante"
+  },
+  {
+    "texto": "Dile a {otro} lo peor que le has deseado en un momento de rabia",
+    "nivel": "normal"
+  },
+  {
+    "texto": "Dile a {otro} qué crees que nunca te perdonaría si lo supiera",
+    "nivel": "normal"
+  },
+  {
+    "texto": "Dile a {otro} el secreto que más te pesa guardar sobre él o ella",
+    "nivel": "normal"
+  },
+  {
+    "texto": "Dile a {otro} la traición más pequeña que hiciste más veces de las que admites",
+    "nivel": "normal"
+  },
+  {
+    "texto": "Describe como harías el amor a alguien del grupo",
+    "nivel": "picante"
+  },
+  {
+    "texto": "Di dos cosas sinceras sobre los demás miembros del grupo",
+    "nivel": "normal"
+  },
+  {
+    "texto": "Cuenta a todos una historia embarazosa sobre ti mismo",
+    "nivel": "normal"
+  },
+  {
+    "texto": "Dile a alguien que te cae mal lo que verdaderamente piensas de él o ella",
+    "nivel": "normal"
+  },
+  {
+    "texto": "Cuenta un sueño erótico que hayas tenido y que recuerdes",
+    "nivel": "picante"
   }
 ]

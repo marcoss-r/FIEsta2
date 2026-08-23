@@ -672,6 +672,35 @@ mirar la carta más larga del banco en horizontal y en vertical.
       el grupo también puede saltarse la pregunta de la app e inventarse una
       propia para ese turno; se oculta junto con «Otra» mientras se muestra el
       castigo de «Paso». `APP_VERSION`/`CACHE` a 1.10.3.
+- [x] **Tercera revisión del usuario y limpieza de retos-que-eran-verdades**
+      (pedido por el usuario). El usuario podó `verdades.json` por su cuenta
+      (824 → 534). Después, sobre ese banco:
+      1. **Análisis de similitudes entre verdades**, entregado como
+         `SIMILITUDES_VERDADES.md` para que el usuario decida qué borra o
+         reescribe. La comparación pesa por **IDF** (importan las palabras
+         raras, no el armazón interrogativo que comparten casi todas) sobre
+         tokens lematizados a lo bruto y con los sinónimos del dominio
+         unificados (*liarse/enrollarse/morrearse*…), mezclando coseno,
+         contención y `difflib`. Sin el IDF todo se parece a todo: compartir
+         «sexo» no dice nada. Los grupos se revisaron a mano después.
+         Salen 6 secciones: casi calcadas, reescritas, genérica-vs-específica,
+         espejo tú/`{otro}`, complementarias a propósito (que se quedan) y
+         **familias de molde** (9 × «¿Cuál es tu mayor manía…?», 10 × «¿Cuál
+         es la vez que…?», 8 × «¿Cuál es la mentira…?»…), que no son duplicados
+         pero hacen que el banco suene a fórmula.
+      2. **46 retos que en realidad eran verdades** («Dile a {otro}…»,
+         «Cuenta…», «Di…»: no piden hacer nada, piden contar algo) sacados del
+         banco de retos. De ellos, **33 ya existían como verdad** y se borran
+         sin más; los **13 restantes se añaden al final de `verdades.json`**
+         con su texto original en imperativo (ya había precedente en el banco,
+         y el «Dile a {otro}…» dirige la confesión a una persona concreta).
+         Se dejan como retos los que sí son acciones aunque empiecen por el
+         mismo verbo («Cuenta un chiste», «Di los meses del año hacia atrás»,
+         «Describe a {otro} usando solo gestos»): ahí el verbo de decir es la
+         acción, no un envoltorio. Resultado: verdades **547** (313 normal /
+         234 picante), retos **611** (467 / 144). `APP_VERSION`/`CACHE` a
+         1.10.4. Pendiente de que el usuario revise el `.md` de similitudes y
+         las 13 movidas.
 
 ---
 

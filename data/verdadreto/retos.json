@@ -120,10 +120,6 @@
     "nivel": "normal"
   },
   {
-    "texto": "Di una persona que tengas bloqueada en instagram y el motivo",
-    "nivel": "normal"
-  },
-  {
     "texto": "Enseña tu horóscopo del día y léelo en voz alta",
     "nivel": "normal"
   },
@@ -172,10 +168,6 @@
     "nivel": "normal"
   },
   {
-    "texto": "Cuenta algo malo de esta semana",
-    "nivel": "normal"
-  },
-  {
     "texto": "Haz de vendedor y trata de vendernos un objeto random de la sala",
     "nivel": "normal"
   },
@@ -209,10 +201,6 @@
   },
   {
     "texto": "Enseña el último guardado de instagram",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Cuenta el apodo más raro que te han puesto alguna vez",
     "nivel": "normal"
   },
   {
@@ -274,158 +262,6 @@
   {
     "texto": "Enséñale al grupo el mensaje subido de tono más arriesgado que tengas guardado, si te atreves",
     "nivel": "picante"
-  },
-  {
-    "texto": "Dile a {otro} cuál es tu manía más rara en la intimidad",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Dile a {otro} qué es lo que más celos te da confesar que sientes",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Dile a {otro} con quién has sentido más química sin que pasara nada",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Dile a {otro} la mayor tontería que has hecho por alguien que te atraía",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Dile a {otro} qué harías si supieras que no hay consecuencias",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Dile a {otro} qué es lo que más te ha costado admitir en la intimidad",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Dile a {otro} tu experiencia más incómoda en una cita a ciegas",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Dile a {otro} si has tenido un lío con el ex de un amigo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Dile a {otro} si has tenido celos de alguien sin ningún motivo real",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Dile a {otro} tu peor mentira para conseguir una cita",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Dile a {otro} qué es lo que más rápido te tira para atrás en alguien que te gustaba",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Dile a {otro} lo más incómodo que te ha pasado con un ex en una fiesta",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Dile a {otro} si has dado celos a propósito para llamar su atención",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Dile a {otro} si has tenido sexo pensando en otra persona",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Dile a {otro} la vez que más te has arrepentido de perdonar una infidelidad",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Dile a {otro} tu peor experiencia mandando indirectas",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Dile a {otro} si has fingido que dormías para no hablar después de estar con alguien",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Dile a {otro} si has idealizado a alguien solo por atracción física",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Dile a {otro} a quién de aquí traicionarías si tu vida dependiera de ello",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Dile a {otro} quién de este grupo es la persona en la que menos confías de verdad",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Dile a {otro} lo más cruel que has pensado sobre él o ella en un mal momento",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Dile a {otro} lo peor que le has deseado en un momento de rabia",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Dile a {otro} qué has callado por no romper la paz de este grupo",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Dile a {otro} si alguna vez le has sido desleal sin que lo supiera",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Dile a {otro} qué has permitido que le hicieran sin defenderle",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Dile a {otro} qué crees que nunca te perdonaría si lo supiera",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Dile a {otro} lo más injusto que has hecho con él o ella sabiendo que lo era",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Dile a {otro} qué has hecho por dinero de lo que no te sientes orgulloso",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Dile a {otro} qué crees que este grupo no sabe de ti y lo cambiaría todo si lo supiera",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Dile a {otro} qué has fingido perdonarle sin hacerlo de verdad",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Dile a {otro} el rencor que guardas hacia él o ella desde hace más tiempo sin decirlo",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Dile a {otro} si le debes una disculpa que nunca le has dado",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Dile a {otro} qué es lo más injusto que has pensado de él o ella sin conocer toda la historia",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Dile a {otro} el secreto que más te pesa guardar sobre él o ella",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Dile a {otro} la traición más pequeña que hiciste más veces de las que admites",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Dile a {otro} qué es lo que finges no saber para no tener que actuar al respecto",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Dile a {otro} quién de esta sala conoce menos tu verdadero yo",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Dile a {otro} la vez que más cerca has estado de romper este grupo sin que lo supiera",
-    "nivel": "normal"
   },
   {
     "texto": "Baila reguetón durante 20 segundos sin usar los brazos",
@@ -1248,10 +1084,6 @@
     "nivel": "normal"
   },
   {
-    "texto": "Describe como harías el amor a alguien del grupo",
-    "nivel": "picante"
-  },
-  {
     "texto": "Córtate el flequillo",
     "nivel": "normal"
   },
@@ -1592,10 +1424,6 @@
     "nivel": "normal"
   },
   {
-    "texto": "Di dos cosas sinceras sobre los demás miembros del grupo",
-    "nivel": "normal"
-  },
-  {
     "texto": "Haz 'twerking' durante un minuto",
     "nivel": "normal"
   },
@@ -1609,10 +1437,6 @@
   },
   {
     "texto": "Deja que otra persona del grupo te retoque el maquillaje",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Cuenta a todos una historia embarazosa sobre ti mismo",
     "nivel": "normal"
   },
   {
@@ -2328,10 +2152,6 @@
     "nivel": "normal"
   },
   {
-    "texto": "Dile a alguien que te cae mal lo que verdaderamente piensas de él o ella",
-    "nivel": "normal"
-  },
-  {
     "texto": "Disfrázate de dinosaurio y pregunta a la gente por alguna dirección",
     "nivel": "normal"
   },
@@ -2397,10 +2217,6 @@
   },
   {
     "texto": "Manda un audio a alguien haciendo ver que estás teniendo un orgasmo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Cuenta un sueño erótico que hayas tenido y que recuerdes",
     "nivel": "picante"
   },
   {
