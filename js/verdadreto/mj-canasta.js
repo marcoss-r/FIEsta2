@@ -14,40 +14,47 @@
 
 // --- El mundo, en metros ---
 const VR_MJ_CANASTA_G = 9.8;
-const VR_MJ_CANASTA_CAMARA_Y = 2.3; // altura de la cámara
+const VR_MJ_CANASTA_CAMARA_Y = 1.76; // altura de la cámara
 const VR_MJ_CANASTA_ARO_Y = 3.05; // altura reglamentaria del aro
-const VR_MJ_CANASTA_ARO_Z = 6.6; // a qué distancia está la canasta
-const VR_MJ_CANASTA_ARO_R = 0.225;
+const VR_MJ_CANASTA_ARO_Z = 5.5; // a qué distancia está la canasta
+// Aro de feria, no reglamentario (0,225): con el reglamentario, a esta
+// distancia el aro sale a 55 px en un móvil y no se ve. 0,32 lo deja en unos
+// 78 px, que es donde se lee bien sin que parezca que lo tienes encima.
+const VR_MJ_CANASTA_ARO_R = 0.32;
 const VR_MJ_CANASTA_BOLA_R = 0.12;
-const VR_MJ_CANASTA_TABLERO_Z = 6.85;
+const VR_MJ_CANASTA_TABLERO_Z = 5.75;
 const VR_MJ_CANASTA_TABLERO_ALTO = 0.9;
-const VR_MJ_CANASTA_TABLERO_MEDIO = 0.85; // medio ancho del tablero
+const VR_MJ_CANASTA_TABLERO_MEDIO = 0.75; // medio ancho del tablero
 const VR_MJ_CANASTA_ARO_RECORRIDO = 1; // hasta dónde se va el aro a cada lado
 const VR_MJ_CANASTA_ARO_VELOCIDAD = 0.55; // m/s
 
-const VR_MJ_CANASTA_SALIDA = { x: 0, y: 0.9, z: 2.1 };
+const VR_MJ_CANASTA_SALIDA = { x: 0, y: 0.9, z: 2.3 };
 
 // El tiro "perfecto": con estas velocidades la pelota tarda 0,95 s en recorrer
-// los 4,5 m que la separan del aro, llega justo a 3,05 m de altura y ya está
+// los 3,2 m que la separan del aro, llega justo a 3,05 m de altura y ya está
 // bajando (−2,4 m/s) cuando cruza. Un gesto de 0,30 altos de pantalla hacia
 // arriba equivale a potencia 1, o sea a este tiro exacto con el aro centrado.
 const VR_MJ_CANASTA_V_Y = 6.92;
-const VR_MJ_CANASTA_V_Z = 4.74;
+const VR_MJ_CANASTA_V_Z = 3.37;
 const VR_MJ_CANASTA_V_X = 3.5;
 const VR_MJ_CANASTA_GESTO = 0.3;
 const VR_MJ_CANASTA_POTENCIA_MAX = 1.8;
 
 // Para que cuente hay que meterla por el agujero: el centro de la pelota tiene
-// que pasar a menos de esto del centro del aro. Lo estricto sería 0,105
-// (0,225 del aro menos 0,12 de la pelota); se es algo generoso a propósito.
-const VR_MJ_CANASTA_ENTRA = 0.15;
+// que pasar a menos de esto del centro del aro. Lo estricto sería 0,20 (0,32
+// del aro menos 0,12 de la pelota); se es algo generoso a propósito.
+const VR_MJ_CANASTA_ENTRA = 0.18;
+
+// --- La pista, en metros (para las líneas del suelo) ---
+const VR_MJ_CANASTA_FONDO_Z = 6.7; // línea de fondo, por detrás del tablero
+const VR_MJ_CANASTA_ZONA_R = 1.25; // semicírculo de la zona restringida
 
 // --- Cámara ---
 // Proyección de perspectiva de toda la vida: lo que está lejos se ve pequeño y
 // cerca del horizonte. `escala` es cuántos píxeles mide un metro a esa
 // distancia, y es lo que hace encoger a la pelota mientras vuela.
 function vrMjCanastaCamara(ancho, alto) {
-  return { f: alto * 0.95, horizonte: alto * 0.26, centro: ancho / 2 };
+  return { f: alto * 1.05, horizonte: alto * 0.467, centro: ancho / 2 };
 }
 
 function vrMjCanastaProyectar(e, x, y, z) {
@@ -74,11 +81,6 @@ function vrMjCanastaNuevaPelota(e) {
   };
   e.arrastre = null;
   e.espera = 0;
-}
-
-// Dónde está el aro ahora mismo (solo se mueve en x).
-function vrMjCanastaAro(e) {
-  return { x: e.aroX, y: VR_MJ_CANASTA_ARO_Y, z: VR_MJ_CANASTA_ARO_Z };
 }
 
 // Traduce un gesto de pantalla a una velocidad de salida. El componente hacia
@@ -160,6 +162,7 @@ const VR_MJ_CANASTA = {
 
   actualizar(e, dt) {
     // El aro va y viene entre los dos márgenes, a velocidad constante.
+    const aroAntes = e.aroX;
     e.aroX += e.aroDir * VR_MJ_CANASTA_ARO_VELOCIDAD * dt;
     if (e.aroX < -VR_MJ_CANASTA_ARO_RECORRIDO) {
       e.aroX = -VR_MJ_CANASTA_ARO_RECORRIDO;
@@ -184,8 +187,7 @@ const VR_MJ_CANASTA = {
     const p = e.pelota;
     if (!p.volando) return true;
 
-    const yAntes = p.y;
-    const zAntes = p.z;
+    const antes = { x: p.x, y: p.y, z: p.z };
 
     // Integración exacta para aceleración constante: la posición usa la
     // velocidad MEDIA del paso (de ahí el −½gΔt²), y la velocidad se actualiza
@@ -200,30 +202,41 @@ const VR_MJ_CANASTA = {
     p.vy -= VR_MJ_CANASTA_G * dt;
     p.giro += dt * 6;
 
+    // Interpola dónde estaba la pelota (y el aro) en el instante exacto en que
+    // cruzó un plano, siendo `t` la fracción del paso en que ocurrió. Mirar la
+    // posición del FINAL del paso es lo que hacía que el tablero no siempre
+    // rebotara: la pelota cruzaba su plano a la altura correcta, pero para
+    // cuando terminaba el fotograma ya estaba por encima o por debajo.
+    const enCruce = (t) => ({
+      x: antes.x + (p.x - antes.x) * t,
+      y: antes.y + (p.y - antes.y) * t,
+      z: antes.z + (p.z - antes.z) * t,
+      aroX: aroAntes + (e.aroX - aroAntes) * t,
+    });
+
     // --- Tablero: frena a la pelota que llega por delante ---
-    if (
-      zAntes < VR_MJ_CANASTA_TABLERO_Z &&
-      p.z >= VR_MJ_CANASTA_TABLERO_Z &&
-      p.y > VR_MJ_CANASTA_ARO_Y &&
-      p.y < VR_MJ_CANASTA_ARO_Y + VR_MJ_CANASTA_TABLERO_ALTO &&
-      Math.abs(p.x - e.aroX) < VR_MJ_CANASTA_TABLERO_MEDIO
-    ) {
-      p.z = VR_MJ_CANASTA_TABLERO_Z - 0.01;
-      p.vz *= -0.5;
+    if (antes.z < VR_MJ_CANASTA_TABLERO_Z && p.z >= VR_MJ_CANASTA_TABLERO_Z) {
+      const t = (VR_MJ_CANASTA_TABLERO_Z - antes.z) / (p.z - antes.z);
+      const c = enCruce(t);
+      if (
+        c.y > VR_MJ_CANASTA_ARO_Y &&
+        c.y < VR_MJ_CANASTA_ARO_Y + VR_MJ_CANASTA_TABLERO_ALTO &&
+        Math.abs(c.x - c.aroX) < VR_MJ_CANASTA_TABLERO_MEDIO
+      ) {
+        p.z = VR_MJ_CANASTA_TABLERO_Z - 0.02;
+        p.vz = -Math.abs(p.vz) * 0.5;
+      }
     }
 
     // --- Plano del aro: aquí se decide si entra, si rebota en el hierro o si
     // pasa de largo. Se mira el CRUCE de la altura del aro entre dos
     // fotogramas, no la posición suelta: a esta velocidad la pelota puede
     // saltarse el plano entero dentro de un mismo fotograma.
-    const cruzaAro =
-      (yAntes - VR_MJ_CANASTA_ARO_Y) * (p.y - VR_MJ_CANASTA_ARO_Y) < 0;
+    const cruzaAro = (antes.y - VR_MJ_CANASTA_ARO_Y) * (p.y - VR_MJ_CANASTA_ARO_Y) < 0;
     if (cruzaAro && !p.encestada) {
-      // Punto exacto del cruce, interpolando entre el antes y el después.
-      const t = (yAntes - VR_MJ_CANASTA_ARO_Y) / (yAntes - p.y);
-      const xc = p.x - p.vx * dt * (1 - t);
-      const zc = p.z - p.vz * dt * (1 - t);
-      const d = Math.hypot(xc - e.aroX, zc - VR_MJ_CANASTA_ARO_Z);
+      const t = (antes.y - VR_MJ_CANASTA_ARO_Y) / (antes.y - p.y);
+      const c = enCruce(t);
+      const d = Math.hypot(c.x - c.aroX, c.z - VR_MJ_CANASTA_ARO_Z);
 
       if (d < VR_MJ_CANASTA_ENTRA && p.vy < 0) {
         p.encestada = true;
@@ -233,21 +246,37 @@ const VR_MJ_CANASTA = {
         // de caída muerta se come dos o tres tiros.
         e.espera = 0.6;
       } else if (d < VR_MJ_CANASTA_ARO_R + VR_MJ_CANASTA_BOLA_R) {
-        // Hierro: rebota hacia arriba y hacia fuera del aro.
+        // Hierro: rebota y sale despedida hacia fuera del aro.
         p.vy *= -0.45;
         p.y = VR_MJ_CANASTA_ARO_Y + (p.vy > 0 ? 0.02 : -0.02);
         const fuera = Math.max(d, 0.001);
-        p.vx += ((xc - e.aroX) / fuera) * 1.2;
-        p.vz += ((zc - VR_MJ_CANASTA_ARO_Z) / fuera) * 1.2;
+        p.vx += ((c.x - c.aroX) / fuera) * 1.2;
+        p.vz += ((c.z - VR_MJ_CANASTA_ARO_Z) / fuera) * 1.2;
       }
     }
 
-    // --- Suelo y fuera de juego: siguiente tiro ---
+    // --- Suelo ---
+    // El suelo es un SUELO: la pelota se queda encima, bota una vez y se acaba
+    // el tiro. Antes solo se programaba la siguiente pelota y la física seguía
+    // corriendo, así que la pelota atravesaba el parqué y se iba hacia abajo.
+    if (p.y <= VR_MJ_CANASTA_BOLA_R) {
+      p.y = VR_MJ_CANASTA_BOLA_R;
+      p.vy = Math.abs(p.vy) * 0.42;
+      p.vx *= 0.7;
+      p.vz *= 0.7;
+      if (e.espera <= 0) e.espera = 0.5;
+      // Por debajo de este bote ya no queda energía: se para del todo, que si
+      // no la pelota tirita en el suelo hasta que aparece la siguiente.
+      if (p.vy < 1) {
+        p.vy = 0;
+        p.vx = 0;
+        p.vz = 0;
+      }
+    }
+
+    // --- Fuera de juego: siguiente tiro ---
     const fuera =
-      p.y < VR_MJ_CANASTA_BOLA_R ||
-      p.z > VR_MJ_CANASTA_TABLERO_Z + 1.5 ||
-      p.z < 0.6 ||
-      Math.abs(p.x) > 4;
+      p.z > VR_MJ_CANASTA_FONDO_Z + 1.5 || p.z < 0.6 || Math.abs(p.x) > 4;
     if (fuera && e.espera <= 0) e.espera = 0.35;
 
     return true;
@@ -255,96 +284,127 @@ const VR_MJ_CANASTA = {
 
   pintar(ctx, e) {
     const c = e.camara;
+    const suelo = (x, z) => vrMjCanastaProyectar(e, x, 0, z);
 
-    // Fondo: pabellón oscuro con el horizonte marcado.
-    ctx.fillStyle = vrMjDegradado(ctx, e.alto, "#2a0d12", "#0f0508");
+    // Fondo: pabellón oscuro por encima del horizonte.
+    ctx.fillStyle = vrMjDegradado(ctx, e.alto, "#2a0d12", "#150609");
     ctx.fillRect(0, 0, e.ancho, e.alto);
 
-    // --- Pista ---
-    // Esto es lo que de verdad transmite la distancia: las líneas de fondo se
-    // van juntando hacia el horizonte y las laterales convergen.
-    const suelo = (x, z) => vrMjCanastaProyectar(e, x, 0, z);
-    const fondoIzq = suelo(-2.6, 30);
-    const fondoDer = suelo(2.6, 30);
-    const cercaIzq = suelo(-2.6, 1.2);
-    const cercaDer = suelo(2.6, 1.2);
-
-    ctx.fillStyle = "#8a4a22";
+    // --- Parqué ---
+    // Solo se ve el suelo a partir de unos 3,5 m (más cerca cae por debajo del
+    // borde inferior), así que se pinta un trapecio generoso y el canvas
+    // recorta lo que sobra.
+    const cercaIzq = suelo(-9, 1);
+    const cercaDer = suelo(9, 1);
+    const lejosIzq = suelo(-9, 40);
+    const lejosDer = suelo(9, 40);
+    ctx.fillStyle = "#a35c2a";
     ctx.beginPath();
     ctx.moveTo(cercaIzq.x, cercaIzq.y);
-    ctx.lineTo(fondoIzq.x, fondoIzq.y);
-    ctx.lineTo(fondoDer.x, fondoDer.y);
+    ctx.lineTo(lejosIzq.x, lejosIzq.y);
+    ctx.lineTo(lejosDer.x, lejosDer.y);
     ctx.lineTo(cercaDer.x, cercaDer.y);
     ctx.closePath();
     ctx.fill();
 
-    ctx.strokeStyle = "rgba(249, 232, 234, 0.22)";
-    ctx.lineWidth = 1.5;
-    for (let z = 2; z <= 12; z += 1) {
-      const a = suelo(-2.6, z);
-      const b = suelo(2.6, z);
+    // Duelas: líneas que corren HACIA el fondo y convergen. Son las que hacen
+    // el trabajo de la perspectiva; una cuadrícula (con líneas cruzadas
+    // también a lo ancho) parece un tablero de ajedrez, no una pista.
+    ctx.strokeStyle = "rgba(60, 26, 10, 0.35)";
+    ctx.lineWidth = 1;
+    for (let x = -3.2; x <= 3.2; x += 0.4) {
+      const a = suelo(x, 1.2);
+      const b = suelo(x, 40);
       ctx.beginPath();
       ctx.moveTo(a.x, a.y);
       ctx.lineTo(b.x, b.y);
       ctx.stroke();
     }
-    [-2.6, -1.3, 0, 1.3, 2.6].forEach((x) => {
-      const a = suelo(x, 1.2);
-      const b = suelo(x, 30);
-      ctx.beginPath();
-      ctx.moveTo(a.x, a.y);
-      ctx.lineTo(b.x, b.y);
-      ctx.stroke();
-    });
 
-    const aro = vrMjCanastaAro(e);
-    const pAro = vrMjCanastaProyectar(e, aro.x, aro.y, aro.z);
+    // --- Líneas de la pista ---
+    ctx.strokeStyle = "rgba(249, 232, 234, 0.85)";
+    ctx.lineWidth = 2;
+
+    // Línea de fondo, por detrás del tablero.
+    const fondoA = suelo(-9, VR_MJ_CANASTA_FONDO_Z);
+    const fondoB = suelo(9, VR_MJ_CANASTA_FONDO_Z);
+    ctx.beginPath();
+    ctx.moveTo(fondoA.x, fondoA.y);
+    ctx.lineTo(fondoB.x, fondoB.y);
+    ctx.stroke();
+
+    // Semicírculo de la zona restringida, centrado bajo la canasta. Se proyecta
+    // punto a punto: una elipse de canvas no valdría, porque en perspectiva un
+    // círculo del suelo no es una elipse centrada en su propio centro.
+    ctx.beginPath();
+    for (let i = 0; i <= 28; i++) {
+      const a = Math.PI + (i / 28) * Math.PI;
+      const punto = suelo(
+        Math.cos(a) * VR_MJ_CANASTA_ZONA_R,
+        VR_MJ_CANASTA_ARO_Z - Math.sin(a) * VR_MJ_CANASTA_ZONA_R
+      );
+      if (i) ctx.lineTo(punto.x, punto.y);
+      else ctx.moveTo(punto.x, punto.y);
+    }
+    ctx.stroke();
+
+    // Marca del tiro libre: un trocito de línea a la altura del tirador, para
+    // que se note desde dónde se lanza.
+    const marcaA = suelo(-0.6, VR_MJ_CANASTA_SALIDA.z + 1.4);
+    const marcaB = suelo(0.6, VR_MJ_CANASTA_SALIDA.z + 1.4);
+    ctx.strokeStyle = "rgba(249, 232, 234, 0.45)";
+    ctx.beginPath();
+    ctx.moveTo(marcaA.x, marcaA.y);
+    ctx.lineTo(marcaB.x, marcaB.y);
+    ctx.stroke();
+
+    const pAro = vrMjCanastaProyectar(e, e.aroX, VR_MJ_CANASTA_ARO_Y, VR_MJ_CANASTA_ARO_Z);
     const radioAro = VR_MJ_CANASTA_ARO_R * pAro.escala;
     // La elipse del aro se DIBUJA más abierta de lo que tocaría: proyectada de
-    // verdad, un aro a 6,6 m visto desde 2,3 m de altura mide dos píxeles de
-    // alto y se lee como una raya. Exagerarla es lo que permite ver si la
-    // pelota va a entrar o no.
+    // verdad, un aro a esta distancia visto casi a su misma altura mide dos
+    // píxeles de alto y se lee como una raya. Exagerarla es lo que permite ver
+    // si la pelota va a entrar o no.
     const radioAroY = radioAro * 0.3;
 
     // --- Poste y tablero ---
     const pPosteAlto = vrMjCanastaProyectar(
       e,
-      aro.x,
+      e.aroX,
       VR_MJ_CANASTA_ARO_Y,
       VR_MJ_CANASTA_TABLERO_Z
     );
-    const pPosteSuelo = vrMjCanastaProyectar(e, aro.x, 0, VR_MJ_CANASTA_TABLERO_Z + 0.4);
+    const pPosteSuelo = suelo(e.aroX, VR_MJ_CANASTA_TABLERO_Z + 0.5);
     ctx.strokeStyle = "#5c6470";
-    ctx.lineWidth = Math.max(2, 0.09 * pAro.escala);
+    ctx.lineWidth = Math.max(2, 0.08 * pAro.escala);
     ctx.beginPath();
     ctx.moveTo(pPosteAlto.x, pPosteAlto.y);
     ctx.lineTo(pPosteSuelo.x, pPosteSuelo.y);
     ctx.stroke();
 
-    const tabIzqArriba = vrMjCanastaProyectar(
+    const tabArriba = vrMjCanastaProyectar(
       e,
-      aro.x - VR_MJ_CANASTA_TABLERO_MEDIO,
+      e.aroX - VR_MJ_CANASTA_TABLERO_MEDIO,
       VR_MJ_CANASTA_ARO_Y + VR_MJ_CANASTA_TABLERO_ALTO,
       VR_MJ_CANASTA_TABLERO_Z
     );
-    const tabDerAbajo = vrMjCanastaProyectar(
+    const tabAbajo = vrMjCanastaProyectar(
       e,
-      aro.x + VR_MJ_CANASTA_TABLERO_MEDIO,
+      e.aroX + VR_MJ_CANASTA_TABLERO_MEDIO,
       VR_MJ_CANASTA_ARO_Y,
       VR_MJ_CANASTA_TABLERO_Z
     );
-    const tabAncho = tabDerAbajo.x - tabIzqArriba.x;
-    const tabAlto = tabDerAbajo.y - tabIzqArriba.y;
-    ctx.fillStyle = "rgba(249, 232, 234, 0.92)";
-    vrMjRectRedondo(ctx, tabIzqArriba.x, tabIzqArriba.y, tabAncho, tabAlto, tabAncho * 0.04);
+    const tabAncho = tabAbajo.x - tabArriba.x;
+    const tabAlto = tabAbajo.y - tabArriba.y;
+    ctx.fillStyle = "rgba(249, 232, 234, 0.94)";
+    vrMjRectRedondo(ctx, tabArriba.x, tabArriba.y, tabAncho, tabAlto, tabAncho * 0.04);
     ctx.fill();
     ctx.strokeStyle = "#c22334";
     ctx.lineWidth = Math.max(1.5, tabAncho * 0.03);
     ctx.strokeRect(
-      tabIzqArriba.x + tabAncho * 0.28,
-      tabIzqArriba.y + tabAlto * 0.42,
+      tabArriba.x + tabAncho * 0.28,
+      tabArriba.y + tabAlto * 0.4,
       tabAncho * 0.44,
-      tabAlto * 0.5
+      tabAlto * 0.52
     );
 
     const p = e.pelota;
@@ -354,8 +414,8 @@ const VR_MJ_CANASTA = {
     // --- Sombra en el suelo ---
     // Junto con el tamaño de la pelota, es la pista que dice a qué altura y a
     // qué distancia está: sin ella no se sabe si va corta o va alta.
-    const pSombra = vrMjCanastaProyectar(e, p.x, 0, p.z);
-    ctx.fillStyle = "rgba(0, 0, 0, 0.3)";
+    const pSombra = suelo(p.x, p.z);
+    ctx.fillStyle = "rgba(0, 0, 0, 0.32)";
     ctx.beginPath();
     ctx.ellipse(
       pSombra.x,
@@ -371,7 +431,7 @@ const VR_MJ_CANASTA = {
     // --- Aro: mitad de atrás, red, pelota, mitad de delante ---
     // Ese orden es el que hace que una pelota que entra se vea PASAR POR
     // DENTRO: queda tapada por el hierro cercano y por delante del lejano.
-    ctx.lineWidth = Math.max(2, 0.05 * pAro.escala);
+    ctx.lineWidth = Math.max(2.5, 0.055 * pAro.escala);
     ctx.strokeStyle = "#a81b2a";
     ctx.beginPath();
     ctx.ellipse(pAro.x, pAro.y, radioAro, radioAroY, 0, 0, Math.PI);
@@ -379,13 +439,11 @@ const VR_MJ_CANASTA = {
 
     ctx.strokeStyle = "rgba(249, 232, 234, 0.5)";
     ctx.lineWidth = 1;
-    const largoRed = 0.4 * pAro.escala;
+    const largoRed = 0.42 * pAro.escala;
     for (let i = 0; i <= 8; i++) {
       const a = Math.PI + (i / 8) * Math.PI;
-      const x0 = pAro.x + Math.cos(a) * radioAro;
-      const y0 = pAro.y + Math.sin(a) * radioAroY;
       ctx.beginPath();
-      ctx.moveTo(x0, y0);
+      ctx.moveTo(pAro.x + Math.cos(a) * radioAro, pAro.y + Math.sin(a) * radioAroY);
       ctx.lineTo(pAro.x + Math.cos(a) * radioAro * 0.45, pAro.y + largoRed);
       ctx.stroke();
     }
@@ -419,7 +477,7 @@ const VR_MJ_CANASTA = {
     ctx.restore();
 
     ctx.strokeStyle = "#ff4d5a";
-    ctx.lineWidth = Math.max(2, 0.05 * pAro.escala);
+    ctx.lineWidth = Math.max(2.5, 0.055 * pAro.escala);
     ctx.beginPath();
     ctx.ellipse(pAro.x, pAro.y, radioAro, radioAroY, 0, Math.PI, Math.PI * 2);
     ctx.stroke();
@@ -430,7 +488,7 @@ const VR_MJ_CANASTA = {
       ctx.fillStyle = "#34c759";
       ctx.textAlign = "center";
       ctx.font = "700 " + Math.round(e.alto * 0.05) + "px system-ui, sans-serif";
-      ctx.fillText("¡DENTRO!", e.ancho / 2, e.alto * 0.46);
+      ctx.fillText("¡DENTRO!", e.ancho / 2, e.alto * 0.4);
       ctx.restore();
     }
   },

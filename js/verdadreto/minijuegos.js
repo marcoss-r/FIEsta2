@@ -208,9 +208,12 @@ function vrMjAlRedimensionar() {
 function vrMjBucle(ahora) {
   vrMjMotor.raf = requestAnimationFrame(vrMjBucle);
 
-  // dt acotado a 50 ms: si el navegador se atasca (o la app vuelve de segundo
-  // plano) un dt gigante teletransportaría al jugador dentro de un obstáculo.
-  const dt = Math.min((ahora - vrMjMotor.ultimo) / 1000, 0.05);
+  // dt acotado por arriba a 50 ms: si el navegador se atasca (o la app vuelve
+  // de segundo plano) un dt gigante teletransportaría al jugador dentro de un
+  // obstáculo. Y acotado por abajo a 0: los tiempos de requestAnimationFrame
+  // son monótonos, pero un dt negativo haría correr el juego HACIA ATRÁS, y
+  // sale más barato descartarlo que fiarse.
+  const dt = Math.max(0, Math.min((ahora - vrMjMotor.ultimo) / 1000, 0.05));
   vrMjMotor.ultimo = ahora;
 
   const ctx = vrMjMotor.ctx;

@@ -500,7 +500,7 @@ un giro imposible de tomar a la velocidad actual).
   perspectiva de verdad. Se arrastra el dedo hacia arriba desde la pelota: el
   componente vertical del gesto da la potencia (repartida entre altura y
   distancia en proporción fija, que es lo que mantiene el arco reconocible) y el
-  lateral apunta a izquierda o derecha. El aro está a **6,6 m**, a la altura
+  lateral apunta a izquierda o derecha. El aro está a **5,5 m**, a la altura
   reglamentaria de **3,05 m**, y se desplaza en horizontal a velocidad constante
   (ahí está la dificultad, ya que este juego no acelera). Rebote en hierro y
   tablero. Canasta = +1. **Objetivo: 6.**
@@ -510,10 +510,18 @@ un giro imposible de tomar a la velocidad actual).
   **sombra** corre por el suelo, y el aro se dibuja en dos mitades (la de atrás
   antes que la pelota y la de delante después) para que una canasta se vea
   **pasar por dentro**.
-- ⚠️ La elipse del aro se dibuja **más abierta de lo que tocaría**: proyectado de
-  verdad, un aro a 6,6 m visto desde una cámara a 2,3 m mide dos píxeles de alto
-  y se lee como una raya. Es una exageración deliberada para poder ver si la
-  pelota va a entrar.
+- ⚠️ Dos licencias deliberadas, las dos para que el aro se **vea**: el radio es
+  **0,32 m** y no los 0,225 reglamentarios (con el bueno, a esta distancia el
+  aro sale a 41 px en un móvil), y la elipse se dibuja **más abierta de lo que
+  tocaría** (proyectada de verdad mide dos píxeles de alto y se lee como una
+  raya).
+- **El suelo es una pista, no una cuadrícula**: parqué con las duelas corriendo
+  hacia el fondo (solo en el sentido de la profundidad — cruzarlas también a lo
+  ancho da un tablero de ajedrez, no una cancha), la línea de fondo por detrás
+  del tablero, el semicírculo de la zona restringida bajo la canasta y una marca
+  a la altura del tirador. El semicírculo se proyecta **punto a punto**: en
+  perspectiva, un círculo del suelo no es una elipse centrada en su propio
+  centro, así que `ctx.ellipse` daría una forma mal colocada.
 - Línea de puntos que previsualiza el tiro mientras arrastras.
 - El minijuego se elige al azar entre **los cuatro**.
 - Repasar los cuatro objetivos con lo que haya visto el usuario probando y
@@ -739,3 +747,63 @@ bot mete **exactamente las mismas 19 canastas a 30, 60 y 120 fps**.
 Los otros tres minijuegos no arrastran este problema: en ellos la gravedad
 gobierna un salto o una caída donde unos centímetros no cambian nada, y no hay
 ningún «tiro exacto» que deba cuadrar.
+
+---
+
+## 12. Segunda revisión de la canasta (v1.11.2)
+
+Cuatro cosas que reportó el usuario probándola. Las cuatro eran ciertas; tres
+eran errores y una, un fallo de diseño.
+
+**«No rebota siempre que le das al tablero.»** El choque contra el tablero se
+comprobaba con la altura de la pelota **al final del fotograma**, no en el
+instante del choque. La pelota cruzaba el plano del tablero a la altura correcta
+pero, para cuando terminaba el paso, ya estaba por encima o por debajo del
+rectángulo, así que el rebote no se disparaba. Ahora se interpola la posición
+exacta del cruce (y también la del aro, que se mueve), igual que ya se hacía con
+el plano del aro.
+
+**«No acaba cuando toca el suelo»** y **«a veces se va por debajo del suelo»**
+eran el mismo error: al tocar el parqué solo se programaba la siguiente pelota,
+pero la física seguía corriendo, así que la pelota atravesaba el suelo y se
+hundía. Ahora el suelo es un suelo: la pelota se queda encima, da un bote corto
+y se para; por debajo de cierta energía se detiene del todo, que si no tirita en
+el sitio hasta que aparece la siguiente.
+
+**«La canasta es muy pequeña.»** Lo era: 41 px de ancho en un móvil de 390, un
+10 % de la pantalla. Se acercó el aro (6,6 → 5,5 m), se agrandó el radio
+(0,225 → 0,32 m, ya no reglamentario) y se subió la distancia focal. Ahora mide
+**78 px, un 20 % del ancho**, y la pelota sigue encogiendo 2,4 veces durante el
+vuelo, que es lo que sostiene la sensación de distancia.
+
+⚠️ **Efecto secundario a vigilar:** el aro más grande y más cerca hace el juego
+**bastante más fácil**, y el objetivo sigue en 6. Si al jugarlo te sale gratis,
+súbelo a 7 u 8.
+
+### De paso: un `dt` negativo podía hacer correr el juego hacia atrás
+
+Montando las pruebas apareció que el bucle acotaba el paso de tiempo solo por
+arriba (`Math.min(dt, 0.05)`). Un `dt` negativo hacía retroceder el juego —
+incluida la cuenta atrás, que en vez de bajar subía. Con `requestAnimationFrame`
+real los tiempos son monótonos y no debería ocurrir nunca, pero acotar también
+por abajo cuesta una llamada a `Math.max` y elimina toda una familia de fallos
+imposibles de diagnosticar.
+
+### Qué se comprueba ahora
+
+Una prueba específica de la canasta, aparte de la de humo general:
+
+| Comprobación | Cómo |
+|---|---|
+| La pelota nunca atraviesa el parqué | 250 tiros al azar; se mira la altura mínima de toda la trayectoria. |
+| Tocar el suelo termina el tiro | Un tiro corto: tiene que llegar al suelo, programar la siguiente pelota y acabar quieta, no hundiéndose. |
+| El tablero rebota siempre | Se calcula **analíticamente** qué 137 tiros deberían darle (excluyendo los que el hierro intercepta antes) y se comprueba que los 137 vuelven. |
+| La física no depende de los fps | El mismo tiro a 30, 60 y 120 fps tiene que acabar en el mismo punto. |
+
+Las dos últimas costaron más de escribir que de arreglar, y las dos fallaron
+primero **por culpa de la prueba, no del juego**: la del tablero buscaba el cruce
+en el historial, pero al rebotar el juego recoloca la pelota justo delante del
+plano y el cruce nunca llega a grabarse; y la de los fps comparaba instantes
+distintos, porque redondear «0,9 s» a un número entero de fotogramas da
+duraciones diferentes en cada frecuencia. Merece la pena anotarlo: una prueba en
+rojo aquí es tan probable que sea culpa suya como del código.
