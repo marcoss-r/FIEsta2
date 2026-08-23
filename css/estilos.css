@@ -532,11 +532,15 @@ button.secundario:hover {
 }
 
 /* Fila reutilizable "etiqueta + interruptor": la usan los seis juegos para el
-   modo fiesta, y alguno (p. ej. Dos mentiras) para un interruptor propio. */
+   modo fiesta, y alguno (p. ej. Dos mentiras) para un interruptor propio.
+   justify-content:center (y no space-between) para que la pareja completa
+   quede centrada en la pantalla: con space-between, la etiqueta ocupaba
+   todo el hueco sobrante y su texto centrado quedaba descentrado respecto
+   a la pantalla, arrastrado hacia la izquierda por el propio interruptor. */
 .fila-switch {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 1rem;
   width: 100%;
   max-width: 26rem;
@@ -548,7 +552,7 @@ button.secundario:hover {
    se corta en vez de hacer scroll). .switch, en cambio, no debe encogerse:
    perdería su forma de píldora. */
 .fila-switch > span {
-  flex: 1 1 auto;
+  flex: 0 1 auto;
   min-width: 0;
 }
 
