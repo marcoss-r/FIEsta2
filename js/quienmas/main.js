@@ -494,7 +494,7 @@ document.addEventListener("DOMContentLoaded", () => {
     stepper: document.getElementById("qm-stepper"),
     min: QM_MIN_JUGADORES,
     max: QM_MAX_JUGADORES,
-    inicial: 5,
+    inicial: 3,
     alCambiar: () => (document.getElementById("qm-error").textContent = ""),
   });
 

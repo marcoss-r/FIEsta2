@@ -143,7 +143,7 @@
       <p class="ayuda" id="yn-progreso"></p>
       <p class="anuncio" id="yn-anuncio" hidden></p>
       <div class="fila-botones">
-        <button type="button" class="secundario" id="yn-btn-terminar">Terminar</button>
+        <button type="button" class="boton-volver" id="yn-btn-terminar" aria-label="Terminar partida">←</button>
         <button type="button" id="yn-btn-siguiente">Siguiente</button>
       </div>
     </section>
@@ -188,7 +188,7 @@
       <p class="ayuda" id="qm-progreso"></p>
       <p class="anuncio" id="qm-anuncio" hidden></p>
       <div class="fila-botones">
-        <button type="button" class="secundario" id="qm-btn-terminar">Terminar</button>
+        <button type="button" class="boton-volver" id="qm-btn-terminar" aria-label="Terminar partida">←</button>
         <button type="button" id="qm-btn-siguiente">Siguiente</button>
       </div>
     </section>
@@ -214,10 +214,8 @@
         <button type="button" class="secundario" id="qm-btn-coinciden">Coinciden</button>
         <button type="button" id="qm-btn-difieren">Difieren</button>
       </div>
-      <div class="fila-botones">
-        <button type="button" class="secundario" id="qm-btn-terminar-parejas">Terminar</button>
-        <button type="button" id="qm-btn-siguiente-pareja" hidden>Siguiente</button>
-      </div>
+      <button type="button" class="boton-volver" id="qm-btn-terminar-parejas" aria-label="Terminar partida">←</button>
+      <button type="button" id="qm-btn-siguiente-pareja" hidden>Siguiente</button>
     </section>
 
     <section class="pantalla con-scroll" data-pantalla="qm-ranking">
@@ -266,7 +264,7 @@
         <button type="button" class="vr-btn-grande vr-btn-verdad" id="vr-btn-verdad">VERDAD</button>
         <button type="button" class="vr-btn-grande vr-btn-reto" id="vr-btn-reto">RETO</button>
       </div>
-      <button type="button" class="secundario" id="vr-btn-terminar">Terminar</button>
+      <button type="button" class="boton-volver" id="vr-btn-terminar" aria-label="Terminar partida">←</button>
     </section>
 
     <section class="pantalla" data-pantalla="vr-carta">
@@ -289,7 +287,7 @@
         vale que el grupo se invente una pregunta propia para este turno.
       </p>
       <button type="button" id="vr-btn-siguiente-paso" hidden>Siguiente</button>
-      <button type="button" class="secundario" id="vr-btn-terminar-2">Terminar</button>
+      <button type="button" class="boton-volver" id="vr-btn-terminar-2" aria-label="Terminar partida">←</button>
     </section>
 
     <!-- Modo arcade (vr) — ver md/PLAN_MODO_ARCADE.md §4.3 -->
@@ -303,7 +301,7 @@
       <div class="vr-ruleta-leyenda" id="vr-ruleta-leyenda"></div>
       <button type="button" id="vr-btn-girar">Girar 🎰</button>
       <button type="button" id="vr-btn-ruleta-ir" hidden>Vamos</button>
-      <button type="button" class="secundario" id="vr-btn-terminar-ruleta">Terminar</button>
+      <button type="button" class="boton-volver" id="vr-btn-terminar-ruleta" aria-label="Terminar partida">←</button>
     </section>
 
     <section class="pantalla" data-pantalla="vr-trivia">
@@ -318,7 +316,7 @@
         <p class="anuncio" id="vr-trivia-castigo"></p>
         <button type="button" id="vr-btn-trivia-siguiente">Siguiente</button>
       </div>
-      <button type="button" class="secundario" id="vr-btn-terminar-trivia">Terminar</button>
+      <button type="button" class="boton-volver" id="vr-btn-terminar-trivia" aria-label="Terminar partida">←</button>
     </section>
 
     <section class="pantalla" data-pantalla="vr-minijuego">
@@ -341,7 +339,7 @@
           <button type="button" id="vr-btn-mj-siguiente">Siguiente</button>
         </div>
       </div>
-      <button type="button" class="secundario" id="vr-btn-terminar-mj">Terminar</button>
+      <button type="button" class="boton-volver" id="vr-btn-terminar-mj" aria-label="Terminar partida">←</button>
     </section>
 
     <section class="pantalla" data-pantalla="vr-fin">
@@ -382,7 +380,7 @@
       <h1 id="dm-nombre-turno"></h1>
       <p class="ayuda" id="dm-progreso"></p>
       <button type="button" id="dm-btn-ver-tema">Ver mi tema</button>
-      <button type="button" class="secundario" id="dm-btn-terminar">Terminar</button>
+      <button type="button" class="boton-volver" id="dm-btn-terminar" aria-label="Terminar partida">←</button>
     </section>
 
     <section class="pantalla" data-pantalla="dm-tema">
@@ -401,7 +399,7 @@
         <p class="ayuda" id="dm-instrucciones"></p>
         <p class="anuncio" id="dm-castigo" hidden></p>
         <button type="button" id="dm-btn-siguiente">Siguiente jugador</button>
-        <button type="button" class="secundario" id="dm-btn-terminar-2">Terminar</button>
+        <button type="button" class="boton-volver" id="dm-btn-terminar-2" aria-label="Terminar partida">←</button>
       </div>
     </section>
 
@@ -462,7 +460,7 @@
       <h1 id="im-nombre-turno"></h1>
       <p class="ayuda">Di <strong>una palabra</strong> relacionada con la secreta</p>
       <div class="fila-botones">
-        <button type="button" class="secundario" id="im-btn-terminar">Terminar</button>
+        <button type="button" class="boton-volver" id="im-btn-terminar" aria-label="Terminar partida">←</button>
         <button type="button" id="im-btn-siguiente">Siguiente</button>
       </div>
     </section>
@@ -481,7 +479,7 @@
       <p id="im-pista"></p>
       <p class="anuncio" id="im-castigo" hidden></p>
       <div class="fila-botones">
-        <button type="button" class="secundario" id="im-btn-hub">Terminar</button>
+        <button type="button" class="boton-volver" id="im-btn-hub" aria-label="Terminar partida">←</button>
         <button type="button" id="im-btn-otra-ronda">Otra ronda</button>
       </div>
     </section>

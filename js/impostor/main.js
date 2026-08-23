@@ -324,7 +324,7 @@ document.addEventListener("DOMContentLoaded", () => {
     stepper: document.getElementById("im-stepper"),
     min: IM_MIN_JUGADORES,
     max: IM_MAX_JUGADORES,
-    inicial: 5,
+    inicial: 3,
     alCambiar: (nombres) => {
       document.getElementById("im-error").textContent = "";
       imActualizarLimiteImpostores(nombres.length);

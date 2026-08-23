@@ -251,7 +251,7 @@ document.addEventListener("DOMContentLoaded", () => {
     stepper: document.getElementById("dm-stepper"),
     min: DM_MIN_JUGADORES,
     max: DM_MAX_JUGADORES,
-    inicial: 4,
+    inicial: 3,
     alCambiar: () => (document.getElementById("dm-error").textContent = ""),
   });
 

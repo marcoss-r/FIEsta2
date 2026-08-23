@@ -153,7 +153,7 @@ document.addEventListener("DOMContentLoaded", () => {
     stepper: document.getElementById("yn-stepper"),
     min: YN_MIN_JUGADORES,
     max: YN_MAX_JUGADORES,
-    inicial: 5,
+    inicial: 3,
     alCambiar: () => (document.getElementById("yn-error").textContent = ""),
   });
 

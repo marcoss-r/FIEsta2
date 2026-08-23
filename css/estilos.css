@@ -798,10 +798,14 @@ button.secundario:hover {
 }
 
 /* La cara frontal nace ya girada 180°: al voltear el contenedor entero
-   (.vr-carta.volteada), queda mirando hacia la cámara. */
+   (.vr-carta.volteada), queda mirando hacia la cámara. justify-content
+   pisa el `center` heredado de .vr-carta-cara: VERDAD/RETO va siempre
+   pegado arriba de la tarjeta, no flotando en el centro del hueco. */
 .vr-carta-frente {
   background: var(--color-superficie);
   transform: rotateY(180deg);
+  justify-content: flex-start;
+  padding-top: 2rem;
 }
 
 .vr-carta-tipo {

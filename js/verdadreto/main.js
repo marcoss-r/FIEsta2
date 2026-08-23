@@ -399,7 +399,7 @@ document.addEventListener("DOMContentLoaded", () => {
     stepper: document.getElementById("vr-stepper"),
     min: VR_MIN_JUGADORES,
     max: VR_MAX_JUGADORES,
-    inicial: 4,
+    inicial: 3,
     alCambiar: () => (document.getElementById("vr-error").textContent = ""),
   });
 
