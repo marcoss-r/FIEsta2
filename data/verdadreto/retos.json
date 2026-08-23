@@ -292,15 +292,7 @@
     "nivel": "normal"
   },
   {
-    "texto": "Haz un baile de seducción exagerado durante 15 segundos",
-    "nivel": "picante"
-  },
-  {
     "texto": "Haz de modelo de ropa interior imaginaria durante 10 segundos, con toda la actitud",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Haz una pose provocativa y mantenla 10 segundos mientras te hacen una foto",
     "nivel": "picante"
   },
   {
@@ -320,55 +312,23 @@
     "nivel": "normal"
   },
   {
-    "texto": "Publica en tu estado «Esta noche va a pasar algo» sin dar más detalles durante cinco minutos",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Enseña la conversación más larga que tengas abierta ahora mismo, tapando los nombres",
-    "nivel": "normal"
-  },
-  {
     "texto": "Busca en redes a tu primer amor y enséñale el perfil al grupo",
     "nivel": "picante"
   },
   {
-    "texto": "Enseña a quién le has dado más «me gusta» en el último mes",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Deja que {otro} escriba lo que quiera en tu estado durante los próximos cinco minutos",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Muestra tu carrete de fotos y detente en la primera que te dé vergüenza",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Enseña quién es tu contacto favorito según tu móvil, sin explicaciones",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Enseña la última búsqueda que hiciste sobre una persona en redes sociales",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Publica ahora mismo una foto del grupo tal cual está, sin editarla",
+    "texto": "Muestra tu carrete de fotos y detente aleatoriamente en una foto",
     "nivel": "normal"
   },
   {
     "texto": "Enseña el emoji que más usas hablando con alguien que te gusta o te gustaba",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Enseña la última foto que subiste a tu perfil y cuánto tiempo lleva puesta",
     "nivel": "normal"
   },
   {
-    "texto": "Llama a alguien de tu agenda y cántale el estribillo de una canción de amor",
-    "nivel": "picante"
+    "texto": "Llama a alguien de tu agenda y cántale el estribillo de una canción",
+    "nivel": "normal"
   },
   {
-    "texto": "Manda un audio a alguien diciendo «tengo que confesarte algo» y cuelga sin decir más",
+    "texto": "Manda un audio a alguien diciendo «tengo que confesarte algo» y no digas más",
     "nivel": "normal"
   },
   {
@@ -380,32 +340,12 @@
     "nivel": "picante"
   },
   {
-    "texto": "Llama a alguien random de tu agenda y pídele una cita muy en serio",
-    "nivel": "picante"
-  },
-  {
     "texto": "Escríbele a {otro} un piropo exagerado por móvil delante de todos",
     "nivel": "picante"
   },
   {
     "texto": "Manda un mensaje a alguien preguntando si se acuerda de «aquella vez», aunque no haya pasado nada",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Deja un audio susurrando durante diez segundos a la primera persona de tu lista de chats",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Llama a alguien y dile que llevas toda la noche pensando en él o ella, sin explicar el juego",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Escribe a un grupo de WhatsApp «no puedo dejar de pensar en anoche» y no des explicaciones hasta tu próximo turno",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Manda una nota de voz cantando en el idioma que peor se te dé",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "Come algo directamente de la mano de {otro}, sin usar las tuyas",
@@ -413,11 +353,11 @@
   },
   {
     "texto": "Bebe tu bebida sin usar las manos durante un minuto",
-    "nivel": "picante"
+    "nivel": "normal"
   },
   {
     "texto": "Dale de beber a {otro} sujetando tú el vaso",
-    "nivel": "picante"
+    "nivel": "normal"
   },
   {
     "texto": "Come una fruta pelándola solo con los dientes, sin usar cuchillo",
@@ -425,14 +365,10 @@
   },
   {
     "texto": "Bebe mirando fijamente a los ojos de {otro} sin apartar la vista",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Dale un bocado de tu comida a {otro} directamente en la mano",
     "nivel": "normal"
   },
   {
-    "texto": "Comparte una bebida con {otro} usando la misma pajita",
+    "texto": "Comparte una bebida con {otro}",
     "nivel": "picante"
   },
   {
@@ -440,20 +376,12 @@
     "nivel": "normal"
   },
   {
-    "texto": "Chupa una cuchara con nata o chocolate lo más despacio que puedas",
-    "nivel": "normal"
-  },
-  {
     "texto": "Bebe un chupito haciendo el brindis más atrevido que se te ocurra",
     "nivel": "picante"
   },
   {
-    "texto": "Dale a probar tu bebida a {otro} sin usar las manos, solo acercando el vaso",
-    "nivel": "picante"
-  },
-  {
     "texto": "Come una galleta o un trozo de fruta pasándotelo boca a boca con {otro}, sin usar las manos",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "Da un masaje de hombros de 30 segundos a quien elija el grupo",
@@ -461,7 +389,7 @@
   },
   {
     "texto": "Siéntate en el regazo de {otro} hasta tu próximo turno",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "Dale un beso en la mejilla a {otro}, bien despacio",
@@ -473,14 +401,14 @@
   },
   {
     "texto": "Cógele la mano a {otro} y no la sueltes hasta tu próximo turno",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "Susúrrale algo al oído a {otro} que nadie más pueda escuchar",
     "nivel": "normal"
   },
   {
-    "texto": "Deja que {otro} te haga un masaje en las manos durante 20 segundos",
+    "texto": "Deja que {otro} te de un masaje en las manos durante 20 segundos",
     "nivel": "normal"
   },
   {
@@ -501,7 +429,7 @@
   },
   {
     "texto": "Huele el perfume o colonia de {otro} y describe qué te parece",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "Deja que {otro} elija dónde te da un beso: mejilla, frente o mano",
@@ -520,18 +448,6 @@
     "nivel": "picante"
   },
   {
-    "texto": "Haz una entrevista de trabajo para «pareja ideal» durante 20 segundos",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Actúa como si acabaras de recibir la mejor noticia romántica de tu vida",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Haz de protagonista de telenovela confesando un amor prohibido inventado",
-    "nivel": "picante"
-  },
-  {
     "texto": "Interpreta a alguien ligando fatal en un bar durante 15 segundos",
     "nivel": "picante"
   },
@@ -544,15 +460,7 @@
     "nivel": "picante"
   },
   {
-    "texto": "Haz de actor de anuncio de perfume con voz sensual durante 15 segundos",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Actúa un primer beso en cámara lenta con el aire, sin tocar a nadie",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Haz de casting para una peli romántica presentando tu mejor mirada",
+    "texto": "Actúa un primer beso en cámara lenta con el aire",
     "nivel": "picante"
   },
   {
@@ -560,16 +468,8 @@
     "nivel": "picante"
   },
   {
-    "texto": "Aguanta la mirada de {otro} sin reírte ni apartar la vista durante 30 segundos",
-    "nivel": "normal"
-  },
-  {
     "texto": "Mantén una pose sugerente durante un minuto entero sin moverte",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Aguanta sin parpadear mirando a {otro} durante 20 segundos",
-    "nivel": "normal"
+    "nivel": "picante"
   },
   {
     "texto": "Sostén una copa con los dientes durante 30 segundos",
@@ -580,15 +480,7 @@
     "nivel": "normal"
   },
   {
-    "texto": "Aguanta sentado en el regazo de {otro} sin levantarte hasta que alguien lo pida",
-    "nivel": "normal"
-  },
-  {
     "texto": "Sostén el equilibrio a la pata coja mientras respondes a una pregunta atrevida del grupo",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Aguanta diez segundos sin apartar la mano de la de {otro} mientras el grupo cuenta",
     "nivel": "normal"
   },
   {
@@ -596,11 +488,7 @@
     "nivel": "picante"
   },
   {
-    "texto": "Cuenta hasta diez quitándote un complemento (gafas, reloj, pulsera) en cada número",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Deja que el grupo elija tu próxima frase para ligar y dísela a {otro} en voz alta",
+    "texto": "Deja que el grupo elija una frase para decírsela a {otro} al oído",
     "nivel": "picante"
   },
   {
@@ -628,15 +516,7 @@
     "nivel": "picante"
   },
   {
-    "texto": "Deja que el grupo te elija un apodo picante y respóndele solo con él el resto de la ronda",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Haz de modelo mientras el grupo dirige tu pose como si fuera una sesión de fotos",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Deja que {otro} elija tu próxima ronda de bebida y tú brindas mirándole a los ojos",
+    "texto": "Deja que {otro} elija tu próxima ronda de bebida",
     "nivel": "picante"
   },
   {
@@ -644,19 +524,23 @@
     "nivel": "picante"
   },
   {
-    "texto": "Baila un tango imaginario con {otro} durante 15 segundos",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Dedícale una canción de amor a {otro} cantando el estribillo delante del grupo",
+    "texto": "Baila una bachata imaginaria con {otro} durante 15 segundos",
     "nivel": "picante"
   },
   {
-    "texto": "Deja que {otro} te elija la próxima prenda que te quites del armario para el resto de la noche, sin quitártela ahora",
+    "texto": "Baila una cacnción de amor con {otro} durante 15 segundos",
     "nivel": "picante"
   },
   {
-    "texto": "Haz de fotógrafo y dirige una sesión de fotos sexy improvisada a {otro} durante 20 segundos",
+    "texto": "Perrea a {otro} durante 15 segundos",
+    "nivel": "picante"
+  },
+  {
+    "texto": "Deja que {otro} elija la próxima prenda que te quites, sin quitártela ahora",
+    "nivel": "picante"
+  },
+  {
+    "texto": "Haz de fotógrafo y dirige una sesión de fotos sexy imaginaria e improvisada a {otro} durante 20 segundos",
     "nivel": "picante"
   },
   {
@@ -672,7 +556,7 @@
     "nivel": "normal"
   },
   {
-    "texto": "Haz un baile sexy de 30 segundos subido a una mesa o silla, con cuidado",
+    "texto": "Haz un baile sexy de 30 segundos subido a una mesa o silla",
     "nivel": "picante"
   },
   {
@@ -680,19 +564,7 @@
     "nivel": "normal"
   },
   {
-    "texto": "Haz una pasarela completa por la sala como si fueras la estrella de una gala",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Baila pegado a la pared imitando que bailas con alguien invisible durante 30 segundos",
-    "nivel": "normal"
-  },
-  {
     "texto": "Deja que el grupo te vista con lo primero que encuentren durante el resto de la ronda",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Haz de estatua humana en la postura más atrevida que se te ocurra durante un minuto",
     "nivel": "normal"
   },
   {
@@ -701,14 +573,6 @@
   },
   {
     "texto": "Baila una coreografía completa inventada con {otro} durante 30 segundos, sin parar",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Haz una sesión de fotos de moda de 30 segundos dejando que el grupo dirija tus poses",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Publica una foto random de tu galería en tu estado, la primera que salga sin mirarla antes",
     "nivel": "normal"
   },
   {
