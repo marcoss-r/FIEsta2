@@ -543,5 +543,6 @@ const VR_VERDADES = [
   { texto: "¿Cuál es la última decisión amorosa de la que te arrepientes?", nivel: "picante" },
   { texto: "Dile a {otro} con quién de este grupo te liarías si no fuerais amigos", nivel: "picante" },
   { texto: "Describe como harías el amor a alguien del grupo", nivel: "picante" },
+  { texto: "¿Has probado el hielo o la comida en la cama alguna vez?", nivel: "picante" },
   { texto: "Cuenta un sueño erótico que hayas tenido y que recuerdes", nivel: "picante" },
 ];

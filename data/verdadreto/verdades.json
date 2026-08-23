@@ -2156,6 +2156,10 @@
     "nivel": "normal"
   },
   {
+    "texto": "¿Has probado el hielo o la comida en la cama alguna vez?",
+    "nivel": "picante"
+  },
+  {
     "texto": "Cuenta un sueño erótico que hayas tenido y que recuerdes",
     "nivel": "picante"
   }

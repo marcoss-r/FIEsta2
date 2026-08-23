@@ -584,140 +584,28 @@
     "nivel": "normal"
   },
   {
-    "texto": "Deja tu móvil desbloqueado y que {otro} le escriba un mensaje a quien quiera de tu agenda, sin que tú lo veas antes de enviarlo",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Publica en tus redes «esta noche me lo estoy pasando mejor de lo normal» sin dar explicaciones",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Enseña tu galería entera durante 15 segundos mientras el grupo mira por encima de tu hombro",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Deja que el grupo elija tu próxima foto de perfil de entre las últimas diez de tu galería",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Sube una historia bailando durante al menos 10 segundos, tal cual estás ahora",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Llama a la primera persona de tu lista de contactos y confiésale que la echas de menos, aunque no sea verdad",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Marca un número random cambiando el último dígito de un contacto y saluda como si lo conocieras",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Llama a alguien y cántale una canción entera, sin colgar hasta el final",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Escribe a un grupo familiar «tengo una sorpresa» y no expliques nada hasta que acabe la partida",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Llama a tu contacto más antiguo en la agenda y pregúntale qué recuerda de ti",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Manda un audio de un minuto improvisando una declaración de amor exagerada a quien el grupo elija de tu agenda",
+    "texto": "Bebe lo que quede de tu bebida haciendo equilibrios a la pata coja sin derramar nada",
     "nivel": "picante"
-  },
-  {
-    "texto": "Deja que el grupo grabe un audio tuyo y lo mande a la persona que ellos decidan de tu lista de chats",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Come algo untado en la cara de {otro}, sin usar las manos",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Bebe un chupito con los ojos vendados adivinando después qué era",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Deja que el grupo prepare una mezcla de bebida y bébetela sin preguntar qué lleva",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Come un trozo de comida colgado de un hilo, sin usar las manos, mientras alguien lo sujeta",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Haz de camarero descalzo sirviendo una ronda entera al resto del grupo",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Bebe tu bebida haciendo equilibrios a la pata coja sin derramar nada",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Da un baile lento de 15 segundos con {otro}, con ropa puesta y a una distancia que decida el grupo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Deja que te venden los ojos y {otro} te guíe solo con las manos por la sala durante un minuto",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Siéntate espalda con espalda con {otro} durante toda la siguiente ronda",
-    "nivel": "normal"
   },
   {
     "texto": "Deja que {otro} te haga una trenza, un peinado o un maquillaje exprés durante tres minutos",
     "nivel": "normal"
   },
   {
-    "texto": "Carga a {otro} a caballito o en brazos durante 15 segundos, si el peso lo permite",
+    "texto": "Carga a {otro} a caballito o en brazos durante 15 segundos",
     "nivel": "normal"
   },
   {
-    "texto": "Haz un juego de miradas con {otro} durante un minuto entero sin decir nada ni reíros",
-    "nivel": "normal"
+    "texto": "Encierrate con {otro} en el armario más cercano",
+    "nivel": "picante"
   },
   {
     "texto": "Deja que {otro} te escriba algo en la piel con rotulador lavable, donde tú decidas",
     "nivel": "normal"
   },
   {
-    "texto": "Haz de pareja de baile de salón con {otro} durante 30 segundos con la música que suene",
-    "nivel": "picante"
-  },
-  {
     "texto": "Deja que {otro} te dé de comer con los ojos vendados durante un minuto",
     "nivel": "normal"
-  },
-  {
-    "texto": "Haz un casting completo de 30 segundos para «el ligue perfecto», con toda la exageración posible",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Interpreta una boda entera en 30 segundos: novio, novia y cura, cambiando de voz para cada uno",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Haz de protagonista de una escena de ruptura dramática, llorando de mentira, durante 20 segundos",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Actúa una declaración de amor imposible de aguantar sin reírte, mientras el grupo intenta hacerte reír",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Haz de presentador de un reality de citas anunciando la «pareja de la noche» del grupo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Interpreta una pelea de enamorados en la que ganas tú siempre, durante 20 segundos",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Haz de doble de acción en una escena de persecución romántica imaginaria por la sala",
-    "nivel": "picante"
   },
   {
     "texto": "Aguanta sin moverte ni un segundo en la postura más ridícula que el grupo te pida, durante un minuto",
@@ -732,11 +620,15 @@
     "nivel": "normal"
   },
   {
+    "texto": "Pasale un hielo a {otro} por el cuello",
+    "nivel": "picante"
+  },
+  {
     "texto": "Sostén el equilibrio sobre un pie con los ojos cerrados durante un minuto",
     "nivel": "normal"
   },
   {
-    "texto": "Aguanta que el grupo te haga cosquillas durante 15 segundos sin reírte",
+    "texto": "Aguanta que {otro} te haga cosquillas durante 15 segundos sin reírte",
     "nivel": "normal"
   },
   {
@@ -744,48 +636,20 @@
     "nivel": "normal"
   },
   {
-    "texto": "Aguanta una plancha de 30 segundos mientras respondes preguntas del grupo",
+    "texto": "Aguanta una plancha de 30 segundos mientras respondes a una pregunta del grupo",
     "nivel": "normal"
   },
   {
-    "texto": "Deja que el grupo elija tu peinado para el resto de la noche, sin rechistar",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Ponte la ropa al revés o intercambia una prenda con {otro} durante el resto de la partida",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Deja que el grupo te maquille la cara entera como quiera durante el resto de la ronda",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Camina descalzo por toda la sala repitiendo en voz alta un piropo que te digan que uses",
+    "texto": "Deja que el grupo te haga tres preguntas de cultura general. Bebe un chupito por cada una que falles",
     "nivel": "picante"
   },
   {
-    "texto": "Deja que {otro} elija tu apodo para el resto de la noche y preséntate así a quien entre por la puerta",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Ponte un disfraz improvisado con lo primero que encuentres y no te lo quites hasta el final de la ronda",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Deja que el grupo publique una historia en tu nombre, solo con un emoji, sin que tú la veas antes",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Camina en cuatro patas hasta el otro extremo de la sala sin usar palabras para protestar",
+    "texto": "Camina en cuatro patas hasta el otro extremo de la sala",
     "nivel": "normal"
   },
   {
     "texto": "Deja que {otro} te dé instrucciones durante un minuto entero y cúmplelas todas sin preguntar",
     "nivel": "normal"
-  },
-  {
-    "texto": "Grita tu mayor red flag en voz alta al resto del grupo, como si fuera un anuncio",
-    "nivel": "picante"
   },
   {
     "texto": "Haz una ronda entera hablando solo en susurros seductores, sin subir el volumen",
@@ -796,60 +660,8 @@
     "nivel": "normal"
   },
   {
-    "texto": "Haz un baile completo de striptease torpe con la ropa puesta durante 20 segundos",
-    "nivel": "picante"
-  },
-  {
     "texto": "Sube a una silla y da un discurso de agradecimiento como si ganaras el premio a «más ligón del grupo»",
     "nivel": "picante"
-  },
-  {
-    "texto": "Haz de gogó durante 20 segundos con la canción que ponga el grupo",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Camina sobre una línea imaginaria como si fuera una pasarela de striptease, con toda la actitud",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Baila lo más provocativo que puedas durante 15 segundos con los ojos cerrados",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Deja que el grupo escriba tu biografía de redes durante el resto de la partida",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Llama por videollamada a alguien y pídele matrimonio en broma, grabándolo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Publica una foto tuya de hace más de cinco años sin ningún filtro ni explicación",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Deja que {otro} publique en tu nombre lo primero que se le ocurra, sin que tú lo veas antes",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Enseña en directo al grupo tu conversación más reciente, tapando solo lo estrictamente privado",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Llama a alguien y dile «he hecho algo que te va a sorprender» sin dar detalles hasta el final del juego",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Manda un audio cantando ópera durante al menos 15 segundos a quien decida el grupo",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Escribe a un contacto al azar «¿te acuerdas de mí?» y enseña la respuesta cuando llegue",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Llama a casa de tus padres o a un familiar y diles que les quieres mucho, sin más explicación",
-    "nivel": "normal"
   },
   {
     "texto": "Come un limón entero o algo muy ácido sin hacer ninguna mueca",
@@ -860,11 +672,11 @@
     "nivel": "normal"
   },
   {
-    "texto": "Bebe tu bebida desde el vaso de otro jugador, intercambiando bebidas",
-    "nivel": "picante"
+    "texto": "Intercambia tu bebida con {otro}",
+    "nivel": "normal"
   },
   {
-    "texto": "Come algo picante sin beber agua durante el resto de la ronda",
+    "texto": "Escribe a un amigo algo que llevas tiempo queriendo decirle pero no te atreves",
     "nivel": "normal"
   },
   {
@@ -872,23 +684,7 @@
     "nivel": "normal"
   },
   {
-    "texto": "Deja que {otro} te maquille los labios con los ojos cerrados",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Baila una canción entera sujetando las manos de {otro} sin soltarlas",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Improvisa la narración de un beso de cine entre dos famosos, con toda la emoción de una final de fútbol",
-    "nivel": "picante"
-  },
-  {
     "texto": "Interpreta el papel de «ligue pesado» durante 20 segundos con quien tengas más cerca",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Haz una escena de telenovela completa: amor, traición y perdón, en 30 segundos",
     "nivel": "picante"
   },
   {
@@ -900,39 +696,7 @@
     "nivel": "picante"
   },
   {
-    "texto": "Mantén los brazos en cruz durante un minuto entero sin bajarlos",
-    "nivel": "normal"
-  },
-  {
     "texto": "Aguanta sin sonreír mientras el resto del grupo te hace cumplidos exagerados durante un minuto",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Quédate de pie sobre una silla contando una historia inventada sin bajarte hasta el final",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Deja que el grupo te dibuje un bigote o unas gafas con maquillaje y no te lo quites en toda la ronda",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Camina como un modelo de pasarela llevando algo en equilibrio sobre la cabeza",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Deja que el grupo elija con quién bailas la próxima canción, sea quien sea",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Grita al grupo tu piropo más atrevido sin dirigirlo a nadie en particular",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Enseña la foto más embarazosa de tu teléfono",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Cambia tu foto de WhatsApp y pon una que salgas muy mal",
     "nivel": "normal"
   },
   {
@@ -940,35 +704,7 @@
     "nivel": "normal"
   },
   {
-    "texto": "Declárate a tu vecino",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Hazte una foto en una pose ridícula y publícala en tus redes sociales",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Córtate el flequillo",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Sal a la calle en calzoncillos",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Córtate 4 cm de pelo",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Hazte una foto haciendo la peineta y súbela a Instagram",
-    "nivel": "normal"
-  },
-  {
     "texto": "Deja que el resto del grupo envíe un MD a alguien de tu cuenta de Instagram",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Come un trozo de ajo crudo",
     "nivel": "normal"
   },
   {
@@ -976,39 +712,15 @@
     "nivel": "normal"
   },
   {
-    "texto": "Haz como que le estás haciendo el amor a alguien por un minuto en el sillón",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Manda un video tuyo haciendo cosas con una fruta",
+    "texto": "Haz 10 sentadillas",
     "nivel": "normal"
   },
   {
-    "texto": "Come media cebolla cruda",
+    "texto": "Haz 10 abdominales",
     "nivel": "normal"
   },
   {
-    "texto": "Haz 100 sentadillas",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Haz 100 abdominales",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Deja que te hagan cosquillas durante un minuto",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Haz cosquillas a alguien un minuto",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Toma una cucharada de picante",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Tómate un vaso de leche del tirón",
+    "texto": "Haz cosquillas a {otro} durante un minuto",
     "nivel": "normal"
   },
   {
@@ -1016,35 +728,11 @@
     "nivel": "normal"
   },
   {
-    "texto": "Manda un 'selfie' a una persona aleatoria de tu Instagram",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Enseña tu informe de tiempo en pantalla",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Mantén tres cubitos de hielo en la boca hasta que se derritan",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Di algo sucio a la persona de tu izquierda",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Haz una videollamada a un número aleatorio",
+    "texto": "Mantén un cubito de hielo en la boca hasta que se derritan",
     "nivel": "normal"
   },
   {
     "texto": "Da un masaje en los pies a la persona de tu derecha",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Píntale las uñas de los pies a alguien",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Pon 10 líquidos diferentes en un vaso y bébelo",
     "nivel": "normal"
   },
   {
@@ -1056,16 +744,8 @@
     "nivel": "picante"
   },
   {
-    "texto": "Repite todo lo que dice la persona de tu derecha hasta que sea tu turno de nuevo",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Quítate cuatro prendas de ropa",
+    "texto": "Quítate una prenda de ropa",
     "nivel": "picante"
-  },
-  {
-    "texto": "Métete en un cubo de agua helada",
-    "nivel": "normal"
   },
   {
     "texto": "Pregúntale a alguien por la calle si cree que eres atractivo",
@@ -1080,116 +760,28 @@
     "nivel": "picante"
   },
   {
-    "texto": "Corre en ropa interior y descalzo por la calle durante dos minutos",
+    "texto": "Bébete tres vasos de agua seguidos",
+    "nivel": "normal"
+  },
+  {
+    "texto": "Da \"me gusta\" a las 10 primeras publicaciones de Instagram que te salgan",
+    "nivel": "normal"
+  },
+  {
+    "texto": "Dale me gusta a una foto antigua de un ex",
     "nivel": "picante"
-  },
-  {
-    "texto": "Llama a tu pareja y dile que estás embarazada",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Bébete cuatro vasos de agua seguidos",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Graba un vídeo de un amigo cantando y compártelo por 'airdrop'",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Manda un emoji sugerente a tu jefe",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Échate jabón de manos en el pelo",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Píntate las uñas de un color que odies",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Cómete una uña",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Pela pistachos con la boca",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Cómete una fruta sin pelarla",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Toma refresco de naranja con un chorro de leche",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Córtate un mechón de pelo",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Decolórate las cejas",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Comparte con el resto del grupo un vídeo subido de tono que te guste",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Baila una canción encima del bar más cercano",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Da \"me gusta\" a las 15 primeras publicaciones de tu Facebook",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Come una cucharada de mostaza",
-    "nivel": "normal"
   },
   {
     "texto": "Come una cucharada de ketchup",
     "nivel": "normal"
   },
   {
-    "texto": "Mantén los ojos cerrados hasta que sea tu turno de nuevo",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Intenta meter todos los dedos de un pie en la boca",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Envía un 'sext' a la última persona de tu agenda telefónica",
+    "texto": "Deja que {otro} te enseñe fotos de personas que conoce hasta que te enseñe una persona que te atraiga",
     "nivel": "picante"
-  },
-  {
-    "texto": "Muestra tu cara de orgasmo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Entra en Tinder y muestra la foto de la primera persona que te llevarías a tu casa",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Escribe una historia erótica de al menos cien palabras y envíala",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Gime durante un minuto",
-    "nivel": "normal"
   },
   {
     "texto": "Ronronea como un gato durante un minuto",
     "nivel": "normal"
-  },
-  {
-    "texto": "Graba un gemido y mándalo como mensaje de voz",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Come un plátano de forma seductora",
-    "nivel": "picante"
   },
   {
     "texto": "Vacía tu cartera/monedero y enseña a todos lo que hay dentro",
@@ -1200,107 +792,31 @@
     "nivel": "picante"
   },
   {
-    "texto": "Tírate a una piscina con ropa",
-    "nivel": "normal"
-  },
-  {
     "texto": "Sal con los pantalones desabrochados",
     "nivel": "normal"
   },
   {
-    "texto": "Sal con los zapatos sin atar/cerrar",
-    "nivel": "normal"
-  },
-  {
     "texto": "Apaga las luces durante 1 minuto y haz lo que quieras a los otros jugadores",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Regala un ramo de flores a una persona de la calle",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Empieza a cantarle una canción a un camarero",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Sal de fiesta sin maquillar",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Lee el primer libro que encuentres con voz sensual",
     "nivel": "picante"
   },
   {
-    "texto": "Lame la mejilla del jugador que quieras",
+    "texto": "Deja que {otro} te lama la mejilla",
     "nivel": "normal"
-  },
-  {
-    "texto": "Sal al balcón y grita: ¡fiesta gratis en mi casa!",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Sube a Facebook una de tus peores selfies",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Publica un estado de WhatsApp vergonzoso",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Sirve las copas de todo el mundo durante toda la noche",
-    "nivel": "picante"
   },
   {
     "texto": "Haz tantas flexiones como puedas en un minuto",
     "nivel": "normal"
   },
   {
-    "texto": "Publica un 'story' vergonzoso",
+    "texto": "Finge ser la persona de tu derecha durante una ronda",
     "nivel": "normal"
-  },
-  {
-    "texto": "Ponte unas pestañas postizas sin mirar al espejo y sal así",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Pinta los labios a un desconocido",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Corre a la pata coja durante dos minutos sin dejar de decir el abecedario",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Finge ser la persona de tu derecha durante 10 minutos",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Come un bocadillo sin usar las manos",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Bebe una copa sin usar las manos",
-    "nivel": "picante"
   },
   {
     "texto": "Susurra un secreto a la persona de tu izquierda",
     "nivel": "normal"
   },
   {
-    "texto": "Haz 'twerking' durante un minuto",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Intenta hacer reír al grupo lo más rápido posible",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Intenta meter todo el puño en la boca",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Deja que otra persona del grupo te retoque el maquillaje",
+    "texto": "Haz 'twerking' durante 20 segundos",
     "nivel": "normal"
   },
   {
@@ -1308,47 +824,15 @@
     "nivel": "normal"
   },
   {
-    "texto": "Pela un plátano con los dedos de los pies",
+    "texto": "Huele la axila de {otro}",
     "nivel": "normal"
   },
   {
-    "texto": "Di todo en un susurro durante los próximos 10 minutos",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Huele la axila de otro jugador",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Muerde la oreja a alguien",
+    "texto": "Muerdele la oreja a {otro}",
     "nivel": "picante"
   },
   {
-    "texto": "Ponte unos calcetines desaparejados",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Hazte la sorda durante toda la noche",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Habla con acento americano durante el resto de la noche",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Habla con acento mexicano durante toda la noche",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Haz tu mejor imitación de una 'celebrity'",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Intenta lamerte el codo",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Escribe un mensaje privado a un famoso",
+    "texto": "Habla con acento mexicano durante una ronda",
     "nivel": "normal"
   },
   {
@@ -1356,71 +840,15 @@
     "nivel": "picante"
   },
   {
-    "texto": "Propón una cita a tu último 'match' de Tinder",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Toca la guitarra aérea durante 2 minutos seguidos",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Manda un Whatsapp a alguien y bórralo al segundo",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Publica el 'selfie' más antiguo de tu teléfono en Instagram Stories",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Cuenta la historia más triste que conozcas",
-    "nivel": "normal"
-  },
-  {
     "texto": "Date una ducha congelada",
     "nivel": "normal"
   },
   {
-    "texto": "Compra algo en una tienda y devuélvelo inmediatamente después",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Aúlla como un lobo durante dos minutos",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Ladra cada vez que alguien te pregunte algo durante la noche",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Baila sin música durante dos minutos",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Haz un striptease a tu pareja",
+    "texto": "Haz 'pole dance' con una barra imaginaria",
     "nivel": "picante"
   },
   {
-    "texto": "Haz 'pole dance' con una barra imaginaria",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Canta el estribillo de una balada cursi a todo volumen",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Deja que otra persona te haga cosquillas e intenta no reírte",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Mete en la boca todos los bocadillos que puedas a la vez",
-    "nivel": "normal"
-  },
-  {
     "texto": "Desplázate por tu agenda telefónica hasta que alguien te diga que pares. Tienes que llamar o borrar a esa persona.",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Ponte la ropa al revés durante el resto de la noche",
     "nivel": "normal"
   },
   {
@@ -1428,75 +856,7 @@
     "nivel": "picante"
   },
   {
-    "texto": "Sal a la calle sin ropa interior",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Dale de comer a alguien almendras solo utilizando tu boca",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Habla con una persona fuera del grupo que te atraiga",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Gatea lo más sensualmente posible frente a los demás",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Cruza una calle gateando",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Ponte la ropa interior de alguien en la cabeza",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Sal a la calle sin zapatos",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Tíñete las cejas de rosa",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Ponte los calcetines en las manos toda la noche",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Sal una noche con bufanda y gorro",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Invita a un portero de discoteca a una copa",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Acábate la bebida (responsablemente)",
-    "nivel": "picante"
-  },
-  {
     "texto": "Intenta llorar delante del grupo",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Haz reír a un desconocido",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Imita a un amigo toda la noche",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Está sin hablar tres horas",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Está sin hablar toda la noche",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Haz una imitación de una 'celebrity' para cada persona de la sala",
     "nivel": "normal"
   },
   {
@@ -1504,64 +864,12 @@
     "nivel": "normal"
   },
   {
-    "texto": "Canta una canción seductora a alguien del grupo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Absorbe helio de un globo y habla con voz de pito un rato",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Contesta con sí a todo durante una hora",
-    "nivel": "normal"
-  },
-  {
     "texto": "Pide unos céntimos a desconocidos",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Contesta con no a todo durante una hora",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Habla con acento andaluz durante 24 horas",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Conversa al menos 5 minutos con un desconocido",
     "nivel": "normal"
   },
   {
     "texto": "Toma un chupito de tequila sin sal ni limón",
     "nivel": "picante"
-  },
-  {
-    "texto": "Mantén una mirada intensa y seductora con alguien durante un minuto sin reírse",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Intenta ligar con el portero de la discoteca",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Haz una tortilla de patatas con los ojos cerrados",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Intenta suplantar a todos los presentes en la sala",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Grita frases incoherentes en la calle para observar la reacción de la gente",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Canta una canción en otro idioma, aunque no sepas cantar",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Responde a las cinco primeras 'stories' de Instagram de tu 'timeline'",
-    "nivel": "normal"
   },
   {
     "texto": "Comparte la primera 'celebrity' de las publicaciones de tu Instagram a tu historia",
@@ -1576,47 +884,7 @@
     "nivel": "normal"
   },
   {
-    "texto": "Come un alimento elegido por los demás con los ojos vendados",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Llena tu boca de bebida y haz gárgaras mientras respondes a la siguiente 'Verdad'",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Haz saltar a otro jugador en los próximos 10 minutos",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Responde que 'sí' a todo durante cinco horas",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Responde que 'no' a todo durante cinco horas",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Sonríe todo lo que puedas y mantenlo durante 2 minutos",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Escucha la música que menos te gusta un día entero",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Sostén tu bebida con las dos manos durante el resto de la noche",
-    "nivel": "picante"
-  },
-  {
     "texto": "Intenta el primer baile de TikTok de tu página 'para ti'",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Siéntate en el suelo durante el resto de la noche",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Maquíllate sin espejo y quédate así durante el resto del juego",
     "nivel": "normal"
   },
   {
@@ -1624,35 +892,7 @@
     "nivel": "normal"
   },
   {
-    "texto": "Tómate una copa con unas gotas de picante",
-    "nivel": "normal"
-  },
-  {
     "texto": "Pásate la noche sin usar el móvil",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Come algo picante y no bebas agua durante dos minutos",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Sal de fiesta con las gafas de sol",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Deja el móvil en casa todo un día",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Pretende que eres famosa toda la noche",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Sal a la calle untada en crema del sol",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Mastica un cubito de hielo",
     "nivel": "normal"
   },
   {
@@ -1660,123 +900,11 @@
     "nivel": "picante"
   },
   {
-    "texto": "Trágate un chicle",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Mastica un chicle y pásaselo a otro miembro del grupo con la boca",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Pide unas monedas a alguien desconocido",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Pregunta a un desconocido si le conoces de algo",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Pregunta a un desconocido si puedes dormir en su casa",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Invita a una copa al primero que pase por la calle",
+    "texto": "Que {otro} mastique un chicle y te lo pase con la boca",
     "nivel": "picante"
   },
   {
-    "texto": "Consigue una copa gratis en un bar",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Empieza a seguir en Instagram a alguien que no soportes",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Mándale una foto de una ‘peineta’ a tu ex",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Métete en una fuente del parque",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Escribe un email a tu jefe en inglés",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Ponte a hablar con un árbol durante cinco minutos",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Mantente callado 12 horas",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Toca el timbre de una casa de madrugada y di que le ha tocado un premio",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Llama a un número aleatorio y di que le ha tocado un premio",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Da el dinero de tus copas a alguien necesitado",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Llama a tu ex y dile lo primero que se te ocurra",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Llama a tu 'crush' y dile que te gusta",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Para el tráfico para hacerte una foto",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Túmbate en un paso de cebra",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Vete para casa antes de la hora prevista",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Aguanta hasta las 6 de la mañana",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Vete de 'after'",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Invita a un segurata de discoteca a una copa",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Pide un potito en un restaurante",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Come con babero en un restaurante",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Quítate una prenda de ropa interior sin quitarte la ropa",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Elige un jugador y deja que te haga cosquillas durante un minuto",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Haz un concurso de quién dice más palabrotas contra el jugador que elijas",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Hazte un 'selfie' con la primera persona que pase a tu lado",
+    "texto": "Toca el timbre de una casa cercana y sal corriendo",
     "nivel": "normal"
   },
   {
@@ -1784,23 +912,7 @@
     "nivel": "normal"
   },
   {
-    "texto": "Pide a un desconocido que te grabe mientras bailas",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Actúa como si estuvieras loca toda la noche",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Ve cantando por el metro",
-    "nivel": "normal"
-  },
-  {
     "texto": "Llama a tu madre y dile que la quieres",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Cómete un moco",
     "nivel": "normal"
   },
   {
@@ -1812,179 +924,23 @@
     "nivel": "normal"
   },
   {
-    "texto": "Sal de fiesta con tapones en los oídos toda la noche",
-    "nivel": "normal"
-  },
-  {
     "texto": "Llama a un amigo que no esté y gástale una broma",
     "nivel": "normal"
   },
   {
-    "texto": "Salta con los cordones de las zapatillas atados en cruz",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Pide el móvil a alguien que vaya por la calle",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Huele el pelo de todos y adivina qué champú usan",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Hazte pasar por una extranjera",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Permanece vendada de los ojos, durante 10 turnos",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Habla toda la noche en un idioma inventado",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Grita que eres feliz",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Píntate los labios de verde y sal así a la calle",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Grita que estás muy triste",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Ponte los calcetines por fuera del pantalón y pasa la noche así",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Ponte la ropa interior por fuera y pasa la noche así",
+    "texto": "Tómate la siguiente copa sin hielos",
     "nivel": "picante"
   },
   {
-    "texto": "Entra a un bazar, compra una peluca y ve de fiesta con ella",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Tómate las copas sin hielo toda la noche",
+    "texto": "Pásale un hielo a {otro} con la boca",
     "nivel": "picante"
-  },
-  {
-    "texto": "Intenta ligar con frases ridículas toda la noche",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Cuélate en un 'reservado' en una discoteca",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Hazte amigo del DJ que pinche en la discoteca",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Pide la canción más ridícula que se te ocurra en la discoteca",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Besa a alguien con un hielo en la boca",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Besa a dos personas durante dos minutos",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Bebe la bebida que más odias toda la noche",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Invita a bailar a un desconocido",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Ve a una tienda de lujo y aparenta ser rica",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Pide en la barra en un idioma inventado",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Siéntate en una barra mientras esperas tu copa",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Recoge toda la basura que haya en un parque, aunque no sea tuya",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Métete en un cubo de basura",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Está dos horas con la boca abierta",
-    "nivel": "normal"
   },
   {
     "texto": "Bébete una cerveza en menos de 30 segundos",
     "nivel": "picante"
   },
   {
-    "texto": "Sube un 'storie' con una canción ridícula",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Enseña tu historial de Google",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Huele el pie a alguien del grupo",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Píntate la cara azul y sal así a la calle",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Ve a comprar el pan en pijama",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Sal con el pelo sucio de fiesta",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Publica una foto en la que salgas mal en Instagram",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Ponte calcetines en las orejas toda la noche",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Enseña el último vídeo que has visto en Youtube",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Llama a un programa de tarot en directo",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Actúa representando la escena de una película",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Manda un mensaje a uno de tus ex insultándolo",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Llama a una pizzería y pide una de la competencia",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Córtate el pelo 5 centímetros",
+    "texto": "Huélele el pie a {otro}",
     "nivel": "normal"
   },
   {
@@ -1996,51 +952,7 @@
     "nivel": "picante"
   },
   {
-    "texto": "Pide la cuenta en un restaurante antes de pedir la comida",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Liga con un camarero",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Haz una videollamada y besa tu teléfono durante dos minutos",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Manda un emoji a tu jefe",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Grábate un vídeo cantando pasionalmente en la ducha",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Disfrázate de dinosaurio y pregunta a la gente por alguna dirección",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Ten una conversación de mínimo 5 minutos con una persona aleatoria de la calle",
-    "nivel": "normal"
-  },
-  {
     "texto": "En pleno día caluroso, sal a la calle con un pijama de franela y en zapatillas",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Haz ver que tienes una conversación vergonzosa por teléfono con alguien al lado de un extraño en la calle",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Haz una frase con las palabras siguientes: transgresor, otorrinolaringólogo y ovovivíparo",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Empieza a cantarle una canción a alguien de la calle y espera a ver si pueden seguirla",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Camina de espaldas durante 2 minutos y saluda a todo aquel que te encuentres por la calle",
     "nivel": "normal"
   },
   {
@@ -2056,112 +968,16 @@
     "nivel": "picante"
   },
   {
-    "texto": "Haz una lista con las partes del cuerpo que más te gustan de otra persona del grupo",
+    "texto": "Haz una lista con las partes del cuerpo que más te gustan de {otro}",
     "nivel": "picante"
   },
   {
-    "texto": "Manda un mensaje sólo con emojis, otra persona de tu elección tendrá que decodificarlos",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Grábate cantando una canción vergonzosa que te guste",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Haz una foto haciendo la peineta y mandársela a quien digan tus amigos",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Bebe un chupito de tequila de la parte del cuerpo de otra persona",
+    "texto": "Bebe un chupito de alguna parte del cuerpo de {otro}",
     "nivel": "picante"
   },
   {
-    "texto": "Comenta una foto de Instagram de algún conocido. Haz que el comentario sea algo picante.",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Manda un audio a alguien haciendo ver que estás teniendo un orgasmo",
+    "texto": "Representa tu postura sexual favorita",
     "nivel": "picante"
-  },
-  {
-    "texto": "Usa la lencería de alguien del grupo durante media hora",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Pásate un cubo de hielo con otra persona durante un minuto hasta que se deshaga",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Métete en un cuarto oscuro con otra persona durante 10 minutos",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Haz 20 sentadillas en ropa interior",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Deja que alguien te maquille con los ojos vendados",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Dibuja a la persona a tu lado con los ojos vendados",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Busca por Internet alguna postura extraña que desconozcas e intenta imitarla con los objetos que tengas a mano",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Ve a una ferretería e intenta comprar huevos",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Intenta comprar leche en una papelería",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Pide una pizza en una hamburguesería",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Toma una cucharada de canela",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Toma una cucharada de café molido",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Come un pedazo de limón sin hacer gestos",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Ponte a bailar en un centro comercial",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Maquíllate como un payaso y sal así a la calle",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Canta a alguien una canción romántica a capela",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Pide una foto divertida a alguien de la calle",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Hazte pasar por otra persona toda la noche",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Deja que alguien te vista como quiera durante las siguientes rondas",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Pregúntale a alguien random por la calle qué es lo más extraño que han hecho nunca",
-    "nivel": "normal"
   },
   {
     "texto": "Toma un vaso de agua sin emplear tus manos",
@@ -2172,35 +988,15 @@
     "nivel": "normal"
   },
   {
-    "texto": "Sigue a alguien sin que se dé cuenta, durante dos minutos",
+    "texto": "Coloca una galleta en tu frente y, sin usar tus manos, intenta comertela moviendo la cara y la cabeza",
     "nivel": "normal"
-  },
-  {
-    "texto": "Quédate inmóvil, durante dos minutos, mientras los demás intentan hacerte reír",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Coloca una galleta en tu frente y, sin usar tus manos, intenta comerla moviendo solo tu cara",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Toma una bebida con una mezcla de tres ingredientes que elijan tus amigos",
-    "nivel": "picante"
   },
   {
     "texto": "Quita una prenda a alguien con los dientes",
     "nivel": "picante"
   },
   {
-    "texto": "Haz una bolsa de palomitas. Te la tendrás que comer de la manera más atractiva posible.",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Coge una escoba y haz tu baile más sensual con ella",
-    "nivel": "picante"
-  },
-  {
-    "texto": "Bájale el cierre del pantalón a otro jugador",
+    "texto": "Bájale el cierre del pantalón a {otro} (Al jugador a su derecha si no es posible)",
     "nivel": "normal"
   },
   {
@@ -2208,55 +1004,7 @@
     "nivel": "picante"
   },
   {
-    "texto": "Háblale sucio a otro jugador durante toda la noche",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Muévete como una serpiente durante dos minutos",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Imita la portada de una revista famosa",
-    "nivel": "normal"
-  },
-  {
     "texto": "Canta con agua en la boca",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Deja que alguien te haga un peinado loco y lúcelo durante 30 minutos",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Llama a un ser querido y hazle una confesión falsa que el grupo acuerde",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Utiliza el baño con la puerta abierta",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Ofrece un masaje a alguien de la calle",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Mantente inmóvil durante una hora",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Pide un abrazo a un desconocido en la calle",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Muestra el último vídeo para adultos que has visto",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Mantén una conversación telefónica incómoda con alguien haciendo creer a un extraño en la calle que es con él",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Manda un audio a un contacto aleatorio gimiendo",
     "nivel": "normal"
   },
   {
@@ -2264,47 +1012,7 @@
     "nivel": "normal"
   },
   {
-    "texto": "Besa el lóbulo de la oreja de quien quieras por un minuto",
+    "texto": "Besa el cuello de {otro}",
     "nivel": "picante"
-  },
-  {
-    "texto": "Bébete un litro de agua de golpe",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Di tu nombre al revés",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Infla un globo hasta que explote",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Cuélate en un hotel",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Está una semana sin lavarte el pelo",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Hazte el sordo un día entero",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Hazte el ciego un día entero",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Envía sólo emojis durante un día",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Llama a uno de tus padres para cantarle una canción infantil",
-    "nivel": "normal"
-  },
-  {
-    "texto": "Hazte mal el eyeliner y sal así a la calle",
-    "nivel": "normal"
   }
 ]
