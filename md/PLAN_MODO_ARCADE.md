@@ -73,7 +73,7 @@ minijuego que no dominas) o mejor (un reto normal como siempre).
 | **Botón «Otra»** | Sigue existiendo tal cual en verdad y en reto normal. **No existe** en minijuego, test rápido ni doble verdad: la ruleta ya ha hablado. |
 | **Doble verdad** | Las dos preguntas salen **una detrás de otra**, cada una con su «Hecho»/«Paso». Puede acabar en dos castigos en el mismo turno. La cabecera de la carta lo indica: «VERDAD · 1 de 2». |
 | **Test rápido** | 3 preguntas, **4 opciones cada una**, se toca la correcta y la app corrige sola. Categorías: geografía, matemáticas, historia y banderas. **1 chupito por fallo** (0–3 chupitos). |
-| **Minijuegos** | Cuatro: **pez** (flappy), **guepardo** (corredor del desierto), **bolita** (zigzag) y **canasta**. Se elige uno al azar. Cada uno tiene un **objetivo fijo** de puntuación. |
+| **Minijuegos** | Cuatro: **pez** (flappy), **guepardo** (corredor del desierto), **bolita** (zigzag) y **canasta**. Se elige uno al azar. Cada uno tiene un **objetivo fijo** de puntuación. ⚠️ **De momento el sorteo está limitado a la canasta**, a petición del usuario, mientras la afina: ver §13. |
 | **Castigo de los minijuegos** | Escalado: llegas al objetivo → nada; te quedas **por encima de la mitad** → 1 chupito; **por debajo de la mitad** → 2 chupitos. |
 | **Duración de los minijuegos** | **Nunca más de 60 s.** Los tres de habilidad (pez, guepardo, bolita) **se aceleran un 15 % cada 5 s** para que la partida se resuelva sola, y llevan además un tope duro de 60 s. La **canasta** son **30 s exactos y no acelera** (lo dijo el usuario): su dificultad la pone el aro, que se mueve a velocidad constante. |
 | **Modo fiesta** | Los chupitos del test rápido y de los minijuegos **solo se sirven con modo fiesta activo**, igual que el resto de la app. Sin modo fiesta se enseña el resultado («2 de 3», «has hecho 5 de 8») y se pasa turno sin castigo. |
@@ -807,3 +807,23 @@ plano y el cruce nunca llega a grabarse; y la de los fps comparaba instantes
 distintos, porque redondear «0,9 s» a un número entero de fotogramas da
 duraciones diferentes en cada frecuencia. Merece la pena anotarlo: una prueba en
 rojo aquí es tan probable que sea culpa suya como del código.
+
+---
+
+## 13. Solo la canasta en el sorteo (v1.11.3, temporal)
+
+A petición del usuario, mientras sigue probando la canasta el quesito de
+«minijuego» **sirve siempre la canasta**. Los otros tres no se han tocado:
+funcionan igual, simplemente están fuera del sorteo.
+
+Está hecho para deshacerse en una línea, en `js/verdadreto/arcade.js`:
+
+```js
+const VR_MINIJUEGOS_TODOS = [VR_MJ_PEZ, VR_MJ_GUEPARDO, VR_MJ_ZIGZAG, VR_MJ_CANASTA];
+const VR_MINIJUEGOS = [VR_MJ_CANASTA];   // ← devolver los cuatro: = VR_MINIJUEGOS_TODOS
+```
+
+No hay ningún otro sitio que dependa de esto: la ruleta sigue con sus dos
+quesitos de minijuego y sus probabilidades intactas (75/10/10/5), y la prueba de
+humo sigue ejercitando los cuatro minijuegos uno a uno aunque solo uno salga
+sorteado.

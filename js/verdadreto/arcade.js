@@ -45,7 +45,15 @@ const VR_RULETA_QUESITOS = [
 const VR_RULETA_VUELTAS = 4;
 const VR_RULETA_DURACION = 3200; // ms; tiene que coincidir con la transición CSS
 
-const VR_MINIJUEGOS = [VR_MJ_PEZ, VR_MJ_GUEPARDO, VR_MJ_ZIGZAG, VR_MJ_CANASTA];
+// Los cuatro minijuegos que existen. La ruleta reparte entre los que estén en
+// VR_MINIJUEGOS, justo debajo.
+const VR_MINIJUEGOS_TODOS = [VR_MJ_PEZ, VR_MJ_GUEPARDO, VR_MJ_ZIGZAG, VR_MJ_CANASTA];
+
+// ⚠️ TEMPORAL, a petición del usuario: mientras afina la canasta, el quesito de
+// «minijuego» solo sirve la canasta. Los otros tres siguen funcionando y no se
+// han tocado; solo están fuera del sorteo.
+// Para devolver los cuatro: `const VR_MINIJUEGOS = VR_MINIJUEGOS_TODOS;`
+const VR_MINIJUEGOS = [VR_MJ_CANASTA];
 
 const VR_TRIVIA_POR_TEST = 3;
 const VR_TRIVIA_CATEGORIAS = {
