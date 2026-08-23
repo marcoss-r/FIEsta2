@@ -46,8 +46,8 @@ una verdad», que ya tiene su banco cerrado:
   en 3D, «Paso» (en verdad o en reto) con castigo ponderado (30 % beber /
   20 % prenda / 50 % otros), «Otra» sin límite ni castigo en los dos tipos
   (en verdad la decide el grupo, no quien tiene el turno; también puede
-  inventarse una pregunta propia), banco de 547 verdades (313 normal / 234
-  picante) + 611 retos (467 / 144), tras fusionar el contenido no duplicado
+  inventarse una pregunta propia), banco de 531 verdades (301 normal / 230
+  picante) + 254 retos (177 / 77), tras fusionar el contenido no duplicado
   de «Preguntas incómodas» (el sexto juego original, eliminado) y una tanda
   de 222 verdades + 350 retos importados y adaptados a la voz del juego
   (retos pasados de infinitivo a imperativo) desde una recopilación externa,
@@ -126,7 +126,7 @@ alta entradas desde consola, igual que en FIEsta 1. `data/yonunca/` ya sigue
 este patrón completo: `frases.json` (fuente, 674 entradas) + `frases.js`
 (generado) + `agregar.py` (da de alta frases nuevas y regenera el `.js`; nunca
 se edita `frases.js` a mano). `data/quienmas/` (570 entradas),
-`data/verdadreto/` (547 verdades + 611 retos) y `data/dosmentiras/` (160
+`data/verdadreto/` (531 verdades + 254 retos) y `data/dosmentiras/` (160
 temas) siguen el mismo patrón. `data/impostor/` de momento solo tiene
 `palabras.js` (28 palabras de muestra, sin `.json` ni `agregar.py` todavía):
 el patrón completo llega con su Fase 4.

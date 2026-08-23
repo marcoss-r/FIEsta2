@@ -204,19 +204,11 @@
     "nivel": "normal"
   },
   {
-    "texto": "¿Cuál es tu manía más rara a la hora de dormir?",
-    "nivel": "normal"
-  },
-  {
     "texto": "¿Qué famoso te gustaría tener como mejor amigo?",
     "nivel": "normal"
   },
   {
     "texto": "¿Cuál es la última app que te descargaste y para qué era?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué es lo más random que sabes hacer y nadie te lo pediría?",
     "nivel": "normal"
   },
   {
@@ -312,10 +304,6 @@
     "nivel": "normal"
   },
   {
-    "texto": "¿Qué es lo más caro que te has comprado sin pensarlo dos veces?",
-    "nivel": "normal"
-  },
-  {
     "texto": "¿Cuál es tu horario ideal si nadie te pusiera despertador?",
     "nivel": "normal"
   },
@@ -393,10 +381,6 @@
   },
   {
     "texto": "¿Qué es lo que te daría más pereza tener que hacer ahora mismo?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Cuál es la mentira piadosa que más repites a tu familia?",
     "nivel": "normal"
   },
   {
@@ -521,10 +505,6 @@
   },
   {
     "texto": "¿Qué es lo que más rápido te enamora de alguien?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Cuál es la vez que más te has arrepentido de una noche con alguien?",
     "nivel": "picante"
   },
   {
@@ -808,10 +788,6 @@
     "nivel": "picante"
   },
   {
-    "texto": "¿Cuál es la mentira más atrevida que le has dicho a una pareja?",
-    "nivel": "picante"
-  },
-  {
     "texto": "¿Te han puesto celoso a propósito?",
     "nivel": "picante"
   },
@@ -909,10 +885,6 @@
   },
   {
     "texto": "¿Qué crees que la gente de esta sala no sabe de ti y cambiaría cómo te ven?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Cuál es el secreto familiar tuyo que menos gente de este grupo conoce?",
     "nivel": "normal"
   },
   {
@@ -1077,10 +1049,6 @@
   },
   {
     "texto": "¿Qué has fingido perdonar sin hacerlo de verdad?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Cuál es el secreto que llevas cargando solo, sin habérselo contado a nadie?",
     "nivel": "normal"
   },
   {
@@ -1493,10 +1461,6 @@
   },
   {
     "texto": "¿Qué es lo más vergonzoso que te ha pasado en clase o en el trabajo?",
-    "nivel": "normal"
-  },
-  {
-    "texto": "¿Qué es lo primero que miras del móvil al despertarte?",
     "nivel": "normal"
   },
   {
@@ -2037,10 +2001,6 @@
   },
   {
     "texto": "¿Cuál era tu amor de la infancia?",
-    "nivel": "picante"
-  },
-  {
-    "texto": "¿Perdonarías una infidelidad?",
     "nivel": "picante"
   },
   {

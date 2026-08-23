@@ -701,6 +701,26 @@ mirar la carta más larga del banco en horizontal y en vertical.
          234 picante), retos **611** (467 / 144). `APP_VERSION`/`CACHE` a
          1.10.4. Pendiente de que el usuario revise el `.md` de similitudes y
          las 13 movidas.
+- [x] **Cuarta revisión del usuario y primera tanda de borrados por
+      similitud** (pedido por el usuario). El usuario podó `retos.json` por
+      su cuenta (611 → 254, un recorte grande) y ajustó algo `verdades.json`
+      (547 → 541) directamente, en dos commits fuera de este asistente. Sobre
+      ese banco, el usuario decidió sobre `SIMILITUDES_VERDADES.md` borrar 10
+      de las «casi calcadas»/«reescritas» (avisando de que los índices del
+      `.md` podían haber quedado desincronizados por sus propios cambios): se
+      identificó cada una por su **texto**, no por el número, y las 10
+      coincidían literalmente con el índice que tenían en el `.md` original
+      (el reordenamiento de sus commits no las tocó). Borradas: la mentira
+      piadosa «a tu familia», el secreto familiar «tuyo», la manía rara «a la
+      hora de dormir», «¿Perdonarías una infidelidad?» (la escueta, se queda
+      la que añade «¿Con qué condiciones?»), el secreto «que llevas cargando
+      solo», lo más caro «sin pensarlo dos veces», lo más random «que nadie
+      te pediría», qué miras del móvil «al despertarte», la vez que te
+      arrepentiste de una noche, y la mentira más atrevida a una pareja.
+      Resultado: verdades **531** (301 normal / 230 picante), retos
+      **254** (177 / 77) sin cambios de esta ronda. `APP_VERSION`/`CACHE` a
+      1.10.5. Pendiente de que el usuario siga revisando el resto del `.md`
+      de similitudes (las familias de molde en particular).
 
 ---
 
