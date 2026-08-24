@@ -1,24 +1,21 @@
 // El Impostor (im) — md/PLAN_EL_IMPOSTOR.md. Todos reciben la misma palabra
 // secreta menos el impostor, que solo recibe una pista; la app reparte en
-// secreto, fija el orden, cuenta las rondas y revela. No guarda nada entre
-// partidas: ni la configuración ni el reparto ni el progreso.
+// secreto, anuncia quién empieza y revela. La ronda de palabras y la
+// votación las lleva el grupo hablando, la app no las cuenta. No guarda
+// nada entre partidas: ni la configuración ni el reparto ni el progreso.
 
 const IM_MIN_JUGADORES = 3;
 const IM_MAX_JUGADORES = 12;
 const IM_MIN_PARA_DOS_IMPOSTORES = 7;
-const IM_RONDAS = 3; // fijo, sin stepper
 
 // Todo el estado de la partida vive aquí.
 const imEstado = {
   nombres: [],
   nImpostores: 1,
-  nRondas: IM_RONDAS,
 
   entrada: null, // { palabra, pista, categoria, nivel } del banco
   impostores: [], // índices en nombres
-  orden: [], // índices en nombres: el orden de palabras
-  rondaActual: 1, // 1…nRondas
-  posicionActual: 0, // índice dentro de orden
+  primerJugador: null, // índice en nombres: quién empieza (el resto se turna hablando, sin que la app lo cuente)
   acusado: null, // índice acusado
 
   repartidor: null,
@@ -81,25 +78,21 @@ function imIniciarMotor() {
   imEstado.repartidor = crearRepartidor(IM_PALABRAS);
 }
 
-// El primero en hablar nunca es impostor (hablar primero sin información es
-// una desventaja brutal). El mismo orden se repite en todas las rondas.
-function imSortearOrden(nombres, impostores) {
+// Quien empieza nunca es impostor (hablar primero sin información es una
+// desventaja brutal).
+function imElegirPrimerJugador(nombres, impostores) {
   const inocentes = nombres.map((_, i) => i).filter((i) => !impostores.includes(i));
-  const primero = elegirAlAzar(inocentes);
-  const resto = barajar(nombres.map((_, i) => i).filter((i) => i !== primero));
-  return [primero, ...resto];
+  return elegirAlAzar(inocentes);
 }
 
-// Palabra, impostores y orden nuevos: se llama al empezar la partida y en
-// "Otra ronda".
+// Palabra, impostores y primer jugador nuevos: se llama al empezar la
+// partida y en "Otra ronda".
 function imPrepararRonda() {
   const { valor } = imEstado.repartidor.siguiente();
   imEstado.entrada = valor;
   const indices = imEstado.nombres.map((_, i) => i);
   imEstado.impostores = elegirN(indices, imEstado.nImpostores);
-  imEstado.orden = imSortearOrden(imEstado.nombres, imEstado.impostores);
-  imEstado.rondaActual = 1;
-  imEstado.posicionActual = 0;
+  imEstado.primerJugador = imElegirPrimerJugador(imEstado.nombres, imEstado.impostores);
   imEstado.acusado = null;
 }
 
@@ -138,31 +131,16 @@ function imEntrarReparto() {
   });
 }
 
+// Ya no se reparten turnos desde la app: solo se anuncia quién empieza y el
+// grupo se turna hablando por su cuenta hasta que estén listos para votar.
 function imEntrarRonda() {
   mostrarPantalla("im-ronda");
   imRenderRonda();
 }
 
 function imRenderRonda() {
-  document.getElementById("im-btn-siguiente").disabled = false;
-  const indiceJugador = imEstado.orden[imEstado.posicionActual];
-  document.getElementById("im-nombre-turno").textContent = imEstado.nombres[indiceJugador];
-}
-
-// Deshabilita el botón al pulsar (casos borde del plan: un doble toque no
-// debe saltarse el turno de nadie) hasta el siguiente render.
-function imSiguientePalabra() {
-  document.getElementById("im-btn-siguiente").disabled = true;
-  imEstado.posicionActual++;
-  if (imEstado.posicionActual >= imEstado.orden.length) {
-    imEstado.posicionActual = 0;
-    imEstado.rondaActual++;
-  }
-  if (imEstado.rondaActual > imEstado.nRondas) {
-    imEntrarAcusacion();
-    return;
-  }
-  imRenderRonda();
+  document.getElementById("im-nombre-turno").textContent =
+    `Empieza ${imEstado.nombres[imEstado.primerJugador]}`;
 }
 
 function imEntrarAcusacion() {
@@ -294,7 +272,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   document.getElementById("im-btn-empezar").addEventListener("click", imEmpezarPartida);
-  document.getElementById("im-btn-siguiente").addEventListener("click", imSiguientePalabra);
+  document.getElementById("im-btn-votar").addEventListener("click", imEntrarAcusacion);
   document.getElementById("im-btn-terminar").addEventListener("click", imTerminar);
   document.getElementById("im-btn-confirmar").addEventListener("click", imConfirmarAcusacion);
   document.getElementById("im-btn-otra-ronda").addEventListener("click", imOtraRonda);
