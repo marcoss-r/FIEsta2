@@ -2,50 +2,53 @@
 // Debe cargarse el ÚLTIMO: al terminar muestra el hub de juegos.
 
 // Versión de la app. Al subirla, sube también CACHE en sw.js (otro contexto, no ve esto).
-const APP_VERSION = "1.12.8";
+const APP_VERSION = "1.12.9";
 
 // Textos de la ventana de información de cada juego (la ⓘ de las tarjetas del hub).
 const INFO_JUEGOS = {
   yn: {
     titulo: "Yo nunca",
     texto:
-      "El clásico de beber. La app lee una frase que empieza por «Yo nunca…» " +
-      "(cosas ya hechas, o cosas que quizá probarías): si es tu caso, baja un " +
-      "dedo (todos empezáis con 5, contados a mano) o, si está activo el modo " +
-      "fiesta, bebe.",
+      "Cada jugador empieza con 5 dedos. Uno de los jugadores lee una frase " +
+      "que empieza por «Yo nunca…». Los jugadores que hayan realizado la " +
+      "acción que dice la frase, bajan un dedo. En caso del modo fiesta, si " +
+      "se ha realizado la acción, los jugadores beben un trago.",
   },
   vr: {
     titulo: "Verdad o Reto",
     texto:
-      "El clásico juego de fiesta: en tu turno eliges Verdad o Reto y la app te " +
-      "sirve un contenido al azar, filtrado por los niveles de intensidad " +
-      "elegidos. Sin límite de rondas: se juega hasta que alguien decide terminar.",
+      "Cada jugador elige si responder a una pregunta o si hacer un reto " +
+      "aleatorio. En el modo fiesta, se deberá beber cuando se quiera esquivar " +
+      "una pregunta o saltarse un reto. El modo arcade añade minijuegos y " +
+      "preguntas de cultura general a los retos mediante una ruleta de la suerte.",
   },
   qm: {
     titulo: "Quién es más…",
     texto:
-      "La app lanza una pregunta sobre el grupo (quién es más probable que… o " +
-      "quién es más…) y a la de tres todos señalan a la vez a quien crean. Se " +
-      "comenta a gritos y se pasa a la siguiente. En el " +
-      "modo parejas, la app sortea una pareja de entre todos y le hace 8 " +
-      "preguntas: si coinciden se libran, si difieren, bebe quien lleve el modo " +
-      "fiesta encendido. Recorre todas las parejas posibles y acaba con un " +
-      "ranking.",
+      "Un jugador lee una pregunta que empieza por «Quién es más…». Se " +
+      "contará hasta tres y todos los jugadores señalarán a la persona con la " +
+      "que más se identifique esa frase. En modo fiesta, beberá un trago el " +
+      "que tenga más votos. En el modo parejas, se selecciona una pareja al " +
+      "azar entre todos los jugadores, que jugarán ellos solos 8 rondas. Si " +
+      "difieren, pierden y si coinciden ganan. Con el modo fiesta, deberán " +
+      "beber en caso de no coincidir.",
   },
   dm: {
     titulo: "Dos mentiras y una verdad",
     texto:
-      "En tu turno, la app te da un tema para que cuentes tres cosas sobre ti: " +
-      "dos mentiras y una verdad. El grupo debate y vota cuál es la verdadera " +
-      "antes de que la reveles.",
+      "Cada jugador cuenta dos verdades y una mentira sobre un tema aleatorio. " +
+      "El resto del grupo debe averiguar cual es la mentira escondida. En modo " +
+      "fiesta, beberán aquellos jugadores que no logren adivinar la mentira.",
   },
   im: {
     titulo: "El Impostor",
     texto:
-      "Todos reciben la misma palabra secreta menos el impostor, que solo " +
-      "recibe una pista. Por turnos, cada uno dice una palabra relacionada sin " +
-      "delatarse ni delatar; al final, el grupo debate y acusa a quien crea que " +
-      "es el impostor.",
+      "Todos los jugadores reciben la misma palabra excepto el impostor, que " +
+      "recibe una pista sobre ella. Por turnos, cada jugador debe decir una " +
+      "palabra relacionada con la inicial. Al final de cada ronda, los " +
+      "jugadores votan para tratar de encontrar al impostor. En modo fiesta, " +
+      "si es encontrado, el impostor beberá un trago doble y si no es " +
+      "encontrado, beberán un trago el resto de jugadores.",
   },
 };
 
