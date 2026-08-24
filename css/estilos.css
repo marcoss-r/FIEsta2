@@ -1227,7 +1227,7 @@ button.secundario:hover {
 }
 
 .im-secreto-nota {
-  margin: 0.75rem 0 0;
+  margin: 1.5rem 0 0;
   font-size: 0.9rem;
   text-align: center;
   color: var(--color-texto-tenue);
