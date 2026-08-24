@@ -40,7 +40,8 @@ function dmIniciarMotor() {
 function dmActualizarBotonOtroTema() {
   const boton = document.getElementById("dm-btn-otro-tema");
   const quedan = DM_MAX_CAMBIOS - dmEstado.cambiosUsados;
-  boton.textContent = `Otro tema · quedan ${quedan}`;
+  const sufijo = quedan === 1 ? "cambio restante" : "cambios restantes";
+  boton.textContent = `Otro tema (${quedan} ${sufijo})`;
   boton.disabled = quedan <= 0;
 }
 

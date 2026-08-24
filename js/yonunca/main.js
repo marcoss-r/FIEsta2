@@ -31,7 +31,7 @@ function ynTextoInstruccion(fiestaActiva) {
   const activo = fiestaActiva !== undefined ? fiestaActiva : modoFiestaActivo();
   return activo
     ? "Si es tu caso, bebe."
-    : "Si es tu caso, baja un dedo (empezáis con 5 cada uno).";
+    : "Si es tu caso, baja un dedo.";
 }
 
 function ynActualizarRegla(fiestaActiva) {
