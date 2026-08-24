@@ -93,9 +93,6 @@ function dmYaLoTengo() {
 function dmRenderTurno() {
   const nombre = dmEstado.nombres[dmEstado.indiceTurno];
   document.getElementById("dm-nombre-turno").textContent = `Turno de ${nombre}`;
-  const ronda = Math.floor(dmEstado.contador.turnos / dmEstado.nombres.length) + 1;
-  const turnoEnRonda = (dmEstado.contador.turnos % dmEstado.nombres.length) + 1;
-  document.getElementById("dm-progreso").textContent = `Ronda ${ronda} · turno ${turnoEnRonda}`;
 }
 
 function dmGuardar() {

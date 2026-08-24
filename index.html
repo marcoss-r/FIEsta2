@@ -140,10 +140,11 @@
 
     <section class="pantalla" data-pantalla="yn-juego">
       <p class="ayuda" id="yn-lector"></p>
-      <h1 id="yn-encabezado">Yo nunca…</h1>
-      <p class="yn-frase" id="yn-frase"></p>
+      <div class="yn-carta">
+        <p class="yn-carta-tipo">Yo nunca…</p>
+        <p class="yn-carta-texto" id="yn-frase"></p>
+      </div>
       <p class="yn-instruccion" id="yn-instruccion"></p>
-      <p class="ayuda" id="yn-progreso"></p>
       <p class="anuncio" id="yn-anuncio" hidden></p>
       <div class="fila-botones">
         <button type="button" class="boton-volver" id="yn-btn-terminar" aria-label="Terminar partida">←</button>
@@ -188,10 +189,11 @@
 
     <section class="pantalla" data-pantalla="qm-juego">
       <p class="ayuda" id="qm-lector"></p>
-      <p class="qm-encabezado" id="qm-encabezado"></p>
-      <p class="qm-pregunta" id="qm-pregunta"></p>
+      <div class="qm-carta">
+        <p class="qm-carta-tipo" id="qm-encabezado"></p>
+        <p class="qm-carta-texto" id="qm-pregunta"></p>
+      </div>
       <p class="anuncio" id="qm-castigo" hidden></p>
-      <p class="ayuda" id="qm-progreso"></p>
       <p class="anuncio" id="qm-anuncio" hidden></p>
       <div class="fila-botones">
         <button type="button" class="boton-volver" id="qm-btn-terminar" aria-label="Terminar partida">←</button>
@@ -211,9 +213,10 @@
     <!-- Quién es más… · modo parejas — ver md/PLAN_QUIEN_ES_MAS.md §10 -->
     <section class="pantalla" data-pantalla="qm-pareja">
       <p class="qm-vs" id="qm-pareja-vs"></p>
-      <p class="ayuda" id="qm-pareja-progreso"></p>
-      <p class="qm-encabezado" id="qm-pareja-encabezado"></p>
-      <p class="qm-pregunta" id="qm-pareja-pregunta"></p>
+      <div class="qm-carta">
+        <p class="qm-carta-tipo" id="qm-pareja-encabezado"></p>
+        <p class="qm-carta-texto" id="qm-pareja-pregunta"></p>
+      </div>
       <p class="anuncio" id="qm-pareja-resultado" hidden></p>
       <p class="anuncio" id="qm-pareja-anuncio" hidden></p>
       <div class="fila-botones">
@@ -267,7 +270,6 @@
 
     <section class="pantalla" data-pantalla="vr-turno">
       <h1 id="vr-nombre-turno"></h1>
-      <p class="ayuda" id="vr-progreso"></p>
       <div class="fila-botones vr-fila-elegir">
         <button type="button" class="vr-btn-grande vr-btn-verdad" id="vr-btn-verdad">VERDAD</button>
         <button type="button" class="vr-btn-grande vr-btn-reto" id="vr-btn-reto">RETO</button>
@@ -385,14 +387,16 @@
 
     <section class="pantalla" data-pantalla="dm-turno">
       <h1 id="dm-nombre-turno"></h1>
-      <p class="ayuda" id="dm-progreso"></p>
       <button type="button" id="dm-btn-ver-tema">Ver mi tema</button>
       <button type="button" class="boton-volver" id="dm-btn-terminar" aria-label="Terminar partida">←</button>
     </section>
 
     <section class="pantalla" data-pantalla="dm-tema">
       <div class="vista" id="dm-vista-pensar">
-        <p class="dm-tema-texto" id="dm-tema-texto"></p>
+        <div class="dm-carta">
+          <p class="dm-carta-tipo">Tema</p>
+          <p class="dm-carta-texto" id="dm-tema-texto"></p>
+        </div>
         <p class="ayuda">Cuenta tres cosas sobre esto: <strong>dos ciertas y una mentira</strong></p>
         <div class="fila-botones">
           <button type="button" class="secundario" id="dm-btn-otro-tema">Otro tema 🔄</button>
@@ -453,7 +457,6 @@
     </section>
 
     <section class="pantalla" data-pantalla="im-ronda">
-      <p class="ayuda" id="im-progreso"></p>
       <h1 id="im-nombre-turno"></h1>
       <p class="ayuda">Di <strong>una palabra</strong> relacionada con la secreta</p>
       <div class="fila-botones">

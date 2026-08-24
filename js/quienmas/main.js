@@ -187,7 +187,6 @@ function qmRender() {
   document.getElementById("qm-encabezado").textContent =
     QM_ENCABEZADOS[qmEstado.preguntaActual.tipo];
   document.getElementById("qm-pregunta").textContent = `${qmEstado.textoResuelto}?`;
-  document.getElementById("qm-progreso").textContent = `Pregunta ${qmEstado.contador.preguntas}`;
 
   // Ahora siempre hay castigo (con o sin modo fiesta, ver qmServirPregunta),
   // así que esta línea ya no se oculta nunca; el emoji es neutro porque el
@@ -254,9 +253,6 @@ function qmServirPreguntaPareja() {
 function qmRenderPareja() {
   const [a, b] = qmParejaActual();
   document.getElementById("qm-pareja-vs").textContent = `${a} vs ${b}`;
-  document.getElementById("qm-pareja-progreso").textContent =
-    `Pareja ${qmEstado.parejas.indiceCombinacion + 1} de ${qmEstado.parejas.combinaciones.length} · ` +
-    `Ronda ${qmEstado.parejas.ronda} de ${QM_RONDAS_PAREJA}`;
   document.getElementById("qm-pareja-encabezado").textContent =
     QM_ENCABEZADOS[qmEstado.preguntaActual.tipo];
   document.getElementById("qm-pareja-pregunta").textContent = `${qmEstado.textoResuelto}?`;

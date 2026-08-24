@@ -237,9 +237,6 @@ function vrElegir(tipo) {
 function vrRenderTurno() {
   const nombre = vrEstado.nombres[vrEstado.indiceTurno];
   document.getElementById("vr-nombre-turno").textContent = `Turno de ${nombre}`;
-  const numeroTurno =
-    vrEstado.contador.verdades + vrEstado.contador.retos + vrEstado.contador.pasos + 1;
-  document.getElementById("vr-progreso").textContent = `Turno ${numeroTurno} · ${nombre}`;
 
   // Si un banco se quedó vacío al filtrar por nivel, su botón no se ofrece.
   document.getElementById("vr-btn-verdad").hidden = !vrEstado.repartidorVerdades;

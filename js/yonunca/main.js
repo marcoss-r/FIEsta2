@@ -67,7 +67,6 @@ function ynRender() {
     `Lee ${ynEstado.nombres[ynEstado.indiceLector]}`;
   document.getElementById("yn-frase").textContent = ynEstado.fraseActual.texto;
   document.getElementById("yn-instruccion").textContent = ynTextoInstruccion();
-  document.getElementById("yn-progreso").textContent = `Frase ${ynEstado.contador.frases}`;
 }
 
 function ynGuardar() {

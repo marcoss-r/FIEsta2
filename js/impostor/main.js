@@ -111,12 +111,17 @@ function imContenidoDe(indice) {
   caja.className = "im-secreto";
   if (imEstado.impostores.includes(indice)) {
     caja.innerHTML = `
-      <p class="im-secreto-titulo im-impostor">ERES EL IMPOSTOR</p>
-      <p class="im-secreto-pista">${imEstado.entrada.pista}</p>
+      <div class="im-carta">
+        <p class="im-carta-tipo im-carta-impostor">Impostor</p>
+        <p class="im-carta-texto">${imEstado.entrada.pista}</p>
+      </div>
       <p class="im-secreto-nota">Nadie más sabe que lo eres</p>`;
   } else {
     caja.innerHTML = `
-      <p class="im-secreto-titulo">${imEstado.entrada.palabra}</p>
+      <div class="im-carta">
+        <p class="im-carta-tipo">Palabra</p>
+        <p class="im-carta-texto">${imEstado.entrada.palabra}</p>
+      </div>
       <p class="im-secreto-nota">${imEstado.entrada.categoria}</p>`;
   }
   return caja;
@@ -142,10 +147,6 @@ function imRenderRonda() {
   document.getElementById("im-btn-siguiente").disabled = false;
   const indiceJugador = imEstado.orden[imEstado.posicionActual];
   document.getElementById("im-nombre-turno").textContent = imEstado.nombres[indiceJugador];
-  const totalPalabras = imEstado.orden.length * imEstado.nRondas;
-  const palabraActual = (imEstado.rondaActual - 1) * imEstado.orden.length + imEstado.posicionActual + 1;
-  document.getElementById("im-progreso").textContent =
-    `Ronda ${imEstado.rondaActual} de ${imEstado.nRondas} · palabra ${palabraActual} de ${totalPalabras}`;
 }
 
 // Deshabilita el botón al pulsar (casos borde del plan: un doble toque no
