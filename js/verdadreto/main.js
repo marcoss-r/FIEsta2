@@ -19,6 +19,24 @@ const VR_NIVELES = [
 ];
 const VR_NIVELES_POR_DEFECTO = ["normal"];
 
+// Castigo de "Paso" en modo fiesta: propio de este juego, no sale del banco
+// común de castigos.js. Pesos pedidos así por el usuario.
+const VR_CASTIGOS = [
+  { texto: "Bebe un trago", peso: 0.6 },
+  { texto: "Bebe dos tragos", peso: 0.225 },
+  { texto: "Bebe tres tragos", peso: 0.1 },
+  { texto: "Quítate una prenda", peso: 0.075 },
+];
+
+function vrCastigoAlAzar() {
+  let punto = Math.random();
+  for (const { texto, peso } of VR_CASTIGOS) {
+    if (punto < peso) return texto;
+    punto -= peso;
+  }
+  return VR_CASTIGOS[VR_CASTIGOS.length - 1].texto;
+}
+
 // Todo el estado de la partida vive aquí.
 const vrEstado = {
   nombres: [],
@@ -350,13 +368,9 @@ function vrPaso() {
 
   // Con modo fiesta activo, el turno no pasa hasta pulsar "Siguiente": antes
   // se enseña el castigo, sustituyendo Hecho/Paso/Otra por un único botón.
-  // Pesos del castigo (95 % beber, 5 % prenda; nunca castigos "otros"):
-  // pedido así por el usuario para este juego, no se elige, se ofrece al azar.
   const castigoEl = document.getElementById("vr-castigo");
   castigoEl.hidden = false;
-  castigoEl.textContent =
-    `${vrEstado.nombres[vrEstado.indiceTurno]}: ` +
-    castigoPonderado({ beber: 0.95, prenda: 0.05 });
+  castigoEl.textContent = `${vrEstado.nombres[vrEstado.indiceTurno]}: ` + vrCastigoAlAzar();
   document.getElementById("vr-btn-hecho").hidden = true;
   document.getElementById("vr-btn-paso").hidden = true;
   document.getElementById("vr-btn-otra").hidden = true;
