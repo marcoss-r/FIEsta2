@@ -225,9 +225,9 @@ function imRevelar() {
     castigoEl.hidden = false;
     if (acierto) {
       const acusadoNombre = imEstado.nombres[imEstado.acusado];
-      castigoEl.textContent = `🍻 ${acusadoNombre}: un trago doble`;
+      castigoEl.textContent = `${acusadoNombre}: un trago doble`;
     } else {
-      castigoEl.textContent = `🍻 Todos menos ${nombresImpostores.join(" y ")}: un trago`;
+      castigoEl.textContent = `Todos menos ${nombresImpostores.join(" y ")}: un trago`;
     }
   } else {
     castigoEl.hidden = true;

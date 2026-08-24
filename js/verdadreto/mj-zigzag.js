@@ -43,7 +43,7 @@ function vrMjZigzagDistancia(px, py, ax, ay, bx, by) {
 
 const VR_MJ_ZIGZAG = {
   id: "zigzag",
-  nombre: "Bolita zigzag 🔴",
+  nombre: "Bolita zigzag",
   como: "La bola avanza sola. Toca para cambiar de dirección en cada giro y no salirte del camino.",
   objetivo: 20,
   unidad: "tramos",

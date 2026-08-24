@@ -192,7 +192,7 @@ function vrActualizarBotonOtra() {
   const esVerdad = vrEstado.tipoActual === "verdad";
   const hayOtra = !vrEstado.dobleVerdad;
   boton.hidden = !hayOtra;
-  boton.textContent = esVerdad ? "Otra pregunta 🔄" : "Otro reto 🔄";
+  boton.textContent = esVerdad ? "Otra pregunta" : "Otro reto";
   document.getElementById("vr-nota-verdad").hidden = !esVerdad || !hayOtra;
 }
 

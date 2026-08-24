@@ -193,7 +193,7 @@ function qmRender() {
   // castigo puede no tener nada que ver con beber.
   const castigoEl = document.getElementById("qm-castigo");
   castigoEl.hidden = false;
-  castigoEl.textContent = `🎯 El más señalado: ${qmEstado.castigoActual}`;
+  castigoEl.textContent = `El más señalado: ${qmEstado.castigoActual}`;
 }
 
 // ===== Modo parejas (§10 del plan) =====
@@ -270,12 +270,12 @@ function qmElegirResultado(coinciden) {
   const resultadoEl = document.getElementById("qm-pareja-resultado");
   if (coinciden) {
     qmEstado.parejas.coincidencias++;
-    resultadoEl.textContent = "🙌 ¡Coinciden! Se libran.";
+    resultadoEl.textContent = "¡Coinciden! Se libran.";
   } else {
     qmEstado.parejas.diferencias++;
     resultadoEl.textContent = modoFiestaActivo()
-      ? `🍻 ${a} y ${b}: ${castigoAlAzar()}`
-      : "😬 Han diferido.";
+      ? `${a} y ${b}: ${castigoPonderado({ beber: 0.95, prenda: 0.05 })}`
+      : "Han diferido.";
   }
   resultadoEl.hidden = false;
   document.getElementById("qm-btn-coinciden").hidden = true;

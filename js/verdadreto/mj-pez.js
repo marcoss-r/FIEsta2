@@ -23,7 +23,7 @@ function vrMjPezNuevoCoral(e, x, factor) {
 
 const VR_MJ_PEZ = {
   id: "pez",
-  nombre: "Pez volador 🐠",
+  nombre: "Pez volador",
   como: "Toca la pantalla para nadar hacia arriba. Cuélate por el hueco entre los corales.",
   objetivo: 12,
   unidad: "corales",

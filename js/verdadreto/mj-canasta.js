@@ -106,7 +106,7 @@ function vrMjCanastaVelocidad(e, dx, dy) {
 
 const VR_MJ_CANASTA = {
   id: "canasta",
-  nombre: "Tiros a canasta 🏀",
+  nombre: "Tiros a canasta",
   como: "Arrastra hacia arriba desde la pelota y suelta para tirar. Cuanto más largo el gesto, más lejos llega.",
   objetivo: 6,
   unidad: "canastas",

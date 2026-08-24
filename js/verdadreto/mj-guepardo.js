@@ -35,7 +35,7 @@ function vrMjGuepardoHueco(e, velocidad) {
 
 const VR_MJ_GUEPARDO = {
   id: "guepardo",
-  nombre: "Guepardo del desierto 🐆",
+  nombre: "Guepardo del desierto",
   como: "Toca la pantalla para saltar. Esquiva los cactus y las rocas.",
   objetivo: 12,
   unidad: "obstáculos",

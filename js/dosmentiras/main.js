@@ -40,7 +40,7 @@ function dmIniciarMotor() {
 function dmActualizarBotonOtroTema() {
   const boton = document.getElementById("dm-btn-otro-tema");
   const quedan = DM_MAX_CAMBIOS - dmEstado.cambiosUsados;
-  boton.textContent = `Otro tema 🔄 · quedan ${quedan}`;
+  boton.textContent = `Otro tema · quedan ${quedan}`;
   boton.disabled = quedan <= 0;
 }
 
@@ -81,7 +81,7 @@ function dmYaLoTengo() {
   const castigoEl = document.getElementById("dm-castigo");
   if (modoFiestaActivo()) {
     castigoEl.hidden = false;
-    castigoEl.textContent = `🍻 Quien falle: ${castigoAlAzar()} · Si no acierta nadie, bebe el grupo`;
+    castigoEl.textContent = `Quien falle: ${castigoAlAzar()} · Si no acierta nadie, bebe el grupo`;
   } else {
     castigoEl.hidden = true;
   }
