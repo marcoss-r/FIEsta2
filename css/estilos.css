@@ -1226,11 +1226,26 @@ button.secundario:hover {
   color: var(--color-texto);
 }
 
+/* Contenedor del secreto: apila la tarjeta y su nota, centradas y separadas.
+   La separación va con gap y NO con un margin en la nota: `.pantalla p` (0-1-1)
+   le gana en especificidad a cualquier regla de clase suelta y le impone
+   margin:0 y max-width:32ch. Ese max-width es también el motivo de centrar
+   aquí: la caja del <p> es más estrecha que la tarjeta, así que un
+   text-align:center a secas la dejaba descentrada respecto a ella. */
+.im-secreto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+  /* Que la nota quede más cerca de su tarjeta que del botón de abajo: sin
+     esto el gap de .vista (1rem) la dejaba pegada al botón. */
+  margin-bottom: 1rem;
+}
+
 .im-secreto-nota {
-  margin: 1.5rem 0 0;
   font-size: 0.9rem;
   text-align: center;
-  color: var(--color-texto-tenue);
 }
 
 /* Lista de nombres de la acusación: botones (no párrafos), para poder marcar
