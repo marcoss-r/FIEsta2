@@ -1,21 +1,18 @@
 // El Impostor (im) — md/PLAN_EL_IMPOSTOR.md. Todos reciben la misma palabra
 // secreta menos el impostor, que solo recibe una pista; la app reparte en
-// secreto, fija el orden, cuenta las rondas y revela. NO guarda la partida en
-// curso (reanudar a medias filtraría información): solo se recuerda la
-// configuración, nunca el reparto ni el progreso.
+// secreto, fija el orden, cuenta las rondas y revela. No guarda nada entre
+// partidas: ni la configuración ni el reparto ni el progreso.
 
 const IM_MIN_JUGADORES = 3;
 const IM_MAX_JUGADORES = 12;
 const IM_MIN_PARA_DOS_IMPOSTORES = 7;
-const IM_MAX_RONDAS = 3;
-const IM_CLAVE_CONFIG = "im_config"; // solo configuración, nunca la partida
+const IM_RONDAS = 3; // fijo, sin stepper
 
 // Todo el estado de la partida vive aquí.
 const imEstado = {
   nombres: [],
-  niveles: [],
   nImpostores: 1,
-  nRondas: 2,
+  nRondas: IM_RONDAS,
 
   entrada: null, // { palabra, pista, categoria, nivel } del banco
   impostores: [], // índices en nombres
@@ -30,9 +27,7 @@ const imEstado = {
 // Referencias a los componentes montados en im-config: se crean una sola vez
 // al cargar la página y se reutilizan en cada partida.
 let imConfigJugadores = null;
-let imSelectorNiveles = null;
 let imStepperImpostores = null;
-let imStepperRondas = null;
 
 // Stepper genérico (− valor +), propio de este juego: a diferencia del de
 // jugadores (montarConfigJugadores, que también lleva la lista de nombres),
@@ -80,20 +75,10 @@ function imMontarStepper(stepper, { min, max, inicial, alCambiar }) {
 function imActualizarLimiteImpostores(cantidadJugadores) {
   const maximoPermitido = cantidadJugadores >= IM_MIN_PARA_DOS_IMPOSTORES ? 2 : 1;
   imStepperImpostores.fijarLimites(1, maximoPermitido);
-  document.getElementById("im-ayuda-impostores").textContent =
-    maximoPermitido === 1 ? "2 impostores a partir de 7 jugadores" : "";
 }
 
 function imIniciarMotor() {
-  const banco = filtrarPorNivel(IM_PALABRAS, imEstado.niveles);
-  const errorEl = document.getElementById("im-error");
-  if (banco.length === 0) {
-    errorEl.textContent = "No hay palabras para esta configuración.";
-    return false;
-  }
-  errorEl.textContent = "";
-  imEstado.repartidor = crearRepartidor(banco);
-  return true;
+  imEstado.repartidor = crearRepartidor(IM_PALABRAS);
 }
 
 // El primero en hablar nunca es impostor (hablar primero sin información es
@@ -250,27 +235,6 @@ function imRevelar() {
   mostrarPantalla("im-revelacion");
 }
 
-// Solo se guarda la configuración: nunca la palabra, los impostores ni el
-// progreso de la ronda (§3/§4.2 del plan, "im_config" es la única clave).
-function imGuardarConfig() {
-  guardarJSON(IM_CLAVE_CONFIG, {
-    nombres: imEstado.nombres,
-    niveles: imEstado.niveles,
-    nImpostores: imEstado.nImpostores,
-    nRondas: imEstado.nRondas,
-  });
-}
-
-function imCargarConfigGuardada() {
-  const guardado = cargarJSON(IM_CLAVE_CONFIG);
-  if (!guardado) return;
-  imConfigJugadores.fijarNombres(guardado.nombres); // dispara alCambiar → reajusta el límite de impostores
-  imSelectorNiveles.fijarNiveles(guardado.niveles);
-  imStepperImpostores.fijar(guardado.nImpostores);
-  imStepperRondas.fijar(guardado.nRondas);
-  document.getElementById("im-error").textContent = "";
-}
-
 function imEmpezarPartida() {
   const nombres = imConfigJugadores.obtenerNombres();
   const validacion = validarNombres(nombres);
@@ -281,12 +245,9 @@ function imEmpezarPartida() {
   }
 
   imEstado.nombres = nombres;
-  imEstado.niveles = imSelectorNiveles.obtenerNiveles();
   imEstado.nImpostores = imStepperImpostores.obtener();
-  imEstado.nRondas = imStepperRondas.obtener();
-  if (!imIniciarMotor()) return;
+  imIniciarMotor();
 
-  imGuardarConfig();
   imPrepararRonda();
   imEntrarReparto();
 }
@@ -303,19 +264,13 @@ function imTerminar() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Los steppers de impostores y rondas se montan ANTES que el de jugadores:
-  // este último dispara alCambiar en el momento de montarse, y ese callback
-  // ya necesita imStepperImpostores para ajustar su límite.
+  // El stepper de impostores se monta ANTES que el de jugadores: este último
+  // dispara alCambiar en el momento de montarse, y ese callback ya necesita
+  // imStepperImpostores para ajustar su límite.
   imStepperImpostores = imMontarStepper(document.getElementById("im-stepper-impostores"), {
     min: 1,
     max: 1,
     inicial: 1,
-    alCambiar: () => {},
-  });
-  imStepperRondas = imMontarStepper(document.getElementById("im-stepper-rondas"), {
-    min: 1,
-    max: IM_MAX_RONDAS,
-    inicial: 2,
     alCambiar: () => {},
   });
 
@@ -331,16 +286,13 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 
-  imSelectorNiveles = montarSelectorNiveles(document.getElementById("im-niveles"), () => {});
   montarInterruptorModoFiesta(document.getElementById("im-fiesta"), () => {});
 
   document.getElementById("btn-juego-im").addEventListener("click", () => {
-    document.getElementById("im-btn-config-guardada").hidden = !hayGuardado(IM_CLAVE_CONFIG);
     mostrarPantalla("im-config");
   });
 
   document.getElementById("im-btn-empezar").addEventListener("click", imEmpezarPartida);
-  document.getElementById("im-btn-config-guardada").addEventListener("click", imCargarConfigGuardada);
   document.getElementById("im-btn-siguiente").addEventListener("click", imSiguientePalabra);
   document.getElementById("im-btn-terminar").addEventListener("click", imTerminar);
   document.getElementById("im-btn-confirmar").addEventListener("click", imConfirmarAcusacion);
