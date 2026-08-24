@@ -22,10 +22,10 @@ const VR_NIVELES_POR_DEFECTO = ["normal"];
 // Castigo de "Paso" en modo fiesta: propio de este juego, no sale del banco
 // común de castigos.js. Pesos pedidos así por el usuario.
 const VR_CASTIGOS = [
-  { texto: "Bebe un trago", peso: 0.6 },
-  { texto: "Bebe dos tragos", peso: 0.225 },
-  { texto: "Bebe tres tragos", peso: 0.1 },
-  { texto: "Quítate una prenda", peso: 0.075 },
+  { texto: "Bebe un trago", peso: 0.5 },
+  { texto: "Bebe dos tragos", peso: 0.25 },
+  { texto: "Bebe tres tragos", peso: 0.125 },
+  { texto: "Quítate una prenda", peso: 0.125 },
 ];
 
 function vrCastigoAlAzar() {
