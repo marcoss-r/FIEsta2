@@ -168,10 +168,10 @@ function qmServirPregunta() {
 
   // El castigo es propio de cada pregunta: cambia en cada "Siguiente", no es
   // fijo durante toda la partida. Con modo fiesta, casi siempre es beber (el
-  // 10 % restante, quitarse una prenda); sin modo fiesta, se usan los
+  // 5 % restante, quitarse una prenda); sin modo fiesta, se usan los
   // castigos "neutros" del banco (bailar, imitar…), nunca beber ni prenda.
   qmEstado.castigoActual = modoFiestaActivo()
-    ? castigoPonderado({ beber: 0.9, prenda: 0.1 })
+    ? castigoPonderado({ beber: 0.95, prenda: 0.05 })
     : castigoPonderado({ otros: 1 });
 
   const anuncio = document.getElementById("qm-anuncio");

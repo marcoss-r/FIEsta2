@@ -353,13 +353,13 @@ function vrPaso() {
 
   // Con modo fiesta activo, el turno no pasa hasta pulsar "Siguiente": antes
   // se enseña el castigo, sustituyendo Hecho/Paso/Otra por un único botón.
-  // Pesos del castigo (30 % beber, 20 % prenda, 50 % el resto del banco):
+  // Pesos del castigo (95 % beber, 5 % prenda; nunca castigos "otros"):
   // pedido así por el usuario para este juego, no se elige, se ofrece al azar.
   const castigoEl = document.getElementById("vr-castigo");
   castigoEl.hidden = false;
   castigoEl.textContent =
     `${vrEstado.nombres[vrEstado.indiceTurno]}: ` +
-    castigoPonderado({ beber: 0.3, prenda: 0.2, otros: 0.5 });
+    castigoPonderado({ beber: 0.95, prenda: 0.05 });
   document.getElementById("vr-btn-hecho").hidden = true;
   document.getElementById("vr-btn-paso").hidden = true;
   document.getElementById("vr-btn-otra").hidden = true;
