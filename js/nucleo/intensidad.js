@@ -92,12 +92,7 @@ function modoFiestaActivo() {
   return cargarJSON(CLAVE_MODO_FIESTA) === true;
 }
 
-// Una entrada al azar del banco de castigos (data/comun/castigos.js).
-function castigoAlAzar() {
-  return elegirAlAzar(CASTIGOS_COMUNES);
-}
-
-// Como castigoAlAzar(), pero eligiendo antes una categoría con pesos: por
+// Como elegirAlAzar(), pero eligiendo antes una categoría con pesos: por
 // ejemplo castigoPonderado({ beber: 0.3, prenda: 0.2, otros: 0.5 }). Los
 // pesos no hace falta que sumen 1 (se normalizan); una categoría omitida o a
 // 0 nunca sale. Cada juego pide la mezcla que le interese, en vez de que la
