@@ -6,6 +6,31 @@ const QM_MAX_JUGADORES = 12;
 const QM_CLAVE_GUARDADO = "qm_partida";
 const QM_RONDAS_PAREJA = 8;
 
+// Castigo de "El más señalado" en modo fiesta: a diferencia del resto de
+// castigos del juego (que tiran del banco común, con prenda/otros mezclados
+// y frases que no siempre encajan con "señalar a alguien"), aquí solo tiene
+// sentido beber. Lista propia, cerrada, con pesos fijos (70/20/10).
+const QM_CASTIGOS_SENALADO = [
+  { texto: "Bebe un trago", peso: 0.7 },
+  { texto: "Bebe dos tragos", peso: 0.2 },
+  { texto: "Bebe tres tragos", peso: 0.1 },
+];
+const QM_CASTIGOS_SENALADO_PAREJA = [
+  { texto: "Beben un trago cada uno", peso: 0.7 },
+  { texto: "Beben dos tragos cada uno", peso: 0.2 },
+  { texto: "Beben tres tragos cada uno", peso: 0.1 },
+];
+
+function qmElegirCastigoSenalado(lista) {
+  const total = lista.reduce((suma, opcion) => suma + opcion.peso, 0);
+  let punto = Math.random() * total;
+  for (const opcion of lista) {
+    if (punto < opcion.peso) return opcion.texto;
+    punto -= opcion.peso;
+  }
+  return lista[lista.length - 1].texto;
+}
+
 // Modo parejas (§10 del plan): selección ÚNICA, a diferencia de los chips de
 // nivel y de tipo, que son multi-selección.
 const QM_MODOS = [
@@ -171,7 +196,7 @@ function qmServirPregunta() {
   // 5 % restante, quitarse una prenda); sin modo fiesta, se usan los
   // castigos "neutros" del banco (bailar, imitar…), nunca beber ni prenda.
   qmEstado.castigoActual = modoFiestaActivo()
-    ? castigoPonderado({ beber: 0.95, prenda: 0.05 })
+    ? qmElegirCastigoSenalado(QM_CASTIGOS_SENALADO)
     : castigoPonderado({ otros: 1 });
 
   const anuncio = document.getElementById("qm-anuncio");
@@ -274,7 +299,7 @@ function qmElegirResultado(coinciden) {
   } else {
     qmEstado.parejas.diferencias++;
     resultadoEl.textContent = modoFiestaActivo()
-      ? `${a} y ${b}: ${castigoPonderado({ beber: 0.95, prenda: 0.05 })}`
+      ? `${a} y ${b}: ${qmElegirCastigoSenalado(QM_CASTIGOS_SENALADO_PAREJA)}`
       : "Han diferido.";
   }
   resultadoEl.hidden = false;
