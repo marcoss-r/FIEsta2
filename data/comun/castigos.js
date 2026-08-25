@@ -1,8 +1,7 @@
 // Banco de castigos del modo fiesta (§7.4). Dividido en tres categorías para
 // poder pedir un castigo con pesos por categoría (ver castigoPonderado() en
 // js/nucleo/intensidad.js): quien llama a la función decide qué proporción
-// quiere de cada una. CASTIGOS_COMUNES (la unión de las tres) se mantiene
-// para castigoAlAzar(), que elige de las tres por igual sin pesos.
+// quiere de cada una.
 
 const CASTIGOS_BEBER = [
   "Bebe un trago",
@@ -42,5 +41,3 @@ const CASTIGOS_OTROS = [
   "Cuenta un chiste",
   "Camina como un robot hasta tu próximo turno",
 ];
-
-const CASTIGOS_COMUNES = [...CASTIGOS_BEBER, ...CASTIGOS_PRENDA, ...CASTIGOS_OTROS];

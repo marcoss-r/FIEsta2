@@ -82,7 +82,7 @@ function dmYaLoTengo() {
   const castigoEl = document.getElementById("dm-castigo");
   if (modoFiestaActivo()) {
     castigoEl.hidden = false;
-    castigoEl.textContent = `Quien falle: ${castigoAlAzar()} · Si no acierta nadie, bebe el grupo`;
+    castigoEl.textContent = `Quien no acierte, bebe · Si acierta todo el mundo, bebe ${nombre}`;
   } else {
     castigoEl.hidden = true;
   }
